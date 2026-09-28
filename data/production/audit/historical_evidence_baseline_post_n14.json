@@ -1,0 +1,272 @@
+{
+  "baseline_revision": "post_n14_shared_core_dependency_refresh",
+  "supersedes": "historical_evidence_baseline.json",
+  "refresh_note": "The original 51-file snapshot is retained unchanged. This isolated refresh records the intentional N-14 result-helper repair in 04_SHARED_ENGINE/engine/utilities/core.py; no historical experiment artifact was edited.",
+  "entries": [
+    {
+      "path": "04_SHARED_ENGINE/engine/utilities/core.py",
+      "sha256": "386ab309422192337ecc9666f4052e1bf7c8f8a1da8e6cca97b289d9e0184694",
+      "size_bytes": 9084
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0006.json",
+      "sha256": "8b8c2aae57b2ee5cfc593996141408f5f449f7ab3e0d982dae3d68b968c679a0",
+      "size_bytes": 2774
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation.py",
+      "sha256": "448c4be29cd400b06b12cfe2e01145af4d661c018b8ad95b1dcfe7d9e3b5ea32",
+      "size_bytes": 21403
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+      "sha256": "9bc6db082fe99b31a2adf042fcbe0d77beee551ac41496816ce6190f101c34eb",
+      "size_bytes": 15854
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0006_summary.py",
+      "sha256": "9ec5ac0c149008c019de469a5b71b7848ad2684924dc3782021bae868dc32d93",
+      "size_bytes": 6683
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0006_experiment.json",
+      "sha256": "afb2b8308c57e2d995d58a668942dccec7219719f319b86008abe44268a41a7f",
+      "size_bytes": 32103
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+      "sha256": "eda5b0c77ad4fc62f9a7c34823be2deabed39f933f15e4854b30ca710836ae5a",
+      "size_bytes": 25825
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_summary.json",
+      "sha256": "6bac6eb58c2fc9323557a2c52f0691389791581909584f427d31db78e163230b",
+      "size_bytes": 10567
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0006.md",
+      "sha256": "9683b3adba686513e4ca1b1b2e1b1902d57e8b63b8357f26379053c831dc4ecf",
+      "size_bytes": 6256
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0006.md",
+      "sha256": "fb11f518d0e7c155aba54f527759d9c048ac38fd3ce174a6d0c0cc87cc0533fd",
+      "size_bytes": 2284
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py",
+      "sha256": "4dad6e29490499a0db41a72af125de7fd7188d22c152a2746cb3c23c7f95490b",
+      "size_bytes": 6851
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0006_report.json",
+      "sha256": "8e4fb188ae554e71bf5fe23624e6b15f2a9f6f0078bf3623049492852d3f7ea2",
+      "size_bytes": 10192
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/DIAGNOSTICS/EXP-0006_proposal.md",
+      "sha256": "a0b88c60b468772a162a69354eb6f0c5db43d98bf8a57f7abded1d17f7ac7a80",
+      "size_bytes": 3547
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0007.json",
+      "sha256": "d421d4a615aaaeca255c1e6b3234ad67c66c7c8121c5c27d286a95412451ad02",
+      "size_bytes": 2548
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0007.py",
+      "sha256": "53c5240c2318df321597a95be12d323e4e7a685ee0b13e13a07e2dddb733aa31",
+      "size_bytes": 16103
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0007_summary.py",
+      "sha256": "80e89e0de03d2293b270c7b7377359bdbcf149c96cb7b00b10a20f03b2e7b8f6",
+      "size_bytes": 8682
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0007_experiment.json",
+      "sha256": "c35c71ca7fa4557a00652296eb239e49ef11f852be57a6057d325d68b6237f37",
+      "size_bytes": 23903
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+      "sha256": "a09e4f204dfef9cab7dbe5bb5769f94093d09ecab45f9a90fe6bbff79552553b",
+      "size_bytes": 18813
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json",
+      "sha256": "7c994a98d80b865e3d5cc5f61921455f89e8856ce90bef1fc4bd5c20eaa38931",
+      "size_bytes": 6298
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L96.json",
+      "sha256": "38602b52b0ae36dc43e1e8991b6bc0fa12c54b85abe07daa9e9c8a05d532a463",
+      "size_bytes": 859
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L128.json",
+      "sha256": "50c3981b0a6ee6dacb2cad1e209c1dc09e92f3802efa673f5991a54759c9f277",
+      "size_bytes": 871
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md",
+      "sha256": "97cf2f9af8aa91550a856e99acb24ce2fb40407de56197719030b3897960b7af",
+      "size_bytes": 6894
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0007.md",
+      "sha256": "d1fde9762ae098c7f5124811b683fc72c971496c5c236931fa1bd441fcb041cc",
+      "size_bytes": 2317
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check_exp0007.py",
+      "sha256": "e8eb556f2b4462cf3b500ad08e4a84c254b66355fe22bafe4fd22d14a7b17f26",
+      "size_bytes": 6780
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0007_report.json",
+      "sha256": "57099fbdedf5ea05b1d474894c6da595967161cadaecb9faffa796ded42b855f",
+      "size_bytes": 25909
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0009.json",
+      "sha256": "7bc74dd0766d979a3bec62f70cfa053c14532f9068a1303338733e9a2e943339",
+      "size_bytes": 4281
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/EXP-0009_experiment.json",
+      "sha256": "eb0c7e9d672a798b69741f347d95a09a4f3973c360635fe06ba6ead81466841c",
+      "size_bytes": 333
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py",
+      "sha256": "5147bc5d519793a3bba5292a127a2de8ec025fe37f382f4d3bda779a14aa70df",
+      "size_bytes": 20816
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_results.json",
+      "sha256": "663f416fcace55a720b3aebc5c08602072700f0f1b025fde326f11163f3a630a",
+      "size_bytes": 7077
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_summary.json",
+      "sha256": "aa0bb33c93752453c38249d914706ef9e46c60e3f41334950e0b7e83183b7519",
+      "size_bytes": 7292
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L128_n1500.npz",
+      "sha256": "787b621b0c272718865be0257e044a4e22e7bbb343826af90049afbab9831271",
+      "size_bytes": 6079974
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L256_n700.npz",
+      "sha256": "03d2e6c63ef8218047ed46d0bc2eb73efa6e98850c1b743d2a6240352eaa9956",
+      "size_bytes": 10702759
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n150.npz",
+      "sha256": "24bd00f6509efa683ff975af02e82d8ea773c900a15285fda3e74a02ebb4e22c",
+      "size_bytes": 8914681
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n60.npz",
+      "sha256": "70fdc433cee432fad4757577c67eee87aa756f71636ded95ec2d636f43bed3db",
+      "size_bytes": 14038471
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py",
+      "sha256": "74c8a4413d72d0440a75f5101a7e082061c763b07352ed6a0f8357bd909b1aa5",
+      "size_bytes": 7052
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json",
+      "sha256": "fe80fad75edf9dabff41f0ae68e0bb4cfa6df8b822d848295d57a6d95065d18a",
+      "size_bytes": 1269
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json",
+      "sha256": "328c9d48abb0f6086575bb1f565f84f33354eab66ab5311e3ff5520aafd6f98f",
+      "size_bytes": 1692
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py",
+      "sha256": "6874cbdbc1def59f811acbb84bae295733ebcd637f9eea8bda20560c2ea87c02",
+      "size_bytes": 6471
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_results.json",
+      "sha256": "3461512287e9ad41f35c76ed3f2fee5816a5a3a03c5382e77d3f5687fcc45882",
+      "size_bytes": 1427
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_summary.json",
+      "sha256": "e8b5c1ff4707f3e3227c329241d8b935eb75c32bf1954ccef13137d7a75a2299",
+      "size_bytes": 1621
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L127_n200.npz",
+      "sha256": "b660de93abc733fad230120ec5dd4dfe46cbf8fd0fdcf9aa31d03b73d0d478bc",
+      "size_bytes": 794364
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L191_n200.npz",
+      "sha256": "f6f34a9a419d873bc41ba0cd1eb5f474bc577eec6a7e24fb27b2bdf11603c9c6",
+      "size_bytes": 1729961
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L253_n200.npz",
+      "sha256": "daf07b0afb2e6176dead21195a3bc53a146581b9ac3e5ddbe967c7cf8ed1e5d8",
+      "size_bytes": 2977496
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L449_n200.npz",
+      "sha256": "d1ff5ec04f14ebb286f4f80b92539f9f11cedb38bd7e2590db475d1cd826587c",
+      "size_bytes": 9155196
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPORT.md",
+      "sha256": "a0eae010549dc7f75607241e12c2c1bbbeec34ee96ba2cddec44ce1c313f44b1",
+      "size_bytes": 5998
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONTROLS.md",
+      "sha256": "72c456ddde90a1d64726d97a63dca0d71e269c5cc3d0500c0743e8ef4a1a2d43",
+      "size_bytes": 2513
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/registry.jsonl",
+      "sha256": "b26a2f31cd2ab4bbe35bc66b9a84d72e2a4ccb4afffdaa8cf1b9f6119e4c2520",
+      "size_bytes": 761
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+      "sha256": "68112acf670e593eae9a5212bb754ea42fbbb6ecc6b6157833c5732ce6dda5ff",
+      "size_bytes": 1518
+    },
+    {
+      "path": "EXPERIMENT_REGISTRY.md",
+      "sha256": "888f11e1b9ac44f44e934fdb8ae641df197bb10d848cc9f85eab76b1aa2e809a",
+      "size_bytes": 17841
+    },
+    {
+      "path": "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/MAIN_AUDIT/SECOND_PASS_REPORT.md",
+      "sha256": "33f043207765681255e2be0382f48dbc3a4a0f9c661e3bb3f16e25fd5688d29e",
+      "size_bytes": 28085
+    },
+    {
+      "path": "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/MAIN_AUDIT/second_pass_findings.json",
+      "sha256": "17dc8d11422f299e8598e0ae4c102f1f9b31187f1a09b87e95b939d25df839b3",
+      "size_bytes": 17355
+    }
+  ],
+  "finding_ids": [
+    "N-04",
+    "N-05",
+    "N-19",
+    "N-21",
+    "N-22"
+  ],
+  "read_only_contract": true,
+  "schema": "historical-2d-percolation-evidence-baseline-v1",
+  "scope_schema": "historical-2d-percolation-audit-scope-v1"
+}

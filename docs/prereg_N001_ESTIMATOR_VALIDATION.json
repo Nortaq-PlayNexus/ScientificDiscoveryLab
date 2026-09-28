@@ -1,0 +1,42 @@
+{
+  "schema": "n001-tau-estimator-validation-prereg-v1",
+  "experiment_id": "N001-TAU-ESTIMATOR-VALIDATION",
+  "question_id": "Q-P007",
+  "disclosure_of_prior_knowledge": "INFORMED, and labelled as such. This experiment was conceived after exploratory work already showed that the N-001 cumulative estimator returns values well above a known input exponent on synthetic power laws. The exploratory range of the bias, the three weighting variants, and the off-by-one survivor-count hypothesis have all already been seen. What is fixed here in advance is the validation design, the decision rule for whether a bias correction may be applied to the real data at all, and the set of truths and windows to be tested. In particular the decisive question addressed here - whether the bias depends on the true exponent, and therefore whether any bias correction is transferable - had not been answered.",
+  "frozen_before_execution": true,
+  "question": "Is the N-001 cumulative cluster-mass exponent estimator biased, and if so can the bias be measured well enough to correct the stored tau = 1.92009?",
+  "why_it_matters": "The N-001 production escalated tau = 1.92009 against the Fisher value 187/91 = 2.054945 as DEVIATION_FROM_FISHER. If the estimator that produced that number is biased upward, the central value is not trustworthy even though the direction of the deviation may still be right. This is the third time in this laboratory that a suspected anomaly has turned out to be an estimator artefact, after the EXP-0005 width-route starting value and the EXP-0017 local slope.",
+  "estimators_under_test": {
+    "cumulative_as_written": "engine-validation path as frozen in N-001: weighted log-log fit of the survival function with the weight actually applied to residuals equal to N_>(s)^(1/2), on a 250-point integer grid, tau = 1 - slope",
+    "cumulative_poisson_weight": "the same fit with the weight applied to residuals equal to N_>(s), which is the statistically correct weight when Var(log N_>(s)) ~ 1/N_>(s)",
+    "histogram": "weighted log-log fit of per-size counts with weight sqrt(count), tau = -slope"
+  },
+  "synthetic_design": {
+    "purpose": "construct data of a KNOWN exponent and measure each estimator's error, which is impossible on real percolation data",
+    "truths": [1.85, 2.05],
+    "why_two_truths": "a bias correction is only transferable if the bias is a property of the estimator and window rather than of the unknown truth. Testing two truths separated by 0.20 is the preregistered test of that condition.",
+    "constructions": [
+      "exact integer counts proportional to s^-tau over the window, with amplitude large enough that floor truncation is below 0.1 percent",
+      "inverse-CDF sampling from a continuous Pareto law on the window, rounded to integers, so the only error source is unbiased Poisson sampling noise",
+      "the same inverse-CDF sample at four times the sample size, to confirm the measured bias is not a noise artefact"
+    ],
+    "windows": [[16, 512], [32, 4096], [32, 2048], [64, 4096]],
+    "primary_window": [32, 4096],
+    "sample_sizes": [2000000, 8000000]
+  },
+  "decision_rule": {
+    "ESTIMATOR_BIASED": "at the primary window, the median absolute error of cumulative_as_written across the two truths exceeds 0.05",
+    "BIAS_NOT_TRANSFERABLE": "the measured bias differs in sign or by more than 0.05 between the two truths at the primary window, so the bias cannot be treated as a known correction and the stored tau may only be reported with an uncertainty that includes the bias",
+    "BIAS_CORRECTION_VALID": "the bias is consistent in sign and magnitude across both truths at the primary window, so a bias-corrected value may be reported as a clearly labelled secondary estimate, never as a replacement for the frozen production number",
+    "UNRESOLVED": "if a fit is not scorable the affected cell is reported unresolvable and excluded from the bias estimate rather than imputed"
+  },
+  "claim_guards": [
+    "The frozen N-001 production number tau = 1.92009 is not edited, replaced, or deleted. A bias-corrected value is a separately labelled secondary estimate at most.",
+    "The production runner is not modified. The estimators are re-implemented and validated in this isolated directory.",
+    "A measured bias on synthetic data is not automatically a valid correction for real percolation data, whose local curvature is not the curvature of the synthetic constructions. That is exactly what the two-truth test decides.",
+    "Finding a bias does not overturn the escalation direction. It weakens the numeric value, and must not be reported as though it had removed the deviation.",
+    "No physics claim, no novelty claim, and nothing here bears on any other experiment.",
+    "If the bias turns out to be small or transferable-absent, the stored tau stands and this experiment is a null result reported as such."
+  ],
+  "falsification": "if cumulative_as_written recovers both synthetic truths to within 0.05 at the primary window, the estimator is unbiased at these windows, the exploratory signal was an artefact of the exploratory constructions, and the stored tau needs no correction. That outcome is preregistered as reportable and would close this experiment with a null result."
+}

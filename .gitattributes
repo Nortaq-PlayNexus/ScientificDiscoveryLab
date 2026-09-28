@@ -1,0 +1,5 @@
+﻿# Byte-exact checkout. The digests in manifest.json are of the exact bytes in this
+# repository; any end-of-line conversion would invalidate them and cause
+# scripts/verify_historical_integrity.py to report failures that are really
+# just line-ending drift.
+* -text
