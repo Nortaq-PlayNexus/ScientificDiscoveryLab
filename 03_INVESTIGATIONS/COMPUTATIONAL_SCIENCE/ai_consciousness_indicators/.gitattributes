@@ -1,19 +1,20 @@
-# Normalize line endings so hashes recorded on Windows reproduce on Linux CI.
-# The canonical-JSON result hash is computed over in-memory values, not file
-# bytes, so this does not affect recorded hashes — but it keeps diffs sane.
-* text=auto eol=lf
-
-*.py   text eol=lf
-*.md   text eol=lf
-*.json text eol=lf
-*.cff  text eol=lf
-*.txt  text eol=lf
-*.yml  text eol=lf
-
-LICENSE text eol=lf
-.gitattributes text eol=lf
-
-# Binary-ish
-*.png  binary
-*.jpg  binary
-*.pdf  binary
+# Byte-exact checkout. Must agree with the repository root .gitattributes.
+#
+# This file previously said `* text=auto eol=lf`, written for the standalone
+# consciousness-indicator-battery repository, where normalizing line endings kept
+# diffs sane across Windows and Linux.
+#
+# Inside ScientificDiscoveryLab that instruction is wrong, and it was silently
+# breaking the root integrity check. manifest.json records the SHA-256 of exact
+# file bytes, so forcing LF here means a Linux checkout of these nine files
+# produces bytes the manifest does not account for, and
+# tools/verify_manifest.py reports them as CHANGED.
+#
+# A nested .gitattributes overrides the root one for its whole subtree, so the
+# root `* -text` could not win while this file said otherwise.
+#
+# The normalisation was never load-bearing here. The battery's recorded hashes
+# are computed over in-memory canonical-JSON values, not over file bytes, so
+# `* -text` changes no recorded result. The standalone repository keeps its own
+# copy of its own .gitattributes and is unaffected by this one.
+* -text

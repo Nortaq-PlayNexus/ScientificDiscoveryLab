@@ -16,7 +16,7 @@
   "files": [
     {
       "path": ".gitattributes",
-      "sha256": "033d73fe45f2ca9205f10882b7da6ae7b9d2077828403414935b8f78f3a100dd"
+      "sha256": "fe8d7f36281aee4e6ea70d84f7893486f17dc9f890a3c854d86f0a67ea7e6ae8"
     },
     {
       "path": ".github/workflows/ci.yml",
@@ -176,7 +176,7 @@
     },
     {
       "path": "03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/.gitattributes",
-      "sha256": "3264e983338b9a0178c6ba1171507a3cda78f0acc9814e569ebe301bdffc656f"
+      "sha256": "8113fd61eeca7d9493d673d10cb1b71d1c8019093e7ebe35ba400837fb16e641"
     },
     {
       "path": "03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/.github/ISSUE_TEMPLATE/calibration_anchor_dispute.md",
@@ -4526,5 +4526,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46869288
+  "total_bytes": 46870277
 }

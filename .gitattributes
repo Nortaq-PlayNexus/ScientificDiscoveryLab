@@ -14,4 +14,10 @@
 # The same reasoning applies to the preserved curated deposit, which ships its own
 # copy of this file at zenodo-deposit/.gitattributes. Its
 # scripts/verify_historical_integrity.py has the same requirement.
+#
+# A nested .gitattributes overrides this one for its entire subtree. That is not
+# hypothetical: the consciousness-indicator-battery folder carried one saying
+# `* text=auto eol=lf`, written for its standalone repository, and it silently
+# broke the manifest check for the nine files beneath it. If you add a nested
+# .gitattributes anywhere in this tree, it must also say `* -text`.
 * -text
