@@ -13,7 +13,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.11', '3.12', '3.13']
+        # Starts at 3.12, not 3.11, and that is deliberate. numpy 2.5 declares
+        # Requires-Python >=3.12; there is no 2.5.x build for 3.11, so a 3.11 leg
+        # cannot install the suite's own minimum dependency. The laboratory runs
+        # on 3.14, which is in this matrix.
+        python-version: ['3.12', '3.13', '3.14']
     steps:
       - uses: actions/checkout@v4
 
@@ -21,13 +25,17 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install dependencies
+      - name: Install test dependencies
+        # requirements-ci.txt, NOT requirements.txt. The latter is the full
+        # laboratory environment (RDKit, OpenMM, PySide6, torch) and most of it
+        # is irrelevant to the tests, which import numpy, scipy, pytest and
+        # mpmath. Installing torch per run costs minutes for nothing.
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-ci.txt
 
       - name: Run test suite
-        # Raw simulation data (.npz, .sqlite3 — 377 MB, regenerable from the
+        # Raw simulation data (.npz, .sqlite3 -- 377 MB, regenerable from the
         # seeds in each preregistration) is excluded from this repository. The
         # read-only audit tests read some of it and therefore fail CLOSED with
         # `required historical evidence is missing` or `unable to open database
@@ -50,7 +58,7 @@ jobs:
             echo "::error::a test failed for a reason other than excluded raw data"
             exit 1
           fi
-          echo "(none) — all failures accounted for"
+          echo "(none) -- all failures accounted for"
 
   integrity:
     name: publishable manifest verifies
@@ -62,3 +70,17 @@ jobs:
           python-version: '3.12'
       - name: Verify every shipped file against manifest.json
         run: python tools/verify_manifest.py
+
+  deposit:
+    name: curated deposit manifest verifies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # The curated v1.0.0 deposit kept at zenodo-deposit/ has its own manifest.
+      # It is verified too, so a future edit to either subtree is caught rather
+      # than silently invalidating the other.
+      - name: Verify the preserved curated deposit
+        run: python tools/verify_deposit_manifest.py

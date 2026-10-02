@@ -1,0 +1,25 @@
+# Dependencies required to RUN THE TEST SUITE.
+#
+# This is deliberately not requirements.txt. That file is the laboratory's full
+# environment -- RDKit, OpenMM, PySide6, torch, plotly -- because the working
+# installation has them. Most of it is irrelevant to the tests: the suite imports
+# numpy, scipy, pytest, and a handful of laboratory-internal modules.
+#
+# Installing torch and PySide6 on every CI run costs minutes and buys nothing.
+#
+# Version floors are lower bounds deliberately, with one exception. numpy is
+# pinned at >=2.5.0 because numpy 2.5 declares Requires-Python >=3.12; there is no
+# 2.5.x for 3.11. The CI matrix therefore starts at 3.12, and that is the reason
+# rather than an accident -- see the note in .github/workflows/ci.yml.
+#
+# Not listed, and why:
+#   rdkit       imported by 2 tests, skipped when absent (see conftest)
+#   sqlalchemy  1 test in src/, not in the default testpaths
+#   psutil      1 test, not in the default testpaths
+#   mpmath      1 test in the feigenbaum repair suite, which is in testpaths
+#               -- included below
+#
+numpy>=2.5.0
+scipy>=1.18.0
+pytest>=8.0.0
+mpmath>=1.3.0

@@ -12,11 +12,15 @@
     ".zip"
   ],
   "excluded_total_bytes": 377119815,
-  "file_count": 1125,
+  "file_count": 1127,
   "files": [
     {
+      "path": ".gitattributes",
+      "sha256": "033d73fe45f2ca9205f10882b7da6ae7b9d2077828403414935b8f78f3a100dd"
+    },
+    {
       "path": ".github/workflows/ci.yml",
-      "sha256": "48349aade4d2ba24cf51977a72a1bf6313f8d8ff8f8a2b8963e84b9c7f22a84f"
+      "sha256": "701a5ff040979104c6ead8ae1f4bd787051dcbfd9e3a652f8318c5f77424cc6a"
     },
     {
       "path": ".gitignore",
@@ -3991,6 +3995,10 @@
       "sha256": "db84311650b60225eda64b7cc581e78444983786d5c60e321d210a259b08591c"
     },
     {
+      "path": "requirements-ci.txt",
+      "sha256": "b47e713fe6ce442eac18b6a91323b54b41539a41992402629910a2be1e5e7c9f"
+    },
+    {
       "path": "requirements.txt",
       "sha256": "545149b8987581724b84ef95cb9178ad63f542aa114aa840d0d5f280d2980974"
     },
@@ -4518,5 +4526,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46866176
+  "total_bytes": 46869288
 }

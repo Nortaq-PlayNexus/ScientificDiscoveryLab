@@ -1,0 +1,17 @@
+# Byte-exact checkout.
+#
+# manifest.json records the SHA-256 of the exact bytes of every published file.
+# Git's default `core.autocrlf` behaviour on Windows rewrites LF to CRLF on
+# checkout, which changes those bytes and makes `tools/verify_manifest.py` report
+# 329 spurious "CHANGED" files on Linux CI. That is line-ending drift, not
+# tampering, and it is exactly the kind of false alarm that trains a reader to
+# ignore the integrity check.
+#
+# `* -text` marks every path as binary for git's purposes: no end-of-line
+# conversion in either direction, in either platform. The digests in
+# manifest.json then mean the same thing everywhere.
+#
+# The same reasoning applies to the preserved curated deposit, which ships its own
+# copy of this file at zenodo-deposit/.gitattributes. Its
+# scripts/verify_historical_integrity.py has the same requirement.
+* -text
