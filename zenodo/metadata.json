@@ -15,18 +15,46 @@
   "language": "eng",
   "access_right": "open",
   "subjects": [
-    { "id": "mesh:D015203", "title": "Reproducibility of Results" },
-    { "id": "mesh:D010825Q000379", "title": "Physics/methods" },
-    { "id": "mesh:D010825Q000295", "title": "Physics/instrumentation" },
-    { "id": "mesh:D012106Q000706", "title": "Research/statistics & numerical data" },
-    { "id": "euroscivoc:805", "title": "Statistical mechanics" },
-    { "id": "euroscivoc:1061", "title": "Numerical analysis" },
-    { "id": "mesh:D012984", "title": "Software" },
-    { "id": "mesh:D012586Q000941", "title": "Science/ethics" }
+    {
+      "id": "mesh:D015203",
+      "title": "Reproducibility of Results"
+    },
+    {
+      "id": "mesh:D010825Q000379",
+      "title": "Physics/methods"
+    },
+    {
+      "id": "mesh:D010825Q000295",
+      "title": "Physics/instrumentation"
+    },
+    {
+      "id": "mesh:D012106Q000706",
+      "title": "Research/statistics & numerical data"
+    },
+    {
+      "id": "euroscivoc:805",
+      "title": "Statistical mechanics"
+    },
+    {
+      "id": "euroscivoc:1061",
+      "title": "Numerical analysis"
+    },
+    {
+      "id": "mesh:D012984",
+      "title": "Software"
+    },
+    {
+      "id": "mesh:D012586Q000941",
+      "title": "Science/ethics"
+    }
   ],
   "communities": [
-    { "id": "b2789229-9eb4-476d-a9ed-7a4b13497af5" },
-    { "id": "8b1df34a-6496-448c-b109-7cff4f9572b1" }
+    {
+      "id": "b2789229-9eb4-476d-a9ed-7a4b13497af5"
+    },
+    {
+      "id": "8b1df34a-6496-448c-b109-7cff4f9572b1"
+    }
   ],
   "keywords": [
     "reproducibility research",
@@ -123,5 +151,7 @@
   },
   "test_suite": "543 passed, 0 failed (laboratory, complete data)",
   "published_test_suite": "543 collected; 20 excluded-data failures, exactly the recorded set",
-  "doi": ""
+  "doi": "10.5281/zenodo.23109117",
+  "published": "2026-10-02",
+  "published_note": "Published 2026-10-02. The web form did not carry subjects or references; the deposition API accepts both and silently discards them, so this record has zero of each. Fixing that requires a new version, not an edit."
 }

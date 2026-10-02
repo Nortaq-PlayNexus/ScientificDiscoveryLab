@@ -8,8 +8,8 @@
 | CI jobs | pytest on Python 3.12, 3.13, 3.14; publishable-manifest verify; curated-deposit verify |
 | Test suite | **543 passed, 0 failed** in the laboratory with complete data |
 | Published tree | 543 collected; 20 failures, exactly the recorded excluded-data set |
-| Zenodo deposit | **23109117**, state `unsubmitted` — awaiting publish |
-| DOI | none yet; assigned on publication |
+| Zenodo deposit | **23109117**, published 2026-10-02 |
+| DOI | **[10.5281/zenodo.23109117](https://doi.org/10.5281/zenodo.23109117)** |
 | Archive | `ScientificDiscoveryLab-v1.0.0.zip`, 1,185 files, 6,678,433 bytes |
 | SHA-256 | `a0750bbc8619e4c807030be1e54a2303b5df2d8b02704d6c76a2995d1cdd0ddf` |
 | MD5 (as uploaded) | `21e6429965d9a4943c023e0ddd916bbf` |
@@ -27,19 +27,24 @@ Expected output ends with `ARCHIVE VERIFIED: two independent builds are byte-ide
 
 ## Publication status
 
-**NOT published. No DOI exists for this work yet.**
+**Published 2026-10-02 as `10.5281/zenodo.23109117`.** The uploaded archive was
+verified against Zenodo's own copy before and after: 6,678,433 bytes, md5
+`21e6429965d9a4943c023e0ddd916bbf`, identical on both sides.
 
-1. Open https://zenodo.org/deposit/23109117
-2. Review the description and keywords
-3. Click Publish
-4. Copy the assigned DOI
+### Two fields are missing from the published record
 
-Then record it in four places, exactly as was done for the battery deposit:
+The published record carries **zero subjects and zero references**. Zenodo's
+deposition API accepts both fields without error and then silently discards them,
+and neither is echoed back on read, so the upload reported success and the
+verification read showed zero with nothing warning. The web form did not have them
+either.
 
-- `zenodo/metadata.json` → `doi`
-- `CITATION.cff` → `doi:`
-- `README.md` → the DOI badge row
-- this file → the DOI row above
+The correct values are recorded in `zenodo/DEPOSIT_23109117.md` and were used to
+populate the repository at
+`C:\Users\natha\AI_RESEARCH\ScientificDiscoveryLab`. Correcting the published
+record requires a **new version**, which cannot be created through the legacy
+deposit API — `conceptrecid` is accepted and then ignored, so a new version lands
+on a different concept. Use the Zenodo web interface's **New version** action.
 
 **Any change after publication must be a new version (new version DOI, same
 concept DOI), never an edit.** Published Zenodo records are immutable.

@@ -3880,7 +3880,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "e86373097873d60ba35260886a13494fb3d079f2d99c6bc61d7c27cf464e38da"
+      "sha256": "96fdea57a60aa0c1ceb5099dac4b952f85c444befdb0f3dde4d65844fbde272d"
     },
     {
       "path": "CODE/dmt-laser-s9-battery/q_s9_1_results.json",
@@ -3992,11 +3992,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "054e757986cdadb446832fc0d28a5e706f2f53cbc87484e3a305da2b0134021f"
+      "sha256": "1361d44c7f136e9c66c281ef1d18f4e6707b9ff2e820d868ff1a66ba1e661dff"
     },
     {
       "path": "RELEASE.md",
-      "sha256": "bb4d81357658e3e119f26bd685f69143f55c222afdd0d13e0e2d649b01514cb7"
+      "sha256": "2dc745529a106e071f42166e15d777d559750a624b54708dd6c5f838a45d97e6"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -4336,7 +4336,7 @@
     },
     {
       "path": "zenodo/DEPOSIT_23109117.md",
-      "sha256": "4c701e8b3457ce06d8cba82ae6d2638d6253e0ca155d3fd49e9ec953ef3d73c7"
+      "sha256": "9f44d845a853a739a2b06a553af1f545b011f477364451184f0e887daa13f9cc"
     },
     {
       "path": "zenodo/DEPOSIT_23109117.txt",
@@ -4352,7 +4352,7 @@
     },
     {
       "path": "zenodo/metadata.json",
-      "sha256": "4b9062837ab9d46c978d073d9f2fb60ecb1c0842b5e582e69674cc389cfb4fc1"
+      "sha256": "2b0bf22d73d47f6f7f995190a50d864cd04dfad436210c1f32a8672a884092ca"
     },
     {
       "path": "zenodo/package/code/finding1_erfc_caller_audit.py",
@@ -4558,5 +4558,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46930665
+  "total_bytes": 46932198
 }
