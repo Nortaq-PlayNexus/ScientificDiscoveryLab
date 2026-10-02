@@ -77,8 +77,16 @@ def sha256_file(path: Path) -> str:
 
 
 def build_metadata(meta: dict, description: str) -> dict:
-    """Wrap the local metadata.json in the shape the API accepts."""
-    return {
+    """Wrap the local metadata.json in the shape the API accepts.
+
+    Every key goes inside `metadata`. A flat payload is rejected with "Unknown
+    field" once per key, which reads like a broken API rather than a wrong shape.
+
+    Optional blocks are included only when the local metadata defines them, so a
+    field that Zenodo does not accept costs nothing to leave out -- and a rejected
+    PUT would discard the whole update, including the fields that did validate.
+    """
+    payload: dict = {
         "upload_type": meta["upload_type"],
         "title": meta["title"],
         "description": description,
@@ -93,6 +101,22 @@ def build_metadata(meta: dict, description: str) -> dict:
         "related_identifiers": meta.get("related_identifiers", []),
         "notes": meta["notes"],
     }
+
+    if "access_right" in meta:
+        payload["access_right"] = meta["access_right"]
+    if "subjects" in meta:
+        # Controlled vocabulary. The identifier is authoritative; Zenodo fills the
+        # title from its own list, and a guessed id is worse than none because it
+        # silently classifies the work under the wrong subject.
+        payload["subjects"] = [{"id": s["id"]} for s in meta["subjects"]]
+    if "communities" in meta:
+        payload["communities"] = [{"identifier": c["id"]} for c in meta["communities"]]
+    if "references" in meta:
+        payload["references"] = meta["references"]
+    if meta.get("grants"):
+        payload["grants"] = meta["grants"]
+
+    return payload
 
 
 def main() -> int:

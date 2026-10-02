@@ -1,5 +1,5 @@
 {
-  "schema": "zenodo-deposit-metadata-v2",
+  "schema": "zenodo-deposit-metadata-v3",
   "upload_type": "dataset",
   "title": "ScientificDiscoveryLab: a preregistered computational research laboratory, and four defects its self-audit found in its own instruments",
   "version": "1.0.0",
@@ -13,6 +13,21 @@
   "description_source": "description.md",
   "license": "mit-license",
   "language": "eng",
+  "access_right": "open",
+  "subjects": [
+    { "id": "mesh:D015203", "title": "Reproducibility of Results" },
+    { "id": "mesh:D010825Q000379", "title": "Physics/methods" },
+    { "id": "mesh:D010825Q000295", "title": "Physics/instrumentation" },
+    { "id": "mesh:D012106Q000706", "title": "Research/statistics & numerical data" },
+    { "id": "euroscivoc:805", "title": "Statistical mechanics" },
+    { "id": "euroscivoc:1061", "title": "Numerical analysis" },
+    { "id": "mesh:D012984", "title": "Software" },
+    { "id": "mesh:D012586Q000941", "title": "Science/ethics" }
+  ],
+  "communities": [
+    { "id": "b2789229-9eb4-476d-a9ed-7a4b13497af5" },
+    { "id": "8b1df34a-6496-448c-b109-7cff4f9572b1" }
+  ],
   "keywords": [
     "reproducibility research",
     "measurement instrument validation",
@@ -22,6 +37,7 @@
     "percolation",
     "cluster mass exponent",
     "finite-size scaling",
+    "power-law estimation",
     "preregistration",
     "hash chaining",
     "fail-closed analysis",
@@ -31,23 +47,68 @@
     "scientific integrity",
     "portable research software",
     "continuous integration",
-    "reproducible archives"
+    "reproducible archives",
+    "floating-point reproducibility"
+  ],
+  "references": [
+    {
+      "id": "10.6028/NIST.SP.800-22r1a",
+      "type": "report",
+      "title": "A Statistical Test Suite for Random and Pseudorandom Number Generators (SP 800-22 Rev. 1a)",
+      "citation": "A. Rukavina, NIST Special Publication 800-22 Rev. 1a, 2010"
+    },
+    {
+      "id": "10.1214/13-AOAS710",
+      "type": "article",
+      "title": "Power-law distributions in binned empirical data",
+      "citation": "D. S. Clauset, C. Shalizi, M. E. J. Newman, The Annals of Applied Statistics 8(2), 2014"
+    },
+    {
+      "id": "10.1073/pnas.1708274114",
+      "type": "article",
+      "title": "The preregistration revolution",
+      "citation": "B. A. Nosek et al., Proceedings of the National Academy of Sciences 115(11), 2018"
+    },
+    {
+      "id": "10.1371/journal.pmed.0020124",
+      "type": "article",
+      "title": "Why Most Published Research Findings Are False",
+      "citation": "J. P. A. Ioannidis, PLoS Medicine 2(7), 2005"
+    },
+    {
+      "id": "10.48550/arXiv.2308.08708",
+      "type": "other",
+      "title": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness",
+      "citation": "P. Butlin, R. Long, arXiv:2308.08708, 2023"
+    },
+    {
+      "id": "10.1016/j.tics.2025.10.011",
+      "type": "article",
+      "title": "Identifying indicators of consciousness in AI systems",
+      "citation": "P. Butlin et al., Trends in Cognitive Sciences, 2025"
+    }
   ],
   "related_identifiers": [
     {
       "relation": "isSupplementTo",
+      "identifier": "https://github.com/Nortaq-PlayNexus/ScientificDiscoveryLab",
+      "resource_type": "software",
+      "note": "Source repository for this deposit. The deposit is the frozen, byte-reproducible archive of the repository at commit 4c2719a; the repository carries full history and continuous integration. Same MIT licence. Neither supersedes the other."
+    },
+    {
+      "relation": "isSupplementTo",
       "identifier": "https://doi.org/10.5281/zenodo.23101903",
-      "resource_type": "other",
+      "resource_type": "software",
       "note": "SCOPE NOTE: the AI-consciousness indicator battery exists BOTH as its own deposit and as one investigation (EXP-C001, path 03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/) inside this laboratory record. Neither supersedes the other; they are the same work at different scopes. Cite the battery deposit when asking about consciousness methodology, and this deposit when asking about the laboratory, its audit trail, or its other 15 experiments. That deposit makes no claim about AI consciousness and scores no AI system."
     },
     {
       "relation": "isSupplementTo",
       "identifier": "https://doi.org/10.5281/zenodo.22849652",
       "resource_type": "other",
-      "note": "SCOPE NOTE: this identifier covers a DIFFERENT project (coherent optical vortex propagation, EXP-0007). It is listed only to make the boundary explicit. This deposit neither amends nor supersedes it, and the two share no data, code, or conclusions."
+      "note": "SCOPE NOTE: this identifier covers a DIFFERENT project (EXP-0007, coherent optical vortex propagation). It is listed only to make the boundary explicit. This deposit neither amends nor supersedes it, and the two share no data, code, or conclusions."
     }
   ],
-  "notes": "NO PHYSICS DISCOVERY IS CLAIMED. The contribution is evidence about measurement instruments. Four genuine defects were found in the laboratory's own instruments, one of which had previously been counted as a pass. In two of them the defect made the laboratory's own anomaly look SMALLER than it really was. A further nine defects surfaced during publication when the suite was first run on a clean Linux checkout, including an integrity gate that reported success without examining anything -- the same failure mode this deposit documents. Full test suite: 543 passed, 0 failed in the laboratory with complete data. The published tree omits 377 MB of raw simulation output (.npz, .sqlite3), regenerable from seeds recorded in each preregistration; the read-only audit suite reads some of it and fails closed, which is the control working as designed. CI asserts the observed failure set is exactly the recorded excluded-data set. All historical artifacts are verified byte-identical; no baseline control was refreshed. Two preregistrations are labelled informed rather than blind and state what had already been seen.",
+  "notes": "NO PHYSICS DISCOVERY IS CLAIMED. The contribution is evidence about measurement instruments. Four genuine defects were found in the laboratory's own instruments, one of which had previously been counted as a pass. In two of them the defect made the laboratory's own anomaly look SMALLER than it really was. A further nine defects surfaced during publication when the suite was first run on a clean Linux checkout, including a continuous-integration integrity gate that reported success without examining anything -- the same failure mode this deposit documents. Full test suite: 543 passed, 0 failed in the laboratory with complete data. The published tree omits 377 MB of raw simulation output (.npz, .sqlite3), regenerable from seeds recorded in each preregistration; the read-only audit suite reads some of it and fails closed, which is the control working as designed. CI asserts the observed failure set is exactly the recorded excluded-data set, so a new failure fails the build and so does a recorded failure that stops failing. All historical artifacts are verified byte-identical; no baseline control was refreshed. Two preregistrations are labelled informed rather than blind and state what had already been seen.",
   "immutable_record_warning": "Zenodo records are immutable once published. Any future change to this deposit must be published as a NEW VERSION (new version DOI, same concept DOI), not as an edit to this record. The DOI is intentionally left empty here and must be replaced with the DOI Zenodo assigns at publication.",
   "verification_entrypoints": [
     "tools/verify_manifest.py",
@@ -61,5 +122,6 @@
     "byte_reproducible": true
   },
   "test_suite": "543 passed, 0 failed (laboratory, complete data)",
-  "published_test_suite": "543 collected; 20 excluded-data failures, exactly the recorded set"
+  "published_test_suite": "543 collected; 20 excluded-data failures, exactly the recorded set",
+  "doi": ""
 }

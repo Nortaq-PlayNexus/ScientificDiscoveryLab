@@ -4336,7 +4336,7 @@
     },
     {
       "path": "zenodo/DEPOSIT_23109117.md",
-      "sha256": "309446c7a49e9834432776e46fec132e83281cca5d93e38a2fa17449f6c37569"
+      "sha256": "4c701e8b3457ce06d8cba82ae6d2638d6253e0ca155d3fd49e9ec953ef3d73c7"
     },
     {
       "path": "zenodo/DEPOSIT_23109117.txt",
@@ -4352,7 +4352,7 @@
     },
     {
       "path": "zenodo/metadata.json",
-      "sha256": "f4436f0d9267b052f24e9a19ee95bef3e94b51f60f8f88acdd3645060a077ac1"
+      "sha256": "4b9062837ab9d46c978d073d9f2fb60ecb1c0842b5e582e69674cc389cfb4fc1"
     },
     {
       "path": "zenodo/package/code/finding1_erfc_caller_audit.py",
@@ -4548,7 +4548,7 @@
     },
     {
       "path": "zenodo/upload_to_zenodo.py",
-      "sha256": "caa6acb34715864c4f8835641754638da7f566385a69eaf6931dfc479df9b6a8"
+      "sha256": "a076a6f8841f605fc93522c08c58a5e3440b5f27fc96938150c48b341b79db39"
     },
     {
       "path": "zenodo/verify_historical_integrity.py",
@@ -4558,5 +4558,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46923255
+  "total_bytes": 46930665
 }
