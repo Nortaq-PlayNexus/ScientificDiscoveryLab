@@ -1,18 +1,18 @@
 {
-  "schema": "zenodo-deposit-metadata-v1",
+  "schema": "zenodo-deposit-metadata-v2",
   "upload_type": "dataset",
-  "title": "ScientificDiscoveryLab: Three Instrument Defects Found by Self-Audit",
+  "title": "ScientificDiscoveryLab: a preregistered computational research laboratory, and four defects its self-audit found in its own instruments",
   "version": "1.0.0",
-  "publication_date": "2026-09-28",
+  "publication_date": "2026-10-03",
   "creators": [
     {
-      "name": "ScientificDiscoveryLab",
-      "affiliation": "independent",
-      "orcid": null
+      "name": "ScientificDiscoveryLab contributors",
+      "affiliation": "independent"
     }
   ],
   "description_source": "description.md",
-  "license": "MIT",
+  "license": "mit-license",
+  "language": "eng",
   "keywords": [
     "reproducibility research",
     "measurement instrument validation",
@@ -28,18 +28,38 @@
     "negative results",
     "null results",
     "self-audit",
-    "scientific integrity"
+    "scientific integrity",
+    "portable research software",
+    "continuous integration",
+    "reproducible archives"
   ],
   "related_identifiers": [
     {
-      "relation": "isSupplementedBy",
+      "relation": "isSupplementTo",
+      "identifier": "https://doi.org/10.5281/zenodo.23101903",
+      "resource_type": "other",
+      "note": "SCOPE NOTE: the AI-consciousness indicator battery exists BOTH as its own deposit and as one investigation (EXP-C001, path 03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/) inside this laboratory record. Neither supersedes the other; they are the same work at different scopes. Cite the battery deposit when asking about consciousness methodology, and this deposit when asking about the laboratory, its audit trail, or its other 15 experiments. That deposit makes no claim about AI consciousness and scores no AI system."
+    },
+    {
+      "relation": "isSupplementTo",
       "identifier": "https://doi.org/10.5281/zenodo.22849652",
       "resource_type": "other",
       "note": "SCOPE NOTE: this identifier covers a DIFFERENT project (coherent optical vortex propagation, EXP-0007). It is listed only to make the boundary explicit. This deposit neither amends nor supersedes it, and the two share no data, code, or conclusions."
     }
   ],
-  "notes": "No scientific discovery is claimed. The contribution is evidence about measurement instruments, including three defects that had been making the authors' own results look better than they were. Two preregistrations in this deposit are labelled informed rather than blind and state what had already been seen. All historical artifacts are verified byte-identical; no baseline control was refreshed.",
-  "immutable_record_warning": "Zenodo records are immutable once published. Any future change to this deposit must be published as a NEW VERSION (new version DOI, same concept DOI), not as an edit to this record. The DOI field in CITATION.cff is intentionally left as 10.5281/zenodo.XXXXXXX and must be replaced with the DOI Zenodo assigns at upload.",
-  "verification_entrypoint": "package/scripts/verify_historical_integrity.py",
-  "test_suite": "495 passed, 0 errors"
+  "notes": "NO PHYSICS DISCOVERY IS CLAIMED. The contribution is evidence about measurement instruments. Four genuine defects were found in the laboratory's own instruments, one of which had previously been counted as a pass. In two of them the defect made the laboratory's own anomaly look SMALLER than it really was. A further nine defects surfaced during publication when the suite was first run on a clean Linux checkout, including an integrity gate that reported success without examining anything -- the same failure mode this deposit documents. Full test suite: 543 passed, 0 failed in the laboratory with complete data. The published tree omits 377 MB of raw simulation output (.npz, .sqlite3), regenerable from seeds recorded in each preregistration; the read-only audit suite reads some of it and fails closed, which is the control working as designed. CI asserts the observed failure set is exactly the recorded excluded-data set. All historical artifacts are verified byte-identical; no baseline control was refreshed. Two preregistrations are labelled informed rather than blind and state what had already been seen.",
+  "immutable_record_warning": "Zenodo records are immutable once published. Any future change to this deposit must be published as a NEW VERSION (new version DOI, same concept DOI), not as an edit to this record. The DOI is intentionally left empty here and must be replaced with the DOI Zenodo assigns at publication.",
+  "verification_entrypoints": [
+    "tools/verify_manifest.py",
+    "tools/verify_deposit_manifest.py",
+    "tools/check_expected_failures.py",
+    "zenodo-deposit/scripts/verify_historical_integrity.py"
+  ],
+  "archive": {
+    "filename": "ScientificDiscoveryLab-v1.0.0.zip",
+    "builder": "zenodo/build_zenodo_package.py",
+    "byte_reproducible": true
+  },
+  "test_suite": "543 passed, 0 failed (laboratory, complete data)",
+  "published_test_suite": "543 collected; 20 excluded-data failures, exactly the recorded set"
 }

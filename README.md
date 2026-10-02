@@ -12,6 +12,7 @@ self-audit that found four defects in its own instruments.**
 | Areas | 7 — percolation, optics, prime gaps, Feigenbaum constants, PRNG certification, water-sound response, AI-consciousness methodology |
 | Test suite | **543 passed, 0 failed** in the laboratory with full data |
 | Claims | none |
+| Zenodo | draft [`23109117`](zenodo/DEPOSIT_23109117.md) — awaiting publish, no DOI yet |
 
 ---
 

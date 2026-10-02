@@ -20,6 +20,14 @@ env/
 # Superseded archive
 *.rar
 
+# Zenodo upload artifacts. Rebuildable byte-for-byte from this tree with
+#   python zenodo/build_zenodo_package.py --tree <dir> --out <path> --verify
+# which asserts two independent builds are identical. The canonical copy lives on
+# Zenodo; carrying 6.7 MB of it in git history would be permanent and redundant.
+# The digests are recorded in zenodo/DEPOSIT_23109117.md.
+zenodo/*.zip
+zenodo/package.rar
+
 # Testing
 .pytest_cache/
 .coverage

@@ -11,8 +11,8 @@
     ".whl",
     ".zip"
   ],
-  "excluded_total_bytes": 377119815,
-  "file_count": 1130,
+  "excluded_total_bytes": 362096241,
+  "file_count": 1136,
   "files": [
     {
       "path": ".gitattributes",
@@ -24,7 +24,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "6e0df56a9882d217e0677a2727c6cb8fe2ff9a511204e5fd15275f46f7866a60"
+      "sha256": "d5fd79fd306e95d1c6d25652f1dae7484b220a76a54904316782cd26fcd0298f"
     },
     {
       "path": "00_FOUNDATION/falsification_rules.md",
@@ -3992,7 +3992,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "4459239678a80919c09a5892e62b4d709793e55b10640444210148640cff9e48"
+      "sha256": "054e757986cdadb446832fc0d28a5e706f2f53cbc87484e3a305da2b0134021f"
+    },
+    {
+      "path": "RELEASE.md",
+      "sha256": "bb4d81357658e3e119f26bd685f69143f55c222afdd0d13e0e2d649b01514cb7"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -4315,6 +4319,14 @@
       "sha256": "5a666f5e551fc5c033d992f9638c65b7af0b78989f3cab494838ceedacc1d0ca"
     },
     {
+      "path": "zenodo/.zenodo_token",
+      "sha256": "4e3dfe2af55a9525826afce30653ed602cef77ef68725cee12d20c4c76017b92"
+    },
+    {
+      "path": "zenodo/build_zenodo_package.py",
+      "sha256": "565ba5cdf4a8feeea69cde4136431f4b00dd1f8e563804a0a5e4e51cb96ab6f7"
+    },
+    {
       "path": "zenodo/CITATION.cff",
       "sha256": "0f1c97cd89a39fb9e5d93a5f81c08c733726154582d280def7cd2362f7b27324"
     },
@@ -4327,8 +4339,16 @@
       "sha256": "9b06b7b066eda0c1b7d1c327594c2deaf39dd5b9f363bde7c4bf920297f3aa93"
     },
     {
+      "path": "zenodo/DEPOSIT_23109117.md",
+      "sha256": "309446c7a49e9834432776e46fec132e83281cca5d93e38a2fa17449f6c37569"
+    },
+    {
+      "path": "zenodo/DEPOSIT_23109117.txt",
+      "sha256": "165bb5e3f5177079b314d9b4d181fa3e0169f1ea3a6fa63d8eb97a26bb338b68"
+    },
+    {
       "path": "zenodo/description.md",
-      "sha256": "9f2dd7db4cd4886bd20f86c78f9dfb64a9347f046177665652eb14114dd5f0c4"
+      "sha256": "c7337a4f18b66dc1f8cdcbabf7199c14161bf75ccff009d770780733b49d4284"
     },
     {
       "path": "zenodo/LICENSE",
@@ -4336,7 +4356,7 @@
     },
     {
       "path": "zenodo/metadata.json",
-      "sha256": "cf0ff82b32ed1355bec2f0a5bbe8426af843336a62986e9cbcf805ff8804ba44"
+      "sha256": "f4436f0d9267b052f24e9a19ee95bef3e94b51f60f8f88acdd3645060a077ac1"
     },
     {
       "path": "zenodo/package/code/finding1_erfc_caller_audit.py",
@@ -4531,6 +4551,10 @@
       "sha256": "05540eb5c32140aed1b0f6a719fc57d2c6badb24d22417fd0de6d84dfcf36c39"
     },
     {
+      "path": "zenodo/upload_to_zenodo.py",
+      "sha256": "caa6acb34715864c4f8835641754638da7f566385a69eaf6931dfc479df9b6a8"
+    },
+    {
       "path": "zenodo/verify_historical_integrity.py",
       "sha256": "7b964924d70802c9882208875bc315bd403ed70a5621b44849b933341d6b3244"
     }
@@ -4538,5 +4562,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46894154
+  "total_bytes": 46921157
 }
