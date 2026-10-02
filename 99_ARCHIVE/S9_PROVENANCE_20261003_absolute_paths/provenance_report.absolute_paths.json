@@ -1,9 +1,8 @@
 {
-  "audit_timestamp_utc": "2026-10-02T15:58:02+00:00",
+  "audit_timestamp_utc": "2026-09-24T02:16:56+00:00",
   "classification": {
     "battery_A_equals_B": "IMPLEMENTATION/SIMULATION_NULL_ONLY",
     "dose_response": "MODELLED_SYNTHETIC_RESPONSE_NOT_PHARMACOLOGICAL_EVIDENCE",
-    "external_package_available_for_this_audit": true,
     "hardcoded_rates_or_models_present": true,
     "q_s9_1": "SYNTHETIC_AND_HARDCODED_OUTPUT",
     "q_s9_3": "DERIVED_FROM_HARDCODED_RATES_NOT_RAW_MEASUREMENTS",
@@ -25,8 +24,7 @@
     "q_s9_1_results.json": {
       "experiment": "Q-S9-1 Minimum spectral structure for pareidolia",
       "method": "Speckle images with decreasing spectral complexity (FFT peak retention), measured 'code present' detection rate at each level",
-      "path": "CODE/dmt-laser-s9-battery/q_s9_1_results.json",
-      "path_is_repo_relative": true,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\CODE\\dmt-laser-s9-battery\\q_s9_1_results.json",
       "sha256": "634caf2c7cd693f100bb0dac38cd436dc170e8500c684ab3553b74c6b0259370",
       "size_bytes": 1278,
       "top_level_keys": [
@@ -43,8 +41,7 @@
     "q_s9_3_results.json": {
       "experiment": "Q-S9-3 Detector de-biasing experiment",
       "method": "Apply de-biasing corrections (wavelength, spatial frequency, temporal) to observed detection rates, re-test A==B and re-fit dose-response",
-      "path": "CODE/dmt-laser-s9-battery/q_s9_3_results.json",
-      "path_is_repo_relative": true,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\CODE\\dmt-laser-s9-battery\\q_s9_3_results.json",
       "sha256": "9ec12cb2b86beabc36dd26b05a40237ae94d8e207c27cab3af8ba4509f4e570f",
       "size_bytes": 2100,
       "top_level_keys": [
@@ -68,8 +65,6 @@
   "schema": "s9-provenance-audit/v1",
   "scope": "Read-only inspection of the external dmt-laser-s9-battery package and the two in-tree S9 result JSON files",
   "source_package": {
-    "available": true,
-    "missing_source_files": [],
     "path": "C:\\Users\\natha\\code\\dmt-laser-s9-battery",
     "raw_input_inventory": {
       "extensions_searched": [
@@ -93,11 +88,9 @@
       "raw_input_files": [],
       "search_root": "C:\\Users\\natha\\code\\dmt-laser-s9-battery"
     },
-    "resolved_from": "default",
     "source_files": {
       "README.md": {
         "path": "C:\\Users\\natha\\code\\dmt-laser-s9-battery\\README.md",
-        "path_is_repo_relative": false,
         "sha256": "c839dec481d92374285e4a2b036c0c0208c4719aae45f7e271d20f8b21fc1a84",
         "size_bytes": 1949
       },

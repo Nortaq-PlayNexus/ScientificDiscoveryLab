@@ -12,7 +12,7 @@
     ".zip"
   ],
   "excluded_total_bytes": 377119815,
-  "file_count": 1129,
+  "file_count": 1130,
   "files": [
     {
       "path": ".gitattributes",
@@ -2631,6 +2631,10 @@
       "sha256": "364e507a01d5158662bbdbd99e3ffcb4061b86ca8139e658616e0d35759ddcc7"
     },
     {
+      "path": "99_ARCHIVE/S9_PROVENANCE_20261003_absolute_paths/provenance_report.absolute_paths.json",
+      "sha256": "13c0fc54d06f7b0266eea80feb24bd7d71b4324d29aa59b9792c5c3466199e7b"
+    },
+    {
       "path": "AUDIT/_audit_list.txt",
       "sha256": "0ae7ca1c16ef43f3d961dfcea791ee2387ca92b2ca2bcd7bc57d4b2582e059d4"
     },
@@ -3504,7 +3508,7 @@
     },
     {
       "path": "AUDIT/S9_PROVENANCE_20260924/CODE/run_read_only_audit.py",
-      "sha256": "872b207c10ea9fdd73833ef8d86c25240b47b9e30db707018fc835191988ff3d"
+      "sha256": "44864035b455efaedfe70b889c6ca99c792ad08a51d78ff6c14a42f67b12f53c"
     },
     {
       "path": "AUDIT/S9_PROVENANCE_20260924/README.md",
@@ -3512,11 +3516,11 @@
     },
     {
       "path": "AUDIT/S9_PROVENANCE_20260924/RESULTS/provenance_report.json",
-      "sha256": "13c0fc54d06f7b0266eea80feb24bd7d71b4324d29aa59b9792c5c3466199e7b"
+      "sha256": "fd2ca2ca34f16dc72208075349c55926eddd0d9c30829152175013706b606c8d"
     },
     {
       "path": "AUDIT/S9_PROVENANCE_20260924/TESTS/test_s9_provenance_audit.py",
-      "sha256": "f90107542aa7252d8b738a4a9754fbbe33330d291be34d169e6adfbfc2c93c8e"
+      "sha256": "13264482ca8bd50f691708a346310711b346c07b97197dcc33c9428292afaaaa"
     },
     {
       "path": "AUDIT/STRONGEST_DEFENSIBLE_CLAIMS.md",
@@ -4534,5 +4538,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46879976
+  "total_bytes": 46894154
 }
