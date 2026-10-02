@@ -37,28 +37,27 @@ jobs:
       - name: Run test suite
         # Raw simulation data (.npz, .sqlite3 -- 377 MB, regenerable from the
         # seeds in each preregistration) is excluded from this repository. The
-        # read-only audit tests read some of it and therefore fail CLOSED with
-        # `required historical evidence is missing` or `unable to open database
-        # file`. That is the control working as designed, not a packaging fault.
+        # read-only audit tests read some of it and therefore fail CLOSED. That is
+        # the control working as designed, not a packaging fault, so the suite is
+        # EXPECTED to exit non-zero here.
         #
-        # So the suite is EXPECTED to exit non-zero here. The check below asserts
-        # that every failure carries that specific cause and nothing else, which
-        # is the meaningful assertion: a genuinely new failure will not match.
+        # The previous version of this step grepped the FAILED/ERROR summary lines
+        # for "historical evidence is missing". Those lines contain only the node
+        # id, never the exception text, so the grep matched nothing: the gate
+        # passed while all 20 real failures sat there unexamined. A gate that
+        # cannot fail is worse than no gate, because it reads as a green light.
+        #
+        # This step now compares the observed failure set against the recorded one,
+        # exactly. A failure not on the list fails the build; so does a listed test
+        # that stopped failing, since that can mean the control stopped firing.
         run: |
           set +e
           python -m pytest -q > pytest_output.txt 2>&1
           code=$?
-          echo "pytest exit: $code"
-          tail -3 pytest_output.txt
-          echo "--- failures not explained by excluded data ---"
-          unaccounted=$(grep -E "^(FAILED|ERROR)" pytest_output.txt \
-            | grep -vEi "historical evidence is missing|unable to open database file" || true)
-          if [ -n "$unaccounted" ]; then
-            echo "$unaccounted"
-            echo "::error::a test failed for a reason other than excluded raw data"
-            exit 1
-          fi
-          echo "(none) -- all failures accounted for"
+          echo "pytest exit: $code (non-zero expected: excluded data)"
+          tail -2 pytest_output.txt
+          set -e
+          python tools/check_expected_failures.py pytest_output.txt
 
   integrity:
     name: publishable manifest verifies

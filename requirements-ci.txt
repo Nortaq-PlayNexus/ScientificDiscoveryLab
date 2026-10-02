@@ -1,25 +1,48 @@
-# Dependencies required to RUN THE TEST SUITE.
+# Dependencies required to RUN THE TEST SUITE on CI.
 #
-# This is deliberately not requirements.txt. That file is the laboratory's full
-# environment -- RDKit, OpenMM, PySide6, torch, plotly -- because the working
-# installation has them. Most of it is irrelevant to the tests: the suite imports
-# numpy, scipy, pytest, and a handful of laboratory-internal modules.
+# Deliberately not requirements.txt. That file is the laboratory's full
+# environment -- RDKit, OpenMM, PySide6, torch, plotly, pubchempy -- because the
+# working installation has them. CI does not need all of it, and installing torch
+# per run costs minutes for nothing.
 #
-# Installing torch and PySide6 on every CI run costs minutes and buys nothing.
+# The list below was MEASURED, not guessed. A clean virtualenv was created holding
+# only these packages, then `pytest --collect-only` was run over the published
+# tree and every ModuleNotFoundError was recorded and resolved. An earlier,
+# guessed version of this file omitted rdkit, sqlalchemy and requests and broke
+# collection on 29 of 33 errors; the laboratory's own runs never caught it
+# because the working installation happens to have all three.
 #
-# Version floors are lower bounds deliberately, with one exception. numpy is
-# pinned at >=2.5.0 because numpy 2.5 declares Requires-Python >=3.12; there is no
-# 2.5.x for 3.11. The CI matrix therefore starts at 3.12, and that is the reason
-# rather than an accident -- see the note in .github/workflows/ci.yml.
+# What each package is here for:
+#   numpy       used throughout the physics and audit suites
+#   scipy       percolation, optics, statistics
+#   mpmath      feigenbaum_constants repair suite (in testpaths)
+#   pytest      the runner
+#   rdkit       tests/unit/test_molecular.py and test_molecular_engine.py import
+#               it at module scope, so collection fails without it
+#   sqlalchemy  tests/unit/test_database.py imports it at module scope
+#   psutil      imported by tests/unit and src/, transitively
+#   requests    src/literature/__init__.py and src/novelty/__init__.py import it
+#               at module scope, so 18 tests/unit files fail to collect without it
+#   pubchempy   src/database/__init__.py chain; 16 tests/unit files import it
+#   plotly      src/engines/visualization.py; 7 tests/unit files import it
+#   openmm      tests/unit/test_openmm_engine.py, 2 tests. Installed last because
+#               it is the largest wheel in this set and only 2 tests need it.
 #
-# Not listed, and why:
-#   rdkit       imported by 2 tests, skipped when absent (see conftest)
-#   sqlalchemy  1 test in src/, not in the default testpaths
-#   psutil      1 test, not in the default testpaths
-#   mpmath      1 test in the feigenbaum repair suite, which is in testpaths
-#               -- included below
+# NOT needed, and confirmed so by the same collection run once the above were
+# present: torch, PySide6, matplotlib, scikit-learn, scikit-image, sympy,
+# networkx, pandas, h5py, fastapi, uvicorn, biopython, openbabel.
 #
+# numpy is pinned at >=2.5.0 because numpy 2.5 declares Requires-Python >=3.12;
+# there is no 2.5.x build for 3.11, which is why the CI matrix starts at 3.12.
+# The laboratory runs on 3.14, which is in that matrix.
 numpy>=2.5.0
 scipy>=1.18.0
 pytest>=8.0.0
 mpmath>=1.3.0
+rdkit>=2024.3.0
+sqlalchemy>=2.0.0
+psutil>=5.9.0
+requests>=2.31.0
+pubchempy>=1.0.5
+plotly>=6.0.0
+openmm>=8.0.0

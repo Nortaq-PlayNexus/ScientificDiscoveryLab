@@ -12,7 +12,7 @@
     ".zip"
   ],
   "excluded_total_bytes": 377119815,
-  "file_count": 1127,
+  "file_count": 1129,
   "files": [
     {
       "path": ".gitattributes",
@@ -20,7 +20,7 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "701a5ff040979104c6ead8ae1f4bd787051dcbfd9e3a652f8318c5f77424cc6a"
+      "sha256": "1155b6c8ea1e8b85636c71461f4ccae69d8e7d2b4535d985fbd405ea3b3a0862"
     },
     {
       "path": ".gitignore",
@@ -3896,7 +3896,7 @@
     },
     {
       "path": "conftest.py",
-      "sha256": "17d4d7034ef82d14d82e9b6a75b8d03037ebd3b23741ff141aaa3d1cda8a3406"
+      "sha256": "8cd1d74b50878d438d255e6825f7d07dc9b63127b3fffdb7a60685d5cfd549d1"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -3976,7 +3976,7 @@
     },
     {
       "path": "pytest.ini",
-      "sha256": "c9e807744211731e99042ed968b2b1be08c9f61c824a9bb172c8cd9b9a9c580a"
+      "sha256": "9b3095cb205cbace676bc6f33f5b486cc68ec0ab41acaa0bb652afbadac57ea6"
     },
     {
       "path": "Q-P007_phase2.log",
@@ -3996,7 +3996,7 @@
     },
     {
       "path": "requirements-ci.txt",
-      "sha256": "b47e713fe6ce442eac18b6a91323b54b41539a41992402629910a2be1e5e7c9f"
+      "sha256": "8e9a822d2bd9193f007aae651b1ce7e5524ebab2d2f9db614f1a4bc89fc5427c"
     },
     {
       "path": "requirements.txt",
@@ -4291,6 +4291,14 @@
       "sha256": "831637b7ee5ec310e9db0bc73374e0c3a8e58c2972938726a3a5e698a5986b9b"
     },
     {
+      "path": "tools/check_expected_failures.py",
+      "sha256": "7c9a13bda7c708d2daf563d627bae5fc44dcaa075f8e8d708600c30023a41d57"
+    },
+    {
+      "path": "tools/expected_excluded_data_failures.txt",
+      "sha256": "07739a25aeec10269c132186d23c90914731a8cf56a7587e632b40e0c8589a51"
+    },
+    {
       "path": "tools/sync_published.py",
       "sha256": "7a54076ff086d8754dfa0ae45ef6dc1153abdb4ea408b5d34590ff3568f6de10"
     },
@@ -4526,5 +4534,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46870277
+  "total_bytes": 46879976
 }
