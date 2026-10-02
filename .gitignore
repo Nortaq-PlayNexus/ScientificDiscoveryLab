@@ -1,4 +1,46 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Raw simulation output: excluded from the publishable copy.
+# Regenerable from the seeds in each preregistration. The read-only audit suite
+# REQUIRES some of these; see tools/build_publishable.py output. Tests that read
+# them fail closed, which is correct behaviour for a read-only audit.
+*.npz
 *.sqlite3
+*.db
+
+# Superseded archive
+*.rar
+
+# Testing
 .pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit
+.env
+*.key
+*.pem
+credentials.json
+.zenodo_token
+*.token

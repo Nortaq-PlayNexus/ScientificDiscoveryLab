@@ -1,0 +1,12 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "files": 647,
+  "text_files": 575,
+  "json_valid": 119,
+  "json_invalid": 1,
+  "duplicate_hash_groups": 43,
+  "json_duplicate_groups": 2,
+  "ast_records": 358,
+  "text_hits": 5409,
+  "syntax_errors": 0
+}

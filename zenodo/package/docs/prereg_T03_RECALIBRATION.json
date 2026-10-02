@@ -1,0 +1,53 @@
+{
+  "schema": "t03-runs-recalibration-prereg-v1",
+  "experiment_id": "T03-RECALIBRATION",
+  "audit_finding_id": "N-004",
+  "question_id": "Q-I004",
+  "supersedes_experiment_id": "T03-FORMULA-AUDIT",
+  "frozen_before_execution": true,
+  "note": "Corrected re-derivation of the single N-004 per-test cell for T03_runs. Frozen before execution. The shared battery is not modified; every variant below is computed in this isolated directory. No generator may be called certified and the withdrawn EXP-0004 certificate is not reinstated.",
+  "question": "What should the N-004 T03_runs cell for G_LAB have recorded, once the spurious sqrt(2) is removed and the standard's applicability precondition is enforced?",
+  "prior_result_under_review": "N-004 recorded T03_runs for G_LAB as 'calibrated' at both 2^18 and 2^22, with the note 'borderline/unstable'.",
+  "variants": [
+    {
+      "id": "as_implemented",
+      "definition": "engine.validation.rng_battery.t_runs, unmodified",
+      "purpose": "reproduce the historical estimator so the historical cell can be described rather than merely criticised"
+    },
+    {
+      "id": "sqrt2_corrected",
+      "definition": "SP 800-22 section 2.3 with the spurious sqrt(2) removed",
+      "purpose": "isolate how much of the recorded non-uniformity the sqrt(2) explains"
+    },
+    {
+      "id": "sqrt2_corrected_and_applicability_gated",
+      "definition": "as above, and the test is only scored on streams that satisfy |pi - 1/2| >= 2/sqrt(n-1)",
+      "purpose": "the status the standard actually licenses once its own precondition is honoured"
+    }
+  ],
+  "design": {
+    "seeds": 200,
+    "bit_lengths": ["2^18", "2^22"],
+    "generator": "G_LAB, sha256-derived PCG64, fresh seeds not used by N-004",
+    "paired": "all three variants are evaluated on identical bit streams within a seed",
+    "uniformity_statistic": "one-sample Kolmogorov-Smirnov of the p-values against Uniform(0,1), unadjusted, reported as a diagnostic only",
+    "why_unadjusted": "the three variants are not independent families and no multiplicity claim is made from them; they are three views of one cell",
+    "no_certification": "no variant may be described as certifying any generator"
+  },
+  "decision_rule": {
+    "recorded_cell_should_be": "one of CALIBRATED, MISCALIBRATED, or UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION",
+    "CALIBRATED": "the variant's p-values are not rejected against uniformity AND the SP 800-22 applicability precondition is met by a non-trivial fraction of seeds (at least 5 of 200)",
+    "MISCALIBRATED": "the variant's p-values are rejected against uniformity at KS p <= 0.01",
+    "UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION": "the applicability precondition is met by fewer than 5 of 200 seeds, so the test cannot be scored as a uniform p-value instrument at this length. Per the N-004 preregistration, UNRESOLVED_AT_THIS_RESOLUTION is a real outcome and must not be reported as agreement.",
+    "status_of_record": "the status that should replace N-004's 'calibrated' is the status of the sqrt2_corrected_and_applicability_gated variant, because that is the variant which honours the standard. The other two are recorded as diagnostics explaining the history."
+  },
+  "claim_guards": [
+    "The spurious sqrt(2) is a deterministic property of the code, provable as an exact algebraic identity. Its empirical non-detection at 2^22 is a resolution failure of a 200-seed KS test and is never evidence of correctness.",
+    "A defective or inapplicable instrument is not evidence that G_LAB is defective; the reverse is the finding.",
+    "Only the T03_runs cell is re-derived. The other 23 per-test cells are neither revalidated nor invalidated.",
+    "The N-004 family-level BATTERY_VALID verdict is not overturned by this experiment.",
+    "The EXP-0004 certificate stays withdrawn.",
+    "No stored N-004 row is modified and the raw database is opened read-only."
+  ],
+  "falsification": "if the applicability precondition were met by a substantial fraction of seeds, and the corrected variant were then uniform, the cell would be CALIBRATED and the historical 'borderline/unstable' note would be an ordinary statistical fluctuation. That outcome is preregistered as reportable and would retire the concern about this cell."
+}

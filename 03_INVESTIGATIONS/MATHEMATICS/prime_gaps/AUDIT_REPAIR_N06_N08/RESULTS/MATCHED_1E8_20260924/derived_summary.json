@@ -1,0 +1,908 @@
+{
+  "analysis_id": "PGA-AUDIT-N06-N08-20260924",
+  "bh_families": {
+    "continuous_exp1_operational_diagnostic": {
+      "alpha": 0.01,
+      "largest_qualifying_rank": 4,
+      "log10_adjusted_p_values": [
+        -502.4012787434008,
+        -2705.863356913188,
+        -22860.19184179204,
+        -184924.42067107742
+      ],
+      "m": 4,
+      "method": "Benjamini-Hochberg step-up",
+      "rejected": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "threshold_log10_at_largest_rank": -2.0,
+      "warning": "The continuous null assigns mass to structurally impossible first bins; this is not a Gallagher-model conclusion."
+    },
+    "parity_geometric_diagnostic": {
+      "alpha": 0.01,
+      "largest_qualifying_rank": 4,
+      "log10_adjusted_p_values": [
+        -164.06938343969742,
+        -1130.1198221560137,
+        -6010.47822432272,
+        -37055.216798066605
+      ],
+      "m": 4,
+      "method": "Benjamini-Hochberg step-up",
+      "rejected": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "threshold_log10_at_largest_rank": -2.0,
+      "warning": "The local parity surrogate is discrete but not a complete prime-process null; p-values remain descriptive."
+    }
+  },
+  "corrected_definitions": {
+    "bh": "step-up BH over four block-level families",
+    "normalization": "lower prime",
+    "survival": "log-survival; underflow represented by JSON null plus log10 p"
+  },
+  "matched_range": {
+    "blocks": [
+      {
+        "hi": 100000,
+        "label": "B1",
+        "lo": 10000
+      },
+      {
+        "hi": 1000000,
+        "label": "B2",
+        "lo": 100000
+      },
+      {
+        "hi": 10000000,
+        "label": "B3",
+        "lo": 1000000
+      },
+      {
+        "hi": 100000000,
+        "label": "B4",
+        "lo": 10000000
+      }
+    ],
+    "why_matched": "same four EXP-0008 lower-prime decade blocks, with corrected boundary inclusion"
+  },
+  "novelty_claim": false,
+  "production_10e10_run": false,
+  "qm007_exploratory_40_cell_numerical_screen": {
+    "bh": {
+      "alpha": 0.01,
+      "largest_qualifying_rank": 38,
+      "log10_adjusted_p_values": [
+        -182.8366899657234,
+        -9.51790716499379,
+        -85.08046289417035,
+        -2.775395618722587,
+        -169.39904169343788,
+        -14.620923449283612,
+        -24.47189210048944,
+        -4.229726021779349,
+        -6.440185783885697,
+        -22.284214967550387,
+        -1497.6899699726073,
+        -0.2795266539287711,
+        -0.18554340438805245,
+        -590.6761175367025,
+        -94.59722488337637,
+        -317.43920952550053,
+        -37.382106380038266,
+        -40.63458807853742,
+        -22.669549264523486,
+        -126.6136148940775,
+        -12728.069258586502,
+        -226.5086496536596,
+        -246.15276015707605,
+        -6519.812063242698,
+        -155.16087575333856,
+        -1964.6340937627847,
+        -89.68381567539834,
+        -181.97204346717078,
+        -89.12097805123942,
+        -688.0719473127236,
+        -110678.60574008916,
+        -329.2541461953776,
+        -38066.73087536273,
+        -7442.517756938494,
+        -18610.646255804044,
+        -13.958897879755735,
+        -3059.4665203024792,
+        -1373.9320980446928,
+        -1355.7467655754456,
+        -4026.515743649899
+      ],
+      "m": 40,
+      "method": "Benjamini-Hochberg step-up",
+      "rejected": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "threshold_log10_at_largest_rank": -2.0222763947111524
+    },
+    "cells": [
+      {
+        "bh_step_up_log10_adjusted_p": -182.8366899657234,
+        "bh_step_up_rejected": true,
+        "bin": 1,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 0,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -183.15999635609853,
+          "p_value": 6.918367756771636e-184,
+          "p_value_representable": true,
+          "statistic": 836.3
+        },
+        "structurally_empty_under_parity_floor": true,
+        "z_squared": 836.3
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -9.51790716499379,
+        "bh_step_up_rejected": true,
+        "bin": 2,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 1019,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -9.575899111971477,
+          "p_value": 2.655222307162764e-10,
+          "p_value_representable": true,
+          "statistic": 39.91305751524575
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 39.91305751524575
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -85.08046289417035,
+        "bh_step_up_rejected": true,
+        "bin": 3,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 268,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -85.25115912133933,
+          "p_value": 5.608424510801831e-86,
+          "p_value_representable": true,
+          "statistic": 386.18305631950255
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 386.18305631950255
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -2.775395618722587,
+        "bh_step_up_rejected": true,
+        "bin": 4,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 745,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -2.7976720134337394,
+          "p_value": 0.0015934116442892228,
+          "p_value_representable": true,
+          "statistic": 9.967344254454133
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 9.967344254454133
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -169.39904169343788,
+        "bh_step_up_rejected": true,
+        "bin": 5,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 1641,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -169.67888239003193,
+          "p_value": 2.0946796328716974e-170,
+          "p_value_representable": true,
+          "statistic": 774.2940212842283
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 774.2940212842283
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -14.620923449283612,
+        "bh_step_up_rejected": true,
+        "bin": 6,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 1066,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -14.704469500733687,
+          "p_value": 1.974833561484167e-15,
+          "p_value_representable": true,
+          "statistic": 63.08990792777714
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 63.08990792777714
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -24.47189210048944,
+        "bh_step_up_rejected": true,
+        "bin": 7,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 1137,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -24.59683083709774,
+          "p_value": 2.5302833802061656e-25,
+          "p_value_representable": true,
+          "statistic": 108.11968193232099
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 108.11968193232099
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -4.229726021779349,
+        "bh_step_up_rejected": true,
+        "bin": 8,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 953,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -4.263584289040317,
+          "p_value": 5.450241056799266e-05,
+          "p_value_representable": true,
+          "statistic": 16.284694487624073
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 16.284694487624073
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -6.440185783885697,
+        "bh_step_up_rejected": true,
+        "bin": 9,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 984,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -6.485943274446372,
+          "p_value": 3.266304923632783e-07,
+          "p_value_representable": true,
+          "statistic": 26.08548367810596
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 26.08548367810596
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -22.284214967550387,
+        "bh_step_up_rejected": true,
+        "bin": 10,
+        "block": "B1",
+        "expected_continuous": 836.3,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 550,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -22.381124980558443,
+          "p_value": 4.157909376365977e-23,
+          "p_value_representable": true,
+          "statistic": 98.01230419705844
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 98.01230419705844
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -1497.6899699726073,
+        "bh_step_up_rejected": true,
+        "bin": 1,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 0,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -1498.2920299639352,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 6890.6
+        },
+        "structurally_empty_under_parity_floor": true,
+        "z_squared": 6890.6
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -0.2795266539287711,
+        "bh_step_up_rejected": false,
+        "bin": 2,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 6945,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -0.2905220382302342,
+          "p_value": 0.5122452757694943,
+          "p_value_representable": true,
+          "statistic": 0.4294778393753752
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 0.4294778393753752
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -0.18554340438805245,
+        "bh_step_up_rejected": false,
+        "bin": 3,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 6928,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -0.18554340438805245,
+          "p_value": 0.6523138439964257,
+          "p_value_representable": true,
+          "statistic": 0.20299538501726594
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 0.20299538501726594
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -590.6761175367025,
+        "bh_step_up_rejected": true,
+        "bin": 4,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 11215,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -591.1320494923522,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 2713.905227411255
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 2713.905227411255
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -94.59722488337637,
+        "bh_step_up_rejected": true,
+        "bin": 5,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 5169,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -94.81907363299273,
+          "p_value": 1.5167931790899596e-95,
+          "p_value_representable": true,
+          "statistic": 430.1376600005807
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 430.1376600005807
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -317.43920952550053,
+        "bh_step_up_rejected": true,
+        "bin": 6,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 10058,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -317.83714953417257,
+          "p_value": 1.45496e-318,
+          "p_value_representable": true,
+          "statistic": 1455.9577917743009
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 1455.9577917743009
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -37.382106380038266,
+        "bh_step_up_rejected": true,
+        "bin": 7,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 7964,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -37.521768373467275,
+          "p_value": 3.007679990383694e-38,
+          "p_value_representable": true,
+          "statistic": 167.2114997242619
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 167.2114997242619
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -40.63458807853742,
+        "bh_step_up_rejected": true,
+        "bin": 8,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 8011,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -40.78949003852316,
+          "p_value": 1.6237155934603075e-41,
+          "p_value_representable": true,
+          "statistic": 182.17516036339347
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 182.17516036339347
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -22.669549264523486,
+        "bh_step_up_rejected": true,
+        "bin": 9,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 7720,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -22.780247562017177,
+          "p_value": 1.6586411583601395e-23,
+          "p_value_representable": true,
+          "statistic": 99.8322874640814
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 99.8322874640814
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -126.6136148940775,
+        "bh_step_up_rejected": true,
+        "bin": 10,
+        "block": "B2",
+        "expected_continuous": 6890.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 4896,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -126.85394704938787,
+          "p_value": 1.399757975266905e-127,
+          "p_value_representable": true,
+          "statistic": 577.3704989405859
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 577.3704989405859
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -12728.069258586502,
+        "bh_step_up_rejected": true,
+        "bin": 1,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 0,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -12729.069258586502,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 58608.1
+        },
+        "structurally_empty_under_parity_floor": true,
+        "z_squared": 58608.1
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -226.5086496536596,
+        "bh_step_up_rejected": true,
+        "bin": 2,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 50811,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -226.85543713988426,
+          "p_value": 1.3949635511206952e-227,
+          "p_value_representable": true,
+          "statistic": 1037.3100033954347
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 1037.3100033954347
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -246.15276015707605,
+        "bh_step_up_rejected": true,
+        "bin": 3,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 50478,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -246.52437122702574,
+          "p_value": 2.989707996050001e-247,
+          "p_value_representable": true,
+          "statistic": 1127.805303533129
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 1127.805303533129
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -6519.812063242698,
+        "bh_step_up_rejected": true,
+        "bin": 4,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 100552,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -6520.635971983643,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 30017.877174144873
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 30017.877174144873
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -155.16087575333856,
+        "bh_step_up_rejected": true,
+        "bin": 5,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 65053,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -155.4205130638443,
+          "p_value": 3.7974051597196333e-156,
+          "p_value_representable": true,
+          "statistic": 708.7200576370847
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 708.7200576370847
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -1964.6340937627847,
+        "bh_step_up_rejected": true,
+        "bin": 6,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 81627,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -1965.2819112446734,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 9040.89634726258
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 9040.89634726258
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -89.68381567539834,
+        "bh_step_up_rejected": true,
+        "bin": 7,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 63495,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -89.88793565805426,
+          "p_value": 1.2943875943982814e-90,
+          "p_value_representable": true,
+          "statistic": 407.4827815609108
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 407.4827815609108
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -181.97204346717078,
+        "bh_step_up_rejected": true,
+        "bin": 8,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 65592,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -182.27307346283476,
+          "p_value": 5.332446871581171e-183,
+          "p_value_representable": true,
+          "statistic": 832.2204475149343
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 832.2204475149343
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -89.12097805123942,
+        "bh_step_up_rejected": true,
+        "bin": 9,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 63479,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -89.30806469459657,
+          "p_value": 4.919662445627431e-90,
+          "p_value_representable": true,
+          "statistic": 404.81890404227426
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 404.81890404227426
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -688.0719473127236,
+        "bh_step_up_rejected": true,
+        "bin": 10,
+        "block": "B3",
+        "expected_continuous": 58608.1,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 44994,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -688.5600639517447,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 3162.4249687329902
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 3162.4249687329902
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -110678.60574008916,
+        "bh_step_up_rejected": true,
+        "bin": 1,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 0,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -110680.20780008049,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 509687.6
+        },
+        "structurally_empty_under_parity_floor": true,
+        "z_squared": 509687.6
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -329.2541461953776,
+        "bh_step_up_rejected": true,
+        "bin": 2,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 537434,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -329.68011492764987,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 1510.459962063039
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 1510.459962063039
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -38066.73087536273,
+        "bh_step_up_rejected": true,
+        "bin": 3,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 808597,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -38068.031905358395,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 175297.23973736074
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 175297.23973736074
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -7442.517756938494,
+        "bh_step_up_rejected": true,
+        "bin": 4,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 377530,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -7443.420846925486,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 34267.326177368246
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 34267.326177368246
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -18610.646255804044,
+        "bh_step_up_rejected": true,
+        "bin": 5,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 718684,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -18611.77119454065,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 85698.5636161445
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 85698.5636161445
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -13.958897879755735,
+        "bh_step_up_rejected": true,
+        "bin": 6,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 515219,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -14.029478954041442,
+          "p_value": 9.343746470587885e-15,
+          "p_value_representable": true,
+          "statistic": 60.02968477161355
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 60.02968477161355
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -3059.4665203024792,
+        "bh_step_up_rejected": true,
+        "bin": 7,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 594409,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -3060.165490306815,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 14082.57846170871
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 14082.57846170871
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -1373.9320980446928,
+        "bh_step_up_rejected": true,
+        "bin": 8,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 566446,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -1374.4927653508626,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 6320.569640226686
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 6320.569640226686
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -1355.7467655754456,
+        "bh_step_up_rejected": true,
+        "bin": 9,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 566068,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -1356.269644320726,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 6236.662426474575
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 6236.662426474575
+      },
+      {
+        "bh_step_up_log10_adjusted_p": -4026.515743649899,
+        "bh_step_up_rejected": true,
+        "bin": 10,
+        "block": "B4",
+        "expected_continuous": 509687.6,
+        "interpretation": "exploratory numerical screen only; nested/correlated cells",
+        "observed": 412489,
+        "one_df_survival": {
+          "dof": 1,
+          "log10_p_value": -4027.2727056012127,
+          "p_value": null,
+          "p_value_representable": false,
+          "statistic": 18535.997034183285
+        },
+        "structurally_empty_under_parity_floor": false,
+        "z_squared": 18535.997034183285
+      }
+    ],
+    "family_size": 40,
+    "warning": "This corrects the malformed one-df survival arithmetic only. The 40 cells are nested and dependent; the first bin is structurally empty at these scales. No confirmatory or discovery interpretation is permitted."
+  },
+  "schema_version": "prime-gap-audit-repair/derived-v1",
+  "scope_findings": [
+    "N-06",
+    "N-07",
+    "N-08"
+  ],
+  "status": "DESCRIPTIVE_ONLY",
+  "unresolved_statistical_issues": [
+    "The parity/geometric surrogate does not include wheel, singular-series, or consecutive-pair corrections.",
+    "Prime gaps are serially/arithmetic dependent; Pearson chi-square p-values are not dependence-calibrated scientific p-values.",
+    "The fixed-bin screen is exploratory and the bin edges themselves are scale-sensitive.",
+    "No 10^9/10^10 scientific replication was run here; the planned 10^10 run was not executed.",
+    "No novelty or mechanism claim follows from this audit repair."
+  ]
+}

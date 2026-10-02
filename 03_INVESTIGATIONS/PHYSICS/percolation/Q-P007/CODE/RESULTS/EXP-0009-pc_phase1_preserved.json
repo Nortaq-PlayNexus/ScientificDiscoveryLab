@@ -1,0 +1,17 @@
+{
+  "experiment": "EXP-0009-pc",
+  "source": "run.log preserved 2026-09-19",
+  "phase": 1,
+  "width_curves": {
+    "512": {
+      "mu": 0.592883,
+      "sigma": 0.004519
+    },
+    "1024": {
+      "mu": 0.592673,
+      "sigma": 0.003031
+    }
+  },
+  "L2048_width_curve": "NOT COMPLETED in Phase 1 \u2014 completed in Phase 2 runner",
+  "note": "Preserved from run.log before Phase 2 execution"
+}

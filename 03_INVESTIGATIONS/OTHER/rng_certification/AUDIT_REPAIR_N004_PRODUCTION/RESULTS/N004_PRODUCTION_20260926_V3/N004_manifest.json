@@ -1,0 +1,24 @@
+{
+  "alpha": 0.01,
+  "audit_finding_id": "N-004",
+  "battery_module": "C:\\Users\\natha\\ScientificDiscoveryLab\\04_SHARED_ENGINE\\engine\\validation\\rng_battery.py",
+  "battery_sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e",
+  "environment": {
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "evaluation_errors": [],
+  "evaluations": 1040,
+  "manifest_sha256": "10f070e080cc0e691bd78249abbccdba00406f1cb2e52cc55d17709bb10a9b9a",
+  "prereg_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OTHER\\rng_certification\\AUDIT_REPAIR_N004_PRODUCTION\\CONFIG\\prereg_N004_PRODUCTION.json",
+  "prereg_sha256": "91b5ebd0be6020f578d80fd0b083d26ff5f2837b86c0b3577ae730d450a60136",
+  "question_id": "Q-I004",
+  "raw_rows_written": 24960,
+  "raw_sqlite_bytes": 2023424,
+  "raw_sqlite_sha256": "a744dd3b87cfb576b346fff6e431fecfb27984cd1dffbddbab6aca5e29a18965",
+  "runner_sha256": "8bbc4cfd01c8212d523b0411494baf86862b0d50cf271c2cdad8c1eb6946a9fa",
+  "schema": "n004-calibration-manifest-v1",
+  "wall_seconds": 376.90314000000035,
+  "workers": 8
+}

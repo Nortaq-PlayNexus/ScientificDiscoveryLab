@@ -1,0 +1,43 @@
+{
+  "determinism_bitwise_equal": true,
+  "determinism_max_abs_difference": 0.0,
+  "hermitian_corrected_over_target_power": {
+    "mean": 0.9973914320292326,
+    "std": 0.024516910952642686
+  },
+  "hermitian_historical_symmetrization_over_target_power": {
+    "mean": 0.9973963353310005,
+    "std": 0.024522048622920012
+  },
+  "hermitian_self_conjugate_power_fraction": 4.5581439222701296e-05,
+  "legacy_nested_normalization_over_target_power": {
+    "interpretation": "The historical complex_field passes S/2 into real_gaussian, which itself applies sqrt(S/2); this is a factor-1/2 power normalization, not a density-ratio cause because global amplitude cancels.",
+    "mean": 0.5004132402283505,
+    "std": 0.00923556494425232
+  },
+  "synthetic_unit_vortex": {
+    "winding_abs_charge_max": 1.0,
+    "winding_abs_density": 0.00031887755102040814,
+    "winding_charge_imbalance": 1.0,
+    "winding_charge_sum_density": 0.00031887755102040814,
+    "winding_density": 0.00031887755102040814,
+    "winding_edge_phase_max_abs": 1.5707963267948966,
+    "winding_minus_density": 0.0,
+    "winding_plus_density": 0.00031887755102040814,
+    "winding_zero_vertex_samples": 0.0
+  },
+  "synthetic_unit_vortex_contour": {
+    "contour_density": 0.00031887755102040814
+  },
+  "synthetic_vertex_zero_edge_case": {
+    "winding_abs_charge_max": 0.0,
+    "winding_abs_density": 0.0,
+    "winding_charge_imbalance": 0.0,
+    "winding_charge_sum_density": 0.0,
+    "winding_density": 0.0,
+    "winding_edge_phase_max_abs": 0.7853981633974483,
+    "winding_minus_density": 0.0,
+    "winding_plus_density": 0.0,
+    "winding_zero_vertex_samples": 1.0
+  }
+}

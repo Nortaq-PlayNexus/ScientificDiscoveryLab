@@ -1,0 +1,57 @@
+{
+  "schema": "n003-feigenbaum-integration-review/v1",
+  "review_date": "2026-09-24",
+  "status": "PASS_REVIEW_COMPLETE",
+  "scope": "Independent integration review of the isolated N-003 repair; no production convergence or discovery claim",
+  "reviewed_files": {
+    "solver": {
+      "path": "CODE/feigenbaum_n003_solver.py",
+      "sha256": "491d09a34d92f3ee788be4cb32d7c1c3650499bf0a436fb0f3325e41a2888db7"
+    },
+    "runner": {
+      "path": "CODE/run_n003_audit.py",
+      "sha256": "3e4c277a323cbe5256c63fcb37defd4f4bb5ec592e8564205f9a40aba19ab6cc"
+    },
+    "preregistration": {
+      "path": "CONFIG/prereg_N-003_feigenbaum_audit_repair.json",
+      "sha256": "9a33f2c177bd2450b9d21d15bfe7fe4c05c9e9e2c18616c2ccc883f35a344609"
+    },
+    "result": {
+      "path": "RESULTS/N003_feigenbaum_audit_repair_results.json",
+      "sha256": "ac74f6e99e36502ec0ed3d3b116688cb9f58050b8340a82979d8c53ff3a807e3"
+    }
+  },
+  "verification": {
+    "focused_test_count": 7,
+    "focused_test_status": "PASS",
+    "all_requested_families_complete": true,
+    "all_completed_periods_verified": true,
+    "all_resolution_checks_passed": true,
+    "alpha_estimated": false,
+    "historical_exp0014_modified": false
+  },
+  "finite_results": {
+    "z2": {
+      "n_max_completed": 10,
+      "delta_10": "4.669195156030017174021108801191492093392147908605756405516325961597435502075013574720115107441916156",
+      "classification": "known-limit finite-n reproduction"
+    },
+    "z3": {
+      "n_max_completed": 10,
+      "delta_9": "6.084694325425054743374656780613045455957363600200927816983324812386904242365601734692897042341814002",
+      "delta_10": "6.08469097956731282444923926282733732778231285656988967088229172724195195636337163848840674837438926",
+      "classification": "period-certified finite sequence; nonmonotone at n=9 to n=10; no convergence claim"
+    },
+    "z4": {
+      "n_max_completed": 10,
+      "delta_6": "7.286840645653680389006094622026329131170174370955977124893502416796914003405731492446284004779013506",
+      "delta_10": "7.284724481543233983067019693384028906052800144731693923610066231867526499863537820118098963671613885",
+      "classification": "period-certified finite sequence; nonmonotone after n=6; no convergence claim"
+    }
+  },
+  "limitations": [
+    "The repair does not prove that a finite scan omitted an unresolved sign change.",
+    "No alpha estimate is reported because no spatial scaling variable is defined.",
+    "The historical EXP-0014 record remains evidence and is not replaced by this repair."
+  ]
+}

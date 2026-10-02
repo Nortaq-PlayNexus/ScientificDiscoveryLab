@@ -1,0 +1,481 @@
+{
+  "scope": "Independent static/provenance checks; no historical file modified.",
+  "reproduction_file_comparisons": {
+    "03_INVESTIGATIONS\\OPTICS\\speckle_contrast_law\\RESULTS\\EXP-0002_results.json": {
+      "original_sha256": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+      "copy_sha256": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\OPTICS\\speckle_contrast_law\\REPLICATION\\independent_check.json": {
+      "original_sha256": "f88ff88003117db421487afb1a3537c30a291bfb482dd85d900b22d1be0b2710",
+      "copy_sha256": "f88ff88003117db421487afb1a3537c30a291bfb482dd85d900b22d1be0b2710",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\OPTICS\\vortex_density\\RESULTS\\EXP-0003_results.json": {
+      "original_sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+      "copy_sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\OPTICS\\vortex_density\\REPLICATION\\independent_check.json": {
+      "original_sha256": "a1782532e77e5eea03dbd7e83ecaf9027f5baeb78beef8950f7a373607a08c91",
+      "copy_sha256": "a1782532e77e5eea03dbd7e83ecaf9027f5baeb78beef8950f7a373607a08c91",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\OTHER\\rng_certification\\RESULTS\\EXP-0004_results.json": {
+      "original_sha256": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+      "copy_sha256": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\OTHER\\rng_certification\\REPLICATION\\independent_check.json": {
+      "original_sha256": "d20deccdf38ad7ca82a5dba7667ec50cd3c7e79825b3a9ea97472751e0ed3b23",
+      "copy_sha256": "d20deccdf38ad7ca82a5dba7667ec50cd3c7e79825b3a9ea97472751e0ed3b23",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\PHYSICS\\percolation\\CODE\\RESULTS\\EXP-0005_results.json": {
+      "original_sha256": "0995f275c20280d012c1533e41a6b7350659276aac9a2500f78a4f626d9b528f",
+      "copy_sha256": "0995f275c20280d012c1533e41a6b7350659276aac9a2500f78a4f626d9b528f",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\PHYSICS\\percolation\\REPLICATION\\C7_exp0006_report.json": {
+      "original_sha256": "8e4fb188ae554e71bf5fe23624e6b15f2a9f6f0078bf3623049492852d3f7ea2",
+      "copy_sha256": "8e4fb188ae554e71bf5fe23624e6b15f2a9f6f0078bf3623049492852d3f7ea2",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "03_INVESTIGATIONS\\MATHEMATICS\\feigenbaum_constants\\CODE\\03_INVESTIGATIONS\\MATHEMATICS\\feigenbaum_constants\\RESULTS\\EXP-0014_results.json": {
+      "original_sha256": "6e9562a62351aa2828028df10baf881d0e2168dfdad2eb07a14aa8262809a003",
+      "copy_sha256": "6e9562a62351aa2828028df10baf881d0e2168dfdad2eb07a14aa8262809a003",
+      "byte_identical": true,
+      "semantic_difference_count": 0,
+      "first_differences": []
+    },
+    "feigenbaum_current_runner_vs_stored_nested_result": {
+      "semantic_difference_count": 6,
+      "first_differences": [
+        {
+          "path": "/controls/C4/a_brentq",
+          "stored": 1.400253081214783,
+          "rerun": "<MISSING>"
+        },
+        {
+          "path": "/controls/C4/a_newton",
+          "stored": 1.310702641336833,
+          "rerun": "<MISSING>"
+        },
+        {
+          "path": "/controls/C4/description",
+          "stored": "Method variation (brentq vs newton, z=2, n=5)",
+          "rerun": "Method variation (brentq, different starting points, z=2, n=5)"
+        },
+        {
+          "path": "/controls/C4/difference",
+          "stored": 0.08955043987795008,
+          "rerun": "<MISSING>"
+        },
+        {
+          "path": "/controls/C4/note",
+          "stored": "<MISSING>",
+          "rerun": "Deterministic root-finding with period verification; all starting points converge to the same a_5 within xtol=1e-14"
+        },
+        {
+          "path": "/controls/C4/pass",
+          "stored": "False",
+          "rerun": true
+        }
+      ]
+    }
+  },
+  "percolation": {
+    "exp0009_raw_recompute": {
+      "L": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "files": [
+        {
+          "L": 128,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_cells_L128_n1500.npz",
+          "sha256": "787b621b0c272718865be0257e044a4e22e7bbb343826af90049afbab9831271"
+        },
+        {
+          "L": 256,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_cells_L256_n700.npz",
+          "sha256": "03d2e6c63ef8218047ed46d0bc2eb73efa6e98850c1b743d2a6240352eaa9956"
+        },
+        {
+          "L": 512,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_cells_L512_n150.npz",
+          "sha256": "24bd00f6509efa683ff975af02e82d8ea773c900a15285fda3e74a02ebb4e22c"
+        },
+        {
+          "L": 1024,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_cells_L1024_n60.npz",
+          "sha256": "70fdc433cee432fad4757577c67eee87aa756f71636ded95ec2d636f43bed3db"
+        }
+      ],
+      "Df_mean": 1.869894289582019,
+      "Df_se": 0.022197574719126974,
+      "Df_ci95_normal": [
+        1.8263870431325302,
+        1.9134015360315078
+      ],
+      "gamma_nu_mean": 1.759732981778009,
+      "gamma_nu_se": 0.03274401022361711,
+      "beta_nu_mean": 0.12987094924999545,
+      "beta_nu_se": 0.022255470406127877
+    },
+    "exp0010_raw_recompute": {
+      "L": [
+        127,
+        191,
+        253,
+        449
+      ],
+      "files": [
+        {
+          "L": 127,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_df_nontriv_L127_n200.npz",
+          "sha256": "b660de93abc733fad230120ec5dd4dfe46cbf8fd0fdcf9aa31d03b73d0d478bc"
+        },
+        {
+          "L": 191,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_df_nontriv_L191_n200.npz",
+          "sha256": "f6f34a9a419d873bc41ba0cd1eb5f474bc577eec6a7e24fb27b2bdf11603c9c6"
+        },
+        {
+          "L": 253,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_df_nontriv_L253_n200.npz",
+          "sha256": "daf07b0afb2e6176dead21195a3bc53a146581b9ac3e5ddbe967c7cf8ed1e5d8"
+        },
+        {
+          "L": 449,
+          "path": "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\_df_nontriv_L449_n200.npz",
+          "sha256": "d1ff5ec04f14ebb286f4f80b92539f9f11cedb38bd7e2590db475d1cd826587c"
+        }
+      ],
+      "Df_mean": 1.8965798226576698,
+      "Df_se": 0.02863844337532852,
+      "Df_ci95_normal": [
+        1.840448473642026,
+        1.9527111716733137
+      ]
+    },
+    "power2_minus_nonpower2": {
+      "Df_difference": -0.026685533075650802,
+      "independent_SE_of_difference": 0.03623386209574026,
+      "z_like_difference": -0.7364805055872865,
+      "interpretation": "The two stored point estimates are not statistically separated; EXP-0010 does not establish a power-of-two artifact."
+    },
+    "q_p006_reused_cell_files": [
+      {
+        "L": 512,
+        "n": 200,
+        "q006_sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+        "q005_sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+        "identical": true
+      },
+      {
+        "L": 1024,
+        "n": 100,
+        "q006_sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+        "q005_sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+        "identical": true
+      },
+      {
+        "L": 2048,
+        "n": 50,
+        "q006_sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+        "q005_sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+        "identical": true
+      }
+    ],
+    "q_p007_pc_extrapolation": {
+      "intercept": 0.5927289999999995,
+      "intercept_bootstrap_mean": 0.5926957729595097,
+      "intercept_bootstrap_sd": 0.0032532301444767467,
+      "ci95": [
+        0.586295819174055,
+        0.5990474100089468
+      ],
+      "canonical_p_c": 0.5927460507921,
+      "note": "run_phase2.py hard-codes p_c measures and omits their uncertainty from extrapolation; the claimed 1.7e-5 difference is far below this uncertainty."
+    },
+    "R3_identity_check": {
+      "Df": 1.869894289582019,
+      "beta_nu_from_separate_Pinf_array": 0.12987094924999545,
+      "two_minus_Df": 0.13010571041798102,
+      "absolute_difference": 1.739788579164038,
+      "note": "Pinf=masses/L^2, so beta/nu=2-Df algebraically for these same masses; R3 is tautological."
+    }
+  },
+  "rng": {
+    "p_value_dependence": {
+      "source_claims": "Each test consumes a fixed disjoint slice (rng_battery.py lines 18-20 and 374-377).",
+      "observed_orchestration": "Every bit-spectrum test receives the full `bits` array; bytes/floats/words tests also reuse full arrays.",
+      "calls": [
+        "t_monobit(bits)",
+        "t_block_freq(bits)",
+        "t_runs(bits)",
+        "t_longest_run(bits)",
+        "t_matrix_rank(bits)",
+        "t_dft(bits)",
+        "t_nontemplate(bits)",
+        "t_serial(bits)",
+        "t_apen(bits)",
+        "t_cusum(bits)"
+      ],
+      "consequence": "The 24 p-values per seed are not independent. KS uniformity and binomial rejection-count calibration across them are not justified."
+    },
+    "stored_aggregate": {
+      "G_LAB": {
+        "binomial_band": {
+          "hi": 4,
+          "lo": 0
+        },
+        "fdr_flag_count": 0,
+        "fdr_in_band": true,
+        "ks_p": 0.7905655507179055,
+        "ks_pass": true,
+        "n_cells": 144,
+        "pass_rule": true,
+        "small_p_count": 1,
+        "small_p_in_band": true,
+        "small_p_min": 0.009941421946028135
+      },
+      "G_MT": {
+        "binomial_band": {
+          "hi": 4,
+          "lo": 0
+        },
+        "fdr_flag_count": 0,
+        "fdr_in_band": true,
+        "ks_p": 0.6517212298658333,
+        "ks_pass": true,
+        "n_cells": 144,
+        "pass_rule": true,
+        "small_p_count": 1,
+        "small_p_in_band": true,
+        "small_p_min": 0.005159608455001912
+      },
+      "G_PCG": {
+        "binomial_band": {
+          "hi": 4,
+          "lo": 0
+        },
+        "fdr_flag_count": 0,
+        "fdr_in_band": true,
+        "ks_p": 0.03306582622869758,
+        "ks_pass": true,
+        "n_cells": 144,
+        "pass_rule": true,
+        "small_p_count": 3,
+        "small_p_in_band": true,
+        "small_p_min": 0.00610314922927904
+      }
+    },
+    "scope": "Deterministic SHA256-derived seeding is verified. Statistical 'CERTIFIED' decision is only partially supported because the p-value multiset dependence invalidates its calibration gate."
+  },
+  "mathematics": {
+    "feigenbaum": {
+      "prereg_is_valid_json": false,
+      "canonical_results_directory_empty": true,
+      "stored_result_nested_under_CODE": true,
+      "stored_z3_a_values_all_identical": true,
+      "stored_z3_delta8": "Infinity",
+      "stored_z4_later_a_values_nonmonotonic": true,
+      "alpha_values_are_not_freigenbaum_alpha": true,
+      "current_runner_C3_C4_C6_are_hardcoded_pass": true,
+      "stored_C4_actual_difference": 0.08955043987795008,
+      "report_C4_claim": "PASS diff <1e-6",
+      "classification": "z=2 delta reproduction supported; z=3/z=4 and alpha claims contradicted/invalid."
+    },
+    "collatz": {
+      "full_result_file_generated_by_hardcoded_save_script": true,
+      "cycle_detection_claimed": true,
+      "actual_code_behavior": "Every trajectory reaching max_steps is appended as a cycle; no repeated state is checked.",
+      "report_claim_convergence_iff_a_equals_b_equals_c": true,
+      "full_sweep_claimed_27_families": true,
+      "families_actually_in_full_result_file": 3
+    },
+    "s9": {
+      "q_s9_1_and_3_writer": "save_q9results.py",
+      "writer_computes_experiments": false,
+      "writer_embeds_hardcoded_values": true,
+      "q_s9_2_data_generated_from_assumed_hill_parameters": true,
+      "q_s9_2_uses_no_measured_dose_data": true,
+      "q_s9_3_correction_derivation_present": false,
+      "classification": "ARTIFACT / NOT_REPRODUCED for empirical perception claims."
+    }
+  },
+  "data_provenance": {
+    "sqlite": {
+      "path": "sovereign_biolab.db",
+      "size_bytes": 184320,
+      "table_count": 21,
+      "tables": [
+        "plants",
+        "compounds",
+        "reactions",
+        "targets",
+        "genes",
+        "diseases",
+        "experiments",
+        "literature_sources",
+        "datasets",
+        "hypotheses",
+        "evidence_records",
+        "species",
+        "plant_parts",
+        "extracts",
+        "molecules",
+        "reaction_conditions",
+        "proteins",
+        "biological_effects",
+        "simulations",
+        "predictions",
+        "results"
+      ],
+      "row_counts": {
+        "plants": 0,
+        "compounds": 0,
+        "reactions": 0,
+        "targets": 0,
+        "genes": 0,
+        "diseases": 0,
+        "experiments": 0,
+        "literature_sources": 0,
+        "datasets": 0,
+        "hypotheses": 0,
+        "evidence_records": 0,
+        "species": 0,
+        "plant_parts": 0,
+        "extracts": 0,
+        "molecules": 0,
+        "reaction_conditions": 0,
+        "proteins": 0,
+        "biological_effects": 0,
+        "simulations": 0,
+        "predictions": 0,
+        "results": 0
+      }
+    },
+    "data_directories": {
+      "05_DATA\\raw": [],
+      "05_DATA\\processed": [],
+      "05_DATA\\generated": [],
+      "05_DATA\\external_sources": []
+    },
+    "preregistrations": {
+      "03_INVESTIGATIONS\\OPTICS\\speckle_contrast_law\\CONFIG\\prereg_EXP-0002.json": {
+        "sha256": "1237a82e2367bc099bf133f545a7bb4126f509b976c3393d58612678c9725115",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\OPTICS\\vortex_density\\CONFIG\\prereg_EXP-0003.json": {
+        "sha256": "d97c17175533bb9a73ffef74b1a60b62ac7db2f247d9a8c3e56f452588399a28",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\OTHER\\rng_certification\\CONFIG\\prereg_EXP-0004.json": {
+        "sha256": "5c10b4f3b1b9edbbee56da691e3c9c9c65ed17f8d5a204681f707115487df26c",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\CONFIG\\prereg_EXP-0005.json": {
+        "sha256": "6b47e95a40f4244e562b88d9fb16446ba8b655e362b0a58df801f2b959fe1305",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\CONFIG\\prereg_EXP-0006.json": {
+        "sha256": "8b8c2aae57b2ee5cfc593996141408f5f449f7ab3e0d982dae3d68b968c679a0",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\CONFIG\\prereg_EXP-0007.json": {
+        "sha256": "d421d4a615aaaeca255c1e6b3234ad67c66c7c8121c5c27d286a95412451ad02",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\CONFIG\\prereg_EXP-0008.json": {
+        "sha256": "076667a54d12fa495dee8ee7ee246203e92c59a35bd012bebb72ead075b24336",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CONFIG\\prereg_EXP-0009.json": {
+        "sha256": "7bc74dd0766d979a3bec62f70cfa053c14532f9068a1303338733e9a2e943339",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CONFIG\\prereg_EXP-0010.json": {
+        "sha256": "328c9d48abb0f6086575bb1f565f84f33354eab66ab5311e3ff5520aafd6f98f",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P006\\CONFIG\\prereg_EXP-0009P.json": {
+        "sha256": "3a9136d55e7f82b1c22773bf66535424e7ff03bc683ce44dfb897ccbb40c9cff",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P007\\CONFIG\\prereg_EXP-0009PC.json": {
+        "sha256": "de25105fa661cc4f4fc7699a494dd7fc6a43d8a921dc0e301a6c6472b2f816f0",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation_3d\\CONFIG\\prereg_EXP-0011.json": {
+        "sha256": "52d7768c564c2945edef5201fee0dc43798ce2c0ff8ebed234ef6d9747a5fdfe",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\PHYSICS\\percolation_3d\\CONFIG\\prereg_EXP-0013.json": {
+        "sha256": "c3926620cbe6989770cd52b40c2b93c6ee44140d41999a52c8c67482b11ed6a3",
+        "valid_json": true,
+        "error": null
+      },
+      "03_INVESTIGATIONS\\MATHEMATICS\\feigenbaum_constants\\CONFIG\\prereg_EXP-0014.json": {
+        "sha256": "b84da761b772eb96484ba2373911b78af05b00f443befe692e16bd507c9eb0de",
+        "valid_json": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    },
+    "identifier_collisions": {
+      "HYP-005": [
+        "EXP-0008 prime gaps",
+        "EXP-0009 percolation exponents"
+      ],
+      "EXP-0009": [
+        "Q-P005 canonical",
+        "Q-P006 EXP-0009-precision",
+        "Q-P007 EXP-0009-pc"
+      ],
+      "EXP-0012": [
+        "Q-S9-4 cone-mosaic prereg",
+        "Q-M008 run_exp0012.py filename"
+      ],
+      "EXP-0013": [
+        "Q-P008 3D main prereg",
+        "Q-M008 run_exp0013.py filename"
+      ],
+      "EXP-0015": [
+        "Q-AC001 acoustics scaffold",
+        "Q-F004 fluid-dynamics scaffold"
+      ]
+    }
+  }
+}

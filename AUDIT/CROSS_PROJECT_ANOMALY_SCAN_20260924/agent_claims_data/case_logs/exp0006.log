@@ -1,0 +1,122 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "exp0006": {
+      "ok": true,
+      "evidence": {
+        "runner": [
+          "51: def interp_p50(ps, W):",
+          "52:     ps = np.asarray(ps, dtype=float)",
+          "53:     W = np.asarray(W, dtype=float)",
+          "54:     below = W < 0.5",
+          "55:     above = W > 0.5",
+          "56:     if not below.any() or not above.any():",
+          "57:         raise ValueError(\"p50 not bracketed\")",
+          "58:     i = int(np.flatnonzero(below)[-1])",
+          "59:     j = int(np.flatnonzero(above)[0])",
+          "60:     if i >= j:",
+          "61:         raise ValueError(\"p50 grid ordering issue\")",
+          "62:     p0, p1 = ps[i], ps[j]",
+          "63:     w0, w1 = W[i], W[j]",
+          "64:     return float(p0 + (0.5 - w0) * (p1 - p0) / (w1 - p0))"
+        ],
+        "c2": [
+          "290:     # ---- C2 estimator/BC independence ----",
+          "291:     pair = abs(fss_out[\"bond_span\"][\"a\"] - fss_out[\"bond_span\"][\"a\"])  # same system; bond_wrap not re-run",
+          "292:     c2 = {\"span_a\": fss_out[\"bond_span\"][\"a\"], \"wrap_a\": \"N/A (not re-run)\",",
+          "293:           \"pair_diff\": 0.0, \"pass\": True,",
+          "294:           \"note\": \"bond_wrap at fine grid not re-run in EXP-0006; C2 evaluated in EXP-0005/0007\"}"
+        ],
+        "result_c2": {
+          "pair_diff": 0.0010144666894992271,
+          "pass": true,
+          "span_a": 0.5002094826899287,
+          "wrap_a": 0.5012239493794279
+        },
+        "rows": [
+          {
+            "system": "bond_span",
+            "L": 64,
+            "wrong": 0.7965714285714307,
+            "correct": 0.4998211091234348,
+            "stored": 0.4998542286084771,
+            "abs_wrong_correct": 0.2967503194479959
+          },
+          {
+            "system": "bond_span",
+            "L": 128,
+            "wrong": 0.5001711840228247,
+            "correct": 0.5001697312588402,
+            "stored": 0.5001572242067353,
+            "abs_wrong_correct": 1.4527639844441609e-06
+          },
+          {
+            "system": "bond_span",
+            "L": 256,
+            "wrong": 0.5026260387811634,
+            "correct": 0.5001618122977346,
+            "stored": 0.5001669446692497,
+            "abs_wrong_correct": 0.002464226483428811
+          },
+          {
+            "system": "bond_span",
+            "L": 512,
+            "wrong": 0.5025966850828729,
+            "correct": 0.5001498708010336,
+            "stored": 0.5001527904511637,
+            "abs_wrong_correct": 0.002446814281839349
+          },
+          {
+            "system": "bond_wrap",
+            "L": 32,
+            "wrong": 0.6091304347826093,
+            "correct": 0.49862068965517253,
+            "stored": 0.4985936764612654,
+            "abs_wrong_correct": 0.11050974512743678
+          },
+          {
+            "system": "bond_wrap",
+            "L": 48,
+            "wrong": 0.575081967213115,
+            "correct": 0.4974174174174175,
+            "stored": 0.4974828844043641,
+            "abs_wrong_correct": 0.07766454979569748
+          },
+          {
+            "system": "bond_wrap",
+            "L": 64,
+            "wrong": 0.5003347280334729,
+            "correct": 0.500329218106996,
+            "stored": 0.5003630768139604,
+            "abs_wrong_correct": 5.509926476854332e-06
+          },
+          {
+            "system": "site_span",
+            "L": 64,
+            "wrong": 0.5234819867059588,
+            "correct": 0.5921144718526316,
+            "stored": 0.5921271333168397,
+            "abs_wrong_correct": 0.06863248514667275
+          },
+          {
+            "system": "site_span",
+            "L": 128,
+            "wrong": 0.5931605366327757,
+            "correct": 0.5930487413829596,
+            "stored": 0.5930199396451842,
+            "abs_wrong_correct": 0.00011179524981608235
+          },
+          {
+            "system": "site_span",
+            "L": 256,
+            "wrong": 0.47934039809303736,
+            "correct": 0.5924525725391304,
+            "stored": 0.5924726939598507,
+            "abs_wrong_correct": 0.11311217444609306
+          }
+        ],
+        "max_wrong_correct": 0.2967503194479959
+      }
+    }
+  }
+}

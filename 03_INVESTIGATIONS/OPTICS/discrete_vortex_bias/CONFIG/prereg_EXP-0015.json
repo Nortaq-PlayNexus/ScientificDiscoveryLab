@@ -1,0 +1,158 @@
+{
+  "alpha": 0.01,
+  "config_sha256": "514f6d142528d38f0d7729dd5ea8b955a70024369ac5e2965fb4d637e552140e",
+  "experiment_id": "EXP-0015",
+  "hypothesis_id": "HYP-OPT-DVB-001",
+  "note": "Frozen 2026-09-24 before executing the new discovery-phase experiments. Historical claims are treated as leads; no physical or novelty claim is pre-authorized.",
+  "parameters": {
+    "analytical_cases": [
+      "single_vortex",
+      "vortex_pair",
+      "double_vortex",
+      "four_vortex_lattice",
+      "random_complex_gaussian"
+    ],
+    "bias_tolerance_fraction": 0.05,
+    "convergence_grids": [
+      64,
+      96,
+      128,
+      160,
+      192,
+      256,
+      320,
+      384,
+      512,
+      768,
+      1024
+    ],
+    "detectors": [
+      "raw_winding",
+      "clustered_winding",
+      "supported_clustered_winding",
+      "local_minimum_contour"
+    ],
+    "padding_fractions": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "physical_fov_um": 256.0,
+    "primary_endpoint": "detector_count_bias",
+    "promotion_gates": {
+      "grid_convergence_relative_change_max": 0.05,
+      "independent_detector_agreement_max": 0.1,
+      "independent_implementation_max": 0.1,
+      "multiplicity_alpha": 0.01,
+      "null_exclusion_required": true,
+      "padding_relative_range_max": 0.05,
+      "subpixel_cv_max": 0.05
+    },
+    "rectangular_grids": [
+      [
+        128,
+        256
+      ],
+      [
+        256,
+        128
+      ],
+      [
+        256,
+        512
+      ],
+      [
+        512,
+        256
+      ]
+    ],
+    "reference_grid": 2048,
+    "seeds": [
+      42,
+      7,
+      123
+    ],
+    "subpixel_shifts_px": [
+      0.0,
+      0.1,
+      0.2,
+      0.25,
+      0.33,
+      0.5,
+      0.67,
+      0.75,
+      0.9
+    ],
+    "wavelengths_nm": [
+      405,
+      450,
+      488,
+      532,
+      589,
+      632.8,
+      650,
+      671,
+      694.3,
+      780,
+      850,
+      1064
+    ],
+    "z_sweep_um": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      160,
+      200,
+      240,
+      320,
+      400,
+      480,
+      560,
+      640,
+      720,
+      800,
+      880,
+      960,
+      1040,
+      1120,
+      1200,
+      1280,
+      1360,
+      1440,
+      1520,
+      1600
+    ]
+  },
+  "preregistered_analyses": [
+    "count and charge bias with bootstrap confidence intervals",
+    "false-positive/false-negative matching to known vortex positions",
+    "grid, shift, padding, wavelength, and z dependence",
+    "empirical null p-values with BH-FDR across the declared matrix",
+    "convergence promotion gates from the frozen configuration"
+  ],
+  "preregistered_controls": [
+    "C1 analytical known-topology positive controls",
+    "C2 plane-wave and no-vortex negative control",
+    "C3 subpixel translations of the same field",
+    "C4 square and rectangular grid convergence",
+    "C5 non-power-of-two grid controls",
+    "C6 zero-padding sweep",
+    "C7 detector independence",
+    "C8 oversample then downsample",
+    "C9 matched-spectrum and matched-amplitude nulls",
+    "C10 seed ladder",
+    "C11 independent implementation",
+    "C12 reversibility and energy checks"
+  ],
+  "question_id": "Q-O006",
+  "schema": "scientific-discovery-lab/prereg/v1",
+  "seed": 42,
+  "timestamp_utc": "2026-09-24T03:28:31+00:00"
+}

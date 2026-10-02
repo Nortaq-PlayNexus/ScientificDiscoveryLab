@@ -1,0 +1,30 @@
+{
+  "G_LAB_status": "NOT_INTERPRETABLE_BATTERY_INVALID",
+  "audit_finding_id": "N-004",
+  "battery_verdict": "BATTERY_INVALID",
+  "cells": [],
+  "certification_claim": false,
+  "claim_guards": [
+    "No generator may be called certified. The historical EXP-0004 certificate remains withdrawn and this run does not reinstate it.",
+    "Passing a test battery is not proof of randomness and not a NIST certification.",
+    "A calibrated test at one stream length does not certify the other length.",
+    "UNRESOLVED_AT_THIS_RESOLUTION is a real outcome and must not be reported as agreement.",
+    "This experiment says nothing about any physical result; it only characterises the measurement instrument the rest of the lab depends on."
+  ],
+  "historical_certificate_reinstated": false,
+  "known_limitations": [
+    "the battery is a NIST footprint, not the official NIST SP 800-22 harness, so its p-value formulas are reimplementations",
+    "tests within a seed share one input stream and are dependent; the max-T control handles this for the family-wise rate but per-test KS p-values are still BH-adjusted rather than exactly adjusted",
+    "the deliberately broken control is a specific failure mode; a battery that catches it may still miss others"
+  ],
+  "manifest_sha256": "b25cd81cc01a14dc178ed47ddc1a93128337210b6926b3567418634f4a50f7ee",
+  "positive_control_gate": {
+    "passed": false,
+    "per_length": [],
+    "requirement": "must be flagged; this is the falsification condition from the audit, inverted into a positive control"
+  },
+  "prereg_sha256": "91b5ebd0be6020f578d80fd0b083d26ff5f2837b86c0b3577ae730d450a60136",
+  "question_id": "Q-I004",
+  "resolution": "With S seeds per generator and length, the rejection-rate estimate has standard error sqrt(alpha*(1-alpha)/S): 0.0071 at S=200 and 0.0127 at S=60. The uniformity test on per-seed p-values is the more powerful instrument, and the strongest permitted statement is per-test calibration AT THIS RESOLUTION. A miscalibration that shifts the true rejection rate from 0.01 to below about 0.04 is not detectable here and must be reported as unresolved rather than as calibrated.",
+  "summary_schema": "n004-calibration-summary-v1"
+}

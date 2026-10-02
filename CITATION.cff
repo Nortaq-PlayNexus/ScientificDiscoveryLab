@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "ScientificDiscoveryLab — a computational research laboratory with a preregistered, self-auditing instrument pipeline"
+message: "If you use this repository, please cite it and read AUDIT/DO_NOT_CLAIM.md. No physics discovery is claimed."
+type: dataset
+abstract: >-
+  A computational research laboratory spanning percolation physics, optical
+  propagation, prime gaps, Feigenbaum constants, pseudorandom-number
+  certification, water-sound response, and AI-consciousness measurement
+  methodology. Built to a preregistered standard: claim layering, mandatory
+  controls, adversarial falsification, evidence grading, append-only
+  registries, and fail-closed runners. Its most substantive result is negative
+  and methodological — a self-audit in which three defects were found in the
+  laboratory's own instruments, one of which had previously been counted as a
+  pass, and in which two of the three made the laboratory's own anomaly look
+  smaller than it really was. No physics discovery is claimed.
+authors:
+  - name: "ScientificDiscoveryLab contributors"
+keywords:
+  - reproducibility
+  - preregistration
+  - falsification
+  - audit
+  - percolation
+  - computational-physics
+  - optics
+  - pseudorandom-number-generation
+  - numerical-methods
+  - open-science
+license: MIT
+repository-code: "https://github.com/Nortaq-PlayNexus/ScientificDiscoveryLab"
+version: "1.0.0"
+date-released: "2026-10-02"
+references:
+  - type: software
+    title: "Zenodo deposit: Three Instrument Defects Found by Self-Audit"
+    notes: "Curated subset of this repository, same licence. Not superseded by it."
+  - type: article
+    authors:
+      - family-names: Butlin
+        given-names: Patrick
+      - family-names: Long
+        given-names: Robert
+    title: "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness"
+    journal: "arXiv"
+    year: 2023
+    doi: "10.48550/arXiv.2308.08708"

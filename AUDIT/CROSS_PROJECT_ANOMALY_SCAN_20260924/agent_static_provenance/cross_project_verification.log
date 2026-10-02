@@ -1,0 +1,8 @@
+﻿  Building base sieve up to sqrt(1,000)...
+  Base sieve: 11 primes up to 11
+    Segment 1/1: [0, 1,000)
+  Total primes: 157
+{
+  "output": "C:\\Users\\natha\\ScientificDiscoveryLab\\AUDIT\\CROSS_PROJECT_ANOMALY_SCAN_20260924\\agent_static_provenance\\cross_project_verification.json",
+  "checks": 21
+}

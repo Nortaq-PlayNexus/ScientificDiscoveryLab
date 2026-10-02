@@ -1,0 +1,377 @@
+{
+  "absolute_D_f": {
+    "D_f": 1.88046166134132,
+    "ci95": [
+      1.8513174502939809,
+      1.9110408782592458
+    ],
+    "deviation": -0.01537167199201317,
+    "note": "pooled over every sampled nested size; the primary claim of this experiment is the power-of-two contrast, not this absolute value",
+    "reference": 1.8958333333333333,
+    "reference_inside_ci95": true,
+    "sizes": [
+      125,
+      126,
+      127,
+      128,
+      248,
+      252,
+      253,
+      254,
+      255,
+      256,
+      504,
+      508,
+      509,
+      510,
+      511,
+      512,
+      1021,
+      1022,
+      1023,
+      1024
+    ]
+  },
+  "audit_finding_id": "N-005",
+  "ci95_excludes_zero": false,
+  "claim_guards": [
+    "This tests a numerical artifact in one estimator. It cannot establish or refute new physics.",
+    "EXP-0009 and EXP-0010 historical conclusions are not modified by this run; they are tested, not overwritten.",
+    "No novelty claim. A positive result is an escalation, not a discovery."
+  ],
+  "equivalence_demonstrated": false,
+  "equivalence_margin": 0.01,
+  "experiment_id": "EXP-0017",
+  "gates": [
+    {
+      "detail": "160 cells checked on identical masks, 0 mismatches",
+      "gate": "C7_second_implementation",
+      "pass": true
+    },
+    {
+      "detail": "30 cells checked against from-scratch BFS, 0 mismatches",
+      "gate": "C8_third_implementation",
+      "pass": true
+    },
+    {
+      "detail": "S_max must be non-decreasing from the smaller to the larger nested window; no violations",
+      "gate": "C3_nested_monotonicity",
+      "pass": true
+    },
+    {
+      "detail": "S_max <= open sites <= L^2 for every entry",
+      "gate": "C2_mass_bounds",
+      "pass": true
+    },
+    {
+      "detail": "nested arm realization counts match the frozen preregistration exactly",
+      "gate": "C10_realization_counts",
+      "pass": true
+    },
+    {
+      "detail": "36 stored arrays reloaded bit-exactly",
+      "gate": "C1_raw_round_trip",
+      "pass": true
+    }
+  ],
+  "impl_choices": {
+    "bfs_bases": [
+      128,
+      256
+    ],
+    "bfs_n": 3,
+    "bootstrap_draws": 5000,
+    "bootstrap_seed": 5170017,
+    "c7_subsample_n": 8,
+    "ladder_pairs": "consecutive ladder members, reported descriptively",
+    "realization_block": 8
+  },
+  "known_limitations": [
+    "p_c is a fixed input at the infinite-lattice value; open boundaries shift the finite-size threshold by O(1/L), so the sampled point is slightly off criticality and that offset is not measured here",
+    "nested sub-windows are not independent samples; the bootstrap resamples realizations, which preserves the pairing",
+    "the contrast tests a discontinuity in the size axis, not the absolute accuracy of D_f, which is reported separately",
+    "sizes are matched in linear size to one lattice unit, so residual area mismatch is O(1/L) and is absorbed by the pair-type contrast"
+  ],
+  "ladder": {
+    "by_base": [
+      {
+        "base": 256,
+        "pairs": [
+          {
+            "local_slope": 1.7650863001089618,
+            "n": 100,
+            "sd": 0.028261928687968143,
+            "sizes": [
+              248,
+              252
+            ],
+            "v2": [
+              3,
+              2
+            ]
+          },
+          {
+            "local_slope": 2.314784433856503,
+            "n": 100,
+            "sd": 0.030438316081890602,
+            "sizes": [
+              252,
+              253
+            ],
+            "v2": [
+              2,
+              0
+            ]
+          },
+          {
+            "local_slope": 2.0514259636384704,
+            "n": 100,
+            "sd": 0.02659426436581166,
+            "sizes": [
+              253,
+              254
+            ],
+            "v2": [
+              0,
+              1
+            ]
+          },
+          {
+            "local_slope": 2.1283758371804997,
+            "n": 100,
+            "sd": 0.02997756547507524,
+            "sizes": [
+              254,
+              255
+            ],
+            "v2": [
+              1,
+              0
+            ]
+          },
+          {
+            "local_slope": 1.3068744545865867,
+            "n": 100,
+            "sd": 0.005062714513500602,
+            "sizes": [
+              255,
+              256
+            ],
+            "v2": [
+              0,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "base": 512,
+        "pairs": [
+          {
+            "local_slope": 1.304315368838195,
+            "n": 100,
+            "sd": 0.013961758190713366,
+            "sizes": [
+              504,
+              508
+            ],
+            "v2": [
+              3,
+              2
+            ]
+          },
+          {
+            "local_slope": 3.912875376771617,
+            "n": 100,
+            "sd": 0.0545948620370042,
+            "sizes": [
+              508,
+              509
+            ],
+            "v2": [
+              2,
+              0
+            ]
+          },
+          {
+            "local_slope": 1.1057035069699919,
+            "n": 100,
+            "sd": 0.002239087469523425,
+            "sizes": [
+              509,
+              510
+            ],
+            "v2": [
+              0,
+              1
+            ]
+          },
+          {
+            "local_slope": 1.5422595314193313,
+            "n": 100,
+            "sd": 0.005504202327520661,
+            "sizes": [
+              510,
+              511
+            ],
+            "v2": [
+              1,
+              0
+            ]
+          },
+          {
+            "local_slope": 1.2422209475355683,
+            "n": 100,
+            "sd": 0.004961563119949003,
+            "sizes": [
+              511,
+              512
+            ],
+            "v2": [
+              0,
+              9
+            ]
+          }
+        ]
+      }
+    ],
+    "ladder_bases": [
+      256,
+      512
+    ],
+    "note": "consecutive ladder members, reported descriptively"
+  },
+  "manifest_sha256": "54889d6c8b600219411f9a3a0ac3440ab6fd6ce23960cd8bfb0c826d103a17bb",
+  "novelty_claim": false,
+  "null_control": {
+    "beta": 0.3127322119630487,
+    "bootstrap_draws": 5000,
+    "bootstrap_sd": 0.18541213100402437,
+    "ci90": [
+      -0.03807658533260539,
+      0.5744131837377384
+    ],
+    "ci95": [
+      -0.0795988371009382,
+      0.6439530782491877
+    ],
+    "pair_types": [
+      "nonp2_anchored",
+      "nonp2_null_control"
+    ],
+    "per_base_delta": {
+      "1024": 0.3115368614647218,
+      "128": 0.11974095135129481,
+      "256": 0.07694987354202931,
+      "512": 0.4365560244493394
+    },
+    "per_base_delta_var": {
+      "1024": 0.21407604294810803,
+      "128": 0.16137484993377466,
+      "256": 0.9364383021580617,
+      "512": 0.08520246182436719
+    },
+    "per_base_slopes": {
+      "1024": {
+        "nonp2_anchored": 1.4446523802695268,
+        "nonp2_null_control": 1.133115518804805,
+        "p2_anchored": 0.8979928707045894
+      },
+      "128": {
+        "nonp2_anchored": 1.7482028998480243,
+        "nonp2_null_control": 1.6284619484967295,
+        "p2_anchored": 2.2194723484203247
+      },
+      "256": {
+        "nonp2_anchored": 2.1283758371804997,
+        "nonp2_null_control": 2.0514259636384704,
+        "p2_anchored": 1.3068744545865867
+      },
+      "512": {
+        "nonp2_anchored": 1.5422595314193313,
+        "nonp2_null_control": 1.1057035069699919,
+        "p2_anchored": 1.2422209475355683
+      }
+    }
+  },
+  "prereg_sha256": "9de382eb7bba2853f1ab4cd33441595c5c5611cd2310563221046c3e3f27aa8e",
+  "primary_statistic": {
+    "beta": -0.2901213231225008,
+    "bootstrap_draws": 5000,
+    "bootstrap_sd": 0.16542626298147067,
+    "ci90": [
+      -0.5188595317368095,
+      0.027129969455795728
+    ],
+    "ci95": [
+      -0.582301503935475,
+      0.06508972558675377
+    ],
+    "pair_types": [
+      "p2_anchored",
+      "nonp2_anchored"
+    ],
+    "per_base_delta": {
+      "1024": -0.5466595095649374,
+      "128": 0.47126944857230035,
+      "256": -0.821501382593913,
+      "512": -0.3000385838837629
+    },
+    "per_base_delta_var": {
+      "1024": 0.11059218106228572,
+      "128": 0.2309481241348974,
+      "256": 0.5884271296694754,
+      "512": 0.1338808326418363
+    },
+    "per_base_slopes": {
+      "1024": {
+        "nonp2_anchored": 1.4446523802695268,
+        "nonp2_null_control": 1.133115518804805,
+        "p2_anchored": 0.8979928707045894
+      },
+      "128": {
+        "nonp2_anchored": 1.7482028998480243,
+        "nonp2_null_control": 1.6284619484967295,
+        "p2_anchored": 2.2194723484203247
+      },
+      "256": {
+        "nonp2_anchored": 2.1283758371804997,
+        "nonp2_null_control": 2.0514259636384704,
+        "p2_anchored": 1.3068744545865867
+      },
+      "512": {
+        "nonp2_anchored": 1.5422595314193313,
+        "nonp2_null_control": 1.1057035069699919,
+        "p2_anchored": 1.2422209475355683
+      }
+    }
+  },
+  "question_id": "Q-P009",
+  "reference_D_f": 1.8958333333333333,
+  "sensitivity": {
+    "beta_exceeds_null_control": false,
+    "beta_over_historical_deficit": -10.94797445745286,
+    "independent_arm_beta": -21.719859357926396,
+    "independent_arm_ci95": [
+      -51.46942531843269,
+      7.54197967412313
+    ],
+    "independent_arm_contradiction_reason": "independent arm does not exclude zero; reported as underpowered rather than contradictory",
+    "independent_arm_contradicts": false,
+    "independent_arm_verdict": "INCONCLUSIVE_BY_RESOLUTION",
+    "null_control_beta": 0.3127322119630487,
+    "null_control_ci95": [
+      -0.0795988371009382,
+      0.6439530782491877
+    ]
+  },
+  "summary_schema": "n005-exp0017-summary-v1",
+  "verdict": "INCONCLUSIVE_BY_RESOLUTION",
+  "verdict_rule": {
+    "INCONCLUSIVE_BY_RESOLUTION": "the 90% interval is not contained in the equivalence margin and does not exclude 0. This is an explicit non-result: the run could not resolve the contrast and must NOT be reported as 'no effect'",
+    "LATTICE_ARTIFACT_SUPPORTED": "the 95% interval for beta excludes 0 AND |beta| exceeds the equivalence margin: a power-of-two effect is resolved and is large enough to matter",
+    "LATTICE_ARTIFACT_UNSUPPORTED": "the entire 90% interval for beta lies strictly inside (-0.01, +0.01): equivalence is demonstrated at the preregistered margin, so a power-of-two artifact of the size needed to explain the historical discrepancy is excluded",
+    "WINDOW_OR_ESTIMATOR_SENSITIVE": "the independent-stream arm or the 2-adic ladder contradicts the primary verdict; the primary verdict is then void",
+    "engineering_failure": "any preregistered gate failure (C7 disagreement, raw round-trip mismatch, incomplete realization counts) yields INCONCLUSIVE"
+  }
+}

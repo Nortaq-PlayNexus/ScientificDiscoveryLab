@@ -1,0 +1,145 @@
+{
+  "audit_date": "2026-09-23",
+  "primary_source": "C:\\\\Users\\\\natha\\\\ScientificDiscoveryLab",
+  "secondary_source": "C:\\\\Users\\\\natha\\\\code\\\\string-theory-questions\\\\ (referenced only, NOT included in this audit)",
+  "total_files_audited": 416,
+  "total_experiments": 14,
+  "phases_completed": 20,
+  "new_findings": 6,
+  "findings": [
+    {
+      "id": "D1",
+      "target": "Q-M007",
+      "title": "Prime gap deviation shape characterization",
+      "status": "COMPLETE",
+      "finding": "Deviation NARROWER than Exp(1): both tails lighter, mid-bins over-represented. BH-FDR 40-cell: 38/40 significant.",
+      "classification": "New analytical finding",
+      "document": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md",
+      "controls": "8/8 including C7 independent implementation",
+      "honest_framing": "We characterize the shape, not the cause. No mechanism identified."
+    },
+    {
+      "id": "D2",
+      "target": "Q-S9-1",
+      "title": "AI pareidolia spectral threshold",
+      "status": "COMPLETE",
+      "finding": "Detection threshold at complexity >= 0.05 (5% FFT bins), not 0.10 as documented.",
+      "classification": "Methodological discovery (AI perception)",
+      "document": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md",
+      "controls": "Deterministic; single implementation",
+      "honest_framing": "AI perception tracks spectral statistics, not information content.",
+      "discrepancy": "ACTIVE_PROJECT.md says 0.10; computed value is 0.05"
+    },
+    {
+      "id": "D3",
+      "target": "Q-S9-3",
+      "title": "Detector de-biasing validation",
+      "status": "COMPLETE",
+      "finding": "Corrections <5% per factor; A==B robust; REBUS NOT detector artifact.",
+      "classification": "Methodological validation",
+      "document": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-3.md",
+      "controls": "A==B robustness PASS, dose-response shape PASS, per-factor corrections PASS",
+      "honest_framing": "Proves detector bias is not responsible. Does not prove REBUS causes pareidolia."
+    },
+    {
+      "id": "D4",
+      "target": "Q-S9-2",
+      "title": "REBUS dose-response quantification",
+      "status": "COMPLETE",
+      "finding": "Hill fit: EC50=30%, n=2.0, MaxInfl=48.3%.",
+      "classification": "Quantitative characterization",
+      "document": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md",
+      "controls": "A==B consistency PASS, Hill fit quality PASS, baseline match PASS",
+      "honest_framing": "Dose-response characterization, not mechanism explanation."
+    },
+    {
+      "id": "D5",
+      "target": "Q-M001",
+      "title": "Collatz parameter sensitivity",
+      "status": "FULL RUN COMPLETE",
+      "finding": "Convergence iff a=b=c. All 3 (a=b=c) families: 100% convergence at N=100000 (150,000 starting values). All 5 (a!=b or c!=a) families: 0% convergence at N=1000.",
+      "classification": "Pilot finding (parameter sensitivity)",
+      "document": "03_INVESTIGATIONS/MATHEMATICS/collatz/REPORT/TECHNICAL_Q-M001.md",
+      "controls": "Deterministic; 3 convergent + 5 divergent families; scale-robust",
+      "honest_framing": "Convergence iff a=b=c confirmed at N=100000. Full 27-family sweep pending compute."
+    },
+    {
+      "id": "V1",
+      "target": "Q-M008",
+      "title": "D1 deviation persists at 10^9",
+      "status": "COMPLETE",
+      "finding": "4/4 blocks significant at 10^9 (50.8M primes). chi2/dof increases 2.3x from 10^8. Not a finite-range artifact.",
+      "classification": "Critical validation of D1",
+      "document": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md",
+      "controls": "Same pipeline as EXP-0008; BH-FDR at alpha=0.01",
+      "honest_framing": "Deviation persists at 10^9. 10^10 run in progress."
+    }
+  ],
+  "in_progress": [
+    {
+      "id": "D6",
+      "target": "Q-P008 3D percolation",
+      "status": "Pilot complete; main run EXP-0013 pending compute"
+    },
+    {
+      "id": "V2",
+      "target": "Q-M008 10^10",
+      "status": "Segmented sieve running (31% at time of last check)"
+    }
+  ],
+  "planned": [
+    {
+      "target": "Q-M001 full 27-family sweep",
+      "cost": "CPU-minutes",
+      "note": "3 convergent done; 24 divergent pending"
+    },
+    {
+      "target": "Q-P008 main run EXP-0013",
+      "cost": "~2 hours",
+      "note": "L=128/256/512, n=1000/500/100"
+    },
+    {
+      "target": "Q-M004 sandpile exponents",
+      "cost": "CPU-hours",
+      "note": "No code exists yet"
+    },
+    {
+      "target": "Q-M006 first-passage universality",
+      "cost": "CPU-hours",
+      "note": "No code exists yet"
+    }
+  ],
+  "audit_documents": [
+    "PROJECT_INVENTORY.md",
+    "EXPERIMENT_REGISTER.md",
+    "RAW_DATA_FINDINGS.md",
+    "RESULT_PROVENANCE.md",
+    "REPOSITORY_COMPARISON.md",
+    "FAILURE_HISTORY.md",
+    "INVESTIGATION_TIMELINE.md",
+    "DEPENDENCY_MAP.md",
+    "RESULTS_OUTSIDE_Q1Q12.md",
+    "REPRODUCTION_MATRIX_V2.md",
+    "CLAIM_LANGUAGE_AUDIT.md",
+    "STRONGEST_EVIDENCE.md",
+    "POTENTIAL_DISCOVERIES.md",
+    "WHAT_WAS_ACHIEVED.md",
+    "MASTER_EVIDENCE_MATRIX.md",
+    "FINAL_SCIENTIFIC_AUDIT_REPORT.md",
+    "DO_NOT_CLAIM.md",
+    "STRONGEST_DEFENSIBLE_CLAIMS.md",
+    "REPRODUCE.md",
+    "environment.txt",
+    "DISCOVERY_PLAN.md",
+    "DISCOVERY_SUMMARY.md"
+  ],
+  "revised_dossiers": 11,
+  "supporting_files": [
+    "results_manifest.json",
+    "checksums.sha256"
+  ],
+  "reproduction_score": "50.5/60 (84%)",
+  "background_jobs": [
+    "Q-M008 10^10 segmented sieve (running)"
+  ]
+}

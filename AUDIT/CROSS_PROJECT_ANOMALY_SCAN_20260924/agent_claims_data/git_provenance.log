@@ -1,0 +1,25 @@
+﻿command: git rev-parse --show-toplevel
+C:/Users/natha
+command: git rev-list --all --count
+0
+command: git status --short --untracked-files=all -- . (first 20)
+?? 00_FOUNDATION/falsification_rules.md
+?? 00_FOUNDATION/scientific_method.md
+?? 00_FOUNDATION/simulation_rules.md
+?? 00_FOUNDATION/statistics_basics.md
+?? 00_FOUNDATION/terminology_plain_english.md
+?? 01_RESEARCH_MAP/README.md
+?? 01_RESEARCH_MAP/acoustics/notes.md
+?? 01_RESEARCH_MAP/astronomy/notes.md
+?? 01_RESEARCH_MAP/biology/notes.md
+?? 01_RESEARCH_MAP/chemistry/notes.md
+?? 01_RESEARCH_MAP/climate_science/notes.md
+?? 01_RESEARCH_MAP/computational_science/notes.md
+?? 01_RESEARCH_MAP/cosmology/notes.md
+?? 01_RESEARCH_MAP/earth_science/notes.md
+?? 01_RESEARCH_MAP/fluid_dynamics/notes.md
+?? 01_RESEARCH_MAP/information_theory/notes.md
+?? 01_RESEARCH_MAP/materials_science/notes.md
+?? 01_RESEARCH_MAP/mathematics/notes.md
+?? 01_RESEARCH_MAP/neuroscience/notes.md
+?? 01_RESEARCH_MAP/optics/notes.md

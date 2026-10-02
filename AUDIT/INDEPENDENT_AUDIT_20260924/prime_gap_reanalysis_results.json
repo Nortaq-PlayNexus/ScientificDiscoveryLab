@@ -1,0 +1,215 @@
+{
+  "N": 100000000,
+  "blocks": {
+    "B1": {
+      "range": [
+        10000,
+        100000
+      ],
+      "n": 8362,
+      "mean": 1.0024283203598847,
+      "variance": 0.5824179887867639,
+      "minimum_possible_delta_from_gap2": 0.21714724095162588,
+      "first_quantile_edge": 0.10536051565782628,
+      "first_bin_count": 0,
+      "chi2": 2357.8134417603437,
+      "chi2_p": 0.0,
+      "diagnostic_chi2_excluding_structurally_impossible_first_bin": 1521.6134417603444,
+      "diagnostic_chi2_p_excluding_first_bin": 0.0,
+      "lag1_autocorrelation": -0.08949347089189974,
+      "lag2_autocorrelation": -0.04259761798749974,
+      "block1000_mean_se": 0.0022464087944897844,
+      "iid_se": 0.008345691147263712,
+      "se_ratio_block_to_iid": 0.26916989316412826,
+      "counts": [
+        0,
+        1019,
+        268,
+        745,
+        1641,
+        1066,
+        1136,
+        953,
+        984,
+        550
+      ],
+      "expected": [
+        836.2,
+        836.2,
+        836.2,
+        836.2,
+        836.2,
+        836.2,
+        836.2,
+        836.2,
+        836.2,
+        836.2
+      ]
+    },
+    "B2": {
+      "range": [
+        100000,
+        1000000
+      ],
+      "n": 68905,
+      "mean": 1.0013264433284872,
+      "variance": 0.6459669781939933,
+      "minimum_possible_delta_from_gap2": 0.17371779276130073,
+      "first_quantile_edge": 0.10536051565782628,
+      "first_bin_count": 0,
+      "chi2": 12517.679195994482,
+      "chi2_p": 0.0,
+      "diagnostic_chi2_excluding_structurally_impossible_first_bin": 5627.179195994485,
+      "diagnostic_chi2_p_excluding_first_bin": 0.0,
+      "lag1_autocorrelation": -0.05244647665623136,
+      "lag2_autocorrelation": -0.022505336370302578,
+      "block1000_mean_se": 0.0015965642079890673,
+      "iid_se": 0.0030618209491683024,
+      "se_ratio_block_to_iid": 0.521442708275528,
+      "counts": [
+        0,
+        6945,
+        6928,
+        11215,
+        5169,
+        10058,
+        7964,
+        8010,
+        7720,
+        4896
+      ],
+      "expected": [
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5,
+        6890.5
+      ]
+    },
+    "B3": {
+      "range": [
+        1000000,
+        10000000
+      ],
+      "n": 586080,
+      "mean": 1.0003586722167706,
+      "variance": 0.6937033382033099,
+      "minimum_possible_delta_from_gap2": 0.14476482730108395,
+      "first_quantile_edge": 0.10536051565782628,
+      "first_bin_count": 0,
+      "chi2": 105347.66953316955,
+      "chi2_p": 0.0,
+      "diagnostic_chi2_excluding_structurally_impossible_first_bin": 46739.66953316953,
+      "diagnostic_chi2_p_excluding_first_bin": 0.0,
+      "lag1_autocorrelation": -0.04537681163074781,
+      "lag2_autocorrelation": -0.021100962086431675,
+      "block1000_mean_se": 0.0006648046333129434,
+      "iid_se": 0.001087948760025904,
+      "se_ratio_block_to_iid": 0.6110624486553158,
+      "counts": [
+        0,
+        50811,
+        50478,
+        100552,
+        65053,
+        81627,
+        63495,
+        65592,
+        63478,
+        44994
+      ],
+      "expected": [
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0,
+        58608.0
+      ]
+    },
+    "B4": {
+      "range": [
+        10000000,
+        100000000
+      ],
+      "n": 5096875,
+      "mean": 1.0000812868875883,
+      "variance": 0.7234004643109763,
+      "minimum_possible_delta_from_gap2": 0.12408413768664338,
+      "first_quantile_edge": 0.10536051565782628,
+      "first_bin_count": 0,
+      "chi2": 851696.8613993868,
+      "chi2_p": 0.0,
+      "diagnostic_chi2_excluding_structurally_impossible_first_bin": 342009.36139938683,
+      "diagnostic_chi2_p_excluding_first_bin": 0.0,
+      "lag1_autocorrelation": -0.03632203003619819,
+      "lag2_autocorrelation": -0.017931669599984542,
+      "block1000_mean_se": 0.000270508907123421,
+      "iid_se": 0.0003767362410596048,
+      "se_ratio_block_to_iid": 0.7180326117885293,
+      "counts": [
+        0,
+        537434,
+        808597,
+        377530,
+        718684,
+        515219,
+        594408,
+        566446,
+        566068,
+        412489
+      ],
+      "expected": [
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5,
+        509687.5
+      ]
+    }
+  },
+  "global": {
+    "primes": 5761455,
+    "lag1_autocorrelation": -0.03744642217008736,
+    "variance_ratio_to_Exp1": 0.7192476587053261,
+    "interpretation": "Finite-range normalized gaps are strongly non-independent and their variance changes with scale. The exact Exp(1) rejection is descriptive of a misspecified finite-x null, not evidence against the asymptotic Gallagher/Prime Number Theorem picture or a novel process."
+  },
+  "c7_rerun": {
+    "agreement": true,
+    "verdict_agreement": true,
+    "chi2_diff_max": 0.0,
+    "ks_diff_max": 0.0,
+    "sieve_seconds_fresh": 16.680963039398193
+  },
+  "qm008_reruns": {
+    "Q-M008_1e8_results.json": {
+      "semantic_identical_ignoring_runtime": true,
+      "original_sha256": "cfd12a370fb53dcd4a680c1e2927c323ad33f2cd00701a624794cf9f0293fdb2",
+      "rerun_sha256": "394ccb4ae373e21fc2ecbfb1c39b9f30f53a167a30b40119f8d585a6ac304b84"
+    },
+    "Q-M008_1e9_results.json": {
+      "semantic_identical_ignoring_runtime": true,
+      "original_sha256": "e1138507119951e32bda688e5fc3c12e24dd22ecd3c4e5a4bea9f7a98af3d28d",
+      "rerun_sha256": "2bf14334c8b8d0f5948082e77782d548b0e7941b5eb71b041af340c6eacff01f"
+    },
+    "Q-M008_combined.json": {
+      "semantic_identical_ignoring_runtime": true,
+      "original_sha256": "8889271452172d951fdd46ce044ed6ed2826b1c59651c964492bbaccebca8d22",
+      "rerun_sha256": "362aa89db6fc96994d039e562a38a2654fc8b22a90d71e055e78efb3adc638a2"
+    }
+  }
+}

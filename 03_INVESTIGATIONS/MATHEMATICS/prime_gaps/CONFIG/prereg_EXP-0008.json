@@ -1,0 +1,210 @@
+{
+  "alpha": 0.01,
+  "data_sources": "deterministic sieve of Eratosthenes [0, 10^8]; no external data",
+  "decision_rule": "H0_SUPPORTED if G1 (chi2 not sig after BH-FDR across 4 blocks) AND G2 (bootstrap 95% CI of mean(delta_b) contains 1 for all 4 blocks) AND G3 (tail z not sig after BH-FDR across 20 cells) AND G4 (KS agrees with G1 after BH-FDR) AND C1 passes AND C2 passes AND C7 agrees block-by-block. INCONCLUSIVE if any gate ambiguous or any control fails while primary gates pass. H1_SUPPORTED if G1 or G2 or G3 rejects AND deviation survives C6 (>=2 disjoint ranges) AND C7 agrees.",
+  "experiment_id": "EXP-0008",
+  "falsification_plan": "FALSIFICATION/planning_checks.md",
+  "hypothesis_id": "HYP-005",
+  "note": "Frozen before execution. Primary H0: normalized prime gaps delta = (p_{i+1}-p_i)/ln(p_i) follow Exp(1) (Gallagher/Poisson, 1976) in each of four disjoint ranges to 10^8; gates: chi2 GOF (quantile bins), KS vs Exp(1), binomial tail survival at t in {1,2,3,4,5}; controls: null/random, positive (mean-1 Gamma surrogate), seed ladder, resolution variation, method agreement, residue conditioning; C7 independent implementation required.",
+  "parameters": {
+    "N_MAX": 100000000,
+    "bins": {
+      "J": 10,
+      "edges": "-ln(1 - j/10) for j=1..9",
+      "expected_per_bin": "n_b/10",
+      "kind": "exponential-quantile"
+    },
+    "blocks": [
+      {
+        "hi": 100000,
+        "label": "B1",
+        "lo": 10000
+      },
+      {
+        "hi": 1000000,
+        "label": "B2",
+        "lo": 100000
+      },
+      {
+        "hi": 10000000,
+        "label": "B3",
+        "lo": 1000000
+      },
+      {
+        "hi": 100000000,
+        "label": "B4",
+        "lo": 10000000
+      }
+    ],
+    "bootstrap": {
+      "n_draws": 10000,
+      "rng_label": "exp0008-boot",
+      "seed": 42,
+      "what": "percentile 95% CI on mean(delta_b) per block"
+    },
+    "data_generation": {
+      "engine": "numpy Eratosthenes over [0, N_MAX]",
+      "note": "deterministic; primes are integers",
+      "rng_used": false
+    },
+    "gap_definition": "delta_i = (p_{i+1} - p_i) / ln(p_i)  (lower prime p_i)",
+    "independent_replication": {
+      "name": "C7 independent implementation",
+      "path": "REPLICATION/independent_check.py",
+      "requirements": [
+        "different prime source (sympy.primerange)",
+        "different binning scheme (equal-width instead of exponential-quantile)",
+        "different stats entry point (scipy.stats.chisquare + kstest)",
+        "own rng label 'exp0008/c7/independent'",
+        "block-by-block H0/H1 verdict must match primary",
+        "chi2/KS vectors must match within recorded tolerance"
+      ]
+    },
+    "null_control": {
+      "distribution": "i.i.d. Exp(1) via rng",
+      "expected": "MUST NOT flag any significant deviation after BH-FDR (calibration)",
+      "n_per_block": "same as block n",
+      "name": "C1 null/random control",
+      "rng_label": "exp0008/c1/null"
+    },
+    "output_schema": {
+      "controls": "C1..C6 pass/fail + detail",
+      "decision": "H0_SUPPORTED | INCONCLUSIVE | H1_SUPPORTED",
+      "diagnostics": "record-level summaries (report-only, not gates)",
+      "primary_results": "per-block chi2, dof, p, chi2_red, combined chi2, KS stat/p, mean, std, bootstrap CI, tail cells (z/p/fdr_q)",
+      "reason": "string",
+      "replication": "C7 verdict, vector match"
+    },
+    "positive_control": {
+      "distribution": "Gamma(shape=0.5, scale=2)",
+      "expected": "MUST flag a significant deviation after BH-FDR (validates gates)",
+      "mean": 1.0,
+      "n_per_block": "same as block n",
+      "name": "C2 positive control",
+      "rng_label": "exp0008/c2/positive",
+      "variance": 4.0
+    },
+    "preregistered_analyses": [
+      "chi-square GOF vs Exp(1) (10 quantile bins)",
+      "combined chi2 across 4 blocks",
+      "KS vs fully specified Exp(1)",
+      "bootstrap percentile CI on mean(delta)",
+      "binomial tail survival at t in {1,2,3,4,5}",
+      "BH-FDR at alpha 0.01",
+      "C1 null control",
+      "C2 positive control (Gamma(0.5,2) mean 1)",
+      "C3 seed ladder",
+      "C4 resolution variation",
+      "C5 method agreement",
+      "C6 residue-class conditioning",
+      "C7 independent implementation"
+    ],
+    "residue_conditioning": {
+      "condition_on": "lower prime p_i mod 12",
+      "exclude_primes_below": 10000,
+      "expected": "no significant deviation after conditioning; if primary rejects, it must survive in >=2 disjoint ranges",
+      "modulus": 12,
+      "name": "C6 residue-class conditioning (falsification robustness)",
+      "valid_residues": [
+        1,
+        5,
+        7,
+        11
+      ]
+    },
+    "resolution_variation": {
+      "J_values": [
+        8,
+        10,
+        12
+      ],
+      "expected": "chi2 GOF verdict identical across J",
+      "name": "C4 resolution variation",
+      "rng_label": "exp0008/resolution"
+    },
+    "secondary": {
+      "KS": {
+        "correction": "BH-FDR at alpha 0.01 across blocks",
+        "name": "Kolmogorov-Smirnov vs fully specified Exp(1)",
+        "role": "method-variation agreement (C5)"
+      },
+      "tail": {
+        "correction": "BH-FDR at alpha 0.01 across (block,t) = 20 cells",
+        "name": "survival P(delta>t) vs exp(-t)",
+        "role": "falsification robustness",
+        "t_values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "test": "two-sided z on Binomial(n, exp(-t))"
+      }
+    },
+    "seed_ladder": {
+      "control": "C3 seed variation",
+      "rng_label": "exp0008/seed-ladder",
+      "seeds": [
+        7,
+        123,
+        2023,
+        314159,
+        271828
+      ],
+      "what": "bootstrap CI verdict must be identical across seeds"
+    },
+    "sieve": {
+      "note": "deterministic; primes are integers, no randomness",
+      "rng_used": false,
+      "type": "numpy Eratosthenes bool array"
+    },
+    "statistics": {
+      "primary": {
+        "combined": "sum of per-block chi2 (dof 36)",
+        "correction": "BH-FDR at alpha 0.01 across blocks",
+        "dof_per_block": 9,
+        "name": "chi-square GOF vs Exp(1)"
+      }
+    },
+    "tolerances": {
+      "alpha": 0.01,
+      "tol_c3_seed_verdict": "identical",
+      "tol_c4_resolution_verdict": "identical",
+      "tol_c5_method_agree": "identical",
+      "tol_c7_vector_match": "absolute difference < 1e-9 on chi2; identical verdict",
+      "tol_mean_delta_CI_contains_1": "bootstrap 95% CI must contain 1.0"
+    }
+  },
+  "preregistered_analyses": [
+    "chi-square GOF vs Exp(1) (10 quantile bins)",
+    "combined chi2 across 4 blocks",
+    "KS vs fully specified Exp(1)",
+    "bootstrap percentile CI on mean(delta)",
+    "binomial tail survival at t in {1,2,3,4,5}",
+    "BH-FDR at alpha 0.01",
+    "C1 null control",
+    "C2 positive control (Gamma(0.5,2) mean 1)",
+    "C3 seed ladder",
+    "C4 resolution variation",
+    "C5 method agreement",
+    "C6 residue-class conditioning",
+    "C7 independent implementation"
+  ],
+  "preregistered_controls": [
+    "C1 null/random control",
+    "C2 positive control (Gamma(0.5,2) mean 1)",
+    "C3 seed ladder",
+    "C4 resolution variation",
+    "C5 method agreement (chi2 vs KS)",
+    "C6 residue-class conditioning",
+    "C7 independent implementation"
+  ],
+  "question": "Q-M002",
+  "question_id": "Q-M002",
+  "result": null,
+  "result_hash": null,
+  "seed": 42,
+  "software": null,
+  "timestamp_utc": "2026-09-18T12:00:00+00:00"
+}

@@ -1,0 +1,35 @@
+# Configuration — prereg_EXP-0014.json (frozen)
+
+{
+  "experiment_id": "EXP-0014",
+  "question": "Q-M005",
+  "hypothesis": "HYP-M005",
+  "title": "Feigenbaum universality in higher-order 1D maps",
+  "date": "2026-09-21",
+  "map_family": "f(x) = 1 - a * |x|^z on [-1, 1]",
+  "extremum_orders": [2, 3, 4],
+  "n_range": [1, 8],
+  "period_doubling": true,
+  "critical_point": 0.0,
+  "root_finder": {
+    "primary": "newton",
+    "fallback": "brentq",
+    "xtol": 1e-12,
+    "max_iter": 1000
+  },
+  "seeds": [1, 2, 3, 4, 5],
+  "published_values": {
+    "z2": {"delta_infty": 4.6692016091029, "alpha_infty": -2.5029078750957},
+    "z3": {"delta_infty": 4.894, "alpha_infty": -2.646},
+    "z4": {"delta_infty": 5.168, "alpha_infty": -2.744}
+  },
+  "tolerances": {
+    "reproduction_z2_delta": 1e-3,
+    "reproduction_z2_alpha": 1e-3,
+    "convergence_delta": 1e-4,
+    "convergence_alpha": 1e-4
+  },
+  "bh_fdr_alpha": 0.01,
+  "controls": ["C1", "C2", "C3", "C4", "C5", "C6", "C7"],
+  "evidence": "UNTESTED"
+}

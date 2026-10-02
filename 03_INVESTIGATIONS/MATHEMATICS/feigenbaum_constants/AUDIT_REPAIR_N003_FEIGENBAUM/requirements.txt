@@ -1,0 +1,2 @@
+# Isolated N-003 audit-repair dependency
+mpmath==1.3.0

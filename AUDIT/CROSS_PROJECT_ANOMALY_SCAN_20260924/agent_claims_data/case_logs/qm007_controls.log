@@ -1,0 +1,34 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "qm007_controls": {
+      "ok": true,
+      "evidence": {
+        "report_control_lines": [
+          "| Comparison: EXP-0008 (20 tail cells) | All 20 survive |",
+          "| Bin | Observed | Expected | Ratio | Std Residual (avg) | Character |",
+          "| C7 independent | Perfect match | Perfect match (data same) |",
+          "| Control | Status | Note |",
+          "| C1 null random | PASS | No significant block (calibration) |",
+          "| C2 positive control | PASS | Validates gate power |",
+          "| C3 seed ladder | PASS | Identical per-block verdict |",
+          "| C4 resolution | PASS | Identical verdict across J |",
+          "| C5 method agreement | PASS | ╧ç┬▓ vs KS agree |",
+          "| C6 residue conditioning | PASS | Deviation survives in 4/4 ranges |",
+          "| C7 independent | PASS | C7_exp0008_report.json |",
+          "- **BH-FDR not reapplied** to the 40-cell grid in the primary EXP-0008 analysis ΓÇö this is a re-analysis"
+        ],
+        "changelog_scope": [
+          "  - Audit report: Q-M007/AUDIT_Q006_Q007.md",
+          "- **Q-M007 audit (independent verification):**",
+          "  - Note: Q-M007 reports RAW residuals ΓÇö BH-FDR NOT applied to 40-cell grid (only 20 primary tail cells assessed)"
+        ],
+        "source_reads_only": [
+          "data_path = Path(r\"C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\Q-M007\\q_m007_results.json\")",
+          "with open(data_path) as f:"
+        ],
+        "report_claims_c7": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md:63"
+      }
+    }
+  }
+}

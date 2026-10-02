@@ -1,0 +1,55 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "qp006": {
+      "ok": true,
+      "evidence": {
+        "hashes": [
+          {
+            "a": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+            "b": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz",
+            "a_sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+            "b_sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+            "identical": true
+          },
+          {
+            "a": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+            "b": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz",
+            "a_sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+            "b_sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+            "identical": true
+          },
+          {
+            "a": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+            "b": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz",
+            "a_sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+            "b_sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+            "identical": true
+          }
+        ],
+        "prereg_no_reuse": true,
+        "result_top_keys": [
+          "experiment",
+          "L_list",
+          "n_real",
+          "bootstrap_draws",
+          "exponents",
+          "tau_cumulative_se",
+          "tau_cum_chi2_red",
+          "elapsed"
+        ],
+        "report_gap_lines": [
+          "| 1/nu | NOT COMPUTED | -- | [0.60, 0.90] | -- | -- | GAP |",
+          "Note: Gates C1, C6, C7, FG were not evaluated ΓÇö full decision rule could not be applied from results JSON alone."
+        ],
+        "import_path": [
+          "16: QP005_CODE = os.path.join(ROOT, \"Q-P005_exponents\", \"CODE\")",
+          "17: if QP005_CODE not in sys.path: sys.path.insert(0, QP005_CODE)",
+          "18: from run_exp0009 import (run_exponent_cell, save_cell, load_cell,",
+          "19:                              bootstrap_slope, fit_tau_cumulative,",
+          "20:                              fit_tau_histogram)"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "n001-crossover-diagnostic-prereg-v1",
+  "experiment_id": "N001-CROSSOVER-DIAGNOSTIC",
+  "question_id": "Q-P007",
+  "supersedes_nothing": "this is a diagnostic on stored data. It does not replace, re-run, or reinterpret the N-001 production decision, which stands as DEVIATION_FROM_FISHER.",
+  "frozen_before_execution": true,
+  "disclosure_of_prior_knowledge": "IMPORTANT AND NOT DISCLOSED-FREE. Before this preregistration was written I had already read the four window fits stored in N001_production_summary.json, whose cumulative tau values are 1.93585 (s in [16,512]), 1.92009 (s in [32,4096]), 1.92828 (s in [32,2048]) and 1.91207 (s in [64,4096]). I had also read that the cumulative and histogram estimators of the same window disagree, 1.92009 versus 1.70277. So the existence of some window dependence and of estimator disagreement was already visible. This preregistration is therefore INFORMED, not blind, and is labelled as such. What had NOT been seen, and is the genuinely pre-specified primary test here, is any per-L value of tau. The primary statistic below is therefore novel at the time of freezing, and the directional prediction in 'primary_prediction' is derived from finite-size theory rather than from any number computed here.",
+  "question": "Is the N-001 deviation of the 2D cluster-mass exponent from the Fisher value 187/91 = 2.05495 explained by finite-size crossover, or is it flat in system size and therefore something the present design cannot explain?",
+  "why_the_existing_data_can_answer_it": "The N-001 production stored one flat non-increasing int64 cluster-size array per realization and per p arm at L = 256, 512 and 1024, with 100, 100 and 50 realizations respectively, tails of roughly 1.9e3, 7.4e3 and 2.9e4 clusters. A per-size analysis therefore requires no new Monte Carlo. The laboratory's own open question is explicitly whether a larger L or a finite-size extrapolation is needed; this diagnostic asks first whether the already-stored sizes already carry the answer.",
+  "theory_basis_for_the_directional_prediction": "For a periodic d = 2 box the apparent threshold is above the infinite-volume threshold, p_c(L) > p_c^inf, with the leading shift of order 1/L. The production sampled at p = p_c^inf, so every box sits slightly on the disordered side of its own finite-size transition, by an amount that shrinks as L grows. A slightly disordered finite system has a steeper mass distribution, so the apparent tau should be larger at small L and should drift down toward the Fisher value as L increases. Equivalently tau(L) is expected to be monotonically increasing in L, with the Fisher value approached from above.",
+  "primary_prediction": "tau(L) increases with L. Concretely the preregistered sign test is that the per-size sequence at the frozen window s in [32,4096], canonical arm, satisfies tau(256) < tau(512) < tau(1024).",
+  "primary_statistic": "the per-size cumulative tau at the frozen window s in [32,4096], canonical arm, at each of L = 256, 512, 1024, with realization-block bootstrap intervals",
+  "secondary_statistics": [
+    "the signed slope of tau against log L, with its bootstrap interval, and the L at which a linear extrapolation of that slope would reach 187/91",
+    "window dependence of the pooled cumulative tau across the four stored windows [16,512], [32,4096], [32,2048], [64,4096], as a curvature diagnostic",
+    "the disagreement between the cumulative and histogram estimators of the same window, which is zero for an exact power law and therefore a direct measure of curvature",
+    "the paired canonical-minus-refined tau at each L, as a check that the deviation is not a threshold-refinement artifact"
+  ],
+  "decision_rule": {
+    "CROSSOVER_SUPPORTED": "tau increases with L in the preregistered order, the slope's 95% interval excludes zero in the increasing direction, and the extrapolated crossing of 187/91 occurs at an L greater than 1024. This is consistent with finite-size crossover and remains an escalation, not a discovery, because the laboratory's own pre-run documentation already predicted an apparent 1.8 to 2.0 in this regime.",
+    "CROSSOVER_NOT_ESTABLISHED": "tau is flat in L within the bootstrap intervals, or decreases with L, or the slope interval includes zero in the increasing direction. In that case the crossover explanation is not supported by the stored data, the deviation is not attributable to finite-size drift, and the open question is a harder one than a finite-size extrapolation: it would require larger L than 1024 and a proper scaling extrapolation, not a repeat of N-001.",
+    "CURVATURE_PRESENT": "reported whenever the four window values or the two estimator values disagree by more than their combined bootstrap intervals, independent of the L trend, because a distribution that is not a pure power law cannot yield a single trustworthy tau by any method",
+    "INDETERMINATE": "any per-size fit that is not scorable, or fewer than three scorable sizes, which is reported as indeterminate and never as agreement"
+  },
+  "controls": [
+    "the stored production arrays are opened read-only and are not rewritten, reordered, or re-saved",
+    "the primary window is frozen at the production window s in [32,4096], which lies below L^(8/3) at every L used, so the power-law regime is not truncated by the largest cluster the box can hold",
+    "the canonical and refined arms are analysed as a paired check, since they share seeds by construction and therefore share noise",
+    "bootstrap resamples realization blocks, never individual clusters, because clusters within one realization are not independent",
+    "the primary result must reproduce the stored production primary tau when the same sizes and window are pooled, which is the reproduction control",
+    "the number of realizations differs by L, so the per-size bootstrap draws the same number of realizations within each L and the L comparison is never made on unequal realization counts"
+  ],
+  "claim_guards": [
+    "No new physics is claimed. This is a diagnostic of whether an existing escalation can be attributed to finite-size crossover.",
+    "A CROSSOVER_SUPPORTED result does not resolve Q-P007; it relocates the question to larger L and states what would be needed there.",
+    "The N-001 production decision DEVIATION_FROM_FISHER is not edited, reversed, or softened by this diagnostic.",
+    "No novelty claim, and nothing here bears on any other experiment in the laboratory.",
+    "The Fisher value 187/91 is a two-dimensional known result and is used only as the reference to compare against.",
+    "If the slope interval includes zero, the outcome is CROSSOVER_NOT_ESTABLISHED, and reporting that as convergence would be a false positive for the hypothesis this diagnostic was written to test."
+  ],
+  "falsification": "if tau is flat or decreases with L, the finite-size-crossover explanation of the N-001 deviation is not supported by the stored data, and the deviation must be treated as unexplained at these sizes. That is the outcome this diagnostic is designed to be able to deliver, and it is a real result."
+}

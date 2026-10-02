@@ -1,0 +1,13 @@
+null_family,detector,n,joint_success_rate,location_match_rate,absolute_charge_match_rate,signed_charge_match_rate,mean_location_count,mean_component_count,mean_winding_cell_count,mean_absolute_charge,mean_signed_charge,location_count_values,winding_cell_count_values,absolute_charge_values,charge_normalized_count_values
+matched_amplitude_random_phase,circular_contour,3,0.0,0.0,0.0,0.3333333333333333,130.0,130.0,0.0,162.0,-6.0,"[84, 106, 200]",[0],"[104, 130, 252]","[104.0, 130.0, 252.0]"
+matched_amplitude_random_phase,clustered_winding,3,0.0,0.0,0.0,0.0,5517.0,5517.0,9441.0,9441.0,-0.3333333333333333,"[762, 3160, 12629]","[1287, 5435, 21601]","[1287, 5435, 21601]","[1287.0, 5435.0, 21601.0]"
+matched_amplitude_random_phase,jacobian_locator,3,0.0,0.0,0.0,0.0,70.66666666666667,70.66666666666667,0.0,83.0,1.6666666666666667,"[47, 58, 107]",[0],"[60, 69, 120]","[60.0, 69.0, 120.0]"
+matched_amplitude_random_phase,raw_winding,3,0.0,0.0,0.0,0.0,5517.0,5517.0,9441.0,9441.0,-0.3333333333333333,"[762, 3160, 12629]","[1287, 5435, 21601]","[1287, 5435, 21601]","[1287.0, 5435.0, 21601.0]"
+plane_wave,circular_contour,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+plane_wave,clustered_winding,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+plane_wave,jacobian_locator,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+plane_wave,raw_winding,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+smooth_no_vortex,circular_contour,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+smooth_no_vortex,clustered_winding,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+smooth_no_vortex,jacobian_locator,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]
+smooth_no_vortex,raw_winding,3,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,[0],[0],[0],[0.0]

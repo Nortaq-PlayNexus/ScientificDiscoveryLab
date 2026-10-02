@@ -1,0 +1,95 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "rng_determinism_across_processes",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "sha256_text",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "bh_fdr_flags_small",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "bh_fdr_counts_only_small",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "bh_fdr_no_false_positive",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "matched_spectrum_surrogate",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "experiment_json_built",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "prereg_hash_roundtrip",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "prereg_refuses_overwrite",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "manifest_hashes",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "template_scaffold",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "append_only_registry",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "stats_sane",
+      "ok": true
+    },
+    {
+      "detail": "(24 cells)",
+      "name": "battery_returns_full_grid",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "name": "battery_pvalues_valid",
+      "ok": true
+    },
+    {
+      "detail": "(all-zero stream rejected)",
+      "name": "battery_monobit_has_power",
+      "ok": true
+    }
+  ],
+  "passed": 16,
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "scipy": "1.18.1",
+    "skimage": "0.26.0",
+    "sklearn": "1.9.1",
+    "sympy": "1.14.0"
+  },
+  "total": 16
+}

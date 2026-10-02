@@ -1,0 +1,5 @@
+detector,trial_count,joint_success_mean,bootstrap_ci95_low,bootstrap_ci95_high
+circular_contour,96,1.0,1.0,1.0
+clustered_winding,96,1.0,1.0,1.0
+jacobian_locator,96,1.0,1.0,1.0
+raw_winding,96,1.0,1.0,1.0

@@ -1,0 +1,204 @@
+{
+  "arms": {
+    "independent": [
+      {
+        "base": 128,
+        "n_real": 40,
+        "seconds": 0.17101800000000367,
+        "sizes": [
+          125,
+          126,
+          127,
+          128
+        ]
+      },
+      {
+        "base": 256,
+        "n_real": 40,
+        "seconds": 0.5703731999999491,
+        "sizes": [
+          253,
+          254,
+          255,
+          256
+        ]
+      },
+      {
+        "base": 512,
+        "n_real": 40,
+        "seconds": 2.7748599999999897,
+        "sizes": [
+          509,
+          510,
+          511,
+          512
+        ]
+      },
+      {
+        "base": 1024,
+        "n_real": 40,
+        "seconds": 10.726841599999943,
+        "sizes": [
+          1021,
+          1022,
+          1023,
+          1024
+        ]
+      }
+    ],
+    "nested": [
+      {
+        "base": 128,
+        "field_digest": "3fd44061c30b52250ae8aead5c1628ff4dda116edd5ae2763fc979bb42240e3b",
+        "n_real": 100,
+        "seconds": 0.5163129000000026,
+        "sizes": [
+          125,
+          126,
+          127,
+          128
+        ]
+      },
+      {
+        "base": 256,
+        "field_digest": "73eb0bd42008a2e59f0b75305205f0172100bfb1955057c84bc6eb72b004e77d",
+        "n_real": 100,
+        "seconds": 3.252028899999914,
+        "sizes": [
+          248,
+          252,
+          253,
+          254,
+          255,
+          256
+        ]
+      },
+      {
+        "base": 512,
+        "field_digest": "7e3562fef310b0ecc770004ae040d29492cb39fd98396fd705e95d0dbf22c089",
+        "n_real": 100,
+        "seconds": 17.23487810000006,
+        "sizes": [
+          504,
+          508,
+          509,
+          510,
+          511,
+          512
+        ]
+      },
+      {
+        "base": 1024,
+        "field_digest": "cf3bd4cfb96a1f0a7cef099a4ef1cb0166d1e74ba19437ab55a09870b45359c7",
+        "n_real": 60,
+        "seconds": 82.36034029999996,
+        "sizes": [
+          1021,
+          1022,
+          1023,
+          1024
+        ]
+      }
+    ]
+  },
+  "audit_finding_id": "N-005",
+  "equivalence_margin": 0.01,
+  "experiment_id": "EXP-0017",
+  "gates": [
+    {
+      "detail": "160 cells checked on identical masks, 0 mismatches",
+      "gate": "C7_second_implementation",
+      "pass": true
+    },
+    {
+      "detail": "30 cells checked against from-scratch BFS, 0 mismatches",
+      "gate": "C8_third_implementation",
+      "pass": true
+    },
+    {
+      "detail": "S_max must be non-decreasing from the smaller to the larger nested window; no violations",
+      "gate": "C3_nested_monotonicity",
+      "pass": true
+    },
+    {
+      "detail": "S_max <= open sites <= L^2 for every entry",
+      "gate": "C2_mass_bounds",
+      "pass": true
+    },
+    {
+      "detail": "nested arm realization counts match the frozen preregistration exactly",
+      "gate": "C10_realization_counts",
+      "pass": true
+    },
+    {
+      "detail": "36 stored arrays reloaded bit-exactly",
+      "gate": "C1_raw_round_trip",
+      "pass": true
+    }
+  ],
+  "impl_choices": {
+    "bfs_bases": [
+      128,
+      256
+    ],
+    "bfs_n": 3,
+    "bootstrap_draws": 5000,
+    "bootstrap_seed": 5170017,
+    "c7_subsample_n": 8,
+    "ladder_pairs": "consecutive ladder members, reported descriptively",
+    "realization_block": 8
+  },
+  "manifest_sha256": "54889d6c8b600219411f9a3a0ac3440ab6fd6ce23960cd8bfb0c826d103a17bb",
+  "numpy_version": "2.5.3",
+  "p_c": 0.5927460507921,
+  "prereg_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\N005_BALANCED_LATTICE_SIZE\\CONFIG\\prereg_EXP-0017.json",
+  "prereg_sha256": "9de382eb7bba2853f1ab4cd33441595c5c5611cd2310563221046c3e3f27aa8e",
+  "python_version": "3.14.7",
+  "question_id": "Q-P009",
+  "raw_sqlite_bytes": 77824,
+  "raw_sqlite_sha256": "0dccb5e6f50aa62e9f52b7be82a18bdecf42b24fb5e23e774a21ba10e0f15192",
+  "reference_D_f": 1.8958333333333333,
+  "runner_sha256": "1a21463585edb013ee74683eebd302decff2d7325a2db699e8cd9fa1722548e7",
+  "sanity_fields": {
+    "empty_33": {
+      "bfs": 0,
+      "edge": 0,
+      "ndimage": 0
+    },
+    "empty_8": {
+      "bfs": 0,
+      "edge": 0,
+      "ndimage": 0
+    },
+    "full_33": {
+      "bfs": 1089,
+      "edge": 1089,
+      "ndimage": 1089
+    },
+    "full_8": {
+      "bfs": 64,
+      "edge": 64,
+      "ndimage": 64
+    }
+  },
+  "schema": "n005-exp0017-manifest-v1",
+  "scipy_version": "1.18.1",
+  "structure_four_connectivity": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "wall_seconds": 118.08006880000016
+}

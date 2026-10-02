@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""Append the pre-execution interpretation and implementation choices to the
+EXP-0017 hash chain.
+
+Written BEFORE any production data exists, so the operational reading of the
+frozen decision rule is on the record prior to seeing results. This is the
+lab-sanctioned amendment path (RESEARCH_RULES section 6: parameter/logic
+choices made after freezing are logged, never hidden).
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+INV_ROOT = Path(__file__).resolve().parents[1]
+LAB_ROOT = INV_ROOT.parents[3]
+SHARED_ENGINE = LAB_ROOT / "04_SHARED_ENGINE"
+if str(SHARED_ENGINE) not in sys.path:
+    sys.path.insert(0, str(SHARED_ENGINE))
+
+from engine.hypothesis_testing.prereg import log_change  # noqa: E402
+
+CHANGELOG = INV_ROOT / "CONFIG" / "changes.jsonl"
+
+ENTRIES = [
+    (
+        "Operational definition of 'the independent-stream arm contradicts the "
+        "primary verdict' in decision_rule.WINDOW_OR_ESTIMATOR_SENSITIVE",
+        "The frozen rule says the cross-check 'contradicts the primary verdict' "
+        "but does not define contradiction. Read literally as 'the two arms "
+        "returned different verdict strings', the rule would fire whenever the "
+        "cross-check is merely less powerful than the primary, because an "
+        "unresolved arm returns INCONCLUSIVE_BY_RESOLUTION. That would void the "
+        "primary result on statistical power alone, which is not a scientific "
+        "contradiction. This entry fixes the operational definition BEFORE any "
+        "production data exists: a cross-check contradicts only if it RESOLVES "
+        "the contrast in the opposite direction (excludes zero with the opposite "
+        "sign, or resolves |beta| > margin against a primary equivalence "
+        "verdict). An arm that excludes nothing is recorded as underpowered and "
+        "does not void the primary. The primary statistic, the equivalence "
+        "margin, the fit windows and the falsification rule are UNCHANGED.",
+    ),
+    (
+        "Implementation choices the preregistration left open: "
+        "realization_block=8, c7_subsample_n=8, bfs_bases=[128, 256], bfs_n=3, "
+        "bootstrap_draws=5000, bootstrap_seed=5170017",
+        "The preregistration fixes the scientific content (design, primary "
+        "statistic, margin, decision rule) but leaves sample sizes for the "
+        "implementation cross-checks and the bootstrap count to the "
+        "implementation. These values are recorded here and echoed into the "
+        "run manifest so they are never implicit. The C7 second implementation "
+        "is run on the first 8 realizations of every sampled size at every base, "
+        "and the from-scratch BFS census on the first 3 realizations at the two "
+        "smallest bases, where a pure-Python O(L^2) census is affordable.",
+    ),
+    (
+        "Paired covariance is included in the variance of the primary contrast",
+        "The power-of-two and non-power-of-two pair types share every random "
+        "number inside a realization through the nested common-random-numbers "
+        "design, so their realization-level differences are strongly positively "
+        "correlated. The contrast variance therefore includes that covariance. "
+        "Treating the two pair types as independent would inflate the interval "
+        "on beta by a large factor. Verified by two synthetic end-to-end tests: "
+        "an injected 10% power-of-two mass offset is recovered, and a "
+        "no-offset synthetic returns an interval containing zero.",
+    ),
+    (
+        "PRIMARY ESTIMATOR REPLACED. The local finite-difference slope estimator "
+        "is INVALID and its output is superseded. The primary statistic is now "
+        "the difference of two global OLS slope functionals (a balanced two-arm "
+        "ladder contrast) with a paired realization bootstrap.",
+        "The first analysis used the frozen wording 'local log-log slope between "
+        "two nested sub-window sizes'. That estimator divides the paired "
+        "difference by log(hi/lo), which is about 1e-3 at L=1024, so it "
+        "amplifies noise by roughly 1e3. Two independent diagnostics confirm it "
+        "is noise-dominated rather than merely imprecise: (i) the preregistered "
+        "null control, a contrast between two adjacent NON-power-of-two pairs "
+        "that cannot contain any power-of-two effect, came out at +0.313, "
+        "LARGER in magnitude than the primary contrast of -0.290; (ii) the 2-adic "
+        "ladder produced mutually inconsistent 'precise' slopes such as 1.106 "
+        "+/- 0.002 and 3.913 +/- 0.055 for adjacent pairs. The first analysis "
+        "returned INCONCLUSIVE_BY_RESOLUTION and supported no conclusion in "
+        "either direction; its file is retained as "
+        "EXP-0017_summary_v1_local_slope_SUPERSEDED.json. The replacement "
+        "estimator is the standard balanced design and is the direct analogue of "
+        "the historical comparison: D_f fitted over the power-of-two ladder "
+        "{128,256,512,1024} minus D_f fitted over the non-power-of-two ladder "
+        "{127,255,511,1023}, one nested size per base, so both arms share every "
+        "realization. Because both weight vectors sum to zero, the large "
+        "marginal fluctuation of log S_max cancels in the difference, and no "
+        "quantity is ever divided by log(1+1/L). Uncertainty is a paired "
+        "bootstrap that resamples realizations within each base. The estimator "
+        "was validated on synthetic data BEFORE adoption: a null power law "
+        "returns beta = 0.00000 with a +/-0.00016 interval, and injected "
+        "exponent offsets of +/-0.0265 are recovered as +/-0.02650. No measured "
+        "EXP-0017 value was used to choose this estimator; the raw artifact is "
+        "unchanged and no new data was collected for this change. UNCHANGED: the "
+        "equivalence margin 0.010, the reference 91/48, the fit sizes, the "
+        "falsification rule, and the INCONCLUSIVE_BY_RESOLUTION state.",
+    ),
+    (
+        "Known sensitivity of the corrected estimator to smooth finite-size "
+        "corrections, measured on synthetic data",
+        "A shared smooth correction of the form c*(log L)^2 applied to BOTH arms "
+        "does not cancel exactly, because the two ladders sample slightly "
+        "different log L. With c = 0.30 the estimator returns beta = +0.0027. "
+        "The residual sensitivity is therefore about 0.009 per unit of quadratic "
+        "log-log curvature, which is below the 0.010 equivalence margin but not "
+        "negligible. This is reported as a stated limitation of the corrected "
+        "estimator and is the reason the absolute pooled D_f is reported "
+        "alongside the contrast.",
+    ),
+]
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--changelog", type=Path, default=CHANGELOG)
+    args = parser.parse_args()
+    # Idempotent: an entry already present in the chain is not appended twice.
+    from engine.hypothesis_testing.prereg import verify_change_log
+    existing = verify_change_log(args.changelog)
+    seen = {e["change"] for e in existing}
+    out = []
+    for what, why in ENTRIES:
+        if what in seen:
+            out.append({"entry_hash": "already-present", "change": what[:70] + "..."})
+            continue
+        entry = log_change(
+            experiment_id="EXP-0017",
+            what_changed=what,
+            reason=why,
+            changelog_path=args.changelog,
+        )
+        out.append({"entry_hash": entry["entry_hash"], "change": what[:70] + "..."})
+    print(json.dumps({"changelog": str(Path(args.changelog).resolve()),
+                      "entries": out}, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

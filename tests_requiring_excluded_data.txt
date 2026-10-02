@@ -1,0 +1,27 @@
+# Excluded data required by the test suite
+
+The following files are excluded from this publishable copy because they
+are raw simulation output, but the audit test suite reads them. Tests
+depending on them will fail CLOSED with `required historical evidence is
+missing` or `unable to open database file`. **That is correct
+behaviour, not a packaging defect.** The audit is designed to refuse to
+run without the exact bytes it was audited against; a copy that silently
+substituted regenerated data would defeat the control.
+
+Test counts in the published copy therefore differ from the laboratory:
+laboratory 543 passed, 0 failed (2026-10-02, laboratory, full data present); this copy expects the subset that does not
+read excluded data.
+
+To run the complete suite, restore these files from the laboratory, or
+regenerate them from the seeds in the corresponding preregistrations.
+
+| bytes | path |
+|---|---|
+| 6079974 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L128_n1500.npz` |
+| 10702759 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L256_n700.npz` |
+| 8914681 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n150.npz` |
+| 14038471 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n60.npz` |
+| 794364 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L127_n200.npz` |
+| 1729961 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L191_n200.npz` |
+| 2977496 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L253_n200.npz` |
+| 9155196 | `03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L449_n200.npz` |

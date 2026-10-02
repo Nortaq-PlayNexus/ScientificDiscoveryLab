@@ -1,0 +1,51 @@
+{
+  "alpha": 0.01,
+  "experiment_id": "EXP-0003",
+  "hypothesis_id": "HYP-002",
+  "note": "Frozen before execution. Primary H0 on narrow-band cells k0<=pi/4 at N=1024.",
+  "parameters": {
+    "N_list": [
+      256,
+      512,
+      1024
+    ],
+    "gauss_centre": 1.5707963267948966,
+    "k0_rad_per_px": [
+      0.09817477042468103,
+      0.19634954084936207,
+      0.39269908169872414,
+      0.7853981633974483,
+      1.5707963267948966
+    ],
+    "n_boot": 2000,
+    "n_realisations": 40,
+    "ring_halfwidth": 0.2,
+    "sigma_list": [
+      0.1,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "tolerance_ci": 0.05,
+    "tolerance_point": 0.03
+  },
+  "preregistered_analyses": [
+    "ratio vs 1 (99% bootstrap CI)",
+    "BH-FDR across cells"
+  ],
+  "preregistered_controls": [
+    "C1 analytic-vs-FD consistency",
+    "C2 winding vs contour crossing",
+    "C3 charge neutrality",
+    "C4 half-pixel shift invariance (grid-lock falsifier)",
+    "C5 amplitude scaling",
+    "C6 independent implementation",
+    "C7 resolution/pixels-per-wavelength ladder",
+    "C8 bandwidth ladder (Nyquist failure zone)",
+    "C9 seed ladder",
+    "C10 BH-FDR"
+  ],
+  "question_id": "Q-O002",
+  "seed": 42,
+  "timestamp_utc": "2026-09-17T06:08:50+00:00"
+}

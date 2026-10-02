@@ -1,0 +1,14 @@
+{
+  "execution_class": "READ_ONLY_STORED_CELL_VALIDATION",
+  "historical_evidence_baseline_sha256": "f8074731c57d4115133421385d57aa85e7970da04037189e75135a335b5915df",
+  "historical_files_written": false,
+  "monte_carlo_generations_launched": false,
+  "outputs": {
+    "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/REPORT/VALIDATION_REPORT_20260924.md": "6b49dc53a7c597e36ef65888d9a9059073c1b2cbd6f6016a52e15fbf3e2f986a",
+    "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/RESULTS/READ_ONLY_VALIDATION_20260924/validation_report.json": "cf5bd976e94ed775812cf7a2c304423212ce0b11900c6e387031f0f19cca7d4d"
+  },
+  "production_calculations_launched": false,
+  "runner_sha256": "487666d8697720d04230190fd42fb179ef897d15861ebc560d702ca4043b4d51",
+  "schema": "historical-2d-percolation-audit-run-manifest-v1",
+  "scope_config_sha256": "207abab2b045f61ac4f5c33ab02422b7279fbcb7ffc5ea437a1640f89d7c15c5"
+}

@@ -1,0 +1,718 @@
+{
+  "experiment": "Q-M001 Generalized Collatz stopping-time statistics",
+  "parameters": {
+    "a_values": [
+      3,
+      5,
+      7
+    ],
+    "b_values": [
+      3,
+      5,
+      7
+    ],
+    "c_values": [
+      1,
+      3,
+      5
+    ],
+    "N": 1000,
+    "n_real": 5,
+    "pilot": true,
+    "full_run_plan": "N=100000, n_real=100 (CPU-minutes per family)"
+  },
+  "results": [
+    {
+      "a": 3,
+      "b": 3,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.93,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "1000": 1171
+      },
+      "cycles_found": 470,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 19.04,
+      "median_stopping_time": 19,
+      "max_stopping_time": 31,
+      "stopping_time_distribution": {
+        "0": 26,
+        "10": 685,
+        "20": 443,
+        "30": 23
+      },
+      "cycles_found": 0,
+      "cycle_examples": []
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.93,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "1000": 1171
+      },
+      "cycles_found": 470,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 983.186,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "10": 14,
+        "1000": 1157
+      },
+      "cycles_found": 465,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.93,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "1000": 1171
+      },
+      "cycles_found": 470,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.93,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "1000": 1171
+      },
+      "cycles_found": 470,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.09,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "10": 1,
+        "1000": 1170
+      },
+      "cycles_found": 469,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.93,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "1000": 1171
+      },
+      "cycles_found": 470,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 993.249,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "10": 2,
+        "1000": 1169
+      },
+      "cycles_found": 468,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 982.309,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 10,
+        "10": 11,
+        "1000": 1156
+      },
+      "cycles_found": 462,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        67,
+        71,
+        73,
+        75,
+        77
+      ]
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 24.64,
+      "median_stopping_time": 25,
+      "max_stopping_time": 41,
+      "stopping_time_distribution": {
+        "0": 39,
+        "10": 225,
+        "20": 645,
+        "30": 252,
+        "40": 16
+      },
+      "cycles_found": 0,
+      "cycle_examples": []
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 995.768,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 5,
+        "1000": 1172
+      },
+      "cycles_found": 471,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 3,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 994.935,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "1000": 1171
+      },
+      "cycles_found": 467,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 3,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 3,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 5,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 5,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 990.732,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 6,
+        "10": 5,
+        "1000": 1166
+      },
+      "cycles_found": 468,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 5,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "c": 1,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "c": 3,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "c": 5,
+      "n_observations": 1177,
+      "mean_stopping_time": 999.153,
+      "median_stopping_time": 1000,
+      "max_stopping_time": 1000,
+      "stopping_time_distribution": {
+        "0": 1,
+        "1000": 1176
+      },
+      "cycles_found": 472,
+      "cycle_examples": [
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ]
+    }
+  ],
+  "key_finding": "Pilot run complete. Deviations from heuristic model will be assessed at full scale.",
+  "status": "PILOT COMPLETE \u00e2\u20ac\u201d full run pending compute resources"
+}

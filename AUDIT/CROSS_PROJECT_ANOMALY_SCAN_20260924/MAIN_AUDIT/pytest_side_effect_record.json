@@ -1,0 +1,11 @@
+{
+  "file": "sovereign_biolab.db",
+  "baseline_sha256": "e7dfc79cdb696b39ae3578e4427b0a026b107655a1a359c5562edc2d46b087b9",
+  "after_pytest_sha256": "1d925f3b0b2b19ce42a10e92b9ca02e22e1a9250df40eb34475bd6713a4b2cf1",
+  "table_counts_before": "all 21 tables = 0",
+  "table_counts_after": "all 21 tables = 0",
+  "restored_from": "C:/Users/natha/AppData/Local/Temp/opencode/ScientificDiscoveryLab_audit_20260924_0325/sovereign_biolab.db",
+  "restored_sha256": "e7dfc79cdb696b39ae3578e4427b0a026b107655a1a359c5562edc2d46b087b9",
+  "command": "python -m pytest",
+  "note": "The database was restored after the test run; no historical source/result file was intentionally changed."
+}

@@ -1,0 +1,46 @@
+{
+  "experiment_id": "EXP-0009",
+  "gate": "C7",
+  "implementation": "pure-Python union-find (path halving, size-tracking); no scipy.sparse/csgraph",
+  "streams": "identical G_LAB rng labels/seeds; first 40 realizations of each exponent cell",
+  "per_L": {
+    "128": {
+      "n": 40,
+      "Mmax_identical": true,
+      "chi_identical": true,
+      "max_diff_Mmax": 0.0,
+      "max_diff_chi": 0.0,
+      "uf_mean_Mmax": 4210.25,
+      "eng_mean_Mmax": 4210.25
+    },
+    "256": {
+      "n": 40,
+      "Mmax_identical": true,
+      "chi_identical": true,
+      "max_diff_Mmax": 0.0,
+      "max_diff_chi": 0.0,
+      "uf_mean_Mmax": 14495.9,
+      "eng_mean_Mmax": 14495.9
+    },
+    "512": {
+      "n": 40,
+      "Mmax_identical": true,
+      "chi_identical": true,
+      "max_diff_Mmax": 0.0,
+      "max_diff_chi": 0.0,
+      "uf_mean_Mmax": 60569.15,
+      "eng_mean_Mmax": 60569.15
+    }
+  },
+  "per_realization_Mmax_identical": true,
+  "D_f": {
+    "uf_subsample": 1.9236534931191327,
+    "uf_boot_se": 0.06101898717371485,
+    "engine_reported": 1.869737723898956,
+    "engine_boot_se": 0.022226754657092666,
+    "abs_diff": 0.0539157692201766,
+    "tol_3se": 0.18305696152114456,
+    "pass": true
+  },
+  "pass": true
+}

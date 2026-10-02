@@ -1,0 +1,103 @@
+{
+  "experiment_id": "EXP-0004",
+  "hypothesis": "HYP-003",
+  "machine": {
+    "machine": "AMD64",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+  },
+  "parameters": {
+    "generators": [
+      "G_LAB",
+      "G_PCG",
+      "G_MT"
+    ],
+    "lab_label": "Q-I004:cert",
+    "nbits": 262144,
+    "nbytes": 32768,
+    "seeds": [
+      42,
+      7,
+      123,
+      2023,
+      314159,
+      271828
+    ]
+  },
+  "question": "Q-I004",
+  "result": {
+    "aggregates": {
+      "G_LAB": {
+        "binomial_band": {
+          "hi": 4,
+          "lo": 0
+        },
+        "fdr_flag_count": 0,
+        "fdr_in_band": true,
+        "ks_p": 0.7905655507179055,
+        "ks_pass": true,
+        "n_cells": 144,
+        "pass_rule": true,
+        "small_p_count": 1,
+        "small_p_in_band": true,
+        "small_p_min": 0.009941421946028135
+      },
+      "G_MT": {
+        "binomial_band": {
+          "hi": 4,
+          "lo": 0
+        },
+        "fdr_flag_count": 0,
+        "fdr_in_band": true,
+        "ks_p": 0.6517212298658333,
+        "ks_pass": true,
+        "n_cells": 144,
+        "pass_rule": true,
+        "small_p_count": 1,
+        "small_p_in_band": true,
+        "small_p_min": 0.005159608455001912
+      },
+      "G_PCG": {
+        "binomial_band": {
+          "hi": 4,
+          "lo": 0
+        },
+        "fdr_flag_count": 0,
+        "fdr_in_band": true,
+        "ks_p": 0.03306582622869758,
+        "ks_pass": true,
+        "n_cells": 144,
+        "pass_rule": true,
+        "small_p_count": 3,
+        "small_p_in_band": true,
+        "small_p_min": 0.00610314922927904
+      }
+    },
+    "conclusion": "The lab RNG (sha256-derived PCG64) passes the preregistered lightweight battery at lab stream lengths, over 6 seeds, judged by KS uniformity, exact binomial rejection band, and BH-FDR supervision; and the battery is validated on known-good controls. Certificate: CONTROLLED.",
+    "controls": {
+      "C1_determinism": {
+        "fresh_process_sha256": "eabc078d9b5bd8be743cd2b107bb5dbadb67ab6b097febe1537ccce0e02a697d",
+        "parent_process_sha256": "eabc078d9b5bd8be743cd2b107bb5dbadb67ab6b097febe1537ccce0e02a697d",
+        "pass": true
+      },
+      "C2_label_independence": {
+        "alt_label_sha256": "68b9e9df74a4cb0676d8b869d696c14fb241b5b0cfa2cb7ab115114ae7fb0f47",
+        "pass": true,
+        "primary_label_sha256": "eabc078d9b5bd8be743cd2b107bb5dbadb67ab6b097febe1537ccce0e02a697d"
+      }
+    },
+    "decision": "CERTIFIED"
+  },
+  "result_hash": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+  "seed": 42,
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "scipy": "1.18.1",
+    "skimage": "0.26.0",
+    "sklearn": "1.9.1",
+    "sympy": "1.14.0"
+  },
+  "timestamp_utc": "2026-09-17T07:59:47+00:00"
+}

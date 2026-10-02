@@ -1,0 +1,127 @@
+{
+  "audit_id": "EXP-0008-INDEPENDENT-NOVELTY-AUDIT-20260924",
+  "audit_date": "2026-09-24",
+  "scope": {
+    "experiment": "EXP-0008",
+    "question": "Q-M002",
+    "hypothesis": "HYP-005",
+    "investigation": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps",
+    "canonical_files_modified": false,
+    "related_followups": ["Q-M007", "Q-M008", "Q-S9-2 provenance review"]
+  },
+  "category": "D",
+  "category_label": "Statistical/modeling artifact or implementation issue",
+  "classification_confidence": 0.97,
+  "exact_statistic_known": true,
+  "exact_protocol_published": false,
+  "equivalent_statistic_known": true,
+  "deviation_previously_reported": true,
+  "deviation_theoretically_expected": true,
+  "first_bin_deviation_theoretically_expected": true,
+  "residual_theoretically_expected": false,
+  "known_scope": "The asymptotic quantity and arithmetic/support phenomena are known; the exact four-block protocol and any residual after a complete wheel/HL null are not established as a named result.",
+  "residual_after_arithmetic_conditioning_explained": false,
+  "null_model_robust": false,
+  "dependence_issue": true,
+  "independent_reproduction": true,
+  "independent_reproduction_scope": "deterministic prime generation and core statistics; not full scientific-null validation",
+  "novelty_claim_supported": false,
+  "verdict": "EXP-0008 reproducibly rejects the operational i.i.d. continuous Exp(1) surrogate, but the result is dominated by finite-scale arithmetic support, dependence, and an inadequate residue-aware null. It does not establish a deviation from the Gallagher/Poisson heuristic or a novel prime-gap law.",
+  "effect_size": "Against iid Exp(1), histogram total-variation distance is 0.2131, 0.1539, 0.1504, and 0.1450 for B1-B4; empirical-quantile W1 is approximately 0.1630, 0.1343, 0.1144, and 0.1024. The first impossible bin contributes 576022.2 chi-square units, 59.28% of the combined 971920.0236. Mean shifts are only 0.002428, 0.001326, 0.000359, and 0.000081.",
+  "primary_statistic": {
+    "definition": "delta_i = (p_{i+1} - p_i) / log(p_i), with p_i the lower prime",
+    "n_by_block": [8362, 68905, 586080, 5096875],
+    "mean_by_block": [1.0024283203598847, 1.0013264433284872, 1.0003586722167706, 1.0000812868875883],
+    "sd_by_block": [0.7631631469002967, 0.8037207090737387, 0.8328885508897993, 0.8505295199527035],
+    "chi2_by_block": [2357.813441760344, 12517.679195994482, 105347.66953316955, 851696.8613993868],
+    "combined_chi2": 971920.0235703111,
+    "combined_dof": 36,
+    "combined_chi2_reduced": 26997.778432508643,
+    "first_bin_edge": 0.10536051565782628,
+    "minimum_possible_delta_below_1e8": 0.10857362047581294,
+    "first_bin_counts": [0, 0, 0, 0],
+    "first_bin_expected_counts": [836.2, 6890.5, 58608.0, 509687.5],
+    "first_bin_combined_chi2_contribution": 576022.2,
+    "first_bin_combined_fraction": 0.5926641967
+  },
+  "gate_status": {
+    "G1_chi_square": "FAIL",
+    "G2_mean_bootstrap": "PASS",
+    "G3_tails": "FAIL",
+    "G4_chi_square_KS_agreement": "PASS",
+    "C1_iid_null": "PASS",
+    "C2_positive_gamma": "PASS",
+    "C3_seed_ladder": "PASS_BUT_IID_BOOTSTRAP_ONLY",
+    "C4_resolution": "PASS_BUT_SHARED_NULL",
+    "C5_method_agreement": "PASS_BUT_NOT_CALIBRATION",
+    "C6_residue_conditioning": "FAIL_WITH_SURVIVAL_COUNT_4",
+    "C7": "QUALIFIED_ARITHMETIC_CROSS_CHECK"
+  },
+  "dependence_diagnostics": {
+    "lag1_correlation_by_block": [-0.08949347089189974, -0.05244647665623131, -0.04537681163074781, -0.03632203003619819],
+    "cluster_length_100_mean_intervals_95": [
+      [0.99283, 1.01203],
+      [0.99696, 1.00569],
+      [0.99867, 1.00205],
+      [0.99947, 1.00069]
+    ],
+    "interpretation": "The mean conclusion is robust to a basic contiguous-cluster correction; the full distribution and tail p-values are not calibrated against a dependence-aware prime model."
+  },
+  "alternative_model_checks": {
+    "support_adjusted_ks_by_block": [0.12186079885194934, 0.10079094405340683, 0.08669635544635546, 0.07481682403433476],
+    "even_lattice_exploratory_chi2_by_block": [851.8401861450552, 5641.8684668521655, 29936.5095213977, 181809.71734397835],
+    "singular_series_weighted_exploratory_chi2_by_block": [1366.080138932316, 8210.205476670022, 50843.669406355504, 99777.4644188931],
+    "interpretation": "These are exploratory, non-preregistered checks. They show that arithmetic conditioning removes much of the first-bin discrepancy but do not identify a complete Gallagher/Hardy-Littlewood null."
+  },
+  "prior_art": [
+    {
+      "citation": "Gallagher, On the distribution of primes in short intervals, Mathematika 23 (1976), 4-9",
+      "doi": "10.1112/S0025579300016442",
+      "url": "https://doi.org/10.1112/S0025579300016442",
+      "relation": "Known conditional Poisson/Gallagher baseline"
+    },
+    {
+      "citation": "Goldston and Ledoan, On the differences between consecutive prime numbers, I, arXiv:1111.3380",
+      "url": "https://arxiv.org/abs/1111.3380",
+      "relation": "Known singular-series refinement for consecutive gaps"
+    },
+    {
+      "citation": "Lemke Oliver and Soundararajan, Unexpected biases in the distribution of consecutive primes, PNAS 2016",
+      "doi": "10.1073/pnas.1605366113",
+      "url": "https://doi.org/10.1073/pnas.1605366113",
+      "relation": "Known endpoint-residue biases"
+    },
+    {
+      "citation": "Wolf, Nearest-neighbor-spacing distribution of prime numbers and quantum chaos, Phys. Rev. E 89 (2014), 022922",
+      "doi": "10.1103/PhysRevE.89.022922",
+      "url": "https://doi.org/10.1103/PhysRevE.89.022922",
+      "relation": "Known exact normalized-spacing statistic, period-six/lattice oscillations, and rescaling"
+    },
+    {
+      "citation": "Cohen, Gaps Between Consecutive Primes and the Exponential Distribution, Experimental Mathematics 34 (2025), 260-269",
+      "doi": "10.1080/10586458.2024.2362348",
+      "url": "https://doi.org/10.1080/10586458.2024.2362348",
+      "relation": "Distinguishes exponential moments from exponential finite distribution"
+    },
+    {
+      "citation": "Banks, Ford, and Tao, Large prime gaps and probabilistic models, Inventiones Mathematicae 233 (2023), 1471-1518",
+      "doi": "10.1007/s00222-023-01199-0",
+      "url": "https://doi.org/10.1007/s00222-023-01199-0",
+      "relation": "Known sieve-aware probabilistic alternative"
+    }
+  ],
+  "unverified_attribution": "The project attribution Conrey-Goldston-Keating was not verified as a single identifiable prime-gap source; use Gallagher, Goldston-Ledoan, Goldston-Pintz-Yildirim, Wolf, and later residue-bias sources unless a precise publication is supplied.",
+  "recommended_next_experiment": "Allocate a new experiment ID and preregister a wheel/singular-series, scale-aware, endpoint-residue-conditioned, contiguous-cluster dependence analysis with an independent SymPy/segmented implementation. Do not modify the frozen EXP-0008 preregistration.",
+  "audit_files": [
+    "01_NOVELTY_AUDIT.md",
+    "02_PRIOR_ART_MATRIX.md",
+    "03_MATHEMATICAL_DEFINITION.md",
+    "04_NULL_MODEL_AUDIT.md",
+    "05_STATISTICAL_DEPENDENCE_AUDIT.md",
+    "06_EFFECT_SIZE_ANALYSIS.md",
+    "07_CODE_AUDIT.md",
+    "08_INDEPENDENT_REPRODUCTION.md",
+    "09_UNKNOWN_TERRITORY_ASSESSMENT.md",
+    "10_RECOMMENDED_NEXT_EXPERIMENTS.md"
+  ]
+}

@@ -1,0 +1,6125 @@
+{
+  "generated_utc": "2026-09-23T17:24:35.448126+00:00",
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "record_count": 513,
+  "files": [
+    {
+      "path": "00_FOUNDATION/falsification_rules.md",
+      "extension": ".md",
+      "size_bytes": 2822,
+      "mtime_utc": "2026-09-17T04:05:33.012970+00:00",
+      "sha256": "304cdb7646de999bb485aee64974399181de8a112df89e82b2531d6b1e28165e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "00_FOUNDATION/scientific_method.md",
+      "extension": ".md",
+      "size_bytes": 2081,
+      "mtime_utc": "2026-09-17T04:05:12.770674+00:00",
+      "sha256": "8d59dca4fae52c316e969894518523322ebac2591b4b90e731c2fb4d243d26ea",
+      "mentioned_ids": []
+    },
+    {
+      "path": "00_FOUNDATION/simulation_rules.md",
+      "extension": ".md",
+      "size_bytes": 2559,
+      "mtime_utc": "2026-09-17T04:05:26.306377+00:00",
+      "sha256": "3ab81a91fd8e506868f87cf8445d22c9a48dfbb0f25638bd7b1a9ac4db897dcc",
+      "mentioned_ids": []
+    },
+    {
+      "path": "00_FOUNDATION/statistics_basics.md",
+      "extension": ".md",
+      "size_bytes": 2665,
+      "mtime_utc": "2026-09-17T04:05:19.506517+00:00",
+      "sha256": "a064b12471f5f820f85c19a55d54218389a0f844b326be1af8fbd57820a7b053",
+      "mentioned_ids": []
+    },
+    {
+      "path": "00_FOUNDATION/terminology_plain_english.md",
+      "extension": ".md",
+      "size_bytes": 3501,
+      "mtime_utc": "2026-09-17T04:05:46.599736+00:00",
+      "sha256": "b49b469308243f31ce10f4da9550cd5609e4833b64d013f5c9b280a22a2f1c75",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/acoustics/notes.md",
+      "extension": ".md",
+      "size_bytes": 6132,
+      "mtime_utc": "2026-09-22T09:41:11.715240+00:00",
+      "sha256": "54180fe81df3592335f9a25e3e7ba0b95614760af74532fb1c18701f592595c2",
+      "mentioned_ids": [
+        "HYP-AC"
+      ]
+    },
+    {
+      "path": "01_RESEARCH_MAP/astronomy/notes.md",
+      "extension": ".md",
+      "size_bytes": 755,
+      "mtime_utc": "2026-09-17T04:09:55.614743+00:00",
+      "sha256": "f640619d15984c0fe5217dd8e95bb81bcceca9c76ccf5394a186061156e80fc8",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/biology/notes.md",
+      "extension": ".md",
+      "size_bytes": 582,
+      "mtime_utc": "2026-09-17T04:10:10.455055+00:00",
+      "sha256": "c17344928ced1b6b1ea6ef0c24568b94f47cc38233f4dfd88c19f14a284e4eab",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/chemistry/notes.md",
+      "extension": ".md",
+      "size_bytes": 460,
+      "mtime_utc": "2026-09-17T04:10:13.303618+00:00",
+      "sha256": "5522f8b3d028989c2820866b2033a9656b1b4740bade85c8fb3601189ed58f54",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/climate_science/notes.md",
+      "extension": ".md",
+      "size_bytes": 642,
+      "mtime_utc": "2026-09-17T04:10:06.856100+00:00",
+      "sha256": "f38368aa6dad8637f8127832e5250c27b0acf841cdedb25b76a053cc916dec6d",
+      "mentioned_ids": [
+        "Q-A004",
+        "Q-C001",
+        "Q-C002"
+      ]
+    },
+    {
+      "path": "01_RESEARCH_MAP/computational_science/notes.md",
+      "extension": ".md",
+      "size_bytes": 536,
+      "mtime_utc": "2026-09-17T04:10:19.687622+00:00",
+      "sha256": "7eefc361c5112e0fc2dd0d4c6e8ae0ce9a04e0af7403e2c03903c3c3736d199b",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/cosmology/notes.md",
+      "extension": ".md",
+      "size_bytes": 617,
+      "mtime_utc": "2026-09-17T04:09:59.324484+00:00",
+      "sha256": "df9b60fd788d0ae2ebf76343ac53a590cbca54f6d198b0483915f631349dcbdc",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/earth_science/notes.md",
+      "extension": ".md",
+      "size_bytes": 454,
+      "mtime_utc": "2026-09-17T04:10:07.818936+00:00",
+      "sha256": "1d042538b3e2d489b44cfa44ad12ce661caf826475de3d1dca826416ec01e07e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/fluid_dynamics/notes.md",
+      "extension": ".md",
+      "size_bytes": 626,
+      "mtime_utc": "2026-09-17T04:10:01.929544+00:00",
+      "sha256": "74c341312a4e02b52bbbf23f348d04743fff951ee8f8954480cbc0ab8c7d2d0f",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/information_theory/notes.md",
+      "extension": ".md",
+      "size_bytes": 688,
+      "mtime_utc": "2026-09-17T04:10:17.337107+00:00",
+      "sha256": "7d05781d4ca6f65ab0ad7bc976dc129778295d7b9c40cc5ffa711b12a28341b9",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/materials_science/notes.md",
+      "extension": ".md",
+      "size_bytes": 581,
+      "mtime_utc": "2026-09-17T04:10:03.376590+00:00",
+      "sha256": "70aa4c0ba8bd0b04d6b6c7b3225b6c39e88fa3eaf32c5b1926e4dceb54137cb7",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/mathematics/notes.md",
+      "extension": ".md",
+      "size_bytes": 937,
+      "mtime_utc": "2026-09-17T04:09:48.563869+00:00",
+      "sha256": "f5cd5dc8da501baa4cf9d660310da865405be58f18969a75e2b854e100d822eb",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/neuroscience/notes.md",
+      "extension": ".md",
+      "size_bytes": 491,
+      "mtime_utc": "2026-09-17T04:10:11.606637+00:00",
+      "sha256": "bce9a0e8b617852621e1f486cf7d551f70b511ad3e87b0c73a652da3c3452665",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/optics/notes.md",
+      "extension": ".md",
+      "size_bytes": 1457,
+      "mtime_utc": "2026-09-17T04:09:45.312969+00:00",
+      "sha256": "cb3a2ff22ed7217cca2219cb0233f4232d8c9da510044fed0d2170e632a197b4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/physics/notes.md",
+      "extension": ".md",
+      "size_bytes": 889,
+      "mtime_utc": "2026-09-17T04:09:51.054723+00:00",
+      "sha256": "4e676d0ed2b1f7dd1bda37a12e63fe2239794fd07650d834b41a70dc88911fff",
+      "mentioned_ids": []
+    },
+    {
+      "path": "01_RESEARCH_MAP/README.md",
+      "extension": ".md",
+      "size_bytes": 689,
+      "mtime_utc": "2026-09-17T04:09:40.326573+00:00",
+      "sha256": "287bb7f8dfb0bd4ffc6f5252f8b55cf74f1a5edf7355c9c0ef8b6118e8c42c44",
+      "mentioned_ids": []
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/HIGH_PRIORITY/README.md",
+      "extension": ".md",
+      "size_bytes": 1557,
+      "mtime_utc": "2026-09-17T04:09:27.606217+00:00",
+      "sha256": "b7943c22105be31b8f29861fd6cb2527aae08d0b2dfff97f4cd676cb949100f6",
+      "mentioned_ids": [
+        "Q-C002",
+        "Q-I001",
+        "Q-I002",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M005",
+        "Q-M006",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P003",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/LONG_SHOTS/README.md",
+      "extension": ".md",
+      "size_bytes": 898,
+      "mtime_utc": "2026-09-17T04:09:35.997018+00:00",
+      "sha256": "09473830e244ff95676380a903d49286d5b993afb8cdb685906f1cc38cecaa34",
+      "mentioned_ids": [
+        "Q-A003",
+        "Q-B003",
+        "Q-F001",
+        "Q-F002"
+      ]
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md",
+      "extension": ".md",
+      "size_bytes": 57271,
+      "mtime_utc": "2026-09-17T04:09:21.695614+00:00",
+      "sha256": "307b7d97d913392e007a7ca2102942a4e19549d337c52f65e7e6bc56fe5ea839",
+      "mentioned_ids": [
+        "Q-A001",
+        "Q-A002",
+        "Q-A003",
+        "Q-A004",
+        "Q-B001",
+        "Q-B002",
+        "Q-B003",
+        "Q-C001",
+        "Q-C002",
+        "Q-F001",
+        "Q-F002",
+        "Q-F003",
+        "Q-I001",
+        "Q-I002",
+        "Q-I003",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M004",
+        "Q-M005",
+        "Q-M006",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002",
+        "Q-P003",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/MEDIUM_PRIORITY/README.md",
+      "extension": ".md",
+      "size_bytes": 1405,
+      "mtime_utc": "2026-09-17T04:09:32.108809+00:00",
+      "sha256": "3d0f58fd1a92f51fc7d573c34255136523f68baa5fbf50bad70b1e96d53a63e3",
+      "mentioned_ids": [
+        "Q-A001",
+        "Q-A002",
+        "Q-A004",
+        "Q-B001",
+        "Q-B002",
+        "Q-C001",
+        "Q-F003",
+        "Q-I003",
+        "Q-M004",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002"
+      ]
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/NEXT_BATCH_20260919.md",
+      "extension": ".md",
+      "size_bytes": 14805,
+      "mtime_utc": "2026-09-18T23:34:45.238577+00:00",
+      "sha256": "1124bb6a362901191f7fb51d356a176d6d105ba02ff28bd0d08900c8fbea6e2c",
+      "mentioned_ids": [
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M002",
+        "Q-M007",
+        "Q-M008",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 1991,
+      "mtime_utc": "2026-09-22T10:20:31.033679+00:00",
+      "sha256": "026fa0bca499f08c98e276b30c07eda6fbf7adcb1ddd6160d89ab906be7d9836",
+      "mentioned_ids": [
+        "EXP-0015",
+        "HYP-AC001",
+        "Q-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 4343,
+      "mtime_utc": "2026-09-22T10:13:02.013209+00:00",
+      "sha256": "08137294696726609579dd61584ef3a5436b2aaa26100e9a52a25407daf0b1bd",
+      "mentioned_ids": [
+        "EXP-0003",
+        "EXP-0007",
+        "EXP-0015"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/experiment.json",
+      "extension": ".json",
+      "size_bytes": 164,
+      "mtime_utc": "2026-09-22T09:41:11.913013+00:00",
+      "sha256": "819a334e366c95f0f5ca57914081e7b58b79e6a0a1aac5aa8f8c973854ccc62a",
+      "mentioned_ids": [
+        "Q-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 7154,
+      "mtime_utc": "2026-09-22T10:24:38.326244+00:00",
+      "sha256": "9f90421716ee7ead9cdce8d8153ba1b9346e1b7b9b7ef999ec4b62f402a96677",
+      "mentioned_ids": [
+        "EXP-0015",
+        "HYP-AC001",
+        "Q-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/FALSIFICATION/planning_checks.md",
+      "extension": ".md",
+      "size_bytes": 7090,
+      "mtime_utc": "2026-09-22T10:20:31.033679+00:00",
+      "sha256": "1987778315eb24d7b01b00f75c6db40ab0e053c4aa468f98bf2e5f446bcd1d08",
+      "mentioned_ids": [
+        "EXP-0015"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 4820,
+      "mtime_utc": "2026-09-22T09:50:41.844815+00:00",
+      "sha256": "b4918b5edb4db1b3a5de1b00639fd5a29479138c31a2775eb5ea2c3c705e6f2c",
+      "mentioned_ids": [
+        "EXP-0015",
+        "HYP-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 8779,
+      "mtime_utc": "2026-09-22T09:50:41.844815+00:00",
+      "sha256": "22c7d51be5c6493395e16826210724464a743d49be8c1710fc31b275d52536ee",
+      "mentioned_ids": [
+        "EXP-0015",
+        "Q-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 13445,
+      "mtime_utc": "2026-09-22T10:20:16.702144+00:00",
+      "sha256": "3562ec9210fe7efa9d239145a1ecc80b9b504ce3894844c3170efd4a2edfcd85",
+      "mentioned_ids": [
+        "EXP-0015"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 12928,
+      "mtime_utc": "2026-09-22T09:50:41.844815+00:00",
+      "sha256": "3c4cca30976ff41fda5cc6b6427feef334678ba2dbade029894d9e39a5e23e83",
+      "mentioned_ids": [
+        "HYP-AC001",
+        "Q-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/README.md",
+      "extension": ".md",
+      "size_bytes": 3014,
+      "mtime_utc": "2026-09-22T09:50:41.844815+00:00",
+      "sha256": "7dda17255a27d9624ef55dfb81f00e09b386c44fa7f427fb98a815b35335a120",
+      "mentioned_ids": [
+        "EXP-0015",
+        "HYP-AC001",
+        "Q-AC001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/FLUID_DYNAMICS/water_sound_response/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 3396,
+      "mtime_utc": "2026-09-22T10:20:40.638201+00:00",
+      "sha256": "51cc21ba56566c739f6c98a2ead94abb90805c68c362dbafbd0307907700dcf2",
+      "mentioned_ids": [
+        "HYP-F004",
+        "Q-F004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/FLUID_DYNAMICS/water_sound_response/README.md",
+      "extension": ".md",
+      "size_bytes": 1748,
+      "mtime_utc": "2026-09-22T10:15:47.256445+00:00",
+      "sha256": "c6187554408d78fa091525a628c14d544a8cbb6e098cea0a9cbec7dbeddb5383",
+      "mentioned_ids": [
+        "EXP-0015",
+        "Q-F004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz.py",
+      "extension": ".py",
+      "size_bytes": 4608,
+      "mtime_utc": "2026-09-23T10:26:20.010595+00:00",
+      "sha256": "79c749f1827f6ac27fd181f9ecb808cbe59c12d7f628a2ea7963b274abbcbef9",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz_full.py",
+      "extension": ".py",
+      "size_bytes": 4580,
+      "mtime_utc": "2026-09-23T10:37:44.730267+00:00",
+      "sha256": "5eb40d7839de7b94b640213c5d617112a54d21ef74dc77b6b441e4797ddb62fb",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/save_full_results.py",
+      "extension": ".py",
+      "size_bytes": 2916,
+      "mtime_utc": "2026-09-23T10:39:35.468031+00:00",
+      "sha256": "78861ca5a36fbc47c634016dc9116ea489e33192399a6298cf477ccee73f9827",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/prereg_Q-M001.json",
+      "extension": ".json",
+      "size_bytes": 795,
+      "mtime_utc": "2026-09-23T10:19:04.517996+00:00",
+      "sha256": "c0c66018fafb65b1e9ce0aae72e81d1352160d87861378f36783ae7142331981",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/REPORT/TECHNICAL_Q-M001.md",
+      "extension": ".md",
+      "size_bytes": 5031,
+      "mtime_utc": "2026-09-23T10:40:03.446283+00:00",
+      "sha256": "1bffb9d99c1d9d937524cab26858f37d8241a4dc1a586a482a0af44dda7cb06e",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/RESULTS/Q-M001_full_results.json",
+      "extension": ".json",
+      "size_bytes": 2511,
+      "mtime_utc": "2026-09-23T10:39:41.774145+00:00",
+      "sha256": "4cf7f89e1f122a1b241610535018546aa5e3fe30c1559cd3db548fd4d731f4b3",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/RESULTS/Q-M001_results.json",
+      "extension": ".json",
+      "size_bytes": 13481,
+      "mtime_utc": "2026-09-23T10:27:04.807492+00:00",
+      "sha256": "81e427ba848b6bf5918fad5e013d35a985c73dbe82749ec64af96ad3b5b72cc7",
+      "mentioned_ids": [
+        "Q-M001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 1192,
+      "mtime_utc": "2026-09-20T14:53:27.386580+00:00",
+      "sha256": "d3f8c6e13076ae530acb8db3fb1f31702301e7faf6f13cb78f3f8a3af0f79731",
+      "mentioned_ids": [
+        "EXP-0014",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/experiment.json",
+      "extension": ".json",
+      "size_bytes": 672,
+      "mtime_utc": "2026-09-20T15:06:59.739534+00:00",
+      "sha256": "b2214ce8b66066363d1b860b7ba35b51e4af476813c5dee72307ac3d6c7b8313",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_results.json",
+      "extension": ".json",
+      "size_bytes": 4677,
+      "mtime_utc": "2026-09-20T15:06:59.740534+00:00",
+      "sha256": "6e9562a62351aa2828028df10baf881d0e2168dfdad2eb07a14aa8262809a003",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_summary.txt",
+      "extension": ".txt",
+      "size_bytes": 2109,
+      "mtime_utc": "2026-09-20T15:06:59.739534+00:00",
+      "sha256": "17eb7d61ed052e849a52f0994587be172398e3a46c3a3661b60aba2d6fbdb88c",
+      "mentioned_ids": [
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/feigenbaum_engine.py",
+      "extension": ".py",
+      "size_bytes": 9793,
+      "mtime_utc": "2026-09-20T15:04:00.449469+00:00",
+      "sha256": "6ec0a7958e71c9ce19445b657bac3fee9efef65d0470a6f246ff70c479aa819d",
+      "mentioned_ids": [
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py",
+      "extension": ".py",
+      "size_bytes": 8538,
+      "mtime_utc": "2026-09-20T15:07:57.608212+00:00",
+      "sha256": "62714020e604a6edc11ea4bcabf356afe3fe98edc432383d12e4d0fd9d86dec2",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/prereg_EXP-0014.json",
+      "extension": ".json",
+      "size_bytes": 1003,
+      "mtime_utc": "2026-09-20T14:23:38.551439+00:00",
+      "sha256": "b84da761b772eb96484ba2373911b78af05b00f443befe692e16bd507c9eb0de",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 286,
+      "mtime_utc": "2026-09-20T14:57:29.403634+00:00",
+      "sha256": "0e26b37332d2d576fac2bdce359d230d36a4803a75211b6f900513f3e8bba017",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 1389,
+      "mtime_utc": "2026-09-20T14:22:08.493762+00:00",
+      "sha256": "857202ead9bc41e9aadd5df0ed89bc10857f0309d0adfd74d1a45adf2afc9632",
+      "mentioned_ids": [
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 1238,
+      "mtime_utc": "2026-09-20T14:22:20.571469+00:00",
+      "sha256": "ecf8bbe209d958b80694a8d3fa286e6dbbfe6a21607e46b5012e6b24da4346a5",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/FALSIFICATION/planning_checks.md",
+      "extension": ".md",
+      "size_bytes": 1332,
+      "mtime_utc": "2026-09-20T14:23:19.747144+00:00",
+      "sha256": "1810f2bcd336f883417943fa10c0870e8343b6b3e3dba78916863f411c4770e1",
+      "mentioned_ids": [
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 911,
+      "mtime_utc": "2026-09-20T14:53:23.471004+00:00",
+      "sha256": "cdedbec47b2c1fd4ea5d5c58a3592e9a8237c9115b84f5660df25cbbb3c50018",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 2075,
+      "mtime_utc": "2026-09-20T14:22:27.884160+00:00",
+      "sha256": "7c5d0f1c74824307122f9cf476a9fd2943613f2e3413657fa8fafa393981828d",
+      "mentioned_ids": [
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 831,
+      "mtime_utc": "2026-09-20T14:52:52.595767+00:00",
+      "sha256": "7169813d6c45a23c569699ebc47f75ff72e38bb9a3977f46145a19812ac588ae",
+      "mentioned_ids": [
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 1943,
+      "mtime_utc": "2026-09-20T14:21:53.037433+00:00",
+      "sha256": "0a4fa264600952d459289eea37fde94ddd26a2741780abbded10b36ca02532c9",
+      "mentioned_ids": [
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/README.md",
+      "extension": ".md",
+      "size_bytes": 1526,
+      "mtime_utc": "2026-09-20T14:21:46.178144+00:00",
+      "sha256": "6e701ff686e340604de4f678cf8b6a985c42dd0f89ac86df30d7f938dd9bb599",
+      "mentioned_ids": [
+        "EXP-0014",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/PLAIN_EXP-0014.md",
+      "extension": ".md",
+      "size_bytes": 2206,
+      "mtime_utc": "2026-09-20T14:54:09.597585+00:00",
+      "sha256": "6fcaa0a0b2e1d55fb42b4e44c0d5771bb025a1c945d060645bae44709ab88bc1",
+      "mentioned_ids": [
+        "EXP-0014",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/TECHNICAL_EXP-0014.md",
+      "extension": ".md",
+      "size_bytes": 3838,
+      "mtime_utc": "2026-09-20T14:54:02.031091+00:00",
+      "sha256": "a773dc9177ecb6cc7a86e32163e4f360035795439a9059ce715640fbc8d1a99d",
+      "mentioned_ids": [
+        "EXP-0014",
+        "HYP-M005",
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/state/status.json",
+      "extension": ".json",
+      "size_bytes": 2,
+      "mtime_utc": "2026-09-20T14:57:30.096485+00:00",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 1019,
+      "mtime_utc": "2026-09-17T16:00:31.110523+00:00",
+      "sha256": "45014aa1e93c77ef37725668b3d13e1974c0a6c9d96f7d274f90ec4a6f96334f",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py",
+      "extension": ".py",
+      "size_bytes": 32065,
+      "mtime_utc": "2026-09-18T04:05:49.150673+00:00",
+      "sha256": "09229ec7c9502ab662acc3f8f621712b6274a7dc02ae6306716c2e0842064b61",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.json",
+      "extension": ".json",
+      "size_bytes": 7115,
+      "mtime_utc": "2026-09-18T15:32:38.776857+00:00",
+      "sha256": "d504435419a39ec15e780c275d67e264904f4cfd0835f68324208446ad4a584a",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.run1_pre_bhfix.json",
+      "extension": ".json",
+      "size_bytes": 7157,
+      "mtime_utc": "2026-09-18T04:00:50.788862+00:00",
+      "sha256": "b4a76ca35a3007b4ceff4aff46eb5433e2604d98b9c9e83ea7031818ac937322",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/prereg_EXP-0008.json",
+      "extension": ".json",
+      "size_bytes": 7656,
+      "mtime_utc": "2026-09-17T16:08:43.554492+00:00",
+      "sha256": "076667a54d12fa495dee8ee7ee246203e92c59a35bd012bebb72ead075b24336",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 676,
+      "mtime_utc": "2026-09-18T15:32:38.798842+00:00",
+      "sha256": "14d8d4706f901579493e9ad68f17b3f02bdc347b356596a7d7c2332d32752384",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 2212,
+      "mtime_utc": "2026-09-17T16:00:12.784884+00:00",
+      "sha256": "708653e9b9f2f4b38c0b700dfb35e1ecda28add4913084f08b9d13957993fd2a",
+      "mentioned_ids": [
+        "EXP-0008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 2986,
+      "mtime_utc": "2026-09-17T16:00:22.057271+00:00",
+      "sha256": "82337e32685296ca09001d96b183ceb09192a97aee173c663ba81e5ae2903468",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0008",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/FALSIFICATION/planning_checks.md",
+      "extension": ".md",
+      "size_bytes": 2058,
+      "mtime_utc": "2026-09-17T16:00:28.040117+00:00",
+      "sha256": "dc2dd72fab493454c94b16b00657ed97caab3828902f325b7f432b365fdd51ff",
+      "mentioned_ids": [
+        "EXP-0008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 1460,
+      "mtime_utc": "2026-09-17T16:00:02.485528+00:00",
+      "sha256": "8c665d437f747f01c530385d8b6450a04bd00cfa197947f9b1d851cba48298d7",
+      "mentioned_ids": [
+        "HYP-005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 1401,
+      "mtime_utc": "2026-09-17T15:59:58.138059+00:00",
+      "sha256": "77297491f1c9e44cf5b3a1d680e33270de32b1010d9b643c41c5f9b53f44395d",
+      "mentioned_ids": [
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 949,
+      "mtime_utc": "2026-09-17T16:00:05.325326+00:00",
+      "sha256": "275afee6826ba85574799aef3b59c10605eee51a8198f5a1f15d0c129906b388",
+      "mentioned_ids": [
+        "HYP-005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/analyze_bins.py",
+      "extension": ".py",
+      "size_bytes": 5627,
+      "mtime_utc": "2026-09-18T23:42:30.104691+00:00",
+      "sha256": "dbd98a6c8f0da7c5ed87313c14c002b88a2387e569ab4b567d63ff96e221f7ca",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/AUDIT_Q006_Q007.md",
+      "extension": ".md",
+      "size_bytes": 3600,
+      "mtime_utc": "2026-09-19T05:03:33.437800+00:00",
+      "sha256": "e36928b3a7a04157940e24f39ae54cda0d8fecb9ca7395049f721dbf1912255f",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/BHFR_40cell_results.json",
+      "extension": ".json",
+      "size_bytes": 7422,
+      "mtime_utc": "2026-09-23T10:12:25.541019+00:00",
+      "sha256": "f48b80af97a7356259352c2ae6158685ba27f1f4d2889de50a9cee055f65a3ba",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py",
+      "extension": ".py",
+      "size_bytes": 4382,
+      "mtime_utc": "2026-09-23T10:12:09.151393+00:00",
+      "sha256": "cd8ce1f70f1d917837190bf14e5e1a5624f47768803a3ba0563233d0cf28c235",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/prereg_BHFR_40cell.json",
+      "extension": ".json",
+      "size_bytes": 317,
+      "mtime_utc": "2026-09-23T10:11:33.335564+00:00",
+      "sha256": "b5e4a8812778a82e2cbaf719c3ee3b3a8c01c4f17c56799593f873550035d491",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/q_m007_results.json",
+      "extension": ".json",
+      "size_bytes": 3819,
+      "mtime_utc": "2026-09-18T23:42:09.123351+00:00",
+      "sha256": "41c125a0066b439bfe8cab600c2fc5b04f78d3f12c6d112e92f3513dfb522790",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md",
+      "extension": ".md",
+      "size_bytes": 5489,
+      "mtime_utc": "2026-09-23T10:13:14.235475+00:00",
+      "sha256": "8b64d012dac4115fb7ed3f469c67b46bfdd00a006a529900f05f76f67472873d",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002",
+        "Q-M007",
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/compare_scales.py",
+      "extension": ".py",
+      "size_bytes": 2304,
+      "mtime_utc": "2026-09-23T10:34:54.592728+00:00",
+      "sha256": "8467c853e3e9ac9666ea960d05a4877bab2f5a651c5827909587827fe5470444",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py",
+      "extension": ".py",
+      "size_bytes": 6269,
+      "mtime_utc": "2026-09-23T10:42:47.272671+00:00",
+      "sha256": "60ce26aa35eb3e9f19f3004b0b040f30afce9bfb0cc56b26c97672fdad01bbf9",
+      "mentioned_ids": [
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py",
+      "extension": ".py",
+      "size_bytes": 9737,
+      "mtime_utc": "2026-09-23T10:33:47.588997+00:00",
+      "sha256": "cd9e5e66b8032fe96e0fac828ed631a8c1da9c2423bc78e13bd7238fe9a45d1e",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0013.py",
+      "extension": ".py",
+      "size_bytes": 5287,
+      "mtime_utc": "2026-09-23T10:40:28.141806+00:00",
+      "sha256": "906bacecb3c5f4417f86baa5d64bc3f4cd8d5db101eb9e72ab79ad2170ce6acb",
+      "mentioned_ids": [
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/PLAN.md",
+      "extension": ".md",
+      "size_bytes": 2400,
+      "mtime_utc": "2026-09-23T10:19:04.515510+00:00",
+      "sha256": "a05450d6a55c85b0f738698cae0fedd20a259c816b592b23828cefba9f48c05b",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007",
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md",
+      "extension": ".md",
+      "size_bytes": 5332,
+      "mtime_utc": "2026-09-23T10:36:13.030586+00:00",
+      "sha256": "b23d343b02e8723c5608706520ea483c5454c265c9d389b73a79322ae243eb70",
+      "mentioned_ids": [
+        "EXP-0008",
+        "Q-M007",
+        "Q-M008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/RESULTS/Q-M008_1e8_results.json",
+      "extension": ".json",
+      "size_bytes": 8818,
+      "mtime_utc": "2026-09-23T10:33:57.852204+00:00",
+      "sha256": "cfd12a370fb53dcd4a680c1e2927c323ad33f2cd00701a624794cf9f0293fdb2",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/RESULTS/Q-M008_1e9_results.json",
+      "extension": ".json",
+      "size_bytes": 8935,
+      "mtime_utc": "2026-09-23T10:34:22.563299+00:00",
+      "sha256": "e1138507119951e32bda688e5fc3c12e24dd22ecd3c4e5a4bea9f7a98af3d28d",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/RESULTS/Q-M008_combined.json",
+      "extension": ".json",
+      "size_bytes": 19264,
+      "mtime_utc": "2026-09-23T10:34:22.566291+00:00",
+      "sha256": "8889271452172d951fdd46ce044ed6ed2826b1c59651c964492bbaccebca8d22",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py",
+      "extension": ".py",
+      "size_bytes": 6587,
+      "mtime_utc": "2026-09-19T02:59:48.415663+00:00",
+      "sha256": "263ef0949707c01cf99ada98cd6af0b04982bb5c52d5a82e0074f5c43a26eeae",
+      "mentioned_ids": [
+        "EXP-0008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response_results.json",
+      "extension": ".json",
+      "size_bytes": 1117,
+      "mtime_utc": "2026-09-19T03:00:09.940869+00:00",
+      "sha256": "e4880d70189e8880fce325b9c2c6bd2827f1569bf70b5fc0bfda48c55c2c7600",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 1690,
+      "mtime_utc": "2026-09-17T15:59:53.783645+00:00",
+      "sha256": "a47226d89ccd7a77c3bbc690ba0c87fc19a6c68e828b96668a9ac52c017a92eb",
+      "mentioned_ids": [
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/README.md",
+      "extension": ".md",
+      "size_bytes": 1652,
+      "mtime_utc": "2026-09-17T15:59:49.370542+00:00",
+      "sha256": "c6d1cdde679f71587d859731624354ea333abbda80af8cd5b48ee4875397cc4d",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/_exp0008_primary_sidecar.json",
+      "extension": ".json",
+      "size_bytes": 235,
+      "mtime_utc": "2026-09-18T15:32:07.087797+00:00",
+      "sha256": "0092de2c209139b3cd163b32530a65ff2e977e1e001235af02a0cf005de2e04b",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/C7_exp0008_report.json",
+      "extension": ".json",
+      "size_bytes": 7630,
+      "mtime_utc": "2026-09-18T15:32:37.483259+00:00",
+      "sha256": "ca85711905cf22a9570a6c01fb839f6e568e2c6fb7708221dc3437addc67668a",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/C7_exp0008_report.run1_pre_bhfix.json",
+      "extension": ".json",
+      "size_bytes": 7635,
+      "mtime_utc": "2026-09-18T04:00:49.575418+00:00",
+      "sha256": "243a96fdbf255c8344aa2556fcf35b890c6c56f63919568b6ac1de0430dcc5e2",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/independent_check.py",
+      "extension": ".py",
+      "size_bytes": 10104,
+      "mtime_utc": "2026-09-18T04:05:43.214038+00:00",
+      "sha256": "91832dd45a29cc08abd695981b3662f6fd5ca5aaaa8c02950367da78d43f1f42",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/PLAIN_EXP-0008.md",
+      "extension": ".md",
+      "size_bytes": 955,
+      "mtime_utc": "2026-09-18T15:32:38.797841+00:00",
+      "sha256": "e7d40f80b496d2216b62bb0c158727e7dcde0c8df5f1c5c53e31875a47c5d18c",
+      "mentioned_ids": [
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/PLAIN_EXP-0008.run1_pre_bhfix.md",
+      "extension": ".md",
+      "size_bytes": 872,
+      "mtime_utc": "2026-09-18T04:00:50.789862+00:00",
+      "sha256": "54f06a8c93181784a79206e92da7a9034824ca6b34c1d5c7321ca1440941a0df",
+      "mentioned_ids": [
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/TECHNICAL_EXP-0008.md",
+      "extension": ".md",
+      "size_bytes": 3751,
+      "mtime_utc": "2026-09-18T15:32:38.778043+00:00",
+      "sha256": "a3bb8e11d7d1e7bf8804768df1c7785c72af29ffdcb2aca62633fd962612e734",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/TECHNICAL_EXP-0008.run1_pre_bhfix.md",
+      "extension": ".md",
+      "size_bytes": 3794,
+      "mtime_utc": "2026-09-18T04:00:50.789862+00:00",
+      "sha256": "d389a6317fef9f85939cbcbcf91874238cde9c0d275b1425140da04b524abcc6",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_raw.json",
+      "extension": ".json",
+      "size_bytes": 28395,
+      "mtime_utc": "2026-09-18T15:32:38.774365+00:00",
+      "sha256": "8fbe9f4a74c11fcd5ae7376917955db6b80a6de6e4be464801c52ad6d2726391",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_raw.run1_pre_bhfix.json",
+      "extension": ".json",
+      "size_bytes": 28406,
+      "mtime_utc": "2026-09-18T04:00:50.785830+00:00",
+      "sha256": "6860fa450188d77d6f3a18069fdfcf7352dd0c7893aa228f114f99fe58edcd32",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+      "extension": ".json",
+      "size_bytes": 25645,
+      "mtime_utc": "2026-09-18T15:32:38.775855+00:00",
+      "sha256": "33956d75aaac6476087b41c1a9a4b68b049b5bbc34c041d9583283cec46f3690",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.run1_pre_bhfix.json",
+      "extension": ".json",
+      "size_bytes": 25700,
+      "mtime_utc": "2026-09-18T04:00:50.787863+00:00",
+      "sha256": "43643edf295aa4235fde01edcf1f0079ce0668a81c00e923196dca337240512f",
+      "mentioned_ids": [
+        "EXP-0008",
+        "HYP-005",
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/INTEGRATION_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 5039,
+      "mtime_utc": "2026-09-17T04:06:04.870933+00:00",
+      "sha256": "4e2115e6f646dffe2531dcb80b42ff9cc97f2c9cbd1b44165c0f03941f7eccb9",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0025"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 64,
+      "mtime_utc": "2026-09-17T04:14:50.341197+00:00",
+      "sha256": "008bf042914784be7b805fa9572b1903764307a8df891458b5c0b5483af187b1",
+      "mentioned_ids": [
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/make_figure.py",
+      "extension": ".py",
+      "size_bytes": 1222,
+      "mtime_utc": "2026-09-17T04:19:23.494069+00:00",
+      "sha256": "f61933f79cd9ae93d75c111b3d0067bc0e6c79b621b2d210c5c5c0d95b41d8fb",
+      "mentioned_ids": [
+        "EXP-0002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py",
+      "extension": ".py",
+      "size_bytes": 8495,
+      "mtime_utc": "2026-09-17T04:17:09.931719+00:00",
+      "sha256": "2c9f176e8ef0a97872254f9d722543256f97df233564f0821de60909bac5e465",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+      "extension": ".json",
+      "size_bytes": 14925,
+      "mtime_utc": "2026-09-17T04:18:28.358377+00:00",
+      "sha256": "537ff823580cba7ef14630d253c5f32606de72a4d71f5fa019e96d4df90089c2",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/prereg_EXP-0002.json",
+      "extension": ".json",
+      "size_bytes": 763,
+      "mtime_utc": "2026-09-17T04:18:14.635401+00:00",
+      "sha256": "1237a82e2367bc099bf133f545a7bb4126f509b976c3393d58612678c9725115",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 516,
+      "mtime_utc": "2026-09-17T04:18:28.359385+00:00",
+      "sha256": "b6d38f3ede39d0e323878882175c24d1b09194dc287c7033ff894fc33b6a18c5",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 1497,
+      "mtime_utc": "2026-09-17T04:15:19.055803+00:00",
+      "sha256": "2b45acfada1fb087b15333fbcc7a5ce2fc253832cb5f3f3f6ff3b0d65d95816e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/experiment.json",
+      "extension": ".json",
+      "size_bytes": 128,
+      "mtime_utc": "2026-09-17T04:14:50.341197+00:00",
+      "sha256": "9549baeeda7fc86e74066d61ee59bf6af7ebd5a94fec0f842e09dc8162a51177",
+      "mentioned_ids": [
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 2190,
+      "mtime_utc": "2026-09-17T04:15:27.376049+00:00",
+      "sha256": "d43887044d15a4022362db4ceb4089d9077ad5df6cac1d8fa8df9e4b1a1e5d27",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/FIGURES/EXP-0002_contrast_law.png",
+      "extension": ".png",
+      "size_bytes": 66934,
+      "mtime_utc": "2026-09-17T04:19:36.479229+00:00",
+      "sha256": "1be3a8d8a9f165585a61208b674c182965e48342e7b33c26fa6f2a2b41ec9947"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 1318,
+      "mtime_utc": "2026-09-17T04:15:12.705713+00:00",
+      "sha256": "0e2f52fc736ab76c76dd864744c3b145db06a4b88135105c5cb3651e446fb820",
+      "mentioned_ids": [
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 1459,
+      "mtime_utc": "2026-09-17T04:20:01.976092+00:00",
+      "sha256": "0c645053fa8f8cc8e46dcf7504e42dffe5ceae5ffb6c44a6059a4b325aff88bb",
+      "mentioned_ids": [
+        "EXP-0002",
+        "Q-O001",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 807,
+      "mtime_utc": "2026-09-17T04:15:15.048312+00:00",
+      "sha256": "2375ca55413340f8729531c49707d5bcfaae808a8f428c64c4cf511cfb3ed6fd",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 4393,
+      "mtime_utc": "2026-09-17T04:15:00.281191+00:00",
+      "sha256": "8b845f145c9a8e6966f2bb0361de39211e6f284528cb86a053b4ba905e9d0bca",
+      "mentioned_ids": [
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/README.md",
+      "extension": ".md",
+      "size_bytes": 61,
+      "mtime_utc": "2026-09-17T04:14:50.335706+00:00",
+      "sha256": "5cb7c3d7d77993bf04a4c1bc746b2f61c09145eac4663213ff5036d44824c38d",
+      "mentioned_ids": [
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPLICATION/independent_check.json",
+      "extension": ".json",
+      "size_bytes": 941,
+      "mtime_utc": "2026-09-17T04:19:34.210901+00:00",
+      "sha256": "f88ff88003117db421487afb1a3537c30a291bfb482dd85d900b22d1be0b2710",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPLICATION/independent_check.py",
+      "extension": ".py",
+      "size_bytes": 1627,
+      "mtime_utc": "2026-09-17T04:19:23.433899+00:00",
+      "sha256": "38f9e0bb74662919e12e29e1c297bd8aa2d5c14fe0cbb366508116b94e25eb44",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPORT/PLAIN_ENGLISH_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 2980,
+      "mtime_utc": "2026-09-17T04:20:01.750615+00:00",
+      "sha256": "ba69c393e7b6ac26207b4304916b3fce99db144bd1d68f5f6fc08f51999e33d7",
+      "mentioned_ids": [
+        "EXP-0002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPORT/TECHNICAL_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 4033,
+      "mtime_utc": "2026-09-17T04:19:50.860969+00:00",
+      "sha256": "ffa2ed09d15bbca354b9c793da1f7282a306b784584f28bab57be195d743f2fd",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+      "extension": ".json",
+      "size_bytes": 7159,
+      "mtime_utc": "2026-09-17T04:18:27.444929+00:00",
+      "sha256": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+      "mentioned_ids": [
+        "EXP-0002",
+        "HYP-001",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 997,
+      "mtime_utc": "2026-09-17T06:20:10.764459+00:00",
+      "sha256": "c1ee572118b764edcadc3236eb4273b841a4713a64298764ede17618713cec9a",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/make_figure.py",
+      "extension": ".py",
+      "size_bytes": 2204,
+      "mtime_utc": "2026-09-17T06:17:30.651907+00:00",
+      "sha256": "839230d24447a1c90890b251891512caf701f12d8eef395af111bd64cbc14d75",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py",
+      "extension": ".py",
+      "size_bytes": 15817,
+      "mtime_utc": "2026-09-17T06:08:45.788202+00:00",
+      "sha256": "6a735de8d981cd5e8c564056f73b6290ce23ab4b3ac7e7398c9d2604d3229ff4",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/changelog.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 1216,
+      "mtime_utc": "2026-09-17T06:17:24.474667+00:00",
+      "sha256": "580f20563af98fc1d1156867853945b896c482de0887589dc1c3eb620ac29bb0",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json",
+      "extension": ".json",
+      "size_bytes": 18949,
+      "mtime_utc": "2026-09-17T06:14:22.406931+00:00",
+      "sha256": "8546d192def5d053cac0eda4d29a85793f541f427ffd4c56805785023944dcb4",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/prereg_EXP-0003.json",
+      "extension": ".json",
+      "size_bytes": 1289,
+      "mtime_utc": "2026-09-17T06:08:50.722200+00:00",
+      "sha256": "d97c17175533bb9a73ffef74b1a60b62ac7db2f247d9a8c3e56f452588399a28",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 504,
+      "mtime_utc": "2026-09-17T06:14:22.407933+00:00",
+      "sha256": "49b664c4de572d66254f28800550434fbf6b33b0f0728ea614054bc403c157ef",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 2018,
+      "mtime_utc": "2026-09-17T06:04:18.866503+00:00",
+      "sha256": "d02bf36d714ff52c6e9405f22380d6ada1e2395979e2ce1c24b63ba19c0672da",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 4905,
+      "mtime_utc": "2026-09-17T06:04:29.565135+00:00",
+      "sha256": "7a689feac5d56509099cdfe4871cbded263ffa44ac56b8aa7cf4eb540c129fa9",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/FALSIFICATION/planning_checks.md",
+      "extension": ".md",
+      "size_bytes": 1729,
+      "mtime_utc": "2026-09-17T06:04:39.500210+00:00",
+      "sha256": "32d7beb710b2ce1187b428f0f72f93db0d95c726506d913d527775fc807b7d57",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/FIGURES/EXP-0003_vortex_density.png",
+      "extension": ".png",
+      "size_bytes": 114217,
+      "mtime_utc": "2026-09-17T06:17:35.199466+00:00",
+      "sha256": "3bd04c43741f30cd720dbc1e5fd79616000320b5a8dd09c31faeac6aed6419c2"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 2198,
+      "mtime_utc": "2026-09-17T06:03:59.237866+00:00",
+      "sha256": "19868e14c12585668b1c5de60f483c92b9084eaef15a6b378f72c56d92d248d9",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 2393,
+      "mtime_utc": "2026-09-17T06:04:05.867012+00:00",
+      "sha256": "715515c67b5aa8f1f4d3721870e4487007721cb23b1ad2cee70f9ce36f0b1343",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 2759,
+      "mtime_utc": "2026-09-17T06:04:13.102880+00:00",
+      "sha256": "a83fac7e920c0fe7af5a5d3daa5102ffca827c2f2c2aabde18e1211d8594ad6e",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 5780,
+      "mtime_utc": "2026-09-17T06:03:53.215414+00:00",
+      "sha256": "d8a029c2f5ab06bf9dfbd8e612668eaf967c5d11e68c02bb1521d5daa4155c06",
+      "mentioned_ids": [
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/README.md",
+      "extension": ".md",
+      "size_bytes": 1560,
+      "mtime_utc": "2026-09-17T06:04:34.200297+00:00",
+      "sha256": "d6d664b68320228264015f0c37d2de8454d0cac4fb68f60de9d96c89eea6cc2e",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.json",
+      "extension": ".json",
+      "size_bytes": 1395,
+      "mtime_utc": "2026-09-17T06:17:17.910447+00:00",
+      "sha256": "a1782532e77e5eea03dbd7e83ecaf9027f5baeb78beef8950f7a373607a08c91",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.py",
+      "extension": ".py",
+      "size_bytes": 6413,
+      "mtime_utc": "2026-09-17T06:16:55.607684+00:00",
+      "sha256": "9d328fd979b19e2d732984fb58da5818f8bbcc9990c78f971d8abd10e17cf239",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPORT/PLAIN_ENGLISH_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 2867,
+      "mtime_utc": "2026-09-17T06:17:59.654229+00:00",
+      "sha256": "5c979240ee8a1883ae47196ae430b587c8c271e309352ab4e40992c7fa293961",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPORT/TECHNICAL_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 5149,
+      "mtime_utc": "2026-09-17T06:17:52.473895+00:00",
+      "sha256": "704ea7f3548f4f011609c2c9c969fb58ffd2a7878c2cbe31193389f723c4ce22",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+      "extension": ".json",
+      "size_bytes": 17034,
+      "mtime_utc": "2026-09-17T06:14:20.298107+00:00",
+      "sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+      "mentioned_ids": [
+        "EXP-0003",
+        "HYP-002",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CODE/check_threshold.py",
+      "extension": ".py",
+      "size_bytes": 1151,
+      "mtime_utc": "2026-09-23T14:11:55.094290+00:00",
+      "sha256": "1b433f52b7c6d38b92d34017d16747e07b5da9959a5e9b74833d115f9d769e96",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CODE/investigate_discrepancy.py",
+      "extension": ".py",
+      "size_bytes": 2649,
+      "mtime_utc": "2026-09-23T16:07:59.852197+00:00",
+      "sha256": "ff4643a3f2776e2a9d6f3a86d508378c0d8f8381c15e8d38f1c6948124cb6711",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CONFIG/prereg_EXP-0012.json",
+      "extension": ".json",
+      "size_bytes": 2309,
+      "mtime_utc": "2026-09-19T11:05:48.875577+00:00",
+      "sha256": "56709b2c0ebf5916d1b14544ecfb4bb24823852355971a89c19186086c79c958",
+      "mentioned_ids": [
+        "EXP-0012",
+        "HYP-S9-4"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md",
+      "extension": ".md",
+      "size_bytes": 4692,
+      "mtime_utc": "2026-09-23T10:14:56.763117+00:00",
+      "sha256": "4c906fbcdc490ef9af3715fbbc0e3554c4098ccaef845d6e9df55e545b4425aa",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md",
+      "extension": ".md",
+      "size_bytes": 3661,
+      "mtime_utc": "2026-09-23T10:14:56.765184+00:00",
+      "sha256": "229b680466cb232a8591d7454bec2abf8cfbc96163393d7280c075e1ee01ad82",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-3.md",
+      "extension": ".md",
+      "size_bytes": 3752,
+      "mtime_utc": "2026-09-23T10:14:56.763117+00:00",
+      "sha256": "fa49a1218835b35f316593bb5fd1b76337f20647204f1786afe8d4d35880876f",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 2298,
+      "mtime_utc": "2026-09-17T08:06:18.483210+00:00",
+      "sha256": "573e2c68b7360dfb33b8456a4a0a14036ac4972fc706cb2e48e85e4a8d7264fd",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CODE/plot_battery.py",
+      "extension": ".py",
+      "size_bytes": 2487,
+      "mtime_utc": "2026-09-17T08:00:22.824288+00:00",
+      "sha256": "fce1d5fe585ac157ccdca3742eb7bbdc47ba9266530ccad2b29821cb8e211060",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py",
+      "extension": ".py",
+      "size_bytes": 12020,
+      "mtime_utc": "2026-09-17T07:53:08.160474+00:00",
+      "sha256": "3a16573cdd08c4428cf9b5ff15a4576505085d8000c04c35bd9c0733070e2054",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/EXP-0004_experiment.json",
+      "extension": ".json",
+      "size_bytes": 2976,
+      "mtime_utc": "2026-09-17T07:59:48.750441+00:00",
+      "sha256": "446740e42f2541530a1db319e8ec02e6de7e9703abc8b6347a1aad14480865a0",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/prereg_EXP-0004.json",
+      "extension": ".json",
+      "size_bytes": 1635,
+      "mtime_utc": "2026-09-17T07:59:40.178467+00:00",
+      "sha256": "5c10b4f3b1b9edbbee56da691e3c9c9c65ed17f8d5a204681f707115487df26c",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 505,
+      "mtime_utc": "2026-09-17T07:59:48.751437+00:00",
+      "sha256": "fae4effd169de316e705aa1d3eee00ee26b6af2adcde0b70ba7c7d8ec42dca32",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 2041,
+      "mtime_utc": "2026-09-17T07:43:58.272077+00:00",
+      "sha256": "6fba5e81ad7d97a9c42235a95e96fa7b0c87ef27d0858464543af621b6cec3dd",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/experiment.json",
+      "extension": ".json",
+      "size_bytes": 141,
+      "mtime_utc": "2026-09-17T07:41:05.177789+00:00",
+      "sha256": "f57dc77d504462750f4c837bf20c77e07fe1b0dec121d0645e77aa5f7d6f44de",
+      "mentioned_ids": [
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 4348,
+      "mtime_utc": "2026-09-17T07:44:18.462825+00:00",
+      "sha256": "b4041713b409aabc592b3b1b8ab89a9ba4c837f7f3c51337c5545311f3c4dd65",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/FALSIFICATION/planning_checks.md",
+      "extension": ".md",
+      "size_bytes": 2296,
+      "mtime_utc": "2026-09-17T07:44:27.895533+00:00",
+      "sha256": "395c959b2c7df58f93d72d3a2b4d9cc4cb7518ea5984d8c1a36b9e82367423db",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/FIGURES/EXP-0004_pvalue_distribution.png",
+      "extension": ".png",
+      "size_bytes": 100380,
+      "mtime_utc": "2026-09-17T08:00:28.451629+00:00",
+      "sha256": "96ca48aafc918bf070a6c399a449d7e8e51ab0c961afd7c1e827671ac4fc0fe7"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 2561,
+      "mtime_utc": "2026-09-17T07:42:55.312996+00:00",
+      "sha256": "c7e178b681052017618d77c76e9a1d92fb2868bdd26f7407151e8c4ba1e644f6",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 2312,
+      "mtime_utc": "2026-09-17T07:42:38.440004+00:00",
+      "sha256": "c1b4baa0252840f00c333dc173497825cda03814188ee4d720d470def7809244",
+      "mentioned_ids": [
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 2733,
+      "mtime_utc": "2026-09-17T07:43:48.312572+00:00",
+      "sha256": "e08f3ede2a4d7be16554b485c62e1346a3003ff77baf62132eb01e9151de0479",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 4957,
+      "mtime_utc": "2026-09-17T07:42:24.327621+00:00",
+      "sha256": "4b1d6cea2f2c1668fd0ae2a63510d919eab9ea62dca91d50951aa0646b6d7384",
+      "mentioned_ids": [
+        "EXP-0001",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/README.md",
+      "extension": ".md",
+      "size_bytes": 1632,
+      "mtime_utc": "2026-09-17T07:42:04.036028+00:00",
+      "sha256": "84812bbab767c97908901d34459456574da4f25f8e2893f478b1f192d11ea0f9",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPLICATION/independent_check.json",
+      "extension": ".json",
+      "size_bytes": 7179,
+      "mtime_utc": "2026-09-17T08:00:09.587864+00:00",
+      "sha256": "d20deccdf38ad7ca82a5dba7667ec50cd3c7e79825b3a9ea97472751e0ed3b23",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPLICATION/independent_check.py",
+      "extension": ".py",
+      "size_bytes": 7327,
+      "mtime_utc": "2026-09-17T08:00:05.403340+00:00",
+      "sha256": "b110dd9ae6282f7c309fff56905905038e3300f65a492ce7a2231beb5b67e109",
+      "mentioned_ids": [
+        "EXP-0004",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPORT/PLAIN_ENGLISH_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 2485,
+      "mtime_utc": "2026-09-17T08:01:41.854117+00:00",
+      "sha256": "68fc32e21821cf6a9135852a9b1db92dd76349cea31b622b291b428d217fd60a",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPORT/TECHNICAL_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 5620,
+      "mtime_utc": "2026-09-17T08:01:31.209896+00:00",
+      "sha256": "041f191277155090e729350122efbd569daacd59a78aae208e4cdf2183dd5cd2",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/RESULTS/EXP-0004_results.json",
+      "extension": ".json",
+      "size_bytes": 29584,
+      "mtime_utc": "2026-09-17T07:59:47.787316+00:00",
+      "sha256": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+      "mentioned_ids": [
+        "EXP-0004",
+        "HYP-003",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 8394,
+      "mtime_utc": "2026-09-19T11:06:46.976238+00:00",
+      "sha256": "193b5d5c179a7d44af1995a324636801dc5f0a7d0ee36d644309fd693a9f6d3a",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0009",
+        "HYP-004",
+        "Q-P004",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0006_summary.py",
+      "extension": ".py",
+      "size_bytes": 6683,
+      "mtime_utc": "2026-09-17T13:54:02.245795+00:00",
+      "sha256": "9ec5ac0c149008c019de469a5b71b7848ad2684924dc3782021bae868dc32d93",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0007_summary.py",
+      "extension": ".py",
+      "size_bytes": 8682,
+      "mtime_utc": "2026-09-17T15:45:57.594865+00:00",
+      "sha256": "80e89e0de03d2293b270c7b7377359bdbcf149c96cb7b00b10a20f03b2e7b8f6",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0005_experiment.json",
+      "extension": ".json",
+      "size_bytes": 28425,
+      "mtime_utc": "2026-09-17T09:13:28.112711+00:00",
+      "sha256": "ec7ac3649bab5119f3a7ead7be1c33904cc781264ee5745632562ac4ff37ce29",
+      "mentioned_ids": [
+        "EXP-0005",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0006_experiment.json",
+      "extension": ".json",
+      "size_bytes": 32103,
+      "mtime_utc": "2026-09-17T13:28:48.558414+00:00",
+      "sha256": "afb2b8308c57e2d995d58a668942dccec7219719f319b86008abe44268a41a7f",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0007_experiment.json",
+      "extension": ".json",
+      "size_bytes": 23903,
+      "mtime_utc": "2026-09-17T15:33:11.742399+00:00",
+      "sha256": "c35c71ca7fa4557a00652296eb239e49ef11f852be57a6057d325d68b6237f37",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 1518,
+      "mtime_utc": "2026-09-17T15:33:11.766350+00:00",
+      "sha256": "68112acf670e593eae9a5212bb754ea42fbbb6ecc6b6157833c5732ce6dda5ff",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0005_results.json",
+      "extension": ".json",
+      "size_bytes": 22739,
+      "mtime_utc": "2026-09-17T09:13:18.954504+00:00",
+      "sha256": "0995f275c20280d012c1533e41a6b7350659276aac9a2500f78a4f626d9b528f",
+      "mentioned_ids": [
+        "EXP-0005",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0005_width_route_corrected.json",
+      "extension": ".json",
+      "size_bytes": 5780,
+      "mtime_utc": "2026-09-17T10:03:40.042632+00:00",
+      "sha256": "2156647fbc0eb042f0749f3982f0c715ec4aba5352fbc2a6b48d21f38a25731b",
+      "mentioned_ids": [
+        "EXP-0005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+      "extension": ".json",
+      "size_bytes": 25825,
+      "mtime_utc": "2026-09-17T13:28:38.966068+00:00",
+      "sha256": "eda5b0c77ad4fc62f9a7c34823be2deabed39f933f15e4854b30ca710836ae5a",
+      "mentioned_ids": [
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_summary.json",
+      "extension": ".json",
+      "size_bytes": 10567,
+      "mtime_utc": "2026-09-17T13:54:06.726308+00:00",
+      "sha256": "6bac6eb58c2fc9323557a2c52f0691389791581909584f427d31db78e163230b",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L128.json",
+      "extension": ".json",
+      "size_bytes": 871,
+      "mtime_utc": "2026-09-17T11:12:45.033494+00:00",
+      "sha256": "50c3981b0a6ee6dacb2cad1e209c1dc09e92f3802efa673f5991a54759c9f277",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L96.json",
+      "extension": ".json",
+      "size_bytes": 859,
+      "mtime_utc": "2026-09-17T11:08:20.992089+00:00",
+      "sha256": "38602b52b0ae36dc43e1e8991b6bc0fa12c54b85abe07daa9e9c8a05d532a463",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+      "extension": ".json",
+      "size_bytes": 18813,
+      "mtime_utc": "2026-09-17T15:33:02.155878+00:00",
+      "sha256": "a09e4f204dfef9cab7dbe5bb5769f94093d09ecab45f9a90fe6bbff79552553b",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json",
+      "extension": ".json",
+      "size_bytes": 6298,
+      "mtime_utc": "2026-09-17T15:46:28.549808+00:00",
+      "sha256": "7c994a98d80b865e3d5cc5f61921455f89e8856ce90bef1fc4bd5c20eaa38931",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_exp0007_L192.py",
+      "extension": ".py",
+      "size_bytes": 2682,
+      "mtime_utc": "2026-09-22T14:36:40.028420+00:00",
+      "sha256": "9a90fc975ea50a9a020f1ad92738b9aa2d6716474d9515eb160e58889463f544",
+      "mentioned_ids": [
+        "EXP-0007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_exp0007_stage1.py",
+      "extension": ".py",
+      "size_bytes": 3191,
+      "mtime_utc": "2026-09-17T10:59:44.678638+00:00",
+      "sha256": "2dac7a4231417e82211a05d413351fe7d81920895de052b2065ebf97c04def8e",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation.py",
+      "extension": ".py",
+      "size_bytes": 21403,
+      "mtime_utc": "2026-09-22T14:29:22.085683+00:00",
+      "sha256": "448c4be29cd400b06b12cfe2e01145af4d661c018b8ad95b1dcfe7d9e3b5ea32",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+      "extension": ".py",
+      "size_bytes": 15854,
+      "mtime_utc": "2026-09-22T14:38:20.401670+00:00",
+      "sha256": "9bc6db082fe99b31a2adf042fcbe0d77beee551ac41496816ce6190f101c34eb",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0007.py",
+      "extension": ".py",
+      "size_bytes": 16103,
+      "mtime_utc": "2026-09-17T15:19:30.142491+00:00",
+      "sha256": "53c5240c2318df321597a95be12d323e4e7a685ee0b13e13a07e2dddb733aa31",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0005.json",
+      "extension": ".json",
+      "size_bytes": 3614,
+      "mtime_utc": "2026-09-17T08:24:08.655700+00:00",
+      "sha256": "6b47e95a40f4244e562b88d9fb16446ba8b655e362b0a58df801f2b959fe1305",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0006.json",
+      "extension": ".json",
+      "size_bytes": 2774,
+      "mtime_utc": "2026-09-17T10:15:16.560265+00:00",
+      "sha256": "8b8c2aae57b2ee5cfc593996141408f5f449f7ab3e0d982dae3d68b968c679a0",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0007.json",
+      "extension": ".json",
+      "size_bytes": 2548,
+      "mtime_utc": "2026-09-17T10:48:24.153728+00:00",
+      "sha256": "d421d4a615aaaeca255c1e6b3234ad67c66c7c8121c5c27d286a95412451ad02",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/STREAM_LAYOUT.md",
+      "extension": ".md",
+      "size_bytes": 2396,
+      "mtime_utc": "2026-09-17T08:42:39.257642+00:00",
+      "sha256": "89a6c285de66bb7c4ff9f11d351612b6392b6f5256e91849e103dff9454de0d1",
+      "mentioned_ids": [
+        "EXP-0005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 2223,
+      "mtime_utc": "2026-09-17T08:42:44.496986+00:00",
+      "sha256": "950d299877eb62da0ebc9c7f883f30f65be685edb9b10ccf787e3b67210fc6ee",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/DIAGNOSTICS/EXP-0005_width_route_audit.md",
+      "extension": ".md",
+      "size_bytes": 7604,
+      "mtime_utc": "2026-09-17T10:14:29.809253+00:00",
+      "sha256": "7e352d4f7eb41a1191b8bfbf4a385e4244f8a039335a1b4c760ff71276ef5291",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/DIAGNOSTICS/EXP-0006_proposal.md",
+      "extension": ".md",
+      "size_bytes": 3547,
+      "mtime_utc": "2026-09-17T10:15:27.547620+00:00",
+      "sha256": "a0b88c60b468772a162a69354eb6f0c5db43d98bf8a57f7abded1d17f7ac7a80",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+      "extension": ".py",
+      "size_bytes": 20533,
+      "mtime_utc": "2026-09-19T11:02:34.455951+00:00",
+      "sha256": "2cfd0a407072e2451464b24047d2a9ddcccb1521a2617480d579a24ff7d5b2ef",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "Q-P005",
+        "Q-P011"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/experiment.json",
+      "extension": ".json",
+      "size_bytes": 165,
+      "mtime_utc": "2026-09-17T08:17:14.980985+00:00",
+      "sha256": "94c92502420c5a9f1a45f09e514b048a98c79712b41e292fe578edee129be91e",
+      "mentioned_ids": [
+        "EXP-0005",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 3574,
+      "mtime_utc": "2026-09-17T08:23:54.613337+00:00",
+      "sha256": "d6dc73d9b265f29be409346935913f1b94efc6e1dd2e7d594866c33a52092319",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0004",
+        "EXP-0005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/FALSIFICATION/planning_checks.md",
+      "extension": ".md",
+      "size_bytes": 2621,
+      "mtime_utc": "2026-09-17T08:19:46.395866+00:00",
+      "sha256": "d705a1387e935dfd46f08f330c80547c060a300ae7e69247f82420b86e3682d5",
+      "mentioned_ids": [
+        "EXP-0005",
+        "HYP-004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 1829,
+      "mtime_utc": "2026-09-17T08:23:16.504558+00:00",
+      "sha256": "e3539b2967ba5c39da773198313e69e97ed8285d43e721dab2e4f7e03577493e",
+      "mentioned_ids": [
+        "EXP-0005",
+        "HYP-001",
+        "HYP-004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 2757,
+      "mtime_utc": "2026-09-17T08:18:22.679178+00:00",
+      "sha256": "8a546e8651d3529483489ef80d33edfd3f34963fd81e068de2ec478cdfda5d5c",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 3302,
+      "mtime_utc": "2026-09-17T08:23:30.557647+00:00",
+      "sha256": "a1ec1c9d916276746ece40550a755603dc340e5c7a6005bc98393f196fdcb798",
+      "mentioned_ids": [
+        "EXP-0005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+      "extension": ".npz",
+      "size_bytes": 23409415,
+      "mtime_utc": "2026-09-19T03:12:13.519435+00:00",
+      "sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n60.npz",
+      "extension": ".npz",
+      "size_bytes": 14038471,
+      "mtime_utc": "2026-09-18T11:55:55.904245+00:00",
+      "sha256": "70fdc433cee432fad4757577c67eee87aa756f71636ded95ec2d636f43bed3db"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L128_n1500.npz",
+      "extension": ".npz",
+      "size_bytes": 6079974,
+      "mtime_utc": "2026-09-18T11:52:39.369586+00:00",
+      "sha256": "787b621b0c272718865be0257e044a4e22e7bbb343826af90049afbab9831271"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+      "extension": ".npz",
+      "size_bytes": 46612965,
+      "mtime_utc": "2026-09-19T03:19:05.577380+00:00",
+      "sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L256_n700.npz",
+      "extension": ".npz",
+      "size_bytes": 10702759,
+      "mtime_utc": "2026-09-18T11:53:16.959385+00:00",
+      "sha256": "03d2e6c63ef8218047ed46d0bc2eb73efa6e98850c1b743d2a6240352eaa9956"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n150.npz",
+      "extension": ".npz",
+      "size_bytes": 8914681,
+      "mtime_utc": "2026-09-18T11:54:07.585782+00:00",
+      "sha256": "24bd00f6509efa683ff975af02e82d8ea773c900a15285fda3e74a02ebb4e22c"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+      "extension": ".npz",
+      "size_bytes": 11889582,
+      "mtime_utc": "2026-09-19T03:09:39.761292+00:00",
+      "sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L127_n200.npz",
+      "extension": ".npz",
+      "size_bytes": 794364,
+      "mtime_utc": "2026-09-18T14:45:51.347906+00:00",
+      "sha256": "b660de93abc733fad230120ec5dd4dfe46cbf8fd0fdcf9aa31d03b73d0d478bc"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L191_n200.npz",
+      "extension": ".npz",
+      "size_bytes": 1729961,
+      "mtime_utc": "2026-09-18T14:45:55.059995+00:00",
+      "sha256": "f6f34a9a419d873bc41ba0cd1eb5f474bc577eec6a7e24fb27b2bdf11603c9c6"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L253_n200.npz",
+      "extension": ".npz",
+      "size_bytes": 2977496,
+      "mtime_utc": "2026-09-18T14:46:02.897911+00:00",
+      "sha256": "daf07b0afb2e6176dead21195a3bc53a146581b9ac3e5ddbe967c7cf8ed1e5d8"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L449_n200.npz",
+      "extension": ".npz",
+      "size_bytes": 9155196,
+      "mtime_utc": "2026-09-18T14:46:31.075960+00:00",
+      "sha256": "d1ff5ec04f14ebb286f4f80b92539f9f11cedb38bd7e2590db475d1cd826587c"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_results.json",
+      "extension": ".json",
+      "size_bytes": 7077,
+      "mtime_utc": "2026-09-18T12:11:48.995713+00:00",
+      "sha256": "663f416fcace55a720b3aebc5c08602072700f0f1b025fde326f11163f3a630a",
+      "mentioned_ids": [
+        "EXP-0009",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_summary.json",
+      "extension": ".json",
+      "size_bytes": 7292,
+      "mtime_utc": "2026-09-18T12:11:48.997685+00:00",
+      "sha256": "aa0bb33c93752453c38249d914706ef9e46c60e3f41334950e0b7e83183b7519",
+      "mentioned_ids": [
+        "EXP-0009",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_results.json",
+      "extension": ".json",
+      "size_bytes": 1427,
+      "mtime_utc": "2026-09-18T14:46:38.887192+00:00",
+      "sha256": "3461512287e9ad41f35c76ed3f2fee5816a5a3a03c5382e77d3f5687fcc45882",
+      "mentioned_ids": [
+        "EXP-0010",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_summary.json",
+      "extension": ".json",
+      "size_bytes": 1621,
+      "mtime_utc": "2026-09-18T14:46:39.016127+00:00",
+      "sha256": "e8b5c1ff4707f3e3227c329241d8b935eb75c32bf1954ccef13137d7a75a2299",
+      "mentioned_ids": [
+        "EXP-0010",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py",
+      "extension": ".py",
+      "size_bytes": 20816,
+      "mtime_utc": "2026-09-22T14:38:48.887954+00:00",
+      "sha256": "5147bc5d519793a3bba5292a127a2de8ec025fe37f382f4d3bda779a14aa70df",
+      "mentioned_ids": [
+        "EXP-0009",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py",
+      "extension": ".py",
+      "size_bytes": 6471,
+      "mtime_utc": "2026-09-18T14:45:44.592237+00:00",
+      "sha256": "6874cbdbc1def59f811acbb84bae295733ebcd637f9eea8bda20560c2ea87c02",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/EXP-0009_experiment.json",
+      "extension": ".json",
+      "size_bytes": 333,
+      "mtime_utc": "2026-09-18T12:11:48.999217+00:00",
+      "sha256": "eb0c7e9d672a798b69741f347d95a09a4f3973c360635fe06ba6ead81466841c",
+      "mentioned_ids": [
+        "EXP-0009",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0009.json",
+      "extension": ".json",
+      "size_bytes": 4281,
+      "mtime_utc": "2026-09-18T10:56:22.691637+00:00",
+      "sha256": "7bc74dd0766d979a3bec62f70cfa053c14532f9068a1303338733e9a2e943339",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0008",
+        "EXP-0009",
+        "HYP-005",
+        "Q-M002",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json",
+      "extension": ".json",
+      "size_bytes": 1692,
+      "mtime_utc": "2026-09-18T14:44:03.899136+00:00",
+      "sha256": "328c9d48abb0f6086575bb1f565f84f33354eab66ab5311e3ff5520aafd6f98f",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/registry.jsonl",
+      "extension": ".jsonl",
+      "size_bytes": 761,
+      "mtime_utc": "2026-09-18T14:46:39.018703+00:00",
+      "sha256": "b26a2f31cd2ab4bbe35bc66b9a84d72e2a4ccb4afffdaa8cf1b9f6119e4c2520",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "HYP-005",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 2513,
+      "mtime_utc": "2026-09-18T10:57:45.878319+00:00",
+      "sha256": "72c456ddde90a1d64726d97a63dca0d71e269c5cc3d0500c0743e8ef4a1a2d43",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0009",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 4113,
+      "mtime_utc": "2026-09-18T10:57:37.754608+00:00",
+      "sha256": "d1849f36bb9407216b054c586cdffa69d62cbedeeb450075b9ee9886e492c5b9",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0009",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 2580,
+      "mtime_utc": "2026-09-18T10:11:33.588463+00:00",
+      "sha256": "bede3839eb0b26c7e09c5db3e22310d931b3e4944cf96b1a2da45813ddf58cd6",
+      "mentioned_ids": [
+        "EXP-0009",
+        "HYP-005",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/LITERATURE.md",
+      "extension": ".md",
+      "size_bytes": 1664,
+      "mtime_utc": "2026-09-18T09:51:05.305379+00:00",
+      "sha256": "be0b36035080ae4c675d1a157e1af33b675fbe06ca5bc95e81b847567d4fe09a",
+      "mentioned_ids": [
+        "EXP-0007",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 2413,
+      "mtime_utc": "2026-09-18T10:11:18.245618+00:00",
+      "sha256": "558de264d96254e8af2a3d124fd8f0f9fd2e4a10fb8429691024acf9cec77458",
+      "mentioned_ids": [
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 4870,
+      "mtime_utc": "2026-09-18T10:06:44.935273+00:00",
+      "sha256": "28939cd3194def095fa47bbb2c07764965b0d52bdccd3e37b6541a2b82ef8c9b",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0009",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json",
+      "extension": ".json",
+      "size_bytes": 1269,
+      "mtime_utc": "2026-09-18T12:11:48.898163+00:00",
+      "sha256": "fe80fad75edf9dabff41f0ae68e0bb4cfa6df8b822d848295d57a6d95065d18a",
+      "mentioned_ids": [
+        "EXP-0009"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py",
+      "extension": ".py",
+      "size_bytes": 7052,
+      "mtime_utc": "2026-09-18T12:05:56.444980+00:00",
+      "sha256": "74c8a4413d72d0440a75f5101a7e082061c763b07352ed6a0f8357bd909b1aa5",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPORT.md",
+      "extension": ".md",
+      "size_bytes": 5998,
+      "mtime_utc": "2026-09-22T14:35:44.273546+00:00",
+      "sha256": "a0eae010549dc7f75607241e12c2c1bbbeec34ee96ba2cddec44ce1c313f44b1",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/AUDIT_Q006_Q007.md",
+      "extension": ".md",
+      "size_bytes": 1420,
+      "mtime_utc": "2026-09-22T14:34:59.638916+00:00",
+      "sha256": "4c21c9cff24e373c7abcd0ac5ee3bc3aada06cd843960a8ea372b8a2aaa5aa8d",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0011",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz",
+      "extension": ".npz",
+      "size_bytes": 23409415,
+      "mtime_utc": "2026-09-19T03:12:13.519435+00:00",
+      "sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz",
+      "extension": ".npz",
+      "size_bytes": 46612965,
+      "mtime_utc": "2026-09-19T03:19:05.577380+00:00",
+      "sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz",
+      "extension": ".npz",
+      "size_bytes": 11889582,
+      "mtime_utc": "2026-09-19T03:09:39.761292+00:00",
+      "sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/EXP-0009-precision_results.json",
+      "extension": ".json",
+      "size_bytes": 952,
+      "mtime_utc": "2026-09-19T03:20:12.943035+00:00",
+      "sha256": "141475a84a2821d6f3a7ce04924184ff163633aef3434dbe329f24bbd670bf42",
+      "mentioned_ids": [
+        "EXP-0009"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run.err",
+      "extension": ".err",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-19T03:08:50.361525+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run.log",
+      "extension": ".log",
+      "size_bytes": 376,
+      "mtime_utc": "2026-09-19T03:20:12.959597+00:00",
+      "sha256": "c4dfe59a1bbeca0ef058f34de87a927ee5d456f59b39299e3f23d565eadad96d",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run_q_p006.py",
+      "extension": ".py",
+      "size_bytes": 4423,
+      "mtime_utc": "2026-09-19T03:08:30.360171+00:00",
+      "sha256": "0f8cd1d4340e4235d7db13c859a24d4dde277a521e95b6ccc0be013ce5ba25bf",
+      "mentioned_ids": [
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CONFIG/prereg_EXP-0009P.json",
+      "extension": ".json",
+      "size_bytes": 2031,
+      "mtime_utc": "2026-09-19T03:05:46.801326+00:00",
+      "sha256": "3a9136d55e7f82b1c22773bf66535424e7ff03bc683ce44dfb897ccbb40c9cff",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0009",
+        "EXP-0010",
+        "HYP-P006",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 494,
+      "mtime_utc": "2026-09-19T05:07:57.130183+00:00",
+      "sha256": "4d05c4de4b3cac14858546cb850b8deefccfedd619be5b0bf934976cfce94375",
+      "mentioned_ids": [
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/EXECUTION_PLAN_20260919.md",
+      "extension": ".md",
+      "size_bytes": 22997,
+      "mtime_utc": "2026-09-18T23:38:57.554907+00:00",
+      "sha256": "944b328e98c679d1ce13944f9dca16c1be0eed3bcb13550a960f67861e3ef7a5",
+      "mentioned_ids": [
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M007",
+        "Q-M008",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 163,
+      "mtime_utc": "2026-09-19T05:07:57.129182+00:00",
+      "sha256": "ced68d5f9a9c4dbf1185731f71fe8c6110b75d51baeb5b15c1425f903ef098a9",
+      "mentioned_ids": [
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 395,
+      "mtime_utc": "2026-09-19T05:07:57.130183+00:00",
+      "sha256": "8a2fd4be80b2eadd94e79ecdde34f3c7b216ce430300bdc8979643b0600799a6",
+      "mentioned_ids": [
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 1888,
+      "mtime_utc": "2026-09-19T05:07:57.128185+00:00",
+      "sha256": "dc7602f7ac4a021c179868a28e91ab3283f4eb855beb7a90654492a0a30a249a",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/README.md",
+      "extension": ".md",
+      "size_bytes": 1628,
+      "mtime_utc": "2026-09-22T14:39:39.457748+00:00",
+      "sha256": "a3fe00c2fc919a08294c930933ed700252104de7821ebe9322bb2ea31749ac6c",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/REPORT/TECHNICAL_EXP-0009-precision.md",
+      "extension": ".md",
+      "size_bytes": 1788,
+      "mtime_utc": "2026-09-19T05:07:57.129182+00:00",
+      "sha256": "26b4fdc92a44e59e97f8a7e3d51e079d7f51d86b7eba0d1ff578e6588ec0d13f",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_combined.json",
+      "extension": ".json",
+      "size_bytes": 1690,
+      "mtime_utc": "2026-09-19T09:36:36.091159+00:00",
+      "sha256": "30b03703258d4d8e86e50b28a12a570632cafe211f0c8f1be5e939d75a2d7f5e",
+      "mentioned_ids": [
+        "EXP-0009"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_L1024_cells.npz",
+      "extension": ".npz",
+      "size_bytes": 3252,
+      "mtime_utc": "2026-09-19T09:27:55.894178+00:00",
+      "sha256": "07fd70f5194bb444d9bef3aea3b3797a78c5f524ba9c7563056485f563b4476e"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_L2048_cells.npz",
+      "extension": ".npz",
+      "size_bytes": 2252,
+      "mtime_utc": "2026-09-19T09:36:35.024091+00:00",
+      "sha256": "138796483b0a2822d65665e51bb584c83df0cd7e1314d2de9e551fc1deb8b78a"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_L512_cells.npz",
+      "extension": ".npz",
+      "size_bytes": 5252,
+      "mtime_utc": "2026-09-19T09:24:20.737348+00:00",
+      "sha256": "07dc95577f92c47495ae75028a15e1723ad7c669ae57ca04e942a61f7664cd5c"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_phase1.json",
+      "extension": ".json",
+      "size_bytes": 419,
+      "mtime_utc": "2026-09-19T09:23:07.369000+00:00",
+      "sha256": "088c8958e3a11690997e38adae215bb276f5cec22b1ae0c82a8639a7e64e1af3",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_phase1_preserved.json",
+      "extension": ".json",
+      "size_bytes": 411,
+      "mtime_utc": "2026-09-19T05:03:33.438792+00:00",
+      "sha256": "ee0ae6dfc022c48afaf8acc53f0a5fc52e39c97e37b993a38a7aafe6a9841420",
+      "mentioned_ids": [
+        "EXP-0009"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_results.json",
+      "extension": ".json",
+      "size_bytes": 1136,
+      "mtime_utc": "2026-09-19T09:36:36.090635+00:00",
+      "sha256": "f40b1f11486622247b910b56bc65ae138a292dc6c43950532250a023f1a22988",
+      "mentioned_ids": [
+        "EXP-0009"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run.err",
+      "extension": ".err",
+      "size_bytes": 177,
+      "mtime_utc": "2026-09-19T09:38:58.614014+00:00",
+      "sha256": "703c2ce2a5efbca022d02f82aa6667e9b54e7cbd73c36f5c3353577bb3a5a719",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run.log",
+      "extension": ".log",
+      "size_bytes": 880,
+      "mtime_utc": "2026-09-19T09:38:57.630590+00:00",
+      "sha256": "cbdec52d14087b99ad9e80f4ac0f5dd9dde708fb4f7fbb4d2e69a160177086e0",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py",
+      "extension": ".py",
+      "size_bytes": 7937,
+      "mtime_utc": "2026-09-19T09:22:49.042767+00:00",
+      "sha256": "96a25772ade3a9051e96ff32b0cbafbe21c142ffb73b027292923c97c6dd9450",
+      "mentioned_ids": [
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_q_p007.py",
+      "extension": ".py",
+      "size_bytes": 7775,
+      "mtime_utc": "2026-09-19T03:47:59.615308+00:00",
+      "sha256": "9f5c43e894cea8da4a5a345ec67c1c35ed4efa2ef1ffe9e5da3934c32926ecd0",
+      "mentioned_ids": [
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CONFIG/prereg_EXP-0009PC.json",
+      "extension": ".json",
+      "size_bytes": 2195,
+      "mtime_utc": "2026-09-19T03:47:34.856292+00:00",
+      "sha256": "de25105fa661cc4f4fc7699a494dd7fc6a43d8a921dc0e301a6c6472b2f816f0",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0009",
+        "EXP-0010",
+        "HYP-P007",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 318,
+      "mtime_utc": "2026-09-19T05:07:47.292212+00:00",
+      "sha256": "cfd30b651b5ea970b756a5b7a84b2a054a4ac817764b479b57370d11f1e5c03f",
+      "mentioned_ids": [
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 1154,
+      "mtime_utc": "2026-09-22T14:43:33.724903+00:00",
+      "sha256": "cc73234704b1cd52f92db7cdce196b1da3bac871cc7a4bd39646374eb8bc2ed8",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/HYPOTHESIS.md",
+      "extension": ".md",
+      "size_bytes": 380,
+      "mtime_utc": "2026-09-19T05:07:47.292212+00:00",
+      "sha256": "f8bf6b6dd110ef64383b1edaab8474107db695becb18280ed726b00a4e8f0177",
+      "mentioned_ids": [
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 1263,
+      "mtime_utc": "2026-09-22T14:43:33.724387+00:00",
+      "sha256": "ca809e7cc69dfc2d2a25c887ac8f74caf9a8e5d9888d07d0763ffaf200b8c368",
+      "mentioned_ids": [
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 1992,
+      "mtime_utc": "2026-09-22T14:35:44.262929+00:00",
+      "sha256": "035cce39aa3dcaa0fa891101c672e8b89fe8ddf1aff5704c02aacf6968f6eb3b",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/QUESTION.md",
+      "extension": ".md",
+      "size_bytes": 4139,
+      "mtime_utc": "2026-09-17T08:17:43.668931+00:00",
+      "sha256": "69e88da93b407d7c0fd12d2bc16df191ae275884fe2dacdfc32165e76df82c8a",
+      "mentioned_ids": [
+        "EXP-0004",
+        "EXP-0005",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/README.md",
+      "extension": ".md",
+      "size_bytes": 1410,
+      "mtime_utc": "2026-09-17T15:50:29.141802+00:00",
+      "sha256": "17c3472494eaba16f23e363a7accfa07635556709444bdcf3a2f008fb101a1c7",
+      "mentioned_ids": [
+        "EXP-0003",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0006_report.json",
+      "extension": ".json",
+      "size_bytes": 10192,
+      "mtime_utc": "2026-09-17T13:52:03.861173+00:00",
+      "sha256": "8e4fb188ae554e71bf5fe23624e6b15f2a9f6f0078bf3623049492852d3f7ea2",
+      "mentioned_ids": [
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0007_report.json",
+      "extension": ".json",
+      "size_bytes": 25909,
+      "mtime_utc": "2026-09-17T15:45:13.958232+00:00",
+      "sha256": "57099fbdedf5ea05b1d474894c6da595967161cadaecb9faffa796ded42b855f",
+      "mentioned_ids": [
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py",
+      "extension": ".py",
+      "size_bytes": 6851,
+      "mtime_utc": "2026-09-17T13:46:19.591369+00:00",
+      "sha256": "4dad6e29490499a0db41a72af125de7fd7188d22c152a2746cb3c23c7f95490b",
+      "mentioned_ids": [
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check_exp0007.py",
+      "extension": ".py",
+      "size_bytes": 6780,
+      "mtime_utc": "2026-09-17T15:35:23.067536+00:00",
+      "sha256": "e8eb556f2b4462cf3b500ad08e4a84c254b66355fe22bafe4fd22d14a7b17f26",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0006.md",
+      "extension": ".md",
+      "size_bytes": 2284,
+      "mtime_utc": "2026-09-17T13:55:48.720964+00:00",
+      "sha256": "fb11f518d0e7c155aba54f527759d9c048ac38fd3ce174a6d0c0cc87cc0533fd",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0007.md",
+      "extension": ".md",
+      "size_bytes": 2317,
+      "mtime_utc": "2026-09-17T15:48:00.418008+00:00",
+      "sha256": "d1fde9762ae098c7f5124811b683fc72c971496c5c236931fa1bd441fcb041cc",
+      "mentioned_ids": [
+        "EXP-0006",
+        "EXP-0007",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0006.md",
+      "extension": ".md",
+      "size_bytes": 6256,
+      "mtime_utc": "2026-09-17T13:55:30.277491+00:00",
+      "sha256": "9683b3adba686513e4ca1b1b2e1b1902d57e8b63b8357f26379053c831dc4ecf",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md",
+      "extension": ".md",
+      "size_bytes": 6894,
+      "mtime_utc": "2026-09-17T15:47:51.920302+00:00",
+      "sha256": "97cf2f9af8aa91550a856e99acb24ce2fb40407de56197719030b3897960b7af",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/state/CURRENT_STATUS.md",
+      "extension": ".md",
+      "size_bytes": 2441,
+      "mtime_utc": "2026-09-18T02:55:17.715003+00:00",
+      "sha256": "bbbb626983596971a622924204f8ed3a6f24a50e27aae58aba370f1976f14b27",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0007",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/state/LAST_JOB.md",
+      "extension": ".md",
+      "size_bytes": 1869,
+      "mtime_utc": "2026-09-19T11:06:00.678482+00:00",
+      "sha256": "933036a50b302665be989afb62f46465d7cd3d5eb6b3d9606cb3e395a72b2333",
+      "mentioned_ids": [
+        "EXP-0011",
+        "Q-M007",
+        "Q-M008",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation.rar",
+      "extension": ".rar",
+      "size_bytes": 131327,
+      "mtime_utc": "2026-09-18T09:36:29.414174+00:00",
+      "sha256": "805aceba70b3349724807cc9e173ebf79a3cd5851002afca2a45299ddf31a33a"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/benchmark.py",
+      "extension": ".py",
+      "size_bytes": 609,
+      "mtime_utc": "2026-09-19T11:22:30.111106+00:00",
+      "sha256": "bc6795ec6a4c26ce0639c8b58912825156b000bd5d39df2ab84706a5d3398c8f",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/LOG/run.err",
+      "extension": ".err",
+      "size_bytes": 2,
+      "mtime_utc": "2026-09-23T16:34:50.564261+00:00",
+      "sha256": "8c14fdf5c613f56ef1755248a9d0c3a739ed5f3ba13746aa8315ee569cabec17",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/LOG/run.log",
+      "extension": ".log",
+      "size_bytes": 261,
+      "mtime_utc": "2026-09-23T16:28:27.548740+00:00",
+      "sha256": "2d664b69acb147831af7c9c79f51dc422d9eb55545e562259f396847117e2da2",
+      "mentioned_ids": [
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/C7_EXP-0011_report.json",
+      "extension": ".json",
+      "size_bytes": 16893,
+      "mtime_utc": "2026-09-20T14:12:08.903860+00:00",
+      "sha256": "9a62282a67268949a84b167ecc5226fae0e157773c92372a424b7728d66ac04c",
+      "mentioned_ids": [
+        "EXP-0011",
+        "HYP-P008",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py",
+      "extension": ".py",
+      "size_bytes": 4565,
+      "mtime_utc": "2026-09-20T14:11:34.225998+00:00",
+      "sha256": "27b612daa5c5ab145c55bdc651934170a49a6e1305437845101710fa6c01886c",
+      "mentioned_ids": [
+        "EXP-0011",
+        "HYP-P008",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/C7_exp0011_pilot.json",
+      "extension": ".json",
+      "size_bytes": 995,
+      "mtime_utc": "2026-09-20T14:04:00.684110+00:00",
+      "sha256": "6ff64c2e2c77c2e314fe0c67cb5430bd5499b2f836d60ea5940a6feb283ee4e5",
+      "mentioned_ids": [
+        "EXP-0011",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_combined.json",
+      "extension": ".json",
+      "size_bytes": 1624,
+      "mtime_utc": "2026-09-20T13:57:07.297653+00:00",
+      "sha256": "c55bca91244fb5a752c97a9d89806434b112214b97167e825561fbee0220181b",
+      "mentioned_ids": [
+        "EXP-0011"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_combined.json",
+      "extension": ".json",
+      "size_bytes": 1625,
+      "mtime_utc": "2026-09-19T11:19:00.500679+00:00",
+      "sha256": "581ecf297bbc2dcf2f7b98254162e5ea0c223f2161c250d322b69655c65bfe99",
+      "mentioned_ids": [
+        "EXP-0011"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_results.json",
+      "extension": ".json",
+      "size_bytes": 1143,
+      "mtime_utc": "2026-09-19T11:19:00.500679+00:00",
+      "sha256": "fd6bdb492d0a356472a3fd3279212028fff1bfde526552154ee89c673ef5f363",
+      "mentioned_ids": [
+        "EXP-0011"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_results.json",
+      "extension": ".json",
+      "size_bytes": 1142,
+      "mtime_utc": "2026-09-20T13:57:07.296633+00:00",
+      "sha256": "e208ea47f0290768ef358f783f60c705f5e4e08857f76bf94136ae1619e46f8e",
+      "mentioned_ids": [
+        "EXP-0011"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.bat",
+      "extension": ".bat",
+      "size_bytes": 304,
+      "mtime_utc": "2026-09-19T11:22:00.103070+00:00",
+      "sha256": "9f783fb78006d74f9e09a47a309426deb475dc41fb1a57f198adc9855227911a",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+      "extension": ".py",
+      "size_bytes": 9099,
+      "mtime_utc": "2026-09-20T13:56:37.319354+00:00",
+      "sha256": "9aed9b99edd0e65fcd0cfd921a48f4514ceed27a9dee558dcf3e9dece05ffb75",
+      "mentioned_ids": [
+        "EXP-0011",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011_loop.bat",
+      "extension": ".bat",
+      "size_bytes": 322,
+      "mtime_utc": "2026-09-19T11:24:24.966961+00:00",
+      "sha256": "8edc3ea8a66c91f261449f874a7944650000c455df3c3539bf4f54b79c97b0d3",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011_once.bat",
+      "extension": ".bat",
+      "size_bytes": 314,
+      "mtime_utc": "2026-09-19T11:22:00.156884+00:00",
+      "sha256": "45667afcf504b50087fe8391415256ee8f66054ad456c8bc589f3e277b6ee359",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0013.bat",
+      "extension": ".bat",
+      "size_bytes": 357,
+      "mtime_utc": "2026-09-19T11:24:26.359466+00:00",
+      "sha256": "8d1089c7b8a975fc20d101cf7b37dd6dbaa6d1bc0169989b640f5c6ad985ae58",
+      "mentioned_ids": []
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0011.json",
+      "extension": ".json",
+      "size_bytes": 3325,
+      "mtime_utc": "2026-09-22T14:34:59.638916+00:00",
+      "sha256": "52d7768c564c2945edef5201fee0dc43798ce2c0ff8ebed234ef6d9747a5fdfe",
+      "mentioned_ids": [
+        "EXP-0011",
+        "HYP-P008",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0013.json",
+      "extension": ".json",
+      "size_bytes": 2928,
+      "mtime_utc": "2026-09-22T14:30:04.098821+00:00",
+      "sha256": "c3926620cbe6989770cd52b40c2b93c6ee44140d41999a52c8c67482b11ed6a3",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "HYP-P008",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/EXPERIMENT_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 1737,
+      "mtime_utc": "2026-09-22T14:43:33.724903+00:00",
+      "sha256": "955eed24199e109182d90c0e86274975cebf5df3bf1e2060fe24d5c86bd79ec9",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/PREDICTIONS.md",
+      "extension": ".md",
+      "size_bytes": 1110,
+      "mtime_utc": "2026-09-22T14:43:33.724903+00:00",
+      "sha256": "2515276a4e8822d217e3c832565884eacf085f4fda6e2a1f1a88d34c4ad7d245",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/REPORT/PLAIN_EXP-0011.md",
+      "extension": ".md",
+      "size_bytes": 2391,
+      "mtime_utc": "2026-09-22T14:38:20.401670+00:00",
+      "sha256": "da4add5456d4d5ab08ebbf6375b3862058f561c68f964237f355347c371734ea",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013"
+      ]
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/__init__.py",
+      "extension": ".py",
+      "size_bytes": 824,
+      "mtime_utc": "2026-09-17T04:11:00.175413+00:00",
+      "sha256": "6dec01071f5d41973782e0e67992101580504f591ad87e8a2b7f063e4abdeadb",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/datasets/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:02.289960+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/datasets/manifest.py",
+      "extension": ".py",
+      "size_bytes": 965,
+      "mtime_utc": "2026-09-17T04:11:35.800208+00:00",
+      "sha256": "8d8d2ba4fd4611ace6044be3b92481fae434fa11ee7d4bec7f54359d26fa5b96",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/hypothesis_testing/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:01.102896+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py",
+      "extension": ".py",
+      "size_bytes": 1937,
+      "mtime_utc": "2026-09-17T04:11:24.214371+00:00",
+      "sha256": "99b2a1c409f58fbd1e83f645ac1d3a94b4d77a674f889f0e8855b36e20222dd1",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/reproducibility/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:02.071150+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/reproducibility/experiments.py",
+      "extension": ".py",
+      "size_bytes": 2681,
+      "mtime_utc": "2026-09-17T04:12:29.834414+00:00",
+      "sha256": "da04e6ad9fb5fbbce5c505a1fadbe155d910a70c91c7ef1f73bac9ecd8f6e9a7",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/simulation/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:01.664288+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/simulation/controls.py",
+      "extension": ".py",
+      "size_bytes": 2618,
+      "mtime_utc": "2026-09-17T04:14:08.842897+00:00",
+      "sha256": "dd595dede79863dc8f1e862c4b70bf65e68a343be5c8b416a712aaec7ba5b604",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/statistics/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:00.610831+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/statistics/testers.py",
+      "extension": ".py",
+      "size_bytes": 3347,
+      "mtime_utc": "2026-09-17T04:18:03.610514+00:00",
+      "sha256": "441a355ab88037b4bab3159fc0f291968a5051fe1a7ecc66c35a78a0af853597",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/utilities/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:00.377641+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/utilities/core.py",
+      "extension": ".py",
+      "size_bytes": 3001,
+      "mtime_utc": "2026-09-17T04:11:09.984497+00:00",
+      "sha256": "37f1d5f88b58133f471cd3394fea8f48001655e9ddd9f8fff1b2a5bd87fb2a93",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/validation/__init__.py",
+      "extension": ".py",
+      "size_bytes": 287,
+      "mtime_utc": "2026-09-17T07:49:30.427128+00:00",
+      "sha256": "e12548e4fd920dcc4717268fc5e243510970041886e56f1bf7b8b09e7d35dcda",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/validation/rng_battery.py",
+      "extension": ".py",
+      "size_bytes": 14604,
+      "mtime_utc": "2026-09-17T07:59:18.374765+00:00",
+      "sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e",
+      "mentioned_ids": [
+        "EXP-0004"
+      ]
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/visualization/__init__.py",
+      "extension": ".py",
+      "size_bytes": 0,
+      "mtime_utc": "2026-09-17T04:11:02.550653+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/visualization/plots.py",
+      "extension": ".py",
+      "size_bytes": 1248,
+      "mtime_utc": "2026-09-17T04:11:39.038728+00:00",
+      "sha256": "a868dc3d2301cc95b2a0c9831c49d8ece10bbaffd881da9866fe06b57dc06b55",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/experiment_template.md",
+      "extension": ".md",
+      "size_bytes": 2058,
+      "mtime_utc": "2026-09-17T04:11:47.632739+00:00",
+      "sha256": "4935a9c6c4a9866e0fbdbc51265ce852550925cfb2defe4660b1b0f7194afe29",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/README.md",
+      "extension": ".md",
+      "size_bytes": 1857,
+      "mtime_utc": "2026-09-17T04:11:43.701691+00:00",
+      "sha256": "eb213d0eec8e2cda5ce7d54734d83d30d862612ad8a7acec5a6f61f447a37765",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/tests/infra_validation_results.json",
+      "extension": ".json",
+      "size_bytes": 1601,
+      "mtime_utc": "2026-09-17T08:04:30.056067+00:00",
+      "sha256": "28625920b87946cd883d4c9d7711225a35f95c32e8b3bb7eef4ad07a5cb1d393",
+      "mentioned_ids": []
+    },
+    {
+      "path": "04_SHARED_ENGINE/tests/run_infra_validation.py",
+      "extension": ".py",
+      "size_bytes": 6192,
+      "mtime_utc": "2026-09-17T08:04:24.303262+00:00",
+      "sha256": "4cbed03b93d8c85260d8b9533f2048b5fee74121c55f36539228ab4b330c1aad",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0004",
+        "HYP-INFRA"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/CURRENT_OPEN_QUESTIONS.md",
+      "extension": ".md",
+      "size_bytes": 5639,
+      "mtime_utc": "2026-09-18T19:51:30.747848+00:00",
+      "sha256": "0c5fb5d53b5a0f3de354b9d5fca984c0e067beb1653b2ee33f9a2a5a214bdcc5",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M002",
+        "Q-O003",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/DATA_INDEX.md",
+      "extension": ".md",
+      "size_bytes": 5188,
+      "mtime_utc": "2026-09-18T19:52:27.335198+00:00",
+      "sha256": "ee4f5b516de260abab999a7df762f6c34bd9c32da8ec470f72a470664316f18d",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M002",
+        "Q-O001",
+        "Q-O003",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/DOSSIER_BUILD_REPORT.md",
+      "extension": ".md",
+      "size_bytes": 5874,
+      "mtime_utc": "2026-09-18T19:51:44.227118+00:00",
+      "sha256": "23a7d1307f79218a7c2aed3103e28475e9e9ce8c7334e2daae462e5e5d2edc69",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0005",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0020",
+        "HYP-005",
+        "Q-M002",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/EXECUTIVE_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 3169,
+      "mtime_utc": "2026-09-18T10:02:11.560323+00:00",
+      "sha256": "7ec389efb4fc5edf2f97d23ef409f73b2b109ac0acb1a981e2d6c9dbc515dfaa",
+      "mentioned_ids": []
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/EXPERIMENT_TIMELINE.md",
+      "extension": ".md",
+      "size_bytes": 6268,
+      "mtime_utc": "2026-09-18T09:57:44.439609+00:00",
+      "sha256": "bfa6656f719a75a655ac7be1001e64b5a810a01c6763ac0d658c2eb0f29d8412",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "Q-I004",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/figures/README.md",
+      "extension": ".md",
+      "size_bytes": 3411,
+      "mtime_utc": "2026-09-18T09:58:50.529248+00:00",
+      "sha256": "45e764d00c7b04f6dbf7f1f583b43011919426e84d4c9d063cf4726a84a55f7b",
+      "mentioned_ids": []
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/FOLLOWUP_EMAIL.md",
+      "extension": ".md",
+      "size_bytes": 4103,
+      "mtime_utc": "2026-09-18T10:02:30.593231+00:00",
+      "sha256": "005769822dbcdc979e732bad038ab498ae2eb279a53494a272667943b740c71d",
+      "mentioned_ids": []
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/KEY_RESULTS.md",
+      "extension": ".md",
+      "size_bytes": 5266,
+      "mtime_utc": "2026-09-18T19:52:59.520547+00:00",
+      "sha256": "3469b7e772c7c254b410e55c803ea8bba779cdd0093bd30c0cf27dc66bf99fd9",
+      "mentioned_ids": [
+        "EXP-0003",
+        "EXP-0005",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M002",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/METHODS_AND_CONTROLS.md",
+      "extension": ".md",
+      "size_bytes": 6451,
+      "mtime_utc": "2026-09-18T09:57:37.225910+00:00",
+      "sha256": "d88819f9fd3e3ac08096d61cc55e2c8a3951cb75c5402091043be9fabe255a10",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/NEGATIVE_AND_DIAGNOSTIC_RESULTS.md",
+      "extension": ".md",
+      "size_bytes": 4845,
+      "mtime_utc": "2026-09-18T09:57:59.693873+00:00",
+      "sha256": "c3786e3efe6800011dad059a3638121378bb208358a2903343fb40498af7f077",
+      "mentioned_ids": [
+        "EXP-0003"
+      ]
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/PROFESSOR_SWARTZLANDER_PROGRESS_DOSSIER.md",
+      "extension": ".md",
+      "size_bytes": 29188,
+      "mtime_utc": "2026-09-18T10:02:36.786255+00:00",
+      "sha256": "f8e9dac3b867f4992b42cf46b998a1640b20e5c1c8f6b7ad2cc0383133cf3e01",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "Q-I004",
+        "Q-O000",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "AUDIT/_audit_list.txt",
+      "extension": ".txt",
+      "size_bytes": 1587,
+      "mtime_utc": "2026-09-23T09:58:54.215841+00:00",
+      "sha256": "0ae7ca1c16ef43f3d961dfcea791ee2387ca92b2ca2bcd7bc57d4b2582e059d4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/_ext_counts.txt",
+      "extension": ".txt",
+      "size_bytes": 355,
+      "mtime_utc": "2026-09-23T09:39:54.236077+00:00",
+      "sha256": "a2f492fbbe887593a7194714a0af6c54e52584aa26926cd852f3a67c37fc8a27",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/AUDIT_LOG.md",
+      "extension": ".md",
+      "size_bytes": 2167,
+      "mtime_utc": "2026-09-23T17:24:15.707079+00:00",
+      "sha256": "318d82fbbdf74c9f28b4e723987d0af74d583cf7b82dea1777608f6872b0f040",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/checksums.sha256",
+      "extension": ".sha256",
+      "size_bytes": 3173,
+      "mtime_utc": "2026-09-23T10:00:11.389735+00:00",
+      "sha256": "50c9fc104c8ecd0fb83ead8ad21b46a3de96b8fb9f80f74ec7ef6b93f5b4ba0e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/CLAIM_LANGUAGE_AUDIT.md",
+      "extension": ".md",
+      "size_bytes": 6594,
+      "mtime_utc": "2026-09-23T09:49:35.780515+00:00",
+      "sha256": "3967e6ac5d41fb0375c7301382038f0f49de329e15e047c13d810053e493b206",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0014",
+        "Q-M002",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "AUDIT/CURRENT_STATUS.md_AUDIT_20260923.md",
+      "extension": ".md",
+      "size_bytes": 14086,
+      "mtime_utc": "2026-09-20T15:01:22.685371+00:00",
+      "sha256": "c9072f4105e16287498aac07266b6ebec098dfc4cee738f86770a88e5aaafcef",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-A003",
+        "Q-C002",
+        "Q-F001",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-P003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/CURRENT_STATUS.md_AUDIT_20260924.md",
+      "extension": ".md",
+      "size_bytes": 3468,
+      "mtime_utc": "2026-09-23T16:07:25.908311+00:00",
+      "sha256": "367a584a378c42a48a5883dedc31efb8d1a7816d156b005ece85ecc93efc591d",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "Q-A001",
+        "Q-B001",
+        "Q-C001",
+        "Q-F001",
+        "Q-I001",
+        "Q-M001",
+        "Q-M003",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O003",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002",
+        "Q-P003",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/DEPENDENCY_MAP.md",
+      "extension": ".md",
+      "size_bytes": 10902,
+      "mtime_utc": "2026-09-23T09:47:24.707685+00:00",
+      "sha256": "f31b825a94823281944ca9e1d3157f77d101c9c8fd5be115fbf2a0ba95802563",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0014",
+        "Q-M007",
+        "Q-P006",
+        "Q-P007",
+        "Q-P009"
+      ]
+    },
+    {
+      "path": "AUDIT/DISCOVERY_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 2790,
+      "mtime_utc": "2026-09-23T14:11:05.307792+00:00",
+      "sha256": "cb49481a0f8ce0f64b19d812e1adbf44886b07eae29ca4fbd9f77ce535dbef81",
+      "mentioned_ids": [
+        "EXP-0013",
+        "Q-A001",
+        "Q-B001",
+        "Q-C001",
+        "Q-F001",
+        "Q-I001",
+        "Q-M001",
+        "Q-M003",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O003",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002",
+        "Q-P003",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/DISCOVERY_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 6216,
+      "mtime_utc": "2026-09-23T10:36:59.431711+00:00",
+      "sha256": "9a52b17e5b3f52c22679631b65b7d4ac3c10bfac6943db8d9ea9f4a5fe264dd7",
+      "mentioned_ids": [
+        "EXP-0013",
+        "Q-M001",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O003",
+        "Q-P005",
+        "Q-P006",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/DO_NOT_CLAIM.md",
+      "extension": ".md",
+      "size_bytes": 5752,
+      "mtime_utc": "2026-09-23T09:53:41.598930+00:00",
+      "sha256": "bb6a2b5be5b0a15d8fdca7f6331763ed2fed5b88c99f5d5d081491a8e8858293",
+      "mentioned_ids": [
+        "EXP-0013",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/environment.txt",
+      "extension": ".txt",
+      "size_bytes": 2125,
+      "mtime_utc": "2026-09-23T09:53:41.597937+00:00",
+      "sha256": "4f3d96acc5f8cc0f602bd7dab705742c1101b5d4f600e071dc7f72aea05f421c",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/EXPERIMENT_REGISTER.md",
+      "extension": ".md",
+      "size_bytes": 9135,
+      "mtime_utc": "2026-09-23T09:43:26.633963+00:00",
+      "sha256": "9e5602995b4673acf88728911608d748b6eec87f57c75b7b9bd1fe2cd6513cec",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "HYP-001",
+        "HYP-002",
+        "HYP-003",
+        "HYP-004",
+        "HYP-005",
+        "HYP-INFRA",
+        "HYP-M005",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/FAILURE_HISTORY.md",
+      "extension": ".md",
+      "size_bytes": 8842,
+      "mtime_utc": "2026-09-23T09:45:34.157527+00:00",
+      "sha256": "cbdaab4afce509a0e2ebdfe78b99ae80665272e34fb9afd79e79be2793e37c94",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "AUDIT/FINAL_SCIENTIFIC_AUDIT_REPORT.md",
+      "extension": ".md",
+      "size_bytes": 9928,
+      "mtime_utc": "2026-09-23T09:53:41.578787+00:00",
+      "sha256": "a0d3426f164360b5591837fd02c3e671ad93ab06acb7e090336280593c531e05",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0013",
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/build_inventory.py",
+      "extension": ".py",
+      "size_bytes": 4391,
+      "mtime_utc": "2026-09-23T17:24:24.175718+00:00",
+      "sha256": "1993b5c67ed07c4e437b3323b28163771fd4d19dffe74bc3375c2dfd75bc1eca",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/INVESTIGATION_TIMELINE.md",
+      "extension": ".md",
+      "size_bytes": 7357,
+      "mtime_utc": "2026-09-23T09:47:24.707175+00:00",
+      "sha256": "d15b4c19fbcbafa88ea1965dfb16606584c70ce993cbd17fbf35a1b23288f618",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "HYP-005",
+        "Q-I004",
+        "Q-M002",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/MASTER_EVIDENCE_MATRIX.md",
+      "extension": ".md",
+      "size_bytes": 7110,
+      "mtime_utc": "2026-09-23T09:53:41.573201+00:00",
+      "sha256": "2d4a773c8cdcbafe1aff32ae89a8a967735be74444ecdcb2c387564a21f913b2",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "AUDIT/POTENTIAL_DISCOVERIES.md",
+      "extension": ".md",
+      "size_bytes": 6906,
+      "mtime_utc": "2026-09-23T09:50:32.532842+00:00",
+      "sha256": "1a5ca0966541b9568dc5be2ff1d61d712cc0d8c025d9965a1de996c452ccc021",
+      "mentioned_ids": [
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-M001",
+        "Q-M003",
+        "Q-M004",
+        "Q-M006",
+        "Q-O003",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/_audit_list.txt",
+      "extension": ".txt",
+      "size_bytes": 1587,
+      "mtime_utc": "2026-09-23T09:58:54.215841+00:00",
+      "sha256": "0ae7ca1c16ef43f3d961dfcea791ee2387ca92b2ca2bcd7bc57d4b2582e059d4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/_ext_counts.txt",
+      "extension": ".txt",
+      "size_bytes": 355,
+      "mtime_utc": "2026-09-23T09:39:54.236077+00:00",
+      "sha256": "a2f492fbbe887593a7194714a0af6c54e52584aa26926cd852f3a67c37fc8a27",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/checksums.sha256",
+      "extension": ".sha256",
+      "size_bytes": 3173,
+      "mtime_utc": "2026-09-23T10:00:11.389735+00:00",
+      "sha256": "50c9fc104c8ecd0fb83ead8ad21b46a3de96b8fb9f80f74ec7ef6b93f5b4ba0e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/CLAIM_LANGUAGE_AUDIT.md",
+      "extension": ".md",
+      "size_bytes": 6594,
+      "mtime_utc": "2026-09-23T09:49:35.780515+00:00",
+      "sha256": "3967e6ac5d41fb0375c7301382038f0f49de329e15e047c13d810053e493b206",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0014",
+        "Q-M002",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/CURRENT_STATUS.md_AUDIT_20260923.md",
+      "extension": ".md",
+      "size_bytes": 14086,
+      "mtime_utc": "2026-09-20T15:01:22.685371+00:00",
+      "sha256": "c9072f4105e16287498aac07266b6ebec098dfc4cee738f86770a88e5aaafcef",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-A003",
+        "Q-C002",
+        "Q-F001",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-P003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/CURRENT_STATUS.md_AUDIT_20260924.md",
+      "extension": ".md",
+      "size_bytes": 3468,
+      "mtime_utc": "2026-09-23T16:07:25.908311+00:00",
+      "sha256": "367a584a378c42a48a5883dedc31efb8d1a7816d156b005ece85ecc93efc591d",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "Q-A001",
+        "Q-B001",
+        "Q-C001",
+        "Q-F001",
+        "Q-I001",
+        "Q-M001",
+        "Q-M003",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O003",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002",
+        "Q-P003",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DEPENDENCY_MAP.md",
+      "extension": ".md",
+      "size_bytes": 10902,
+      "mtime_utc": "2026-09-23T09:47:24.707685+00:00",
+      "sha256": "f31b825a94823281944ca9e1d3157f77d101c9c8fd5be115fbf2a0ba95802563",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0014",
+        "Q-M007",
+        "Q-P006",
+        "Q-P007",
+        "Q-P009"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DISCOVERY_PLAN.md",
+      "extension": ".md",
+      "size_bytes": 2790,
+      "mtime_utc": "2026-09-23T14:11:05.307792+00:00",
+      "sha256": "cb49481a0f8ce0f64b19d812e1adbf44886b07eae29ca4fbd9f77ce535dbef81",
+      "mentioned_ids": [
+        "EXP-0013",
+        "Q-A001",
+        "Q-B001",
+        "Q-C001",
+        "Q-F001",
+        "Q-I001",
+        "Q-M001",
+        "Q-M003",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O003",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002",
+        "Q-P003",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DISCOVERY_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 6216,
+      "mtime_utc": "2026-09-23T10:36:59.431711+00:00",
+      "sha256": "9a52b17e5b3f52c22679631b65b7d4ac3c10bfac6943db8d9ea9f4a5fe264dd7",
+      "mentioned_ids": [
+        "EXP-0013",
+        "Q-M001",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O003",
+        "Q-P005",
+        "Q-P006",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DO_NOT_CLAIM.md",
+      "extension": ".md",
+      "size_bytes": 5752,
+      "mtime_utc": "2026-09-23T09:53:41.598930+00:00",
+      "sha256": "bb6a2b5be5b0a15d8fdca7f6331763ed2fed5b88c99f5d5d081491a8e8858293",
+      "mentioned_ids": [
+        "EXP-0013",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/environment.txt",
+      "extension": ".txt",
+      "size_bytes": 2125,
+      "mtime_utc": "2026-09-23T09:53:41.597937+00:00",
+      "sha256": "4f3d96acc5f8cc0f602bd7dab705742c1101b5d4f600e071dc7f72aea05f421c",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/EXPERIMENT_REGISTER.md",
+      "extension": ".md",
+      "size_bytes": 9135,
+      "mtime_utc": "2026-09-23T09:43:26.633963+00:00",
+      "sha256": "9e5602995b4673acf88728911608d748b6eec87f57c75b7b9bd1fe2cd6513cec",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "HYP-001",
+        "HYP-002",
+        "HYP-003",
+        "HYP-004",
+        "HYP-005",
+        "HYP-INFRA",
+        "HYP-M005",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/FAILURE_HISTORY.md",
+      "extension": ".md",
+      "size_bytes": 8842,
+      "mtime_utc": "2026-09-23T09:45:34.157527+00:00",
+      "sha256": "cbdaab4afce509a0e2ebdfe78b99ae80665272e34fb9afd79e79be2793e37c94",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/FINAL_SCIENTIFIC_AUDIT_REPORT.md",
+      "extension": ".md",
+      "size_bytes": 9928,
+      "mtime_utc": "2026-09-23T09:53:41.578787+00:00",
+      "sha256": "a0d3426f164360b5591837fd02c3e671ad93ab06acb7e090336280593c531e05",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0013",
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/INVESTIGATION_TIMELINE.md",
+      "extension": ".md",
+      "size_bytes": 7357,
+      "mtime_utc": "2026-09-23T09:47:24.707175+00:00",
+      "sha256": "d15b4c19fbcbafa88ea1965dfb16606584c70ce993cbd17fbf35a1b23288f618",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "HYP-005",
+        "Q-I004",
+        "Q-M002",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/MASTER_EVIDENCE_MATRIX.md",
+      "extension": ".md",
+      "size_bytes": 7110,
+      "mtime_utc": "2026-09-23T09:53:41.573201+00:00",
+      "sha256": "2d4a773c8cdcbafe1aff32ae89a8a967735be74444ecdcb2c387564a21f913b2",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/POTENTIAL_DISCOVERIES.md",
+      "extension": ".md",
+      "size_bytes": 6906,
+      "mtime_utc": "2026-09-23T09:50:32.532842+00:00",
+      "sha256": "1a5ca0966541b9568dc5be2ff1d61d712cc0d8c025d9965a1de996c452ccc021",
+      "mentioned_ids": [
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-M001",
+        "Q-M003",
+        "Q-M004",
+        "Q-M006",
+        "Q-O003",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/PROJECT_INVENTORY.md",
+      "extension": ".md",
+      "size_bytes": 10805,
+      "mtime_utc": "2026-09-23T09:43:26.633963+00:00",
+      "sha256": "7288cf8a4d9fa909f424e9d528b9c52668eb36f0b590210d935016c6a846a7f4",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M004",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/RAW_DATA_FINDINGS.md",
+      "extension": ".md",
+      "size_bytes": 7946,
+      "mtime_utc": "2026-09-23T09:43:26.636488+00:00",
+      "sha256": "f59ad2bd93d91a8e2be0f719ae692ec26068ade267091a419ac10ec3e7b3e86d",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REPOSITORY_COMPARISON.md",
+      "extension": ".md",
+      "size_bytes": 6404,
+      "mtime_utc": "2026-09-23T09:45:34.155526+00:00",
+      "sha256": "2252a84919cbdad13b9feb25889b45f5d1611fa20bc1887c04bde56795c20514",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REPRODUCE.md",
+      "extension": ".md",
+      "size_bytes": 7181,
+      "mtime_utc": "2026-09-23T09:53:41.597937+00:00",
+      "sha256": "0ac02379ff089d54393fb30ddec69d57c651b956d1f4531382284cf88496b259",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P006",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REPRODUCTION_MATRIX_V2.md",
+      "extension": ".md",
+      "size_bytes": 8324,
+      "mtime_utc": "2026-09-23T09:49:35.775683+00:00",
+      "sha256": "81b163a35ce6ada4ae8d1e77a1c07a67048b60f6be5707675c1d590613f9b199",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/RESULT_PROVENANCE.md",
+      "extension": ".md",
+      "size_bytes": 9748,
+      "mtime_utc": "2026-09-23T09:45:34.155526+00:00",
+      "sha256": "20315b7c764b9f32f4eb5ba310e123018c28ff9e994cf6b9eed5eaa804350727",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0014",
+        "HYP-001",
+        "HYP-002",
+        "HYP-003",
+        "HYP-004",
+        "HYP-005",
+        "HYP-M005",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/results_manifest.json",
+      "extension": ".json",
+      "size_bytes": 5763,
+      "mtime_utc": "2026-09-23T10:44:25.359655+00:00",
+      "sha256": "bdb7797519f18a23e5ad61437efaf6e674136bc7dec27f266a72f39be78fedeb",
+      "mentioned_ids": [
+        "EXP-0008",
+        "EXP-0013",
+        "Q-M001",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/RESULTS_OUTSIDE_Q1Q12.md",
+      "extension": ".md",
+      "size_bytes": 7156,
+      "mtime_utc": "2026-09-23T09:49:35.775683+00:00",
+      "sha256": "e130010ca27fbcf8568ed4ef95c17914c549a62402b2a8aec83e6d36b38e70a3",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0004",
+        "EXP-0009",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M004",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/EXTERNAL_R1_R8_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 3071,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "85c10337363c26d6f33023f117555083d1a4b4a78873f64ae518bf37615905f4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-I004_RNG_CERTIFICATION.md",
+      "extension": ".md",
+      "size_bytes": 1919,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "281a2158c7ee06759ab13d987223e7bd08a672dc24a9dd5cd5782bb1b1dd61b2",
+      "mentioned_ids": [
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-M002_PRIME_GAPS.md",
+      "extension": ".md",
+      "size_bytes": 3569,
+      "mtime_utc": "2026-09-23T09:57:35.126570+00:00",
+      "sha256": "3e334a2d6d378610d62e3d0d827dc6beb63d3938f61fef722024af533f506d9b",
+      "mentioned_ids": [
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-M005_FEIGENBAUM.md",
+      "extension": ".md",
+      "size_bytes": 2927,
+      "mtime_utc": "2026-09-23T09:57:35.126570+00:00",
+      "sha256": "122fe2d927d778ed06a905a08ece9f4528135a495a04cf9aca1d73d4f53f3464",
+      "mentioned_ids": [
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-O001_SPECKLE_CONTRAST.md",
+      "extension": ".md",
+      "size_bytes": 2704,
+      "mtime_utc": "2026-09-23T09:56:17.657704+00:00",
+      "sha256": "e1c9bad400a97b0737ae63dabcd542ab8441510ca4cb98bea59837ef78b72094",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-O002_VORTEX_DENSITY.md",
+      "extension": ".md",
+      "size_bytes": 3320,
+      "mtime_utc": "2026-09-23T09:56:17.663225+00:00",
+      "sha256": "1138d5a593cdfbb8dddc2723fbd7b7df7d1512dd6522ba07feef7d7e198a2c36",
+      "mentioned_ids": [
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P004_PERCOLATION_THRESHOLDS.md",
+      "extension": ".md",
+      "size_bytes": 3676,
+      "mtime_utc": "2026-09-23T09:56:17.678979+00:00",
+      "sha256": "07ec8ab3dd9514f92723ae16fbf66a9dab2253ef34d7c86d242601b6de12b3b7",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P005_PERCOLATION_EXPONENTS.md",
+      "extension": ".md",
+      "size_bytes": 2967,
+      "mtime_utc": "2026-09-23T09:57:35.126570+00:00",
+      "sha256": "a473882898e1657ea106712a31f89bb71434147fe9b7adf4fe75e1d020d0f088",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M005",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P008_3D_PERCOLATION.md",
+      "extension": ".md",
+      "size_bytes": 1769,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "e7db55a7f4ef51d4a327194d834b1f8267b5f8799b6862e41bf5b94cbc3773b8",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/RESEARCH_MAP_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 2340,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "792ee7f47d05d06d8e38dc1e54112748221c98ceba07505c9fc25df4c1a2cba9",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/SHARED_ENGINE.md",
+      "extension": ".md",
+      "size_bytes": 2469,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "9c64f299678610cf317a5543330e78f42203ae7fbebaa1c2c004848de7940403",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/STRONGEST_DEFENSIBLE_CLAIMS.md",
+      "extension": ".md",
+      "size_bytes": 8548,
+      "mtime_utc": "2026-09-23T09:53:41.598930+00:00",
+      "sha256": "1c673145549d6b5d49656cea9e31c09b79d757cfc39c36adae3c6c833fb2cd06",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0013",
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/STRONGEST_EVIDENCE.md",
+      "extension": ".md",
+      "size_bytes": 7271,
+      "mtime_utc": "2026-09-23T09:49:35.779202+00:00",
+      "sha256": "bfd610bfc0f10f0caece74ae9d6c771446a7b3561e2b044eaecd51bfddac19fc",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/WHAT_WAS_ACHIEVED.md",
+      "extension": ".md",
+      "size_bytes": 7095,
+      "mtime_utc": "2026-09-23T09:50:32.532842+00:00",
+      "sha256": "34f5cd1881afdeb54258cd4227e2a3619716769d23b09ec1f8c556c0060087c8",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "AUDIT/PROJECT_INVENTORY.md",
+      "extension": ".md",
+      "size_bytes": 10805,
+      "mtime_utc": "2026-09-23T09:43:26.633963+00:00",
+      "sha256": "7288cf8a4d9fa909f424e9d528b9c52668eb36f0b590210d935016c6a846a7f4",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M004",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/RAW_DATA_FINDINGS.md",
+      "extension": ".md",
+      "size_bytes": 7946,
+      "mtime_utc": "2026-09-23T09:43:26.636488+00:00",
+      "sha256": "f59ad2bd93d91a8e2be0f719ae692ec26068ade267091a419ac10ec3e7b3e86d",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/REPOSITORY_COMPARISON.md",
+      "extension": ".md",
+      "size_bytes": 6404,
+      "mtime_utc": "2026-09-23T09:45:34.155526+00:00",
+      "sha256": "2252a84919cbdad13b9feb25889b45f5d1611fa20bc1887c04bde56795c20514",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/REPRODUCE.md",
+      "extension": ".md",
+      "size_bytes": 7181,
+      "mtime_utc": "2026-09-23T09:53:41.597937+00:00",
+      "sha256": "0ac02379ff089d54393fb30ddec69d57c651b956d1f4531382284cf88496b259",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0012",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P006",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/REPRODUCTION_MATRIX_V2.md",
+      "extension": ".md",
+      "size_bytes": 8324,
+      "mtime_utc": "2026-09-23T09:49:35.775683+00:00",
+      "sha256": "81b163a35ce6ada4ae8d1e77a1c07a67048b60f6be5707675c1d590613f9b199",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/RESULT_PROVENANCE.md",
+      "extension": ".md",
+      "size_bytes": 9748,
+      "mtime_utc": "2026-09-23T09:45:34.155526+00:00",
+      "sha256": "20315b7c764b9f32f4eb5ba310e123018c28ff9e994cf6b9eed5eaa804350727",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0014",
+        "HYP-001",
+        "HYP-002",
+        "HYP-003",
+        "HYP-004",
+        "HYP-005",
+        "HYP-M005",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005"
+      ]
+    },
+    {
+      "path": "AUDIT/results_manifest.json",
+      "extension": ".json",
+      "size_bytes": 5763,
+      "mtime_utc": "2026-09-23T10:44:25.359655+00:00",
+      "sha256": "bdb7797519f18a23e5ad61437efaf6e674136bc7dec27f266a72f39be78fedeb",
+      "mentioned_ids": [
+        "EXP-0008",
+        "EXP-0013",
+        "Q-M001",
+        "Q-M004",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/RESULTS_OUTSIDE_Q1Q12.md",
+      "extension": ".md",
+      "size_bytes": 7156,
+      "mtime_utc": "2026-09-23T09:49:35.775683+00:00",
+      "sha256": "e130010ca27fbcf8568ed4ef95c17914c549a62402b2a8aec83e6d36b38e70a3",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0004",
+        "EXP-0009",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M004",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/EXTERNAL_R1_R8_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 3071,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "85c10337363c26d6f33023f117555083d1a4b4a78873f64ae518bf37615905f4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-I004_RNG_CERTIFICATION.md",
+      "extension": ".md",
+      "size_bytes": 1919,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "281a2158c7ee06759ab13d987223e7bd08a672dc24a9dd5cd5782bb1b1dd61b2",
+      "mentioned_ids": [
+        "Q-I004"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-M002_PRIME_GAPS.md",
+      "extension": ".md",
+      "size_bytes": 3569,
+      "mtime_utc": "2026-09-23T09:57:35.126570+00:00",
+      "sha256": "3e334a2d6d378610d62e3d0d827dc6beb63d3938f61fef722024af533f506d9b",
+      "mentioned_ids": [
+        "Q-M002"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-M005_FEIGENBAUM.md",
+      "extension": ".md",
+      "size_bytes": 2927,
+      "mtime_utc": "2026-09-23T09:57:35.126570+00:00",
+      "sha256": "122fe2d927d778ed06a905a08ece9f4528135a495a04cf9aca1d73d4f53f3464",
+      "mentioned_ids": [
+        "Q-M005"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-O001_SPECKLE_CONTRAST.md",
+      "extension": ".md",
+      "size_bytes": 2704,
+      "mtime_utc": "2026-09-23T09:56:17.657704+00:00",
+      "sha256": "e1c9bad400a97b0737ae63dabcd542ab8441510ca4cb98bea59837ef78b72094",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "Q-O001"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-O002_VORTEX_DENSITY.md",
+      "extension": ".md",
+      "size_bytes": 3320,
+      "mtime_utc": "2026-09-23T09:56:17.663225+00:00",
+      "sha256": "1138d5a593cdfbb8dddc2723fbd7b7df7d1512dd6522ba07feef7d7e198a2c36",
+      "mentioned_ids": [
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-P004_PERCOLATION_THRESHOLDS.md",
+      "extension": ".md",
+      "size_bytes": 3676,
+      "mtime_utc": "2026-09-23T09:56:17.678979+00:00",
+      "sha256": "07ec8ab3dd9514f92723ae16fbf66a9dab2253ef34d7c86d242601b6de12b3b7",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-P005_PERCOLATION_EXPONENTS.md",
+      "extension": ".md",
+      "size_bytes": 2967,
+      "mtime_utc": "2026-09-23T09:57:35.126570+00:00",
+      "sha256": "a473882898e1657ea106712a31f89bb71434147fe9b7adf4fe75e1d020d0f088",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-M005",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-P008_3D_PERCOLATION.md",
+      "extension": ".md",
+      "size_bytes": 1769,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "e7db55a7f4ef51d4a327194d834b1f8267b5f8799b6862e41bf5b94cbc3773b8",
+      "mentioned_ids": [
+        "EXP-0011",
+        "EXP-0013",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/RESEARCH_MAP_SUMMARY.md",
+      "extension": ".md",
+      "size_bytes": 2340,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "792ee7f47d05d06d8e38dc1e54112748221c98ceba07505c9fc25df4c1a2cba9",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/SHARED_ENGINE.md",
+      "extension": ".md",
+      "size_bytes": 2469,
+      "mtime_utc": "2026-09-23T09:58:36.702784+00:00",
+      "sha256": "9c64f299678610cf317a5543330e78f42203ae7fbebaa1c2c004848de7940403",
+      "mentioned_ids": []
+    },
+    {
+      "path": "AUDIT/STRONGEST_DEFENSIBLE_CLAIMS.md",
+      "extension": ".md",
+      "size_bytes": 8548,
+      "mtime_utc": "2026-09-23T09:53:41.598930+00:00",
+      "sha256": "1c673145549d6b5d49656cea9e31c09b79d757cfc39c36adae3c6c833fb2cd06",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0013",
+        "EXP-0014"
+      ]
+    },
+    {
+      "path": "AUDIT/STRONGEST_EVIDENCE.md",
+      "extension": ".md",
+      "size_bytes": 7271,
+      "mtime_utc": "2026-09-23T09:49:35.779202+00:00",
+      "sha256": "bfd610bfc0f10f0caece74ae9d6c771446a7b3561e2b044eaecd51bfddac19fc",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0014",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "AUDIT/WHAT_WAS_ACHIEVED.md",
+      "extension": ".md",
+      "size_bytes": 7095,
+      "mtime_utc": "2026-09-23T09:50:32.532842+00:00",
+      "sha256": "34f5cd1881afdeb54258cd4227e2a3619716769d23b09ec1f8c556c0060087c8",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-P005",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "extension": ".md",
+      "size_bytes": 13863,
+      "mtime_utc": "2026-09-20T15:03:00.657450+00:00",
+      "sha256": "b043da257b2705158bd3f464f504c46456e1d972a9b3c40bc2335236a8dcc6d3",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0014",
+        "HYP-002",
+        "HYP-003",
+        "HYP-004",
+        "HYP-005",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "CODE/dmt-laser-s9-battery/q_s9_1_results.json",
+      "extension": ".json",
+      "size_bytes": 1278,
+      "mtime_utc": "2026-09-19T05:01:58.898385+00:00",
+      "sha256": "634caf2c7cd693f100bb0dac38cd436dc170e8500c684ab3553b74c6b0259370",
+      "mentioned_ids": []
+    },
+    {
+      "path": "CODE/dmt-laser-s9-battery/q_s9_3_results.json",
+      "extension": ".json",
+      "size_bytes": 2100,
+      "mtime_utc": "2026-09-19T05:01:58.898909+00:00",
+      "sha256": "9ec12cb2b86beabc36dd26b05a40237ae94d8e207c27cab3af8ba4509f4e570f",
+      "mentioned_ids": []
+    },
+    {
+      "path": "CODE/EXP-0005_width_route_corrected.py",
+      "extension": ".py",
+      "size_bytes": 5153,
+      "mtime_utc": "2026-09-17T10:03:33.795051+00:00",
+      "sha256": "0503db11fe5239eea791f10a9fbb2977a1d71e5e2d0b73a007d0c00c37db3226",
+      "mentioned_ids": [
+        "EXP-0005"
+      ]
+    },
+    {
+      "path": "CODE/run_percolation_exp0006.py",
+      "extension": ".py",
+      "size_bytes": 1054,
+      "mtime_utc": "2026-09-17T10:20:49.867851+00:00",
+      "sha256": "68b4f3d56043597063b2391b241e2a321e385486176ada0f5c975c9a7a88cb07",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "create_q006_docs.py",
+      "extension": ".py",
+      "size_bytes": 6857,
+      "mtime_utc": "2026-09-19T05:07:56.473608+00:00",
+      "sha256": "982ae554ca2651a58d806a7ab80902bc9c2411b4ac84fcc0e2a6ddd6ee48bc25",
+      "mentioned_ids": [
+        "EXP-0009",
+        "EXP-0010",
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "create_q007_docs.py",
+      "extension": ".py",
+      "size_bytes": 3101,
+      "mtime_utc": "2026-09-19T05:07:43.222533+00:00",
+      "sha256": "daab3cbdf9552acade77c75c3e2fb10675259288d5c6dc5345309a5c486c1c50",
+      "mentioned_ids": [
+        "EXP-0009",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "CURRENT_STATUS.md",
+      "extension": ".md",
+      "size_bytes": 14086,
+      "mtime_utc": "2026-09-20T15:01:22.685371+00:00",
+      "sha256": "c9072f4105e16287498aac07266b6ebec098dfc4cee738f86770a88e5aaafcef",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "Q-A003",
+        "Q-C002",
+        "Q-F001",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-P003",
+        "Q-P004",
+        "Q-P005",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "dashboard.html",
+      "extension": ".html",
+      "size_bytes": 2250,
+      "mtime_utc": "2026-09-17T08:08:58.528667+00:00",
+      "sha256": "d30780f5abcd9b76e8b0c431abc8dacc608544ddbb92e74e758e14059602878d",
+      "mentioned_ids": []
+    },
+    {
+      "path": "dashboard.py",
+      "extension": ".py",
+      "size_bytes": 5742,
+      "mtime_utc": "2026-09-17T04:20:35.436419+00:00",
+      "sha256": "f1661bae40d5986345115a83a6b108d8824277aa6b12d8501cc616399edad548",
+      "mentioned_ids": []
+    },
+    {
+      "path": "DIAGNOSTICS/EXP-0006_phase1_bond_wrap.py",
+      "extension": ".py",
+      "size_bytes": 6446,
+      "mtime_utc": "2026-09-17T10:34:28.663499+00:00",
+      "sha256": "3c48856b3c7fb82185ed949f33b795d1853e4be9de9c9382bbad340dcd2e8b8e",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006"
+      ]
+    },
+    {
+      "path": "DIAGNOSTICS/EXP-0006_phase2_run.py",
+      "extension": ".py",
+      "size_bytes": 2245,
+      "mtime_utc": "2026-09-17T10:35:09.005771+00:00",
+      "sha256": "8bf171a3a321b0b5f411b4db8aaadcae969b7df5bd17144e6c53c694673b8e16",
+      "mentioned_ids": [
+        "EXP-0005",
+        "EXP-0006",
+        "HYP-004",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "DISCOVERY_LOG.md",
+      "extension": ".md",
+      "size_bytes": 5509,
+      "mtime_utc": "2026-09-20T14:59:55.654617+00:00",
+      "sha256": "e566706ab467bc3a76fb8f33058f7b557327f1ddc4a879dc416af18035d44aa5",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0014",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002"
+      ]
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "extension": ".md",
+      "size_bytes": 20789,
+      "mtime_utc": "2026-09-19T22:05:05.298846+00:00",
+      "sha256": "bf58eca24f789a8efa58d9962e65fca01880f243a845056d9650b7e6c29d101e",
+      "mentioned_ids": [
+        "HYP-000001"
+      ]
+    },
+    {
+      "path": "docs/DEPENDENCY_MATRIX.md",
+      "extension": ".md",
+      "size_bytes": 4582,
+      "mtime_utc": "2026-09-19T22:05:20.210477+00:00",
+      "sha256": "1dc204d60253c5ae986521f4021aef9bb349d65fa3cc82c6f8368969f1faa054",
+      "mentioned_ids": []
+    },
+    {
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "extension": ".md",
+      "size_bytes": 15669,
+      "mtime_utc": "2026-09-19T22:06:15.068054+00:00",
+      "sha256": "07e6fddf39fc6b3787647d0476d73e34f55a2deba1a7e57069bf0b84061fcb0e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "docs/RESEARCH_RECONNAISSANCE.md",
+      "extension": ".md",
+      "size_bytes": 26210,
+      "mtime_utc": "2026-09-19T22:04:10.405698+00:00",
+      "sha256": "b4455290ab23c95d6c79464f19c52c3ab4b768195a89a0ad18a3ea2c2b0c6e2a",
+      "mentioned_ids": []
+    },
+    {
+      "path": "docs/RISK_REGISTER.md",
+      "extension": ".md",
+      "size_bytes": 4947,
+      "mtime_utc": "2026-09-19T22:05:34.358724+00:00",
+      "sha256": "d4109ff71b6e84273daa1555ed7124ed1b97c7b6b59a6d2d6089134a666cea58",
+      "mentioned_ids": []
+    },
+    {
+      "path": "EXPERIMENT_REGISTRY.md",
+      "extension": ".md",
+      "size_bytes": 16622,
+      "mtime_utc": "2026-09-20T14:56:56.271109+00:00",
+      "sha256": "4222eef2c99eff60bbacbd96e39d9f264f5bbd3a518d6ccfba96689d84cc78eb",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0008",
+        "EXP-0009",
+        "EXP-0010",
+        "EXP-0011",
+        "EXP-0013",
+        "EXP-0014",
+        "HYP-001",
+        "HYP-002",
+        "HYP-003",
+        "HYP-INFRA",
+        "HYP-M005",
+        "HYP-P008",
+        "Q-I004",
+        "Q-M002",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004",
+        "Q-P005",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "fix_q006_cells.py",
+      "extension": ".py",
+      "size_bytes": 983,
+      "mtime_utc": "2026-09-19T04:48:17.356288+00:00",
+      "sha256": "541bd64e731e7922624cfe219c3214c5ab163bea8fd0df886a45328148bf3d54",
+      "mentioned_ids": [
+        "Q-P006"
+      ]
+    },
+    {
+      "path": "HYPOTHESES.md",
+      "extension": ".md",
+      "size_bytes": 2802,
+      "mtime_utc": "2026-09-20T14:58:52.034387+00:00",
+      "sha256": "42dce0b9aeba3b71593828deb10450101e99dbb79b9ac8a2edb7c57da8a1ca21",
+      "mentioned_ids": [
+        "EXP-0001",
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0004",
+        "EXP-0005",
+        "EXP-0006",
+        "EXP-0007",
+        "EXP-0014",
+        "HYP-001",
+        "HYP-002",
+        "HYP-003",
+        "HYP-004",
+        "HYP-INFRA",
+        "HYP-M005",
+        "Q-I004",
+        "Q-M005",
+        "Q-O001",
+        "Q-O002",
+        "Q-P004"
+      ]
+    },
+    {
+      "path": "MASTER_INDEX.md",
+      "extension": ".md",
+      "size_bytes": 3309,
+      "mtime_utc": "2026-09-17T04:04:27.126840+00:00",
+      "sha256": "8bfe1ac711a7e7cd76dbda98f8d5fa8f28eaf3ac75757768f675372438c2cbae",
+      "mentioned_ids": []
+    },
+    {
+      "path": "pytest.ini",
+      "extension": ".ini",
+      "size_bytes": 119,
+      "mtime_utc": "2026-09-19T22:12:35.781996+00:00",
+      "sha256": "95efe96489c236ec1cd8959b29d5d8d09c95d57535f29152996bfab45efb2b5a",
+      "mentioned_ids": []
+    },
+    {
+      "path": "Q-P007_phase2.log",
+      "extension": ".log",
+      "size_bytes": 1828,
+      "mtime_utc": "2026-09-19T09:36:36.092156+00:00",
+      "sha256": "b81d1aeab85c9f17b6ef240a862ec9cc8bd2aa34b1208b897ad5e697505bc818",
+      "mentioned_ids": []
+    },
+    {
+      "path": "QUESTIONS.md",
+      "extension": ".md",
+      "size_bytes": 5481,
+      "mtime_utc": "2026-09-20T14:59:44.791297+00:00",
+      "sha256": "4171d5dadfeee60dbc3837cf7dfebb9a8bfadecd765335450f2c5b3937b82365",
+      "mentioned_ids": [
+        "EXP-0002",
+        "EXP-0003",
+        "EXP-0007",
+        "EXP-0009",
+        "Q-A001",
+        "Q-A002",
+        "Q-A003",
+        "Q-A004",
+        "Q-B001",
+        "Q-B002",
+        "Q-B003",
+        "Q-C001",
+        "Q-C002",
+        "Q-F001",
+        "Q-F002",
+        "Q-F003",
+        "Q-I001",
+        "Q-I002",
+        "Q-I003",
+        "Q-I004",
+        "Q-M001",
+        "Q-M002",
+        "Q-M003",
+        "Q-M004",
+        "Q-M005",
+        "Q-M006",
+        "Q-M007",
+        "Q-M008",
+        "Q-O001",
+        "Q-O002",
+        "Q-O003",
+        "Q-O004",
+        "Q-O005",
+        "Q-P001",
+        "Q-P002",
+        "Q-P003",
+        "Q-P004",
+        "Q-P006",
+        "Q-P007",
+        "Q-P008"
+      ]
+    },
+    {
+      "path": "README.md",
+      "extension": ".md",
+      "size_bytes": 3042,
+      "mtime_utc": "2026-09-19T22:29:48.688376+00:00",
+      "sha256": "5c54713ac45dd39f9a7ee2806f6027ec8b0a4707fb8a701791db3e24089cb2c8",
+      "mentioned_ids": []
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "extension": ".md",
+      "size_bytes": 2006,
+      "mtime_utc": "2026-09-17T04:04:59.322273+00:00",
+      "sha256": "80cf5f7fe092a3398d09529be19c17f8e02b7d4bacc88c0ebed21b4d6452b85c",
+      "mentioned_ids": []
+    },
+    {
+      "path": "requirements.txt",
+      "extension": ".txt",
+      "size_bytes": 369,
+      "mtime_utc": "2026-09-19T22:11:59.451432+00:00",
+      "sha256": "545149b8987581724b84ef95cb9178ad63f542aa114aa840d0d5f280d2980974",
+      "mentioned_ids": []
+    },
+    {
+      "path": "RESEARCH_RULES.md",
+      "extension": ".md",
+      "size_bytes": 5203,
+      "mtime_utc": "2026-09-17T04:04:39.505253+00:00",
+      "sha256": "3deff81412aad5743c813f986bb482ffae9faa5eec61015e7203eb7e35564c62",
+      "mentioned_ids": []
+    },
+    {
+      "path": "save_audits.py",
+      "extension": ".py",
+      "size_bytes": 6171,
+      "mtime_utc": "2026-09-19T04:48:07.568223+00:00",
+      "sha256": "734bec9d0bbb0fd14fcc9e42c3bd0bdb23b3233daf652251c441f6d9b5f94861",
+      "mentioned_ids": [
+        "EXP-0008",
+        "EXP-0009",
+        "Q-M007",
+        "Q-P006",
+        "Q-P007"
+      ]
+    },
+    {
+      "path": "save_q9results.py",
+      "extension": ".py",
+      "size_bytes": 3388,
+      "mtime_utc": "2026-09-19T05:00:56.839391+00:00",
+      "sha256": "d468d1c5e7e225a483a381e9e187409d4df8954c1b144a75915a6abe3af7eadc",
+      "mentioned_ids": []
+    },
+    {
+      "path": "sovereign_biolab.db",
+      "extension": ".db",
+      "size_bytes": 184320,
+      "mtime_utc": "2026-09-23T17:13:13.137808+00:00",
+      "sha256": "e7dfc79cdb696b39ae3578e4427b0a026b107655a1a359c5562edc2d46b087b9"
+    },
+    {
+      "path": "src/__init__.py",
+      "extension": ".py",
+      "size_bytes": 3506,
+      "mtime_utc": "2026-09-19T22:49:30.013003+00:00",
+      "sha256": "a0b082c235fcbfe90e70db0f9e55223be39b319e57e45621703942cd96e9b1fe",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/adversarial/__init__.py",
+      "extension": ".py",
+      "size_bytes": 8877,
+      "mtime_utc": "2026-09-19T22:32:13.165899+00:00",
+      "sha256": "e93165beb9f569b9be7b9f61f60408101c634bdd6cb89279677da456aa01a66c",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/dashboard/__init__.py",
+      "extension": ".py",
+      "size_bytes": 6085,
+      "mtime_utc": "2026-09-19T22:50:00.156771+00:00",
+      "sha256": "e385405d2e8f170ade38fb64af372d6b445d508c0ef890091f5292411ca5bff9",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/database/__init__.py",
+      "extension": ".py",
+      "size_bytes": 778,
+      "mtime_utc": "2026-09-19T22:11:15.008928+00:00",
+      "sha256": "9f584d14b5dffd0d43ac2d43be3649c186cb9788bc11e354b4348c56178e3b12",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/database/db.py",
+      "extension": ".py",
+      "size_bytes": 269,
+      "mtime_utc": "2026-09-19T22:11:29.981146+00:00",
+      "sha256": "4a7d1ca6241db9b8cf01c44dfa6f45f86728aca26451da0868a77fb7c7beff55",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/database/models.py",
+      "extension": ".py",
+      "size_bytes": 9815,
+      "mtime_utc": "2026-09-19T22:11:13.290068+00:00",
+      "sha256": "20b3797bf094badacb0153fb14d61c8b508c34a31c315b4fda52196996c2c40d",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/evidence/__init__.py",
+      "extension": ".py",
+      "size_bytes": 3771,
+      "mtime_utc": "2026-09-19T22:14:45.108618+00:00",
+      "sha256": "e0d7ad362b550e086f6619469203e252e991cab2aae13cf6d7693945f0a5fb90",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/experiment/__init__.py",
+      "extension": ".py",
+      "size_bytes": 7850,
+      "mtime_utc": "2026-09-19T22:38:34.902220+00:00",
+      "sha256": "183b1be9e0fcc2aa9981cb1f3577a86b84e93ce2d5871f46761417e4a9541cac",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/failure/__init__.py",
+      "extension": ".py",
+      "size_bytes": 8129,
+      "mtime_utc": "2026-09-19T22:39:12.075729+00:00",
+      "sha256": "21e0a7ebf953786675051b9182cdac3916131a4ffdb7f6c7b8e43a281a6befea",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/hypothesis/__init__.py",
+      "extension": ".py",
+      "size_bytes": 5971,
+      "mtime_utc": "2026-09-19T22:31:51.200991+00:00",
+      "sha256": "c2c95dd0cd01a653959036c316e8367e382ce4b0348f5fab69909f25feef1b4f",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/literature/__init__.py",
+      "extension": ".py",
+      "size_bytes": 8406,
+      "mtime_utc": "2026-09-19T22:31:19.516787+00:00",
+      "sha256": "963aed04fd4b962c22ada704a6c1689f646934325d4e49ab89db8d62711545ad",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/molecular/__init__.py",
+      "extension": ".py",
+      "size_bytes": 646,
+      "mtime_utc": "2026-09-19T22:18:29.550440+00:00",
+      "sha256": "45659d28bbe56ab313dfa7e1bf1f7a6921522e2329cb2206369b9d7ecc2ebd0d",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/molecular/engine.py",
+      "extension": ".py",
+      "size_bytes": 8614,
+      "mtime_utc": "2026-09-19T22:22:53.445114+00:00",
+      "sha256": "c34767c4154e2c36f3706dd6a08a7a25f2d109435002751c307e341d1cc5758e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/navigation/__init__.py",
+      "extension": ".py",
+      "size_bytes": 3593,
+      "mtime_utc": "2026-09-19T22:48:45.859118+00:00",
+      "sha256": "876afde50db5f121d9bdd8cad76c4f255642b82ef079f96e417d81394eef6d02",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/novelty/__init__.py",
+      "extension": ".py",
+      "size_bytes": 5772,
+      "mtime_utc": "2026-09-19T22:34:57.030866+00:00",
+      "sha256": "3a56e56f2d19cbaddd0c351932b5b4cd6f0031a32a647affc29b675521b596f7",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/observation/__init__.py",
+      "extension": ".py",
+      "size_bytes": 9491,
+      "mtime_utc": "2026-09-19T22:39:33.457590+00:00",
+      "sha256": "89901318b928baa424e0f093e99144aad88281be62c2967c5b5f32beb7a3a353",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/plant/__init__.py",
+      "extension": ".py",
+      "size_bytes": 340,
+      "mtime_utc": "2026-09-19T22:18:31.063726+00:00",
+      "sha256": "a107e54adb0b4d10392cba39ad05eb3fca3fee71ee0287295ee22c52b115f12e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/plant/engine.py",
+      "extension": ".py",
+      "size_bytes": 4019,
+      "mtime_utc": "2026-09-19T22:19:11.948034+00:00",
+      "sha256": "88c94f73e7c82a0f4124a246c77d3720313c67386e68323d4cef0822fb6285e7",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/reaction/__init__.py",
+      "extension": ".py",
+      "size_bytes": 198,
+      "mtime_utc": "2026-09-19T22:18:33.512557+00:00",
+      "sha256": "b8c40c5363e76d036063aa414e93dd732f3c3121fc2daf62e39e181f43250e5e",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/reaction/engine.py",
+      "extension": ".py",
+      "size_bytes": 4783,
+      "mtime_utc": "2026-09-19T22:19:22.670813+00:00",
+      "sha256": "66dfa26c5a5e48a9d14a6942036acbb3ae1a9bec0881f8fc2c69e13ce46d5a31",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/reaction/mixer.py",
+      "extension": ".py",
+      "size_bytes": 4888,
+      "mtime_utc": "2026-09-19T22:19:32.893050+00:00",
+      "sha256": "2cdafd430576fb2f5c44b5751ecb2563be3fe55eae57cdace665fac416b493fa",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/replay/__init__.py",
+      "extension": ".py",
+      "size_bytes": 5424,
+      "mtime_utc": "2026-09-19T22:48:56.836524+00:00",
+      "sha256": "dbce7c304ff21ce1a8b9a1621ceca55b2fee0ef7a782b474ba93c059385d7f62",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/scheduler/__init__.py",
+      "extension": ".py",
+      "size_bytes": 9121,
+      "mtime_utc": "2026-09-19T22:40:52.132784+00:00",
+      "sha256": "20e712c23a91da6dd531d5b266ac2f8f0828b2f6a1d612cbe18c82b63b812371",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/simulation/__init__.py",
+      "extension": ".py",
+      "size_bytes": 646,
+      "mtime_utc": "2026-09-19T22:26:47.121023+00:00",
+      "sha256": "116e41caf1e7b6e9a4e0aab936be32fdf31db388175891369b15c1f407b17f47",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/simulation/base.py",
+      "extension": ".py",
+      "size_bytes": 5558,
+      "mtime_utc": "2026-09-19T22:26:00.347947+00:00",
+      "sha256": "3d1eeb9a74a8e22dc130e88cd91a3480ae58bfdfd7eb08a8ca0925d3746c196b",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/simulation/docking.py",
+      "extension": ".py",
+      "size_bytes": 4370,
+      "mtime_utc": "2026-09-19T22:26:38.729657+00:00",
+      "sha256": "5f75927ee17454a1d67a8a3126f504dadc40c4ed8a42821ee90145f725f8695c",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/simulation/openmm_adapter.py",
+      "extension": ".py",
+      "size_bytes": 7320,
+      "mtime_utc": "2026-09-19T22:26:28.611874+00:00",
+      "sha256": "864eb8bc7073fd5a388644e159e23e203776eab892f519a087b5d52593333660",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/simulation/rdkit_adapter.py",
+      "extension": ".py",
+      "size_bytes": 5001,
+      "mtime_utc": "2026-09-19T22:27:41.031261+00:00",
+      "sha256": "e5594bdac0f7667e1358ce1ad110b97786877bb5eaa374980e82503a394db581",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/statistics/__init__.py",
+      "extension": ".py",
+      "size_bytes": 6328,
+      "mtime_utc": "2026-09-19T22:34:58.547833+00:00",
+      "sha256": "118a8b33dfdc50bb16d9ad49fea087ed89cf0635b7e7f3fdc938f34ba7b60454",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/ui/__init__.py",
+      "extension": ".py",
+      "size_bytes": 5530,
+      "mtime_utc": "2026-09-19T22:42:44.978585+00:00",
+      "sha256": "cf97c9520eb93bba929cd11839e2ffa7ee50763c9d7be6e7f4fcff3f86fff778",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "extension": ".py",
+      "size_bytes": 1359,
+      "mtime_utc": "2026-09-19T22:11:28.296693+00:00",
+      "sha256": "aa395a2c5b9e1e1e4877f8edf5ffa6360c58d2751fd68903377dea64f2cd2447",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/utils/id_gen.py",
+      "extension": ".py",
+      "size_bytes": 878,
+      "mtime_utc": "2026-09-19T22:13:16.647086+00:00",
+      "sha256": "bbebeb84ca9d2c97252d57d5025a43c1e732ece94501bb31436729784713c350",
+      "mentioned_ids": []
+    },
+    {
+      "path": "src/utils/validator.py",
+      "extension": ".py",
+      "size_bytes": 4259,
+      "mtime_utc": "2026-09-19T22:17:38.093905+00:00",
+      "sha256": "7cb70f24b12cafab7082b97761a9e8cd89c0b07cb0e82e98bd69f274f9bd9ff9",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_adversarial.py",
+      "extension": ".py",
+      "size_bytes": 3154,
+      "mtime_utc": "2026-09-19T22:33:01.060127+00:00",
+      "sha256": "45c69144ad2f21841ccee2c6cb4437b8e444dcaeb629bb33efff95cdae3a7894",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_dashboard.py",
+      "extension": ".py",
+      "size_bytes": 1854,
+      "mtime_utc": "2026-09-19T22:49:04.723426+00:00",
+      "sha256": "c996e0746ffbad8898d600a3dd0fda989240c4b46c26a45e260f534d1c29d4ca",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_database.py",
+      "extension": ".py",
+      "size_bytes": 2483,
+      "mtime_utc": "2026-09-19T22:15:08.919682+00:00",
+      "sha256": "4f7e457af7775e114e4e4196fae0881baf28a1e705ee52892fd7111ed31a71b6",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_docking.py",
+      "extension": ".py",
+      "size_bytes": 2244,
+      "mtime_utc": "2026-09-19T22:28:04.133506+00:00",
+      "sha256": "6754871c5a7d303e970e3be8707bd628a224e72462f1026c8adcdab1f3b43ba2",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_evidence.py",
+      "extension": ".py",
+      "size_bytes": 2307,
+      "mtime_utc": "2026-09-19T22:11:54.334985+00:00",
+      "sha256": "1579f1561a940b08e3e1eef88b3499c2840db7c48affaa7569aabd6fb9c59d28",
+      "mentioned_ids": [
+        "EXP-0001"
+      ]
+    },
+    {
+      "path": "tests/unit/test_experiment.py",
+      "extension": ".py",
+      "size_bytes": 4304,
+      "mtime_utc": "2026-09-19T22:40:53.512079+00:00",
+      "sha256": "1f6eb9807c7db37551598062fea70cf12b94d7005b28b756661996052472ff27",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_failure.py",
+      "extension": ".py",
+      "size_bytes": 3909,
+      "mtime_utc": "2026-09-19T22:40:06.830112+00:00",
+      "sha256": "f5eaaeadb5b69103764d73b570652186881aff5e3dcef7b7aa202f85e576b4a8",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_foundation.py",
+      "extension": ".py",
+      "size_bytes": 1974,
+      "mtime_utc": "2026-09-19T22:15:37.591235+00:00",
+      "sha256": "bb44bca62b630aa5aceefcb1c05acb1042e078169f0b6fc6df6fdcba30a6bfe4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_hypothesis.py",
+      "extension": ".py",
+      "size_bytes": 2380,
+      "mtime_utc": "2026-09-19T22:32:51.964865+00:00",
+      "sha256": "76e22f169aadd699bd22028f089cf515011786416921d5bad3d7ef997aa2a35d",
+      "mentioned_ids": [
+        "HYP-000001"
+      ]
+    },
+    {
+      "path": "tests/unit/test_id_gen.py",
+      "extension": ".py",
+      "size_bytes": 656,
+      "mtime_utc": "2026-09-19T22:11:56.251574+00:00",
+      "sha256": "29f0d90f78299a110730c9b3e252f7651dae97e5b2acd88e78ee2b92d41b1ecf",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_literature.py",
+      "extension": ".py",
+      "size_bytes": 1774,
+      "mtime_utc": "2026-09-19T22:32:37.702015+00:00",
+      "sha256": "f11ea817f518cf70b36d543d72e0c9e0f3d125a120fa4250f2d67ebb333cf31c",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_molecular.py",
+      "extension": ".py",
+      "size_bytes": 2251,
+      "mtime_utc": "2026-09-19T22:15:08.077160+00:00",
+      "sha256": "e09377fe4984ac9e0d012d979632fa60c7ed3749153fc4be5d3f92efbb8c29fe",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_molecular_engine.py",
+      "extension": ".py",
+      "size_bytes": 3286,
+      "mtime_utc": "2026-09-19T22:21:41.169272+00:00",
+      "sha256": "eb722cc991dc78d4ecaa7264edd9a609464c8be291b707c67cb4b5137e1fe144",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_navigation.py",
+      "extension": ".py",
+      "size_bytes": 2345,
+      "mtime_utc": "2026-09-19T22:49:09.767723+00:00",
+      "sha256": "f5b3e8b4e2c2e606cd8bb7f2d550e72e9db75192d762bb4b2415155cc586b415",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_novelty.py",
+      "extension": ".py",
+      "size_bytes": 1973,
+      "mtime_utc": "2026-09-19T22:34:09.135425+00:00",
+      "sha256": "738e318f73a9e3ef5f4e885635a20ecb66f59b0aa4cd278f0f5b7ccdcec841b1",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_observation.py",
+      "extension": ".py",
+      "size_bytes": 3469,
+      "mtime_utc": "2026-09-19T22:40:14.016474+00:00",
+      "sha256": "1bad028634a6493db0e28ee630d91de94551829ef8f0663e948467c8f6a74579",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_openmm_engine.py",
+      "extension": ".py",
+      "size_bytes": 1420,
+      "mtime_utc": "2026-09-19T22:26:55.699848+00:00",
+      "sha256": "1f77878c1dbe587dc90d345cb83ca8662bc15abad9b17f4267b5d0747d5e4508",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_phase4_modules.py",
+      "extension": ".py",
+      "size_bytes": 1989,
+      "mtime_utc": "2026-09-19T22:33:20.820105+00:00",
+      "sha256": "189a215794de195ca2993d1be6fa320509163ae517ee6411134b90f0b36bacf3",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_phase5_modules.py",
+      "extension": ".py",
+      "size_bytes": 2867,
+      "mtime_utc": "2026-09-19T22:40:21.490191+00:00",
+      "sha256": "c5a46b97a68339c7ecd1af16d17a4f4dcc64bc2b5ae25a8da45fb51f43ca6079",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_phase6_modules.py",
+      "extension": ".py",
+      "size_bytes": 1519,
+      "mtime_utc": "2026-09-19T22:49:19.932815+00:00",
+      "sha256": "80a8ad9c3b072b974809464d80a175a5c1e9f8b420b17f8659e35abc938083b4",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_plant_engine.py",
+      "extension": ".py",
+      "size_bytes": 2699,
+      "mtime_utc": "2026-09-19T22:19:55.282785+00:00",
+      "sha256": "3a73e14f1880bdf794601ec3dc9b58466c3f4acdb0ae7de1b7c2eded3b7a2f72",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_rdkit_engine.py",
+      "extension": ".py",
+      "size_bytes": 1980,
+      "mtime_utc": "2026-09-19T22:26:52.149188+00:00",
+      "sha256": "db0ab9369476dcf38c596882a156819d3efb93c23ca6e4a5d99df1b6ef61ea83",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_reaction_engine.py",
+      "extension": ".py",
+      "size_bytes": 2255,
+      "mtime_utc": "2026-09-19T22:20:47.723520+00:00",
+      "sha256": "9ee89adb5b3a3b8dea4eecd02213e297e61c460fc65a11732242c4cac68a7062",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_replay.py",
+      "extension": ".py",
+      "size_bytes": 2731,
+      "mtime_utc": "2026-09-19T22:49:16.314138+00:00",
+      "sha256": "cb82495b2176b0465b4355a6a5f0f9d96abfa83ef060f61385d8fbc9887d4437",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_scheduler.py",
+      "extension": ".py",
+      "size_bytes": 3714,
+      "mtime_utc": "2026-09-19T22:39:55.619509+00:00",
+      "sha256": "1f018193e0647ce4ab57d62dd1b0f34a89485d4351ec7aa979f29683963aaa22",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_simulation_base.py",
+      "extension": ".py",
+      "size_bytes": 2838,
+      "mtime_utc": "2026-09-19T22:28:42.769662+00:00",
+      "sha256": "c6d71af83a6c30036a2586290c118fea83bc39d7e21b960a2f2a542a7839a4c3",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_simulation_module.py",
+      "extension": ".py",
+      "size_bytes": 956,
+      "mtime_utc": "2026-09-19T22:27:11.587418+00:00",
+      "sha256": "9eadf2273d51929140cdb0893b31ec7bb275a7b729a6052a6539104964d7e5da",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_statistics.py",
+      "extension": ".py",
+      "size_bytes": 3329,
+      "mtime_utc": "2026-09-19T22:33:13.676995+00:00",
+      "sha256": "86561693c295476fd1c9fc633de02a46a44beff5077abd7e463deab917fc62ce",
+      "mentioned_ids": []
+    },
+    {
+      "path": "tests/unit/test_ui.py",
+      "extension": ".py",
+      "size_bytes": 1514,
+      "mtime_utc": "2026-09-19T22:50:01.549827+00:00",
+      "sha256": "511280d40891904f33985ed842f2d22f044bba466d600954b365a7587956684e",
+      "mentioned_ids": []
+    }
+  ]
+}

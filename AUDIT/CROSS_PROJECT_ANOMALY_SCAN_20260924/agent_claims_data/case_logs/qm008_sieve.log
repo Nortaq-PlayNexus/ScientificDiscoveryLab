@@ -1,0 +1,63 @@
+﻿  Building base sieve up to sqrt(1,000)...
+  Base sieve: 11 primes up to 11
+    Segment 1/1: [0, 1,000)
+  Total primes: 157
+{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "qm008_sieve": {
+      "ok": true,
+      "evidence": {
+        "returned_prime_count": 157,
+        "expected_prime_count": 168,
+        "returned_gap_count": 156,
+        "source": [
+          "46:         # Sieve [low, high)",
+          "47:         seg_len = high - low",
+          "48:         is_prime_seg = np.ones(seg_len, dtype=bool)",
+          "49:         ",
+          "50:         if seg_len > 0:",
+          "51:             is_prime_seg[0] = False",
+          "52:         if seg_len > 1:",
+          "53:             is_prime_seg[1] = False",
+          "54:         ",
+          "55:         for p in base_primes:",
+          "56:             if p * p > high:",
+          "57:                 break",
+          "58:             # Find first multiple of p >= low",
+          "59:             start = ((low + p - 1) // p) * p",
+          "60:             if start == p:",
+          "61:                 start += p  # p itself is prime, don't mark it",
+          "62:             if start < low:",
+          "63:                 start += p",
+          "64:             is_prime_seg[start - low::p] = False",
+          "65:         ",
+          "66:         primes_in_seg = np.nonzero(is_prime_seg)[0] + low"
+        ],
+        "other_runner": [
+          "46:         ",
+          "47:         is_prime_seg = np.ones(seg_len, dtype=bool)",
+          "48:         is_prime_seg[0] = is_prime_seg[1] = False if seg_len > 1 else True",
+          "49:         ",
+          "50:         sqrt_high = int(math.isqrt(high))",
+          "51:         for i in range(2, sqrt_high + 1):",
+          "52:             if i < segment_size:",
+          "53:                 if not is_prime[i]:",
+          "54:                     continue",
+          "55:             else:",
+          "56:                 # Need to check if i is prime (from previous segments)",
+          "57:                 # For simplicity, assume small i are already sieved",
+          "58:                 pass",
+          "59:             ",
+          "60:             # Mark multiples of i in [low, high)",
+          "61:             start = ((low + i - 1) // i) * i",
+          "62:             if start == i:",
+          "63:                 start += i",
+          "64:             is_prime_seg[start - low::i] = False",
+          "65:         "
+        ],
+        "one_e10_result_exists": false
+      }
+    }
+  }
+}

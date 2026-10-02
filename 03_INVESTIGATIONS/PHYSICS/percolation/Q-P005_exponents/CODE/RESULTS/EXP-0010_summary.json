@@ -1,0 +1,66 @@
+{
+  "decision": "LATTICE_ARTIFACT",
+  "estimator_diagnostics": {
+    "D_f_boot_draws": 2000,
+    "L_list": [
+      127,
+      191,
+      253,
+      449
+    ],
+    "P_span_per_L": {
+      "127": 0.49,
+      "191": 0.565,
+      "253": 0.525,
+      "449": 0.48
+    },
+    "p_c": 0.5927460507921,
+    "per_L_mean_mass": {
+      "127": 4174.385,
+      "191": 9491.41,
+      "253": 15656.795,
+      "449": 46296.065
+    },
+    "theory_Df": 1.8958333333333333,
+    "tol": 0.015
+  },
+  "primary_results": {
+    "D_f": {
+      "expected": 1.8958333333333333,
+      "measured": 1.896198293208009,
+      "pass": true,
+      "per_L": {
+        "127": {
+          "mean_mass": 4174.385,
+          "se_mass": 109.46253545031313
+        },
+        "191": {
+          "mean_mass": 9491.41,
+          "se_mass": 233.91660619281356
+        },
+        "253": {
+          "mean_mass": 15656.795,
+          "se_mass": 408.2692249793033
+        },
+        "449": {
+          "mean_mass": 46296.065,
+          "se_mass": 1228.2819841415524
+        }
+      },
+      "se": 0.02843638397194058,
+      "tol": 0.015
+    },
+    "decision": "LATTICE_ARTIFACT",
+    "experiment_id": "EXP-0010",
+    "gates": {
+      "C1": {
+        "digest_eq": true,
+        "pass": true
+      }
+    },
+    "hypothesis": "HYP-005",
+    "question": "Q-P005",
+    "test": "D_f at non-power-of-2 L: lattice-artifact vs finite-size correction"
+  },
+  "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\EXP-0010_results.json"
+}

@@ -1,0 +1,593 @@
+{
+  "active_tau_L": 1024,
+  "active_tau_L_source": "profiles.production.tau_L",
+  "audit_finding_id": "N-001",
+  "cumulative_tau_definition": "tau = 1 - survival_slope for N_>(s) ~ s^(-(tau-1))",
+  "effective_realizations_at_tau_L": {
+    "canonical": 50,
+    "refined": 50
+  },
+  "fits": {
+    "primary_32_4096": {
+      "cumulative": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.9073882813814476,
+            1.9334757345141953
+          ],
+          "canonical_sd": 0.006773256476776934,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.0006662000190535422,
+            0.00035561806055428
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.0002635547612547478,
+          "refined_interval": [
+            1.907355517899709,
+            1.9333973552602892
+          ],
+          "refined_sd": 0.006768157692450727,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.03785760592091501,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.844134990735155,
+          "points": 245,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            4096
+          ],
+          "slope": -0.9200860948994347,
+          "slope_standard_error": 0.00571614329948506,
+          "tail_clusters": 1462967,
+          "tau": 1.9200860948994347,
+          "used_window": [
+            32,
+            4096
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": -2.8023964806278556e-05,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.0381222779595104,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.844823863765907,
+          "points": 245,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            4096
+          ],
+          "slope": -0.9200580709346284,
+          "slope_standard_error": 0.005714842599954087,
+          "tail_clusters": 1463263,
+          "tau": 1.9200580709346284,
+          "used_window": [
+            32,
+            4096
+          ]
+        }
+      },
+      "histogram": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.604524060296615,
+            1.6596481277049193
+          ],
+          "canonical_sd": 0.014347549099245675,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.0015970085348089242,
+            0.0020763629053571872
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.0009530379773029416,
+          "refined_interval": [
+            1.6038951475511154,
+            1.6600212864666157
+          ],
+          "refined_sd": 0.014331928095119262,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.6186427751503617,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 12.756281110235406,
+          "points": 1867,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            4096
+          ],
+          "slope": -1.7027686605189478,
+          "slope_standard_error": 0.010650771246240791,
+          "tail_clusters": 1462967,
+          "tau": 1.7027686605189478,
+          "used_window": [
+            32,
+            4087
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": 0.0001510762754166617,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.6203434427457728,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 12.757549928067277,
+          "points": 1867,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            4096
+          ],
+          "slope": -1.7029197367943645,
+          "slope_standard_error": 0.010650207102548466,
+          "tail_clusters": 1463263,
+          "tau": 1.7029197367943645,
+          "used_window": [
+            32,
+            4087
+          ]
+        }
+      }
+    },
+    "sensitivity_16_512": {
+      "cumulative": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.9249064302036774,
+            1.9466649570836352
+          ],
+          "canonical_sd": 0.005632732827108235,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.00046172891814699746,
+            0.00017288479266099876
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.00016304811222655693,
+          "refined_interval": [
+            1.924854354013487,
+            1.9464646244044321
+          ],
+          "refined_sd": 0.005598745351727017,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.004074528615206623,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.912598963797196,
+          "points": 197,
+          "requested_realizations": 50,
+          "requested_window": [
+            16,
+            512
+          ],
+          "slope": -0.9358495400581301,
+          "slope_standard_error": 0.007198214770974955,
+          "tail_clusters": 1462967,
+          "tau": 1.9358495400581301,
+          "used_window": [
+            16,
+            512
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": -0.00011837333925845961,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.004156955438291136,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.912876530200565,
+          "points": 197,
+          "requested_realizations": 50,
+          "requested_window": [
+            16,
+            512
+          ],
+          "slope": -0.9357311667188716,
+          "slope_standard_error": 0.007196804452609278,
+          "tail_clusters": 1463263,
+          "tau": 1.9357311667188717,
+          "used_window": [
+            16,
+            512
+          ]
+        }
+      },
+      "histogram": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.953058585080085,
+            1.9736455488429128
+          ],
+          "canonical_sd": 0.005269511855385649,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.0011511471951792583,
+            0.0006404021059984553
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.00037179789571484804,
+          "refined_interval": [
+            1.9529541810489062,
+            1.973570035509685
+          ],
+          "refined_sd": 0.005301578483454097,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.2376052921094851,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 14.022005766515205,
+          "points": 497,
+          "requested_realizations": 50,
+          "requested_window": [
+            16,
+            512
+          ],
+          "slope": -1.966031851822764,
+          "slope_standard_error": 0.015383891305172873,
+          "tail_clusters": 1462967,
+          "tau": 1.966031851822764,
+          "used_window": [
+            16,
+            512
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": -0.00013390064181484362,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.23773298777050875,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 14.021946703239566,
+          "points": 497,
+          "requested_realizations": 50,
+          "requested_window": [
+            16,
+            512
+          ],
+          "slope": -1.9658979511809491,
+          "slope_standard_error": 0.015382500845938868,
+          "tail_clusters": 1463263,
+          "tau": 1.9658979511809491,
+          "used_window": [
+            16,
+            512
+          ]
+        }
+      }
+    },
+    "sensitivity_32_2048": {
+      "cumulative": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.9158160339540604,
+            1.9408377321510224
+          ],
+          "canonical_sd": 0.006444811750603518,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.0004906987854714939,
+            0.0003801689440276533
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.000227542646791849,
+          "refined_interval": [
+            1.915905741931102,
+            1.9408468709694733
+          ],
+          "refined_sd": 0.006429935507830668,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.01489781020768462,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.881170072519904,
+          "points": 240,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            2048
+          ],
+          "slope": -0.9282779920681603,
+          "slope_standard_error": 0.0063257953940989336,
+          "tail_clusters": 1462967,
+          "tau": 1.9282779920681603,
+          "used_window": [
+            32,
+            2048
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": 1.117384731075255e-05,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.014955796757211938,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.882038225010914,
+          "points": 240,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            2048
+          ],
+          "slope": -0.9282891659154711,
+          "slope_standard_error": 0.00632451554109532,
+          "tail_clusters": 1463263,
+          "tau": 1.928289165915471,
+          "used_window": [
+            32,
+            2048
+          ]
+        }
+      },
+      "histogram": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.7564581956898884,
+            1.8085163325530567
+          ],
+          "canonical_sd": 0.013333458517225838,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.001805385309459112,
+            0.002610484322558326
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.0011163439313841411,
+          "refined_interval": [
+            1.7569322201358712,
+            1.8091894088168394
+          ],
+          "refined_sd": 0.013354473375911106,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.4130840465066099,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 13.46455550060632,
+          "points": 1475,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            2048
+          ],
+          "slope": -1.8466131605873564,
+          "slope_standard_error": 0.01245501577775183,
+          "tail_clusters": 1462967,
+          "tau": 1.8466131605873564,
+          "used_window": [
+            32,
+            2044
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": 0.0004146214056246489,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.41405245710619165,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 13.467122171459787,
+          "points": 1476,
+          "requested_realizations": 50,
+          "requested_window": [
+            32,
+            2048
+          ],
+          "slope": -1.847027781992981,
+          "slope_standard_error": 0.012452233104630738,
+          "tail_clusters": 1463263,
+          "tau": 1.847027781992981,
+          "used_window": [
+            32,
+            2044
+          ]
+        }
+      }
+    },
+    "sensitivity_64_4096": {
+      "cumulative": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.8969007184129052,
+            1.9277131869759332
+          ],
+          "canonical_sd": 0.008143261696394462,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.0007899265215857153,
+            0.00048758988523356914
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.00033387010375174786,
+          "refined_interval": [
+            1.8967399756816812,
+            1.9276218534182032
+          ],
+          "refined_sd": 0.00815297858589395,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.030807171508227656,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.793806733495432,
+          "points": 250,
+          "requested_realizations": 50,
+          "requested_window": [
+            64,
+            4096
+          ],
+          "slope": -0.9120716110785522,
+          "slope_standard_error": 0.006956484494105016,
+          "tail_clusters": 1462967,
+          "tau": 1.9120716110785523,
+          "used_window": [
+            64,
+            4096
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": -1.8718502157177852e-05,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.031094283782172202,
+          "effective_realizations": 50,
+          "estimator": "cumulative",
+          "intercept": 13.794529116257998,
+          "points": 250,
+          "requested_realizations": 50,
+          "requested_window": [
+            64,
+            4096
+          ],
+          "slope": -0.9120528925763951,
+          "slope_standard_error": 0.006954870649273041,
+          "tail_clusters": 1463263,
+          "tau": 1.912052892576395,
+          "used_window": [
+            64,
+            4096
+          ]
+        }
+      },
+      "histogram": {
+        "bootstrap": {
+          "block_count": 50,
+          "block_size": 1,
+          "canonical_interval": [
+            1.4735193938418432,
+            1.5441962756292045
+          ],
+          "canonical_sd": 0.01804411439918987,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 2000,
+          "draws_successful": 2000,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            -0.002133256665693428,
+            0.0027032278547033327
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.0012507716650542468,
+          "refined_interval": [
+            1.4739116380251964,
+            1.5446830026497191
+          ],
+          "refined_sd": 0.01801106201441907,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.5587255265046857,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 12.128041889972216,
+          "points": 1835,
+          "requested_realizations": 50,
+          "requested_window": [
+            64,
+            4096
+          ],
+          "slope": -1.6069627750736306,
+          "slope_standard_error": 0.013621115913541527,
+          "tail_clusters": 1462967,
+          "tau": 1.6069627750736306,
+          "used_window": [
+            64,
+            4087
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": 0.0001636875626453982,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.5604598102535935,
+          "effective_realizations": 50,
+          "estimator": "histogram",
+          "intercept": 12.129423603134999,
+          "points": 1835,
+          "requested_realizations": 50,
+          "requested_window": [
+            64,
+            4096
+          ],
+          "slope": -1.607126462636276,
+          "slope_standard_error": 0.013620550665222097,
+          "tail_clusters": 1463263,
+          "tau": 1.607126462636276,
+          "used_window": [
+            64,
+            4087
+          ]
+        }
+      }
+    }
+  },
+  "interpretation": "Fit diagnostics only; scientific interpretation is intentionally deferred to a separately reviewed production report.",
+  "investigation_id": "Q-P007",
+  "largest_cluster_policy": "one largest entry removed independently within every realization before pooling",
+  "paired_realization_ids_sha256": "b035e9074e01ca12aea75a673d804ca05e6b43db4cbe5d83983279e647477809",
+  "power_analysis": {
+    "planning_target_only": {
+      "fisher_reference": 2.0549450549450543,
+      "fisher_reference_expression": "187/91",
+      "historical_discrepancy": 1.98,
+      "production_resolution_requirement": "Estimate paired refined-minus-canonical uncertainty from valid realization-block bootstrap replicates before any power claim"
+    },
+    "reason": "A post-run power calculation must use the paired realization-block variance from this production artifact.",
+    "status": "REQUIRES_PAIRED_PRODUCTION_BOOTSTRAP_VARIANCE"
+  },
+  "profile_name": "production",
+  "profile_source": "profiles.production",
+  "requested_realizations_at_tau_L": 50,
+  "run_id": "N001-QP007-CLUSTER-TAU-REPAIR",
+  "scientific_result": null,
+  "status": "PRODUCTION_REQUIRES_SEPARATE_SCIENTIFIC_REVIEW",
+  "summary_schema": "n001-qp007-summary-v3"
+}

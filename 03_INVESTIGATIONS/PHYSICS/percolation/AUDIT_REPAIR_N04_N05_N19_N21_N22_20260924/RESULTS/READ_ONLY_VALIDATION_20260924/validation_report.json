@@ -1,0 +1,1165 @@
+{
+  "audit_date": "2026-09-24",
+  "classifications": {
+    "N-04": "INCONCLUSIVE_COMPLETE_PROVENANCE_AND_CONTROL_CLOSURE",
+    "N-05": "POINT_ESTIMATE_COMPATIBLE_WITH_0.5_PRECISION_VALIDATION_INCONCLUSIVE",
+    "N-19": "SAME_STREAM_IMPLEMENTATION_CHECK",
+    "N-21": "ALGEBRAICALLY_COUPLED_INTERNAL_CONSISTENCY_CHECK",
+    "N-22": "INCONCLUSIVE"
+  },
+  "dependency_graph": [
+    {
+      "depends_on": [
+        "prereg_EXP-0006.json",
+        "EXP-0006_results.json/cells"
+      ],
+      "finding": "N-04",
+      "id": "N04.E1",
+      "produces": "corrected p50 bootstrap and FSS",
+      "status": "REPRODUCED"
+    },
+    {
+      "depends_on": [
+        "N04.E1",
+        "stored bond_wrap aggregate cells"
+      ],
+      "finding": "N-04",
+      "id": "N04.E2",
+      "produces": "historical C2 comparison",
+      "status": "REPRODUCED_WITH_SCOPE_LIMITATION"
+    },
+    {
+      "depends_on": [
+        "EXP-0006 stored controls/raw availability"
+      ],
+      "finding": "N-04",
+      "id": "N04.E3",
+      "produces": "complete control closure",
+      "status": "INCONCLUSIVE"
+    },
+    {
+      "depends_on": [
+        "prereg_EXP-0007.json",
+        "EXP-0007_results.json/cells"
+      ],
+      "finding": "N-05",
+      "id": "N05.E1",
+      "produces": "500 requested / 500 accepted p50 bootstrap per L",
+      "status": "REPRODUCED"
+    },
+    {
+      "depends_on": [
+        "N05.E1",
+        "EXP-0007 stored probit widths"
+      ],
+      "finding": "N-05",
+      "id": "N05.E2",
+      "produces": "500 requested / 495 accepted width-bootstrap draws",
+      "status": "REPRODUCED_WITH_DROPPED_DRAWS_REPORTED"
+    },
+    {
+      "depends_on": [
+        "N05.E1"
+      ],
+      "finding": "N-05",
+      "id": "N05.E3",
+      "produces": "broad FSS uncertainty and corrected classification",
+      "status": "REPRODUCED"
+    },
+    {
+      "depends_on": [
+        "EXP-0009 raw cache prefixes",
+        "C7 source/report"
+      ],
+      "finding": "N-19",
+      "id": "N19.E1",
+      "produces": "same-stream C7 numerical reproduction",
+      "status": "REPRODUCED_AS_IMPLEMENTATION_CHECK_ONLY"
+    },
+    {
+      "depends_on": [
+        "EXP-0009 masses",
+        "EXP-0009 pinfs",
+        "N=L^2"
+      ],
+      "finding": "N-21",
+      "id": "N21.E1",
+      "produces": "R3 algebraic identity",
+      "status": "REPRODUCED_AS_INTERNAL_DIAGNOSTIC_ONLY"
+    },
+    {
+      "depends_on": [
+        "EXP-0010 raw masses",
+        "EXP-0010 bootstrap label/seed"
+      ],
+      "finding": "N-22",
+      "id": "N22.E1",
+      "produces": "pooled D_f",
+      "status": "REPRODUCED_EXPLORATORY_ONLY"
+    },
+    {
+      "depends_on": [
+        "EXP-0010 prereg per-size criterion",
+        "available raw quantities"
+      ],
+      "finding": "N-22",
+      "id": "N22.E2",
+      "produces": "individual-size closure",
+      "status": "UNRESOLVED_NOT_IDENTIFIABLE"
+    },
+    {
+      "depends_on": [
+        "EXP-0010 prereg C7",
+        "EXP-0010 stored result"
+      ],
+      "finding": "N-22",
+      "id": "N22.E3",
+      "produces": "required C7 control",
+      "status": "INCONCLUSIVE_ABSENT"
+    }
+  ],
+  "experiments": {
+    "EXP-0006": {
+      "by_system": {
+        "bond_span": {
+          "fss_max_abs_delta": 0.0,
+          "fss_recomputed": {
+            "L_used": [
+              64,
+              128,
+              256,
+              512
+            ],
+            "a": 0.5002094826899287,
+            "b": -0.004615466277965983,
+            "chi2_red": 0.059366328615768536,
+            "se_a": 0.014012165991159729
+          },
+          "fss_stored": {
+            "L_used": [
+              64,
+              128,
+              256,
+              512
+            ],
+            "a": 0.5002094826899287,
+            "b": -0.004615466277965983,
+            "chi2_red": 0.059366328615768536,
+            "se_a": 0.014012165991159729
+          },
+          "p50_by_L": {
+            "128": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.5001697312588402,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5001572242067353,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0005184925509957616,
+              "stored_p50": 0.5001572242067353,
+              "stored_se": 0.0005184925509957616
+            },
+            "256": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.5001618122977346,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5001669446692497,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.00015867301815247935,
+              "stored_p50": 0.5001669446692497,
+              "stored_se": 0.00015867301815247935
+            },
+            "512": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.5001498708010336,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5001527904511637,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.00011238986949286284,
+              "stored_p50": 0.5001527904511637,
+              "stored_se": 0.00011238986949286284
+            },
+            "64": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.4998211091234348,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.4998542286084771,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0006688327376335037,
+              "stored_p50": 0.4998542286084771,
+              "stored_se": 0.0006688327376335037
+            }
+          }
+        },
+        "bond_wrap": {
+          "fss_max_abs_delta": 0.0,
+          "fss_recomputed": {
+            "L_used": [
+              32,
+              48,
+              64
+            ],
+            "a": 0.5012239493794279,
+            "b": -0.04550362980519479,
+            "chi2_red": 4.738123877936751,
+            "se_a": 0.08404619007193129
+          },
+          "fss_stored": {
+            "L_used": [
+              32,
+              48,
+              64
+            ],
+            "a": 0.5012239493794279,
+            "b": -0.04550362980519479,
+            "chi2_red": 4.738123877936751,
+            "se_a": 0.08404619007193129
+          },
+          "p50_by_L": {
+            "32": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.49862068965517253,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.4985936764612654,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0010065573055225393,
+              "stored_p50": 0.4985936764612654,
+              "stored_se": 0.0010065573055225393
+            },
+            "48": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.4974174174174175,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.4974828844043641,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0007700512083248345,
+              "stored_p50": 0.4974828844043641,
+              "stored_se": 0.0007700512083248345
+            },
+            "64": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.500329218106996,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5003630768139604,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0009199826216022933,
+              "stored_p50": 0.5003630768139604,
+              "stored_se": 0.0009199826216022933
+            }
+          }
+        },
+        "site_span": {
+          "fss_max_abs_delta": 0.0,
+          "fss_recomputed": {
+            "L_used": [
+              64,
+              128,
+              256
+            ],
+            "a": 0.5928414639941578,
+            "b": -0.010028147348802295,
+            "chi2_red": 0.9735691164682727,
+            "se_a": 0.035310554069059634
+          },
+          "fss_stored": {
+            "L_used": [
+              64,
+              128,
+              256
+            ],
+            "a": 0.5928414639941578,
+            "b": -0.010028147348802295,
+            "chi2_red": 0.9735691164682727,
+            "se_a": 0.035310554069059634
+          },
+          "p50_by_L": {
+            "128": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.5930487413829596,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5930199396451842,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.000554027056517291,
+              "stored_p50": 0.5930199396451842,
+              "stored_se": 0.000554027056517291
+            },
+            "256": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.5924525725391304,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5924726939598507,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0004846168838183893,
+              "stored_p50": 0.5924726939598507,
+              "stored_se": 0.0004846168838183893
+            },
+            "64": {
+              "acceptance_fraction": 1.0,
+              "direct_corrected_interpolation": 0.5921144718526316,
+              "draws_accepted": 500,
+              "draws_rejected": 0,
+              "draws_requested": 500,
+              "label": "perc-boot",
+              "mean": 0.5921271333168397,
+              "p50_abs_delta": 0.0,
+              "se_abs_delta": 0.0,
+              "seed": 42,
+              "standard_error": 0.0007106168260067206,
+              "stored_p50": 0.5921271333168397,
+              "stored_se": 0.0007106168260067206
+            }
+          }
+        }
+      },
+      "classification": "INCONCLUSIVE_COMPLETE_PROVENANCE_AND_CONTROL_CLOSURE",
+      "controls": {
+        "C1": {
+          "reason": "Only the two aggregate repeat outputs are stored; no realization-level C1 evidence is present.",
+          "status": "INCONCLUSIVE_NOT_REGENERABLE_FROM_STORED_CELLS",
+          "stored_first_second_equal": true
+        },
+        "C2": {
+          "pair_diff": 0.0010144666894992271,
+          "pass": true,
+          "scope": "historical bond_span versus bond_wrap stored-cell comparison; no new estimator/control was created",
+          "span_a": 0.5002094826899287,
+          "status": "REPRODUCED_FROM_STORED_AGGREGATE_CELLS",
+          "stored_pair_abs_delta": 0.0,
+          "tolerance": 0.005,
+          "wrap_a": 0.5012239493794279
+        },
+        "C4": {
+          "full_a": 0.5002094826899287,
+          "pass": true,
+          "refit_a": 0.5001320301593968,
+          "shift": 7.745253053192958e-05,
+          "status": "REPRODUCED_FROM_CORRECTED_STORED_CELL_FITS",
+          "tolerance": 0.005
+        },
+        "C6": {
+          "all_stored_cells_use_primary_seed": true,
+          "reason": "Stored aggregate cells contain only the primary seed; extra-seed p50 summaries cannot be independently regenerated.",
+          "status": "INCONCLUSIVE_EXTRA_SEED_CELLS_NOT_STORED"
+        },
+        "C7": {
+          "independent_sampling": false,
+          "reason": "The historical report explicitly uses identical seeded streams and a separate union-find code path.",
+          "status": "SAME_STREAM_IMPLEMENTATION_CHECK_ONLY"
+        }
+      },
+      "corrected_interpolation": {
+        "denominator": "w1 - w0",
+        "equation": "p0 + (target - w0) * (p1 - p0) / (w1 - w0)",
+        "implementation": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CODE/run_read_only_audit.py"
+      },
+      "defensible_scope": "The stored threshold estimates are numerically recoverable from aggregate cells, but this is not a fresh Monte Carlo reproduction and unavailable controls remain inconclusive.",
+      "experiment_id": "EXP-0006",
+      "finding_id": "N-04",
+      "literal_bug_examples_diagnostic_only": {
+        "bond_span": {
+          "L": 64,
+          "correct_denominator_w1_minus_w0": 0.4998211091234348,
+          "literal_bug_w1_minus_p0_diagnostic_only": 0.7965714285714307,
+          "stored_bootstrap_p50": 0.4998542286084771
+        },
+        "bond_wrap": {
+          "L": 32,
+          "correct_denominator_w1_minus_w0": 0.49862068965517253,
+          "literal_bug_w1_minus_p0_diagnostic_only": 0.6091304347826093,
+          "stored_bootstrap_p50": 0.4985936764612654
+        },
+        "site_span": {
+          "L": 256,
+          "correct_denominator_w1_minus_w0": 0.5924525725391304,
+          "literal_bug_w1_minus_p0_diagnostic_only": 0.47934039809303736,
+          "stored_bootstrap_p50": 0.5924726939598507
+        }
+      },
+      "not_reproducible": "The current named runner cannot regenerate the full three-system experiment; C1 and C6 realization/extra-seed evidence are absent from stored cells.",
+      "numerical_reproduction": {
+        "bitwise_value_match_within_float_tolerance": true,
+        "bootstrap_label_recovered_from_stored_result": "perc-boot",
+        "draws_accepted_per_L": 500,
+        "draws_rejected_per_L": 0,
+        "draws_requested_per_L": 500,
+        "max_abs_fss_component_delta": 0.0,
+        "max_abs_p50_delta": 0.0,
+        "max_abs_se_delta": 0.0
+      },
+      "reproducible": "All stored aggregate cell counts, p50 bootstrap means/SEs, and FSS fits regenerate with the corrected denominator and recovered perc-boot stream.",
+      "stored_input": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json"
+    },
+    "EXP-0007": {
+      "classification": "POINT_ESTIMATE_COMPATIBLE_WITH_0.5_PRECISION_VALIDATION_INCONCLUSIVE",
+      "corrected_statement": "p_c point estimate 0.500687453; FSS standard error 0.031707449 (3.171 times the 0.01 tolerance). The point estimate is compatible with 0.5, but this is not ±0.01 precision validation.",
+      "experiment_id": "EXP-0007",
+      "finding_id": "N-05",
+      "fss": {
+        "decision_tolerance": 0.01,
+        "max_abs_stored_fit_component_delta": 0.0,
+        "one_standard_error_interval_not_a_confidence_interval": [
+          0.4689800042525794,
+          0.5323949017979549
+        ],
+        "point_abs_deviation_from_0.5": 0.0006874530252671818,
+        "point_estimate": 0.5006874530252672,
+        "point_tolerance_pass": true,
+        "precision_at_tolerance_pass": false,
+        "standard_error": 0.03170744877268775,
+        "standard_error_to_tolerance_ratio": 3.1707448772687754,
+        "stored_point_estimate": 0.5006874530252672,
+        "stored_standard_error": 0.03170744877268775
+      },
+      "not_reproducible": "The five nonconverged width fits cannot be recovered as accepted draws; only their count and first-failure size are reproducible from the stored aggregate inputs.",
+      "reproducible": "The six p50 series, WLS intercept/SE, and accepted width-bootstrap summary regenerate from frozen aggregate cells.",
+      "stored_inputs": [
+        "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+        "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json"
+      ],
+      "threshold_p50_bootstrap": {
+        "by_L": {
+          "128": {
+            "acceptance_fraction": 1.0,
+            "draws_accepted": 500,
+            "draws_rejected": 0,
+            "draws_requested": 500,
+            "label": "perc-boot-exp0007",
+            "mean": 0.5012222892133987,
+            "p50_abs_delta": 0.0,
+            "seed": 42,
+            "standard_error": 0.0009237984038220637,
+            "stored_p50": 0.5012222892133987,
+            "stored_se": 0.0009237984038220637
+          },
+          "192": {
+            "acceptance_fraction": 1.0,
+            "draws_accepted": 500,
+            "draws_rejected": 0,
+            "draws_requested": 500,
+            "label": "perc-boot-exp0007",
+            "mean": 0.4992417301851336,
+            "p50_abs_delta": 0.0,
+            "seed": 42,
+            "standard_error": 0.0010566610452977848,
+            "stored_p50": 0.4992417301851336,
+            "stored_se": 0.0010566610452977848
+          },
+          "32": {
+            "acceptance_fraction": 1.0,
+            "draws_accepted": 500,
+            "draws_rejected": 0,
+            "draws_requested": 500,
+            "label": "perc-boot-exp0007",
+            "mean": 0.49866069517268136,
+            "p50_abs_delta": 0.0,
+            "seed": 42,
+            "standard_error": 0.001013038690707616,
+            "stored_p50": 0.49866069517268136,
+            "stored_se": 0.001013038690707616
+          },
+          "48": {
+            "acceptance_fraction": 1.0,
+            "draws_accepted": 500,
+            "draws_rejected": 0,
+            "draws_requested": 500,
+            "label": "perc-boot-exp0007",
+            "mean": 0.4974502702853924,
+            "p50_abs_delta": 0.0,
+            "seed": 42,
+            "standard_error": 0.0007832548801881218,
+            "stored_p50": 0.4974502702853924,
+            "stored_se": 0.0007832548801881218
+          },
+          "64": {
+            "acceptance_fraction": 1.0,
+            "draws_accepted": 500,
+            "draws_rejected": 0,
+            "draws_requested": 500,
+            "label": "perc-boot-exp0007",
+            "mean": 0.5003325765058546,
+            "p50_abs_delta": 0.0,
+            "seed": 42,
+            "standard_error": 0.0009860738307604377,
+            "stored_p50": 0.5003325765058546,
+            "stored_se": 0.0009860738307604377
+          },
+          "96": {
+            "acceptance_fraction": 1.0,
+            "draws_accepted": 500,
+            "draws_rejected": 0,
+            "draws_requested": 500,
+            "label": "perc-boot-exp0007",
+            "mean": 0.4984955365005837,
+            "p50_abs_delta": 0.0,
+            "seed": 42,
+            "standard_error": 0.0008833543498458077,
+            "stored_p50": 0.4984955365005837,
+            "stored_se": 0.0008833543498458077
+          }
+        },
+        "draws_accepted_per_L": 500,
+        "draws_rejected_per_L": 0,
+        "draws_requested_per_L": 500,
+        "label": "perc-boot-exp0007",
+        "max_abs_p50_delta": 0.0,
+        "max_abs_se_delta": 0.0
+      },
+      "width_route_bootstrap": {
+        "acceptance_fraction": 0.99,
+        "ci95": [
+          0.6721683609928288,
+          1.0674117972323696
+        ],
+        "draws_accepted": 495,
+        "draws_rejected": 5,
+        "draws_requested": 500,
+        "label": "perc-boot-0007-width",
+        "mean": 0.7478391994590761,
+        "rejected_at_first_nonconvergent_L": {
+          "128": 1,
+          "64": 3,
+          "96": 1
+        },
+        "seed": 42,
+        "standard_deviation": 0.07726497487514483,
+        "stored_mean_abs_delta": 0.0,
+        "stored_n_draws": 495,
+        "stored_sd_abs_delta": 0.0
+      }
+    },
+    "EXP-0009": {
+      "C7": {
+        "corrected_classification": "SAME_STREAM_IMPLEMENTATION_CHECK",
+        "evidence_use": "implementation drift check only; does not add independent Monte Carlo evidence",
+        "fresh_random_sampling": false,
+        "independent_experimental_replication": false,
+        "max_prefix_mean_abs_delta": 0.0,
+        "max_value_or_se_abs_delta": 0.0,
+        "raw_prefix_mean_mass": {
+          "128": 4210.25,
+          "256": 14495.9,
+          "512": 60569.15
+        },
+        "recomputed_D_f_subsample": 1.9236534931191327,
+        "recomputed_D_f_subsample_se": 0.06101898717371485,
+        "source_declared_streams": "identical G_LAB rng labels/seeds; first 40 realizations of each exponent cell",
+        "stored_D_f_subsample": 1.9236534931191327,
+        "stored_D_f_subsample_se": 0.06101898717371485,
+        "subsample": {
+          "first_realizations": 40,
+          "sizes": [
+            128,
+            256,
+            512
+          ]
+        }
+      },
+      "R3": {
+        "corrected_classification": "ALGEBRAICALLY_COUPLED_INTERNAL_CONSISTENCY_CHECK",
+        "evidence_use": "internal algebraic consistency; not an independent scaling-law test",
+        "identity": "P_inf = M_max / L^2, hence slope(log P_inf) = slope(log M_max) - 2",
+        "p_inf_identity_max_abs_delta_across_caches": 0.0,
+        "point_D_f_from_raw_mean_mass": 1.8707255215190224,
+        "point_beta_nu_from_raw_mean_pinf": 0.1292744784809777,
+        "point_identity_residual": 0.0,
+        "stored_bootstrap_mean_R3_residual": 0.0007570357640149794
+      },
+      "corrected_classification": "RAW_CELL_EXACT_REPRODUCTION_WITH_IMPLEMENTATION_CHECK_AND_ALGEBRAIC_DIAGNOSTIC_LABELS",
+      "experiment_id": "EXP-0009",
+      "exponent_reproduction": {
+        "D_f": {
+          "max_abs_delta": 0.0,
+          "recomputed_standard_error": 0.022226754657092666,
+          "recomputed_value": 1.869737723898956,
+          "stored_standard_error": 0.022226754657092666,
+          "stored_value": 1.869737723898956
+        },
+        "beta_nu": {
+          "max_abs_delta": 0.0,
+          "recomputed_standard_error": 0.021844107316573793,
+          "recomputed_value": 0.1295052403370289,
+          "stored_standard_error": 0.021844107316573793,
+          "stored_value": 0.1295052403370289
+        },
+        "gamma_nu": {
+          "max_abs_delta": 0.0,
+          "recomputed_standard_error": 0.032158054463398644,
+          "recomputed_value": 1.7596163275742946,
+          "stored_standard_error": 0.032158054463398644,
+          "stored_value": 1.7596163275742946
+        }
+      },
+      "finding_ids": [
+        "N-19",
+        "N-21"
+      ],
+      "max_abs_exponent_value_or_se_delta": 0.0,
+      "not_reproducible": "A fresh independent C7 sample and a physically independent R3 observable do not exist in the stored evidence.",
+      "raw_cell_inventory": [
+        {
+          "L": 128,
+          "N": 16384,
+          "chis_shape": [
+            1500
+          ],
+          "keys": [
+            "masses",
+            "chis",
+            "pinfs",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            1500
+          ],
+          "p_inf_equals_masses_over_N_max_abs_delta": 0.0,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L128_n1500.npz",
+          "pinfs_shape": [
+            1500
+          ],
+          "requested_n": 1500,
+          "sizes_key_present": true,
+          "stored_realizations": 1500
+        },
+        {
+          "L": 256,
+          "N": 65536,
+          "chis_shape": [
+            700
+          ],
+          "keys": [
+            "masses",
+            "chis",
+            "pinfs",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            700
+          ],
+          "p_inf_equals_masses_over_N_max_abs_delta": 0.0,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L256_n700.npz",
+          "pinfs_shape": [
+            700
+          ],
+          "requested_n": 700,
+          "sizes_key_present": true,
+          "stored_realizations": 700
+        },
+        {
+          "L": 512,
+          "N": 262144,
+          "chis_shape": [
+            150
+          ],
+          "keys": [
+            "masses",
+            "chis",
+            "pinfs",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            150
+          ],
+          "p_inf_equals_masses_over_N_max_abs_delta": 0.0,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n150.npz",
+          "pinfs_shape": [
+            150
+          ],
+          "requested_n": 150,
+          "sizes_key_present": true,
+          "stored_realizations": 150
+        },
+        {
+          "L": 1024,
+          "N": 1048576,
+          "chis_shape": [
+            60
+          ],
+          "keys": [
+            "masses",
+            "chis",
+            "pinfs",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            60
+          ],
+          "p_inf_equals_masses_over_N_max_abs_delta": 0.0,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n60.npz",
+          "pinfs_shape": [
+            60
+          ],
+          "requested_n": 60,
+          "sizes_key_present": true,
+          "stored_realizations": 60
+        }
+      ],
+      "reproducible": "D_f, gamma/nu, beta/nu, the C7 same-stream subsample statistics, and the R3 algebraic identity regenerate from the four stored per-realization caches."
+    },
+    "EXP-0010": {
+      "C7": {
+        "historical_independent_implementation_artifact_present": false,
+        "note": "Stored sizes keys do not substitute for the missing separately implemented C7 execution.",
+        "required": "pure-Python union-find at L=127,253 (subsample n=30): per-realization M_max and chi bit-identical, D_f within 3 joint-SE",
+        "status": "INCONCLUSIVE_PREREGISTERED_CONTROL_ABSENT",
+        "stored_result_has_C7": false
+      },
+      "classification": "INCONCLUSIVE",
+      "corrected_statement": "EXP-0010 has an exactly reproducible pooled exploratory slope, but the LATTICE_ARTIFACT closure is unresolved/inconclusive and cannot be accepted under the frozen per-size and C7 requirements.",
+      "experiment_id": "EXP-0010",
+      "finding_id": "N-22",
+      "historical_label": "LATTICE_ARTIFACT",
+      "individual_size_gate": {
+        "D_f_by_L": null,
+        "available_per_L_quantities": [
+          "M_max realizations",
+          "mean M_max",
+          "SE of mean M_max",
+          "P_span"
+        ],
+        "reason": "The frozen text says D_f must be within tolerance at every non-power-of-two L, but it does not define a single-size estimator or fixed amplitude from which a D_f value at one L can be computed. The caches store M_max realizations per L, not an individual-size D_f. Choosing a pairwise, leave-one-out, or box-counting substitute after seeing results would be a new unregistered analysis.",
+        "status": "UNRESOLVED_NOT_IDENTIFIABLE"
+      },
+      "not_reproducible": "No preregistered individual-size D_f estimator is defined or stored, and the required C7 control was not executed/stored.",
+      "pooled_D_f": {
+        "classification": "EXPLORATORY_POOLED_SLOPE_NOT_PREREGISTERED_CLOSURE",
+        "max_abs_value_or_se_delta": 0.0,
+        "point_abs_deviation_from_expected": 0.0003649598746757743,
+        "point_pooled_slope_within_tolerance": true,
+        "point_tolerance": 0.015,
+        "recomputed_standard_error": 0.02843638397194058,
+        "recomputed_value": 1.896198293208009,
+        "stored_standard_error": 0.02843638397194058,
+        "stored_value": 1.896198293208009
+      },
+      "raw_cell_inventory": [
+        {
+          "L": 127,
+          "N": 16129,
+          "keys": [
+            "masses",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            200
+          ],
+          "mean_mass": 4174.385,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L127_n200.npz",
+          "requested_n": 200,
+          "sizes_key_present": true,
+          "standard_error_mass": 109.46253545031313,
+          "stored_realizations": 200
+        },
+        {
+          "L": 191,
+          "N": 36481,
+          "keys": [
+            "masses",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            200
+          ],
+          "mean_mass": 9491.41,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L191_n200.npz",
+          "requested_n": 200,
+          "sizes_key_present": true,
+          "standard_error_mass": 233.91660619281356,
+          "stored_realizations": 200
+        },
+        {
+          "L": 253,
+          "N": 64009,
+          "keys": [
+            "masses",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            200
+          ],
+          "mean_mass": 15656.795,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L253_n200.npz",
+          "requested_n": 200,
+          "sizes_key_present": true,
+          "standard_error_mass": 408.2692249793033,
+          "stored_realizations": 200
+        },
+        {
+          "L": 449,
+          "N": 201601,
+          "keys": [
+            "masses",
+            "k_v",
+            "N",
+            "P_span",
+            "sizes"
+          ],
+          "masses_shape": [
+            200
+          ],
+          "mean_mass": 46296.065,
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L449_n200.npz",
+          "requested_n": 200,
+          "sizes_key_present": true,
+          "standard_error_mass": 1228.2819841415524,
+          "stored_realizations": 200
+        }
+      ],
+      "reproducible": "The single pooled four-size D_f bootstrap and per-L mean masses regenerate exactly from stored caches."
+    }
+  },
+  "historical_integrity": {
+    "baseline_entries": [
+      {
+        "path": "04_SHARED_ENGINE/engine/utilities/core.py",
+        "sha256": "623b89d66bbece7bb519a4eee4ce794d58b607d41b35e1846d9576153d6c8988",
+        "size_bytes": 6884
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0006.json",
+        "sha256": "8b8c2aae57b2ee5cfc593996141408f5f449f7ab3e0d982dae3d68b968c679a0",
+        "size_bytes": 2774
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation.py",
+        "sha256": "448c4be29cd400b06b12cfe2e01145af4d661c018b8ad95b1dcfe7d9e3b5ea32",
+        "size_bytes": 21403
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+        "sha256": "9bc6db082fe99b31a2adf042fcbe0d77beee551ac41496816ce6190f101c34eb",
+        "size_bytes": 15854
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0006_summary.py",
+        "sha256": "9ec5ac0c149008c019de469a5b71b7848ad2684924dc3782021bae868dc32d93",
+        "size_bytes": 6683
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0006_experiment.json",
+        "sha256": "afb2b8308c57e2d995d58a668942dccec7219719f319b86008abe44268a41a7f",
+        "size_bytes": 32103
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+        "sha256": "eda5b0c77ad4fc62f9a7c34823be2deabed39f933f15e4854b30ca710836ae5a",
+        "size_bytes": 25825
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_summary.json",
+        "sha256": "6bac6eb58c2fc9323557a2c52f0691389791581909584f427d31db78e163230b",
+        "size_bytes": 10567
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0006.md",
+        "sha256": "9683b3adba686513e4ca1b1b2e1b1902d57e8b63b8357f26379053c831dc4ecf",
+        "size_bytes": 6256
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0006.md",
+        "sha256": "fb11f518d0e7c155aba54f527759d9c048ac38fd3ce174a6d0c0cc87cc0533fd",
+        "size_bytes": 2284
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py",
+        "sha256": "4dad6e29490499a0db41a72af125de7fd7188d22c152a2746cb3c23c7f95490b",
+        "size_bytes": 6851
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0006_report.json",
+        "sha256": "8e4fb188ae554e71bf5fe23624e6b15f2a9f6f0078bf3623049492852d3f7ea2",
+        "size_bytes": 10192
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/DIAGNOSTICS/EXP-0006_proposal.md",
+        "sha256": "a0b88c60b468772a162a69354eb6f0c5db43d98bf8a57f7abded1d17f7ac7a80",
+        "size_bytes": 3547
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0007.json",
+        "sha256": "d421d4a615aaaeca255c1e6b3234ad67c66c7c8121c5c27d286a95412451ad02",
+        "size_bytes": 2548
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0007.py",
+        "sha256": "53c5240c2318df321597a95be12d323e4e7a685ee0b13e13a07e2dddb733aa31",
+        "size_bytes": 16103
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0007_summary.py",
+        "sha256": "80e89e0de03d2293b270c7b7377359bdbcf149c96cb7b00b10a20f03b2e7b8f6",
+        "size_bytes": 8682
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0007_experiment.json",
+        "sha256": "c35c71ca7fa4557a00652296eb239e49ef11f852be57a6057d325d68b6237f37",
+        "size_bytes": 23903
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+        "sha256": "a09e4f204dfef9cab7dbe5bb5769f94093d09ecab45f9a90fe6bbff79552553b",
+        "size_bytes": 18813
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json",
+        "sha256": "7c994a98d80b865e3d5cc5f61921455f89e8856ce90bef1fc4bd5c20eaa38931",
+        "size_bytes": 6298
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L96.json",
+        "sha256": "38602b52b0ae36dc43e1e8991b6bc0fa12c54b85abe07daa9e9c8a05d532a463",
+        "size_bytes": 859
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L128.json",
+        "sha256": "50c3981b0a6ee6dacb2cad1e209c1dc09e92f3802efa673f5991a54759c9f277",
+        "size_bytes": 871
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md",
+        "sha256": "97cf2f9af8aa91550a856e99acb24ce2fb40407de56197719030b3897960b7af",
+        "size_bytes": 6894
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0007.md",
+        "sha256": "d1fde9762ae098c7f5124811b683fc72c971496c5c236931fa1bd441fcb041cc",
+        "size_bytes": 2317
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check_exp0007.py",
+        "sha256": "e8eb556f2b4462cf3b500ad08e4a84c254b66355fe22bafe4fd22d14a7b17f26",
+        "size_bytes": 6780
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0007_report.json",
+        "sha256": "57099fbdedf5ea05b1d474894c6da595967161cadaecb9faffa796ded42b855f",
+        "size_bytes": 25909
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0009.json",
+        "sha256": "7bc74dd0766d979a3bec62f70cfa053c14532f9068a1303338733e9a2e943339",
+        "size_bytes": 4281
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/EXP-0009_experiment.json",
+        "sha256": "eb0c7e9d672a798b69741f347d95a09a4f3973c360635fe06ba6ead81466841c",
+        "size_bytes": 333
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py",
+        "sha256": "5147bc5d519793a3bba5292a127a2de8ec025fe37f382f4d3bda779a14aa70df",
+        "size_bytes": 20816
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_results.json",
+        "sha256": "663f416fcace55a720b3aebc5c08602072700f0f1b025fde326f11163f3a630a",
+        "size_bytes": 7077
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_summary.json",
+        "sha256": "aa0bb33c93752453c38249d914706ef9e46c60e3f41334950e0b7e83183b7519",
+        "size_bytes": 7292
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L128_n1500.npz",
+        "sha256": "787b621b0c272718865be0257e044a4e22e7bbb343826af90049afbab9831271",
+        "size_bytes": 6079974
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L256_n700.npz",
+        "sha256": "03d2e6c63ef8218047ed46d0bc2eb73efa6e98850c1b743d2a6240352eaa9956",
+        "size_bytes": 10702759
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n150.npz",
+        "sha256": "24bd00f6509efa683ff975af02e82d8ea773c900a15285fda3e74a02ebb4e22c",
+        "size_bytes": 8914681
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n60.npz",
+        "sha256": "70fdc433cee432fad4757577c67eee87aa756f71636ded95ec2d636f43bed3db",
+        "size_bytes": 14038471
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py",
+        "sha256": "74c8a4413d72d0440a75f5101a7e082061c763b07352ed6a0f8357bd909b1aa5",
+        "size_bytes": 7052
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json",
+        "sha256": "fe80fad75edf9dabff41f0ae68e0bb4cfa6df8b822d848295d57a6d95065d18a",
+        "size_bytes": 1269
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json",
+        "sha256": "328c9d48abb0f6086575bb1f565f84f33354eab66ab5311e3ff5520aafd6f98f",
+        "size_bytes": 1692
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py",
+        "sha256": "6874cbdbc1def59f811acbb84bae295733ebcd637f9eea8bda20560c2ea87c02",
+        "size_bytes": 6471
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_results.json",
+        "sha256": "3461512287e9ad41f35c76ed3f2fee5816a5a3a03c5382e77d3f5687fcc45882",
+        "size_bytes": 1427
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_summary.json",
+        "sha256": "e8b5c1ff4707f3e3227c329241d8b935eb75c32bf1954ccef13137d7a75a2299",
+        "size_bytes": 1621
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L127_n200.npz",
+        "sha256": "b660de93abc733fad230120ec5dd4dfe46cbf8fd0fdcf9aa31d03b73d0d478bc",
+        "size_bytes": 794364
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L191_n200.npz",
+        "sha256": "f6f34a9a419d873bc41ba0cd1eb5f474bc577eec6a7e24fb27b2bdf11603c9c6",
+        "size_bytes": 1729961
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L253_n200.npz",
+        "sha256": "daf07b0afb2e6176dead21195a3bc53a146581b9ac3e5ddbe967c7cf8ed1e5d8",
+        "size_bytes": 2977496
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L449_n200.npz",
+        "sha256": "d1ff5ec04f14ebb286f4f80b92539f9f11cedb38bd7e2590db475d1cd826587c",
+        "size_bytes": 9155196
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPORT.md",
+        "sha256": "a0eae010549dc7f75607241e12c2c1bbbeec34ee96ba2cddec44ce1c313f44b1",
+        "size_bytes": 5998
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONTROLS.md",
+        "sha256": "72c456ddde90a1d64726d97a63dca0d71e269c5cc3d0500c0743e8ef4a1a2d43",
+        "size_bytes": 2513
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/registry.jsonl",
+        "sha256": "b26a2f31cd2ab4bbe35bc66b9a84d72e2a4ccb4afffdaa8cf1b9f6119e4c2520",
+        "size_bytes": 761
+      },
+      {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+        "sha256": "68112acf670e593eae9a5212bb754ea42fbbb6ecc6b6157833c5732ce6dda5ff",
+        "size_bytes": 1518
+      },
+      {
+        "path": "EXPERIMENT_REGISTRY.md",
+        "sha256": "888f11e1b9ac44f44e934fdb8ae641df197bb10d848cc9f85eab76b1aa2e809a",
+        "size_bytes": 17841
+      },
+      {
+        "path": "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/MAIN_AUDIT/SECOND_PASS_REPORT.md",
+        "sha256": "33f043207765681255e2be0382f48dbc3a4a0f9c661e3bb3f16e25fd5688d29e",
+        "size_bytes": 28085
+      },
+      {
+        "path": "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/MAIN_AUDIT/second_pass_findings.json",
+        "sha256": "17dc8d11422f299e8598e0ae4c102f1f9b31187f1a09b87e95b939d25df839b3",
+        "size_bytes": 17355
+      }
+    ],
+    "before_after_entries_identical": true,
+    "files_checked": 51,
+    "status": "UNCHANGED_DURING_ANALYSIS"
+  },
+  "production_guard": {
+    "expensive_runs_launched": [],
+    "historical_controls_fabricated": [],
+    "post_hoc_estimators_added": [],
+    "status": "NO_PRODUCTION_CALCULATION"
+  },
+  "schema": "historical-2d-percolation-n04-n05-n19-n21-n22-v1",
+  "scope": {
+    "evidence_baseline": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CONFIG/historical_evidence_baseline.json",
+    "experiment_ids": [
+      "EXP-0006",
+      "EXP-0007",
+      "EXP-0009",
+      "EXP-0010"
+    ],
+    "finding_ids": [
+      "N-04",
+      "N-05",
+      "N-19",
+      "N-21",
+      "N-22"
+    ],
+    "historical_files_written": false,
+    "historical_registry_rows_written": false,
+    "monte_carlo_generations_launched": false,
+    "production_calculations_launched": false,
+    "scope_config": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CONFIG/audit_scope.json"
+  }
+}

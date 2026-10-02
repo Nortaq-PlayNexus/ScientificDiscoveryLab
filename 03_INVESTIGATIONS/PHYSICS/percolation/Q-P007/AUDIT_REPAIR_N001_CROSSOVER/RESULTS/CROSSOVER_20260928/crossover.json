@@ -1,0 +1,245 @@
+{
+  "claim_guards": [
+    "No new physics is claimed. This is a diagnostic of whether an existing escalation can be attributed to finite-size crossover.",
+    "A CROSSOVER_SUPPORTED result does not resolve Q-P007; it relocates the question to larger L and states what would be needed there.",
+    "The N-001 production decision DEVIATION_FROM_FISHER is not edited, reversed, or softened by this diagnostic.",
+    "No novelty claim, and nothing here bears on any other experiment in the laboratory.",
+    "The Fisher value 187/91 is a two-dimensional known result and is used only as the reference to compare against.",
+    "If the slope interval includes zero, the outcome is CROSSOVER_NOT_ESTABLISHED, and reporting that as convergence would be a false positive for the hypothesis this diagnostic was written to test."
+  ],
+  "decision": {
+    "curvature_present": true,
+    "interpretation": "The finite-size-crossover explanation is not supported by the stored data, so the deviation is unexplained at these sizes and requires larger L than 1024, not a repeat of N-001.",
+    "preregistered_order_satisfied": false,
+    "status": "CROSSOVER_NOT_ESTABLISHED"
+  },
+  "disclosure": "IMPORTANT AND NOT DISCLOSED-FREE. Before this preregistration was written I had already read the four window fits stored in N001_production_summary.json, whose cumulative tau values are 1.93585 (s in [16,512]), 1.92009 (s in [32,4096]), 1.92828 (s in [32,2048]) and 1.91207 (s in [64,4096]). I had also read that the cumulative and histogram estimators of the same window disagree, 1.92009 versus 1.70277. So the existence of some window dependence and of estimator disagreement was already visible. This preregistration is therefore INFORMED, not blind, and is labelled as such. What had NOT been seen, and is the genuinely pre-specified primary test here, is any per-L value of tau. The primary statistic below is therefore novel at the time of freezing, and the directional prediction in 'primary_prediction' is derived from finite-size theory rather than from any number computed here.",
+  "fisher_tau": 2.0549450549450547,
+  "l_trend": {
+    "crossing_beyond_1024": true,
+    "crossing_beyond_1024_is_meaningful": false,
+    "deviation_from_fisher": [
+      -0.1518877562111327,
+      -0.16513358545414114,
+      -0.13485896004562004
+    ],
+    "excludes_zero_increasing_direction": false,
+    "extrapolated_L_at_fisher": 108327912.83235885,
+    "extrapolated_ln_L_at_fisher": 18.50067341498048,
+    "extrapolation_caveat": "The extrapolated L is a purely arithmetic consequence of a fitted slope. When the slope interval includes zero the slope is not distinguishable from no drift at all, and the extrapolated L is meaningless: it would diverge as the slope goes to zero. It is retained for transparency only and must not be quoted as a required system size.",
+    "extrapolation_is_meaningful": false,
+    "fisher_tau": 2.0549450549450547,
+    "intercept": 1.827688704963284,
+    "monotonic_increasing": false,
+    "power_caveat": "Only three sizes spanning a factor of four in L are available, so this slope test has low power against a slow drift. NOT ESTABLISHED is not the same as excluded: a weak crossover that only bites above L = 1024 would not be visible here. What is excluded is a crossover large enough to explain the deviation within this size range.",
+    "residual_tau_rms": 0.010257869534806003,
+    "sizes": [
+      256,
+      512,
+      1024
+    ],
+    "slope_ci95": [
+      -0.023241264847067657,
+      0.04780862462736143
+    ],
+    "slope_standard_error": 0.0181249718047013,
+    "slope_tau_per_log_L": 0.012283679890146885,
+    "status": "COMPUTED",
+    "tau": [
+      1.903057298733922,
+      1.8898114694909136,
+      1.9200860948994347
+    ]
+  },
+  "paired_threshold_check": {
+    "max_abs_delta": 0.0007204693940576767,
+    "note": "arms share seeds by construction, so differences are paired, not independent",
+    "rows": [
+      {
+        "L": 256,
+        "delta_tau_refined_minus_canonical": -0.0007204693940576767
+      },
+      {
+        "L": 512,
+        "delta_tau_refined_minus_canonical": -7.11540058153659e-05
+      },
+      {
+        "L": 1024,
+        "delta_tau_refined_minus_canonical": -2.8023964806278556e-05
+      }
+    ]
+  },
+  "per_size_canonical": {
+    "arm": "canonical",
+    "cells": [
+      {
+        "L": 256,
+        "bootstrap": {
+          "block": "realization",
+          "ci95": [
+            1.8748178042948367,
+            1.9322351041612984
+          ],
+          "draws_accepted": 2000,
+          "draws_rejected": 0,
+          "draws_requested": 2000,
+          "mean": 1.9030727439738617,
+          "standard_deviation": 0.014664453244116176
+        },
+        "chi2_reduced_diagnostic": 0.040649242723932125,
+        "deviation_from_fisher": -0.1518877562111327,
+        "fit_points": 245,
+        "realizations": 100,
+        "scorable": true,
+        "slope_standard_error": 0.00913978121680084,
+        "tail_clusters": 188821,
+        "tau": 1.903057298733922,
+        "used_window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "L": 512,
+        "bootstrap": {
+          "block": "realization",
+          "ci95": [
+            1.871849360492352,
+            1.909022966766545
+          ],
+          "draws_accepted": 2000,
+          "draws_rejected": 0,
+          "draws_requested": 2000,
+          "mean": 1.889940086933709,
+          "standard_deviation": 0.009499583744457883
+        },
+        "chi2_reduced_diagnostic": 0.015987395295951477,
+        "deviation_from_fisher": -0.16513358545414114,
+        "fit_points": 245,
+        "realizations": 100,
+        "scorable": true,
+        "slope_standard_error": 0.006564308193763565,
+        "tail_clusters": 740653,
+        "tau": 1.8898114694909136,
+        "used_window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "L": 1024,
+        "bootstrap": {
+          "block": "realization",
+          "ci95": [
+            1.9063153969467388,
+            1.9326388937390233
+          ],
+          "draws_accepted": 2000,
+          "draws_rejected": 0,
+          "draws_requested": 2000,
+          "mean": 1.9198078491020274,
+          "standard_deviation": 0.006626555126919833
+        },
+        "chi2_reduced_diagnostic": 0.03785760592091501,
+        "deviation_from_fisher": -0.13485896004562004,
+        "fit_points": 245,
+        "realizations": 50,
+        "scorable": true,
+        "slope_standard_error": 0.00571614329948506,
+        "tail_clusters": 1462967,
+        "tau": 1.9200860948994347,
+        "used_window": [
+          32,
+          4096
+        ]
+      }
+    ],
+    "window": [
+      32,
+      4096
+    ]
+  },
+  "prereg_experiment_id": "N001-CROSSOVER-DIAGNOSTIC",
+  "prereg_sha256": "de231ef64d0dbf7735f0f0840a76f1bb23db309ca9f7b7f454a4ab8b6f4b06f2",
+  "primary_window": [
+    32,
+    4096
+  ],
+  "reproduction_control": {
+    "abs_delta": 0.0,
+    "active_L_tail_clusters": 1462967,
+    "active_tau_L": 1024,
+    "note": "The estimator was re-implemented from its written specification, not imported from the production runner, so exact agreement is an independent-implementation control rather than a tautology.",
+    "pooled_across_all_L_tau": 1.9085636207136152,
+    "pooling_scope_shift": -0.011522474185819531,
+    "reproduces_stored_value": true,
+    "stored_production_tau": 1.9200860948994347,
+    "this_implementation_tau": 1.9200860948994347
+  },
+  "schema": "n001-crossover-diagnostic-v1",
+  "stored_data_guard": {
+    "manifest_pairing_label": {
+      "canonical_refined_aligned_by_realization_id": true,
+      "common_uniform_field_per_realization": true,
+      "iid_cluster_bootstrap": false
+    },
+    "manifest_pairing_label_note": "the manifest's pairing field carries the literal text 'iid_cluster_bootstrap'. The production code actually resamples realization blocks (resampling_unit='realization_block', block_size=1, which is one realization per block), so the label is stale text and not the method. Recorded rather than corrected, because the manifest is a historical artifact.",
+    "manifest_recorded_sha256": "9f421d06732d1d0582974b47ca81b70a760e0cf13f52988ff37995b7904f74ce",
+    "raw_database": "N001_production_raw.sqlite3",
+    "raw_sha256": "9f421d06732d1d0582974b47ca81b70a760e0cf13f52988ff37995b7904f74ce",
+    "raw_unmodified": true
+  },
+  "window_curvature": {
+    "all_windows_reproduce_stored": true,
+    "cumulative_spread": 0.023777928979577867,
+    "max_estimator_disagreement": 0.30510883600492167,
+    "note": "For an exact power law the cumulative and histogram estimators agree. Their disagreement, and the spread of the cumulative value across windows, are direct measures of curvature.",
+    "pooling_scope": "L = 1024 only, matching the production sensitivity fits",
+    "rows": [
+      {
+        "cumulative_reproduces_stored": true,
+        "cumulative_tau": 1.9358495400581301,
+        "estimator_disagreement": 0.030182311764633818,
+        "histogram_tau": 1.966031851822764,
+        "stored_cumulative_tau": 1.9358495400581301,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "cumulative_reproduces_stored": true,
+        "cumulative_tau": 1.9200860948994347,
+        "estimator_disagreement": 0.2173174343804869,
+        "histogram_tau": 1.7027686605189478,
+        "stored_cumulative_tau": 1.9200860948994347,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "cumulative_reproduces_stored": true,
+        "cumulative_tau": 1.9282779920681603,
+        "estimator_disagreement": 0.08166483148080395,
+        "histogram_tau": 1.8466131605873564,
+        "stored_cumulative_tau": 1.9282779920681603,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "cumulative_reproduces_stored": true,
+        "cumulative_tau": 1.9120716110785523,
+        "estimator_disagreement": 0.30510883600492167,
+        "histogram_tau": 1.6069627750736306,
+        "stored_cumulative_tau": 1.9120716110785523,
+        "window": [
+          64,
+          4096
+        ]
+      }
+    ]
+  }
+}

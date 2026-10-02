@@ -1,0 +1,56 @@
+{
+  "experiment": "EXP-0011",
+  "L_list": [
+    8,
+    16,
+    24
+  ],
+  "n_real": {
+    "8": 500,
+    "16": 200,
+    "24": 50
+  },
+  "p_c_ziff": 0.3116079,
+  "p_c_refined": 0.29703121516164993,
+  "p_c_canon_used": true,
+  "p_c_note": "width curves at L in {8,16,24} converge slowly from above; using canon p_c for exponent measurement",
+  "p_c_measures": {
+    "8": 0.4183333333333334,
+    "16": 0.3652173913043478,
+    "24": 0.333
+  },
+  "bootstrap_draws": 2000,
+  "exponents": {
+    "Df": {
+      "mean": 2.261721777993401,
+      "se": 0.10216055466446529,
+      "expected": 2.53,
+      "tol": 0.1
+    },
+    "gamma_nu": {
+      "mean": 1.6333208827942434,
+      "se": 0.14650037487861275,
+      "expected": 1.4,
+      "tol": 0.08
+    },
+    "beta_nu": {
+      "mean": 0.7363552723844693,
+      "se": 0.09646735836004953,
+      "expected": 0.41,
+      "tol": 0.05
+    }
+  },
+  "tau": {
+    "mean": null,
+    "se": null,
+    "expected": 2.19,
+    "tol": 0.1,
+    "fit_range": [
+      4,
+      1000
+    ],
+    "tau_L": 24
+  },
+  "tau_cum_chi2_red": null,
+  "elapsed": 8.37174677848816
+}

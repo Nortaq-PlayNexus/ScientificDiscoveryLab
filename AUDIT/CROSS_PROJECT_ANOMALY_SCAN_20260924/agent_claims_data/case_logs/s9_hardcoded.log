@@ -1,0 +1,89 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "s9_hardcoded": {
+      "ok": true,
+      "evidence": {
+        "literal_writer_lines": [
+          "save_q9results.py:8",
+          "save_q9results.py:30"
+        ],
+        "q_s9_1_rates": [
+          [
+            1.0,
+            0.195
+          ],
+          [
+            0.1,
+            0.0567
+          ],
+          [
+            0.05,
+            0.0617
+          ],
+          [
+            0.01,
+            0.0517
+          ],
+          [
+            0.0,
+            0.0517
+          ]
+        ],
+        "monotonicity_violations_in_stored_order": [
+          [
+            1.0,
+            0.1
+          ],
+          [
+            0.05,
+            0.01
+          ]
+        ],
+        "q_s9_3_corrections": {
+          "A_speckle_20pct": {
+            "raw": 0.2233,
+            "unbiased": 0.2033,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05
+            }
+          },
+          "B_speckle_0pct": {
+            "raw": 0.2081,
+            "unbiased": 0.1895,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05
+            }
+          },
+          "C_noise_0pct": {
+            "raw": 0.0531,
+            "unbiased": 0.0569,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05,
+              "wavelength": 0.85
+            }
+          },
+          "D_grating_0pct": {
+            "raw": 0.3261,
+            "unbiased": 0.2969,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05
+            }
+          }
+        },
+        "q_s9_3_wavelength_factor": 0.85,
+        "wavelength_relative_change_percent": 15.000000000000002,
+        "missing_cited_script": true,
+        "report_claims": [
+          "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md:47",
+          "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-3.md:31"
+        ],
+        "writer": "\"\"\"Save Q-S9-1 and Q-S9-3 results as JSON.\"\"\"\nimport json, os, sys\n\n# Run Q-S9-1 and capture results\nimport numpy as np\n\n# --- Q-S9-1 results ---\nq_s9_1_results = {\n    \"experiment\": \"Q-S9-1 Minimum spectral structure for pareidolia\",\n    \"parent\": \"┬º9 battery (dmt-laser-s9-battery)\",\n    \"method\": \"Speckle images with decreasing spectral complexity (FFT peak retention), measured 'code present' detection rate at each level\",\n    \"complexity_levels\": [\n        {\"name\": \"full_speckle\", \"complexity\": 1.0, \"code_rate\": 0.1950},\n        {\"name\": \"sparse_10pct\", \"complexity\": 0.10, \"code_rate\": 0.0567},\n        {\"name\": \"sparse_5pct\", \"complexity\": 0.05, \"code_rate\": 0.0617},\n        {\"name\": \"sparse_1pct\", \"complexity\": 0.01, \"code_rate\": 0.0517},\n        {\"name\": \"sparse_0pct\", \"complexity\": 0.0, \"code_rate\": 0.0517},\n    ],\n    \"baseline_rate\": 0.05,\n    \"threshold_analysis\": {\n        \"criterion\": \"rate > baseline + 0.01\",\n        \"threshold_complexity\": 0.05,\n        \"threshold_pct_of_FFT_bins\": 5,\n    },\n    \"key_finding\": \"Pareidolia detection threshold at complexity >= 0.05 (5% of FFT bins). Below threshold: baseline ~5%. Above: detection increases with complexity.\",\n    \"note\": \"ACTIVE_PROJECT.md stated 'complexity >= 0.10'. Actual computation gives threshold at 0.05 using rate > baseline + 0.01 criterion.\",\n}\n\n# --- Q-S9-3 results ---\nq_s9_3_results = {\n    \"experiment\": \"Q-S9-3 Detector de-biasing experiment\",\n    \"parent\": \"┬º9 battery (dmt-laser-s9-battery)\",\n    \"method\": \"Apply de-biasing corrections (wavelength, spatial frequency, temporal) to observed detection rates, re-test A==B and re-fit dose-response\",\n    \"observed_rates\": {\n        \"A_speckle_20pct\": {\"raw\": 0.2233, \"unbiased\": 0.2033, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050}},\n        \"B_speckle_0pct\": {\"raw\": 0.2081, \"unbiased\": 0.1895, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050}},\n        \"C_noise_0pct\": {\"raw\": 0.0531, \"unbiased\": 0.0569, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050, \"wavelength\": 0.850}},\n        \"D_grating_0pct\": {\"raw\": 0.3261, \"unbiased\": 0.2969, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050}},\n    },\n    \"A_minus_B\": {\"raw\": 0.0152, \"unbiased\": 0.0138},\n    \"dose_response_debiased\": {\n        \"doses\": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],\n        \"raw_rates\": [0.2050, 0.2533, 0.3536, 0.4465, 0.5141, 0.5601, 0.5914, 0.6131, 0.6285, 0.6397, 0.6481],\n        \"unbiased_rates\": [0.1867, 0.2533, 0.3536, 0.4465, 0.5141, 0.5601, 0.5914, 0.6131, 0.6285, 0.6397, 0.6481],\n    },\n    \"unbiased_hill_fit\": {\n        \"baseline\": 0.1882,\n        \"max_inflation\": 0.5095,\n        \"EC50\": 29.38,\n        \"n_Hill\": 1.845,\n        \"raw_was\": {\"baseline\": 0.2050, \"max_inflation\": 0.5130, \"EC50\": 32.6, \"n_Hill\": 1.745},\n    },\n    \"key_finding\": \"De-biasing corrections <5% per factor. A==B robust to de-biasing (A and B share wavelength 650nm). Dose-response shape preserved. REBUS NOT an artifact of detector bias.\",\n}\n\ns9_dir = r\"code\\dmt-laser-s9-battery\"\nos.makedirs(s9_dir, exist_ok=True)\nwith open(os.path.join(s9_dir, \"q_s9_1_results.json\"), \"w\") as f:\n    json.dump(q_s9_1_results, f, indent=2)\nprint(f\"Saved {s9_dir}\\\\q_s9_1_results.json\")\n\nwith open(os.path.join(s9_dir, \"q_s9_3_results.json\"), \"w\") as f:\n    json.dump(q_s9_3_results, f, indent=2)\nprint(f\"Saved {s9_dir}\\\\q_s9_3_results.json\")\n"
+      }
+    }
+  }
+}

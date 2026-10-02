@@ -1,0 +1,141 @@
+{
+  "cells": [
+    {
+      "applicability": {
+        "applicable_seeds": 0,
+        "condition": "abs(pi - 0.5) >= 2 / sqrt(n - 1)",
+        "mean_abs_pi_minus_half": 0.000815277099609375,
+        "min_required_for_scorability": 5,
+        "seeds_tested": 200,
+        "tau": 0.003906257450601913
+      },
+      "bit_length": "2^18",
+      "generator": "G_LAB",
+      "historical_n004_status": "calibrated",
+      "n_bits": 262144,
+      "seeds": 200,
+      "status_changed": true,
+      "status_of_record": "UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION",
+      "variants": [
+        {
+          "ks_pvalue": 1.413018490682507e-05,
+          "ks_stat": 0.1708918844930988,
+          "mean_p": 0.5991484771790269,
+          "median_p": 0.6225486371247282,
+          "n": 200,
+          "observed_rate": 0.0,
+          "rejections_at_alpha": 0,
+          "scorable": true,
+          "uniform_rejected": true,
+          "variant": "as_implemented"
+        },
+        {
+          "ks_pvalue": 0.3431063910057516,
+          "ks_stat": 0.06546767101963413,
+          "mean_p": 0.48845426517039187,
+          "median_p": 0.48635487719078646,
+          "n": 200,
+          "observed_rate": 0.005,
+          "rejections_at_alpha": 1,
+          "scorable": true,
+          "uniform_rejected": false,
+          "variant": "sqrt2_corrected"
+        },
+        {
+          "ks_pvalue": null,
+          "ks_stat": null,
+          "mean_p": null,
+          "n": 0,
+          "rejections_at_alpha": null,
+          "scorable": false,
+          "scorable_reason": "only 0 scorable p-values, below the 8 needed for a KS test",
+          "uniform_rejected": null,
+          "variant": "sqrt2_corrected_and_applicability_gated"
+        }
+      ]
+    },
+    {
+      "applicability": {
+        "applicable_seeds": 0,
+        "condition": "abs(pi - 0.5) >= 2 / sqrt(n - 1)",
+        "mean_abs_pi_minus_half": 0.00020147323608398437,
+        "min_required_for_scorability": 5,
+        "seeds_tested": 200,
+        "tau": 0.0009765626164153426
+      },
+      "bit_length": "2^22",
+      "generator": "G_LAB",
+      "historical_n004_status": "calibrated",
+      "n_bits": 4194304,
+      "seeds": 200,
+      "status_changed": true,
+      "status_of_record": "UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION",
+      "variants": [
+        {
+          "ks_pvalue": 8.811143153118756e-06,
+          "ks_stat": 0.17425444789716432,
+          "mean_p": 0.6034527090283376,
+          "median_p": 0.6240907462842484,
+          "n": 200,
+          "observed_rate": 0.0,
+          "rejections_at_alpha": 0,
+          "scorable": true,
+          "uniform_rejected": true,
+          "variant": "as_implemented"
+        },
+        {
+          "ks_pvalue": 0.9557984550564073,
+          "ks_stat": 0.03541019142640739,
+          "mean_p": 0.49299067918460154,
+          "median_p": 0.48827835425442845,
+          "n": 200,
+          "observed_rate": 0.015,
+          "rejections_at_alpha": 3,
+          "scorable": true,
+          "uniform_rejected": false,
+          "variant": "sqrt2_corrected"
+        },
+        {
+          "ks_pvalue": null,
+          "ks_stat": null,
+          "mean_p": null,
+          "n": 0,
+          "rejections_at_alpha": null,
+          "scorable": false,
+          "scorable_reason": "only 0 scorable p-values, below the 8 needed for a KS test",
+          "uniform_rejected": null,
+          "variant": "sqrt2_corrected_and_applicability_gated"
+        }
+      ]
+    }
+  ],
+  "decision_rule_verbatim": {
+    "CALIBRATED": "the variant's p-values are not rejected against uniformity AND the SP 800-22 applicability precondition is met by a non-trivial fraction of seeds (at least 5 of 200)",
+    "MISCALIBRATED": "the variant's p-values are rejected against uniformity at KS p <= 0.01",
+    "UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION": "the applicability precondition is met by fewer than 5 of 200 seeds, so the test cannot be scored as a uniform p-value instrument at this length. Per the N-004 preregistration, UNRESOLVED_AT_THIS_RESOLUTION is a real outcome and must not be reported as agreement.",
+    "recorded_cell_should_be": "one of CALIBRATED, MISCALIBRATED, or UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION",
+    "status_of_record": "the status that should replace N-004's 'calibrated' is the status of the sqrt2_corrected_and_applicability_gated variant, because that is the variant which honours the standard. The other two are recorded as diagnostics explaining the history."
+  },
+  "prereg_experiment_id": "T03-RECALIBRATION",
+  "prereg_sha256": "3d03a118ff948b99ce512a7c905a4815ed93a3e9ac78ffa03ee358250d8cd052",
+  "schema": "t03-runs-recalibration-v1",
+  "shared_battery_guard": {
+    "battery_unmodified_since_n004": true,
+    "n004_recorded_battery_sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e",
+    "shared_battery_sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e"
+  },
+  "verdict": {
+    "must_not_claim": [
+      "that G_LAB failed a test; it did not, the test was unusable",
+      "that any generator is certified",
+      "that the EXP-0004 certificate is reinstated",
+      "that the defect's non-detection at 2^22 shows the estimator is fine"
+    ],
+    "n004_per_test_claim_correction": "N-004 recorded 0 of 24 tests miscalibrated for G_LAB, counting T03_runs as calibrated. The corrected status is UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION at both lengths, so the accurate statement is 23 of 24 per-test cells calibrated, 0 miscalibrated, and 1 unresolvable because the standard's own precondition is never met.",
+    "sqrt2_alone_explains": "the difference between the as-implemented and corrected uniformity is the entire recorded non-uniformity",
+    "status_of_record": [
+      "UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION",
+      "UNRESOLVED_NOT_APPLICABLE_AT_THIS_RESOLUTION"
+    ]
+  }
+}

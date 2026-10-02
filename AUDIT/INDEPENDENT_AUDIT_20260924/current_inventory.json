@@ -1,0 +1,3235 @@
+{
+  "generated_utc": "2026-09-23T18:26:34.530123+00:00",
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "file_count_excluding_caches": 633,
+  "total_bytes_excluding_caches": 225411614,
+  "extensions": {
+    ".bat": 4,
+    ".csv": 11,
+    ".db": 1,
+    ".err": 3,
+    ".html": 1,
+    ".ini": 1,
+    ".json": 116,
+    ".jsonl": 8,
+    ".log": 40,
+    ".md": 262,
+    ".npz": 20,
+    ".png": 4,
+    ".py": 150,
+    ".rar": 1,
+    ".sha256": 2,
+    ".txt": 8,
+    "<none>": 1
+  },
+  "python_files_parsed": 149,
+  "python_syntax_errors": 1,
+  "syntax_error_details": [
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz.py",
+      "error": "SyntaxError('invalid non-printable character U+FEFF', ('<unknown>', 1, 1, '\\ufeffimport json', 1, 1))"
+    }
+  ],
+  "top_level_counts": {
+    "CHANGELOG.md": 1,
+    "create_q006_docs.py": 1,
+    "create_q007_docs.py": 1,
+    "CURRENT_STATUS.md": 1,
+    "dashboard.html": 1,
+    "dashboard.py": 1,
+    "DISCOVERY_LOG.md": 1,
+    "EXPERIMENT_REGISTRY.md": 1,
+    "fix_q006_cells.py": 1,
+    "HYPOTHESES.md": 1,
+    "MASTER_INDEX.md": 1,
+    "pytest.ini": 1,
+    "Q-P007_phase2.log": 1,
+    "QUESTIONS.md": 1,
+    "README.md": 1,
+    "REPRODUCIBILITY.md": 1,
+    "requirements.txt": 1,
+    "RESEARCH_RULES.md": 1,
+    "save_audits.py": 1,
+    "save_q9results.py": 1,
+    "sovereign_biolab.db": 1,
+    "00_FOUNDATION": 5,
+    "01_RESEARCH_MAP": 16,
+    "02_CANDIDATE_PROBLEMS": 5,
+    "04_SHARED_ENGINE": 21,
+    "05_EXTERNAL_RESEARCHER_DOSSIER": 11,
+    "AUDIT": 188,
+    "CODE": 4,
+    "DIAGNOSTICS": 2,
+    "docs": 5,
+    "src": 33,
+    "tests": 29,
+    "03_INVESTIGATIONS": 293
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 13863,
+      "extension": ".md"
+    },
+    {
+      "path": "create_q006_docs.py",
+      "size_bytes": 6857,
+      "extension": ".py"
+    },
+    {
+      "path": "create_q007_docs.py",
+      "size_bytes": 3101,
+      "extension": ".py"
+    },
+    {
+      "path": "CURRENT_STATUS.md",
+      "size_bytes": 14086,
+      "extension": ".md"
+    },
+    {
+      "path": "dashboard.html",
+      "size_bytes": 2250,
+      "extension": ".html"
+    },
+    {
+      "path": "dashboard.py",
+      "size_bytes": 5742,
+      "extension": ".py"
+    },
+    {
+      "path": "DISCOVERY_LOG.md",
+      "size_bytes": 5509,
+      "extension": ".md"
+    },
+    {
+      "path": "EXPERIMENT_REGISTRY.md",
+      "size_bytes": 16622,
+      "extension": ".md"
+    },
+    {
+      "path": "fix_q006_cells.py",
+      "size_bytes": 983,
+      "extension": ".py"
+    },
+    {
+      "path": "HYPOTHESES.md",
+      "size_bytes": 2802,
+      "extension": ".md"
+    },
+    {
+      "path": "MASTER_INDEX.md",
+      "size_bytes": 3309,
+      "extension": ".md"
+    },
+    {
+      "path": "pytest.ini",
+      "size_bytes": 119,
+      "extension": ".ini"
+    },
+    {
+      "path": "Q-P007_phase2.log",
+      "size_bytes": 1828,
+      "extension": ".log"
+    },
+    {
+      "path": "QUESTIONS.md",
+      "size_bytes": 5481,
+      "extension": ".md"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3042,
+      "extension": ".md"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "size_bytes": 2006,
+      "extension": ".md"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 369,
+      "extension": ".txt"
+    },
+    {
+      "path": "RESEARCH_RULES.md",
+      "size_bytes": 5203,
+      "extension": ".md"
+    },
+    {
+      "path": "save_audits.py",
+      "size_bytes": 6171,
+      "extension": ".py"
+    },
+    {
+      "path": "save_q9results.py",
+      "size_bytes": 3388,
+      "extension": ".py"
+    },
+    {
+      "path": "sovereign_biolab.db",
+      "size_bytes": 184320,
+      "extension": ".db"
+    },
+    {
+      "path": "00_FOUNDATION/falsification_rules.md",
+      "size_bytes": 2822,
+      "extension": ".md"
+    },
+    {
+      "path": "00_FOUNDATION/scientific_method.md",
+      "size_bytes": 2081,
+      "extension": ".md"
+    },
+    {
+      "path": "00_FOUNDATION/simulation_rules.md",
+      "size_bytes": 2559,
+      "extension": ".md"
+    },
+    {
+      "path": "00_FOUNDATION/statistics_basics.md",
+      "size_bytes": 2665,
+      "extension": ".md"
+    },
+    {
+      "path": "00_FOUNDATION/terminology_plain_english.md",
+      "size_bytes": 3501,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/README.md",
+      "size_bytes": 689,
+      "extension": ".md"
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md",
+      "size_bytes": 57271,
+      "extension": ".md"
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/NEXT_BATCH_20260919.md",
+      "size_bytes": 14805,
+      "extension": ".md"
+    },
+    {
+      "path": "04_SHARED_ENGINE/experiment_template.md",
+      "size_bytes": 2058,
+      "extension": ".md"
+    },
+    {
+      "path": "04_SHARED_ENGINE/README.md",
+      "size_bytes": 1857,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/CURRENT_OPEN_QUESTIONS.md",
+      "size_bytes": 5639,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/DATA_INDEX.md",
+      "size_bytes": 5188,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/DOSSIER_BUILD_REPORT.md",
+      "size_bytes": 5874,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/EXECUTIVE_SUMMARY.md",
+      "size_bytes": 3169,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/EXPERIMENT_TIMELINE.md",
+      "size_bytes": 6268,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/FOLLOWUP_EMAIL.md",
+      "size_bytes": 4103,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/KEY_RESULTS.md",
+      "size_bytes": 5266,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/METHODS_AND_CONTROLS.md",
+      "size_bytes": 6451,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/NEGATIVE_AND_DIAGNOSTIC_RESULTS.md",
+      "size_bytes": 4845,
+      "extension": ".md"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/PROFESSOR_SWARTZLANDER_PROGRESS_DOSSIER.md",
+      "size_bytes": 29188,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/AUDIT_LOG.md",
+      "size_bytes": 17559,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/BUGS.md",
+      "size_bytes": 12073,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/checksums.sha256",
+      "size_bytes": 3173,
+      "extension": ".sha256"
+    },
+    {
+      "path": "AUDIT/CLAIM_LANGUAGE_AUDIT.md",
+      "size_bytes": 6594,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/CLAIM_REGISTRY.md",
+      "size_bytes": 9934,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/CURRENT_STATUS.md_AUDIT_20260923.md",
+      "size_bytes": 14086,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/CURRENT_STATUS.md_AUDIT_20260924.md",
+      "size_bytes": 3468,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/DEPENDENCY_MAP.md",
+      "size_bytes": 10902,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/DISCOVERY_PLAN.md",
+      "size_bytes": 2790,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/DISCOVERY_SUMMARY.md",
+      "size_bytes": 6216,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/DO_NOT_CLAIM.md",
+      "size_bytes": 5752,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/environment.txt",
+      "size_bytes": 2125,
+      "extension": ".txt"
+    },
+    {
+      "path": "AUDIT/EXPERIMENT_REGISTER.md",
+      "size_bytes": 9135,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/FAILURE_HISTORY.md",
+      "size_bytes": 8842,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/FINAL_SCIENTIFIC_AUDIT.md",
+      "size_bytes": 12051,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/FINAL_SCIENTIFIC_AUDIT_REPORT.md",
+      "size_bytes": 9928,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/INVESTIGATION_TIMELINE.md",
+      "size_bytes": 7357,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/MASTER_EVIDENCE_MATRIX.md",
+      "size_bytes": 7110,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/NEXT_EXPERIMENTS.md",
+      "size_bytes": 7240,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/NOVELTY_REVIEW.md",
+      "size_bytes": 10224,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/POTENTIAL_DISCOVERIES.md",
+      "size_bytes": 6906,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PROJECT_INVENTORY.md",
+      "size_bytes": 6251,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/RAW_DATA_FINDINGS.md",
+      "size_bytes": 7946,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REPOSITORY_COMPARISON.md",
+      "size_bytes": 6404,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REPRODUCE.md",
+      "size_bytes": 7181,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REPRODUCTION_MATRIX.md",
+      "size_bytes": 8153,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REPRODUCTION_MATRIX_V2.md",
+      "size_bytes": 8324,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/results_manifest.json",
+      "size_bytes": 5763,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/RESULTS_OUTSIDE_Q1Q12.md",
+      "size_bytes": 7156,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/RESULT_PROVENANCE.md",
+      "size_bytes": 9748,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/STRONGEST_DEFENSIBLE_CLAIMS.md",
+      "size_bytes": 8548,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/STRONGEST_EVIDENCE.md",
+      "size_bytes": 7271,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/WHAT_WAS_ACHIEVED.md",
+      "size_bytes": 7095,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/_audit_list.txt",
+      "size_bytes": 1587,
+      "extension": ".txt"
+    },
+    {
+      "path": "AUDIT/_ext_counts.txt",
+      "size_bytes": 355,
+      "extension": ".txt"
+    },
+    {
+      "path": "CODE/EXP-0005_width_route_corrected.py",
+      "size_bytes": 5153,
+      "extension": ".py"
+    },
+    {
+      "path": "CODE/run_percolation_exp0006.py",
+      "size_bytes": 1054,
+      "extension": ".py"
+    },
+    {
+      "path": "DIAGNOSTICS/EXP-0006_phase1_bond_wrap.py",
+      "size_bytes": 6446,
+      "extension": ".py"
+    },
+    {
+      "path": "DIAGNOSTICS/EXP-0006_phase2_run.py",
+      "size_bytes": 2245,
+      "extension": ".py"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "size_bytes": 20789,
+      "extension": ".md"
+    },
+    {
+      "path": "docs/DEPENDENCY_MATRIX.md",
+      "size_bytes": 4582,
+      "extension": ".md"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "size_bytes": 15669,
+      "extension": ".md"
+    },
+    {
+      "path": "docs/RESEARCH_RECONNAISSANCE.md",
+      "size_bytes": 26210,
+      "extension": ".md"
+    },
+    {
+      "path": "docs/RISK_REGISTER.md",
+      "size_bytes": 4947,
+      "extension": ".md"
+    },
+    {
+      "path": "src/__init__.py",
+      "size_bytes": 3506,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_adversarial.py",
+      "size_bytes": 3154,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_dashboard.py",
+      "size_bytes": 1854,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_database.py",
+      "size_bytes": 2483,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_docking.py",
+      "size_bytes": 2244,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_evidence.py",
+      "size_bytes": 2307,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_experiment.py",
+      "size_bytes": 4304,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_failure.py",
+      "size_bytes": 3909,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_foundation.py",
+      "size_bytes": 1974,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_hypothesis.py",
+      "size_bytes": 2380,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_id_gen.py",
+      "size_bytes": 656,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_literature.py",
+      "size_bytes": 1774,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_molecular.py",
+      "size_bytes": 2251,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_molecular_engine.py",
+      "size_bytes": 3286,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_navigation.py",
+      "size_bytes": 2345,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_novelty.py",
+      "size_bytes": 1973,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_observation.py",
+      "size_bytes": 3469,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_openmm_engine.py",
+      "size_bytes": 1420,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_phase4_modules.py",
+      "size_bytes": 1989,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_phase5_modules.py",
+      "size_bytes": 2867,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_phase6_modules.py",
+      "size_bytes": 1519,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_plant_engine.py",
+      "size_bytes": 2699,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_rdkit_engine.py",
+      "size_bytes": 1980,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_reaction_engine.py",
+      "size_bytes": 2255,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_replay.py",
+      "size_bytes": 2731,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_scheduler.py",
+      "size_bytes": 3714,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_simulation_base.py",
+      "size_bytes": 2838,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_simulation_module.py",
+      "size_bytes": 956,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_statistics.py",
+      "size_bytes": 3329,
+      "extension": ".py"
+    },
+    {
+      "path": "tests/unit/test_ui.py",
+      "size_bytes": 1514,
+      "extension": ".py"
+    },
+    {
+      "path": "src/adversarial/__init__.py",
+      "size_bytes": 8877,
+      "extension": ".py"
+    },
+    {
+      "path": "src/dashboard/__init__.py",
+      "size_bytes": 6085,
+      "extension": ".py"
+    },
+    {
+      "path": "src/database/db.py",
+      "size_bytes": 269,
+      "extension": ".py"
+    },
+    {
+      "path": "src/database/models.py",
+      "size_bytes": 9815,
+      "extension": ".py"
+    },
+    {
+      "path": "src/database/__init__.py",
+      "size_bytes": 778,
+      "extension": ".py"
+    },
+    {
+      "path": "src/evidence/__init__.py",
+      "size_bytes": 3771,
+      "extension": ".py"
+    },
+    {
+      "path": "src/experiment/__init__.py",
+      "size_bytes": 7850,
+      "extension": ".py"
+    },
+    {
+      "path": "src/failure/__init__.py",
+      "size_bytes": 8129,
+      "extension": ".py"
+    },
+    {
+      "path": "src/hypothesis/__init__.py",
+      "size_bytes": 5971,
+      "extension": ".py"
+    },
+    {
+      "path": "src/literature/__init__.py",
+      "size_bytes": 8406,
+      "extension": ".py"
+    },
+    {
+      "path": "src/molecular/engine.py",
+      "size_bytes": 8614,
+      "extension": ".py"
+    },
+    {
+      "path": "src/molecular/__init__.py",
+      "size_bytes": 646,
+      "extension": ".py"
+    },
+    {
+      "path": "src/navigation/__init__.py",
+      "size_bytes": 3593,
+      "extension": ".py"
+    },
+    {
+      "path": "src/novelty/__init__.py",
+      "size_bytes": 5772,
+      "extension": ".py"
+    },
+    {
+      "path": "src/observation/__init__.py",
+      "size_bytes": 9491,
+      "extension": ".py"
+    },
+    {
+      "path": "src/plant/engine.py",
+      "size_bytes": 4019,
+      "extension": ".py"
+    },
+    {
+      "path": "src/plant/__init__.py",
+      "size_bytes": 340,
+      "extension": ".py"
+    },
+    {
+      "path": "src/reaction/engine.py",
+      "size_bytes": 4783,
+      "extension": ".py"
+    },
+    {
+      "path": "src/reaction/mixer.py",
+      "size_bytes": 4888,
+      "extension": ".py"
+    },
+    {
+      "path": "src/reaction/__init__.py",
+      "size_bytes": 198,
+      "extension": ".py"
+    },
+    {
+      "path": "src/replay/__init__.py",
+      "size_bytes": 5424,
+      "extension": ".py"
+    },
+    {
+      "path": "src/scheduler/__init__.py",
+      "size_bytes": 9121,
+      "extension": ".py"
+    },
+    {
+      "path": "src/simulation/base.py",
+      "size_bytes": 5558,
+      "extension": ".py"
+    },
+    {
+      "path": "src/simulation/docking.py",
+      "size_bytes": 4370,
+      "extension": ".py"
+    },
+    {
+      "path": "src/simulation/openmm_adapter.py",
+      "size_bytes": 7320,
+      "extension": ".py"
+    },
+    {
+      "path": "src/simulation/rdkit_adapter.py",
+      "size_bytes": 5001,
+      "extension": ".py"
+    },
+    {
+      "path": "src/simulation/__init__.py",
+      "size_bytes": 646,
+      "extension": ".py"
+    },
+    {
+      "path": "src/statistics/__init__.py",
+      "size_bytes": 6328,
+      "extension": ".py"
+    },
+    {
+      "path": "src/ui/__init__.py",
+      "size_bytes": 5530,
+      "extension": ".py"
+    },
+    {
+      "path": "src/utils/id_gen.py",
+      "size_bytes": 878,
+      "extension": ".py"
+    },
+    {
+      "path": "src/utils/validator.py",
+      "size_bytes": 4259,
+      "extension": ".py"
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "size_bytes": 1359,
+      "extension": ".py"
+    },
+    {
+      "path": "CODE/dmt-laser-s9-battery/q_s9_1_results.json",
+      "size_bytes": 1278,
+      "extension": ".json"
+    },
+    {
+      "path": "CODE/dmt-laser-s9-battery/q_s9_3_results.json",
+      "size_bytes": 2100,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected.py",
+      "size_bytes": 7177,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json",
+      "size_bytes": 218633,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/build_inventory.py",
+      "size_bytes": 4391,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/corrected_tau_raw_L128.npz",
+      "size_bytes": 2237,
+      "extension": ".npz"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/corrected_tau_raw_L256.npz",
+      "size_bytes": 3664,
+      "extension": ".npz"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/corrected_tau_raw_L512.npz",
+      "size_bytes": 7114,
+      "extension": ".npz"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/corrected_tau_reanalysis.py",
+      "size_bytes": 5720,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/corrected_tau_reanalysis_results.json",
+      "size_bytes": 7431,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/current_inventory.json",
+      "size_bytes": 88298,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/exp0007_reproduction.json",
+      "size_bytes": 1286,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/feigenbaum_independent.py",
+      "size_bytes": 2790,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/file_manifest.csv",
+      "size_bytes": 97795,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/file_manifest.json",
+      "size_bytes": 195293,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_feigenbaum_reanalysis.py",
+      "size_bytes": 4703,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_feigenbaum_results.json",
+      "size_bytes": 11619,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_optics_checks.py",
+      "size_bytes": 7321,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_optics_results.json",
+      "size_bytes": 25166,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_percolation_checks.py",
+      "size_bytes": 4825,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_percolation_results.json",
+      "size_bytes": 3817,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_checks.py",
+      "size_bytes": 14363,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_results.json",
+      "size_bytes": 18707,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/inventory_summary.json",
+      "size_bytes": 1937,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/paired_pc_effect.py",
+      "size_bytes": 2400,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/paired_pc_effect_results.json",
+      "size_bytes": 1436,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/percolation_reanalysis.py",
+      "size_bytes": 5965,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/percolation_reanalysis_results.json",
+      "size_bytes": 4862,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/prime_gap_reanalysis.py",
+      "size_bytes": 4810,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/prime_gap_reanalysis_results.json",
+      "size_bytes": 6136,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/prime_sidecar.json",
+      "size_bytes": 325,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/python_symbols.json",
+      "size_bytes": 60869,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/README.md",
+      "size_bytes": 2134,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/rng_calibration_audit.py",
+      "size_bytes": 6135,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/rng_calibration_results.json",
+      "size_bytes": 213800,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/SUBAGENT_EXP0003_BROADBAND_TASK.md",
+      "size_bytes": 3461,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/checksums.sha256",
+      "size_bytes": 3173,
+      "extension": ".sha256"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/CLAIM_LANGUAGE_AUDIT.md",
+      "size_bytes": 6594,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/CURRENT_STATUS.md_AUDIT_20260923.md",
+      "size_bytes": 14086,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/CURRENT_STATUS.md_AUDIT_20260924.md",
+      "size_bytes": 3468,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DEPENDENCY_MAP.md",
+      "size_bytes": 10902,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DISCOVERY_PLAN.md",
+      "size_bytes": 2790,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DISCOVERY_SUMMARY.md",
+      "size_bytes": 6216,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/DO_NOT_CLAIM.md",
+      "size_bytes": 5752,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/environment.txt",
+      "size_bytes": 2125,
+      "extension": ".txt"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/EXPERIMENT_REGISTER.md",
+      "size_bytes": 9135,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/FAILURE_HISTORY.md",
+      "size_bytes": 8842,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/FINAL_SCIENTIFIC_AUDIT_REPORT.md",
+      "size_bytes": 9928,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/INVESTIGATION_TIMELINE.md",
+      "size_bytes": 7357,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/MASTER_EVIDENCE_MATRIX.md",
+      "size_bytes": 7110,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/POTENTIAL_DISCOVERIES.md",
+      "size_bytes": 6906,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/PROJECT_INVENTORY.md",
+      "size_bytes": 10805,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/RAW_DATA_FINDINGS.md",
+      "size_bytes": 7946,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REPOSITORY_COMPARISON.md",
+      "size_bytes": 6404,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REPRODUCE.md",
+      "size_bytes": 7181,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REPRODUCTION_MATRIX_V2.md",
+      "size_bytes": 8324,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/results_manifest.json",
+      "size_bytes": 5763,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/RESULTS_OUTSIDE_Q1Q12.md",
+      "size_bytes": 7156,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/RESULT_PROVENANCE.md",
+      "size_bytes": 9748,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/STRONGEST_DEFENSIBLE_CLAIMS.md",
+      "size_bytes": 8548,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/STRONGEST_EVIDENCE.md",
+      "size_bytes": 7271,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/WHAT_WAS_ACHIEVED.md",
+      "size_bytes": 7095,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/_audit_list.txt",
+      "size_bytes": 1587,
+      "extension": ".txt"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/_ext_counts.txt",
+      "size_bytes": 355,
+      "extension": ".txt"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/EXTERNAL_R1_R8_SUMMARY.md",
+      "size_bytes": 3071,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-I004_RNG_CERTIFICATION.md",
+      "size_bytes": 1919,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-M002_PRIME_GAPS.md",
+      "size_bytes": 3569,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-M005_FEIGENBAUM.md",
+      "size_bytes": 2927,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-O001_SPECKLE_CONTRAST.md",
+      "size_bytes": 2704,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-O002_VORTEX_DENSITY.md",
+      "size_bytes": 3320,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-P004_PERCOLATION_THRESHOLDS.md",
+      "size_bytes": 3676,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-P005_PERCOLATION_EXPONENTS.md",
+      "size_bytes": 2967,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/Q-P008_3D_PERCOLATION.md",
+      "size_bytes": 1769,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/RESEARCH_MAP_SUMMARY.md",
+      "size_bytes": 2340,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/REVISED_DOSSIERS/SHARED_ENGINE.md",
+      "size_bytes": 2469,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/full_run.log",
+      "size_bytes": 1972,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LITERATURE_SEARCH.md",
+      "size_bytes": 6794,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/README.md",
+      "size_bytes": 2520,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/run_broadband_audit.py",
+      "size_bytes": 34756,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/run_environment.json",
+      "size_bytes": 565,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/CODE/run_broadband_convergence.py",
+      "size_bytes": 42102,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/CODE/run_window_validation.py",
+      "size_bytes": 2184,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/CODE/summarize_audit.py",
+      "size_bytes": 10313,
+      "extension": ".py"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/.keep",
+      "size_bytes": 0,
+      "extension": ""
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/fixed_field_corrected.log",
+      "size_bytes": 15850,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/full_controls.log",
+      "size_bytes": 48722,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/full_controls_corrected.log",
+      "size_bytes": 91376,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/full_main.log",
+      "size_bytes": 91820,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/full_main_corrected.log",
+      "size_bytes": 143742,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/large_window_validation.log",
+      "size_bytes": 15536,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/quick_main.log",
+      "size_bytes": 39718,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/summary.log",
+      "size_bytes": 28438,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/summary_final.log",
+      "size_bytes": 28504,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/summary_final2.log",
+      "size_bytes": 28568,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/condition_verdicts.csv",
+      "size_bytes": 6300,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/condition_verdicts.json",
+      "size_bytes": 13395,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv",
+      "size_bytes": 17677,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json",
+      "size_bytes": 56631,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/control_summary.json",
+      "size_bytes": 62114,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/convergence_table.md",
+      "size_bytes": 1262,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv",
+      "size_bytes": 56533,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json",
+      "size_bytes": 172033,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv",
+      "size_bytes": 39671,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json",
+      "size_bytes": 125838,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/interpolation_controls.csv",
+      "size_bytes": 46856,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/interpolation_controls.json",
+      "size_bytes": 150703,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv",
+      "size_bytes": 45149,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation_summary.json",
+      "size_bytes": 2724,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv",
+      "size_bytes": 136864,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json",
+      "size_bytes": 460901,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_convergence.png",
+      "size_bytes": 83792,
+      "extension": ".png"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv",
+      "size_bytes": 506170,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv",
+      "size_bytes": 58634,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.json",
+      "size_bytes": 176076,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/non_square_controls.csv",
+      "size_bytes": 4692,
+      "extension": ".csv"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/non_square_controls.json",
+      "size_bytes": 15169,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/run_manifest.json",
+      "size_bytes": 1100,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/run_summary.json",
+      "size_bytes": 410,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/sanity_controls.json",
+      "size_bytes": 950,
+      "extension": ".json"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/EXTERNAL_R1_R8_SUMMARY.md",
+      "size_bytes": 3071,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-I004_RNG_CERTIFICATION.md",
+      "size_bytes": 1919,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-M002_PRIME_GAPS.md",
+      "size_bytes": 3569,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-M005_FEIGENBAUM.md",
+      "size_bytes": 2927,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-O001_SPECKLE_CONTRAST.md",
+      "size_bytes": 2704,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-O002_VORTEX_DENSITY.md",
+      "size_bytes": 3320,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P004_PERCOLATION_THRESHOLDS.md",
+      "size_bytes": 3676,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P005_PERCOLATION_EXPONENTS.md",
+      "size_bytes": 2967,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P008_3D_PERCOLATION.md",
+      "size_bytes": 1769,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/RESEARCH_MAP_SUMMARY.md",
+      "size_bytes": 2340,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/SHARED_ENGINE.md",
+      "size_bytes": 2469,
+      "extension": ".md"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/collatz_full.log",
+      "size_bytes": 1610,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/feigenbaum_independent.log",
+      "size_bytes": 3622,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/feigenbaum_main.log",
+      "size_bytes": 3588,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/independent_optics.log",
+      "size_bytes": 1664,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/independent_percolation.log",
+      "size_bytes": 5008,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/infra_validation.log",
+      "size_bytes": 1274,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/paired_pc_effect.log",
+      "size_bytes": 3690,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_3d_exp0011.log",
+      "size_bytes": 524,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_3d_independent.log",
+      "size_bytes": 654,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_3d_pilot.log",
+      "size_bytes": 2082,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_exp0005.log",
+      "size_bytes": 2024,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_exp0005_independent.log",
+      "size_bytes": 344,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_exp0007.log",
+      "size_bytes": 1250,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_exp0010_fresh.log",
+      "size_bytes": 2692,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/percolation_reanalysis.log",
+      "size_bytes": 9946,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/prime_gap_c7_with_sidecar.log",
+      "size_bytes": 976,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/prime_gap_independent.log",
+      "size_bytes": 978,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/prime_gap_reanalysis.log",
+      "size_bytes": 3572,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/prime_qm008_1e9.log",
+      "size_bytes": 3134,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/rng_independent.log",
+      "size_bytes": 232,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/rng_main.log",
+      "size_bytes": 530,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/speckle_independent.log",
+      "size_bytes": 880,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/speckle_main.log",
+      "size_bytes": 14324,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/vortex_independent.log",
+      "size_bytes": 2796,
+      "extension": ".log"
+    },
+    {
+      "path": "AUDIT/INDEPENDENT_AUDIT_20260924/runs/vortex_main.log",
+      "size_bytes": 4242,
+      "extension": ".log"
+    },
+    {
+      "path": "05_EXTERNAL_RESEARCHER_DOSSIER/figures/README.md",
+      "size_bytes": 3411,
+      "extension": ".md"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/__init__.py",
+      "size_bytes": 824,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/tests/infra_validation_results.json",
+      "size_bytes": 1601,
+      "extension": ".json"
+    },
+    {
+      "path": "04_SHARED_ENGINE/tests/run_infra_validation.py",
+      "size_bytes": 6192,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/datasets/manifest.py",
+      "size_bytes": 965,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/datasets/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py",
+      "size_bytes": 1937,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/hypothesis_testing/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/reproducibility/experiments.py",
+      "size_bytes": 2681,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/reproducibility/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/simulation/controls.py",
+      "size_bytes": 2618,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/simulation/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/statistics/testers.py",
+      "size_bytes": 3347,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/statistics/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/utilities/core.py",
+      "size_bytes": 3001,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/utilities/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/validation/rng_battery.py",
+      "size_bytes": 14604,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/validation/__init__.py",
+      "size_bytes": 287,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/visualization/plots.py",
+      "size_bytes": 1248,
+      "extension": ".py"
+    },
+    {
+      "path": "04_SHARED_ENGINE/engine/visualization/__init__.py",
+      "size_bytes": 0,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/INTEGRATION_PLAN.md",
+      "size_bytes": 5039,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation.rar",
+      "size_bytes": 131327,
+      "extension": ".rar"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CHANGELOG.md",
+      "size_bytes": 8394,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONTROLS.md",
+      "size_bytes": 2223,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/experiment.json",
+      "size_bytes": 165,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/EXPERIMENT_PLAN.md",
+      "size_bytes": 3574,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/HYPOTHESIS.md",
+      "size_bytes": 1829,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/LITERATURE.md",
+      "size_bytes": 2757,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/PREDICTIONS.md",
+      "size_bytes": 3302,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/QUESTION.md",
+      "size_bytes": 4139,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/README.md",
+      "size_bytes": 1410,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/EXPERIMENT_PLAN.md",
+      "size_bytes": 1737,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/PREDICTIONS.md",
+      "size_bytes": 1110,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/benchmark.py",
+      "size_bytes": 609,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.bat",
+      "size_bytes": 304,
+      "extension": ".bat"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+      "size_bytes": 9099,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011_loop.bat",
+      "size_bytes": 322,
+      "extension": ".bat"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011_once.bat",
+      "size_bytes": 314,
+      "extension": ".bat"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0013.bat",
+      "size_bytes": 357,
+      "extension": ".bat"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0011.json",
+      "size_bytes": 3325,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0013.json",
+      "size_bytes": 2928,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/REPORT/PLAIN_EXP-0011.md",
+      "size_bytes": 2391,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/LOG/run.err",
+      "size_bytes": 2,
+      "extension": ".err"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/LOG/run.log",
+      "size_bytes": 261,
+      "extension": ".log"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/C7_EXP-0011_report.json",
+      "size_bytes": 16893,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py",
+      "size_bytes": 4565,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/C7_exp0011_pilot.json",
+      "size_bytes": 995,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_combined.json",
+      "size_bytes": 1624,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_combined.json",
+      "size_bytes": 1625,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_results.json",
+      "size_bytes": 1143,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_results.json",
+      "size_bytes": 1142,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0006_summary.py",
+      "size_bytes": 6683,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0007_summary.py",
+      "size_bytes": 8682,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_exp0007_L192.py",
+      "size_bytes": 2682,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_exp0007_stage1.py",
+      "size_bytes": 3191,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation.py",
+      "size_bytes": 21403,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+      "size_bytes": 15854,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0007.py",
+      "size_bytes": 16103,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0005.json",
+      "size_bytes": 3614,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0006.json",
+      "size_bytes": 2774,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0007.json",
+      "size_bytes": 2548,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/STREAM_LAYOUT.md",
+      "size_bytes": 2396,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/DIAGNOSTICS/EXP-0005_width_route_audit.md",
+      "size_bytes": 7604,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/DIAGNOSTICS/EXP-0006_proposal.md",
+      "size_bytes": 3547,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+      "size_bytes": 20533,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/FALSIFICATION/planning_checks.md",
+      "size_bytes": 2621,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONTROLS.md",
+      "size_bytes": 2513,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/EXPERIMENT_PLAN.md",
+      "size_bytes": 4113,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/HYPOTHESIS.md",
+      "size_bytes": 2580,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/LITERATURE.md",
+      "size_bytes": 1664,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/PREDICTIONS.md",
+      "size_bytes": 2413,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/QUESTION.md",
+      "size_bytes": 4870,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPORT.md",
+      "size_bytes": 5998,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/AUDIT_Q006_Q007.md",
+      "size_bytes": 1420,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CONTROLS.md",
+      "size_bytes": 494,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/EXECUTION_PLAN_20260919.md",
+      "size_bytes": 22997,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/HYPOTHESIS.md",
+      "size_bytes": 163,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/PREDICTIONS.md",
+      "size_bytes": 395,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/QUESTION.md",
+      "size_bytes": 1888,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/README.md",
+      "size_bytes": 1628,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CONTROLS.md",
+      "size_bytes": 318,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/EXPERIMENT_PLAN.md",
+      "size_bytes": 1154,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/HYPOTHESIS.md",
+      "size_bytes": 380,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/PREDICTIONS.md",
+      "size_bytes": 1263,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/QUESTION.md",
+      "size_bytes": 1992,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0006_report.json",
+      "size_bytes": 10192,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/C7_exp0007_report.json",
+      "size_bytes": 25909,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py",
+      "size_bytes": 6851,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check_exp0007.py",
+      "size_bytes": 6780,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0006.md",
+      "size_bytes": 2284,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/PLAIN_EXP-0007.md",
+      "size_bytes": 2317,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0006.md",
+      "size_bytes": 6256,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md",
+      "size_bytes": 6894,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/state/CURRENT_STATUS.md",
+      "size_bytes": 2441,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/state/LAST_JOB.md",
+      "size_bytes": 1869,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run.err",
+      "size_bytes": 177,
+      "extension": ".err"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run.log",
+      "size_bytes": 880,
+      "extension": ".log"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py",
+      "size_bytes": 7937,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_q_p007.py",
+      "size_bytes": 7775,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CONFIG/prereg_EXP-0009PC.json",
+      "size_bytes": 2195,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_combined.json",
+      "size_bytes": 1690,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_L1024_cells.npz",
+      "size_bytes": 3252,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_L2048_cells.npz",
+      "size_bytes": 2252,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_L512_cells.npz",
+      "size_bytes": 5252,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_phase1.json",
+      "size_bytes": 419,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_phase1_preserved.json",
+      "size_bytes": 411,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_results.json",
+      "size_bytes": 1136,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run.err",
+      "size_bytes": 0,
+      "extension": ".err"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run.log",
+      "size_bytes": 376,
+      "extension": ".log"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run_q_p006.py",
+      "size_bytes": 4423,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CONFIG/prereg_EXP-0009P.json",
+      "size_bytes": 2031,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/REPORT/TECHNICAL_EXP-0009-precision.md",
+      "size_bytes": 1788,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/EXP-0009-precision_results.json",
+      "size_bytes": 952,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz",
+      "size_bytes": 23409415,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz",
+      "size_bytes": 46612965,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz",
+      "size_bytes": 11889582,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py",
+      "size_bytes": 20816,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py",
+      "size_bytes": 6471,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/EXP-0009_experiment.json",
+      "size_bytes": 333,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0009.json",
+      "size_bytes": 4281,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json",
+      "size_bytes": 1692,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/registry.jsonl",
+      "size_bytes": 761,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json",
+      "size_bytes": 1269,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py",
+      "size_bytes": 7052,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_results.json",
+      "size_bytes": 7077,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_summary.json",
+      "size_bytes": 7292,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_results.json",
+      "size_bytes": 1427,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_summary.json",
+      "size_bytes": 1621,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+      "size_bytes": 23409415,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n60.npz",
+      "size_bytes": 14038471,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L128_n1500.npz",
+      "size_bytes": 6079974,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+      "size_bytes": 46612965,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L256_n700.npz",
+      "size_bytes": 10702759,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n150.npz",
+      "size_bytes": 8914681,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+      "size_bytes": 11889582,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L127_n200.npz",
+      "size_bytes": 794364,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L191_n200.npz",
+      "size_bytes": 1729961,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L253_n200.npz",
+      "size_bytes": 2977496,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_df_nontriv_L449_n200.npz",
+      "size_bytes": 9155196,
+      "extension": ".npz"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0005_experiment.json",
+      "size_bytes": 28425,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0006_experiment.json",
+      "size_bytes": 32103,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/EXP-0007_experiment.json",
+      "size_bytes": 23903,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+      "size_bytes": 1518,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0005_results.json",
+      "size_bytes": 22739,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0005_width_route_corrected.json",
+      "size_bytes": 5780,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+      "size_bytes": 25825,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_summary.json",
+      "size_bytes": 10567,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L128.json",
+      "size_bytes": 871,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_raw_L96.json",
+      "size_bytes": 859,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+      "size_bytes": 18813,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json",
+      "size_bytes": 6298,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CHANGELOG.md",
+      "size_bytes": 2298,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONTROLS.md",
+      "size_bytes": 2041,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/experiment.json",
+      "size_bytes": 141,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/EXPERIMENT_PLAN.md",
+      "size_bytes": 4348,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/HYPOTHESIS.md",
+      "size_bytes": 2561,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/LITERATURE.md",
+      "size_bytes": 2312,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/PREDICTIONS.md",
+      "size_bytes": 2733,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/QUESTION.md",
+      "size_bytes": 4957,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/README.md",
+      "size_bytes": 1632,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CODE/plot_battery.py",
+      "size_bytes": 2487,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py",
+      "size_bytes": 12020,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/EXP-0004_experiment.json",
+      "size_bytes": 2976,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/prereg_EXP-0004.json",
+      "size_bytes": 1635,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/registry.jsonl",
+      "size_bytes": 505,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/FALSIFICATION/planning_checks.md",
+      "size_bytes": 2296,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/FIGURES/EXP-0004_pvalue_distribution.png",
+      "size_bytes": 100380,
+      "extension": ".png"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPLICATION/independent_check.json",
+      "size_bytes": 7179,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPLICATION/independent_check.py",
+      "size_bytes": 7327,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPORT/PLAIN_ENGLISH_SUMMARY.md",
+      "size_bytes": 2485,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPORT/TECHNICAL_SUMMARY.md",
+      "size_bytes": 5620,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/rng_certification/RESULTS/EXP-0004_results.json",
+      "size_bytes": 29584,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CODE/check_threshold.py",
+      "size_bytes": 1151,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CODE/investigate_discrepancy.py",
+      "size_bytes": 2649,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CONFIG/prereg_EXP-0012.json",
+      "size_bytes": 2309,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md",
+      "size_bytes": 4692,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md",
+      "size_bytes": 3661,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-3.md",
+      "size_bytes": 3752,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CHANGELOG.md",
+      "size_bytes": 64,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONTROLS.md",
+      "size_bytes": 1497,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/experiment.json",
+      "size_bytes": 128,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/EXPERIMENT_PLAN.md",
+      "size_bytes": 2190,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/HYPOTHESIS.md",
+      "size_bytes": 1318,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/LITERATURE.md",
+      "size_bytes": 1459,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/PREDICTIONS.md",
+      "size_bytes": 807,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/QUESTION.md",
+      "size_bytes": 4393,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/README.md",
+      "size_bytes": 61,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CHANGELOG.md",
+      "size_bytes": 997,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONTROLS.md",
+      "size_bytes": 2018,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/EXPERIMENT_PLAN.md",
+      "size_bytes": 4905,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/HYPOTHESIS.md",
+      "size_bytes": 2198,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/LITERATURE.md",
+      "size_bytes": 2393,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/PREDICTIONS.md",
+      "size_bytes": 2759,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/QUESTION.md",
+      "size_bytes": 5780,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/README.md",
+      "size_bytes": 1560,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/make_figure.py",
+      "size_bytes": 2204,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py",
+      "size_bytes": 15817,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/changelog.jsonl",
+      "size_bytes": 1216,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json",
+      "size_bytes": 18949,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/prereg_EXP-0003.json",
+      "size_bytes": 1289,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/registry.jsonl",
+      "size_bytes": 504,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/FALSIFICATION/planning_checks.md",
+      "size_bytes": 1729,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/FIGURES/EXP-0003_vortex_density.png",
+      "size_bytes": 114217,
+      "extension": ".png"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.json",
+      "size_bytes": 1395,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.py",
+      "size_bytes": 6413,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPORT/AUDIT_ADDENDUM_EXP-0003_20260924.md",
+      "size_bytes": 3190,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPORT/PLAIN_ENGLISH_SUMMARY.md",
+      "size_bytes": 2867,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPORT/TECHNICAL_SUMMARY.md",
+      "size_bytes": 5149,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+      "size_bytes": 17034,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/make_figure.py",
+      "size_bytes": 1222,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py",
+      "size_bytes": 8495,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+      "size_bytes": 14925,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/prereg_EXP-0002.json",
+      "size_bytes": 763,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/registry.jsonl",
+      "size_bytes": 516,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/FIGURES/EXP-0002_contrast_law.png",
+      "size_bytes": 66934,
+      "extension": ".png"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPLICATION/independent_check.json",
+      "size_bytes": 941,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPLICATION/independent_check.py",
+      "size_bytes": 1627,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPORT/PLAIN_ENGLISH_SUMMARY.md",
+      "size_bytes": 2980,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPORT/TECHNICAL_SUMMARY.md",
+      "size_bytes": 4033,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+      "size_bytes": 7159,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/prereg_Q-M001.json",
+      "size_bytes": 795,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CHANGELOG.md",
+      "size_bytes": 1192,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONTROLS.md",
+      "size_bytes": 1389,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/EXPERIMENT_PLAN.md",
+      "size_bytes": 1238,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/HYPOTHESIS.md",
+      "size_bytes": 911,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/LITERATURE.md",
+      "size_bytes": 2075,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/PREDICTIONS.md",
+      "size_bytes": 831,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/QUESTION.md",
+      "size_bytes": 1943,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/README.md",
+      "size_bytes": 1526,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/01_NOVELTY_AUDIT.md",
+      "size_bytes": 8292,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/02_PRIOR_ART_MATRIX.md",
+      "size_bytes": 12055,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/03_MATHEMATICAL_DEFINITION.md",
+      "size_bytes": 5800,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/04_NULL_MODEL_AUDIT.md",
+      "size_bytes": 7275,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/05_STATISTICAL_DEPENDENCE_AUDIT.md",
+      "size_bytes": 5788,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/06_EFFECT_SIZE_ANALYSIS.md",
+      "size_bytes": 4819,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/07_CODE_AUDIT.md",
+      "size_bytes": 9277,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/08_INDEPENDENT_REPRODUCTION.md",
+      "size_bytes": 5546,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/09_UNKNOWN_TERRITORY_ASSESSMENT.md",
+      "size_bytes": 5688,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/10_RECOMMENDED_NEXT_EXPERIMENTS.md",
+      "size_bytes": 6255,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CHANGELOG.md",
+      "size_bytes": 1019,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONTROLS.md",
+      "size_bytes": 2212,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/EXPERIMENT_PLAN.md",
+      "size_bytes": 2986,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/HYPOTHESIS.md",
+      "size_bytes": 1460,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/LITERATURE.md",
+      "size_bytes": 1401,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/NOVELTY_AUDIT_SUMMARY.json",
+      "size_bytes": 7302,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/PREDICTIONS.md",
+      "size_bytes": 949,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/QUESTION.md",
+      "size_bytes": 1690,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/README.md",
+      "size_bytes": 1652,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py",
+      "size_bytes": 32065,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.json",
+      "size_bytes": 7115,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.run1_pre_bhfix.json",
+      "size_bytes": 7157,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/prereg_EXP-0008.json",
+      "size_bytes": 7656,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/registry.jsonl",
+      "size_bytes": 676,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/FALSIFICATION/planning_checks.md",
+      "size_bytes": 2058,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/analyze_bins.py",
+      "size_bytes": 5627,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/AUDIT_Q006_Q007.md",
+      "size_bytes": 3600,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/BHFR_40cell_results.json",
+      "size_bytes": 7422,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py",
+      "size_bytes": 4382,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/prereg_BHFR_40cell.json",
+      "size_bytes": 317,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/q_m007_results.json",
+      "size_bytes": 3819,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/PLAN.md",
+      "size_bytes": 2400,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py",
+      "size_bytes": 6587,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response_results.json",
+      "size_bytes": 1117,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/C7_exp0008_report.json",
+      "size_bytes": 7630,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/C7_exp0008_report.run1_pre_bhfix.json",
+      "size_bytes": 7635,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/independent_check.py",
+      "size_bytes": 10104,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/_exp0008_primary_sidecar.json",
+      "size_bytes": 235,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/PLAIN_EXP-0008.md",
+      "size_bytes": 955,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/PLAIN_EXP-0008.run1_pre_bhfix.md",
+      "size_bytes": 872,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/TECHNICAL_EXP-0008.md",
+      "size_bytes": 3751,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPORT/TECHNICAL_EXP-0008.run1_pre_bhfix.md",
+      "size_bytes": 3794,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_raw.json",
+      "size_bytes": 28395,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_raw.run1_pre_bhfix.json",
+      "size_bytes": 28406,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+      "size_bytes": 25645,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.run1_pre_bhfix.json",
+      "size_bytes": 25700,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/compare_scales.py",
+      "size_bytes": 2304,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py",
+      "size_bytes": 6269,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py",
+      "size_bytes": 9737,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0013.py",
+      "size_bytes": 5287,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md",
+      "size_bytes": 5332,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/RESULTS/Q-M008_1e8_results.json",
+      "size_bytes": 8818,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/RESULTS/Q-M008_1e9_results.json",
+      "size_bytes": 8935,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/RESULTS/Q-M008_combined.json",
+      "size_bytes": 19264,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md",
+      "size_bytes": 5489,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/feigenbaum_engine.py",
+      "size_bytes": 9793,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py",
+      "size_bytes": 8538,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/prereg_EXP-0014.json",
+      "size_bytes": 1003,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/registry.jsonl",
+      "size_bytes": 286,
+      "extension": ".jsonl"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/FALSIFICATION/planning_checks.md",
+      "size_bytes": 1332,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/PLAIN_EXP-0014.md",
+      "size_bytes": 2206,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/TECHNICAL_EXP-0014.md",
+      "size_bytes": 3838,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/state/status.json",
+      "size_bytes": 2,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/experiment.json",
+      "size_bytes": 672,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_results.json",
+      "size_bytes": 4677,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_summary.txt",
+      "size_bytes": 2109,
+      "extension": ".txt"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz.py",
+      "size_bytes": 4608,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz_full.py",
+      "size_bytes": 4580,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/save_full_results.py",
+      "size_bytes": 2916,
+      "extension": ".py"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/REPORT/TECHNICAL_Q-M001.md",
+      "size_bytes": 5031,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/RESULTS/Q-M001_full_results.json",
+      "size_bytes": 2511,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/RESULTS/Q-M001_results.json",
+      "size_bytes": 13481,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/FLUID_DYNAMICS/water_sound_response/QUESTION.md",
+      "size_bytes": 3396,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/FLUID_DYNAMICS/water_sound_response/README.md",
+      "size_bytes": 1748,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/CHANGELOG.md",
+      "size_bytes": 1991,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/CONTROLS.md",
+      "size_bytes": 4343,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/experiment.json",
+      "size_bytes": 164,
+      "extension": ".json"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/EXPERIMENT_PLAN.md",
+      "size_bytes": 7154,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/HYPOTHESIS.md",
+      "size_bytes": 4820,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/LITERATURE.md",
+      "size_bytes": 8779,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/PREDICTIONS.md",
+      "size_bytes": 13445,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/QUESTION.md",
+      "size_bytes": 12928,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/README.md",
+      "size_bytes": 3014,
+      "extension": ".md"
+    },
+    {
+      "path": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/FALSIFICATION/planning_checks.md",
+      "size_bytes": 7090,
+      "extension": ".md"
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/HIGH_PRIORITY/README.md",
+      "size_bytes": 1557,
+      "extension": ".md"
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/LONG_SHOTS/README.md",
+      "size_bytes": 898,
+      "extension": ".md"
+    },
+    {
+      "path": "02_CANDIDATE_PROBLEMS/MEDIUM_PRIORITY/README.md",
+      "size_bytes": 1405,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/acoustics/notes.md",
+      "size_bytes": 6132,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/astronomy/notes.md",
+      "size_bytes": 755,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/biology/notes.md",
+      "size_bytes": 582,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/chemistry/notes.md",
+      "size_bytes": 460,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/climate_science/notes.md",
+      "size_bytes": 642,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/computational_science/notes.md",
+      "size_bytes": 536,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/cosmology/notes.md",
+      "size_bytes": 617,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/earth_science/notes.md",
+      "size_bytes": 454,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/fluid_dynamics/notes.md",
+      "size_bytes": 626,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/information_theory/notes.md",
+      "size_bytes": 688,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/materials_science/notes.md",
+      "size_bytes": 581,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/mathematics/notes.md",
+      "size_bytes": 937,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/neuroscience/notes.md",
+      "size_bytes": 491,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/optics/notes.md",
+      "size_bytes": 1457,
+      "extension": ".md"
+    },
+    {
+      "path": "01_RESEARCH_MAP/physics/notes.md",
+      "size_bytes": 889,
+      "extension": ".md"
+    }
+  ]
+}

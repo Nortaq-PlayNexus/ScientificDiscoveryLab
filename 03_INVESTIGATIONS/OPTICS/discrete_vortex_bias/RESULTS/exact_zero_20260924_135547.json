@@ -1,0 +1,6535 @@
+{
+  "experiment": "EXP-0015",
+  "stage": "exact_zero_control",
+  "rows": [
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "single",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 0,
+      "net_charge": 0,
+      "absolute_charge": 0,
+      "match": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "charge_correct": 0,
+        "localization_rmse_px": null
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": -1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 0,
+      "net_charge": 0,
+      "absolute_charge": 0,
+      "match": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "charge_correct": 0,
+        "localization_rmse_px": null
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 0,
+      "net_charge": 0,
+      "absolute_charge": 0,
+      "match": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "charge_correct": 0,
+        "localization_rmse_px": null
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": -1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 0,
+      "net_charge": 0,
+      "absolute_charge": 0,
+      "match": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "charge_correct": 0,
+        "localization_rmse_px": null
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 1,
+      "net_charge": 1,
+      "absolute_charge": 1,
+      "match": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1,
+        "charge_correct": 1,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "pair",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 2,
+      "net_charge": 0,
+      "absolute_charge": 2,
+      "match": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 2,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.0,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 64,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 128,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 256,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.25,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.7071067811865476
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.5,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.0
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "raw_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    },
+    {
+      "case": "four",
+      "floor": 0.03,
+      "grid": 512,
+      "shift_px": 0.75,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "net_charge": 0,
+      "absolute_charge": 4,
+      "match": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "charge_correct": 4,
+        "localization_rmse_px": 0.3535533905932738
+      }
+    }
+  ],
+  "runtime_s": 14.773011445999146
+}

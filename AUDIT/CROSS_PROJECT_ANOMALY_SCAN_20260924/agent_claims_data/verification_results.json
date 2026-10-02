@@ -1,0 +1,1683 @@
+{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "hash_contract": {
+      "ok": true,
+      "evidence": {
+        "rows": [
+          {
+            "config": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+            "result": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+            "recorded": "c2aa22efbed0ef35a941d62ac7a4c48f891170fa57df2ba332c2e46e2f314ed5",
+            "canonical_loaded_result": "9eb48706efa41193a0829d3d0db8add4bb6a9769d989591ffbacbbc5d119d013",
+            "file_sha256": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+            "recorded_matches_canonical": false,
+            "recorded_matches_file": false
+          },
+          {
+            "config": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json",
+            "result": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+            "recorded": "00a693b868ef2bb30e7729df954be820ef6cb730eb1cd716ce93b65e1a21485d",
+            "canonical_loaded_result": "b8f12ed3f8ffaf070f34cecbaa92befbaf3dbefa4fea674e7f6fc4b766b1eb78",
+            "file_sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+            "recorded_matches_canonical": false,
+            "recorded_matches_file": false
+          },
+          {
+            "config": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/EXP-0004_experiment.json",
+            "result": "03_INVESTIGATIONS/OTHER/rng_certification/RESULTS/EXP-0004_results.json",
+            "recorded": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+            "canonical_loaded_result": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+            "file_sha256": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+            "recorded_matches_canonical": true,
+            "recorded_matches_file": false
+          },
+          {
+            "config": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.json",
+            "result": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+            "recorded": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+            "canonical_loaded_result": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+            "file_sha256": "33956d75aaac6476087b41c1a9a4b68b049b5bbc34c041d9583283cec46f3690",
+            "recorded_matches_canonical": true,
+            "recorded_matches_file": false
+          }
+        ],
+        "helper": "04_SHARED_ENGINE/engine/utilities/core.py:94",
+        "contract": [
+          "43: ## Every experiment must record (experiment.json)",
+          "44: ",
+          "45: - experiment ID",
+          "46: - date/time (UTC ISO 8601)",
+          "47: - Python version",
+          "48: - dependency versions (key libs)",
+          "49: - git commit if the investigation is in a repo",
+          "50: - random seed",
+          "51: - parameters",
+          "52: - dataset file hashes (sha256)",
+          "53: - result file hashes (sha256)",
+          "54: "
+        ]
+      }
+    },
+    "freeze_overwrite": {
+      "ok": true,
+      "evidence": {
+        "first_hash": "d4bdc2c4843146b8a5751c9d600f6bc8fcacf6ac283cdb43df8c5fac2f559c9f",
+        "second_hash": "c2c9acc7c27665d9e8f0aed7e155946a834d82f0ded785147eeda40ed857d173",
+        "changed": true,
+        "first_params": {
+          "x": 1
+        },
+        "second_params": {
+          "x": 2
+        },
+        "helper_contract": [
+          "27:     \"\"\"Write a frozen, immutable pre-registration config (JSON).",
+          "28: ",
+          "29:     Returns the config dict. The file must not be edited after results exist;",
+          "30:     changes are recorded via log_change(), never by rewriting here.",
+          "31:     \"\"\"",
+          "32:     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)",
+          "33:     config = {",
+          "34:         \"experiment_id\": experiment_id,",
+          "35:         \"hypothesis_id\": hypothesis_id,",
+          "36:         \"question_id\": question_id,",
+          "37:         \"timestamp_utc\": datetime.now(timezone.utc).isoformat(timespec=\"seconds\"),",
+          "38:         \"seed\": seed,",
+          "39:         \"alpha\": alpha,",
+          "40:         \"preregistered_controls\": list(controls),",
+          "41:         \"preregistered_analyses\": list(analyses),",
+          "42:         \"parameters\": params,",
+          "43:         \"note\": note,",
+          "44:     }",
+          "45:     with open(out_path, \"w\", encoding=\"utf-8\") as fh:",
+          "46:         json.dump(config, fh, indent=2, sort_keys=True)"
+        ],
+        "callers": [
+          "03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py:139",
+          "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:114"
+        ]
+      }
+    },
+    "empty_data": {
+      "ok": true,
+      "evidence": {
+        "directories": {
+          "05_DATA": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "06_RESULTS": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "07_REPORTS": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "08_REPLICATION": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "99_ARCHIVE": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          }
+        },
+        "db_integrity": "ok",
+        "db_tables": [
+          {
+            "name": "biological_effects",
+            "rows": 0
+          },
+          {
+            "name": "compounds",
+            "rows": 0
+          },
+          {
+            "name": "datasets",
+            "rows": 0
+          },
+          {
+            "name": "diseases",
+            "rows": 0
+          },
+          {
+            "name": "evidence_records",
+            "rows": 0
+          },
+          {
+            "name": "experiments",
+            "rows": 0
+          },
+          {
+            "name": "extracts",
+            "rows": 0
+          },
+          {
+            "name": "genes",
+            "rows": 0
+          },
+          {
+            "name": "hypotheses",
+            "rows": 0
+          },
+          {
+            "name": "literature_sources",
+            "rows": 0
+          },
+          {
+            "name": "molecules",
+            "rows": 0
+          },
+          {
+            "name": "plant_parts",
+            "rows": 0
+          },
+          {
+            "name": "plants",
+            "rows": 0
+          },
+          {
+            "name": "predictions",
+            "rows": 0
+          },
+          {
+            "name": "proteins",
+            "rows": 0
+          },
+          {
+            "name": "reaction_conditions",
+            "rows": 0
+          },
+          {
+            "name": "reactions",
+            "rows": 0
+          },
+          {
+            "name": "results",
+            "rows": 0
+          },
+          {
+            "name": "simulations",
+            "rows": 0
+          },
+          {
+            "name": "species",
+            "rows": 0
+          },
+          {
+            "name": "targets",
+            "rows": 0
+          }
+        ],
+        "db_table_count": 21,
+        "db_total_rows": 0
+      }
+    },
+    "registry": {
+      "ok": true,
+      "evidence": {
+        "root_registry_table_ids": [
+          "EXP-0001",
+          "EXP-0002",
+          "EXP-0003",
+          "EXP-0004",
+          "EXP-0005",
+          "EXP-0006",
+          "EXP-0007",
+          "EXP-0008",
+          "EXP-0009",
+          "EXP-0010",
+          "EXP-0011",
+          "EXP-0014"
+        ],
+        "root_registry_table_count": 12,
+        "audit_claim": "AUDIT/EXPERIMENT_REGISTER.md:12",
+        "question_rows_of_interest": [
+          [
+            "Q-M008",
+            "OPEN"
+          ],
+          [
+            "Q-S9-1",
+            "OPEN"
+          ],
+          [
+            "Q-S9-2",
+            "OPEN"
+          ],
+          [
+            "Q-S9-3",
+            "OPEN"
+          ]
+        ],
+        "current_status_claims": {
+          "q_s9": "CURRENT_STATUS.md:45",
+          "q_m008": "QUESTIONS.md:69"
+        },
+        "inventory_collisions": [
+          "88: ## 5. Identifier and copy findings",
+          "89: ",
+          "90: - Q-P006 raw cell files at L=512, 1024, and 2048 are byte-identical copies of Q-P005 files, despite the Q-P006 note claiming no cells were reused.",
+          "91: - `HYP-005` is mentioned by both EXP-0008 prime gaps and EXP-0009 percolation exponents.",
+          "92: - `EXP-0009` is reused by Q-P005, Q-P006, and Q-P007.",
+          "93: - `EXP-0012` and `EXP-0013` collide with unrelated prime-gap filenames/scaffolds.",
+          "94: - `EXP-0015` collides with acoustics/fluid-dynamics scaffolding.",
+          "95: - The Feigenbaum canonical `RESULTS` directory is empty; stored output is nested under `CODE/03_INVESTIGATIONS/.../RESULTS`.",
+          "96: - The Q-P007 cache stores nested cluster-size arrays incorrectly; the current runner cannot reload its own cache (`KeyError: sizes`)."
+        ]
+      }
+    },
+    "external": {
+      "ok": true,
+      "evidence": {
+        "data_index_base_paths": [
+          "10: > Base paths:",
+          "11: > - sandbox: `C:\\Users\\natha\\code\\coherent-optical-ai-sandbox`",
+          "12: > - lab: `C:\\Users\\natha\\ScientificDiscoveryLab`",
+          "13: > - dossier: `C:\\Users\\natha\\ScientificDiscoveryLab\\05_EXTERNAL_RESEARCHER_DOSSIER`",
+          "14: ",
+          "15: ## 1. Verdict and audit reports (sandbox)",
+          "16: ",
+          "17: | Content | Path | Used for |",
+          "18: |---|---|---|",
+          "19: | Final audit verdict, headline numbers, methodology correction | `research\\FINAL_PHASE_REPORT.md` | Dossier §1–§7 |",
+          "20: | Condensed verdict | `research\\EXECUTIVE_SUMMARY.md` | Executive-style reading |",
+          "21: | Audit state | `research\\audit\\PROJECT_STATE.md` | Framework description (multi-agent validation & novelty audit) |",
+          "22: | Control matrix | `research\\controls\\CONTROL_MATRIX.md` | Methods document §6 |",
+          "23: | Independent replication (validator battery) | `research\\reproducibility\\INDEPENDENT_REPLICATION.md` | EXP-1, PARTIALLY REPRODUCIBLE |",
+          "24: | Literature pass | `research\\literature\\OPTICS_LITERATURE.md` | Q1 (Carter/Wolf entry) |",
+          "25: "
+        ],
+        "claim": "05_EXTERNAL_RESEARCHER_DOSSIER/KEY_RESULTS.md:<not found:'Every number is from'>",
+        "outside_path_exists": true,
+        "outside_path_under_audited_root": false,
+        "relative_sandbox_path_under_root_exists": false
+      }
+    },
+    "application": {
+      "ok": true,
+      "evidence": {
+        "formal_charge_reported": 0.3966637147812598,
+        "actual_formal_charge": 0,
+        "descriptor_source": [
+          "77:     def get_formal_charge(self) -> Optional[int]:",
+          "78:         if not self.is_valid:",
+          "79:             return None",
+          "80:         try:",
+          "81:             return Descriptors.MaxAbsPartialCharge(self.mol)",
+          "82:         except Exception:",
+          "83:             return 0"
+        ],
+        "depiction_error": {
+          "type": "ArgumentError",
+          "message": "Python argument types in\n    rdkit.Chem.rdDepictor.GenerateDepictionMatching2DStructure(Mol)\ndid not match C++ signature:\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, class boost::python::api::object atomMap, int confId, bool forceRDKit)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, class boost::python::api::object atomMap, int confId=-1, class boost::python::api::object params=None)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, int confId=-1, class boost::python::api::object refPatt=None, bool acceptFailure=False, bool forceRDKit=False, bool allowRGroups=False)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, int confId=-1, class boost::python::api::object refPatt=None, class boost::python::api::object params=None)"
+        },
+        "tautological_assertion": "tests/unit/test_plant_engine.py:49",
+        "tests_for_formal_charge": []
+      }
+    },
+    "exp0006": {
+      "ok": true,
+      "evidence": {
+        "runner": [
+          "51: def interp_p50(ps, W):",
+          "52:     ps = np.asarray(ps, dtype=float)",
+          "53:     W = np.asarray(W, dtype=float)",
+          "54:     below = W < 0.5",
+          "55:     above = W > 0.5",
+          "56:     if not below.any() or not above.any():",
+          "57:         raise ValueError(\"p50 not bracketed\")",
+          "58:     i = int(np.flatnonzero(below)[-1])",
+          "59:     j = int(np.flatnonzero(above)[0])",
+          "60:     if i >= j:",
+          "61:         raise ValueError(\"p50 grid ordering issue\")",
+          "62:     p0, p1 = ps[i], ps[j]",
+          "63:     w0, w1 = W[i], W[j]",
+          "64:     return float(p0 + (0.5 - w0) * (p1 - p0) / (w1 - p0))"
+        ],
+        "c2": [
+          "290:     # ---- C2 estimator/BC independence ----",
+          "291:     pair = abs(fss_out[\"bond_span\"][\"a\"] - fss_out[\"bond_span\"][\"a\"])  # same system; bond_wrap not re-run",
+          "292:     c2 = {\"span_a\": fss_out[\"bond_span\"][\"a\"], \"wrap_a\": \"N/A (not re-run)\",",
+          "293:           \"pair_diff\": 0.0, \"pass\": True,",
+          "294:           \"note\": \"bond_wrap at fine grid not re-run in EXP-0006; C2 evaluated in EXP-0005/0007\"}"
+        ],
+        "result_c2": {
+          "pair_diff": 0.0010144666894992271,
+          "pass": true,
+          "span_a": 0.5002094826899287,
+          "wrap_a": 0.5012239493794279
+        },
+        "rows": [
+          {
+            "system": "bond_span",
+            "L": 64,
+            "wrong": 0.7965714285714307,
+            "correct": 0.4998211091234348,
+            "stored": 0.4998542286084771,
+            "abs_wrong_correct": 0.2967503194479959
+          },
+          {
+            "system": "bond_span",
+            "L": 128,
+            "wrong": 0.5001711840228247,
+            "correct": 0.5001697312588402,
+            "stored": 0.5001572242067353,
+            "abs_wrong_correct": 1.4527639844441609e-06
+          },
+          {
+            "system": "bond_span",
+            "L": 256,
+            "wrong": 0.5026260387811634,
+            "correct": 0.5001618122977346,
+            "stored": 0.5001669446692497,
+            "abs_wrong_correct": 0.002464226483428811
+          },
+          {
+            "system": "bond_span",
+            "L": 512,
+            "wrong": 0.5025966850828729,
+            "correct": 0.5001498708010336,
+            "stored": 0.5001527904511637,
+            "abs_wrong_correct": 0.002446814281839349
+          },
+          {
+            "system": "bond_wrap",
+            "L": 32,
+            "wrong": 0.6091304347826093,
+            "correct": 0.49862068965517253,
+            "stored": 0.4985936764612654,
+            "abs_wrong_correct": 0.11050974512743678
+          },
+          {
+            "system": "bond_wrap",
+            "L": 48,
+            "wrong": 0.575081967213115,
+            "correct": 0.4974174174174175,
+            "stored": 0.4974828844043641,
+            "abs_wrong_correct": 0.07766454979569748
+          },
+          {
+            "system": "bond_wrap",
+            "L": 64,
+            "wrong": 0.5003347280334729,
+            "correct": 0.500329218106996,
+            "stored": 0.5003630768139604,
+            "abs_wrong_correct": 5.509926476854332e-06
+          },
+          {
+            "system": "site_span",
+            "L": 64,
+            "wrong": 0.5234819867059588,
+            "correct": 0.5921144718526316,
+            "stored": 0.5921271333168397,
+            "abs_wrong_correct": 0.06863248514667275
+          },
+          {
+            "system": "site_span",
+            "L": 128,
+            "wrong": 0.5931605366327757,
+            "correct": 0.5930487413829596,
+            "stored": 0.5930199396451842,
+            "abs_wrong_correct": 0.00011179524981608235
+          },
+          {
+            "system": "site_span",
+            "L": 256,
+            "wrong": 0.47934039809303736,
+            "correct": 0.5924525725391304,
+            "stored": 0.5924726939598507,
+            "abs_wrong_correct": 0.11311217444609306
+          }
+        ],
+        "max_wrong_correct": 0.2967503194479959
+      }
+    },
+    "qp006": {
+      "ok": true,
+      "evidence": {
+        "hashes": [
+          {
+            "a": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+            "b": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz",
+            "a_sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+            "b_sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+            "identical": true
+          },
+          {
+            "a": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+            "b": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz",
+            "a_sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+            "b_sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+            "identical": true
+          },
+          {
+            "a": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+            "b": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz",
+            "a_sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+            "b_sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+            "identical": true
+          }
+        ],
+        "prereg_no_reuse": true,
+        "result_top_keys": [
+          "experiment",
+          "L_list",
+          "n_real",
+          "bootstrap_draws",
+          "exponents",
+          "tau_cumulative_se",
+          "tau_cum_chi2_red",
+          "elapsed"
+        ],
+        "report_gap_lines": [
+          "| 1/nu | NOT COMPUTED | -- | [0.60, 0.90] | -- | -- | GAP |",
+          "Note: Gates C1, C6, C7, FG were not evaluated — full decision rule could not be applied from results JSON alone."
+        ],
+        "import_path": [
+          "16: QP005_CODE = os.path.join(ROOT, \"Q-P005_exponents\", \"CODE\")",
+          "17: if QP005_CODE not in sys.path: sys.path.insert(0, QP005_CODE)",
+          "18: from run_exp0009 import (run_exponent_cell, save_cell, load_cell,",
+          "19:                              bootstrap_slope, fit_tau_cumulative,",
+          "20:                              fit_tau_histogram)"
+        ]
+      }
+    },
+    "exp0010": {
+      "ok": true,
+      "evidence": {
+        "prereg_test": "if D_f within tol at ALL non-P2 L -> lattice artifact confirmed; if ANY outside tol -> finite-size correction likely",
+        "prereg_gates": {
+          "C1": "full-cell rerun (L=253, p_c) cluster census bit-identical (sha256)",
+          "C7": "pure-Python union-find at L=127,253 (subsample n=30): per-realization M_max and chi bit-identical, D_f within 3 joint-SE"
+        },
+        "result_Df_keys": [
+          "expected",
+          "measured",
+          "pass",
+          "per_L",
+          "se",
+          "tol"
+        ],
+        "result_gate_keys": [
+          "C1"
+        ],
+        "per_L_values": {
+          "127": 4174.385,
+          "191": 9491.41,
+          "253": 15656.795,
+          "449": 46296.065
+        },
+        "joint_Df": 1.896198293208009,
+        "report_repeats_joint": [
+          "| 127 | non-P2 | 1.8962 (0.028) | 0.0004 |"
+        ],
+        "code_decision": [
+          "113:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+          "114:     mmat = [cells[L][\"masses\"] for L in L_LIST]",
+          "115:     Df_draws = bootstrap_slope(logx, mmat, BS_DRAWS, BS + \"-df\", SEED)",
+          "116:     Df = float(Df_draws.mean())",
+          "117:     seDf = float(Df_draws.std(ddof=1))",
+          "118:     print(f\"[progress] D_f={Df:.6f} (SE={seDf:.6f}, theory={Df_EX}, tol={Df_TOL})\", flush=True)",
+          "119: ",
+          "120:     # C1 determinism at L=253",
+          "121:     o1 = run_cell(253, 100, SEED)",
+          "122:     d1 = span_census_digest(o1)",
+          "123:     o2 = run_cell(253, 100, SEED)",
+          "124:     d2 = span_census_digest(o2)",
+          "125:     c1 = {\"digest_eq\": d1 == d2, \"pass\": bool(d1 == d2)}",
+          "126:     print(f\"[progress] C1 pass={c1['pass']}\", flush=True)",
+          "127: ",
+          "128:     per_L = {str(L): {\"mean_mass\": float(cells[L][\"masses\"].mean()),",
+          "129:                        \"se_mass\": float(cells[L][\"masses\"].std(ddof=1) / np.sqrt(cells[L][\"n\"]))}",
+          "130:              for L in L_LIST}",
+          "131: ",
+          "132:     c1_pass = c1[\"pass\"]",
+          "133:     df_in_tol = abs(Df - Df_EX) <= Df_TOL",
+          "134:     if not c1_pass:",
+          "135:         decision = \"INCONCLUSIVE\"",
+          "136:     elif df_in_tol:",
+          "137:         decision = \"LATTICE_ARTIFACT\"",
+          "138:     else:",
+          "139:         decision = \"FINITE_SIZE_CORRECTION\"",
+          "140: ",
+          "141:     primary = {",
+          "142:         \"experiment_id\": \"EXP-0010\", \"question\": \"Q-P005\", \"hypothesis\": \"HYP-005\",",
+          "143:         \"decision\": decision,",
+          "144:         \"D_f\": {\"measured\": Df, \"se\": seDf, \"expected\": Df_EX, \"tol\": Df_TOL,",
+          "145:                 \"pass\": bool(abs(Df - Df_EX) <= Df_TOL), \"per_L\": per_L},",
+          "146:         \"gates\": {\"C1\": c1},",
+          "147:         \"test\": \"D_f at non-power-of-2 L: lattice-artifact vs finite-size correction\","
+        ]
+      }
+    },
+    "qp007": {
+      "ok": true,
+      "evidence": {
+        "prereg_n_real": {
+          "512": 100,
+          "1024": 50,
+          "2048": 25
+        },
+        "effective_aligned_n": 25,
+        "retained_fractions": {
+          "512": 0.25,
+          "1024": 0.5,
+          "2048": 1.0
+        },
+        "source_p_c_literals": [
+          "61:     p_c_measures = {512: 0.592883, 1024: 0.592673, 2048: 0.592834}",
+          "62:     p_c_sig = {512: 0.004519, 1024: 0.003031, 2048: 0.001828}",
+          "63:     print(\"[Q-P007] Phase 1 (preserved from run.log):\", flush=True)"
+        ],
+        "source_truncation": [
+          "125:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+          "126:     min_n = min(len(cells[L][\"masses\"]) for L in L_LIST)",
+          "127:     mmat_a = np.array([cells[L][\"masses\"][:min_n] for L in L_LIST])",
+          "128:     cmat_a = np.array([cells[L][\"chis\"][:min_n] for L in L_LIST])",
+          "129:     pmat_a = np.array([cells[L][\"pinfs\"][:min_n] for L in L_LIST])",
+          "130: ",
+          "131:     Df = bootstrap_slope(logx, mmat_a, BS_DRAWS, BS + \"-df\", SEED)",
+          "132:     Gf = bootstrap_slope(logx, cmat_a, BS_DRAWS, BS + \"-gn\", SEED)",
+          "133:     Bf = -bootstrap_slope(logx, pmat_a, BS_DRAWS, BS + \"-bn\", SEED)"
+        ],
+        "result_p_c": 0.5927289999999997,
+        "result_reported_n": {
+          "512": 100,
+          "1024": 50,
+          "2048": 25
+        },
+        "tau_raw": {
+          "total_tail_clusters": 0,
+          "fit_range": [
+            32,
+            4096
+          ],
+          "tau_L": 2048
+        }
+      }
+    },
+    "qp007_tau": {
+      "ok": true,
+      "evidence": {
+        "npz": {
+          "512": {
+            "keys": [
+              "masses",
+              "chis",
+              "pinfs",
+              "sizes_n",
+              "sizes_n_total"
+            ],
+            "sizes_n_shape": [
+              100
+            ],
+            "sizes_n_total": [
+              155116,
+              155248,
+              155363,
+              155674,
+              155546,
+              155336,
+              155117,
+              155439,
+              155300,
+              155187,
+              155585,
+              155063,
+              155437,
+              155321,
+              155362,
+              155527,
+              155473,
+              155408,
+              155484,
+              155830,
+              155372,
+              155427,
+              155217,
+              155166,
+              155271,
+              155422,
+              155321,
+              154899,
+              155462,
+              155187,
+              155697,
+              155466,
+              155637,
+              155523,
+              154682,
+              155350,
+              155584,
+              155212,
+              154955,
+              155270,
+              155379,
+              155120,
+              155682,
+              155337,
+              155354,
+              155172,
+              155767,
+              155236,
+              155767,
+              154956,
+              155132,
+              155280,
+              155471,
+              155162,
+              155459,
+              155310,
+              155484,
+              155474,
+              155695,
+              155292,
+              155045,
+              154785,
+              155780,
+              155549,
+              155350,
+              155081,
+              155257,
+              155598,
+              155492,
+              155308,
+              155458,
+              155467,
+              155311,
+              155353,
+              155363,
+              155339,
+              155568,
+              155494,
+              155387,
+              155618,
+              155401,
+              155462,
+              155228,
+              155341,
+              155408,
+              155342,
+              155141,
+              155478,
+              155409,
+              155182,
+              155618,
+              155144,
+              155468,
+              155216,
+              155319,
+              155324,
+              155173,
+              155757,
+              154880,
+              155523
+            ]
+          },
+          "1024": {
+            "keys": [
+              "masses",
+              "chis",
+              "pinfs",
+              "sizes_n",
+              "sizes_n_total"
+            ],
+            "sizes_n_shape": [
+              50
+            ],
+            "sizes_n_total": [
+              621276,
+              621429,
+              622423,
+              621847,
+              621553,
+              621049,
+              620428,
+              621709,
+              621561,
+              621769,
+              621861,
+              621431,
+              621930,
+              620956,
+              622406,
+              621350,
+              621865,
+              621780,
+              622086,
+              622669,
+              621105,
+              621535,
+              621538,
+              621139,
+              621333,
+              621043,
+              621560,
+              622320,
+              622045,
+              622583,
+              621480,
+              622093,
+              621865,
+              621227,
+              621303,
+              621474,
+              621662,
+              621902,
+              621360,
+              620238,
+              620991,
+              621022,
+              622203,
+              620758,
+              621839,
+              621378,
+              621093,
+              621473,
+              620679,
+              621776
+            ]
+          },
+          "2048": {
+            "keys": [
+              "masses",
+              "chis",
+              "pinfs",
+              "sizes_n",
+              "sizes_n_total"
+            ],
+            "sizes_n_shape": [
+              25
+            ],
+            "sizes_n_total": [
+              2486327,
+              2487415,
+              2486109,
+              2485557,
+              2487781,
+              2485242,
+              2483088,
+              2486833,
+              2485550,
+              2485719,
+              2486814,
+              2485368,
+              2486674,
+              2486082,
+              2486314,
+              2487396,
+              2485414,
+              2485047,
+              2485259,
+              2486615,
+              2484940,
+              2486089,
+              2487738,
+              2486010,
+              2487244
+            ]
+          }
+        },
+        "cache_writer": [
+          "39: def save_cell_data(L, masses, chis, pinfs, sizes_list):",
+          "40:     os.makedirs(os.path.join(QDIR, \"CODE\", \"RESULTS\"), exist_ok=True)",
+          "41:     sizes_n = [len(s) for s in sizes_list]",
+          "42:     sizes_n_total = [int(np.sum(s)) for s in sizes_list]",
+          "43:     np.savez(cell_npz_path(L),",
+          "44:              masses=masses, chis=chis, pinfs=pinfs,",
+          "45:              sizes_n=np.array(sizes_n, dtype=np.int64),",
+          "46:              sizes_n_total=np.array(sizes_n_total, dtype=np.int64))",
+          "47: ",
+          "48: ",
+          "49: def load_cell_data(L):",
+          "50:     p = cell_npz_path(L)",
+          "51:     if not os.path.exists(p):",
+          "52:         return None",
+          "53:     z = np.load(p, allow_pickle=True)",
+          "54:     return {\"masses\": z[\"masses\"], \"chis\": z[\"chis\"], \"pinfs\": z[\"pinfs\"],",
+          "55:             \"sizes_n\": z[\"sizes_n\"], \"sizes_n_total\": z[\"sizes_n_total\"]}"
+        ],
+        "tau_code": [
+          "141:     tL = TAU_L",
+          "142:     tsizes = [ss[1:] for ss in cells[tL][\"sizes\"]]",
+          "143:     total_tail = sum(len(s) for s in tsizes)",
+          "144:     print(f\"[Q-P007] tau: tL={tL}, total tail clusters={total_tail}\", flush=True)",
+          "145:     tc = fit_tau_cumulative(tsizes, TAU_RANGE[0], TAU_RANGE[1], BS + \"-tau\", SEED)",
+          "146:     tau_m = tc[\"tau_cum\"] if tc is not None else None",
+          "147:     boot_se = tc.get(\"boot_se\", 0) if tc is not None else None",
+          "148:     chi2_red = tc.get(\"chi2_red\", None) if tc is not None else None",
+          "149:     print(f\"[Q-P007] tau={'N/A' if tau_m is None else f'{tau_m:.5f}'} (exp 2.055)\", flush=True)"
+        ],
+        "result_tau": {
+          "mean": null,
+          "se": null,
+          "expected": 2.0549450549450547,
+          "tol": 0.05
+        },
+        "result_tau_raw": {
+          "total_tail_clusters": 0,
+          "fit_range": [
+            32,
+            4096
+          ],
+          "tau_L": 2048
+        }
+      }
+    },
+    "3d_boundary": {
+      "ok": true,
+      "evidence": {
+        "L": 4,
+        "N": 64,
+        "current_flags": {
+          "v": false,
+          "h": false
+        },
+        "actual_opposite_z": true,
+        "rows_length": 16,
+        "labels_length": 64,
+        "source": [
+          "226: def spanning_flags(labels, N, L, top_rows=None, bottom_rows=None, node_rows=None):",
+          "227:     if top_rows is None:",
+          "228:         top_rows = (0,)",
+          "229:     if bottom_rows is None:",
+          "230:         bottom_rows = (int(L) - 1,)",
+          "231:     if node_rows is None:",
+          "232:         rows = (np.repeat(np.arange(L), L)).astype(np.int64)",
+          "233:         cols = np.tile(np.arange(L), L).astype(np.int64)",
+          "234:         left = cols == 0",
+          "235:         right = cols == L - 1",
+          "236:         lt = np.flatnonzero(left)",
+          "237:         rt = np.flatnonzero(right)",
+          "238:         lset = set(labels[lt].tolist())",
+          "239:         rset = set(labels[rt].tolist())",
+          "240:         h_span = bool(lset & rset)",
+          "241:     else:",
+          "242:         rows = np.asarray(node_rows, dtype=np.int64)",
+          "243:         h_span = False",
+          "244:     top = np.concatenate([rows[:, None] == t for t in top_rows]).any(axis=1)",
+          "245:     bot = np.concatenate([rows[:, None] == b for b in bottom_rows]).any(axis=1)",
+          "246:     tv = np.flatnonzero(top)",
+          "247:     bv = np.flatnonzero(bot)",
+          "248:     tset = set(labels[tv].tolist())",
+          "249:     bset = set(labels[bv].tolist())",
+          "250:     v_span = bool(tset & bset)",
+          "251:     return v_span, h_span"
+        ],
+        "c7": [
+          "77:         # Match spanning_flags: only check z=0 plane",
+          "78:         # left col: ids 0, L, 2L, ..., (L-1)*L (x=0, y=0..L-1, z=0)",
+          "79:         left_ids = list(range(0, L * L, L))",
+          "80:         right_ids = list(range(L - 1, L * L, L))",
+          "81:         left_roots = {uf.find(int(i)) for i in left_ids}",
+          "82:         right_roots = {uf.find(int(i)) for i in right_ids}",
+          "83:         h_span = bool(left_roots & right_roots)",
+          "84: ",
+          "85:         # top row: ids 0..L-1 (y=0); bottom row: ids (L-1)*L..L*L-1 (y=L-1)",
+          "86:         top_roots = {uf.find(int(i)) for i in range(L)}",
+          "87:         bottom_roots = {uf.find(int(i)) for i in range((L - 1) * L, L * L)}",
+          "88:         v_span = bool(top_roots & bottom_roots)"
+        ]
+      }
+    },
+    "3d_runner": {
+      "ok": true,
+      "evidence": {
+        "pilot_width_configured": {
+          "L8": 300,
+          "L16": 200,
+          "L24": 100
+        },
+        "pilot_width_effective": {
+          "L8": 30,
+          "L16": 20,
+          "L24": 10
+        },
+        "pilot_n_real": {
+          "8": 500,
+          "16": 200,
+          "24": 50
+        },
+        "effective_slope_n": 50,
+        "main_L": [
+          128,
+          256,
+          512
+        ],
+        "main_tau_L": 24,
+        "main_tau_L_in_main": false,
+        "source_width": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:57",
+        "source_truncation": [
+          "165:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+          "166:     min_n = min(len(cells[L][\"masses\"]) for L in L_LIST)",
+          "167:     mmat_a = np.array([cells[L][\"masses\"][:min_n] for L in L_LIST])",
+          "168:     cmat_a = np.array([cells[L][\"chis\"][:min_n] for L in L_LIST])",
+          "169:     pmat_a = np.array([cells[L][\"pinfs\"][:min_n] for L in L_LIST])",
+          "170: ",
+          "171:     Df = bootstrap_slope(logx, mmat_a, BS_DRAWS, f\"{EXP_ID}-df\", SEED)",
+          "172:     Gf = bootstrap_slope(logx, cmat_a, BS_DRAWS, f\"{EXP_ID}-gn\", SEED)",
+          "173:     Bf = -bootstrap_slope(logx, pmat_a, BS_DRAWS, f\"{EXP_ID}-bn\", SEED)",
+          "174: ",
+          "175:     Df_m, Df_se = float(Df.mean()), float(Df.std(ddof=1))",
+          "176:     Gf_m, Gf_se = float(Gf.mean()), float(Gf.std(ddof=1))",
+          "177:     Bf_m, Bf_se = float(Bf.mean()), float(Bf.std(ddof=1))",
+          "178: ",
+          "179:     print(f\"[Q-P008] Df={Df_m:.5f}+-{Df_se:.5f} Gn={Gf_m:.5f}+-{Gf_se:.5f} Bn={Bf_m:.5f}+-{Bf_se:.5f}\", flush=True)",
+          "180: ",
+          "181:     tL = 24",
+          "182:     tsizes = [ss[1:] for ss in cells[tL][\"sizes\"]]",
+          "183:     tc = fit_tau_cumulative(tsizes, 4, 1000, f\"{EXP_ID}-tau\", SEED)"
+        ],
+        "result_tau": {
+          "mean": null,
+          "se": null,
+          "expected": 2.19,
+          "tol": 0.1,
+          "fit_range": [
+            4,
+            1000
+          ],
+          "tau_L": 24
+        }
+      }
+    },
+    "3d_main": {
+      "ok": true,
+      "evidence": {
+        "default_config_order": [
+          "18: PREC_PATHS = [",
+          "19:     os.path.join(QDIR, \"CONFIG\", \"prereg_EXP-0013.json\"),",
+          "20:     os.path.join(QDIR, \"CONFIG\", \"prereg_EXP-0011.json\"),",
+          "21: ]",
+          "22: FORCE_PILOT = os.environ.get(\"QP008_PILOT\", \"\").lower() in (\"1\", \"true\", \"yes\")",
+          "23: PREC = None",
+          "24: for pp in PREC_PATHS:",
+          "25:     if os.path.exists(pp):",
+          "26:         PREC = json.load(open(pp, encoding=\"utf-8\"))",
+          "27:         break",
+          "28: if PREC is None:",
+          "29:     raise FileNotFoundError(\"No prereg found\")",
+          "30: if FORCE_PILOT:",
+          "31:     pilot_path = os.path.join(QDIR, \"CONFIG\", \"prereg_EXP-0011.json\")",
+          "32:     if os.path.exists(pilot_path):",
+          "33:         PREC = json.load(open(pilot_path, encoding=\"utf-8\"))",
+          "34:         print(\"[Q-P008] PILOT MODE: using EXP-0011 config\", flush=True)"
+        ],
+        "hardcoded_tau": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:181",
+        "main_L": [
+          128,
+          256,
+          512
+        ],
+        "main_tau_L": 24,
+        "would_key_error": true,
+        "main_result_exists": false
+      }
+    },
+    "qm007": {
+      "ok": true,
+      "evidence": {
+        "total": 40,
+        "significant": 38,
+        "first_cell": {
+          "bin": 1,
+          "block": 1,
+          "std_residual": -28.917122955093582,
+          "chi2_cell": 836.2000000000002,
+          "p_value": 2.0502642278570707e-07
+        },
+        "source_formula_p": 2.0502642278570707e-07,
+        "exact_chi2_sf_p": 7.273513898649874e-184,
+        "formula_mismatch_count": 0,
+        "source": [
+          "27:         # For a single cell, we need obs and exp for that specific bin in that specific block",
+          "28:         # Since we only have bin-level totals, we need to approximate",
+          "29:         # Using the ratio of obs_total/exp_total as a proxy for the cell's deviation",
+          "30:         ",
+          "31:         # The chi2 contribution per bin is given",
+          "32:         chi2_contrib = bin_data[\"mean_chi2_contribution\"]",
+          "33:         ",
+          "34:         # For a single cell in a single block, approximate:",
+          "35:         # chi2_cell ≈ chi2_contrib / num_blocks (if evenly distributed)",
+          "36:         # But this is approximate since bins may not be evenly distributed",
+          "37:         ",
+          "38:         # Better approach: use the std_residuals_per_block to estimate cell-level chi2",
+          "39:         std_residual = bin_data[\"std_residuals_per_block\"][block_idx]",
+          "40:         chi2_cell = std_residual ** 2  # For a single cell, z^2 ≈ chi2_1",
+          "41:         ",
+          "42:         # Convert to p-value (chi2 with 1 df)",
+          "43:         # Using survival function approximation",
+          "44:         p_value = math.exp(-0.5 * chi2_cell)  # Approximate for large chi2",
+          "45:         # Better: use Wilson-Hilferty approximation for chi2 CDF",
+          "46:         if chi2_cell > 0:",
+          "47:             z = ((chi2_cell / 1) ** (1/6) * (1 - 2/(9*1))) / math.sqrt(2/(9*1))",
+          "48:             # Standard normal CDF approximation",
+          "49:             p_value = 0.5 * math.erfc(z / math.sqrt(2))",
+          "50:         else:",
+          "51:             p_value = 1.0"
+        ],
+        "report_claim": [
+          "**BH-FDR extension:** 40-cell grid (10 bins × 4 blocks)",
+          "Extend EXP-0008's analysis from 20 tail cells (5 thresholds × 4 blocks) to all 10 exponential quantile bins × 4 blocks = 40 cells. Determine which cells survive BH-FDR at α=0.01, and characterize the precise shape of the deviation.",
+          "2. BH-FDR at α=0.01 applied to all 40 cells (10 bins × 4 blocks)",
+          "### 3.1 BH-FDR on 40-Cell Grid",
+          "| Significant after BH-FDR | **38/40** (95%) |",
+          "**Finding:** The deviation is robust across the full 40-cell grid, not limited to tail cells. 38/40 cells survive BH-FDR at α=0.01 — a much broader rejection than the 20-cell result suggested.",
+          "| BH-FDR scope | 5 thresholds × 4 blocks | 10 bins × 4 blocks |",
+          "| Significant cells | 20/20 (all) | 38/40 |"
+        ],
+        "bin1_structural_note": [
+          "| 1 | 0 | 576,022 | 0.000 | −283.5 | EMPTY (minimum gap constraint) |"
+        ]
+      }
+    },
+    "qm007_controls": {
+      "ok": true,
+      "evidence": {
+        "report_control_lines": [
+          "| Comparison: EXP-0008 (20 tail cells) | All 20 survive |",
+          "| Bin | Observed | Expected | Ratio | Std Residual (avg) | Character |",
+          "| C7 independent | Perfect match | Perfect match (data same) |",
+          "| Control | Status | Note |",
+          "| C1 null random | PASS | No significant block (calibration) |",
+          "| C2 positive control | PASS | Validates gate power |",
+          "| C3 seed ladder | PASS | Identical per-block verdict |",
+          "| C4 resolution | PASS | Identical verdict across J |",
+          "| C5 method agreement | PASS | χ² vs KS agree |",
+          "| C6 residue conditioning | PASS | Deviation survives in 4/4 ranges |",
+          "| C7 independent | PASS | C7_exp0008_report.json |",
+          "- **BH-FDR not reapplied** to the 40-cell grid in the primary EXP-0008 analysis — this is a re-analysis"
+        ],
+        "changelog_scope": [
+          "  - Audit report: Q-M007/AUDIT_Q006_Q007.md",
+          "- **Q-M007 audit (independent verification):**",
+          "  - Note: Q-M007 reports RAW residuals — BH-FDR NOT applied to 40-cell grid (only 20 primary tail cells assessed)"
+        ],
+        "source_reads_only": [
+          "data_path = Path(r\"C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\Q-M007\\q_m007_results.json\")",
+          "with open(data_path) as f:"
+        ],
+        "report_claims_c7": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md:63"
+      }
+    },
+    "qm008": {
+      "ok": true,
+      "evidence": {
+        "code_gap": [
+          "43: def compute_gaps(primes):",
+          "44:     \"\"\"Compute normalized gaps.\"\"\"",
+          "45:     if len(primes) < 2:",
+          "46:         return np.array([], dtype=np.float64)",
+          "47:     deltas = (primes[1:] - primes[:-1]).astype(np.float64)",
+          "48:     log_p = np.log(primes[1:].astype(np.float64))",
+          "49:     return deltas / log_p",
+          "50: "
+        ],
+        "exp0008_gap": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py:601",
+        "block_code": [
+          "119:     if blocks is None:",
+          "120:         # Match EXP-0008 block structure, scaled",
+          "121:         blocks = [",
+          "122:             {\"label\": f\"B1\", \"lo\": limit // 100, \"hi\": limit // 10},",
+          "123:             {\"label\": f\"B2\", \"lo\": limit // 10, \"hi\": limit // 2},",
+          "124:             {\"label\": f\"B3\", \"lo\": limit // 2, \"hi\": limit // 1.25},",
+          "125:             {\"label\": f\"B4\", \"lo\": int(limit // 1.25), \"hi\": limit},",
+          "126:         ]"
+        ],
+        "bh_code": [
+          "100: def bh_fdr(p_values, alpha=0.01):",
+          "101:     \"\"\"Benjamini-Hochberg FDR correction.\"\"\"",
+          "102:     n = len(p_values)",
+          "103:     if n == 0:",
+          "104:         return []",
+          "105:     sorted_idx = np.argsort(p_values)",
+          "106:     sorted_p = np.array(p_values)[sorted_idx]",
+          "107:     critical = np.arange(1, n+1) / n * alpha",
+          "108:     significant = sorted_p <= critical",
+          "109:     # Map back to original indices",
+          "110:     results = [False] * n",
+          "111:     for i, idx in enumerate(sorted_idx):",
+          "112:         results[idx] = bool(significant[i])",
+          "113:     return results"
+        ],
+        "bh_counterexample": {
+          "p": [
+            0.003,
+            0.004,
+            0.02,
+            0.03,
+            0.04
+          ],
+          "sorted": [
+            0.003,
+            0.004,
+            0.02,
+            0.03,
+            0.04
+          ],
+          "naive_sorted_mask": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ],
+          "proper_input_mask": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "proper_k": 2
+        },
+        "p_value_lines": [
+          "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:62",
+          "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:91"
+        ],
+        "plan_status": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/PLAN.md:3",
+        "report_status": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md:5"
+      }
+    },
+    "qm008_sieve": {
+      "ok": true,
+      "evidence": {
+        "returned_prime_count": 157,
+        "expected_prime_count": 168,
+        "returned_gap_count": 156,
+        "source": [
+          "46:         # Sieve [low, high)",
+          "47:         seg_len = high - low",
+          "48:         is_prime_seg = np.ones(seg_len, dtype=bool)",
+          "49:         ",
+          "50:         if seg_len > 0:",
+          "51:             is_prime_seg[0] = False",
+          "52:         if seg_len > 1:",
+          "53:             is_prime_seg[1] = False",
+          "54:         ",
+          "55:         for p in base_primes:",
+          "56:             if p * p > high:",
+          "57:                 break",
+          "58:             # Find first multiple of p >= low",
+          "59:             start = ((low + p - 1) // p) * p",
+          "60:             if start == p:",
+          "61:                 start += p  # p itself is prime, don't mark it",
+          "62:             if start < low:",
+          "63:                 start += p",
+          "64:             is_prime_seg[start - low::p] = False",
+          "65:         ",
+          "66:         primes_in_seg = np.nonzero(is_prime_seg)[0] + low"
+        ],
+        "other_runner": [
+          "46:         ",
+          "47:         is_prime_seg = np.ones(seg_len, dtype=bool)",
+          "48:         is_prime_seg[0] = is_prime_seg[1] = False if seg_len > 1 else True",
+          "49:         ",
+          "50:         sqrt_high = int(math.isqrt(high))",
+          "51:         for i in range(2, sqrt_high + 1):",
+          "52:             if i < segment_size:",
+          "53:                 if not is_prime[i]:",
+          "54:                     continue",
+          "55:             else:",
+          "56:                 # Need to check if i is prime (from previous segments)",
+          "57:                 # For simplicity, assume small i are already sieved",
+          "58:                 pass",
+          "59:             ",
+          "60:             # Mark multiples of i in [low, high)",
+          "61:             start = ((low + i - 1) // i) * i",
+          "62:             if start == i:",
+          "63:                 start += i",
+          "64:             is_prime_seg[start - low::i] = False",
+          "65:         "
+        ],
+        "one_e10_result_exists": false
+      }
+    },
+    "s9_hardcoded": {
+      "ok": true,
+      "evidence": {
+        "literal_writer_lines": [
+          "save_q9results.py:8",
+          "save_q9results.py:30"
+        ],
+        "q_s9_1_rates": [
+          [
+            1.0,
+            0.195
+          ],
+          [
+            0.1,
+            0.0567
+          ],
+          [
+            0.05,
+            0.0617
+          ],
+          [
+            0.01,
+            0.0517
+          ],
+          [
+            0.0,
+            0.0517
+          ]
+        ],
+        "monotonicity_violations_in_stored_order": [
+          [
+            1.0,
+            0.1
+          ],
+          [
+            0.05,
+            0.01
+          ]
+        ],
+        "q_s9_3_corrections": {
+          "A_speckle_20pct": {
+            "raw": 0.2233,
+            "unbiased": 0.2033,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05
+            }
+          },
+          "B_speckle_0pct": {
+            "raw": 0.2081,
+            "unbiased": 0.1895,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05
+            }
+          },
+          "C_noise_0pct": {
+            "raw": 0.0531,
+            "unbiased": 0.0569,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05,
+              "wavelength": 0.85
+            }
+          },
+          "D_grating_0pct": {
+            "raw": 0.3261,
+            "unbiased": 0.2969,
+            "corrections": {
+              "temporal": 0.046,
+              "spatial_freq": 1.05
+            }
+          }
+        },
+        "q_s9_3_wavelength_factor": 0.85,
+        "wavelength_relative_change_percent": 15.000000000000002,
+        "missing_cited_script": true,
+        "report_claims": [
+          "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md:47",
+          "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-3.md:31"
+        ],
+        "writer": "\"\"\"Save Q-S9-1 and Q-S9-3 results as JSON.\"\"\"\nimport json, os, sys\n\n# Run Q-S9-1 and capture results\nimport numpy as np\n\n# --- Q-S9-1 results ---\nq_s9_1_results = {\n    \"experiment\": \"Q-S9-1 Minimum spectral structure for pareidolia\",\n    \"parent\": \"§9 battery (dmt-laser-s9-battery)\",\n    \"method\": \"Speckle images with decreasing spectral complexity (FFT peak retention), measured 'code present' detection rate at each level\",\n    \"complexity_levels\": [\n        {\"name\": \"full_speckle\", \"complexity\": 1.0, \"code_rate\": 0.1950},\n        {\"name\": \"sparse_10pct\", \"complexity\": 0.10, \"code_rate\": 0.0567},\n        {\"name\": \"sparse_5pct\", \"complexity\": 0.05, \"code_rate\": 0.0617},\n        {\"name\": \"sparse_1pct\", \"complexity\": 0.01, \"code_rate\": 0.0517},\n        {\"name\": \"sparse_0pct\", \"complexity\": 0.0, \"code_rate\": 0.0517},\n    ],\n    \"baseline_rate\": 0.05,\n    \"threshold_analysis\": {\n        \"criterion\": \"rate > baseline + 0.01\",\n        \"threshold_complexity\": 0.05,\n        \"threshold_pct_of_FFT_bins\": 5,\n    },\n    \"key_finding\": \"Pareidolia detection threshold at complexity >= 0.05 (5% of FFT bins). Below threshold: baseline ~5%. Above: detection increases with complexity.\",\n    \"note\": \"ACTIVE_PROJECT.md stated 'complexity >= 0.10'. Actual computation gives threshold at 0.05 using rate > baseline + 0.01 criterion.\",\n}\n\n# --- Q-S9-3 results ---\nq_s9_3_results = {\n    \"experiment\": \"Q-S9-3 Detector de-biasing experiment\",\n    \"parent\": \"§9 battery (dmt-laser-s9-battery)\",\n    \"method\": \"Apply de-biasing corrections (wavelength, spatial frequency, temporal) to observed detection rates, re-test A==B and re-fit dose-response\",\n    \"observed_rates\": {\n        \"A_speckle_20pct\": {\"raw\": 0.2233, \"unbiased\": 0.2033, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050}},\n        \"B_speckle_0pct\": {\"raw\": 0.2081, \"unbiased\": 0.1895, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050}},\n        \"C_noise_0pct\": {\"raw\": 0.0531, \"unbiased\": 0.0569, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050, \"wavelength\": 0.850}},\n        \"D_grating_0pct\": {\"raw\": 0.3261, \"unbiased\": 0.2969, \"corrections\": {\"temporal\": 0.046, \"spatial_freq\": 1.050}},\n    },\n    \"A_minus_B\": {\"raw\": 0.0152, \"unbiased\": 0.0138},\n    \"dose_response_debiased\": {\n        \"doses\": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],\n        \"raw_rates\": [0.2050, 0.2533, 0.3536, 0.4465, 0.5141, 0.5601, 0.5914, 0.6131, 0.6285, 0.6397, 0.6481],\n        \"unbiased_rates\": [0.1867, 0.2533, 0.3536, 0.4465, 0.5141, 0.5601, 0.5914, 0.6131, 0.6285, 0.6397, 0.6481],\n    },\n    \"unbiased_hill_fit\": {\n        \"baseline\": 0.1882,\n        \"max_inflation\": 0.5095,\n        \"EC50\": 29.38,\n        \"n_Hill\": 1.845,\n        \"raw_was\": {\"baseline\": 0.2050, \"max_inflation\": 0.5130, \"EC50\": 32.6, \"n_Hill\": 1.745},\n    },\n    \"key_finding\": \"De-biasing corrections <5% per factor. A==B robust to de-biasing (A and B share wavelength 650nm). Dose-response shape preserved. REBUS NOT an artifact of detector bias.\",\n}\n\ns9_dir = r\"code\\dmt-laser-s9-battery\"\nos.makedirs(s9_dir, exist_ok=True)\nwith open(os.path.join(s9_dir, \"q_s9_1_results.json\"), \"w\") as f:\n    json.dump(q_s9_1_results, f, indent=2)\nprint(f\"Saved {s9_dir}\\\\q_s9_1_results.json\")\n\nwith open(os.path.join(s9_dir, \"q_s9_3_results.json\"), \"w\") as f:\n    json.dump(q_s9_3_results, f, indent=2)\nprint(f\"Saved {s9_dir}\\\\q_s9_3_results.json\")\n"
+      }
+    },
+    "s9_synthetic": {
+      "ok": true,
+      "evidence": {
+        "stored_fit_parameters": {
+          "ec50": 30.0,
+          "hill_coefficient": 2.0,
+          "max_inflation": 0.483,
+          "baseline": 0.205
+        },
+        "actual_fit_from_stored_points": [
+          32.608130388171794,
+          1.745401330731715,
+          0.5129775990569202,
+          0.20050953807203634
+        ],
+        "max_abs_generated_vs_stored": 0.0,
+        "source_simulation": [
+          "27: # ── Simulated dose-response data ───────────────────────────",
+          "28: # Based on EXP-0008 §9 results, extrapolated to 11 dose levels",
+          "29: # using a Hill-like curve with EC50 ~ 30%, max inflation ~50%, baseline ~20%",
+          "30: DOSE_LEVELS = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]",
+          "31: ",
+          "32: # Calibrated from EXP-0008 sober (20.5%) and dosed (30.4% for A)",
+          "33: # Inflation: 30.4/20.5 - 1 = 48.3% at 100% DMT",
+          "34: BASELINE_A = 0.205",
+          "35: MAX_INFLATION_A = 0.483  # 48.3% inflation at max dose",
+          "36: ",
+          "37: # Generate dose-response using Hill equation with noise",
+          "38: def generate_dose_response(ec50, hill_coeff, max_infl, baseline, n_levels=11):",
+          "39:     doses = np.linspace(0, 1, n_levels) * 100  # 0-100%",
+          "40:     rates = hill(doses, ec50, hill_coeff, max_infl, baseline)",
+          "41:     # Add noise (biological variability)",
+          "42:     rng = np.random.default_rng(42)",
+          "43:     noise = rng.normal(0, 0.02, n_levels)",
+          "44:     rates = np.clip(rates + noise, 0, 1)",
+          "45:     return doses, rates"
+        ],
+        "source_true_parameters": [
+          "52: # True parameters (from EXP-0008 calibration)",
+          "53: TRUE_EC50 = 30.0    # % DMT at half-max inflation",
+          "54: TRUE_HILL = 2.0     # Hill coefficient",
+          "55: MAX_INFL = 0.483    # max inflation factor",
+          "56: BASELINE = 0.205    # sober baseline for A",
+          "57: ",
+          "58: doses, observed = generate_dose_response(TRUE_EC50, TRUE_HILL, MAX_INFL, BASELINE)"
+        ],
+        "source_writer": [
+          "127: out = {",
+          "128:     \"experiment\": \"Q-S9-2 REBUS dose-response curve\",",
+          "129:     \"hill_equation\": \"rate = baseline + max_infl * dose^n / (EC50^n + dose^n)\",",
+          "130:     \"fit_parameters\": {",
+          "131:         \"ec50\": TRUE_EC50,",
+          "132:         \"hill_coefficient\": TRUE_HILL,",
+          "133:         \"max_inflation\": MAX_INFL,",
+          "134:         \"baseline\": BASELINE,",
+          "135:     },",
+          "136:     \"dose_levels\": DOSE_LEVELS,",
+          "137:     \"dose_response_A\": {str(d): float(o) for d, o in zip(doses, observed)},",
+          "138:     \"conditions\": conditions,",
+          "139: }",
+          "140: with open(os.path.join(OUT_DIR, \"dose_response_results.json\"), \"w\") as f:",
+          "141:     json.dump(out, f, indent=2, default=str)"
+        ],
+        "additive_saturation": 0.688,
+        "relative_increase_if_additive": 2.3560975609756096,
+        "relative_increase_intended": 0.483,
+        "report_claim": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md:29"
+      }
+    },
+    "collatz": {
+      "ok": true,
+      "evidence": {
+        "stored_rows": 3,
+        "stored_pilot_rows": 5,
+        "prereg_combinations": 27,
+        "stored_families": [
+          [
+            3,
+            3,
+            3,
+            100000
+          ],
+          [
+            5,
+            5,
+            5,
+            100000
+          ],
+          [
+            7,
+            7,
+            7,
+            100000
+          ],
+          [
+            3,
+            3,
+            1,
+            1000
+          ],
+          [
+            3,
+            5,
+            1,
+            1000
+          ],
+          [
+            5,
+            3,
+            1,
+            1000
+          ],
+          [
+            5,
+            5,
+            1,
+            1000
+          ],
+          [
+            7,
+            5,
+            3,
+            1000
+          ]
+        ],
+        "hardcoded_writer": [
+          "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/save_full_results.py:9",
+          "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/save_full_results.py:73"
+        ],
+        "timeout_cycle_code": [
+          "27:     for n0 in range(1, N, 2):",
+          "28:         st = collatz_stop(n0, a, b, c, max_steps=max_steps)",
+          "29:         stopping_times.append(st)",
+          "30:         if st < max_steps:",
+          "31:             reached_one += 1",
+          "32:         else:",
+          "33:             # Check if it's cycling (not just slow)",
+          "34:             if st == max_steps:",
+          "35:                 cycles_found.append(n0)",
+          "36:         max_found = max(max_found, st)"
+        ],
+        "synthetic_timeout_repeated_state": false,
+        "report_claims": [
+          "03_INVESTIGATIONS/MATHEMATICS/collatz/REPORT/TECHNICAL_Q-M001.md:17",
+          "03_INVESTIGATIONS/MATHEMATICS/collatz/REPORT/TECHNICAL_Q-M001.md:63"
+        ]
+      }
+    },
+    "optics_pvalues": {
+      "ok": true,
+      "evidence": {
+        "cell_count": 20,
+        "p_min": 2.220446049250313e-16,
+        "p_values_below_001": 2,
+        "p_values_equal_0.004": 1,
+        "possible_two_sided_resolution": 0.004,
+        "source": [
+          "49: def bootstrap_effects(block_values, m, n_boot, seed):",
+          "50:     \"\"\"Bootstrap block-mean r = C*sqrt(M); returns (r_dist, two-sided p vs r=1).\"\"\"",
+          "51:     gen = rng(\"bootstrap-speckle-r\", seed)",
+          "52:     n = len(block_values)",
+          "53:     block_values = np.asarray(block_values, dtype=float)",
+          "54:     dist = np.empty(n_boot)",
+          "55:     for i in range(n_boot):",
+          "56:         dist[i] = np.mean(block_values[gen.integers(0, n, size=n)]) * np.sqrt(m)",
+          "57:     n1 = 1.0",
+          "58:     p = 2.0 * min(float((dist >= n1).mean()), float((dist <= n1).mean()))",
+          "59:     p = min(1.0, p + np.finfo(float).eps)",
+          "60:     return dist, p"
+        ],
+        "report_claims": [
+          "  realisations (n_boot = 500, alpha = 0.01); two-sided bootstrap p-value for",
+          "  r = C·sqrt(M) against the null r = 1; Benjamini–Hochberg FDR over the 20 cells.",
+          "- **N = 256**: r = 0.9968 – 1.0003; all 99% bootstrap CIs contain 1.0 →",
+          "  (worst N=32: r ≈ 0.985–0.994; N=64 M=2: r = 0.9840, the only FDR-flagged cell",
+          "C7 ensemble-vs-space (interior) ✓; C8 FDR ✓.",
+          "- Statistical p-values are bootstrap-based and resolution-dependent; the FDR",
+          "A bug in the engine's BH-FDR step-up indexing (flagged all cells) was found by the",
+          "experiment was re-run. The first run's FDR flags are superseded; the appended"
+        ]
+      }
+    },
+    "feigenbaum": {
+      "ok": true,
+      "evidence": {
+        "nested_result": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_results.json",
+        "canonical_results_files": [],
+        "prereg_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+        "z3_a_unique": 2,
+        "z3_a_count": 8,
+        "z3_deltas": {
+          "3": Infinity,
+          "4": Infinity,
+          "5": Infinity,
+          "6": Infinity,
+          "7": Infinity,
+          "8": Infinity
+        },
+        "z4_deltas": {
+          "3": 6.4344123584476565,
+          "4": 7.1774140798335235,
+          "5": 7.283368450341909,
+          "6": 7.286840645655212,
+          "7": -0.016297372044157165,
+          "8": Infinity
+        },
+        "c4": {
+          "description": "Method variation (brentq vs newton, z=2, n=5)",
+          "a_brentq": 1.400253081214783,
+          "a_newton": 1.310702641336833,
+          "difference": 0.08955043987795008,
+          "pass": "False"
+        },
+        "hardcoded_controls": [
+          "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:106",
+          "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:113"
+        ],
+        "fallback_without_period_check": [
+          "121:     if best_a is None:",
+          "122:         # Fallback: try the candidate closest to a_prev without period check",
+          "123:         if a_prev is not None and candidates:",
+          "124:             if isinstance(candidates[0], tuple):",
+          "125:                 from scipy.optimize import brentq",
+          "126:                 try:",
+          "127:                     best_a = brentq(lambda a: residual(a, z, n), candidates[0][0], candidates[0][1], xtol=1e-15)",
+          "128:                 except Exception:",
+          "129:                     pass",
+          "130:             else:",
+          "131:                 best_a = min(candidates, key=lambda a: abs(a - a_prev))",
+          "132: "
+        ],
+        "report_controls": [
+          "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/TECHNICAL_EXP-0014.md:<not found:'All 7 controls PASS'>"
+        ]
+      }
+    },
+    "rng": {
+      "ok": true,
+      "evidence": {
+        "fresh_seed_count": 20,
+        "max_abs_offdiag_corr": 0.9947839373913318,
+        "pair": [
+          "T03_runs",
+          "T15_ac1"
+        ],
+        "aggregate_code": [
+          "104: def aggregate(generator_ps):",
+          "105:     \"\"\"Decision stats for one generator over all seeds (frozen rule).",
+          "106: ",
+          "107:     generator_ps: list of list[(test_id, p)] (one list per seed).",
+          "108:     \"\"\"",
+          "109:     merged = [p for per_seed in generator_ps for _, p in per_seed]",
+          "110:     n = len(merged)",
+          "111:     ks_p = float(stats.kstest(merged, \"uniform\").pvalue)",
+          "112:     small_p = [p for p in merged if p <= ALPHA]",
+          "113:     band = binomial_band(n, p=ALPHA, alpha=1.0 - BAND_COVERAGE)",
+          "114:     sig, _ = bh_fdr(merged, alpha=ALPHA)",
+          "115:     fdr_count = int(sig.sum())",
+          "116:     return {",
+          "117:         \"n_cells\": n,",
+          "118:         \"ks_p\": ks_p,",
+          "119:         \"ks_pass\": bool(ks_p > ALPHA),",
+          "120:         \"small_p_count\": len(small_p),",
+          "121:         \"small_p_min\": min(small_p) if small_p else None,",
+          "122:         \"binomial_band\": band,",
+          "123:         \"small_p_in_band\": bool(band[\"lo\"] <= len(small_p) <= band[\"hi\"]),",
+          "124:         \"fdr_flag_count\": fdr_count,",
+          "125:         \"fdr_in_band\": bool(band[\"lo\"] <= fdr_count <= band[\"hi\"]),",
+          "126:         \"pass_rule\": bool(",
+          "127:             ks_p > ALPHA",
+          "128:             and band[\"lo\"] <= len(small_p) <= band[\"hi\"]",
+          "129:             and band[\"lo\"] <= fdr_count <= band[\"hi\"]",
+          "130:         ),",
+          "131:     }"
+        ],
+        "battery_inputs": [
+          "372: def run_battery(bits, bytes_arr, floats_arr, words_arr):",
+          "373:     \"\"\"Run the full battery; return a list of (test_id, p-value) tuples.",
+          "374: ",
+          "375:     Deterministic given the input arrays. Each test reads a disjoint slice of",
+          "376:     one input array; tests never mutate or rerandomise.",
+          "377:     \"\"\"",
+          "378:     out = []",
+          "379:     out.append((\"T01_monobit\", t_monobit(bits)))",
+          "380:     out.append((\"T02_blockfreq\", t_block_freq(bits)))",
+          "381:     out.append((\"T03_runs\", t_runs(bits)))",
+          "382:     out.append((\"T04_longestrun\", t_longest_run(bits)))",
+          "383:     out.append((\"T05_matrixrank\", t_matrix_rank(bits)))",
+          "384:     out.append((\"T06_dft\", t_dft(bits)))",
+          "385:     out.append((\"T07_nontemplate\", t_nontemplate(bits)))",
+          "386:     p1, p2 = t_serial(bits)",
+          "387:     out.append((\"T08_serial_p1\", p1))",
+          "388:     out.append((\"T08_serial_p2\", p2))",
+          "389:     out.append((\"T09_apen\", t_apen(bits)))",
+          "390:     p1, p2 = t_cusum(bits)",
+          "391:     out.append((\"T10_cusum_fw\", p1))",
+          "392:     out.append((\"T10_cusum_bw\", p2))",
+          "393:     out.append((\"T11_bytes\", t_byte_chisq(bytes_arr)))",
+          "394:     out.append((\"T12_floats\", t_float_chisq(floats_arr)))",
+          "395:     out.append((\"T13_words\", t_word_bucket(words_arr)))",
+          "396:     out.append((\"T14_gap\", t_gap(floats_arr)))",
+          "397:     ac = t_autocorr(bits)",
+          "398:     for i, p in enumerate(ac, start=1):",
+          "399:         out.append((\"T15_ac%d\" % i, p))",
+          "400:     return out"
+        ],
+        "c7_same_stream": [
+          "1: \"\"\"EXP-0004, C7 - independent battery re-implementation (REPLICATION).",
+          "2: ",
+          "3: Recomputes five representative test families from the documented formulas only",
+          "4: (FALSIFICATION/planning_checks.md, EXPERIMENT_PLAN.md) on the IDENTICAL streams",
+          "5: the primary battery used, and compares p-values to the primary battery's",
+          "6: recorded results (RESULTS/EXP-0004_results.json).",
+          "7: ",
+          "8: Deliberately straight-line implementation: explicit loops over the formulas",
+          "9: (multinomial counting via collections instead of numpy vectorisation) to be a",
+          "10: real, distinct implementation of the same statistics."
+        ],
+        "stored_decision": "CERTIFIED"
+      }
+    },
+    "stale_audit": {
+      "ok": true,
+      "evidence": {
+        "summary_claims": [
+          "| **Evidence** | BH-FDR on 40-cell grid: **38/40 cells significant** (vs 20/20 for tail cells only) |",
+          "| **Controls** | 8/8 including C7 independent implementation |",
+          "**Why this matters:** D1 was characterized at 10^8. Q-M008 proves the deviation is NOT a finite-range artifact — it strengthens with scale. The 10^10 test is planned but not yet executed.",
+          "**No overclaims in any finding.**",
+          "The most defensible finding is **D1** because it has full independent verification (C7) and a clear, constrained result (38/40 BH-FDR significant). **V1** strengthens D1 by showing the deviation persists at 10^9. The most interesting finding is **D2** because it's genuinely novel (no one has quantified the spectral complexity threshold for AI pareidolia) and has practical implications for AI image analysis. **D5** is the most surprising because the convergence condition (a=b, c=a) was not predicted by existing literature."
+        ],
+        "qm007_contradicting_lines": [
+          "| Significant after BH-FDR | **38/40** (95%) |",
+          "**Finding:** The deviation is robust across the full 40-cell grid, not limited to tail cells. 38/40 cells survive BH-FDR at α=0.01 — a much broader rejection than the 20-cell result suggested.",
+          "| Significant cells | 20/20 (all) | 38/40 |",
+          "| BH-FDR 40-cell | PASS | 38/40 survive |",
+          "- **BH-FDR not reapplied** to the 40-cell grid in the primary EXP-0008 analysis — this is a re-analysis",
+          "> **H1_SUPPORTED (escalation only)**. We have precisely characterized the shape of the prime gap deviation from Poisson: it is narrower than Exp(1), with both tails lighter and mid-bins over-represented. 38/40 cells survive BH-FDR at α=0.01. This constrains theoretical explanations but does not identify a mechanism. No novelty claim is made."
+        ],
+        "changelog_contradicting_lines": [
+          "  - H1_SUPPORTED status CONFIRMED",
+          "  - Note: Q-M007 reports RAW residuals — BH-FDR NOT applied to 40-cell grid (only 20 primary tail cells assessed)"
+        ],
+        "final_audit_claims": [
+          "| Overclaims | 0 |",
+          "| Pre-registered experiments | 14/14 (100%) |",
+          "7. **Feigenbaum δ → 4.6692** — confirmed at n=8 for z=2 maps; 7/7 controls PASS",
+          "2. **Hash verification not performed**: Recorded in configs but not independently recomputed",
+          "| Overclaims identified | Yes (103 claims, many weak) | None |",
+          "1. **Hash verification**: Result file SHA256 hashes were not independently recomputed",
+          "2. **Database contents**: sovereign_biolab.db was not queried"
+        ]
+      }
+    }
+  }
+}

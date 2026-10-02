@@ -1,0 +1,20 @@
+﻿python : Traceback (most recent call last):
+At line:1 char:1
++ python scan_static_provenance.py *> scan_static_provenance.log; exit  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\natha\ScientificDiscoveryLab\AUDIT\CROSS_PROJECT_ANOMALY_SCAN_20260924\agent_static_provenance\scan_st
+atic_provenance.py", line 301, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\natha\ScientificDiscoveryLab\AUDIT\CROSS_PROJECT_ANOMALY_SCAN_20260924\agent_static_provenance\scan_st
+atic_provenance.py", line 190, in main
+    funcs = enclosing_function(tree)
+  File "C:\Users\natha\ScientificDiscoveryLab\AUDIT\CROSS_PROJECT_ANOMALY_SCAN_20260924\agent_static_provenance\scan_st
+atic_provenance.py", line 112, in enclosing_function
+    result[child.lineno] = n.name
+           ^^^^^^^^^^^^
+AttributeError: 'arguments' object has no attribute 'lineno'
+

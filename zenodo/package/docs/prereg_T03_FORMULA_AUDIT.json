@@ -1,0 +1,47 @@
+{
+  "schema": "t03-runs-formula-prereg-v1",
+  "experiment_id": "T03-FORMULA-AUDIT",
+  "audit_finding_id": "N-004",
+  "question_id": "Q-I004",
+  "frozen_before_execution": true,
+  "note": "Audit of the shared RNG battery's T03_runs estimator against NIST SP 800-22 Rev. 1a section 2.3. Frozen before any calibration number was produced. The shared battery is never modified. No generator may be called certified and the withdrawn EXP-0004 certificate is not reinstated.",
+  "question": "Is the shared battery's T03_runs a valid measurement instrument at the stream lengths this laboratory uses, and is the 'borderline/unstable' note recorded for it in N-004 explained by the estimator rather than by G_LAB?",
+  "why_this_question": "N-004 recorded T03_runs as borderline/unstable for G_LAB while still counting it among the 24 calibrated tests. A defect in an instrument is not a defect in the thing measured, so the two possibilities must be separated before the N-004 per-test table is trusted.",
+  "design": {
+    "comparison": "two independent implementations of SP 800-22 section 2.3 evaluated on identical bit streams, so any difference is a property of the estimator and not of the generator",
+    "implementation_under_test": "engine.validation.rng_battery.t_runs",
+    "reference_implementation": "runs_sp800_22.runs_test_sp800_22, written from the published procedure and not imported from the battery",
+    "paired_streams": true,
+    "generators": [
+      "G_LAB (sha256-derived PCG64, the stream every laboratory experiment uses)"
+    ],
+    "bit_lengths": [
+      "2^18 (200 fresh seeds)",
+      "2^22 (200 fresh seeds)"
+    ],
+    "fresh_seeds_only": true,
+    "recorded_data_reused": "the N-004 raw SQLite database is opened read-only to characterise the historical cells; no p-value is recomputed from stored data and no stored row is rewritten",
+    "battery_hash_guard": "the shared battery's SHA-256 is compared with the digest recorded in the N-004 raw database; the audit fails closed if they differ, because it would then not be auditing the code that produced those results"
+  },
+  "primary_statistic": "the Kolmogorov-Smirnov p-value of the shared battery's T03_runs p-values against Uniform(0,1) at 2^18, over 200 fresh G_LAB seeds",
+  "secondary_statistics": [
+    "the same KS p-value for the reference implementation on the same seeds",
+    "rejection counts at alpha=0.01 for both implementations",
+    "the fraction of seeds meeting the SP 800-22 section 2.3 step 1 applicability condition |pi - 1/2| >= 2/sqrt(n-1)",
+    "the observed mean of the standard's standardized run deviation against the |N(0,1)| expectation of 0.7978845608028654"
+  ],
+  "decision_rule": {
+    "ESTIMATOR_DEFECTIVE": "the shared battery's T03_runs is rejected against uniformity at 2^18 (KS p <= 0.01) while the independent reference implementation is not rejected on the same seeds. This is the preregistered attribution test: the streams are identical, so the difference is the estimator.",
+    "NO_DEFECT_DEMONSTRATED": "either both implementations are uniform, or both are non-uniform, or the battery is uniform and the reference is not. A shared failure would point at the streams, not at the estimator, and is reported as such.",
+    "applicability": "if the SP 800-22 applicability condition is met by 0 of 200 seeds at 2^18, the test is additionally classified NOT_APPLICABLE_AT_THIS_STREAM_LENGTH, independently of which formula is used"
+  },
+  "claim_guards": [
+    "No generator may be called certified. Passing a battery is not proof of randomness and not a NIST certification.",
+    "The withdrawn EXP-0004 certificate is not reinstated. A defective instrument cannot support a certification.",
+    "A defective T03_runs says nothing about G_LAB. The instrument was defective, not the stream.",
+    "The N-004 family-level BATTERY_VALID verdict is not overturned by this audit; it rests on the positive control being rejected at the family-wise level, which the other tests supply.",
+    "Only the T03_runs cells are re-derived. The other 23 per-test cells are out of scope and are neither revalidated nor invalidated here.",
+    "If a recorded cell is superseded, the raw artifact stays byte-identical and the substitution is recorded in CONFIG/changes.jsonl."
+  ],
+  "falsification": "if the shared battery turns out uniform at 2^18 while the reference is not, the hypothesis of an estimator defect is rejected and the recorded non-uniformity is attributed to the streams or the seeds instead. The audit is designed so that this outcome is as reportable as the positive one."
+}

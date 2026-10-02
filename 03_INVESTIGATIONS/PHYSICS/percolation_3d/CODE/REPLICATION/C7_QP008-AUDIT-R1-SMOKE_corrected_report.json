@@ -1,0 +1,105 @@
+{
+  "L_list": [
+    4,
+    6
+  ],
+  "all_pass": true,
+  "cells": {
+    "L4-cell0": {
+      "L": 4,
+      "cell": 0,
+      "independent_k_h": 0,
+      "independent_k_v": 0,
+      "lab_k_h": 0,
+      "lab_k_v": 0,
+      "label": "qp008-audit-r1-L4-p3116079-exp",
+      "pass": true,
+      "seed": 20660924
+    },
+    "L4-cell1": {
+      "L": 4,
+      "cell": 1,
+      "independent_k_h": 0,
+      "independent_k_v": 0,
+      "lab_k_h": 0,
+      "lab_k_v": 0,
+      "label": "qp008-audit-r1-L4-p3116079-exp",
+      "pass": true,
+      "seed": 20670100
+    },
+    "L6-cell0": {
+      "L": 6,
+      "cell": 0,
+      "independent_k_h": 0,
+      "independent_k_v": 1,
+      "lab_k_h": 0,
+      "lab_k_v": 1,
+      "label": "qp008-audit-r1-L6-p3116079-exp",
+      "pass": true,
+      "seed": 20860924
+    },
+    "L6-cell1": {
+      "L": 6,
+      "cell": 1,
+      "independent_k_h": 1,
+      "independent_k_v": 1,
+      "lab_k_h": 1,
+      "lab_k_v": 1,
+      "label": "qp008-audit-r1-L6-p3116079-exp",
+      "pass": true,
+      "seed": 20870100
+    }
+  },
+  "config_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation_3d\\CONFIG\\prereg_QP008_AUDIT_R1_SMOKE.json",
+  "config_sha256": "ca4c14452a48c93ea6daa2b90c3356b77c4b7c81da3edead04d7ef3ff6abfd80",
+  "control": "C7",
+  "engine_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\ENGINE\\perc_engine.py",
+  "engine_sha256": "8e2ebe7f84543bedf7eebbfec73192b6ff77273c5dcd5c157d0ed7813d08959d",
+  "estimand": {
+    "k_h": "one component intersects x=0 and x=L-1 across the full volume",
+    "k_v": "one component intersects z=0 and z=L-1"
+  },
+  "experiment": "QP008-AUDIT-R1-SMOKE",
+  "generated_utc": "2026-09-23T23:45:03+00:00",
+  "hypothesis": "HYP-P008-REPAIR",
+  "independent_experimental_replication": false,
+  "independent_implementation": "literal pure-Python union-find and plane construction",
+  "n_real_per_L": 2,
+  "p_c": 0.3116079,
+  "question": "Q-P008",
+  "same_stream_implementation_crosscheck": true,
+  "schema": "q-p008/c7-cubic-union-find/v2",
+  "script_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation_3d\\CODE\\REPLICATION\\independent_check_EXP0011.py",
+  "script_sha256": "e0ddd3bcd9e3fcdee2f912d2129f0bda5f8b7b6547833c54456f22fb7afbcb8a",
+  "synthetic_self_test": {
+    "expected": {
+      "full_volume_x_path": [
+        false,
+        true
+      ],
+      "old_z0_slice_path": [
+        false,
+        false
+      ],
+      "opposite_z_path": [
+        true,
+        false
+      ]
+    },
+    "observed": {
+      "full_volume_x_path": [
+        false,
+        true
+      ],
+      "old_z0_slice_path": [
+        false,
+        false
+      ],
+      "opposite_z_path": [
+        true,
+        false
+      ]
+    },
+    "pass": true
+  }
+}

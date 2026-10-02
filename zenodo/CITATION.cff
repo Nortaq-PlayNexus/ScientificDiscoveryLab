@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this dataset or software, please cite it as follows. This deposit is unrelated to DOI 10.5281/zenodo.22849652, which covers a different project."
+title: "ScientificDiscoveryLab: Three Instrument Defects Found by Self-Audit"
+version: "1.0.0"
+date-released: 2026-09-28
+abstract: >
+  A self-audit of an autonomous simulation laboratory whose principal asset is
+  methodological discipline rather than results: preregistrations frozen by
+  SHA-256, hash-chained change logs, independent second implementations,
+  fail-closed runners, and an explicit do-not-claim register. Three genuine
+  defects were found in the laboratory's own instruments. First, a PRNG
+  statistical test (NIST SP 800-22 section 2.3) applied a z-score conversion to
+  a statistic already defined in erfc units, giving a Kolmogorov-Smirnov p-value
+  of 6.7e-06 with 0 of 200 rejections where an independent reference
+  implementation of the same section gives 0.847 with 1 of 200 on identical
+  bits; the standard's own applicability precondition is met by 0 of 200 seeds,
+  so the corrected status is unresolvable and the accurate per-test summary is
+  23 of 24 calibrated, 0 miscalibrated, 1 unresolvable. Second, a 2D percolation
+  cluster-mass exponent of 1.92009 against the Fisher value 2.054945 was found to
+  rest on an estimator biased upward by 0.11 to 0.35, measured on synthetic
+  distributions of known exponent; the deviation is not finite-size crossover,
+  and correcting the bias moves the exponent further from the Fisher value, so
+  the escalation stands strengthened while its numeric value is untrustworthy.
+  Third, a reproducibility control that pinned an append-only registry by
+  whole-file hash was repaired without refreshing any baseline. The test suite
+  went from 391 passed with 10 errors to 495 passed with 0 errors, and every
+  historical artifact is verified byte-identical. No scientific discovery is
+  claimed.
+keywords:
+  - reproducibility research
+  - measurement instrument validation
+  - estimator bias
+  - statistical test calibration
+  - NIST SP 800-22
+  - percolation
+  - cluster mass exponent
+  - finite-size scaling
+  - preregistration
+  - hash chaining
+  - fail-closed analysis
+  - negative results
+  - null results
+  - self-audit
+  - scientific integrity
+  - software correctness
+doi: "10.5281/zenodo.XXXXXXX"
+url: "https://doi.org/10.5281/zenodo.XXXXXXX"
+license: MIT

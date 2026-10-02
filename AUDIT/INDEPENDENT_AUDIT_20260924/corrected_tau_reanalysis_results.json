@@ -1,0 +1,244 @@
+{
+  "purpose": "Corrected tau reanalysis after Q-P007 nested-cache audit",
+  "method": "Independent NumPy PCG64 site configurations; scipy.ndimage.label; largest cluster removed per realization; cumulative tail fit",
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.3"
+  },
+  "p_values": {
+    "canonical": 0.5927460507921,
+    "refined": 0.5927289999999995
+  },
+  "seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20260927,
+    20260928,
+    20260929
+  ],
+  "conditions": [
+    {
+      "L": 128,
+      "n": 80,
+      "fits": {
+        "canonical": {
+          "primary_32_4096": {
+            "tau": 1.813086011943896,
+            "n_clusters": 3021,
+            "grid_points": 195,
+            "fit_min": 32,
+            "fit_max": 1546,
+            "bootstrap_mean": 1.8566472343927736,
+            "bootstrap_sd": 0.09253957019928276,
+            "bootstrap_draws": 50
+          },
+          "trend_16_512": {
+            "tau": 1.7804895760575425,
+            "n_clusters": 3021,
+            "grid_points": 197,
+            "fit_min": 16,
+            "fit_max": 512
+          },
+          "trend_32_2048": {
+            "tau": 1.8126421640238357,
+            "n_clusters": 3021,
+            "grid_points": 223,
+            "fit_min": 32,
+            "fit_max": 1541
+          },
+          "trend_64_4096": {
+            "tau": 1.8177558011649435,
+            "n_clusters": 3021,
+            "grid_points": 192,
+            "fit_min": 64,
+            "fit_max": 1554
+          }
+        },
+        "refined": {
+          "primary_32_4096": {
+            "tau": 1.813086011943896,
+            "n_clusters": 3022,
+            "grid_points": 195,
+            "fit_min": 32,
+            "fit_max": 1546,
+            "bootstrap_mean": 1.8528551537057854,
+            "bootstrap_sd": 0.08035444409418423,
+            "bootstrap_draws": 50
+          },
+          "trend_16_512": {
+            "tau": 1.7801401060192452,
+            "n_clusters": 3022,
+            "grid_points": 197,
+            "fit_min": 16,
+            "fit_max": 512
+          },
+          "trend_32_2048": {
+            "tau": 1.8126421640238357,
+            "n_clusters": 3022,
+            "grid_points": 223,
+            "fit_min": 32,
+            "fit_max": 1541
+          },
+          "trend_64_4096": {
+            "tau": 1.8177558011649435,
+            "n_clusters": 3022,
+            "grid_points": 192,
+            "fit_min": 64,
+            "fit_max": 1554
+          }
+        }
+      },
+      "paired_delta_tau_refined_minus_canonical": 0.0
+    },
+    {
+      "L": 256,
+      "n": 60,
+      "fits": {
+        "canonical": {
+          "primary_32_4096": {
+            "tau": 1.9271629514437518,
+            "n_clusters": 11571,
+            "grid_points": 240,
+            "fit_min": 32,
+            "fit_max": 3715,
+            "bootstrap_mean": 1.977596797728301,
+            "bootstrap_sd": 0.06776438155537653,
+            "bootstrap_draws": 50
+          },
+          "trend_16_512": {
+            "tau": 1.8815551006246407,
+            "n_clusters": 11571,
+            "grid_points": 197,
+            "fit_min": 16,
+            "fit_max": 512
+          },
+          "trend_32_2048": {
+            "tau": 1.9197863802795183,
+            "n_clusters": 11571,
+            "grid_points": 240,
+            "fit_min": 32,
+            "fit_max": 2048
+          },
+          "trend_64_4096": {
+            "tau": 1.9522885773730179,
+            "n_clusters": 11571,
+            "grid_points": 244,
+            "fit_min": 64,
+            "fit_max": 3705
+          }
+        },
+        "refined": {
+          "primary_32_4096": {
+            "tau": 1.9271629514437518,
+            "n_clusters": 11573,
+            "grid_points": 240,
+            "fit_min": 32,
+            "fit_max": 3715,
+            "bootstrap_mean": 1.9768766535513032,
+            "bootstrap_sd": 0.07567412017663601,
+            "bootstrap_draws": 50
+          },
+          "trend_16_512": {
+            "tau": 1.8820175630792275,
+            "n_clusters": 11573,
+            "grid_points": 197,
+            "fit_min": 16,
+            "fit_max": 512
+          },
+          "trend_32_2048": {
+            "tau": 1.9197863802795183,
+            "n_clusters": 11573,
+            "grid_points": 240,
+            "fit_min": 32,
+            "fit_max": 2048
+          },
+          "trend_64_4096": {
+            "tau": 1.9522885773730179,
+            "n_clusters": 11573,
+            "grid_points": 244,
+            "fit_min": 64,
+            "fit_max": 3705
+          }
+        }
+      },
+      "paired_delta_tau_refined_minus_canonical": 0.0
+    },
+    {
+      "L": 512,
+      "n": 30,
+      "fits": {
+        "canonical": {
+          "primary_32_4096": {
+            "tau": 1.9297856167556198,
+            "n_clusters": 44933,
+            "grid_points": 245,
+            "fit_min": 32,
+            "fit_max": 4096,
+            "bootstrap_mean": 1.894659076150199,
+            "bootstrap_sd": 0.03734797090068798,
+            "bootstrap_draws": 50
+          },
+          "trend_16_512": {
+            "tau": 1.934393233907648,
+            "n_clusters": 44933,
+            "grid_points": 197,
+            "fit_min": 16,
+            "fit_max": 512
+          },
+          "trend_32_2048": {
+            "tau": 1.9426257414286392,
+            "n_clusters": 44933,
+            "grid_points": 240,
+            "fit_min": 32,
+            "fit_max": 2048
+          },
+          "trend_64_4096": {
+            "tau": 1.9245961416017807,
+            "n_clusters": 44933,
+            "grid_points": 250,
+            "fit_min": 64,
+            "fit_max": 4096
+          }
+        },
+        "refined": {
+          "primary_32_4096": {
+            "tau": 1.9298157581959954,
+            "n_clusters": 44941,
+            "grid_points": 245,
+            "fit_min": 32,
+            "fit_max": 4096,
+            "bootstrap_mean": 1.9041170145475812,
+            "bootstrap_sd": 0.04503266304492553,
+            "bootstrap_draws": 50
+          },
+          "trend_16_512": {
+            "tau": 1.934418283192803,
+            "n_clusters": 44941,
+            "grid_points": 197,
+            "fit_min": 16,
+            "fit_max": 512
+          },
+          "trend_32_2048": {
+            "tau": 1.9426598703630389,
+            "n_clusters": 44941,
+            "grid_points": 240,
+            "fit_min": 32,
+            "fit_max": 2048
+          },
+          "trend_64_4096": {
+            "tau": 1.9246012354843973,
+            "n_clusters": 44941,
+            "grid_points": 250,
+            "fit_min": 64,
+            "fit_max": 4096
+          }
+        }
+      },
+      "paired_delta_tau_refined_minus_canonical": 3.0141440375608397e-05
+    }
+  ],
+  "interpretation": "The corrected implementation measures a size-dependent tau near 1.9--2.0 over these finite boxes; a small paired p_c shift does not by itself establish the Fisher value. Q-P007's historical tau output cannot be used because its cache stores one nested array per realization and its runner discards the entire tail.",
+  "elapsed_seconds": 0.21122264862060547
+}

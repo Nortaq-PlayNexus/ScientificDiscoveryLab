@@ -1,0 +1,19 @@
+# Normalize line endings so hashes recorded on Windows reproduce on Linux CI.
+# The canonical-JSON result hash is computed over in-memory values, not file
+# bytes, so this does not affect recorded hashes — but it keeps diffs sane.
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.cff  text eol=lf
+*.txt  text eol=lf
+*.yml  text eol=lf
+
+LICENSE text eol=lf
+.gitattributes text eol=lf
+
+# Binary-ish
+*.png  binary
+*.jpg  binary
+*.pdf  binary

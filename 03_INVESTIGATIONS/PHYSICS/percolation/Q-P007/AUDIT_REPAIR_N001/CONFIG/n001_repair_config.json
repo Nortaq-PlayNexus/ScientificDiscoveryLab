@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "audit_finding_id": "N-001",
+  "investigation_id": "Q-P007",
+  "run_id": "N001-QP007-CLUSTER-TAU-REPAIR",
+  "scope": "2D square-site percolation cluster-size storage and dependence-aware tau pipeline repair only",
+  "p_values": {
+    "canonical": 0.5927460507921,
+    "refined": 0.5927289999999997,
+    "refined_source": "Historical Q-P007 width-fit value preserved as audit input; not re-estimated by this runner"
+  },
+  "rng": {
+    "generator": "numpy.PCG64",
+    "seed_namespace": "AUDIT-N001-QP007-v1",
+    "pairing": "One common uniform field per (L, realization_id), thresholded independently at canonical and refined p_c"
+  },
+  "storage": {
+    "format": "SQLite3",
+    "manifest_format": "JSON",
+    "array_dtype": "little-endian int64",
+    "array_ndim": 1,
+    "component_backend": "scipy.ndimage.label with deterministic four-neighbor structure",
+    "largest_cluster_policy": "remove exactly one largest-cluster entry per realization before pooling",
+    "required_tail_policy": "raw full arrays are retained; complete tails are the bytes after index 0"
+  },
+  "analysis": {
+    "estimators": [
+      "cumulative",
+      "histogram"
+    ],
+    "bootstrap": {
+      "unit": "realization_block",
+      "paired_resampling": true,
+      "clusters_resampled_individually": false
+    },
+    "planning_only": {
+      "historical_discrepancy": 1.98,
+      "fisher_reference": 2.0549450549450545,
+      "fisher_reference_expression": "187/91",
+      "production_resolution_requirement": "Estimate paired refined-minus-canonical uncertainty from valid realization-block bootstrap replicates before any power claim"
+    }
+  },
+  "profiles": {
+    "smoke": {
+      "execution_class": "infrastructure_smoke",
+      "L_list": [
+        8,
+        16
+      ],
+      "n_real": {
+        "8": 4,
+        "16": 18
+      },
+      "tau_L": 16,
+      "fit_windows": [
+        {
+          "name": "smoke_primary",
+          "cumulative": [
+            1,
+            32
+          ],
+          "histogram": [
+            1,
+            32
+          ]
+        }
+      ],
+      "bootstrap": {
+        "draws": 64,
+        "block_size": 1,
+        "minimum_success_fraction": 0.8,
+        "seed": 110016,
+        "confidence_level": 0.95
+      },
+      "scientific_status": "INFRASTRUCTURE_SMOKE_ONLY_NOT_A_SCIENTIFIC_RESULT"
+    },
+    "production": {
+      "execution_class": "expensive_production",
+      "L_list": [
+        256,
+        512,
+        1024
+      ],
+      "n_real": {
+        "256": 100,
+        "512": 100,
+        "1024": 50
+      },
+      "tau_L": 1024,
+      "fit_windows": [
+        {
+          "name": "primary_32_4096",
+          "cumulative": [
+            32,
+            4096
+          ],
+          "histogram": [
+            32,
+            4096
+          ]
+        },
+        {
+          "name": "sensitivity_16_512",
+          "cumulative": [
+            16,
+            512
+          ],
+          "histogram": [
+            16,
+            512
+          ]
+        },
+        {
+          "name": "sensitivity_32_2048",
+          "cumulative": [
+            32,
+            2048
+          ],
+          "histogram": [
+            32,
+            2048
+          ]
+        },
+        {
+          "name": "sensitivity_64_4096",
+          "cumulative": [
+            64,
+            4096
+          ],
+          "histogram": [
+            64,
+            4096
+          ]
+        }
+      ],
+      "bootstrap": {
+        "draws": 2000,
+        "block_size": 1,
+        "minimum_success_fraction": 0.9,
+        "seed": 2201024,
+        "confidence_level": 0.95
+      },
+      "scientific_status": "PRODUCTION_REQUIRES_SEPARATE_SCIENTIFIC_REVIEW"
+    }
+  }
+}

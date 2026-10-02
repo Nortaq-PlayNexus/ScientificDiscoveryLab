@@ -1,0 +1,59 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "registry": {
+      "ok": true,
+      "evidence": {
+        "root_registry_table_ids": [
+          "EXP-0001",
+          "EXP-0002",
+          "EXP-0003",
+          "EXP-0004",
+          "EXP-0005",
+          "EXP-0006",
+          "EXP-0007",
+          "EXP-0008",
+          "EXP-0009",
+          "EXP-0010",
+          "EXP-0011",
+          "EXP-0014"
+        ],
+        "root_registry_table_count": 12,
+        "audit_claim": "AUDIT/EXPERIMENT_REGISTER.md:12",
+        "question_rows_of_interest": [
+          [
+            "Q-M008",
+            "OPEN"
+          ],
+          [
+            "Q-S9-1",
+            "OPEN"
+          ],
+          [
+            "Q-S9-2",
+            "OPEN"
+          ],
+          [
+            "Q-S9-3",
+            "OPEN"
+          ]
+        ],
+        "current_status_claims": {
+          "q_s9": "CURRENT_STATUS.md:45",
+          "q_m008": "QUESTIONS.md:69"
+        },
+        "inventory_collisions": [
+          "88: ## 5. Identifier and copy findings",
+          "89: ",
+          "90: - Q-P006 raw cell files at L=512, 1024, and 2048 are byte-identical copies of Q-P005 files, despite the Q-P006 note claiming no cells were reused.",
+          "91: - `HYP-005` is mentioned by both EXP-0008 prime gaps and EXP-0009 percolation exponents.",
+          "92: - `EXP-0009` is reused by Q-P005, Q-P006, and Q-P007.",
+          "93: - `EXP-0012` and `EXP-0013` collide with unrelated prime-gap filenames/scaffolds.",
+          "94: - `EXP-0015` collides with acoustics/fluid-dynamics scaffolding.",
+          "95: - The Feigenbaum canonical `RESULTS` directory is empty; stored output is nested under `CODE/03_INVESTIGATIONS/.../RESULTS`.",
+          "96: - The Q-P007 cache stores nested cluster-size arrays incorrectly; the current runner cannot reload its own cache (`KeyError: sizes`)."
+        ]
+      }
+    }
+  }
+}

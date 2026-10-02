@@ -1,0 +1,224 @@
+{
+  "artifacts": {
+    "boundary": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\boundary_controls_20260924_145034.json",
+    "calibration": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\calibration_20260924_144649.json",
+    "independent": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\independent_topology_replication_20260924_143809.json",
+    "nulls": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\nulls_20260924_144734.json",
+    "phase": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\phase_diagram_20260924_144719.json",
+    "propagation": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\propagation_20260924_144726.json",
+    "reference": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\reference_padding_20260924_144736.json",
+    "uncertainty": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\uncertainty_20260924_144655.json"
+  },
+  "checks": [
+    {
+      "details": "c1935da7ac10d628386f313594a66e6a91c0466cb378da1ac1b02ca57895e54b",
+      "name": "preregistration_hash_and_identity",
+      "pass": true
+    },
+    {
+      "details": {
+        "entries": 11,
+        "head": "059e211ae0f24f9cfad52d8ba78293fb50069a49e8e618a5d0f0bf534a15c644"
+      },
+      "name": "change_log_hash_chain",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\calibration_20260924_144649.json",
+      "name": "calibration_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\phase_diagram_20260924_144719.json",
+      "name": "phase_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\propagation_20260924_144726.json",
+      "name": "propagation_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\nulls_20260924_144734.json",
+      "name": "nulls_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\uncertainty_20260924_144655.json",
+      "name": "uncertainty_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\boundary_controls_20260924_145034.json",
+      "name": "boundary_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\independent_topology_replication_20260924_143809.json",
+      "name": "independent_artifact_present",
+      "pass": true
+    },
+    {
+      "details": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\reference_padding_20260924_144736.json",
+      "name": "reference_artifact_present",
+      "pass": true
+    },
+    {
+      "details": 192,
+      "name": "calibration_row_count",
+      "pass": true
+    },
+    {
+      "details": {
+        "failures": 0,
+        "n": 96
+      },
+      "name": "calibration_contour_jacobian_truth_match",
+      "pass": true
+    },
+    {
+      "details": {
+        "failures": 0,
+        "n": 48
+      },
+      "name": "calibration_unit_charge_raw_cluster_match",
+      "pass": true
+    },
+    {
+      "details": {
+        "max_cells": 4,
+        "rows": 48
+      },
+      "name": "charge_two_semantic_split_is_observed",
+      "pass": true
+    },
+    {
+      "details": "all rows",
+      "name": "schema_separates_location_and_cells",
+      "pass": true
+    },
+    {
+      "details": [
+        "close_pair",
+        "four_lattice",
+        "opposite_pair",
+        "single"
+      ],
+      "name": "phase_families_complete",
+      "pass": true
+    },
+    {
+      "details": [
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "name": "phase_all_charges_present",
+      "pass": true
+    },
+    {
+      "details": {
+        "failures": 7
+      },
+      "name": "close_pair_failure_control_observed",
+      "pass": true
+    },
+    {
+      "details": {
+        "failures": 0,
+        "n": 28
+      },
+      "name": "four_lattice_control",
+      "pass": true
+    },
+    {
+      "details": "numeric fields",
+      "name": "phase_no_nan_metrics",
+      "pass": true
+    },
+    {
+      "details": {
+        "n": 8
+      },
+      "name": "propagation_initial_pair",
+      "pass": true
+    },
+    {
+      "details": {
+        "n": 8
+      },
+      "name": "propagation_post_annihilation_zero",
+      "pass": true
+    },
+    {
+      "details": {
+        "n": 24
+      },
+      "name": "null_clean_fields_zero",
+      "pass": true
+    },
+    {
+      "details": {
+        "n": 12
+      },
+      "name": "random_phase_stress_is_explicit",
+      "pass": true
+    },
+    {
+      "details": 96,
+      "name": "uncertainty_trial_count",
+      "pass": true
+    },
+    {
+      "details": 42,
+      "name": "uncertainty_seed",
+      "pass": true
+    },
+    {
+      "details": 1080,
+      "name": "boundary_control_row_count",
+      "pass": true
+    },
+    {
+      "details": {
+        "rows": 669
+      },
+      "name": "boundary_padding_separates_full_and_crop",
+      "pass": true
+    },
+    {
+      "details": {
+        "rows": 240
+      },
+      "name": "boundary_near_edge_control_present",
+      "pass": true
+    },
+    {
+      "details": 144,
+      "name": "independent_implementation_coverage",
+      "pass": true
+    },
+    {
+      "details": {
+        "absolute_charge": 1.0,
+        "location_count": 1.0,
+        "n": 144,
+        "record_count": 1.0,
+        "signed_charge": 1.0
+      },
+      "name": "independent_implementation_reproduces",
+      "pass": true
+    },
+    {
+      "details": {
+        "padding": 160,
+        "reference": 176
+      },
+      "name": "reference_padding_available",
+      "pass": true
+    }
+  ],
+  "experiment": "EXP-0016",
+  "status": "PASS"
+}

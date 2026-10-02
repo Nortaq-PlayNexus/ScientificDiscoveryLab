@@ -1,0 +1,24 @@
+﻿
+Name   Count
+----   -----
+.md      166
+.py      124
+.json     75
+.npz      17
+.jsonl     8
+.txt       5
+.bat       4
+.log       4
+.err       3
+.png       3
+           2
+.html      1
+.TAG       1
+.ini       1
+.db        1
+.rar       1
+
+
+
+Total files: 416
+Total size (bytes): Microsoft.PowerShell.Commands.GenericMeasureInfo.Sum

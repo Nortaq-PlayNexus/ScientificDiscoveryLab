@@ -1,0 +1,126 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "empty_data": {
+      "ok": true,
+      "evidence": {
+        "directories": {
+          "05_DATA": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "06_RESULTS": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "07_REPORTS": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "08_REPLICATION": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          },
+          "99_ARCHIVE": {
+            "exists": true,
+            "file_count": 0,
+            "bytes": 0
+          }
+        },
+        "db_integrity": "ok",
+        "db_tables": [
+          {
+            "name": "biological_effects",
+            "rows": 0
+          },
+          {
+            "name": "compounds",
+            "rows": 0
+          },
+          {
+            "name": "datasets",
+            "rows": 0
+          },
+          {
+            "name": "diseases",
+            "rows": 0
+          },
+          {
+            "name": "evidence_records",
+            "rows": 0
+          },
+          {
+            "name": "experiments",
+            "rows": 0
+          },
+          {
+            "name": "extracts",
+            "rows": 0
+          },
+          {
+            "name": "genes",
+            "rows": 0
+          },
+          {
+            "name": "hypotheses",
+            "rows": 0
+          },
+          {
+            "name": "literature_sources",
+            "rows": 0
+          },
+          {
+            "name": "molecules",
+            "rows": 0
+          },
+          {
+            "name": "plant_parts",
+            "rows": 0
+          },
+          {
+            "name": "plants",
+            "rows": 0
+          },
+          {
+            "name": "predictions",
+            "rows": 0
+          },
+          {
+            "name": "proteins",
+            "rows": 0
+          },
+          {
+            "name": "reaction_conditions",
+            "rows": 0
+          },
+          {
+            "name": "reactions",
+            "rows": 0
+          },
+          {
+            "name": "results",
+            "rows": 0
+          },
+          {
+            "name": "simulations",
+            "rows": 0
+          },
+          {
+            "name": "species",
+            "rows": 0
+          },
+          {
+            "name": "targets",
+            "rows": 0
+          }
+        ],
+        "db_table_count": 21,
+        "db_total_rows": 0
+      }
+    }
+  }
+}

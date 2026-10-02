@@ -1,0 +1,352 @@
+{
+  "authoritative_outputs": {
+    "N-001_Q-P007": {
+      "config": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/AUDIT_REPAIR_N001/CONFIG/n001_repair_config.json",
+        "sha256": "fbdb828af145d8259120942eee1166f19408b50a04115201b18d7a21f26f501d",
+        "size_bytes": 3695
+      },
+      "manifest": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/AUDIT_REPAIR_N001/RESULTS/SMOKE_N001_V3/N001_smoke_manifest.json",
+        "sha256": "f598c2c093a2542ecc02dc086829c3dad518c9bdbdee94d14cbcd5528efbcfdf",
+        "size_bytes": 36050
+      },
+      "production_run_launched": false,
+      "raw_sqlite": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/AUDIT_REPAIR_N001/RESULTS/SMOKE_N001_V3/N001_smoke_raw.sqlite3",
+        "sha256": "d9fcd1d941c694024b6d65cc147e1a4ce24298251986cb543078f708aa43a85e",
+        "size_bytes": 57344
+      },
+      "runner": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/AUDIT_REPAIR_N001/CODE/run_n001.py",
+        "sha256": "a42fc519b08f73cc3e80988fe7f5288b724c383f1d2ca19d2760b004f8aa152a",
+        "size_bytes": 64337
+      },
+      "scientific_result": null,
+      "status": "PASS_INFRASTRUCTURE_SMOKE_ONLY",
+      "summary": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/AUDIT_REPAIR_N001/RESULTS/SMOKE_N001_V3/N001_smoke_summary.json",
+        "sha256": "bac246ed8c321bc83ca4a2359937914ada70df7e34fe662a60516b73d08d971a",
+        "size_bytes": 5665
+      },
+      "validation": "PASS"
+    },
+    "N-003_Feigenbaum": {
+      "alpha_estimated": false,
+      "integration_review": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/AUDIT_REPAIR_N003_FEIGENBAUM/RESULTS/INTEGRATION_REVIEW_20260924.json",
+        "sha256": "7c09c88c339a87d6866d36223c0965cb6cb5e4f6fe30241d8bb26c39ee5ad4dd",
+        "size_bytes": 2555
+      },
+      "preregistration": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/AUDIT_REPAIR_N003_FEIGENBAUM/CONFIG/prereg_N-003_feigenbaum_audit_repair.json",
+        "sha256": "9a33f2c177bd2450b9d21d15bfe7fe4c05c9e9e2c18616c2ccc883f35a344609",
+        "size_bytes": 5027
+      },
+      "production_convergence_claim": false,
+      "report": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/AUDIT_REPAIR_N003_FEIGENBAUM/REPORT/N003_feigenbaum_audit_repair.md",
+        "sha256": "cd426ce540c1379fce14b4d256d9c1e1037440f333b37ca2ba6b504ae246b8d5",
+        "size_bytes": 6169
+      },
+      "result": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/AUDIT_REPAIR_N003_FEIGENBAUM/RESULTS/N003_feigenbaum_audit_repair_results.json",
+        "sha256": "ac74f6e99e36502ec0ed3d3b116688cb9f58050b8340a82979d8c53ff3a807e3",
+        "size_bytes": 129892
+      },
+      "runner": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/AUDIT_REPAIR_N003_FEIGENBAUM/CODE/run_n003_audit.py",
+        "sha256": "3e4c277a323cbe5256c63fcb37defd4f4bb5ec592e8564205f9a40aba19ab6cc",
+        "size_bytes": 15120
+      },
+      "solver": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/AUDIT_REPAIR_N003_FEIGENBAUM/CODE/feigenbaum_n003_solver.py",
+        "sha256": "491d09a34d92f3ee788be4cb32d7c1c3650499bf0a436fb0f3325e41a2888db7",
+        "size_bytes": 26836
+      },
+      "status": "PASS_REVIEW_COMPLETE_FINITE_DIAGNOSTIC_ONLY"
+    },
+    "N-004_RNG_calibration": {
+      "status": "PASS_INFRASTRUCTURE_SMOKE_ONLY",
+      "historical_certificate_claim": false,
+      "production_run_launched": false,
+      "scientific_result": null,
+      "config": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/CONFIG/n004_smoke_config.json",
+        "sha256": "8b03336c9de75e46e7be1399915350d4c3d2978af4a288c5be2c6e1358b256d7",
+        "size_bytes": 4283
+      },
+      "implementation": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/CODE/n004_calibration.py",
+        "sha256": "bdd43fe23d8a43ce7ff23361639865abeecceacc11cede0f363969c01405c186",
+        "size_bytes": 12211
+      },
+      "runner": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/CODE/run_n004_smoke.py",
+        "sha256": "8d516e977e9c5f6cb16532bfc8fd666fbeea9dd6ecf8b88517bd6400c6348947",
+        "size_bytes": 12506
+      },
+      "freeze_script": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/CODE/freeze_n004.py",
+        "sha256": "a29d8ea41250c5b6a507fda44e57056c58715a4362d36364c2d6278072a67f4b",
+        "size_bytes": 4104
+      },
+      "readme": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/README.md",
+        "sha256": "cb50d653cea7d6b7696a6e7e09cc997a28e2bd4b2dec745046db3419b3f48aee",
+        "size_bytes": 1975
+      },
+      "result": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/RESULTS/SMOKE_N004_20260924_V2/N004_rng_calibration_smoke_results.json",
+        "sha256": "3ada2a08ff46192254194f90575ec7dbbae296a48676fa8a19396bab4a789d9d",
+        "size_bytes": 42501
+      },
+      "artifact_manifest": {
+        "path": "03_INVESTIGATIONS/OTHER/rng_certification/AUDIT_REPAIR_N004_RNG_CALIBRATION/RESULTS/SMOKE_N004_20260924_V2/N004_rng_calibration_smoke_manifest.json",
+        "sha256": "dc5b4edbd59f3db97b2a9a63e23196882ad4acd993c8041bf5be2450f24d9c76",
+        "size_bytes": 652
+      },
+      "historical_replay": "PASS_EXACT_80X24_REPLAY",
+      "live_stream_plumbing": "PASS_STREAM_PLUMBING_ONLY"
+    },
+    "N-009_S9_provenance": {
+      "status": "PASS_READ_ONLY_SYNTHETIC_CLASSIFICATION",
+      "external_package_written": false,
+      "external_package_executed": false,
+      "empirical_reclassification_authorized": false,
+      "audit_script": {
+        "path": "AUDIT/S9_PROVENANCE_20260924/CODE/run_read_only_audit.py",
+        "sha256": "872b207c10ea9fdd73833ef8d86c25240b47b9e30db707018fc835191988ff3d",
+        "size_bytes": 9637
+      },
+      "readme": {
+        "path": "AUDIT/S9_PROVENANCE_20260924/README.md",
+        "sha256": "489d900c2c6edb319f96454baace081dbfe6a4a9df5ed4f4e3f3489372e80f96",
+        "size_bytes": 1139
+      },
+      "provenance_report": {
+        "path": "AUDIT/S9_PROVENANCE_20260924/RESULTS/provenance_report.json",
+        "sha256": "13c0fc54d06f7b0266eea80feb24bd7d71b4324d29aa59b9792c5c3466199e7b",
+        "size_bytes": 7356
+      },
+      "classification": "SYNTHETIC_DERIVED_OUTPUT_NOT_EMPIRICAL_EVIDENCE",
+      "raw_input_files_found": 0
+    },
+    "N-01_N-02_N-03_Q-P008": {
+      "canonical_result_hash": "14999d9c714290b66da57e439b02e6bc70658d8930c07ac26d05f7405bf84356",
+      "config": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_QP008_AUDIT_R1_SMOKE.json",
+        "sha256": "e0376204721a594ada98b08ee65cf92d1602008c1d6b21a3644c11badbe4cd1f",
+        "size_bytes": 2037
+      },
+      "engine": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+        "sha256": "8e2ebe7f84543bedf7eebbfec73192b6ff77273c5dcd5c157d0ed7813d08959d",
+        "size_bytes": 22362
+      },
+      "c7_implementation": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py",
+        "sha256": "b1b582be96ee1bfb31c7d6f5702c66457076ebbd960a6e7e3bae5da124fd8eb2",
+        "size_bytes": 10742
+      },
+      "c7_smoke_report": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/C7_QP008-AUDIT-R1-SMOKE_V2_corrected_report.json",
+        "sha256": "d07e18b2b394a20d4d5bf850db61c3449bfa13cf21e0b9baafcd89a32d0f71f6",
+        "size_bytes": 2922
+      },
+      "exact_result_sidecar": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS_AUDIT_REPAIR/QP008_AUDIT_R1_SMOKE_V4/QP008-AUDIT-R1-SMOKE_results.sha256.json",
+        "sha256": "0cc49d151ae9e5febac8c9fe0538c10db7c1d4b55ebdb5b0023ad9e35dbcb9a8",
+        "size_bytes": 257
+      },
+      "process_status_for_incomplete_smoke": 3,
+      "production_run_launched": false,
+      "raw_artifacts": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS_AUDIT_REPAIR/QP008_AUDIT_R1_SMOKE_V4/raw/L4_realizations.npz",
+          "sha256": "d265847c0234a83c1607d88a5a341a9145b0a83f4575d2f28db1b4738ef5695a",
+          "size_bytes": 2341
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS_AUDIT_REPAIR/QP008_AUDIT_R1_SMOKE_V4/raw/L6_realizations.npz",
+          "sha256": "9aec959ca87ef2a5605f75a715090c8158253315dcac8f4c02e98e9c98828385",
+          "size_bytes": 2139
+        }
+      ],
+      "raw_manifest": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS_AUDIT_REPAIR/QP008_AUDIT_R1_SMOKE_V4/raw_manifest.json",
+        "sha256": "c8f1b50a55e0de92a37365f280e4a13940b30e2d3508a6795c1c8f0ec9ee4401",
+        "size_bytes": 568
+      },
+      "result": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS_AUDIT_REPAIR/QP008_AUDIT_R1_SMOKE_V4/QP008-AUDIT-R1-SMOKE_results.json",
+        "sha256": "7a2e7182d56c69cb4fe90faae7f4e20d900e9f2e7e9fb84d8d320667d16e49fc",
+        "size_bytes": 14778
+      },
+      "runner": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_audit_repair.py",
+        "sha256": "0fdcc1b99aca318dbde25ea541a7b22580147ce4a19c18e51791db84709c40d4",
+        "size_bytes": 33227
+      },
+      "scientific_result": null,
+      "status": "PASS_INFRASTRUCTURE_SMOKE_INCONCLUSIVE",
+      "validation": "PASS_HASH_AND_SCHEMA_CHECKS"
+    },
+    "N-04_N-05_N-19_N-21_N-22_historical_2D": {
+      "active_post_n14_baseline": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CONFIG/historical_evidence_baseline_post_n14.json",
+        "sha256": "8c154ab03a4fcb8cac48e3848ed419fda43dd561809792779beff66c44e029ba",
+        "size_bytes": 11601
+      },
+      "historical_files_checked": 51,
+      "monte_carlo_generations_launched": false,
+      "original_baseline": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CONFIG/historical_evidence_baseline.json",
+        "sha256": "f8074731c57d4115133421385d57aa85e7970da04037189e75135a335b5915df",
+        "size_bytes": 11244
+      },
+      "production_calculations_launched": false,
+      "run_manifest": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/RESULTS/READ_ONLY_VALIDATION_20260924_POST_N14/run_manifest.json",
+        "sha256": "a27489bed246e75a63ab78d8b3db3892292dd9fd7b8ee653a61c1bbd7a58bd5b",
+        "size_bytes": 1006
+      },
+      "runner": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CODE/run_read_only_audit.py",
+        "sha256": "e953601f93d23ee62cbb476c3ed3f684fc2f9236dbf51809dde165a49b97c7a4",
+        "size_bytes": 60239
+      },
+      "scope": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CONFIG/audit_scope.json",
+        "sha256": "207abab2b045f61ac4f5c33ab02422b7279fbcb7ffc5ea437a1640f89d7c15c5",
+        "size_bytes": 4929
+      },
+      "status": "PASS_READ_ONLY_CLASSIFICATION",
+      "validation_markdown": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/RESULTS/READ_ONLY_VALIDATION_20260924_POST_N14/validation_report.md",
+        "sha256": "6b49dc53a7c597e36ef65888d9a9059073c1b2cbd6f6016a52e15fbf3e2f986a",
+        "size_bytes": 7309
+      },
+      "validation_report": {
+        "path": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/RESULTS/READ_ONLY_VALIDATION_20260924_POST_N14/validation_report.json",
+        "sha256": "a793f7530939f22f3cdff9ec2cfd456f27ff8b39b5a21153b8a3a589b980601e",
+        "size_bytes": 43187
+      }
+    },
+    "N-06_N-07_N-08_prime_gaps": {
+      "artifact_manifest": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/RESULTS/MATCHED_1E8_20260924/artifact_manifest.json",
+        "sha256": "3f7a98d62402e0dde83d97ddae821bf58dadfe5c52b10d42214450517d74645c",
+        "size_bytes": 882
+      },
+      "artifacts": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/RESULTS/MATCHED_1E8_20260924/raw_summary.json",
+          "sha256": "aed02141ef4c3f88160c79440871b94595106af3e720f5b9e3abf9f83ef7e3de",
+          "size_bytes": 24431
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/RESULTS/MATCHED_1E8_20260924/derived_summary.json",
+          "sha256": "86221bfe88817b9a59e71081aa550589af7518d015c10d4e8ef163daa90ab36e",
+          "size_bytes": 30167
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/RESULTS/MATCHED_1E8_20260924/REPORT.md",
+          "sha256": "54c130d32217cbdbe958f501755bbb719913e5ca337a64f7208b144293b7eaf4",
+          "size_bytes": 3284
+        }
+      ],
+      "config": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/CONFIG/prereg_pga_audit_n06_n08_20260924.json",
+        "sha256": "92f22f61ae5fcfba34455e9d2c8042f68e6a71362cc49ff4738f49df0c2432c3",
+        "size_bytes": 4432
+      },
+      "config_sha256_sidecar": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/CONFIG/prereg_pga_audit_n06_n08_20260924.sha256",
+        "sha256": "1de5de1f69473d8cea8c8b242a12f283e956f233afcaa95cf81e742299fb721c",
+        "size_bytes": 105
+      },
+      "historical_artifacts_modified": false,
+      "production_1e9_or_1e10_launched": false,
+      "runner": {
+        "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/AUDIT_REPAIR_N06_N08/run_audit_repair.py",
+        "sha256": "b2353980f5c63a0951e1faa0eee78b49a5b96969e9a911b8d027b5c5d20a69b4",
+        "size_bytes": 54109
+      },
+      "status": "PASS_DESCRIPTIVE_REPAIR_SMOKE"
+    }
+  },
+  "claim_guards": {
+    "QP007_production_requires_separate_immutable_lock": true,
+    "QP008_production_preregistration_required": true,
+    "historical_3D_runner_disabled": true,
+    "historical_experiment_artifacts_overwritten": false,
+    "novelty_claims_created": false,
+    "prime_1e9_1e10_forbidden": true,
+    "production_runs_launched": [],
+    "scientific_results_created": false,
+    "N004_production_calibration_authorized": false,
+    "S9_empirical_reclassification_authorized": false
+  },
+  "generated_utc": "2026-09-24T01:05:00+00:00",
+  "hash_scope_notes": {
+    "artifact_entries": "sha256 is the exact SHA-256 of the listed file bytes",
+    "qp008_preregistration": {
+      "exact_file_sha256": "e0376204721a594ada98b08ee65cf92d1602008c1d6b21a3644c11badbe4cd1f",
+      "declared_canonical_config_sha256": "ca4c14452a48c93ea6daa2b90c3356b77c4b7c81da3edead04d7ef3ff6abfd80",
+      "reason": "The frozen preregistration embeds a canonical JSON payload hash; the manifest separately records exact file bytes."
+    },
+    "qp008_result": "result_hash is the canonical JSON result-object hash; the sidecar is exact result-file bytes",
+    "n004_preregistration": {
+      "exact_file_sha256": "8b03336c9de75e46e7be1399915350d4c3d2978af4a288c5be2c6e1358b256d7",
+      "declared_canonical_config_sha256": "e6db954e42b6c90c65e599a35084e10bf14b18dde61553d9d1504b52ca6b3e53",
+      "reason": "The frozen N-004 protocol embeds a canonical JSON payload hash; the manifest separately records exact file bytes."
+    }
+  },
+  "manifest_version": 1,
+  "schema": "scientific-discovery-lab/audit-repair-manifest/v1",
+  "scope": "2026-09-24 infrastructure and audit repairs; no new production science",
+  "verification": {
+    "focused_tests": {
+      "N-001_Q-P007": {
+        "passed": 14,
+        "status": "PASS"
+      },
+      "N-003_Feigenbaum": {
+        "passed": 7,
+        "status": "PASS"
+      },
+      "N-004_RNG_calibration": {
+        "passed": 9,
+        "status": "PASS"
+      },
+      "N-009_S9_provenance": {
+        "passed": 3,
+        "status": "PASS_READ_ONLY_RUN"
+      },
+      "N-06_N-07_N-08_prime_gaps": {
+        "passed": 14,
+        "status": "PASS"
+      },
+      "Q-P008_3D": {
+        "passed": 15,
+        "status": "PASS"
+      },
+      "historical_2D_read_only": {
+        "passed": 10,
+        "status": "PASS"
+      }
+    },
+    "full_suite": {
+      "passed": 375,
+      "pytest_testpaths_updated": true,
+      "status": "PASS_SEQUENTIAL",
+      "warnings": 411
+    },
+    "persistent_database": {
+      "path": "sovereign_biolab.db",
+      "sha256": "e7dfc79cdb696b39ae3578e4427b0a026b107655a1a359c5562edc2d46b087b9",
+      "unchanged_from_audit_baseline": true
+    }
+  }
+}

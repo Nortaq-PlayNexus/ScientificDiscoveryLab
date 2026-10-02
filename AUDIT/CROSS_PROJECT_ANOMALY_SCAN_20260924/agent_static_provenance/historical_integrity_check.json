@@ -1,0 +1,35 @@
+{
+  "checked_date": "2026-09-24",
+  "baseline_manifest": "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/raw_inventory.json",
+  "baseline_file_count": 647,
+  "missing_count": 0,
+  "changed_count_at_check": 5,
+  "changed_files": [
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/COMMANDS_AND_RUNTIME.md",
+      "baseline_sha256": "e956df1fe1f878f368e4de9bef83a4b36ff3bef3a8b7ddf470bcdfbd8bf6c969",
+      "current_sha256": "a50013c3b28023946115df2634f658cddf450f0e51549b528447610ca3c7a81f"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/README.md",
+      "baseline_sha256": "2ff310a7ba57e55b9ecefc7918581e84719083bcf8b44962686e164f214ffa5a",
+      "current_sha256": "90d215b02ebd61838648766d5545e0d6f528bb66e6568f210d1830f106930f33"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/REPORT/SUBAGENT_REPORT.md",
+      "baseline_sha256": "fa11735f886e83aa600646e0f8d538ebf83741134f8355d1a1bc5c7329ac0485",
+      "current_sha256": "e5e062cd617fa4f8bd1fa9ca5bbf7d8c34b2244af31ebcf18477fa93e129230c"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/artifact_hashes.json",
+      "baseline_sha256": "d5b06dfe0b05bd1a3bf7b0e26c30d387c262ba799cc9feb8287fef863e0ecac5",
+      "current_sha256": "a132fe6baa3be6750dab9889149a10075918694a1ae0205b6f82585a4a25f5c2"
+    },
+    {
+      "path": "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/full_run.log",
+      "baseline_sha256": "efe9664a1afeea8712240b1c57ab9865ea3d9b0c6c52e99425219bce54347a5f",
+      "current_sha256": "5ef954da1ae483941f3ecec3698cf94454a5e08fafba0c7550c209a24fec2756"
+    }
+  ],
+  "interpretation": "These five paths are outside this agent output and belong to a concurrent/prior EXP-0003 sub-audit. They were not targeted or intentionally edited by agent_static_provenance. No historical experiment source, result, report, registry, or config path was intentionally modified by this agent. This is a point-in-time comparison, not a claim that concurrent activity has stopped."
+}

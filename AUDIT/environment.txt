@@ -1,0 +1,92 @@
+# environment.txt — ScientificDiscoveryLab
+
+**Audit date:** 2026-09-23
+**Primary source:** `C:\Users\natha\ScientificDiscoveryLab`
+
+```
+# ScientificDiscoveryLab — Environment Specification
+# Generated: 2026-09-23
+# Source: REPRODUCIBILITY.md + manual inspection
+
+## Machine
+OS: Windows 10 Home
+CPU: Intel Core i7-8700 (6C/12T) @ 3.20 GHz
+RAM: 24 GB
+GPU: NVIDIA GTX 1080 8 GB
+Free disk: ~1.5 TB (C:)
+
+## Software
+Python: 3.14.7
+numpy: 2.5.3
+scipy: 1.18.1
+matplotlib: 3.11.2
+scikit-image: 0.26.0
+scikit-learn: 1.9.1
+sympy: 1.14.0
+torch: 2.14.0+cpu (CPU-only)
+torchvision: 0.29.0+cpu
+Pillow: 12.3.0
+ImageIO: 2.37.4
+
+## NOT Installed (documented in REPRODUCIBILITY.md)
+pandas (shared code avoids it)
+astropy
+statsmodels
+plotly/dash
+JAX
+TensorFlow
+
+## RNG
+Implementation: sha256-derived PCG64 Generator
+Source: engine.utilities.rng(label, seed)
+Independent of: Python's hash() salt
+Verified stable: Yes (across fresh processes)
+
+## Key Directories
+Primary: C:\Users\natha\ScientificDiscoveryLab
+Audit:   C:\Users\natha\ScientificDiscoveryLab\AUDIT
+
+## Key Files
+README.md
+RESEARCH_RULES.md
+REPRODUCIBILITY.md
+EXPERIMENT_REGISTRY.md
+CHANGELOG.md
+CURRENT_STATUS.md
+DISCOVERY_LOG.md
+QUESTIONS.md
+HYPOTHESES.md
+MASTER_INDEX.md
+requirements.txt
+dashboard.py
+dashboard.html
+sovereign_biolab.db
+pytest.ini
+pytest.ini
+
+## Determinism Rules
+- Random numbers MUST come from engine.utilities.rng(label, seed)
+- Record experiment's random seed in experiment.json
+- When result depends on seed, run multiple seeds and report distribution
+
+## Experiment.json Required Fields
+- experiment ID
+- date/time (UTC ISO 8601)
+- Python version
+- dependency versions (key libs)
+- git commit (if in repo)
+- random seed
+- parameters
+- dataset file hashes (sha256)
+- result file hashes (sha256)
+
+## Standard Commands
+- Infra self-test: python -m engine.tests.run_infra_validation
+- Dashboard: python dashboard.py (http://127.0.0.1:8008)
+
+## Verification: NOT FULLY COMPLETE
+- Hash verification: recorded in configs but NOT independently recomputed
+- sovereign_biolab.db: NOT QUERIED
+- percolation.rar: NOT EXTRACTED
+- 05_DATA/ subdirs: NOT EXAMINED
+```

@@ -1,0 +1,24 @@
+{
+  "analysis_id": "PGA-AUDIT-N06-N08-20260924",
+  "artifacts": [
+    {
+      "bytes": 24431,
+      "path": "RESULTS/MATCHED_1E8_20260924/raw_summary.json",
+      "sha256": "aed02141ef4c3f88160c79440871b94595106af3e720f5b9e3abf9f83ef7e3de"
+    },
+    {
+      "bytes": 30167,
+      "path": "RESULTS/MATCHED_1E8_20260924/derived_summary.json",
+      "sha256": "86221bfe88817b9a59e71081aa550589af7518d015c10d4e8ef163daa90ab36e"
+    },
+    {
+      "bytes": 3284,
+      "path": "RESULTS/MATCHED_1E8_20260924/REPORT.md",
+      "sha256": "54c130d32217cbdbe958f501755bbb719913e5ca337a64f7208b144293b7eaf4"
+    }
+  ],
+  "code_sha256": "b2353980f5c63a0951e1faa0eee78b49a5b96969e9a911b8d027b5c5d20a69b4",
+  "config_sha256": "92f22f61ae5fcfba34455e9d2c8042f68e6a71362cc49ff4738f49df0c2432c3",
+  "historical_artifacts_modified": false,
+  "schema_version": "prime-gap-audit-repair/manifest-v1"
+}

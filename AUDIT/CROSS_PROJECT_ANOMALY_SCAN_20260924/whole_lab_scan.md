@@ -1,0 +1,256 @@
+# Whole-laboratory anomaly scan
+
+Generated: `2026-09-23T18:31:28.170502+00:00`
+
+## Counts
+- Files scanned: **602**
+- Bytes scanned: **225423331**
+- JSON files: **125** (33 result-like)
+- Duplicate hash groups: **6**
+- AST review findings: **98**
+- JSON numerical/format issues: **947**
+
+## Highest-signal categories
+### ID collisions
+- `EXP-000001`: docs, tests
+- `EXP-0001`: 04_SHARED_ENGINE, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, INTEGRATION_PLAN.md, rng_certification, tests
+- `EXP-0002`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, percolation, prime_gaps, speckle_contrast_law
+- `EXP-0003`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, percolation, vortex_density, water_sound_response
+- `EXP-0004`: 04_SHARED_ENGINE, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, percolation, rng_certification
+- `EXP-0005`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CODE, CURRENT_STATUS.md, DIAGNOSTICS, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, percolation, prime_gaps
+- `EXP-0006`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CODE, CURRENT_STATUS.md, DIAGNOSTICS, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, percolation
+- `EXP-0007`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, percolation, water_sound_response
+- `EXP-0008`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, percolation, prime_gaps, save_audits.py
+- `EXP-0009`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, QUESTIONS.md, create_q006_docs.py, percolation
+- `EXP-0009-`: AUDIT, CHANGELOG.md, CURRENT_STATUS.md, create_q006_docs.py, percolation, save_audits.py
+- `EXP-0009-PC`: AUDIT, percolation, save_audits.py
+- `EXP-0009-PRECISION`: AUDIT, create_q006_docs.py, create_q007_docs.py, percolation
+- `EXP-0010`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, create_q006_docs.py, percolation
+- `EXP-0011`: AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, percolation, percolation_3d
+- `EXP-0012`: AUDIT, cone_mosaic_aliasing
+- `EXP-0013`: AUDIT, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, percolation, percolation_3d
+- `EXP-0014`: AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, feigenbaum_constants
+- `EXP-0015`: AUDIT, water_sound_response
+- `EXP-0020`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT
+- `EXP-0025`: AUDIT, INTEGRATION_PLAN.md
+- `EXP-1`: 05_EXTERNAL_RESEARCHER_DOSSIER, tests
+- `EXP-3`: 05_EXTERNAL_RESEARCHER_DOSSIER, INTEGRATION_PLAN.md
+- `EXP-7`: 02_CANDIDATE_PROBLEMS, cone_mosaic_aliasing
+- `HYP-000001`: AUDIT, docs, tests
+- `HYP-001`: AUDIT, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, percolation, speckle_contrast_law
+- `HYP-002`: AUDIT, CHANGELOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, vortex_density
+- `HYP-003`: AUDIT, CHANGELOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, rng_certification
+- `HYP-004`: AUDIT, CHANGELOG.md, CODE, DIAGNOSTICS, HYPOTHESES.md, percolation
+- `HYP-005`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, percolation, prime_gaps
+- `HYP-AC`: 01_RESEARCH_MAP, AUDIT
+- `HYP-AC001`: AUDIT, water_sound_response
+- `HYP-F004`: AUDIT, water_sound_response
+- `HYP-INFRA`: 04_SHARED_ENGINE, AUDIT, EXPERIMENT_REGISTRY.md, HYPOTHESES.md
+- `HYP-M005`: AUDIT, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, feigenbaum_constants
+- `HYP-P006`: AUDIT, percolation
+- `HYP-P007`: AUDIT, percolation
+- `HYP-P008`: AUDIT, EXPERIMENT_REGISTRY.md, percolation_3d
+- `HYP-S9-4`: AUDIT, cone_mosaic_aliasing
+- `Q-A001`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-A002`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-A003`: 02_CANDIDATE_PROBLEMS, AUDIT, CURRENT_STATUS.md, QUESTIONS.md
+- `Q-A004`: 01_RESEARCH_MAP, 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-AC001`: AUDIT, water_sound_response
+- `Q-B001`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-B002`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-B003`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-C001`: 01_RESEARCH_MAP, 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-C002`: 01_RESEARCH_MAP, 02_CANDIDATE_PROBLEMS, AUDIT, CURRENT_STATUS.md, QUESTIONS.md
+- `Q-F001`: 02_CANDIDATE_PROBLEMS, AUDIT, CURRENT_STATUS.md, QUESTIONS.md
+- `Q-F002`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-F003`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-F004`: AUDIT, water_sound_response
+- `Q-I001`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-I002`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-I003`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-I004`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, rng_certification
+- `Q-INFRA`: 04_SHARED_ENGINE, AUDIT, EXPERIMENT_REGISTRY.md, HYPOTHESES.md
+- `Q-M001`: 02_CANDIDATE_PROBLEMS, AUDIT, CURRENT_STATUS.md, QUESTIONS.md, collatz
+- `Q-M002`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, QUESTIONS.md, percolation, prime_gaps
+- `Q-M003`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-M004`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-M005`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, feigenbaum_constants
+- `Q-M006`: 02_CANDIDATE_PROBLEMS, AUDIT, CURRENT_STATUS.md, QUESTIONS.md
+- `Q-M007`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, QUESTIONS.md, percolation, prime_gaps, save_audits.py
+- `Q-M008`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, QUESTIONS.md, percolation, prime_gaps
+- `Q-MX001`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-O000`: 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT
+- `Q-O001`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, speckle_contrast_law
+- `Q-O002`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, DISCOVERY_LOG.md, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, speckle_contrast_law, vortex_density
+- `Q-O003`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, QUESTIONS.md
+- `Q-O004`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-O005`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-P001`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-P002`: 02_CANDIDATE_PROBLEMS, AUDIT, QUESTIONS.md
+- `Q-P003`: 02_CANDIDATE_PROBLEMS, AUDIT, CURRENT_STATUS.md, QUESTIONS.md
+- `Q-P004`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CODE, CURRENT_STATUS.md, DIAGNOSTICS, EXPERIMENT_REGISTRY.md, HYPOTHESES.md, QUESTIONS.md, percolation
+- `Q-P005`: 02_CANDIDATE_PROBLEMS, 05_EXTERNAL_RESEARCHER_DOSSIER, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, percolation
+- `Q-P006`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, QUESTIONS.md, create_q006_docs.py, create_q007_docs.py, fix_q006_cells.py, percolation, prime_gaps, save_audits.py
+- `Q-P007`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, QUESTIONS.md, create_q007_docs.py, percolation, percolation_3d, prime_gaps, save_audits.py
+- `Q-P008`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, EXPERIMENT_REGISTRY.md, QUESTIONS.md, percolation, percolation_3d
+- `Q-P011`: AUDIT, percolation
+- `Q-S9-1`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CODE, CURRENT_STATUS.md, QUESTIONS.md, cone_mosaic_aliasing, percolation, save_q9results.py
+- `Q-S9-2`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, QUESTIONS.md, cone_mosaic_aliasing, percolation, prime_gaps
+- `Q-S9-3`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CODE, CURRENT_STATUS.md, QUESTIONS.md, cone_mosaic_aliasing, percolation, save_q9results.py
+- `Q-S9-4`: 02_CANDIDATE_PROBLEMS, AUDIT, CHANGELOG.md, CURRENT_STATUS.md, QUESTIONS.md, cone_mosaic_aliasing, percolation
+- `Q-X1`: 02_CANDIDATE_PROBLEMS, QUESTIONS.md, percolation
+- `Q-X2`: 02_CANDIDATE_PROBLEMS, QUESTIONS.md, percolation
+
+### Repeated long decimal literals
+- `1.5707963267948966` in 3117 files: 03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json, 03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/prereg_EXP-0003.json, 03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.json, 03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv
+- `0.477464829275686` in 1122 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv
+- `0.3183098861837907` in 1086 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv
+- `0.19873686499574048` in 636 files: 03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json, 03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json, AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json
+- `0.06366197723675814` in 606 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv
+- `0.3296883464982196` in 482 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv
+- `0.1987368649957405` in 410 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv
+- `0.2560144767557485` in 410 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv
+- `0.21127031676338245` in 326 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv
+- `0.15915494309189535` in 282 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.3333333333333333` in 264 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/interpolation_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/interpolation_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.08333333333333333` in 240 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.6666666666666666` in 240 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/interpolation_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/interpolation_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.16666666666666666` in 216 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.25601447675574845` in 216 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.01242105406223378` in 184 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.0040002271345476285` in 176 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.016000908538190514` in 176 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.005151385944777189` in 164 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.020605543779108757` in 164 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.2556383198212349` in 164 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.31702778093217676` in 164 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.3296887004657401` in 156 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.04968421624893513` in 146 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `4345.034731741177` in 144 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `577.5271544749826` in 144 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.002289502406237636` in 142 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.json
+- `0.005151380414034681` in 140 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json
+- `0.06400363415276204` in 140 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.08242217500581656` in 140 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.0824220866245549` in 134 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv
+- `2887.8462397432722` in 132 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.009158009624950544` in 124 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.json
+- `0.0012878451035086703` in 122 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.json
+- `0.020605521656138725` in 122 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json
+- `577.5271544749827` in 120 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.003105263515558446` in 116 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/construction_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json
+- `0.0040002261993085705` in 116 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv
+- `0.00400022619930857` in 110 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json
+- `0.016000904797234282` in 110 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv
+- `0.2549549036834244` in 110 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json
+- `0.30466230730441946` in 110 files: AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json
+- `0.19873686499574053` in 108 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv
+- `0.2112703167633824` in 108 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.21127031676352237` in 108 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.25601453661104817` in 108 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.2560145366110482` in 108 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/fixed_field_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+- `0.03663203849980218` in 106 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.json
+- `0.0010000565498271426` in 104 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/lowpass_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_summary.json
+- `0.32968834649821976` in 102 files: AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/detail_controls.json, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/large_window_validation.csv, AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/main_rows.csv
+
+### Review markers
+- `CHANGELOG.md:200` — - CHANGELOG.md: pending update (see below)
+- `CHANGELOG.md:201` — - CURRENT_STATUS.md: pending update (see below)
+- `create_q007_docs.py:44` — - Phase 2: Exponent remeasurement at refined p_c — PENDING
+- `EXPERIMENT_REGISTRY.md:177` — STEPS       : baseline/control/experiment/stats/report (pending)
+- `EXPERIMENT_REGISTRY.md:186` — - **Main run EXP-0013** (`L=128,256,512`, ~2.5h): PENDING — runner ready, awaiting background execution.
+- `EXPERIMENT_REGISTRY.md:215` — - EXP-0003 made two post-hoc analysis corrections, both logged in the
+- `00_FOUNDATION/simulation_rules.md:43` — - `synthetic test data` — embed a known signal; the simulator must recover it.
+- `00_FOUNDATION/terminology_plain_english.md:18` — | **Aliasing / sampling artifact** | A fake pattern caused by the grid being too coarse — real signal folded onto itself. Often appears/disappears when resolution changes. |
+- `00_FOUNDATION/terminology_plain_english.md:19` — | **Boundary artifact** | A fake pattern caused by the edge of the simulation region, not the physics. Tested by padding the edges and watching if the effect follows. |
+- `02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md:327` — - AVAILABLE DATA: Synthetic.
+- `02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md:356` — - WHAT REMAINS UNKNOWN: Quantified control behaviour for "matched-spectrum" synthetic
+- `02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md:617` — - FALSIFICATION TEST: Fake-inject-recover tests; artifact checks (systematics).
+- `02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md:623` — - WHY AI COULD HELP: Reproducible pipeline + fake-injection honesty.
+- `02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md:947` — ### I3. Causality-inference benchmarking on synthetic systems
+- `02_CANDIDATE_PROBLEMS/MASTER_CANDIDATES.md:951` — - QUESTION: On synthetic pair processes with known couplings/lags, do correlation,
+- `AUDIT/AUDIT_LOG.md:72` — - **Sanity output:** exact synthetic vortex at a grid vertex gave zero winding and zero contour; this is a degenerate test geometry, not a valid detector null.
+- `AUDIT/AUDIT_LOG.md:81` — - **Synthetic test:** regularized unit vortex winding density `0.0003188776`, charge +1, max charge 1; contour result remains zero for the vertex-intersection geometry and is not treated as a failure.
+- `AUDIT/AUDIT_LOG.md:105` — - **Discrepancy:** historical z=3 duplicates, z=4 rollback, invalid preregistration, nested result path, and hardcoded C3/C4/C6 pass fields.
+- `AUDIT/BUGS.md:27` — - **Evidence:** independent arbitrary-precision continuation obtains strictly increasing, period-verified sequences for z=2,3,4. Historical C4 stored difference is `0.08955043987795008` and `pass=false`, while current code hardcodes a pass.
+- `AUDIT/BUGS.md:38` — ### B-005 — EXP-0014 C3/C4/C6 pass fields are hardcoded
+- `AUDIT/BUGS.md:53` — ### B-007 — Q-S9 outputs are hardcoded or synthetic
+- `AUDIT/BUGS.md:56` — - **Evidence:** Q-S9-1 and Q-S9-3 values are embedded in the writer; Q-S9-2 constructs observations from assumed Hill parameters and uses no measured dose data.
+- `AUDIT/BUGS.md:110` — ### B-014 — Synthetic contour sanity test places the zero at a grid vertex
+- `AUDIT/BUGS.md:144` — 4. Remove hardcoded/synthetic S9 result paths from empirical claims.
+- `AUDIT/CLAIM_REGISTRY.md:30` — | C-011 | EXP-0014 z=2 Feigenbaum constant and higher-order z=3/4 claims | Invalid preregistration; historical runner root-selection failure; independent 100-digit continuation | **z=2 REPRODUCED; historical z=3/z=4 CONTRADICTED** | z=2 `delta_8≈4.66906` is reproduced. Correct period-verified values
+- `AUDIT/CLAIM_REGISTRY.md:32` — | C-013 | Q-S9-1 threshold, Q-S9-2 dose response, Q-S9-3 detector correction are empirical discoveries | `save_q9results.py` hard-codes Q-S9-1/3 values; Q-S9-2 synthesizes Hill data; no measured dose data | **INVALID / NOT REPRODUCED** | These are software-generated or assumed-parameter outputs, not
+- `AUDIT/CLAIM_REGISTRY.md:50` — The strongest deficit is therefore at broad width and low P. Corrected Fourier refinement no longer collapses the density (the sub-agent’s first implementation incorrectly divided refined density by `factor**2`); corrected low-pass and direct-complex controls support a finite spectral-support/sampli
+- `AUDIT/CURRENT_STATUS.md_AUDIT_20260924.md:62` — - Main run EXP-0013: PENDING (~2 hours compute)
+- `AUDIT/DISCOVERY_SUMMARY.md:85` — | D6 | Q-P008 3D percolation | PILOT COMPLETE | Main run EXP-0013 pending compute |
+- `AUDIT/DO_NOT_CLAIM.md:25` — | "We discovered prime gap statistics" | Known deviations from Poisson model | Escalation pending community review |
+- `AUDIT/EXPERIMENT_REGISTER.md:159` — **Compliance:** The `experiment.json` files are present in all investigation folders (164–2976 bytes depending on complexity). Full hash verification would require recomputation — status: **NOT FULLY VERIFIED** (hashes exist in config but not independently recomputed in this audit).
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT.md:23` — 10. **Collatz and S9:** the broad “iff” Collatz claim is not established, and the S9 perception/dose outputs are hardcoded or synthetic rather than empirical findings.
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT.md:44` — - **Low:** documentation/report only, malformed cache, synthetic input, incomplete run, or missing provenance.
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT.md:68` — The broad-band deficit is therefore a finite-resolution effect in this protocol. Corrected direct-complex and low-pass controls reproduce the same direction. The sub-agent’s first interpolation control divided refined density by an extra factor of `P²`; after correcting that audit-only bug, refined 
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT.md:106` — The stored z=3 duplicate sequence and z=4 rollback are root-selection errors. The preregistration is invalid JSON, the canonical result directory is empty, and C3/C4/C6 pass fields are hardcoded or inconsistent. Higher-order historical claims are withdrawn; the corrected sequences are known-universa
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT.md:114` — Q-S9-1 and Q-S9-3 outputs are hardcoded by a writer; Q-S9-2 synthesizes observations from assumed Hill parameters. These are not empirical findings.
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT.md:136` — | S9 empirical claims | **Not reproduced; synthetic/hardcoded** |
+- `AUDIT/FINAL_SCIENTIFIC_AUDIT_REPORT.md:111` — - A validation platform for computational optics experiments (pending real-optics integration)
+- `AUDIT/NEXT_EXPERIMENTS.md:111` — - Keep the current hardcoded/synthetic outputs as historical artifacts, not evidence.
+- `AUDIT/NOVELTY_REVIEW.md:26` — | EXP-0003 “broadband resolution effect is a new discovery” | No exact match located in the searches; foundational resolution/detection literature is extensive | The sub-audit’s interpolation control initially had a factor-of-`P²` normalization bug, and its synthetic-vortex sanity control failed; co
+- `AUDIT/NOVELTY_REVIEW.md:34` — | Q-S9-1/2/3: AI pareidolia threshold, dose response, detector de-biasing | No external-data reproduction is present in the laboratory | Q-S9-1/3 writers hard-code values; Q-S9-2 generates synthetic Hill data from assumed parameters | **Not empirically reproduced; no discovery claim** |
+- `AUDIT/PROJECT_INVENTORY.md:60` — | MATHEMATICS | prime gaps, Collatz, Feigenbaum constants | raw prime results, hardcoded S9 outputs, Feigenbaum engine/results |
+- `AUDIT/PROJECT_INVENTORY.md:61` — | OTHER | RNG certification, cone-mosaic/S9 materials | battery code/results, hardcoded S9 writer, synthetic dose-response code |
+- `AUDIT/REPRODUCE.md:222` — | EXP-0005/0006/0007 (Percolation) | Minutes to hours depending on L |
+- `AUDIT/REPRODUCTION_MATRIX.md:12` — | EXP-0003 controls | same | winding vs contour, shifts, Hermitian routes, low-pass, direct complex FFT, corrected Fourier interpolation | corrected interpolation ratios return near 1; low-pass/direct routes reproduce convergence | **SUPPORTED AFTER CORRECTION** | Synthetic contour test with vertex 
+- `AUDIT/REPRODUCTION_MATRIX.md:24` — | EXP-0014 z=3/z=4 | same stored file | independent 100-digit first-rightward-root continuation | z=3 delta8 `6.084672065631...`; z=4 delta8 `7.285086100551...`; monotone/period-verified | **CONTRADICTS STORED OUTPUT** | Stored C3/C4/C6 pass claims are hardcoded/invalid |
+- `AUDIT/REPRODUCTION_MATRIX.md:26` — | Q-S9-1/2/3 | `save_q9results.py`, `dose_response.py`, S9 reports | static writer/data-flow inspection | Q-S9-1/3 values hardcoded; Q-S9-2 synthesizes data from assumed Hill parameters | **NOT EMPIRICALLY REPRODUCED** | No independent dose/perception data |
+- `AUDIT/REPRODUCTION_MATRIX.md:48` — Only the first is established for many historical outputs. The strongest independent results in this audit are the speckle law, the narrow-band vortex law, the EXP-0007 threshold rerun, the corrected Feigenbaum roots, and the resolution-convergence controls. The strongest negative findings are the Q
+- `AUDIT/results_manifest.json:64` — "honest_framing": "Convergence iff a=b=c confirmed at N=100000. Full 27-family sweep pending compute."
+- `AUDIT/results_manifest.json:82` — "status": "Pilot complete; main run EXP-0013 pending compute"
+- `AUDIT/results_manifest.json:94` — "note": "3 convergent done; 24 divergent pending"
+- `DIAGNOSTICS/EXP-0006_phase2_run.py:47` — # Actually main() hardcodes result path via EXP_ID, so patching EXP_ID to
+- `docs/ARCHITECTURE.md:425` — 6. **No fabricated data**: LLMs cannot insert fake molecules, SMILES, reactions, citations, or results. All structures validated computationally.
+- `docs/IMPLEMENTATION_ROADMAP.md:77` — - [ ] UNKNOWN placeholder for missing data (no invention)
+- `docs/IMPLEMENTATION_ROADMAP.md:272` — - [ ] Energy, dipole moment, orbital info placeholders
+- `docs/IMPLEMENTATION_ROADMAP.md:317` — - [ ] Fake citation detection
+- `docs/RESEARCH_RECONNAISSANCE.md:38` — - Docking hypotheses (via AutoDock or custom scoring)
+- `src/__init__.py:18` — constituent_placeholder,
+- `src/__init__.py:19` — concentration_range_placeholder,
+- `src/__init__.py:91` — "constituent_placeholder",
+- `src/__init__.py:92` — "concentration_range_placeholder",
+- `tests/unit/test_plant_engine.py:3` — PlantProfile, get_plant_template, constituent_placeholder,
+- `tests/unit/test_plant_engine.py:4` — concentration_range_placeholder, decompose_plant_ingredients,
+- `tests/unit/test_plant_engine.py:15` — def test_constituent_placeholder():
+- `tests/unit/test_plant_engine.py:16` — c = constituent_placeholder("Quercetin")
+- `tests/unit/test_plant_engine.py:21` — def test_concentration_range_placeholder():
+- `tests/unit/test_plant_engine.py:22` — cr = concentration_range_placeholder()
+- `tests/unit/test_scheduler.py:33` — def test_scheduler_pending_count():
+- `tests/unit/test_scheduler.py:37` — assert sched.pending_count() == 2
+- `src/plant/engine.py:36` — def constituent_placeholder(name: str = "Component") -> Dict[str, str]:
+- `src/plant/engine.py:48` — def concentration_range_placeholder(low: Optional[float] = None, high: Optional[float] = None, unit: str = "unknown") -> Dict[str, Any]:
+- `src/plant/engine.py:61` — return [constituent_placeholder(plant_data.get("scientific_name", "Plant"))]
+- `src/plant/engine.py:75` — ingredients.append(constituent_placeholder(str(c)))
+- `src/plant/engine.py:117` — "constituent_placeholder",
+- `src/plant/engine.py:118` — "concentration_range_placeholder",
+- `src/plant/__init__.py:4` — constituent_placeholder,
+- `src/plant/__init__.py:5` — concentration_range_placeholder,
+- `src/plant/__init__.py:12` — "constituent_placeholder",
+- `src/plant/__init__.py:13` — "concentration_range_placeholder",
+- `src/reaction/mixer.py:3` — from src.plant.engine import decompose_plant_ingredients, constituent_placeholder
+- `src/scheduler/__init__.py:151` — def pending_count(self) -> int:
+- `src/scheduler/__init__.py:227` — max_jobs = max_jobs or self.pending_count()
+- `AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected.py:7` — regularized synthetic-vortex checks.
+- `AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected.py:135` — "synthetic_vortex": {},
+- `AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected.py:141` — out["synthetic_vortex"] = {
+- `AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected.py:165` — print(json.dumps({"synthetic_vortex": out["synthetic_vortex"],
+- `AUDIT/INDEPENDENT_AUDIT_20260924/broadband_controls_corrected_results.json:9` — "synthetic_vortex": {
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_checks.py:218` — "current_runner_C3_C4_C6_are_hardcoded_pass": True,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_checks.py:228` — "full_result_file_generated_by_hardcoded_save_script": "convergent_results = [" in collatz_text and "Full run data from completed run" in collatz_text,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_checks.py:238` — "writer_embeds_hardcoded_values": True,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_checks.py:239` — "q_s9_2_data_generated_from_assumed_hill_parameters": True,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_results.json:304` — "current_runner_C3_C4_C6_are_hardcoded_pass": true,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_results.json:310` — "full_result_file_generated_by_hardcoded_save_script": true,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_results.json:320` — "writer_embeds_hardcoded_values": true,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/independent_static_results.json:321` — "q_s9_2_data_generated_from_assumed_hill_parameters": true,
+- `AUDIT/INDEPENDENT_AUDIT_20260924/python_symbols.json:1837` — "constituent_placeholder",
+- `AUDIT/INDEPENDENT_AUDIT_20260924/python_symbols.json:1838` — "concentration_range_placeholder",
+- `AUDIT/INDEPENDENT_AUDIT_20260924/python_symbols.json:1948` — "pending_count",
+- `AUDIT/INDEPENDENT_AUDIT_20260924/python_symbols.json:2649` — "test_constituent_placeholder",
+- `AUDIT/INDEPENDENT_AUDIT_20260924/python_symbols.json:2650` — "test_concentration_range_placeholder",

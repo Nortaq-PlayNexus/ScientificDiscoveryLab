@@ -1,0 +1,61 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "3d_boundary": {
+      "ok": true,
+      "evidence": {
+        "L": 4,
+        "N": 64,
+        "current_flags": {
+          "v": false,
+          "h": false
+        },
+        "actual_opposite_z": true,
+        "rows_length": 16,
+        "labels_length": 64,
+        "source": [
+          "226: def spanning_flags(labels, N, L, top_rows=None, bottom_rows=None, node_rows=None):",
+          "227:     if top_rows is None:",
+          "228:         top_rows = (0,)",
+          "229:     if bottom_rows is None:",
+          "230:         bottom_rows = (int(L) - 1,)",
+          "231:     if node_rows is None:",
+          "232:         rows = (np.repeat(np.arange(L), L)).astype(np.int64)",
+          "233:         cols = np.tile(np.arange(L), L).astype(np.int64)",
+          "234:         left = cols == 0",
+          "235:         right = cols == L - 1",
+          "236:         lt = np.flatnonzero(left)",
+          "237:         rt = np.flatnonzero(right)",
+          "238:         lset = set(labels[lt].tolist())",
+          "239:         rset = set(labels[rt].tolist())",
+          "240:         h_span = bool(lset & rset)",
+          "241:     else:",
+          "242:         rows = np.asarray(node_rows, dtype=np.int64)",
+          "243:         h_span = False",
+          "244:     top = np.concatenate([rows[:, None] == t for t in top_rows]).any(axis=1)",
+          "245:     bot = np.concatenate([rows[:, None] == b for b in bottom_rows]).any(axis=1)",
+          "246:     tv = np.flatnonzero(top)",
+          "247:     bv = np.flatnonzero(bot)",
+          "248:     tset = set(labels[tv].tolist())",
+          "249:     bset = set(labels[bv].tolist())",
+          "250:     v_span = bool(tset & bset)",
+          "251:     return v_span, h_span"
+        ],
+        "c7": [
+          "77:         # Match spanning_flags: only check z=0 plane",
+          "78:         # left col: ids 0, L, 2L, ..., (L-1)*L (x=0, y=0..L-1, z=0)",
+          "79:         left_ids = list(range(0, L * L, L))",
+          "80:         right_ids = list(range(L - 1, L * L, L))",
+          "81:         left_roots = {uf.find(int(i)) for i in left_ids}",
+          "82:         right_roots = {uf.find(int(i)) for i in right_ids}",
+          "83:         h_span = bool(left_roots & right_roots)",
+          "84: ",
+          "85:         # top row: ids 0..L-1 (y=0); bottom row: ids (L-1)*L..L*L-1 (y=L-1)",
+          "86:         top_roots = {uf.find(int(i)) for i in range(L)}",
+          "87:         bottom_roots = {uf.find(int(i)) for i in range((L - 1) * L, L * L)}",
+          "88:         v_span = bool(top_roots & bottom_roots)"
+        ]
+      }
+    }
+  }
+}

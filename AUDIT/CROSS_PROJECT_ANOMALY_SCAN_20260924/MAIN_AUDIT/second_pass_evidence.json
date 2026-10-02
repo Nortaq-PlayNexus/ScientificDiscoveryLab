@@ -1,0 +1,801 @@
+{
+  "generated_utc": "2026-09-23T18:49:29.454172+00:00",
+  "scope": "read-only second-pass cross-project anomaly scan",
+  "findings": {
+    "3d_spanning_boundary": {
+      "source": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+      "source_excerpt": [
+        "226: def spanning_flags(labels, N, L, top_rows=None, bottom_rows=None, node_rows=None):",
+        "227:     if top_rows is None:",
+        "228:         top_rows = (0,)",
+        "229:     if bottom_rows is None:",
+        "230:         bottom_rows = (int(L) - 1,)",
+        "231:     if node_rows is None:",
+        "232:         rows = (np.repeat(np.arange(L), L)).astype(np.int64)",
+        "233:         cols = np.tile(np.arange(L), L).astype(np.int64)",
+        "234:         left = cols == 0",
+        "235:         right = cols == L - 1",
+        "236:         lt = np.flatnonzero(left)",
+        "237:         rt = np.flatnonzero(right)",
+        "238:         lset = set(labels[lt].tolist())",
+        "239:         rset = set(labels[rt].tolist())",
+        "240:         h_span = bool(lset & rset)",
+        "241:     else:",
+        "242:         rows = np.asarray(node_rows, dtype=np.int64)",
+        "243:         h_span = False",
+        "244:     top = np.concatenate([rows[:, None] == t for t in top_rows]).any(axis=1)",
+        "245:     bot = np.concatenate([rows[:, None] == b for b in bottom_rows]).any(axis=1)",
+        "246:     tv = np.flatnonzero(top)",
+        "247:     bv = np.flatnonzero(bot)",
+        "248:     tset = set(labels[tv].tolist())",
+        "249:     bset = set(labels[bv].tolist())",
+        "250:     v_span = bool(tset & bset)",
+        "251:     return v_span, h_span"
+      ],
+      "results": [
+        {
+          "L": 8,
+          "n": 1000,
+          "p": 0.3116079,
+          "current_slice_v": 33,
+          "current_slice_h": 28,
+          "correct_z_v": 327,
+          "correct_x_h": 316,
+          "current_v_minus_correct_v": -294,
+          "current_h_minus_correct_h": -288
+        },
+        {
+          "L": 16,
+          "n": 1000,
+          "p": 0.3116079,
+          "current_slice_v": 14,
+          "current_slice_h": 12,
+          "correct_z_v": 287,
+          "correct_x_h": 284,
+          "current_v_minus_correct_v": -273,
+          "current_h_minus_correct_h": -272
+        },
+        {
+          "L": 24,
+          "n": 1000,
+          "p": 0.3116079,
+          "current_slice_v": 9,
+          "current_slice_h": 4,
+          "correct_z_v": 288,
+          "correct_x_h": 290,
+          "current_v_minus_correct_v": -279,
+          "current_h_minus_correct_h": -286
+        }
+      ],
+      "interpretation": "For 3D, spanning_flags constructs rows/cols of length L^2 while labels has L^3 entries; its default boundaries select a z=0 slice and a y-row inside that slice, not the two opposite z planes. The C7 implementation repeats the same boundary convention, so agreement does not detect this shared defect.",
+      "static_agent_cross_check": "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verified_candidate_evidence.json:exp0011_3d_boundary"
+    },
+    "3d_runner_wiring": {
+      "runner": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+      "configured_width_n_each_EXP0011": {
+        "L8": 300,
+        "L16": 200,
+        "L24": 100
+      },
+      "actual_expression": "max(4, n_each // 10)",
+      "actual_width_n_each_EXP0011": {
+        "L8": 30,
+        "L16": 20,
+        "L24": 10
+      },
+      "main_L_list": [
+        128,
+        256,
+        512
+      ],
+      "main_config_tau_L": 24,
+      "runner_hardcoded_tau_L": 24,
+      "main_tau_key_absent_from_runner_L": true,
+      "exponent_truncation": {
+        "source": "min_n = min(len(cells[L]['masses']) for L in L_LIST); arrays are sliced [:min_n]",
+        "configured_n_real_EXP0011": {
+          "8": 500,
+          "16": 200,
+          "24": 50
+        },
+        "effective_n_for_slope_EXP0011": 50,
+        "configured_n_real_EXP0013": {
+          "128": 1000,
+          "256": 500,
+          "512": 100
+        },
+        "effective_n_for_slope_EXP0013_if_completed": 100
+      },
+      "nested_tau_source": [
+        "140:         masses_list, chis_list, pinfs_list, sizes_list = [], [], [], []",
+        "141:         for i in range(n):",
+        "142:             seed_i = SEED + i * 13 + L * 37",
+        "143:             lab = cell_label(L, \"exp\", seed_i)",
+        "144:             o = pe.run_span_cell_edges(src, dst, N, L, P_C_REF, 1, seed_i, lab,",
+        "145:                                        semantics=\"site\",",
+        "146:                                        want_largest_mass=True,",
+        "147:                                        want_stats=True,",
+        "148:                                        want_cluster_sizes=True)",
+        "149:             m_arr = np.asarray(o[\"masses\"], dtype=np.float64)",
+        "150:             cl_sizes = o.get(\"cluster_sizes\", [])",
+        "151:             c_arr = np.array([float((np.asarray(ss, dtype=np.float64)**2).sum() / np.asarray(ss, dtype=np.float64).sum()) if len(ss) > 0 else 0.0 for ss in cl_sizes])",
+        "152:             p_arr = m_arr / float(N)",
+        "153:             masses_list.append(m_arr)",
+        "154:             chis_list.append(c_arr)",
+        "155:             pinfs_list.append(p_arr)",
+        "156:             sizes_list.append(cl_sizes)",
+        "157: ",
+        "158:         masses = np.concatenate(masses_list) if masses_list else np.array([0])",
+        "159:         chis = np.concatenate(chis_list) if chis_list else np.array([0])",
+        "160:         pinfs = np.concatenate(pinfs_list) if pinfs_list else np.array([0])",
+        "161: ",
+        "162:         cells[L] = {\"masses\": masses, \"chis\": chis, \"pinfs\": pinfs, \"sizes\": sizes_list}",
+        "163:         print(f\"  L={L} done (n_cells={n})\", flush=True)",
+        "164: ",
+        "165:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+        "166:     min_n = min(len(cells[L][\"masses\"]) for L in L_LIST)",
+        "167:     mmat_a = np.array([cells[L][\"masses\"][:min_n] for L in L_LIST])",
+        "168:     cmat_a = np.array([cells[L][\"chis\"][:min_n] for L in L_LIST])",
+        "169:     pmat_a = np.array([cells[L][\"pinfs\"][:min_n] for L in L_LIST])",
+        "170: ",
+        "171:     Df = bootstrap_slope(logx, mmat_a, BS_DRAWS, f\"{EXP_ID}-df\", SEED)",
+        "172:     Gf = bootstrap_slope(logx, cmat_a, BS_DRAWS, f\"{EXP_ID}-gn\", SEED)",
+        "173:     Bf = -bootstrap_slope(logx, pmat_a, BS_DRAWS, f\"{EXP_ID}-bn\", SEED)",
+        "174: ",
+        "175:     Df_m, Df_se = float(Df.mean()), float(Df.std(ddof=1))",
+        "176:     Gf_m, Gf_se = float(Gf.mean()), float(Gf.std(ddof=1))",
+        "177:     Bf_m, Bf_se = float(Bf.mean()), float(Bf.std(ddof=1))",
+        "178: ",
+        "179:     print(f\"[Q-P008] Df={Df_m:.5f}+-{Df_se:.5f} Gn={Gf_m:.5f}+-{Gf_se:.5f} Bn={Bf_m:.5f}+-{Bf_se:.5f}\", flush=True)",
+        "180: ",
+        "181:     tL = 24",
+        "182:     tsizes = [ss[1:] for ss in cells[tL][\"sizes\"]]",
+        "183:     tc = fit_tau_cumulative(tsizes, 4, 1000, f\"{EXP_ID}-tau\", SEED)"
+      ],
+      "pilot_result": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_results.json",
+      "pilot_tau": {
+        "mean": null,
+        "se": null,
+        "expected": 2.19,
+        "tol": 0.1,
+        "fit_range": [
+          4,
+          1000
+        ],
+        "tau_L": 24
+      },
+      "c7_artifacts": {
+        "failed_artifact": {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/C7_exp0011_pilot.json",
+          "summary": {
+            "experiment": "EXP-0011",
+            "question": "Q-P008",
+            "control": "C7",
+            "L_list": [
+              8,
+              16
+            ],
+            "n_real": {
+              "8": 50,
+              "16": 50
+            },
+            "p_c": 0.3116079,
+            "cells": {
+              "L8-n50": {
+                "L": 8,
+                "p": 0.3116079,
+                "n": 50,
+                "seed": 42,
+                "lab": {
+                  "k_v": 2,
+                  "n": 50
+                },
+                "c7": {
+                  "k_v": 45,
+                  "n": 50
+                },
+                "raw_diff": 43,
+                "identical": false,
+                "preregistered": true
+              },
+              "L16-n50": {
+                "L": 16,
+                "p": 0.3116079,
+                "n": 50,
+                "seed": 123,
+                "lab": {
+                  "k_v": 3,
+                  "n": 50
+                },
+                "c7": {
+                  "k_v": 50,
+                  "n": 50
+                },
+                "raw_diff": 47,
+                "identical": false,
+                "preregistered": true
+              }
+            },
+            "max_diff": 47,
+            "pass": false,
+            "notes": [
+              "Pure-Python union-find spanning at p_c vs lab (scipy CSR). Raw count diff: 47 (gate: 0)."
+            ],
+            "elapsed": 1.3578836917877197
+          }
+        },
+        "passing_artifact": {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/C7_EXP-0011_report.json",
+          "summary": {
+            "all_pass": true
+          }
+        },
+        "primary_result_has_c7_gate": false,
+        "passing_script_L_list": [
+          8,
+          16
+        ],
+        "prereg_C7_L_list": [
+          8,
+          16,
+          24
+        ]
+      }
+    },
+    "exp0006_runner_result_mismatch": {
+      "runner": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+      "runner_interpolation_excerpt": [
+        "50: ",
+        "51: def interp_p50(ps, W):",
+        "52:     ps = np.asarray(ps, dtype=float)",
+        "53:     W = np.asarray(W, dtype=float)",
+        "54:     below = W < 0.5",
+        "55:     above = W > 0.5",
+        "56:     if not below.any() or not above.any():",
+        "57:         raise ValueError(\"p50 not bracketed\")",
+        "58:     i = int(np.flatnonzero(below)[-1])",
+        "59:     j = int(np.flatnonzero(above)[0])",
+        "60:     if i >= j:",
+        "61:         raise ValueError(\"p50 grid ordering issue\")",
+        "62:     p0, p1 = ps[i], ps[j]",
+        "63:     w0, w1 = W[i], W[j]",
+        "64:     return float(p0 + (0.5 - w0) * (p1 - p0) / (w1 - p0))",
+        "65: ",
+        "66: "
+      ],
+      "result": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+      "runner_mtime": "2026-09-22T14:38:20.401670+00:00",
+      "result_mtime": "2026-09-17T13:28:38.966068+00:00",
+      "rows": [
+        {
+          "system": "bond_span",
+          "L": 64,
+          "wrong_current_formula": 0.7965714285714307,
+          "correct_formula": 0.4998211091234348,
+          "stored_p50": 0.4998542286084771
+        },
+        {
+          "system": "bond_span",
+          "L": 128,
+          "wrong_current_formula": 0.5001711840228247,
+          "correct_formula": 0.5001697312588402,
+          "stored_p50": 0.5001572242067353
+        },
+        {
+          "system": "bond_span",
+          "L": 256,
+          "wrong_current_formula": 0.5026260387811634,
+          "correct_formula": 0.5001618122977346,
+          "stored_p50": 0.5001669446692497
+        },
+        {
+          "system": "bond_span",
+          "L": 512,
+          "wrong_current_formula": 0.5025966850828729,
+          "correct_formula": 0.5001498708010336,
+          "stored_p50": 0.5001527904511637
+        },
+        {
+          "system": "bond_wrap",
+          "L": 32,
+          "wrong_current_formula": 0.6091304347826093,
+          "correct_formula": 0.49862068965517253,
+          "stored_p50": 0.4985936764612654
+        },
+        {
+          "system": "bond_wrap",
+          "L": 48,
+          "wrong_current_formula": 0.575081967213115,
+          "correct_formula": 0.4974174174174175,
+          "stored_p50": 0.4974828844043641
+        },
+        {
+          "system": "bond_wrap",
+          "L": 64,
+          "wrong_current_formula": 0.5003347280334729,
+          "correct_formula": 0.500329218106996,
+          "stored_p50": 0.5003630768139604
+        },
+        {
+          "system": "site_span",
+          "L": 64,
+          "wrong_current_formula": 0.5234819867059588,
+          "correct_formula": 0.5921144718526316,
+          "stored_p50": 0.5921271333168397
+        },
+        {
+          "system": "site_span",
+          "L": 128,
+          "wrong_current_formula": 0.5931605366327757,
+          "correct_formula": 0.5930487413829596,
+          "stored_p50": 0.5930199396451842
+        },
+        {
+          "system": "site_span",
+          "L": 256,
+          "wrong_current_formula": 0.47934039809303736,
+          "correct_formula": 0.5924525725391304,
+          "stored_p50": 0.5924726939598507
+        }
+      ],
+      "stored_c2": {
+        "pair_diff": 0.0010144666894992271,
+        "pass": true,
+        "span_a": 0.5002094826899287,
+        "wrap_a": 0.5012239493794279
+      },
+      "hardcoded_c2_excerpt": [
+        "290:     # ---- C2 estimator/BC independence ----",
+        "291:     pair = abs(fss_out[\"bond_span\"][\"a\"] - fss_out[\"bond_span\"][\"a\"])  # same system; bond_wrap not re-run",
+        "292:     c2 = {\"span_a\": fss_out[\"bond_span\"][\"a\"], \"wrap_a\": \"N/A (not re-run)\",",
+        "293:           \"pair_diff\": 0.0, \"pass\": True,",
+        "294:           \"note\": \"bond_wrap at fine grid not re-run in EXP-0006; C2 evaluated in EXP-0005/0007\"}",
+        "295: "
+      ],
+      "interpretation": "The current runner's literal denominator is w1-p0, not w1-w0. Re-evaluating the stored cells with that expression does not reproduce the stored p50 values; the stored artifact is consistent with a different/corrected calculation. The current runner also assigns C2 pass=True without rerunning the second estimator."
+    },
+    "qm008_numerical_and_sieve": {
+      "run_exp0012": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py",
+      "gap_formula_excerpt": [
+        "43: def compute_gaps(primes):",
+        "44:     \"\"\"Compute normalized gaps.\"\"\"",
+        "45:     if len(primes) < 2:",
+        "46:         return np.array([], dtype=np.float64)",
+        "47:     deltas = (primes[1:] - primes[:-1]).astype(np.float64)",
+        "48:     log_p = np.log(primes[1:].astype(np.float64))",
+        "49:     return deltas / log_p",
+        "50: "
+      ],
+      "bh_excerpt": [
+        "100: def bh_fdr(p_values, alpha=0.01):",
+        "101:     \"\"\"Benjamini-Hochberg FDR correction.\"\"\"",
+        "102:     n = len(p_values)",
+        "103:     if n == 0:",
+        "104:         return []",
+        "105:     sorted_idx = np.argsort(p_values)",
+        "106:     sorted_p = np.array(p_values)[sorted_idx]",
+        "107:     critical = np.arange(1, n+1) / n * alpha",
+        "108:     significant = sorted_p <= critical",
+        "109:     # Map back to original indices",
+        "110:     results = [False] * n",
+        "111:     for i, idx in enumerate(sorted_idx):",
+        "112:         results[idx] = bool(significant[i])",
+        "113:     return results"
+      ],
+      "chi2_excerpt": [
+        "51: def chi2_goF(gaps, J=10):",
+        "52:     \"\"\"Chi-square GOF vs Exp(1) with J bins.\"\"\"",
+        "53:     if len(gaps) == 0:",
+        "54:         return None",
+        "55:     # Exponential-quantile bin edges: -ln(1 - j/J) for j=1..J-1",
+        "56:     edges = [-math.log(1 - j/J) for j in range(1, J)]",
+        "57:     edges = [0.0] + edges + [float('inf')]",
+        "58:     observed, _ = np.histogram(gaps, bins=edges)",
+        "59:     expected = len(gaps) / J",
+        "60:     chi2 = np.sum((observed - expected)**2 / expected)",
+        "61:     dof = J - 1",
+        "62:     p_value = 1 - sp_stats.chi2.cdf(chi2, dof)",
+        "63:     return {",
+        "64:         \"chi2\": float(chi2),"
+      ],
+      "gap_definition": {
+        "code": "(p[i+1]-p[i]) / log(p[i+1])",
+        "report_claim": "(p[i+1]-p[i]) / log(p[i])",
+        "example_primes": [
+          3,
+          5,
+          7,
+          11
+        ],
+        "code_values": [
+          1.2426698691192237,
+          1.0277966847395015,
+          1.6681295656969852
+        ],
+        "lower_log_values": [
+          1.8204784532536746,
+          1.2426698691192237,
+          2.055593369479003
+        ]
+      },
+      "bh_counterexample": {
+        "p_values": [
+          0.009,
+          0.008
+        ],
+        "wrong_implementation": [
+          true,
+          false
+        ],
+        "correct_step_up": [
+          true,
+          true
+        ]
+      },
+      "p_value_cancellation": {
+        "chi2": 868281.0185213662,
+        "dof": 9,
+        "one_minus_cdf": 0.0,
+        "high_precision_log10_survival": -188526.16147724402
+      },
+      "segmented_sieve_small_test": {
+        "limit": 1000,
+        "segment_size": 1000,
+        "returned_prime_count": 157,
+        "expected_prime_count": 168,
+        "returned_gap_count": 156,
+        "first_segment_marking_excerpt": [
+          "46:         # Sieve [low, high)",
+          "47:         seg_len = high - low",
+          "48:         is_prime_seg = np.ones(seg_len, dtype=bool)",
+          "49:         ",
+          "50:         if seg_len > 0:",
+          "51:             is_prime_seg[0] = False",
+          "52:         if seg_len > 1:",
+          "53:             is_prime_seg[1] = False",
+          "54:         ",
+          "55:         for p in base_primes:",
+          "56:             if p * p > high:",
+          "57:                 break",
+          "58:             # Find first multiple of p >= low",
+          "59:             start = ((low + p - 1) // p) * p",
+          "60:             if start == p:",
+          "61:                 start += p  # p itself is prime, don't mark it",
+          "62:             if start < low:",
+          "63:                 start += p",
+          "64:             is_prime_seg[start - low::p] = False",
+          "65:         ",
+          "66:         primes_in_seg = np.nonzero(is_prime_seg)[0] + low"
+        ]
+      }
+    },
+    "qm007_fdr_approximation": {
+      "script": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py",
+      "script_excerpt": [
+        "14: # Extract p-values from chi2 contributions",
+        "15: # For each cell (bin x block), compute chi2 contribution and then p-value",
+        "16: # chi2 contribution = (obs - exp)^2 / exp for the cell",
+        "17: ",
+        "18: pvalues = []",
+        "19: cell_details = []",
+        "20: ",
+        "21: for bin_id in range(1, num_bins + 1):",
+        "22:     bin_data = data[\"bin_summary\"][str(bin_id)]",
+        "23:     obs_total = bin_data[\"obs_total\"]",
+        "24:     exp_total = bin_data[\"exp_total\"]",
+        "25:     ",
+        "26:     for block_idx in range(num_blocks):",
+        "27:         # For a single cell, we need obs and exp for that specific bin in that specific block",
+        "28:         # Since we only have bin-level totals, we need to approximate",
+        "29:         # Using the ratio of obs_total/exp_total as a proxy for the cell's deviation",
+        "30:         ",
+        "31:         # The chi2 contribution per bin is given",
+        "32:         chi2_contrib = bin_data[\"mean_chi2_contribution\"]",
+        "33:         ",
+        "34:         # For a single cell in a single block, approximate:",
+        "35:         # chi2_cell ≈ chi2_contrib / num_blocks (if evenly distributed)",
+        "36:         # But this is approximate since bins may not be evenly distributed",
+        "37:         ",
+        "38:         # Better approach: use the std_residuals_per_block to estimate cell-level chi2",
+        "39:         std_residual = bin_data[\"std_residuals_per_block\"][block_idx]",
+        "40:         chi2_cell = std_residual ** 2  # For a single cell, z^2 ≈ chi2_1",
+        "41:         ",
+        "42:         # Convert to p-value (chi2 with 1 df)",
+        "43:         # Using survival function approximation",
+        "44:         p_value = math.exp(-0.5 * chi2_cell)  # Approximate for large chi2",
+        "45:         # Better: use Wilson-Hilferty approximation for chi2 CDF",
+        "46:         if chi2_cell > 0:",
+        "47:             z = ((chi2_cell / 1) ** (1/6) * (1 - 2/(9*1))) / math.sqrt(2/(9*1))",
+        "48:             # Standard normal CDF approximation",
+        "49:             p_value = 0.5 * math.erfc(z / math.sqrt(2))",
+        "50:         else:",
+        "51:             p_value = 1.0",
+        "52:         ",
+        "53:         pvalues.append(p_value)",
+        "54:         cell_details.append({",
+        "55:             \"bin\": bin_id,",
+        "56:             \"block\": block_idx + 1,",
+        "57:             \"std_residual\": std_residual,",
+        "58:             \"chi2_cell\": chi2_cell,",
+        "59:             \"p_value\": p_value",
+        "60:         })"
+      ],
+      "stored_significant_cells": 38,
+      "bin1_examples": [
+        {
+          "block": 1,
+          "std_residual": -28.917122955093582,
+          "stored_p": 2.0502642278570707e-07,
+          "correct_chi1_upper_tail": 7.273513898649931e-184,
+          "ratio_stored_to_correct": 2.818808427983659e+176
+        },
+        {
+          "block": 2,
+          "std_residual": -83.00903565275289,
+          "stored_p": 3.070588778994852e-13,
+          "correct_chi1_upper_tail": 0.0,
+          "ratio_stored_to_correct": null
+        },
+        {
+          "block": 3,
+          "std_residual": -242.0908920219842,
+          "stored_p": 4.201981592309249e-25,
+          "correct_chi1_upper_tail": 0.0,
+          "ratio_stored_to_correct": null
+        },
+        {
+          "block": 4,
+          "std_residual": -713.9240155646818,
+          "stored_p": 1.6282328723087341e-49,
+          "correct_chi1_upper_tail": 0.0,
+          "ratio_stored_to_correct": null
+        }
+      ],
+      "interpretation": "The per-block standardized residuals are available and are squared, but the p-value transform is wrong: the Wilson–Hilferty exponent is 1/6 instead of 1/3 and the code uses 0.5*erfc rather than the chi-square(1) upper tail. Thus the 38/40 count happens to remain under an exact step-up calculation, but the stored p-values are not valid p-values.",
+      "report": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md"
+    },
+    "speckle_controls_and_pvalues": {
+      "runner": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py",
+      "bootstrap_p_excerpt": [
+        "49: def bootstrap_effects(block_values, m, n_boot, seed):",
+        "50:     \"\"\"Bootstrap block-mean r = C*sqrt(M); returns (r_dist, two-sided p vs r=1).\"\"\"",
+        "51:     gen = rng(\"bootstrap-speckle-r\", seed)",
+        "52:     n = len(block_values)",
+        "53:     block_values = np.asarray(block_values, dtype=float)",
+        "54:     dist = np.empty(n_boot)",
+        "55:     for i in range(n_boot):",
+        "56:         dist[i] = np.mean(block_values[gen.integers(0, n, size=n)]) * np.sqrt(m)",
+        "57:     n1 = 1.0",
+        "58:     p = 2.0 * min(float((dist >= n1).mean()), float((dist <= n1).mean()))",
+        "59:     p = min(1.0, p + np.finfo(float).eps)",
+        "60:     return dist, p"
+      ],
+      "control_excerpt": [
+        "161:     # C5: generator sanity - single-speckle intensity vs exponential (N=256)",
+        "162:     from scipy import stats as _s",
+        "163: ",
+        "164:     n = 256",
+        "165:     gen5 = rng(\"speckle-ks\", SEED)",
+        "166:     a_r = int(n * 8 * APERTURE_FRAC)",
+        "167:     i1 = speckle_intensity(n, a_r, gen5)",
+        "168:     sample = i1.ravel()",
+        "169:     sample = sample[np.random.default_rng(0).choice(sample.size, size=20000,",
+        "170:                                                    replace=False)]",
+        "171:     ks = _s.kstest(sample, \"expon\", args=(0, sample.mean()))",
+        "172: ",
+        "173:     # C3 seed ladder spot-check: r at (N=128, M=8) across secondary seeds",
+        "174:     seed_r = {}",
+        "175:     for s in SEED_LADDER[1:]:",
+        "176:         g = rng(\"speckle-contrast\", s)",
+        "177:         cs = [run_cell(128, 8, g)[0] for _ in range(16)]",
+        "178:         seed_r[s] = float(np.mean(cs) * np.sqrt(8))",
+        "179: ",
+        "180:     result = {",
+        "181:         \"experiment\": EXPERIMENT_ID,",
+        "182:         \"question\": \"Q-O001\",",
+        "183:         \"hypothesis\": \"HYP-001\",",
+        "184:         \"cells\": cells,",
+        "185:         \"generator_ks_expon_p\": float(ks.pvalue),",
+        "186:         \"generator_ks_stat\": float(ks.statistic),",
+        "187:         \"seed_ladder_r_M8_N128\": seed_r,",
+        "188:         \"decision\": None,",
+        "189:         \"conclusion_lab\": None,",
+        "190:     }",
+        "191: ",
+        "192:     # Decision rule (frozen): at N=256, all M cells 99% CI contains 1",
+        "193:     n256 = [cells[k] for k in keys if cells[k][\"n\"] == 256]",
+        "194:     held = all(c[\"c_ci_low\"] * np.sqrt(c[\"m\"]) <= 1 <=",
+        "195:                c[\"c_ci_high\"] * np.sqrt(c[\"m\"]) for c in n256)",
+        "196:     if held and ks.pvalue > 1e-6:",
+        "197:         result[\"decision\"] = \"H1_SUPPORTED\"",
+        "198:         result[\"conclusion_lab\"] = (",
+        "199:             \"C(M)=1/sqrt(M) reproduced at N=256 within 99% bootstrap CIs; \"",
+        "200:             \"remaining scatter is Monte Carlo noise.\"",
+        "201:         )",
+        "202:     else:",
+        "203:         result[\"decision\"] = \"H2_FLAG_DEV\"",
+        "204:         result[\"conclusion_lab\"] = (",
+        "205:             \"Resolution-persistent deviation flagged; escalate to independent \"",
+        "206:             \"implementation + kill-the-hypothesis before any interpretation.\"",
+        "207:         )"
+      ],
+      "prereg_controls": [
+        "C1 positive M=1",
+        "C2 MC spread",
+        "C3 seed ladder",
+        "C4 resolution ladder",
+        "C5 generator KS",
+        "C7 ensemble-vs-space"
+      ],
+      "controls_doc_controls": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "code_actually_computes": [
+        "C1-C5 approximations",
+        "FDR flags",
+        "interior contrast",
+        "seed spot-check"
+      ],
+      "independent_C7_result_path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPLICATION/independent_check.json",
+      "null_bootstrap_calibration": {
+        "n_datasets": 2000,
+        "ks_uniform_p": 0.0037889386060226244,
+        "alpha_0.01_rejection_rate": 0.021,
+        "mean_p": 0.4794860000000002
+      },
+      "interpretation": "The KS check samples correlated pixels from one image, and the bootstrap tail proportion is reported as a p-value. The decision path does not consume the independent replication result or FDR flags."
+    },
+    "application_layer": {
+      "formal_charge_field": 0.3966637147812598,
+      "actual_formal_charge_ethanol": 0,
+      "descriptor_source": "src/molecular/engine.py:76-83 uses Descriptors.MaxAbsPartialCharge",
+      "interaction_example": {
+        "classification": "POTENTIAL INTERACTION",
+        "evidence_level": "E3",
+        "note": "Interaction possible but not confirmed by known reaction rules."
+      },
+      "analyze_reaction_source": "src/reaction/engine.py:91-118 returns UNKNOWN/E0 for dissimilar valid structures",
+      "depiction_error": {
+        "type": "ArgumentError",
+        "message": "Python argument types in\n    rdkit.Chem.rdDepictor.GenerateDepictionMatching2DStructure(Mol)\ndid not match C++ signature:\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, class boost::python::api::object atomMap, int confId, bool forceRDKit)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, class boost::python::api::object atomMap, int confId=-1, class boost::python::api::object params=None)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, int confId=-1, class boost::python::api::object refPatt=None, bool acceptFailure=False, bool forceRDKit=False, bool allowRGroups=False)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, int confId=-1, class boost::python::api::object refPatt=None, class boost::python::api::object params=None)"
+      },
+      "test_gap": "tests/unit/test_plant_engine.py:49 contains `... or True`, making the assertion tautological; no test covers formal_charge, get_2d_structure, or the E0->E3 interaction path."
+    },
+    "s9_report_consistency": {
+      "q_s9_1_rates": [
+        [
+          0.0,
+          0.0517
+        ],
+        [
+          0.01,
+          0.0517
+        ],
+        [
+          0.05,
+          0.0617
+        ],
+        [
+          0.1,
+          0.0567
+        ],
+        [
+          1.0,
+          0.195
+        ]
+      ],
+      "monotonicity_violations": [
+        [
+          {
+            "complexity": 0.05,
+            "rate": 0.0617
+          },
+          {
+            "complexity": 0.1,
+            "rate": 0.0567
+          }
+        ]
+      ],
+      "q_s9_1_report": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md",
+      "q_s9_2_stored_fit": {
+        "ec50": 30.0,
+        "hill_coefficient": 2.0,
+        "max_inflation": 0.483,
+        "baseline": 0.205
+      },
+      "q_s9_2_actual_fit_from_stored_points": [
+        32.608130388171794,
+        1.745401330731715,
+        0.5129775990569202,
+        0.20050953807203634
+      ],
+      "q_s9_2_writer_excerpt": [
+        "66: # ── Fit Hill equation ──────────────────────────────────────",
+        "67: print(\"\\n--- Hill equation fit ---\")",
+        "68: try:",
+        "69:     popt, pcov = curve_fit(",
+        "70:         hill, doses, observed,",
+        "71:         p0=[30, 2, 0.48, 0.205],",
+        "72:         bounds=([1, 0.5, 0.1, 0.05], [100, 10, 1.0, 0.5]),",
+        "73:         maxfev=10000",
+        "74:     )",
+        "75:     ec50_fit, hill_fit, max_infl_fit, baseline_fit = popt",
+        "76:     perr = np.sqrt(np.diag(pcov))",
+        "77: ",
+        "78:     print(\"  EC50  = %.2f %%  (true: %.1f, error: %.1f%%)\" % (",
+        "79:         ec50_fit, TRUE_EC50, abs(ec50_fit - TRUE_EC50) / TRUE_EC50 * 100))",
+        "80:     print(\"  n_Hill= %.3f    (true: %.1f)\" % (hill_fit, TRUE_HILL))",
+        "81:     print(\"  MaxInfl= %.4f   (true: %.4f)\" % (max_infl_fit, MAX_INFL))",
+        "82:     print(\"  Base  = %.4f     (true: %.4f)\" % (baseline_fit, BASELINE))",
+        "83:     print(\"  EC50 error: %.1f%%\" % (abs(ec50_fit - TRUE_EC50) / TRUE_EC50 * 100))",
+        "84:     print(\"  MaxInfl error: %.1f%%\" % (abs(max_infl_fit - MAX_INFL) / MAX_INFL * 100))",
+        "85: except Exception as e:",
+        "86:     print(\"  Fit failed: %s\" % e)",
+        "127: out = {",
+        "128:     \"experiment\": \"Q-S9-2 REBUS dose-response curve\",",
+        "129:     \"hill_equation\": \"rate = baseline + max_infl * dose^n / (EC50^n + dose^n)\",",
+        "130:     \"fit_parameters\": {",
+        "131:         \"ec50\": TRUE_EC50,",
+        "132:         \"hill_coefficient\": TRUE_HILL,",
+        "133:         \"max_inflation\": MAX_INFL,",
+        "134:         \"baseline\": BASELINE,",
+        "135:     },",
+        "136:     \"dose_levels\": DOSE_LEVELS,",
+        "137:     \"dose_response_A\": {str(d): float(o) for d, o in zip(doses, observed)},",
+        "138:     \"conditions\": conditions,",
+        "139: }",
+        "140: with open(os.path.join(OUT_DIR, \"dose_response_results.json\"), \"w\") as f:",
+        "141:     json.dump(out, f, indent=2, default=str)"
+      ],
+      "missing_reproduction_script": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md cites code/dmt-laser-s9-battery/q_s9_1_complexity.py, which is absent"
+    },
+    "result_hash_semantics": {
+      "rows": [
+        {
+          "config": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+          "result": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+          "recorded_result_hash": "c2aa22efbed0ef35a941d62ac7a4c48f891170fa57df2ba332c2e46e2f314ed5",
+          "canonical_loaded_config_result_hash": "9eb48706efa41193a0829d3d0db8add4bb6a9769d989591ffbacbbc5d119d013",
+          "exact_result_file_sha256": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+          "recorded_matches_canonical": false,
+          "recorded_matches_file": false
+        },
+        {
+          "config": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json",
+          "result": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+          "recorded_result_hash": "00a693b868ef2bb30e7729df954be820ef6cb730eb1cd716ce93b65e1a21485d",
+          "canonical_loaded_config_result_hash": "b8f12ed3f8ffaf070f34cecbaa92befbaf3dbefa4fea674e7f6fc4b766b1eb78",
+          "exact_result_file_sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+          "recorded_matches_canonical": false,
+          "recorded_matches_file": false
+        },
+        {
+          "config": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/EXP-0004_experiment.json",
+          "result": "03_INVESTIGATIONS/OTHER/rng_certification/RESULTS/EXP-0004_results.json",
+          "recorded_result_hash": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+          "canonical_loaded_config_result_hash": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+          "exact_result_file_sha256": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+          "recorded_matches_canonical": true,
+          "recorded_matches_file": false
+        },
+        {
+          "config": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.json",
+          "result": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+          "recorded_result_hash": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+          "canonical_loaded_config_result_hash": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+          "exact_result_file_sha256": "33956d75aaac6476087b41c1a9a4b68b049b5bbc34c041d9583283cec46f3690",
+          "recorded_matches_canonical": true,
+          "recorded_matches_file": false
+        }
+      ],
+      "interpretation": "The shared helper documents result hashes but does not define a single artifact-byte convention. For EXP-0002/0003 the recorded field matches neither the exact result file bytes nor the canonical hash of the loaded config result object, so it cannot be used as an integrity check without further provenance."
+    }
+  }
+}

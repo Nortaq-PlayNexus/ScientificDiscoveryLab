@@ -1,0 +1,115 @@
+{
+  "experiment_id": "EXP-0011",
+  "question_id": "Q-P008",
+  "hypothesis_id": "HYP-P008",
+  "title": "3D site percolation critical exponents with lab pipeline (p_c, D_f, gamma/nu, beta/nu)",
+  "note": "FROZEN before any execution. Motivation: Q-P007 COMPLETE confirmed the lab CAN reproduce 2D percolation exponents at refined p_c (D_f=1.882 PASS, gamma/nu=1.765 PASS, beta/nu=0.119 PASS). HYPOTHESIS: 3D site percolation exponents (p_c approx 0.3116, D_f approx 2.53, beta/nu approx 0.41, gamma/nu approx 1.40, 1/nu approx 0.88, tau approx 2.19 from literature) will be reproduced within tolerance using the same lab pipeline (perc_engine, G_LAB rng, C7 independent implementation). Extends controlled measurement from 2D to 3D. Uses fresh streams; no 2D cells reused. Requires 3D cubic lattice machinery in perc_engine.py (NOT YET IMPLEMENTED).",
+  "seed": 42,
+  "seed_ladder": [
+    7,
+    123,
+    2023,
+    314159,
+    271828
+  ],
+  "rng_label_pattern": "exp11-3d-L<L>-p<pcanon>-<kind>",
+  "p_canon_token": "p0311608",
+  "parameters": {
+    "system": "site_cubic_3d",
+    "p_c": 0.3116079,
+    "L_list": [
+      8,
+      16,
+      24
+    ],
+    "width_L_list": [
+      8,
+      16,
+      24
+    ],
+    "width_grid": {
+      "L8": {
+        "grid": [
+          0.36,
+          0.46,
+          0.005
+        ],
+        "n_each": 300
+      },
+      "L16": {
+        "grid": [
+          0.35,
+          0.42,
+          0.003
+        ],
+        "n_each": 200
+      },
+      "L24": {
+        "grid": [
+          0.31,
+          0.34,
+          0.0005
+        ],
+        "n_each": 100
+      }
+    },
+    "n_real": {
+      "8": 500,
+      "16": 200,
+      "24": 50
+    },
+    "bootstrap_draws": 2000,
+    "bootstrap_label": "exp11-3d-boot",
+    "tau_fit_range": [
+      4,
+      1000
+    ],
+    "tau_L": 24
+  },
+  "predictions": {
+    "p_c_width": {
+      "expected": 0.3116079,
+      "tol": 0.001,
+      "note": "width-curve crossing at L in {8,16,24}; L->inf extrapolation"
+    },
+    "exponents": {
+      "Df": {
+        "expected": 2.53,
+        "tol": 0.1,
+        "note": "literature value (Hsu 1990)"
+      },
+      "gamma_nu": {
+        "expected": 1.4,
+        "tol": 0.08,
+        "note": "literature value"
+      },
+      "beta_nu": {
+        "expected": 0.41,
+        "tol": 0.05,
+        "note": "literature value"
+      },
+      "tau": {
+        "expected": 2.19,
+        "tol": 0.1,
+        "note": "Fisher value for 3D"
+      }
+    },
+    "scaling_relations": {
+      "R1": "tau = 1 + 2/D_f",
+      "R2": "2*beta/nu + gamma/nu = 2",
+      "R3": "D_f = 2 - beta/nu"
+    }
+  },
+  "gates": {
+    "C1": "width curve at L=16 reproducible (sha256)",
+    "C7": "pure-Python union-find independent: L in {8,16,24}, subsample n=50",
+    "FG": "slope stability of D_f on inner L values",
+    "PC1": "bootstrap SE + chi2_red reported"
+  },
+  "decision_rule": {
+    "H0_SUPPOR": "all gates PASS and predictions in tolerance",
+    "ABNORMAL": "gates PASS, some predictions out of tolerance",
+    "INCONCLUSIVE": "any gate FAILS"
+  },
+  "implementation_requires": "3D cubic lattice generator in perc_engine.py (DONE \u2014 cubic_lattice_3d verified). Runner at CODE/run_exp0011.py (DONE). Awaiting execution."
+}

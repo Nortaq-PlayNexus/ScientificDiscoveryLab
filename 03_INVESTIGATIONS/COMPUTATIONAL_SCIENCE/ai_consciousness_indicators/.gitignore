@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Generated Zenodo deposit. The build script regenerates all of it deterministically,
+# and manifest.json records a SHA-256 for every staged file, so committing the
+# staging area would only create drift against the archive it produces.
+zenodo/package/
+zenodo/*.zip
+__pycache__/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit
+.env
+*.key
+*.pem
+credentials.json
+
+# Large or generated artifacts. RESULTS/*.json is intentionally NOT ignored:
+# it is the reproducibility record and is meant to be published.

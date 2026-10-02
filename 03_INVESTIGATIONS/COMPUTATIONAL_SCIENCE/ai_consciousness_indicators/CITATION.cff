@@ -1,0 +1,93 @@
+cff-version: 1.2.0
+title: "A calibrated indicator battery for AI consciousness, and what survives perturbing it"
+message: "If you use this software, please cite both this work and the indicator framework it implements."
+type: software
+abstract: >-
+  A known-answer-gated scoring instrument over the 14 indicator properties
+  derived from neuroscientific theories of consciousness by Butlin, Long et al.
+  (2023), together with a robustness arm that jointly perturbs every
+  discretionary parameter to test how much of the output survives the
+  arbitrariness in the aggregation choices. The battery reports a calibrated
+  credence with a decomposable interval and never returns a boolean. No AI
+  system was scored, and no claim is made about whether any system is conscious.
+authors:
+  - name: "ScientificDiscoveryLab contributors"
+keywords:
+  - ai-consciousness
+  - machine-consciousness
+  - consciousness-science
+  - reproducibility
+  - mechanistic-interpretability
+  - calibration
+  - registered-report-style-methodology
+license: MIT
+repository-code: "https://github.com/Nortaq-PlayNexus/consciousness-indicator-battery"
+url: "https://github.com/Nortaq-PlayNexus/consciousness-indicator-battery"
+keywords-cff:
+  - consciousness
+references:
+  - type: article
+    authors:
+      - family-names: Butlin
+        given-names: Patrick
+      - family-names: Long
+        given-names: Robert
+      - family-names: Bayne
+        given-names: Tim
+      - family-names: Bengio
+        given-names: Yoshua
+    title: "Identifying indicators of consciousness in AI systems"
+    journal: "Trends in Cognitive Sciences"
+    volume: 30
+    issue: 6
+    start: 488
+    end: 501
+    year: 2026
+    doi: "10.1016/j.tics.2025.10.011"
+  - type: article
+    authors:
+      - family-names: Butlin
+        given-names: Patrick
+      - family-names: Long
+        given-names: Robert
+      - family-names: Elmoznino
+        given-names: Eric
+      - family-names: Bengio
+        given-names: Yoshua
+    title: "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness"
+    journal: "arXiv"
+    year: 2023
+    doi: "10.48550/arXiv.2308.08708"
+  - type: article
+    authors:
+      - family-names: Gurnee
+        given-names: Buck
+      - family-names: Sofroniew
+        given-names: Nicholas
+      - family-names: Lindsey
+        given-names: Jack
+    title: "Verbalizable Representations Form a Global Workspace in Language Models"
+    journal: "Transformer Circuits"
+    year: 2026
+    url: "https://transformer-circuits.pub/2026/workspace"
+  - type: article
+    authors:
+      - family-names: Long
+        given-names: Robert
+      - family-names: Sebo
+        given-names: Jeff
+      - family-names: Butlin
+        given-names: Patrick
+      - family-names: Plunkett
+        given-names: Dillon
+      - family-names: Campbell
+        given-names: Rosie
+      - family-names: Beasley
+        given-names: Charles
+      - family-names: Saad
+        given-names: Bradford
+      - family-names: Sims
+        given-names: Toni
+    title: "Studying AI Welfare Empirically"
+    year: 2026
+    url: "https://nonhumanminds.org/studying-ai-welfare-empirically"

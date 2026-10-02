@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-0014",
+  "question": "Q-M005",
+  "hypothesis": "HYP-M005",
+  "date": "2026-09-20T15:06:59.739293+00:00",
+  "software": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "protocol": "prereg_EXP-0014.json",
+  "map_family": "f(x) = 1 - a * |x|^z on [-1, 1]",
+  "parameters": {
+    "extremum_orders": [
+      2,
+      3,
+      4
+    ],
+    "n_range": [
+      1,
+      8
+    ],
+    "root_finder": "scipy.optimize.brentq (with period verification)",
+    "xtol": 1e-14
+  },
+  "evidence": "UNTESTED"
+}

@@ -1,0 +1,165 @@
+{
+  "p_c": 0.5927460507921,
+  "method": "Independent NumPy PCG64 + scipy.ndimage.label, free-boundary 4-neighbor square site percolation.",
+  "sequences": {
+    "stored_nonpower2_sequence": {
+      "sizes": [
+        127,
+        191,
+        253,
+        449
+      ],
+      "n_per_size": 200,
+      "mean_mass": [
+        4365.13,
+        9201.785,
+        15591.235,
+        46601.22
+      ],
+      "slope": {
+        "Df_mean": 1.8774707630303842,
+        "Df_se": 0.026572576036333485,
+        "normal_ci95": [
+          1.8253885139991706,
+          1.9295530120615978
+        ],
+        "theory": 1.8958333333333333
+      },
+      "box_counting": {
+        "n_clusters": 120,
+        "mean_Df": 1.9508263680177147,
+        "se": 0.013370375732308431,
+        "median_Df": 1.9147555439305621,
+        "quantiles": [
+          1.7130857183650978,
+          1.9147555439305621,
+          2.241963772432697
+        ]
+      }
+    },
+    "matched_even_nonpower2": {
+      "sizes": [
+        126,
+        190,
+        254,
+        446
+      ],
+      "n_per_size": 200,
+      "mean_mass": [
+        4123.56,
+        9141.825,
+        15719.535,
+        43840.64
+      ],
+      "slope": {
+        "Df_mean": 1.867383123742505,
+        "Df_se": 0.028092335781791333,
+        "normal_ci95": [
+          1.812322145610194,
+          1.922444101874816
+        ],
+        "theory": 1.8958333333333333
+      }
+    },
+    "matched_odd_nonpower2": {
+      "sizes": [
+        129,
+        193,
+        257,
+        445
+      ],
+      "n_per_size": 200,
+      "mean_mass": [
+        4327.975,
+        9126.99,
+        15984.33,
+        47032.085
+      ],
+      "slope": {
+        "Df_mean": 1.930437701834023,
+        "Df_se": 0.02822657507175878,
+        "normal_ci95": [
+          1.8751136146933758,
+          1.9857617889746704
+        ],
+        "theory": 1.8958333333333333
+      }
+    },
+    "power2_original": {
+      "sizes": [
+        128,
+        256,
+        512
+      ],
+      "n_per_size": 150,
+      "mean_mass": [
+        4435.173333333333,
+        16113.233333333334,
+        58969.24
+      ],
+      "slope": {
+        "Df_mean": 1.8665899656283758,
+        "Df_se": 0.029434664237680375,
+        "normal_ci95": [
+          1.8088980237225223,
+          1.9242819075342292
+        ],
+        "theory": 1.8958333333333333
+      }
+    },
+    "power2_extended": {
+      "sizes": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "n_per_size": 60,
+      "mean_mass": [
+        4363.15,
+        14999.8,
+        61693.183333333334,
+        227210.86666666667
+      ],
+      "slope": {
+        "Df_mean": 1.9150904679182374,
+        "Df_se": 0.02824469934186799,
+        "normal_ci95": [
+          1.859730857208176,
+          1.9704500786282988
+        ],
+        "theory": 1.8958333333333333
+      }
+    },
+    "nearby_mixed": {
+      "sizes": [
+        129,
+        193,
+        257,
+        449
+      ],
+      "n_per_size": 200,
+      "mean_mass": [
+        4356.745,
+        9191.32,
+        16089.005,
+        47711.575
+      ],
+      "slope": {
+        "Df_mean": 1.9225952903560413,
+        "Df_se": 0.02707204634810995,
+        "normal_ci95": [
+          1.8695340795137458,
+          1.9756565011983367
+        ],
+        "theory": 1.8958333333333333
+      }
+    }
+  },
+  "comparison_power2_vs_nonpower2": {
+    "difference": 0.03761970488785327,
+    "SE_difference": 0.03877969620973381,
+    "z_like": 0.9700876635132232,
+    "interpretation": "A single non-power-of-two sequence is not enough to identify power-of-two lattice locking. Compare the matched parity/sequence controls and overlapping confidence intervals."
+  }
+}

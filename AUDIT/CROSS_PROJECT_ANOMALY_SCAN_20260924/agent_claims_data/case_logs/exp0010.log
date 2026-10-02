@@ -1,0 +1,73 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "exp0010": {
+      "ok": true,
+      "evidence": {
+        "prereg_test": "if D_f within tol at ALL non-P2 L -> lattice artifact confirmed; if ANY outside tol -> finite-size correction likely",
+        "prereg_gates": {
+          "C1": "full-cell rerun (L=253, p_c) cluster census bit-identical (sha256)",
+          "C7": "pure-Python union-find at L=127,253 (subsample n=30): per-realization M_max and chi bit-identical, D_f within 3 joint-SE"
+        },
+        "result_Df_keys": [
+          "expected",
+          "measured",
+          "pass",
+          "per_L",
+          "se",
+          "tol"
+        ],
+        "result_gate_keys": [
+          "C1"
+        ],
+        "per_L_values": {
+          "127": 4174.385,
+          "191": 9491.41,
+          "253": 15656.795,
+          "449": 46296.065
+        },
+        "joint_Df": 1.896198293208009,
+        "report_repeats_joint": [
+          "| 127 | non-P2 | 1.8962 (0.028) | 0.0004 |"
+        ],
+        "code_decision": [
+          "113:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+          "114:     mmat = [cells[L][\"masses\"] for L in L_LIST]",
+          "115:     Df_draws = bootstrap_slope(logx, mmat, BS_DRAWS, BS + \"-df\", SEED)",
+          "116:     Df = float(Df_draws.mean())",
+          "117:     seDf = float(Df_draws.std(ddof=1))",
+          "118:     print(f\"[progress] D_f={Df:.6f} (SE={seDf:.6f}, theory={Df_EX}, tol={Df_TOL})\", flush=True)",
+          "119: ",
+          "120:     # C1 determinism at L=253",
+          "121:     o1 = run_cell(253, 100, SEED)",
+          "122:     d1 = span_census_digest(o1)",
+          "123:     o2 = run_cell(253, 100, SEED)",
+          "124:     d2 = span_census_digest(o2)",
+          "125:     c1 = {\"digest_eq\": d1 == d2, \"pass\": bool(d1 == d2)}",
+          "126:     print(f\"[progress] C1 pass={c1['pass']}\", flush=True)",
+          "127: ",
+          "128:     per_L = {str(L): {\"mean_mass\": float(cells[L][\"masses\"].mean()),",
+          "129:                        \"se_mass\": float(cells[L][\"masses\"].std(ddof=1) / np.sqrt(cells[L][\"n\"]))}",
+          "130:              for L in L_LIST}",
+          "131: ",
+          "132:     c1_pass = c1[\"pass\"]",
+          "133:     df_in_tol = abs(Df - Df_EX) <= Df_TOL",
+          "134:     if not c1_pass:",
+          "135:         decision = \"INCONCLUSIVE\"",
+          "136:     elif df_in_tol:",
+          "137:         decision = \"LATTICE_ARTIFACT\"",
+          "138:     else:",
+          "139:         decision = \"FINITE_SIZE_CORRECTION\"",
+          "140: ",
+          "141:     primary = {",
+          "142:         \"experiment_id\": \"EXP-0010\", \"question\": \"Q-P005\", \"hypothesis\": \"HYP-005\",",
+          "143:         \"decision\": decision,",
+          "144:         \"D_f\": {\"measured\": Df, \"se\": seDf, \"expected\": Df_EX, \"tol\": Df_TOL,",
+          "145:                 \"pass\": bool(abs(Df - Df_EX) <= Df_TOL), \"per_L\": per_L},",
+          "146:         \"gates\": {\"C1\": c1},",
+          "147:         \"test\": \"D_f at non-power-of-2 L: lattice-artifact vs finite-size correction\","
+        ]
+      }
+    }
+  }
+}

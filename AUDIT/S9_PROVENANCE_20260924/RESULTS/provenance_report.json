@@ -1,0 +1,202 @@
+{
+  "audit_timestamp_utc": "2026-09-24T02:16:56+00:00",
+  "classification": {
+    "battery_A_equals_B": "IMPLEMENTATION/SIMULATION_NULL_ONLY",
+    "dose_response": "MODELLED_SYNTHETIC_RESPONSE_NOT_PHARMACOLOGICAL_EVIDENCE",
+    "hardcoded_rates_or_models_present": true,
+    "q_s9_1": "SYNTHETIC_AND_HARDCODED_OUTPUT",
+    "q_s9_3": "DERIVED_FROM_HARDCODED_RATES_NOT_RAW_MEASUREMENTS",
+    "q_s9_4": "SYNTHETIC_SIMULATION_IF_RETAINED",
+    "raw_empirical_loader_markers_present": false,
+    "raw_input_files_found_in_declared_package": 0,
+    "simulated_perceptual_response_model_present": true,
+    "status": "SYNTHETIC_DERIVED_OUTPUT_NOT_EMPIRICAL_EVIDENCE",
+    "wavelength_tracking": "SYNTHETIC_LADDER_RESULT_NOT_EMPIRICAL_CONFIRMATION"
+  },
+  "execution_policy": {
+    "external_package_executed": false,
+    "external_package_imported": false,
+    "external_package_written": false,
+    "in_tree_historical_files_written": false,
+    "raw_participant_data_claimed": false
+  },
+  "in_tree_results": {
+    "q_s9_1_results.json": {
+      "experiment": "Q-S9-1 Minimum spectral structure for pareidolia",
+      "method": "Speckle images with decreasing spectral complexity (FFT peak retention), measured 'code present' detection rate at each level",
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\CODE\\dmt-laser-s9-battery\\q_s9_1_results.json",
+      "sha256": "634caf2c7cd693f100bb0dac38cd436dc170e8500c684ab3553b74c6b0259370",
+      "size_bytes": 1278,
+      "top_level_keys": [
+        "baseline_rate",
+        "complexity_levels",
+        "experiment",
+        "key_finding",
+        "method",
+        "note",
+        "parent",
+        "threshold_analysis"
+      ]
+    },
+    "q_s9_3_results.json": {
+      "experiment": "Q-S9-3 Detector de-biasing experiment",
+      "method": "Apply de-biasing corrections (wavelength, spatial frequency, temporal) to observed detection rates, re-test A==B and re-fit dose-response",
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\CODE\\dmt-laser-s9-battery\\q_s9_3_results.json",
+      "sha256": "9ec12cb2b86beabc36dd26b05a40237ae94d8e207c27cab3af8ba4509f4e570f",
+      "size_bytes": 2100,
+      "top_level_keys": [
+        "A_minus_B",
+        "dose_response_debiased",
+        "experiment",
+        "key_finding",
+        "method",
+        "observed_rates",
+        "parent",
+        "unbiased_hill_fit"
+      ]
+    }
+  },
+  "required_before_reclassification": [
+    "Obtain consent-/privacy-reviewed raw participant response data and immutable provenance.",
+    "Obtain raw stimulus images or independently hashed acquisition records.",
+    "Freeze a new preregistration that distinguishes simulation from empirical measurement.",
+    "Re-run the analysis from raw inputs with an independent implementation."
+  ],
+  "schema": "s9-provenance-audit/v1",
+  "scope": "Read-only inspection of the external dmt-laser-s9-battery package and the two in-tree S9 result JSON files",
+  "source_package": {
+    "path": "C:\\Users\\natha\\code\\dmt-laser-s9-battery",
+    "raw_input_inventory": {
+      "extensions_searched": [
+        ".csv",
+        ".edf",
+        ".h5",
+        ".hdf5",
+        ".jpeg",
+        ".jpg",
+        ".mat",
+        ".npy",
+        ".npz",
+        ".parquet",
+        ".png",
+        ".tif",
+        ".tiff",
+        ".tsv",
+        ".xlsx"
+      ],
+      "raw_input_file_count": 0,
+      "raw_input_files": [],
+      "search_root": "C:\\Users\\natha\\code\\dmt-laser-s9-battery"
+    },
+    "source_files": {
+      "README.md": {
+        "path": "C:\\Users\\natha\\code\\dmt-laser-s9-battery\\README.md",
+        "sha256": "c839dec481d92374285e4a2b036c0c0208c4719aae45f7e271d20f8b21fc1a84",
+        "size_bytes": 1949
+      },
+      "analysis.py": {
+        "markers": {
+          "external_package_dependency": [],
+          "hardcoded_rates_or_models": [],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": []
+        },
+        "sha256": "1c30df3d3e68080afbb9fb49e8ee166740af7d79a5e79009e5b2396ea58352b1"
+      },
+      "perceptual_sim.py": {
+        "markers": {
+          "external_package_dependency": [],
+          "hardcoded_rates_or_models": [
+            "DOSE_INFLATION"
+          ],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": [
+            "simulate_subject",
+            "simulate_population",
+            "CODE_PRESENT_SOBER",
+            "DOSE_INFLATION"
+          ]
+        },
+        "sha256": "2c2d0e69a8a3062241cb6901b95b14e9e33828b6a0e51309110ab923d2770a4c"
+      },
+      "q_s9_1_complexity.py": {
+        "markers": {
+          "external_package_dependency": [
+            "coherent-optical-ai-sandbox",
+            "from optics."
+          ],
+          "hardcoded_rates_or_models": [
+            "true_rate"
+          ],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": []
+        },
+        "sha256": "d45731cf4197a4b1783a1f23e9f7a9082a3c86df500aa0d785e9586de9474b50"
+      },
+      "q_s9_3_debias.py": {
+        "markers": {
+          "external_package_dependency": [],
+          "hardcoded_rates_or_models": [
+            "raw_rates"
+          ],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": []
+        },
+        "sha256": "f4c0ca9e2ee8938038152a68c6decfc3bc463ec1de5cb2dd84a20ace5d76cb7c"
+      },
+      "q_s9_4_cone_mosaic.py": {
+        "markers": {
+          "external_package_dependency": [],
+          "hardcoded_rates_or_models": [
+            "det_rate"
+          ],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": []
+        },
+        "sha256": "40e3ea4bd857e25f4735bb55f799ae77b88122067125e8907c66057903931e5d"
+      },
+      "run_battery.py": {
+        "markers": {
+          "external_package_dependency": [],
+          "hardcoded_rates_or_models": [],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": [
+            "simulate_population"
+          ]
+        },
+        "sha256": "7c67a55b462a79a127ad73dc0d47bb12f2fc4604edfb795ebb36bf28f765737e"
+      },
+      "stimulus_gen.py": {
+        "markers": {
+          "external_package_dependency": [
+            "coherent-optical-ai-sandbox",
+            "from optics.",
+            "import research.program_core"
+          ],
+          "hardcoded_rates_or_models": [],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": []
+        },
+        "sha256": "4fa08abff01d0f48c1fa0199a04602edd9b79e9d7deab534e0a99a51c593f97e"
+      },
+      "wavelength_ladder.py": {
+        "markers": {
+          "external_package_dependency": [
+            "coherent-optical-ai-sandbox",
+            "from optics."
+          ],
+          "hardcoded_rates_or_models": [],
+          "raw_empirical_input_loaders": [],
+          "simulated_perceptual_responses": []
+        },
+        "sha256": "8aa4db8a7bbc23e3838faee8207300eaae2842d154be7f4cac20d003189bdfc0"
+      }
+    },
+    "source_package_is_in_lab_tree": false
+  },
+  "unsupported_claims": [
+    "The S9 outputs do not establish empirical participant responses.",
+    "The A==B result does not establish a biological or perceptual mechanism.",
+    "The dose-response and wavelength results do not establish real dose, detection, or biological effects."
+  ]
+}

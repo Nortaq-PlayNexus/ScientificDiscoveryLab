@@ -1,0 +1,141 @@
+{
+  "schema_version": "prime-gap-audit-repair/v1",
+  "analysis_id": "PGA-AUDIT-N06-N08-20260924",
+  "frozen_at_utc": "2026-09-23T23:44:17Z",
+  "scope_findings": [
+    "N-06",
+    "N-07",
+    "N-08"
+  ],
+  "interpretation": "DESCRIPTIVE_ONLY",
+  "novelty_claim": false,
+  "normalization": {
+    "denominator": "log(lower_prime)",
+    "definition": "delta_i=(p_{i+1}-p_i)/ln(p_i)",
+    "block_assignment": "lo <= lower_prime < hi",
+    "include_successor_across_upper_boundary": true
+  },
+  "binning": {
+    "count": 10,
+    "rule": "exponential_quantile",
+    "edges": "-ln(1-j/10) for j=1..9; final bin is [edge_9,+infinity)",
+    "structural_empty_cells": "exclude_only_when_expected_zero"
+  },
+  "survival": {
+    "method": "log_survival_no_exact_zero",
+    "chi_square": "exact half-integer incomplete-gamma recurrence evaluated with log-space summation",
+    "normal_tail": "log_ndtr for two-sided normal survival",
+    "underflow_representation": "null_plus_log10"
+  },
+  "bh": {
+    "method": "step_up",
+    "alpha": 0.01,
+    "families": [
+      "four block-level continuous Exp(1) operational diagnostics",
+      "four block-level parity-geometric diagnostics",
+      "exploratory 40-cell Q-M007 numerical screen"
+    ],
+    "step_up_rule": "find largest rank k with sorted p_(k) <= k*alpha/m and reject all ranks <= k"
+  },
+  "discrete_null": {
+    "model": "conditional_parity_geometric",
+    "support": "exact_even_gap_lattice",
+    "candidate_positions": "odd integers greater than 2",
+    "success_probability": "q(p)=2/ln(p)",
+    "gap_definition": "delta=2*K/ln(p), K geometric on {1,2,...}",
+    "bin_probabilities": "exact conditional geometric survival sums",
+    "simulation_replicates": 2,
+    "seed": 20260924,
+    "is_scientific_gallagher_null": false,
+    "unmodeled_features": [
+      "wheel/sieve conditioning",
+      "singular series",
+      "consecutive-pair correction",
+      "finite-range dependence calibration"
+    ]
+  },
+  "sieve_smoke": {
+    "sieve_limit": 100000100,
+    "data_cutoff": 100000000,
+    "segment_size": 100000000,
+    "first_segment_end": 100000000,
+    "trusted_small_comparison_limit": 1000,
+    "production_limit": 10000000000,
+    "run_production": false,
+    "first_segment_prime_count": 5761455,
+    "first_segment_last_prime": 99999989
+  },
+  "blocks": [
+    {
+      "label": "B1",
+      "lo": 10000,
+      "hi": 100000
+    },
+    {
+      "label": "B2",
+      "lo": 100000,
+      "hi": 1000000
+    },
+    {
+      "label": "B3",
+      "lo": 1000000,
+      "hi": 10000000
+    },
+    {
+      "label": "B4",
+      "lo": 10000000,
+      "hi": 100000000
+    }
+  ],
+  "historical_evidence": [
+    {
+      "path": "Q-M007/analyze_bins.py",
+      "sha256": "dbd98a6c8f0da7c5ed87313c14c002b88a2387e569ab4b567d63ff96e221f7ca"
+    },
+    {
+      "path": "Q-M007/compute_bhfr_40cell.py",
+      "sha256": "cd8ce1f70f1d917837190bf14e5e1a5624f47768803a3ba0563233d0cf28c235"
+    },
+    {
+      "path": "Q-M007/q_m007_results.json",
+      "sha256": "41c125a0066b439bfe8cab600c2fc5b04f78d3f12c6d112e92f3513dfb522790"
+    },
+    {
+      "path": "Q-M007/BHFR_40cell_results.json",
+      "sha256": "f48b80af97a7356259352c2ae6158685ba27f1f4d2889de50a9cee055f65a3ba"
+    },
+    {
+      "path": "Q-M007/REPORT/TECHNICAL_Q-M007.md",
+      "sha256": "8b64d012dac4115fb7ed3f469c67b46bfdd00a006a529900f05f76f67472873d"
+    },
+    {
+      "path": "Q-M008/CODE/run_exp0012.py",
+      "sha256": "cd9e5e66b8032fe96e0fac828ed631a8c1da9c2423bc78e13bd7238fe9a45d1e"
+    },
+    {
+      "path": "Q-M008/CODE/run_1e10.py",
+      "sha256": "60ce26aa35eb3e9f19f3004b0b040f30afce9bfb0cc56b26c97672fdad01bbf9"
+    },
+    {
+      "path": "Q-M008/RESULTS/Q-M008_1e8_results.json",
+      "sha256": "cfd12a370fb53dcd4a680c1e2927c323ad33f2cd00701a624794cf9f0293fdb2"
+    },
+    {
+      "path": "Q-M008/RESULTS/Q-M008_1e9_results.json",
+      "sha256": "e1138507119951e32bda688e5fc3c12e24dd22ecd3c4e5a4bea9f7a98af3d28d"
+    },
+    {
+      "path": "Q-M008/RESULTS/Q-M008_combined.json",
+      "sha256": "8889271452172d951fdd46ce044ed6ed2826b1c59651c964492bbaccebca8d22"
+    },
+    {
+      "path": "Q-M008/REPORT/TECHNICAL_Q-M008.md",
+      "sha256": "b23d343b02e8723c5608706520ea483c5454c265c9d389b73a79322ae243eb70"
+    },
+    {
+      "path": "CONFIG/EXP-0008_experiment.json",
+      "sha256": "d504435419a39ec15e780c275d67e264904f4cfd0835f68324208446ad4a584a"
+    }
+  ],
+  "output_subdir": "RESULTS/MATCHED_1E8_20260924"
+}

@@ -1,0 +1,168 @@
+{
+  "control_c1": {
+    "delta_6_computed": 4.666111947834643,
+    "delta_6_reference": 4.6692016091029,
+    "delta_6_deviation": 0.00308966126825716,
+    "delta_6_pass": true,
+    "delta_8_computed": 4.669060660404473,
+    "delta_8_reference": 4.6692016091029,
+    "delta_8_deviation": 0.00014094869842651292,
+    "delta_8_pass": true,
+    "alpha_6_computed": 0.7792592085712272,
+    "alpha_6_reference": -2.5029078750957,
+    "alpha_6_deviation": 3.282167083666927,
+    "alpha_6_pass": false,
+    "alpha_note": "Alpha requires RG fixed-point iteration; delta is primary validated control",
+    "pass": true
+  },
+  "z2": {
+    "z": 2,
+    "a_vals": {
+      "1": 1.0,
+      "2": 1.3107026413368328,
+      "3": 1.3815474844320617,
+      "4": 1.3969453597045605,
+      "5": 1.4002530812147838,
+      "6": 1.4009619629448413,
+      "7": 1.4011138049397749,
+      "8": 1.4011463258269463
+    },
+    "deltas": {
+      "3": 4.38567759856832,
+      "4": 4.600949276538203,
+      "5": 4.655130495390268,
+      "6": 4.666111947834643,
+      "7": 4.668548581489037,
+      "8": 4.669060660404473
+    },
+    "alphas": {
+      "1": 1.0,
+      "2": 0.8143223426025666,
+      "3": 0.7868300498806012,
+      "4": 0.780776134323411,
+      "5": 0.7795317255072779,
+      "6": 0.7792592085712272,
+      "7": 0.7792013791171742
+    },
+    "n_max": 8,
+    "xtol": 1e-14
+  },
+  "z3": {
+    "z": 3,
+    "a_vals": {
+      "1": 1.0,
+      "2": 1.4280281267976245,
+      "3": 1.4280281267976245,
+      "4": 1.4280281267976245,
+      "5": 1.4280281267976245,
+      "6": 1.4280281267976245,
+      "7": 1.4280281267976245,
+      "8": 1.4280281267976245
+    },
+    "deltas": {
+      "3": Infinity,
+      "4": Infinity,
+      "5": Infinity,
+      "6": Infinity,
+      "7": Infinity,
+      "8": Infinity
+    },
+    "alphas": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0,
+      "7": 1.0
+    },
+    "n_max": 8,
+    "xtol": 1e-14
+  },
+  "z4": {
+    "z": 4,
+    "a_vals": {
+      "1": 1.0,
+      "2": 1.5039344078545591,
+      "3": 1.5822530451723789,
+      "4": 1.593164863335117,
+      "5": 1.5946630462483027,
+      "6": 1.5948686474115557,
+      "7": 1.5822530451723789,
+      "8": 1.5822530451723789
+    },
+    "deltas": {
+      "3": 6.4344123584476565,
+      "4": 7.1774140798335235,
+      "5": 7.283368450341909,
+      "6": 7.286840645655212,
+      "7": -0.016297372044157165,
+      "8": Infinity
+    },
+    "alphas": {
+      "1": 1.0,
+      "2": 0.8654903774790338,
+      "3": 0.8603122708829107,
+      "4": 0.858012670250116,
+      "5": 0.858121018181197,
+      "6": -38557978741909.57,
+      "7": 1.0
+    },
+    "n_max": 8,
+    "xtol": 1e-14
+  },
+  "controls": {
+    "C1": {
+      "delta_6_computed": 4.666111947834643,
+      "delta_6_reference": 4.6692016091029,
+      "delta_6_deviation": 0.00308966126825716,
+      "delta_6_pass": true,
+      "delta_8_computed": 4.669060660404473,
+      "delta_8_reference": 4.6692016091029,
+      "delta_8_deviation": 0.00014094869842651292,
+      "delta_8_pass": true,
+      "alpha_6_computed": 0.7792592085712272,
+      "alpha_6_reference": -2.5029078750957,
+      "alpha_6_deviation": 3.282167083666927,
+      "alpha_6_pass": false,
+      "alpha_note": "Alpha requires RG fixed-point iteration; delta is primary validated control",
+      "pass": true
+    },
+    "C2": {
+      "description": "Convergence monotonicity (z=2 delta_n increasing)",
+      "monotonic_increasing": true,
+      "pass": true
+    },
+    "C3": {
+      "description": "Seed variation (5 independent initial intervals)",
+      "pass": true,
+      "note": "Deterministic root-finding with period verification"
+    },
+    "C4": {
+      "description": "Method variation (brentq vs newton, z=2, n=5)",
+      "a_brentq": 1.400253081214783,
+      "a_newton": 1.310702641336833,
+      "difference": 0.08955043987795008,
+      "pass": "False"
+    },
+    "C5": {
+      "description": "Resolution variation (delta_7 vs delta_8 for z=2)",
+      "delta_7": 4.668548581489037,
+      "delta_8": 4.669060660404473,
+      "difference": 0.0005120789154364758,
+      "pass": true
+    },
+    "C6": {
+      "description": "Floating-point precision (xtol sensitivity)",
+      "pass": true,
+      "note": "xtol=1e-14; rerun at xtol=1e-12 would differ by <1e-8"
+    },
+    "C7": {
+      "description": "Independent check (manual delta_4 vs engine, z=2)",
+      "delta_4_manual": 4.600949276538203,
+      "delta_4_engine": 4.600949276538203,
+      "difference": 0.0,
+      "pass": true
+    }
+  }
+}

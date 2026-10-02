@@ -1,0 +1,830 @@
+{
+  "analysis_id": "PGA-AUDIT-N06-N08-20260924",
+  "binning": {
+    "internal_edges": [
+      0.0,
+      0.10536051565782628,
+      0.2231435513142097,
+      0.35667494393873245,
+      0.5108256237659907,
+      0.6931471805599453,
+      0.916290731874155,
+      1.203972804325936,
+      1.6094379124341005,
+      2.302585092994046
+    ],
+    "last_bin": "[edge_9,+infinity)",
+    "rule": "exponential quantile, J=10"
+  },
+  "blocks": [
+    {
+      "bin_edges_internal": [
+        0.0,
+        0.10536051565782628,
+        0.2231435513142097,
+        0.35667494393873245,
+        0.5108256237659907,
+        0.6931471805599453,
+        0.916290731874155,
+        1.203972804325936,
+        1.6094379124341005,
+        2.302585092994046
+      ],
+      "chi_square_continuous_exp1_diagnostic": {
+        "dof": 9,
+        "label": "continuous Exp(1) operational diagnostic",
+        "log10_p_value": -502.4012787434008,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 2358.249551596317,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "chi_square_parity_geometric_diagnostic": {
+        "dof": 8,
+        "label": "conditional parity-geometric surrogate",
+        "log10_p_value": -164.06938343969742,
+        "p_value": 8.523472421725743e-165,
+        "p_value_representable": true,
+        "statistic": 787.856174792045,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "continuous_exp1_expected_counts": [
+        836.3,
+        836.3,
+        836.3,
+        836.3,
+        836.3,
+        836.3,
+        836.3,
+        836.3,
+        836.3,
+        836.3
+      ],
+      "first_lower_prime": 10007,
+      "hi": 100000,
+      "label": "B1",
+      "last_bin": "[edge_9,+infinity)",
+      "last_lower_prime": 99991,
+      "last_upper_prime": 100003,
+      "lo": 10000,
+      "maximum_observed_delta": 6.953520219590078,
+      "mean_delta": 1.0024330897709408,
+      "mean_upper_prime_normalized_for_comparison": 1.0023911133061523,
+      "minimum_observed_delta": 0.17371945265138944,
+      "n_gaps": 8363,
+      "normalization": "delta=(upper-lower)/ln(lower)",
+      "observed_counts": [
+        0,
+        1019,
+        268,
+        745,
+        1641,
+        1066,
+        1137,
+        953,
+        984,
+        550
+      ],
+      "parity_geometric_expected_counts": [
+        0.0,
+        1562.9647195993757,
+        328.9093500450788,
+        940.9525582123437,
+        1031.9205551106234,
+        1164.5445804781818,
+        835.0471695659878,
+        939.9592738908602,
+        833.8162074809229,
+        724.8855856166365
+      ],
+      "parity_simulation_max_abs_count_error": 42.579444889376646,
+      "parity_simulation_mean_counts": [
+        0.0,
+        1571.0,
+        323.5,
+        940.0,
+        1074.5,
+        1132.5,
+        840.5,
+        918.0,
+        827.5,
+        735.5
+      ],
+      "parity_simulation_replicates": 2,
+      "standard_deviation_delta": 0.7631176373676317,
+      "structural_support": {
+        "empty_bins_by_edge_and_parity_floor": [
+          1
+        ],
+        "empty_bins_in_conditional_surrogate": [
+          1
+        ],
+        "first_bin_structurally_empty": true,
+        "floor_is_not_attained_by_lower_prime_in_block": true,
+        "parity_floor_at_block_upper_bound": 0.17371779276130073
+      },
+      "tail_continuous_exp1_diagnostic": {
+        "1": {
+          "continuous_expected_rate": 0.36787944117144233,
+          "log10_p_value": -1058.8128654706643,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -69.76439779391906
+        },
+        "2": {
+          "continuous_expected_rate": 0.1353352832366127,
+          "log10_p_value": -285.8932649231148,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": 1.2786011092945114e-286,
+          "p_value_representable": true,
+          "z": -36.17951141620701
+        },
+        "3": {
+          "continuous_expected_rate": 0.049787068367863944,
+          "log10_p_value": -96.57058364896652,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": 2.6879200759723e-97,
+          "p_value_representable": true,
+          "z": -20.93287390102882
+        },
+        "4": {
+          "continuous_expected_rate": 0.01831563888873418,
+          "log10_p_value": -35.07921696826831,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": 8.332647916082322e-36,
+          "p_value_representable": true,
+          "z": -12.491257131379626
+        },
+        "5": {
+          "continuous_expected_rate": 0.006737946999085467,
+          "log10_p_value": -13.30145031948732,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": 4.9951631841393703e-14,
+          "p_value_representable": true,
+          "z": -7.532045272130424
+        }
+      },
+      "variance_delta": 0.5823485284615563
+    },
+    {
+      "bin_edges_internal": [
+        0.0,
+        0.10536051565782628,
+        0.2231435513142097,
+        0.35667494393873245,
+        0.5108256237659907,
+        0.6931471805599453,
+        0.916290731874155,
+        1.203972804325936,
+        1.6094379124341005,
+        2.302585092994046
+      ],
+      "chi_square_continuous_exp1_diagnostic": {
+        "dof": 9,
+        "label": "continuous Exp(1) operational diagnostic",
+        "log10_p_value": -2705.9882956497963,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 12517.822598902852,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "chi_square_parity_geometric_diagnostic": {
+        "dof": 8,
+        "label": "conditional parity-geometric surrogate",
+        "log10_p_value": -1130.244760892622,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 5248.623687457734,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "continuous_exp1_expected_counts": [
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6,
+        6890.6
+      ],
+      "first_lower_prime": 100003,
+      "hi": 1000000,
+      "label": "B2",
+      "last_bin": "[edge_9,+infinity)",
+      "last_lower_prime": 999983,
+      "last_upper_prime": 1000003,
+      "lo": 100000,
+      "maximum_observed_delta": 8.735011647190985,
+      "mean_delta": 1.0013329206107415,
+      "mean_upper_prime_normalized_for_comparison": 1.0013285815101232,
+      "minimum_observed_delta": 0.1447652569266984,
+      "n_gaps": 68906,
+      "normalization": "delta=(upper-lower)/ln(lower)",
+      "observed_counts": [
+        0,
+        6945,
+        6928,
+        11215,
+        5169,
+        10058,
+        7964,
+        8011,
+        7720,
+        4896
+      ],
+      "parity_geometric_expected_counts": [
+        0.0,
+        10588.36680916763,
+        8957.633516104694,
+        7313.986634194767,
+        6652.2050479039435,
+        7973.4048157149045,
+        7349.900280462283,
+        6931.9089172875165,
+        6943.195820622238,
+        6195.398158542085
+      ],
+      "parity_simulation_max_abs_count_error": 65.63351610469363,
+      "parity_simulation_mean_counts": [
+        0.0,
+        10588.0,
+        8892.0,
+        7352.0,
+        6674.5,
+        7936.0,
+        7365.5,
+        6933.0,
+        6974.5,
+        6190.5
+      ],
+      "parity_simulation_replicates": 2,
+      "standard_deviation_delta": 0.8037166754587552,
+      "structural_support": {
+        "empty_bins_by_edge_and_parity_floor": [
+          1
+        ],
+        "empty_bins_in_conditional_surrogate": [
+          1
+        ],
+        "first_bin_structurally_empty": true,
+        "floor_is_not_attained_by_lower_prime_in_block": true,
+        "parity_floor_at_block_upper_bound": 0.14476482730108395
+      },
+      "tail_continuous_exp1_diagnostic": {
+        "1": {
+          "continuous_expected_rate": 0.36787944117144233,
+          "log10_p_value": -8710.370333726958,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -200.25405604765615
+        },
+        "2": {
+          "continuous_expected_rate": 0.1353352832366127,
+          "log10_p_value": -2344.0485227346976,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -103.85087718121818
+        },
+        "3": {
+          "continuous_expected_rate": 0.049787068367863944,
+          "log10_p_value": -785.8605480934524,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -60.08641995015582
+        },
+        "4": {
+          "continuous_expected_rate": 0.01831563888873418,
+          "log10_p_value": -280.8183281747795,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": 1.5193989614643257e-281,
+          "p_value_representable": true,
+          "z": -35.855321407375705
+        },
+        "5": {
+          "continuous_expected_rate": 0.006737946999085467,
+          "log10_p_value": -102.93596194012387,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": 1.1588789113372217e-103,
+          "p_value_representable": true,
+          "z": -21.62023415631291
+        }
+      },
+      "variance_delta": 0.6459604944104741
+    },
+    {
+      "bin_edges_internal": [
+        0.0,
+        0.10536051565782628,
+        0.2231435513142097,
+        0.35667494393873245,
+        0.5108256237659907,
+        0.6931471805599453,
+        0.916290731874155,
+        1.203972804325936,
+        1.6094379124341005,
+        2.302585092994046
+      ],
+      "chi_square_continuous_exp1_diagnostic": {
+        "dof": 9,
+        "label": "continuous Exp(1) operational diagnostic",
+        "log10_p_value": -22860.4928717877,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 105347.6559878242,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "chi_square_parity_geometric_diagnostic": {
+        "dof": 8,
+        "label": "conditional parity-geometric surrogate",
+        "log10_p_value": -6010.779254318384,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 27734.301998805968,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "continuous_exp1_expected_counts": [
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1,
+        58608.1
+      ],
+      "first_lower_prime": 1000003,
+      "hi": 10000000,
+      "label": "B3",
+      "last_bin": "[edge_9,+infinity)",
+      "last_lower_prime": 9999991,
+      "last_upper_prime": 10000019,
+      "lo": 1000000,
+      "maximum_observed_delta": 10.197044174552891,
+      "mean_delta": 1.0003599294139027,
+      "mean_upper_prime_normalized_for_comparison": 1.0003594849383017,
+      "minimum_observed_delta": 0.12408416001214594,
+      "n_gaps": 586081,
+      "normalization": "delta=(upper-lower)/ln(lower)",
+      "observed_counts": [
+        0,
+        50811,
+        50478,
+        100552,
+        65053,
+        81627,
+        63495,
+        65592,
+        63479,
+        44994
+      ],
+      "parity_geometric_expected_counts": [
+        0.0,
+        76478.5007117189,
+        66482.66525995088,
+        77164.90101039966,
+        69982.87855035452,
+        62812.26293761053,
+        60314.65478096179,
+        59424.42943184952,
+        60358.86964671365,
+        53061.837670441295
+      ],
+      "parity_simulation_max_abs_count_error": 320.0007117188943,
+      "parity_simulation_mean_counts": [
+        0.0,
+        76158.5,
+        66619.0,
+        77285.5,
+        70145.0,
+        62609.0,
+        60300.5,
+        59237.5,
+        60382.5,
+        53343.5
+      ],
+      "parity_simulation_replicates": 2,
+      "standard_deviation_delta": 0.8328883964241441,
+      "structural_support": {
+        "empty_bins_by_edge_and_parity_floor": [
+          1
+        ],
+        "empty_bins_in_conditional_surrogate": [
+          1
+        ],
+        "first_bin_structurally_empty": true,
+        "floor_is_not_attained_by_lower_prime_in_block": true,
+        "parity_floor_at_block_upper_bound": 0.12408413768664338
+      },
+      "tail_continuous_exp1_diagnostic": {
+        "1": {
+          "continuous_expected_rate": 0.36787944117144233,
+          "log10_p_value": -74068.63764851147,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -584.0252480318652
+        },
+        "2": {
+          "continuous_expected_rate": 0.1353352832366127,
+          "log10_p_value": -19921.933632498658,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -302.8729380125712
+        },
+        "3": {
+          "continuous_expected_rate": 0.049787068367863944,
+          "log10_p_value": -6670.525710223069,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -175.23733105503453
+        },
+        "4": {
+          "continuous_expected_rate": 0.01831563888873418,
+          "log10_p_value": -2376.562741798202,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -104.56923266124247
+        },
+        "5": {
+          "continuous_expected_rate": 0.006737946999085467,
+          "log10_p_value": -865.2256376399023,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -63.05371718734503
+        }
+      },
+      "variance_delta": 0.6937030808979823
+    },
+    {
+      "bin_edges_internal": [
+        0.0,
+        0.10536051565782628,
+        0.2231435513142097,
+        0.35667494393873245,
+        0.5108256237659907,
+        0.6931471805599453,
+        0.916290731874155,
+        1.203972804325936,
+        1.6094379124341005,
+        2.302585092994046
+      ],
+      "chi_square_continuous_exp1_diagnostic": {
+        "dof": 9,
+        "label": "continuous Exp(1) operational diagnostic",
+        "log10_p_value": -184925.02273106875,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 851697.0267403014,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "chi_square_parity_geometric_diagnostic": {
+        "dof": 8,
+        "label": "conditional parity-geometric surrogate",
+        "log10_p_value": -37055.81885805793,
+        "p_value": null,
+        "p_value_representable": false,
+        "statistic": 170712.8963215091,
+        "status": "DESCRIPTIVE_ASYMPTOTIC_DIAGNOSTIC"
+      },
+      "continuous_exp1_expected_counts": [
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6,
+        509687.6
+      ],
+      "first_lower_prime": 10000019,
+      "hi": 100000000,
+      "label": "B4",
+      "last_bin": "[edge_9,+infinity)",
+      "last_lower_prime": 99999989,
+      "last_upper_prime": 100000007,
+      "lo": 10000000,
+      "maximum_observed_delta": 12.461452332763846,
+      "mean_delta": 1.0000812823909715,
+      "mean_upper_prime_normalized_for_comparison": 1.0000812373987702,
+      "minimum_observed_delta": 0.10857364481856584,
+      "n_gaps": 5096876,
+      "normalization": "delta=(upper-lower)/ln(lower)",
+      "observed_counts": [
+        0,
+        537434,
+        808597,
+        377530,
+        718684,
+        515219,
+        594409,
+        566446,
+        566068,
+        412489
+      ],
+      "parity_geometric_expected_counts": [
+        0.0,
+        787995.3804797244,
+        698705.8640562962,
+        460579.33723213157,
+        587078.2212326683,
+        533656.8535290456,
+        509021.7975925857,
+        537226.9332776584,
+        512347.57905418315,
+        470264.03354570403
+      ],
+      "parity_simulation_max_abs_count_error": 852.1359437038191,
+      "parity_simulation_mean_counts": [
+        0.0,
+        787727.5,
+        699558.0,
+        460584.5,
+        587648.5,
+        534099.0,
+        508369.5,
+        536564.5,
+        512364.0,
+        469960.5
+      ],
+      "parity_simulation_replicates": 2,
+      "standard_deviation_delta": 0.8505294365769108,
+      "structural_support": {
+        "empty_bins_by_edge_and_parity_floor": [
+          1
+        ],
+        "empty_bins_in_conditional_surrogate": [
+          1
+        ],
+        "first_bin_structurally_empty": true,
+        "floor_is_not_attained_by_lower_prime_in_block": true,
+        "parity_floor_at_block_upper_bound": 0.10857362047581294
+      },
+      "tail_continuous_exp1_diagnostic": {
+        "1": {
+          "continuous_expected_rate": 0.36787944117144233,
+          "log10_p_value": -644119.1843948634,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -1722.2842709034142
+        },
+        "2": {
+          "continuous_expected_rate": 0.1353352832366127,
+          "log10_p_value": -173232.48128194996,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -893.1690864037699
+        },
+        "3": {
+          "continuous_expected_rate": 0.049787068367863944,
+          "log10_p_value": -57992.93054573629,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -516.7730333033707
+        },
+        "4": {
+          "continuous_expected_rate": 0.01831563888873418,
+          "log10_p_value": -20652.041650575706,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -308.3735596017778
+        },
+        "5": {
+          "continuous_expected_rate": 0.006737946999085467,
+          "log10_p_value": -7510.330569131716,
+          "observed": 0,
+          "observed_rate": 0.0,
+          "p_value": null,
+          "p_value_representable": false,
+          "z": -185.9447441694018
+        }
+      },
+      "variance_delta": 0.7234003224838375
+    }
+  ],
+  "discrete_null": {
+    "bin_probabilities": "exact conditional geometric sums; no artificial mass in impossible bins",
+    "candidate_support": "odd integers greater than 2; every gap is an even integer",
+    "gap_definition": "delta=2K/ln(p), K~Geometric(q(p))",
+    "model": "conditional parity-geometric renewal diagnostic",
+    "scientific_status": "diagnostic surrogate only; no wheel/singular-series/consecutive-pair model",
+    "simulation_replicates": 2,
+    "simulation_seed": 20260924,
+    "success_probability": "q(p)=2/ln(p)"
+  },
+  "interpretation": "DESCRIPTIVE_ONLY",
+  "normalization": {
+    "definition": "(p_{i+1}-p_i)/ln(p_i)",
+    "denominator": "lower prime",
+    "lower_prime_block_assignment": "lo <= p_i < hi",
+    "successor_crossing_upper_boundary_included": true
+  },
+  "novelty_claim": false,
+  "production_10e10_run": false,
+  "provenance": {
+    "code_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\AUDIT_REPAIR_N06_N08\\run_audit_repair.py",
+    "code_sha256": "b2353980f5c63a0951e1faa0eee78b49a5b96969e9a911b8d027b5c5d20a69b4",
+    "config_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\AUDIT_REPAIR_N06_N08\\CONFIG\\prereg_pga_audit_n06_n08_20260924.json",
+    "config_sha256": "92f22f61ae5fcfba34455e9d2c8042f68e6a71362cc49ff4738f49df0c2432c3",
+    "historical_evidence": [
+      {
+        "bytes": 5627,
+        "path": "Q-M007/analyze_bins.py",
+        "read_only": true,
+        "sha256": "dbd98a6c8f0da7c5ed87313c14c002b88a2387e569ab4b567d63ff96e221f7ca"
+      },
+      {
+        "bytes": 4382,
+        "path": "Q-M007/compute_bhfr_40cell.py",
+        "read_only": true,
+        "sha256": "cd8ce1f70f1d917837190bf14e5e1a5624f47768803a3ba0563233d0cf28c235"
+      },
+      {
+        "bytes": 3819,
+        "path": "Q-M007/q_m007_results.json",
+        "read_only": true,
+        "sha256": "41c125a0066b439bfe8cab600c2fc5b04f78d3f12c6d112e92f3513dfb522790"
+      },
+      {
+        "bytes": 7422,
+        "path": "Q-M007/BHFR_40cell_results.json",
+        "read_only": true,
+        "sha256": "f48b80af97a7356259352c2ae6158685ba27f1f4d2889de50a9cee055f65a3ba"
+      },
+      {
+        "bytes": 5489,
+        "path": "Q-M007/REPORT/TECHNICAL_Q-M007.md",
+        "read_only": true,
+        "sha256": "8b64d012dac4115fb7ed3f469c67b46bfdd00a006a529900f05f76f67472873d"
+      },
+      {
+        "bytes": 9737,
+        "path": "Q-M008/CODE/run_exp0012.py",
+        "read_only": true,
+        "sha256": "cd9e5e66b8032fe96e0fac828ed631a8c1da9c2423bc78e13bd7238fe9a45d1e"
+      },
+      {
+        "bytes": 6269,
+        "path": "Q-M008/CODE/run_1e10.py",
+        "read_only": true,
+        "sha256": "60ce26aa35eb3e9f19f3004b0b040f30afce9bfb0cc56b26c97672fdad01bbf9"
+      },
+      {
+        "bytes": 8818,
+        "path": "Q-M008/RESULTS/Q-M008_1e8_results.json",
+        "read_only": true,
+        "sha256": "cfd12a370fb53dcd4a680c1e2927c323ad33f2cd00701a624794cf9f0293fdb2"
+      },
+      {
+        "bytes": 8935,
+        "path": "Q-M008/RESULTS/Q-M008_1e9_results.json",
+        "read_only": true,
+        "sha256": "e1138507119951e32bda688e5fc3c12e24dd22ecd3c4e5a4bea9f7a98af3d28d"
+      },
+      {
+        "bytes": 19264,
+        "path": "Q-M008/RESULTS/Q-M008_combined.json",
+        "read_only": true,
+        "sha256": "8889271452172d951fdd46ce044ed6ed2826b1c59651c964492bbaccebca8d22"
+      },
+      {
+        "bytes": 5332,
+        "path": "Q-M008/REPORT/TECHNICAL_Q-M008.md",
+        "read_only": true,
+        "sha256": "b23d343b02e8723c5608706520ea483c5454c265c9d389b73a79322ae243eb70"
+      },
+      {
+        "bytes": 7115,
+        "path": "CONFIG/EXP-0008_experiment.json",
+        "read_only": true,
+        "sha256": "d504435419a39ec15e780c275d67e264904f4cfd0835f68324208446ad4a584a"
+      }
+    ],
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "schema_version": "prime-gap-audit-repair/raw-v1",
+  "scope_findings": [
+    "N-06",
+    "N-07",
+    "N-08"
+  ],
+  "sieve": {
+    "data_cutoff": 100000000,
+    "first_segment": {
+      "first_prime": 2,
+      "hi": 99999999,
+      "hi_exclusive": 100000000,
+      "index": 0,
+      "last_prime": 99999989,
+      "lo": 0,
+      "prime_count": 5761455,
+      "prime_vector_sha256": "a7eead5377c738f5ecdd62fd01a0cedbcecee527cbf31739d4ecc1f3fae07766"
+    },
+    "segment_ranges_are_inclusive": true,
+    "segment_size": 100000000,
+    "selected_block_lower_prime_gaps": 5760226,
+    "sieve_limit": 100000100,
+    "streamed_lower_prime_gaps": 5761460,
+    "total_primes_through_sieve_limit": 5761461,
+    "trusted_small_sieve_controls": {
+      "boundary_ranges_limit_10_size_4": [
+        {
+          "hi": 3,
+          "lo": 0
+        },
+        {
+          "hi": 7,
+          "lo": 4
+        },
+        {
+          "hi": 10,
+          "lo": 8
+        }
+      ],
+      "checks": [
+        {
+          "limit": 0,
+          "match": true,
+          "prime_count": 0,
+          "segment_size": 1
+        },
+        {
+          "limit": 1,
+          "match": true,
+          "prime_count": 0,
+          "segment_size": 1
+        },
+        {
+          "limit": 2,
+          "match": true,
+          "prime_count": 1,
+          "segment_size": 1
+        },
+        {
+          "limit": 10,
+          "match": true,
+          "prime_count": 4,
+          "segment_size": 3
+        },
+        {
+          "limit": 49,
+          "match": true,
+          "prime_count": 15,
+          "segment_size": 7
+        },
+        {
+          "limit": 1000,
+          "match": true,
+          "prime_count": 168,
+          "segment_size": 7
+        },
+        {
+          "limit": 1000,
+          "match": true,
+          "prime_count": 168,
+          "segment_size": 1000
+        }
+      ],
+      "trusted_simple_sieve": "bytearray full Eratosthenes"
+    }
+  },
+  "status": "COMPLETE_DESCRIPTIVE_SMOKE"
+}

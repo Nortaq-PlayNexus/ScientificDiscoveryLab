@@ -1,0 +1,38 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "stale_audit": {
+      "ok": true,
+      "evidence": {
+        "summary_claims": [
+          "| **Evidence** | BH-FDR on 40-cell grid: **38/40 cells significant** (vs 20/20 for tail cells only) |",
+          "| **Controls** | 8/8 including C7 independent implementation |",
+          "**Why this matters:** D1 was characterized at 10^8. Q-M008 proves the deviation is NOT a finite-range artifact ΓÇö it strengthens with scale. The 10^10 test is planned but not yet executed.",
+          "**No overclaims in any finding.**",
+          "The most defensible finding is **D1** because it has full independent verification (C7) and a clear, constrained result (38/40 BH-FDR significant). **V1** strengthens D1 by showing the deviation persists at 10^9. The most interesting finding is **D2** because it's genuinely novel (no one has quantified the spectral complexity threshold for AI pareidolia) and has practical implications for AI image analysis. **D5** is the most surprising because the convergence condition (a=b, c=a) was not predicted by existing literature."
+        ],
+        "qm007_contradicting_lines": [
+          "| Significant after BH-FDR | **38/40** (95%) |",
+          "**Finding:** The deviation is robust across the full 40-cell grid, not limited to tail cells. 38/40 cells survive BH-FDR at ╬▒=0.01 ΓÇö a much broader rejection than the 20-cell result suggested.",
+          "| Significant cells | 20/20 (all) | 38/40 |",
+          "| BH-FDR 40-cell | PASS | 38/40 survive |",
+          "- **BH-FDR not reapplied** to the 40-cell grid in the primary EXP-0008 analysis ΓÇö this is a re-analysis",
+          "> **H1_SUPPORTED (escalation only)**. We have precisely characterized the shape of the prime gap deviation from Poisson: it is narrower than Exp(1), with both tails lighter and mid-bins over-represented. 38/40 cells survive BH-FDR at ╬▒=0.01. This constrains theoretical explanations but does not identify a mechanism. No novelty claim is made."
+        ],
+        "changelog_contradicting_lines": [
+          "  - H1_SUPPORTED status CONFIRMED",
+          "  - Note: Q-M007 reports RAW residuals ΓÇö BH-FDR NOT applied to 40-cell grid (only 20 primary tail cells assessed)"
+        ],
+        "final_audit_claims": [
+          "| Overclaims | 0 |",
+          "| Pre-registered experiments | 14/14 (100%) |",
+          "7. **Feigenbaum ╬┤ ΓåÆ 4.6692** ΓÇö confirmed at n=8 for z=2 maps; 7/7 controls PASS",
+          "2. **Hash verification not performed**: Recorded in configs but not independently recomputed",
+          "| Overclaims identified | Yes (103 claims, many weak) | None |",
+          "1. **Hash verification**: Result file SHA256 hashes were not independently recomputed",
+          "2. **Database contents**: sovereign_biolab.db was not queried"
+        ]
+      }
+    }
+  }
+}

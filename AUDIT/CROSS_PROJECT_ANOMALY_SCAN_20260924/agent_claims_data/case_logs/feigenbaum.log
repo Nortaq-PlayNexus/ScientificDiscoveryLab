@@ -1,0 +1,59 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "feigenbaum": {
+      "ok": true,
+      "evidence": {
+        "nested_result": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_results.json",
+        "canonical_results_files": [],
+        "prereg_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+        "z3_a_unique": 2,
+        "z3_a_count": 8,
+        "z3_deltas": {
+          "3": Infinity,
+          "4": Infinity,
+          "5": Infinity,
+          "6": Infinity,
+          "7": Infinity,
+          "8": Infinity
+        },
+        "z4_deltas": {
+          "3": 6.4344123584476565,
+          "4": 7.1774140798335235,
+          "5": 7.283368450341909,
+          "6": 7.286840645655212,
+          "7": -0.016297372044157165,
+          "8": Infinity
+        },
+        "c4": {
+          "description": "Method variation (brentq vs newton, z=2, n=5)",
+          "a_brentq": 1.400253081214783,
+          "a_newton": 1.310702641336833,
+          "difference": 0.08955043987795008,
+          "pass": "False"
+        },
+        "hardcoded_controls": [
+          "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:106",
+          "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:113"
+        ],
+        "fallback_without_period_check": [
+          "121:     if best_a is None:",
+          "122:         # Fallback: try the candidate closest to a_prev without period check",
+          "123:         if a_prev is not None and candidates:",
+          "124:             if isinstance(candidates[0], tuple):",
+          "125:                 from scipy.optimize import brentq",
+          "126:                 try:",
+          "127:                     best_a = brentq(lambda a: residual(a, z, n), candidates[0][0], candidates[0][1], xtol=1e-15)",
+          "128:                 except Exception:",
+          "129:                     pass",
+          "130:             else:",
+          "131:                 best_a = min(candidates, key=lambda a: abs(a - a_prev))",
+          "132: "
+        ],
+        "report_controls": [
+          "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/TECHNICAL_EXP-0014.md:<not found:'All 7 controls PASS'>"
+        ]
+      }
+    }
+  }
+}

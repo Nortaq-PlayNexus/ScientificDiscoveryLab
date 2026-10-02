@@ -1,0 +1,90 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "rng": {
+      "ok": true,
+      "evidence": {
+        "fresh_seed_count": 20,
+        "max_abs_offdiag_corr": 0.9947839373913318,
+        "pair": [
+          "T03_runs",
+          "T15_ac1"
+        ],
+        "aggregate_code": [
+          "104: def aggregate(generator_ps):",
+          "105:     \"\"\"Decision stats for one generator over all seeds (frozen rule).",
+          "106: ",
+          "107:     generator_ps: list of list[(test_id, p)] (one list per seed).",
+          "108:     \"\"\"",
+          "109:     merged = [p for per_seed in generator_ps for _, p in per_seed]",
+          "110:     n = len(merged)",
+          "111:     ks_p = float(stats.kstest(merged, \"uniform\").pvalue)",
+          "112:     small_p = [p for p in merged if p <= ALPHA]",
+          "113:     band = binomial_band(n, p=ALPHA, alpha=1.0 - BAND_COVERAGE)",
+          "114:     sig, _ = bh_fdr(merged, alpha=ALPHA)",
+          "115:     fdr_count = int(sig.sum())",
+          "116:     return {",
+          "117:         \"n_cells\": n,",
+          "118:         \"ks_p\": ks_p,",
+          "119:         \"ks_pass\": bool(ks_p > ALPHA),",
+          "120:         \"small_p_count\": len(small_p),",
+          "121:         \"small_p_min\": min(small_p) if small_p else None,",
+          "122:         \"binomial_band\": band,",
+          "123:         \"small_p_in_band\": bool(band[\"lo\"] <= len(small_p) <= band[\"hi\"]),",
+          "124:         \"fdr_flag_count\": fdr_count,",
+          "125:         \"fdr_in_band\": bool(band[\"lo\"] <= fdr_count <= band[\"hi\"]),",
+          "126:         \"pass_rule\": bool(",
+          "127:             ks_p > ALPHA",
+          "128:             and band[\"lo\"] <= len(small_p) <= band[\"hi\"]",
+          "129:             and band[\"lo\"] <= fdr_count <= band[\"hi\"]",
+          "130:         ),",
+          "131:     }"
+        ],
+        "battery_inputs": [
+          "372: def run_battery(bits, bytes_arr, floats_arr, words_arr):",
+          "373:     \"\"\"Run the full battery; return a list of (test_id, p-value) tuples.",
+          "374: ",
+          "375:     Deterministic given the input arrays. Each test reads a disjoint slice of",
+          "376:     one input array; tests never mutate or rerandomise.",
+          "377:     \"\"\"",
+          "378:     out = []",
+          "379:     out.append((\"T01_monobit\", t_monobit(bits)))",
+          "380:     out.append((\"T02_blockfreq\", t_block_freq(bits)))",
+          "381:     out.append((\"T03_runs\", t_runs(bits)))",
+          "382:     out.append((\"T04_longestrun\", t_longest_run(bits)))",
+          "383:     out.append((\"T05_matrixrank\", t_matrix_rank(bits)))",
+          "384:     out.append((\"T06_dft\", t_dft(bits)))",
+          "385:     out.append((\"T07_nontemplate\", t_nontemplate(bits)))",
+          "386:     p1, p2 = t_serial(bits)",
+          "387:     out.append((\"T08_serial_p1\", p1))",
+          "388:     out.append((\"T08_serial_p2\", p2))",
+          "389:     out.append((\"T09_apen\", t_apen(bits)))",
+          "390:     p1, p2 = t_cusum(bits)",
+          "391:     out.append((\"T10_cusum_fw\", p1))",
+          "392:     out.append((\"T10_cusum_bw\", p2))",
+          "393:     out.append((\"T11_bytes\", t_byte_chisq(bytes_arr)))",
+          "394:     out.append((\"T12_floats\", t_float_chisq(floats_arr)))",
+          "395:     out.append((\"T13_words\", t_word_bucket(words_arr)))",
+          "396:     out.append((\"T14_gap\", t_gap(floats_arr)))",
+          "397:     ac = t_autocorr(bits)",
+          "398:     for i, p in enumerate(ac, start=1):",
+          "399:         out.append((\"T15_ac%d\" % i, p))",
+          "400:     return out"
+        ],
+        "c7_same_stream": [
+          "1: \"\"\"EXP-0004, C7 - independent battery re-implementation (REPLICATION).",
+          "2: ",
+          "3: Recomputes five representative test families from the documented formulas only",
+          "4: (FALSIFICATION/planning_checks.md, EXPERIMENT_PLAN.md) on the IDENTICAL streams",
+          "5: the primary battery used, and compares p-values to the primary battery's",
+          "6: recorded results (RESULTS/EXP-0004_results.json).",
+          "7: ",
+          "8: Deliberately straight-line implementation: explicit loops over the formulas",
+          "9: (multinomial counting via collections instead of numpy vectorisation) to be a",
+          "10: real, distinct implementation of the same statistics."
+        ],
+        "stored_decision": "CERTIFIED"
+      }
+    }
+  }
+}

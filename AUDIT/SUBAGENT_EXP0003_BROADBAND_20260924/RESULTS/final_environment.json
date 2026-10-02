@@ -1,0 +1,22 @@
+{
+  "audit_date": "2026-09-24",
+  "working_directory": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "python": "3.14.7",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+  "primary_rng": "numpy.random.Generator(PCG64(SeedSequence([seed, sigma, P, realization, tag])))",
+  "seed_ladder": [42, 7, 123, 2023, 314159, 271828],
+  "main_realizations_per_seed": 4,
+  "main_field_count": 864,
+  "main_physical_box_wavelengths": 24,
+  "large_window_validation_wavelengths": 128,
+  "bootstrap_resamples": 2000,
+  "main_runtime_seconds": 206.06728230000044,
+  "controls_runtime_seconds": 207.51466080000046,
+  "large_window_runtime_seconds": 60.89032169999973,
+  "note": "The separate pre-existing root-level runner in this assigned directory was not edited or used; see COLLISION_NOTE.md."
+}

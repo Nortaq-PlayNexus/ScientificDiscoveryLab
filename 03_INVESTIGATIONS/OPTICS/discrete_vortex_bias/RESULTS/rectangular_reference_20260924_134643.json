@@ -1,0 +1,3238 @@
+{
+  "experiment": "EXP-0015",
+  "stage": "rectangular_reference_control",
+  "timestamp_utc": "2026-09-24T03:46:43+00:00",
+  "reference_grid": 2048,
+  "shapes": [
+    [
+      128,
+      256
+    ],
+    [
+      256,
+      128
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      512,
+      256
+    ]
+  ],
+  "shifts": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "z_um": [
+    640.0,
+    1280.0
+  ],
+  "rows": [
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0032826265631965682,
+      "median_feature_intensity": 0.003282626563196593,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0032826265631965682,
+      "median_feature_intensity": 0.003282626563196593,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0032826265631965682,
+      "median_feature_intensity": 0.003282626563196593,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.004808547167875968,
+      "median_feature_intensity": 0.004808547167875974,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0032826265631965682,
+      "median_feature_intensity": 0.003282626563196593,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0021961157831666355,
+      "median_feature_intensity": 0.002196115783166649,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0021961157831666355,
+      "median_feature_intensity": 0.002196115783166649,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0021961157831666355,
+      "median_feature_intensity": 0.002196115783166649,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.005106669477215444,
+      "median_feature_intensity": 0.005106669477215452,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0021961157831666355,
+      "median_feature_intensity": 0.002196115783166649,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0007948601976235264,
+      "median_feature_intensity": 0.0007948601976235327,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0007948601976235264,
+      "median_feature_intensity": 0.0007948601976235327,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0007948601976235264,
+      "median_feature_intensity": 0.0007948601976235327,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001146639460956647,
+      "median_feature_intensity": 0.0011466394609566484,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0007948601976235264,
+      "median_feature_intensity": 0.0007948601976235327,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.00023612942913984482,
+      "median_feature_intensity": 0.00023612942913984916,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.00023612942913984482,
+      "median_feature_intensity": 0.00023612942913984916,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.00023612942913984482,
+      "median_feature_intensity": 0.00023612942913984916,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0016619453244750902,
+      "median_feature_intensity": 0.0016619453244750945,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 640.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.00023612942913984482,
+      "median_feature_intensity": 0.00023612942913984916,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0004910039289870463,
+      "median_feature_intensity": 0.0004910039289870514,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0004910039289870463,
+      "median_feature_intensity": 0.0004910039289870514,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 5,
+      "path_difference": -1
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0004910039289870463,
+      "median_feature_intensity": 0.0004910039289870514,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.002730028516752573,
+      "median_feature_intensity": 0.0027300285167525754,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        128,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0004910039289870463,
+      "median_feature_intensity": 0.0004910039289870514,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 6,
+      "path_difference": -2
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 7.711983794735654e-05,
+      "median_feature_intensity": 7.711983794735951e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 7.711983794735654e-05,
+      "median_feature_intensity": 7.711983794735951e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 7.711983794735654e-05,
+      "median_feature_intensity": 7.711983794735951e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.003998830430614934,
+      "median_feature_intensity": 0.00399883043061494,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        128
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 7.711983794735654e-05,
+      "median_feature_intensity": 7.711983794735951e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 1.1111310982299312e-05,
+      "median_feature_intensity": 1.1111310982299756e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 1.1111310982299312e-05,
+      "median_feature_intensity": 1.1111310982299756e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 5,
+      "path_difference": -1
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 1.1111310982299312e-05,
+      "median_feature_intensity": 1.1111310982299756e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 6,
+      "path_difference": -2
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.001107545068728992,
+      "median_feature_intensity": 0.0011075450687289946,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        256,
+        512
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 1.1111310982299312e-05,
+      "median_feature_intensity": 1.1111310982299756e-05,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0002252552370250694,
+      "median_feature_intensity": 0.00022525523702507245,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.25,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0002252552370250694,
+      "median_feature_intensity": 0.00022525523702507245,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0002252552370250694,
+      "median_feature_intensity": 0.00022525523702507245,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "raw_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "supported_clustered_winding",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0006755686867903933,
+      "median_feature_intensity": 0.0006755686867903942,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    },
+    {
+      "path": "reference_downsample",
+      "shape": [
+        512,
+        256
+      ],
+      "shift_px": 0.75,
+      "z_um": 1280.0,
+      "detector": "local_minimum_contour",
+      "count": 4,
+      "positive": 2,
+      "negative": 2,
+      "net_charge": 0,
+      "minimum_feature_intensity": 0.0002252552370250694,
+      "median_feature_intensity": 0.00022525523702507245,
+      "truth_match": {
+        "true_positive": null,
+        "false_positive": null,
+        "false_negative": null,
+        "charge_correct": null,
+        "localization_rmse_px": null
+      },
+      "direct_count": 4,
+      "path_difference": 0
+    }
+  ],
+  "runtime_s": 13.722191333770752,
+  "status": "CONFIRMATORY_RED_TEAM"
+}

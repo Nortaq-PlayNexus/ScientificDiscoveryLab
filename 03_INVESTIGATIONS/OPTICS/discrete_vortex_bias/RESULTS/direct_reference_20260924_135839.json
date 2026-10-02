@@ -1,0 +1,70 @@
+{
+  "experiment": "EXP-0015",
+  "stage": "direct_reference",
+  "rows": [
+    {
+      "grid": 16,
+      "z_um": 10.0,
+      "ncc_direct_vs_asm_after_scalar": 0.06886474242698426,
+      "intensity_ncc_direct_vs_asm": 2.0256255280228388e-28,
+      "max_abs_error_after_scalar": 66183319847179.21
+    },
+    {
+      "grid": 16,
+      "z_um": 50.0,
+      "ncc_direct_vs_asm_after_scalar": 0.2297778071694846,
+      "intensity_ncc_direct_vs_asm": 9.587054415790974e-26,
+      "max_abs_error_after_scalar": 2283498638845.3345
+    },
+    {
+      "grid": 16,
+      "z_um": 100.0,
+      "ncc_direct_vs_asm_after_scalar": 0.19297218797960103,
+      "intensity_ncc_direct_vs_asm": 4.102196490874095e-24,
+      "max_abs_error_after_scalar": 430421974788.60724
+    },
+    {
+      "grid": 24,
+      "z_um": 10.0,
+      "ncc_direct_vs_asm_after_scalar": 0.4139735139175743,
+      "intensity_ncc_direct_vs_asm": 1.5896983474882207e-27,
+      "max_abs_error_after_scalar": 15932893495577.693
+    },
+    {
+      "grid": 24,
+      "z_um": 50.0,
+      "ncc_direct_vs_asm_after_scalar": 0.15260399516864587,
+      "intensity_ncc_direct_vs_asm": 3.2316796410677445e-25,
+      "max_abs_error_after_scalar": 1422667953540.3447
+    },
+    {
+      "grid": 24,
+      "z_um": 100.0,
+      "ncc_direct_vs_asm_after_scalar": 0.1919529339209617,
+      "intensity_ncc_direct_vs_asm": 5.643062339726871e-24,
+      "max_abs_error_after_scalar": 355540897532.7501
+    },
+    {
+      "grid": 32,
+      "z_um": 10.0,
+      "ncc_direct_vs_asm_after_scalar": 0.3836566050171799,
+      "intensity_ncc_direct_vs_asm": 9.44830587984452e-28,
+      "max_abs_error_after_scalar": 24035828788877.434
+    },
+    {
+      "grid": 32,
+      "z_um": 50.0,
+      "ncc_direct_vs_asm_after_scalar": 0.528789847111184,
+      "intensity_ncc_direct_vs_asm": 2.1038654930519698e-24,
+      "max_abs_error_after_scalar": 310153909554.73303
+    },
+    {
+      "grid": 32,
+      "z_um": 100.0,
+      "ncc_direct_vs_asm_after_scalar": 0.5503558311513388,
+      "intensity_ncc_direct_vs_asm": 1.0605935665091286e-23,
+      "max_abs_error_after_scalar": 206196385897.49088
+    }
+  ],
+  "runtime_s": 0.0625450611114502
+}

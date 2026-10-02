@@ -1,0 +1,239 @@
+root=C:\Users\natha\ScientificDiscoveryLab
+selected cases=['prime_first_bin', 'qm007_pvalue', 'qm008_method_mismatch', 'qm008_pvalue_bh', 'qp006_duplicate', 'qp007_sample', 'qp007_cache', 'qp007_pc', 'three_d_boundary', 'three_d_sample', 'three_d_provenance', 'exp0007_draws_precision', 'optics_floor', 'feigenbaum_results', 's9_hardcoded', 's9_synthetic', 's9_units', 'rng_dependence', 'collatz', 'exp0009_c7_streams', 'r3_coupling']
+
+==============================================================================
+PRIME-0008 structural first-bin contradiction
+==============================================================================
+first edge = 0.10536051565782628
+structural lower bound 2/ln(1e8) = 0.10857362047581294
+margin = 0.003213104817986659; relative margin = 3.04962898%
+B1: n=8362 edge0=0.10536051565782628 count0=0 expected0=836.2
+B2: n=68905 edge0=0.10536051565782628 count0=0 expected0=6890.5
+B3: n=586080 edge0=0.10536051565782628 count0=0 expected0=58608.0
+B4: n=5096875 edge0=0.10536051565782628 count0=0 expected0=509687.5
+Q-M007 aggregate bin 1: obs_total=0.0 exp_total=576022.2 residuals=[-28.917122955093582, -83.00903565275289, -242.0908920219842, -713.9240155646818]
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py:601
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py:117
+
+==============================================================================
+Q-M007 malformed chi-square p-value
+==============================================================================
+cell=1,1 chi2_cell=836.2000000000002
+stored p=2.0502642278570707e-07
+code formula reproduced=2.0502642278570707e-07; exact chi2.sf=7.273513898649874e-184
+stored/exact=2.818808e+176; code exponent=1/6, standard WH exponent=1/3; source correction operator=multiplication, standard= subtraction
+even cube-root WH one-sided approximation=8.724788773836631e-55
+cells whose stored p is not reproduced by source formula: 0/40
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py:47
+
+==============================================================================
+Q-M008 denominator and block-structure mismatch
+==============================================================================
+EXP-0008 prereg blocks:
+  B1: [10000, 100000)
+  B2: [100000, 1000000)
+  B3: [1000000, 10000000)
+  B4: [10000000, 100000000)
+Q-M008 code block construction at limit=1e8:
+  B?: [1000000, 10000000)
+  B?: [10000000, 50000000)
+  B?: [50000000, 80000000)
+  B?: [80000000, 100000000)
+Q-M008 stored block sizes: [('B1', 586080), ('B2', 2336554), ('B3', 1668247), ('B4', 1092072)]
+lower-prime normalization example: [1.8204784532536746, 1.2426698691192237]
+upper-prime normalization example: [1.2426698691192237, 1.0277966847395015]
+Q-M008 overall chi2=868281.0185213662
+EXP-0008 combined chi2=971920.0236 (stored report value)
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py:601
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:48
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:121
+
+==============================================================================
+Q-M008 survival-function and BH implementation checks
+==============================================================================
+stored p_value fields=35 exact zeros=35
+first zero paths: ['$.overall.chi2.p_value', '$.overall.ks.p_value', '$.overall.tail.1.p_value', '$.overall.tail.2.p_value', '$.overall.tail.3.p_value', '$.overall.tail.4.p_value', '$.overall.tail.5.p_value', '$.blocks[0].chi2.p_value']
+synthetic chi2 x=100.0: 1-cdf=0.0; sf=1.5239706048320995e-23
+synthetic normal z=10.0: 1-cdf=0.0; sf=7.61985302416047e-24
+BH synthetic sorted p=[0.001, 0.008, 0.009] thresholds=[0.003333333333333333, 0.006666666666666666, 0.01]
+naive rank mask=[True, False, True]; proper step-up rejects=[True, True, True] (k=3)
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:62
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:108
+
+==============================================================================
+Q-P006/Q-P005 byte-identical raw cells
+==============================================================================
+_cells_L512_n200.npz: 4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd == 4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd: True
+_cells_L1024_n100.npz: c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572 == c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572: True
+_cells_L2048_n50.npz: 9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af == 9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af: True
+prereg note contains no-reuse statement: True
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run_q_p006.py:51
+
+==============================================================================
+Q-P007 ragged-sample truncation
+==============================================================================
+result n_real: {'512': 100, '1024': 50, '2048': 25}
+prereg n_real: {'512': 100, '1024': 50, '2048': 25}
+effective aligned min_n=25; retained fractions={512: 0.25, 1024: 0.5, 2048: 1.0}
+L=512 NPZ masses shape=(100,), n_real=100
+L=1024 NPZ masses shape=(50,), n_real=50
+L=2048 NPZ masses shape=(25,), n_real=25
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:126
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:127
+
+==============================================================================
+Q-P007 cache schema cannot reconstruct tau
+==============================================================================
+stored tau: {'mean': None, 'se': None, 'expected': 2.0549450549450547, 'tol': 0.05}
+stored tau_raw: {'total_tail_clusters': 0, 'fit_range': [32, 4096], 'tau_L': 2048}
+L=512 keys=['masses', 'chis', 'pinfs', 'sizes_n', 'sizes_n_total']; sizes_present=False; sizes_n_shape=(100,); sizes_n_total_shape=(100,); sizes_n_total_first_last_sum=[155116, 155248, 155363]/[155757, 154880, 155523]/15535882
+L=1024 keys=['masses', 'chis', 'pinfs', 'sizes_n', 'sizes_n_total']; sizes_present=False; sizes_n_shape=(50,); sizes_n_total_shape=(50,); sizes_n_total_first_last_sum=[621276, 621429, 622423]/[621473, 620679, 621776]/31077395
+L=2048 keys=['masses', 'chis', 'pinfs', 'sizes_n', 'sizes_n_total']; sizes_present=False; sizes_n_shape=(25,); sizes_n_total_shape=(25,); sizes_n_total_first_last_sum=[2486327, 2487415, 2486109]/[2487738, 2486010, 2487244]/62152625
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:45
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:54
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:142
+
+==============================================================================
+Q-P007 phase-2 p_c inputs are literals
+==============================================================================
+stored p_c_measures: {'512': 0.592883, '1024': 0.592673, '2048': 0.592834}
+stored p_c_refined: 0.5927289999999997
+recomputed 1/L slope=np.float64(0.05939200000022289); intercept=np.float64(0.5927289999999997)
+source p_c_sig literals: ['512: 0.004519, 1024: 0.003031, 2048: 0.001828']
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:61
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:62
+
+==============================================================================
+3-D spanning boundary reproduction
+==============================================================================
+z=0-plane connection: default spanning_flags=(True, False); actual z-face connection=False
+opposite-z connection: default spanning_flags=(False, False); actual z-face connection=True
+03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py:232
+03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py:250
+03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py:77
+
+==============================================================================
+3-D configured versus effective sample sizes
+==============================================================================
+EXP-0011 pilot width n_each configured/effective: [('L8', 300, 30), ('L16', 200, 20), ('L24', 100, 10)]
+EXP-0011 pilot exponent n_real=[500, 200, 50], min_n used for ragged fit=50
+EXP-0013 main width n_each configured/effective: [('L128', 10, 4), ('L256', 5, 4), ('L512', 10, 4)]
+EXP-0013 main exponent n_real=[1000, 500, 100], min_n used for ragged fit=100
+03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:57
+03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:166
+
+==============================================================================
+3-D main result is a semantic pilot copy
+==============================================================================
+main result L_list: [8, 16, 24]
+pilot result L_list: [8, 16, 24]
+semantic equality after removing elapsed: True
+elapsed values: 8.37174677848816 5.600082159042358
+main log tail: ['[Q-P008] 3D site percolation critical exponents', '[Q-P008] p_c_canon = 0.3116079', '[Q-P008] L_list = [128, 256, 512]', '[Q-P008] Phase 1: Width curves + p_c at each L', '  L=128: measuring width curve...', '  L=128: p_c = 0.32500000', '  L=256: measuring width curve...']
+EXP-0013 prereg L_list: [128, 256, 512]
+03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:18
+
+==============================================================================
+EXP-0007 bootstrap count and precision gate
+==============================================================================
+prereg bootstrap n_draws=500
+stored bootstrap n_draws=495
+FSS se_a=0.03170744877268775; tolerance=0.01; se_a/tol=3.170745
+point deviation=0.0006874530252671818; point deviation/tol=0.068745
+03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0007.py:154
+03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md:69
+
+==============================================================================
+Optics bootstrap p-value floor
+==============================================================================
+EXP-0002: exact eps floors=1; examples=['$.cells.N64_M2.p_two_sided_null_r_eq_1']
+EXP-0003: exact eps floors=8; examples=['$.cells.gauss_sigma_0.1_N512.p_two_sided_ratio_eq_1', '$.cells.gauss_sigma_0.25_N512.p_two_sided_ratio_eq_1', '$.cells.gauss_sigma_0.5_N512.p_two_sided_ratio_eq_1', '$.cells.gauss_sigma_0.75_N512.p_two_sided_ratio_eq_1', '$.cells.ring_k0_0.3927_N1024.p_two_sided_ratio_eq_1']
+eps = 2.220446049250313e-16 ; empirical bootstrap resolution is at least 1/N_BOOT, not eps
+03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:59
+03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py:220
+
+==============================================================================
+EXP-0014 nonfinite/duplicate roots and control provenance
+==============================================================================
+z2: a_unique=8/8, nonfinite_deltas=0, deltas=[4.38567759856832, 4.600949276538203, 4.655130495390268, 4.666111947834643, 4.668548581489037, 4.669060660404473]
+z3: a_unique=2/8, nonfinite_deltas=6, deltas=[inf, inf, inf, inf, inf, inf]
+z4: a_unique=6/8, nonfinite_deltas=1, deltas=[6.4344123584476565, 7.1774140798335235, 7.283368450341909, 7.286840645655212, -0.016297372044157165, inf]
+stored C4: difference=0.08955043987795008, pass='False' (type=str)
+prereg JSON: INVALID: JSONDecodeError Expecting value: line 1 column 1 (char 0)
+03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/feigenbaum_engine.py:198
+03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:113
+03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:116
+
+==============================================================================
+Q-S9-1/Q-S9-3 hard-coded result dictionaries
+==============================================================================
+q_s9_1_results: literal keys=['experiment', 'parent', 'method', 'complexity_levels', 'baseline_rate', 'threshold_analysis', 'key_finding', 'note']
+  complexity/rates: [(1.0, 0.195), (0.1, 0.0567), (0.05, 0.0617), (0.01, 0.0517), (0.0, 0.0517)]
+q_s9_3_results: literal keys=['experiment', 'parent', 'method', 'observed_rates', 'A_minus_B', 'dose_response_debiased', 'unbiased_hill_fit', 'key_finding']
+  dose raw/unbiased equal count: 10 / 11
+  raw= [0.205, 0.2533, 0.3536, 0.4465, 0.5141, 0.5601, 0.5914, 0.6131, 0.6285, 0.6397, 0.6481]
+  unbiased= [0.1867, 0.2533, 0.3536, 0.4465, 0.5141, 0.5601, 0.5914, 0.6131, 0.6285, 0.6397, 0.6481]
+save_q9results.py:8
+save_q9results.py:30
+
+==============================================================================
+Q-S9-2 synthetic dose-response generation
+==============================================================================
+generated first/last: 0.2110943415950886 0.6657072255523024
+stored first/last: 0.2110943415950886 0.6657072255523024
+stored/generated max abs diff: 0.0
+source declares simulated data: True
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:38
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:42
+
+==============================================================================
+Q-S9-2 additive-versus-relative inflation units
+==============================================================================
+source formula saturation=0.688; relative increase=235.609756097561%
+if 0.483 means 48.3% relative, saturation=0.304015
+absolute excess=0.38398499999999997
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:25
+03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:33
+03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md:29
+
+==============================================================================
+EXP-0004 pooled p-values reuse one stream
+==============================================================================
+fresh seeds=20; max |corr|=0.994783937391 between T03_runs and T15_ac1
+stored EXP-0004 decision: CERTIFIED
+04_SHARED_ENGINE/engine/validation/rng_battery.py:19
+04_SHARED_ENGINE/engine/validation/rng_battery.py:379
+04_SHARED_ENGINE/engine/validation/rng_battery.py:393
+03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py:109
+
+==============================================================================
+Collatz timeout labels and incomplete family sweep
+==============================================================================
+stored full result families=3 + pilot families=5; prereg combinations=27
+full result family rows: [(3, 3, 3, 100000), (5, 5, 5, 100000), (7, 7, 7, 100000)]
+pilot family rows: [(3, 3, 1, 1000), (3, 5, 1, 1000), (5, 3, 1, 1000), (5, 5, 1, 1000), (7, 5, 3, 1000)]
+pilot first family cycles_found=470 while max_stopping_time=1000
+synthetic n0=55 family=(3,3,1): repeated_before_max_steps=False; code would label timeout as cycle
+03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz_full.py:17
+03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz_full.py:35
+03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz_full.py:84
+
+==============================================================================
+EXP-0009 C7 uses identical frozen streams
+==============================================================================
+C7 stream declaration: identical G_LAB rng labels/seeds; first 40 realizations of each exponent cell
+C7 per-L implementation comparison: {'128': {'Mmax_identical': True, 'chi_identical': True}, '256': {'Mmax_identical': True, 'chi_identical': True}, '512': {'Mmax_identical': True, 'chi_identical': True}}
+C7 D_f comparison: {'uf_subsample': 1.9236534931191327, 'uf_boot_se': 0.06101898717371485, 'engine_reported': 1.869737723898956, 'engine_boot_se': 0.022226754657092666, 'abs_diff': 0.0539157692201766, 'tol_3se': 0.18305696152114456, 'pass': True}
+parent C7 gate: {'D_f': {'abs_diff': 0.0539157692201766, 'engine_boot_se': 0.022226754657092666, 'engine_reported': 1.869737723898956, 'pass': True, 'tol_3se': 0.18305696152114456, 'uf_boot_se': 0.06101898717371485, 'uf_subsample': 1.9236534931191327}, 'pass': True, 'per_L': {'128': {'Mmax_identical': True, 'chi_identical': True, 'eng_mean_Mmax': 4210.25, 'max_diff_Mmax': 0.0, 'max_diff_chi': 0.0, 'n': 40, 'uf_mean_Mmax': 4210.25}, '256': {'Mmax_identical': True, 'chi_identical': True, 'eng_mean_Mmax': 14495.9, 'max_diff_Mmax': 0.0, 'max_diff_chi': 0.0, 'n': 40, 'uf_mean_Mmax': 14495.9}, '512': {'Mmax_identical': True, 'chi_identical': True, 'eng_mean_Mmax': 60569.15, 'max_diff_Mmax': 0.0, 'max_diff_chi': 0.0, 'n': 40, 'uf_mean_Mmax': 60569.15}}, 'report_path': 'C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\REPLICATION\\C7_exp0009_report.json'}
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py:3
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py:4
+
+==============================================================================
+EXP-0009 R3 algebraic coupling
+==============================================================================
+D_f=1.869737723898956; beta/nu=0.1295052403370289; 2-D_f=0.1302622761010439; |D_f-(2-beta)|=0.0007570357640149794
+stored R3: {'pass': True, 'tol': 0.015, 'value': 0.0007570357640149794}
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py:72
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py:279
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py:331
+03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0009.json:45

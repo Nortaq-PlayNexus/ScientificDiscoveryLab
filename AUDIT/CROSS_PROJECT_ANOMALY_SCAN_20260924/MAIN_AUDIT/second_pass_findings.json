@@ -1,0 +1,238 @@
+{
+  "audit": "second-pass cross-project anomaly scan",
+  "date": "2026-09-24",
+  "historical_files_modified": false,
+  "findings": [
+    {
+      "id": "N-01",
+      "severity": "critical",
+      "confidence": "confirmed",
+      "title": "3D spanning_flags uses 2D boundary indices",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py:226-251", "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py:77-93"],
+      "evidence": "At p=0.3116079 and 1000 same-stream trials, current slice counts versus correct opposite-plane counts were L8 33/327, L16 14/287, L24 9/288.",
+      "impact": "3D width/p_c and C7 validation are invalid; keep 3D claim inconclusive."
+    },
+    {
+      "id": "N-02",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "3D runner silently changes configured sample sizes and tau storage",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:51-60", "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:140-183", "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0013.json"],
+      "evidence": "Width samples are n_each//10; exponent slopes use min_n; main config tau_L=24 is absent from L={128,256,512}; nested sizes make ss[1:] empty.",
+      "impact": "Pilot/main 3D statistics are not reported at configured precision; tau is structurally empty."
+    },
+    {
+      "id": "N-03",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Nominal 3D result is a semantic pilot copy",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_results.json", "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_results.json", "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/LOG/run.log"],
+      "evidence": "The two result JSON objects are equal after removing elapsed; main log starts L=128 and stops in L=256 width; no EXP-0013 result exists.",
+      "impact": "No completed 3D main measurement is present."
+    },
+    {
+      "id": "N-04",
+      "severity": "high",
+      "confidence": "confirmed provenance defect",
+      "title": "EXP-0006 current runner cannot regenerate stored p50 and hardcodes C2 pass",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py:51-64", "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py:290-295", "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json"],
+      "evidence": "Literal denominator w1-p0 gives 0.79657/0.60913/0.47934 versus stored 0.49985/0.49859/0.59247 on selected cells; C2 subtracts a value from itself and sets pass=True; run_cell raises for non-bond_span while main iterates all configured systems.",
+      "impact": "Stored estimate requires provenance recovery; current named runner and control claim are not reliable."
+    },
+    {
+      "id": "N-05",
+      "severity": "medium-high",
+      "confidence": "confirmed",
+      "title": "EXP-0007 silently drops nonconverged bootstrap draws",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0007_summary.py:103-126", "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json", "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md:64-70"],
+      "evidence": "Preregistered/report n_draws=500; stored accepted n_draws=495. FSS se_a=0.031707 versus tolerance 0.01.",
+      "impact": "Point estimate is compatible with 0.5 but not a precision validation at the stated tolerance."
+    },
+    {
+      "id": "N-06",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Q-M008 uses upper-prime normalization and broken BH/p-value formulas",
+      "paths": ["03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:43-49", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:51-64", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:100-113"],
+      "evidence": "Code uses log(p[i+1]) while report says log(p[i]); 1-CDF yields exact zero; naive BH counterexample [0.009,0.008] differs from step-up.",
+      "impact": "Q-M008 persistence result is descriptive only until rerun with corrected method."
+    },
+    {
+      "id": "N-07",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Q-M008 1e10 segmented sieve drops first-segment primes",
+      "paths": ["03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py:55-64"],
+      "evidence": "Small one-segment test returns 157 primes instead of 168; first multiple starts at zero and marks p itself.",
+      "impact": "The planned 10^10 result would omit all primes in the first segment."
+    },
+    {
+      "id": "N-08",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Q-M007 40-cell p-values use wrong transform",
+      "paths": ["03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py:38-49", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md:24-33"],
+      "evidence": "Code uses exponent 1/6 and 0.5*erfc; cell (1,1) stored p=2.05e-7 versus exact chi-square survival about 7.27e-184. Exact BH happens to retain 38/40.",
+      "impact": "Shape means may be descriptive, but stored p-values and fine-grained FDR interpretation are invalid."
+    },
+    {
+      "id": "N-09",
+      "severity": "medium-high",
+      "confidence": "confirmed",
+      "title": "Optics bootstrap p-values are uncalibrated and epsilon-floored",
+      "paths": ["03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:49-60", "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py:184-220", "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json", "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json"],
+      "evidence": "EXP-0002 has one exact machine-epsilon p; EXP-0003 has eight. A 2000-dataset null calibration of the same formula gives about 0.021 rejection at nominal 0.01.",
+      "impact": "Core C(M)/n-density CIs remain usable, but p-values/FDR are not calibrated evidence."
+    },
+    {
+      "id": "N-10",
+      "severity": "medium-high",
+      "confidence": "confirmed",
+      "title": "Speckle controls are omitted, mislabeled, or disconnected",
+      "paths": ["03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONTROLS.md", "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:113-207", "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPORT/TECHNICAL_SUMMARY.md:49-53"],
+      "evidence": "Prereg freezes C1-C5/C7 but not C6/C8; code computes interior contrast rather than ensemble-vs-space; independent replication and FDR are not in decision; KS uses correlated pixels.",
+      "impact": "Core speckle result survives, but all-controls-pass language is overstated."
+    },
+    {
+      "id": "N-11",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "freeze_config overwrites supposedly immutable preregistrations",
+      "paths": ["04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py:27-46", "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:113-128", "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py:248-280", "03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py:138-173"],
+      "evidence": "Two isolated calls to the same path changed the hash and replaced parameters {x:1} with {x:2}.",
+      "impact": "Preregistration-before-results cannot be enforced by the current helper."
+    },
+    {
+      "id": "N-12",
+      "severity": "medium-high",
+      "confidence": "confirmed",
+      "title": "S9 reports contain monotonicity, fit-storage, and unit errors",
+      "paths": ["save_q9results.py:8-53", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:66-141", "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md:23-47", "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md:23-30"],
+      "evidence": "Q-S9-1 rate decreases from 0.0617 at complexity .05 to .0567 at .10; JSON stores assumed rather than fitted parameters; .483 is used as an absolute increment but reported as relative percent; cited q_s9_1_complexity.py is absent.",
+      "impact": "S9 remains invalid, with additional report-level contradictions."
+    },
+    {
+      "id": "N-13",
+      "severity": "medium",
+      "confidence": "confirmed",
+      "title": "Application descriptors/evidence labels and depiction API are wrong",
+      "paths": ["src/molecular/engine.py:76-83", "src/reaction/mixer.py:29-56", "tests/unit/test_plant_engine.py:49"],
+      "evidence": "Ethanol formal_charge field is 0.3966637 while RDKit formal charge is 0; valid dissimilar reaction inputs become E3 POTENTIAL_INTERACTION; get_2d_structure raises Boost.Python.ArgumentError; one test assertion ends in `or True`.",
+      "impact": "Application outputs are not reliable scientific measurements even though the main pytest suite passes."
+    },
+    {
+      "id": "N-14",
+      "severity": "low-medium",
+      "confidence": "confirmed metadata ambiguity",
+      "title": "result_hash is not a consistent artifact-byte integrity check",
+      "paths": ["04_SHARED_ENGINE/engine/utilities/core.py:67-101", "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json", "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json"],
+      "evidence": "Recorded hashes match neither exact result-file bytes nor canonical hashes of the loaded config result objects for EXP-0002/0003.",
+      "impact": "Metadata cannot independently prove which result object was hashed."
+    },
+    {
+      "id": "N-15",
+      "severity": "medium",
+      "confidence": "confirmed",
+      "title": "EXP-0015 is a colliding phantom investigation",
+      "paths": ["03_INVESTIGATIONS/ACOUSTICS/water_sound_response/README.md", "03_INVESTIGATIONS/ACOUSTICS/water_sound_response/CHANGELOG.md", "03_INVESTIGATIONS/FLUID_DYNAMICS/water_sound_response/README.md", "EXPERIMENT_REGISTRY.md"],
+      "evidence": "Both water-response projects claim EXP-0015; the acoustics directory lacks the advertised CODE/RESULTS/CONFIG/REPLICATION artifacts, the fluid directory has only README/QUESTION, and the root registry has no EXP-0015 entry.",
+      "impact": "Automated retrieval cannot identify a real EXP-0015 implementation or result."
+    },
+    {
+      "id": "N-16",
+      "severity": "low-medium",
+      "confidence": "confirmed",
+      "title": "EXP-0003 sub-agent artifact hash manifest is malformed JSON",
+      "paths": ["AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/artifact_hashes.json"],
+      "evidence": "The file ends with the literal characters backslash-n after the closing brace; json.loads reports Extra data at line 195.",
+      "impact": "The audit artifact-integrity manifest cannot be machine-validated as written."
+    },
+    {
+      "id": "N-17",
+      "severity": "medium",
+      "confidence": "confirmed",
+      "title": "Passing pytest mutates the persistent SQLite database",
+      "paths": ["sovereign_biolab.db", "tests/unit/", "pytest.ini"],
+      "evidence": "A clean python -m pytest run changed the database hash from e7dfc79cdb696b39ae3578e4427b0a026b107655a1a359c5562edc2d46b087b9 to 1d925f3b0b2b19ce42a10e92b9ca02e22e1a9250df40eb34475bd6713a4b2cf1; all table counts were zero. The baseline copy was restored.",
+      "impact": "A green test run is not read-only and can invalidate artifact hashes or contaminate persistent state."
+    },
+    {
+      "id": "N-18",
+      "severity": "low-medium",
+      "confidence": "confirmed",
+      "title": "Historical EXP-0003 complex field has a factor-of-two power normalization defect",
+      "paths": ["03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py:73-90", "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/REPORT/SUBAGENT_REPORT.md:220-227", "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/RESULTS/sanity_controls.json"],
+      "evidence": "The independent calibration measures legacy nested power at about 0.5004 of target.",
+      "impact": "Absolute field-power claims are invalid; density ratios are unchanged because global amplitude cancels."
+    },
+    {
+      "id": "N-19",
+      "severity": "medium",
+      "confidence": "confirmed",
+      "title": "EXP-0009 C7 uses identical frozen streams",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py:1-8", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_results.json"],
+      "evidence": "C7 uses the same G_LAB labels/seeds and first 40 realizations; Mmax/chi are bit-identical.",
+      "impact": "It validates the union-find implementation, not independent sampling or a fresh exponent replication."
+    },
+    {
+      "id": "N-20",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "EXP-0008 first prime-gap bin is mathematically impossible",
+      "paths": ["03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py:599-602", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/q_m007_results.json"],
+      "evidence": "For the stated odd-prime blocks delta >= 2/log(10^8)=0.10857362047581294, above the first edge 0.10536051565782628; all four first-bin counts are zero while Exp(1) assigns roughly 10 percent.",
+      "impact": "The empty-bin anomaly is structural and cannot support a novel prime-gap process or the Q-M007 38/40 interpretation."
+    },
+    {
+      "id": "N-21",
+      "severity": "medium",
+      "confidence": "confirmed",
+      "title": "EXP-0009 R3 is algebraically coupled to the D_f mass data",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py:57-76", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py:274-282", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0009_results.json"],
+      "evidence": "P_inf is M_max/L^2 from the same mass arrays used for D_f; beta/nu is the negative slope of that P_inf sequence, so R3 residual ~0.000757 is an algebraic identity check.",
+      "impact": "R3 must be labelled internal consistency, not independent physical scaling evidence."
+    },
+    {
+      "id": "N-22",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "EXP-0010 uses a pooled D_f gate instead of the preregistered per-size non-power-of-two gate",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py:113-147", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json"],
+      "evidence": "The runner computes one pooled D_f slope, stores only C1, and leaves the 1/nu branch as a no-op; the preregistration requires per-size D_f checks and C7.",
+      "impact": "EXP-0010 cannot close the historical lattice-artifact claim under its own protocol."
+    },
+    {
+      "id": "N-23",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Q-M007 audit writer is hardcoded and contradicts the later report",
+      "paths": ["save_audits.py:5-103", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/AUDIT_Q006_Q007.md:47-51", "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md:24-33"],
+      "evidence": "The writer has no JSON-loading dependency, emits a literal H1_SUPPORTED verdict, and says no 40-cell BH was applied while the later report says 38/40 survived.",
+      "impact": "Q-M007 verification language is not self-authenticating; retain only descriptive raw-bin observations."
+    },
+    {
+      "id": "N-24",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Q-P007 has colliding writers, hardcoded phase-1 p_c inputs, and a no-op 1/nu branch",
+      "paths": ["03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_q_p007.py:95-179", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:61-171", "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_results.json"],
+      "evidence": "Two writers target the same result path; one requests nonexistent engine keys; phase-2 p_c values/sigmas are literals and the 1/nu loop is empty.",
+      "impact": "The refined-p_c closure cannot be regenerated from one canonical pipeline."
+    },
+    {
+      "id": "N-25",
+      "severity": "high",
+      "confidence": "confirmed",
+      "title": "Registry, Git chronology, and central data stores are not authoritative",
+      "paths": ["05_DATA/", "06_RESULTS/", "07_REPORTS/", "08_REPLICATION/", "99_ARCHIVE/", "sovereign_biolab.db", "EXPERIMENT_REGISTRY.md", "AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_claims_data/git_provenance.log"],
+      "evidence": "All 21 SQLite tables and the advertised central stores are empty; the enclosing Git repository has zero commits and project files are untracked; registry/status records disagree.",
+      "impact": "Completion, identity, and chronology claims cannot be inferred from status text alone."
+    }
+  ],
+  "evidence_files": [
+    "MAIN_AUDIT/second_pass_evidence.json",
+    "MAIN_AUDIT/SECOND_PASS_REPORT.md",
+    "agent_numerical_statistics/reproduce.py",
+    "agent_static_provenance/verified_candidate_evidence.json"
+  ]
+}

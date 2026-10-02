@@ -1,0 +1,87 @@
+{
+  "alpha": 0.01,
+  "config_sha256": "f5473ff0971f6e8a11e660e8401a01b00c31db56c11637f43cefa424914e5502",
+  "experiment_id": "N-001-QP007-PRODUCTION",
+  "hypothesis_id": "HYP-N001-QP007-PROD",
+  "note": "Production scientific preregistration for audit finding N-001. Frozen before execution; this lock cannot certify a new physical law, only test reproduction of the 2D Fisher exponent and the effect of the historical refined p_c. Amend only through CONFIG/production_changes.jsonl.",
+  "parameters": {
+    "audit_finding_id": "N-001",
+    "claim_guards": [
+      "This is a known-law reproduction test. It cannot establish new physics.",
+      "An INCONCLUSIVE verdict is a result and must be reported as one.",
+      "A DEVIATION verdict is an anomaly requiring escalation, not a discovery.",
+      "p_c is inherited, not measured; a deviation cannot be attributed to the refined threshold without a separate threshold experiment.",
+      "Realization-block bootstrap addresses within-realization cluster dependence only; unmodelled cross-realization block dependence remains a stated limitation.",
+      "Histogram bins and cumulative survival estimates are correlated, so the weighted chi-square-like value is diagnostic, not a goodness-of-fit test."
+    ],
+    "decision_rule": {
+      "DEVIATION_FROM_FISHER": "the same 95% interval excludes 187/91",
+      "INCONCLUSIVE": "anything else, including any interval that straddles the boundary, a bootstrap success fraction below the configured 0.9 minimum, a raw-data round-trip or manifest-integrity failure, or an empty stored tail",
+      "REPRODUCED_FISHER": "the 95% realization-block bootstrap interval for the primary statistic contains 187/91",
+      "explicitly_not_a_decision_rule": "post-hoc window selection, tolerance-band fitting, dropping the largest cluster more than once, or iid-cluster bootstrap. Any of these would be a protocol change and must be logged in the hash-chained change log before use."
+    },
+    "execution_class": "expensive_production",
+    "investigation_id": "Q-P007",
+    "known_law_reproduction_only": true,
+    "known_limitations_carried_forward": [
+      "one largest-cluster entry removed per realization before pooling",
+      "component backend is scipy.ndimage.label with four-neighbour structure",
+      "no independent second implementation of the cluster census in this run"
+    ],
+    "novelty_claim": false,
+    "p_c_inputs": {
+      "canonical": 0.5927460507921,
+      "note": "Fixed historical inputs inherited from the repair config. p_c is NOT re-estimated here, so any p_c error propagates into tau as a finite-size effect and is not diagnosed by this experiment.",
+      "refined": 0.5927289999999997
+    },
+    "p_c_reestimation_in_scope": false,
+    "primary_statistic": {
+      "active_tau_L": 1024,
+      "arm": "canonical",
+      "estimator": "cumulative",
+      "fisher_reference": 2.0549450549450547,
+      "fisher_reference_expression": "187/91",
+      "quantity": "cluster mass exponent tau",
+      "uncertainty": "paired contiguous realization-block bootstrap, 2000 draws, block_size=1 (the resampling unit is the independent realization, never an individual cluster); 95% percentile interval",
+      "window": "primary_32_4096"
+    },
+    "production_profile_sha256": "e017eb7ef8d9454a899d36e8cc5f55146561b2aae6d2eb07005e8047c42c0f3e",
+    "profile_name": "production",
+    "resolution_statement": {
+      "content": "minimum resolvable difference in tau at 80% power, computed from the observed realization-block bootstrap SD of the primary statistic and of the paired delta",
+      "is_a_preregistered_power_claim": false,
+      "timing": "post_run_only"
+    },
+    "robustness_gate": {
+      "effect_on_verdict": "a WINDOW_SENSITIVE flag downgrades the primary verdict to WINDOW_SENSITIVE and blocks any tau conclusion",
+      "rule": "WINDOW_SENSITIVE if any of the four declared windows yields DEVIATION_FROM_FISHER while the primary window does not"
+    },
+    "scientific_question": "Does a correctly stored, dependence-aware finite-size cluster tail reproduce the 2D Fisher exponent 187/91 at the exact site threshold, and does the historical refined p_c change that estimate?",
+    "secondary_analyses": {
+      "histogram_estimator": "reported alongside cumulative as a correlated-bin diagnostic; it cannot overturn the cumulative primary verdict on its own",
+      "paired_delta": "tau_refined - tau_canonical with a paired 95% interval. REFINED_PC_RESOLVES_DISCREPANCY only if that interval excludes 0; otherwise NO_RESOLVABLE_REFINED_EFFECT",
+      "refined_arm": "apply the identical interval rule to the refined-p_c arm; report as a separate verdict, never merged with the primary",
+      "sensitivity_windows": "sensitivity_16_512, sensitivity_32_2048, sensitivity_64_4096 and primary_32_4096 are all reported"
+    },
+    "source_repair_config_sha256": "fbdb828af145d8259120942eee1166f19408b50a04115201b18d7a21f26f501d"
+  },
+  "preregistered_analyses": [
+    "primary: cumulative tau, canonical arm, window primary_32_4096, L=1024",
+    "secondary: refined arm under the identical interval rule",
+    "secondary: paired refined-minus-canonical delta interval",
+    "secondary: histogram estimator as correlated-bin diagnostic",
+    "post-run resolution statement from observed bootstrap variance"
+  ],
+  "preregistered_controls": [
+    "paired canonical/refined masks from one common uniform field per realization",
+    "one largest-cluster entry removed per realization, both arms",
+    "realization-block bootstrap with no iid-cluster fallback",
+    "manifest-bound SQLite raw artifact with tail hashes and mask hashes",
+    "raw-data round-trip validation before any fit is reported",
+    "four preregistered fit windows as a window-sensitivity gate"
+  ],
+  "question_id": "Q-P007",
+  "schema": "scientific-discovery-lab/prereg/v1",
+  "seed": 20260926,
+  "timestamp_utc": "2026-09-26T10:06:08+00:00"
+}

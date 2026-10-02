@@ -1,0 +1,247 @@
+{
+  "date": "2026-09-28",
+  "deposit": "ScientificDiscoveryLab instrument validation and self-audit",
+  "discovery_claim": "none; see README.md",
+  "file_count": 47,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "0678a675e4d8b5257bc215ceb6cf567b31ca365de814601409dbcd2dd65ec192",
+      "size_bytes": 1078
+    },
+    {
+      "path": "README.md",
+      "sha256": "4308484ed71ad3cd550f9abf20fc25721f0605c378dd94cbffdcde78b5d5f934",
+      "size_bytes": 7070
+    },
+    {
+      "path": "code/finding1_erfc_caller_audit.py",
+      "sha256": "c48c23adfe1748b015196e7ba5851549d8c1af438f94080d9582b95cb2cc9a3f",
+      "size_bytes": 11783
+    },
+    {
+      "path": "code/finding1_run_t03_formula_audit.py",
+      "sha256": "a80ce0cdb44bd973542a29ca8c1da1f781cf94f1032d6e8b45f32f4915d504ca",
+      "size_bytes": 14486
+    },
+    {
+      "path": "code/finding1_run_t03_recalibration.py",
+      "sha256": "2e6c50a51a2d71a4c86cb9ab20ec50e0bfdbe6668dc04e2bb1fc36f8046dc0c4",
+      "size_bytes": 10418
+    },
+    {
+      "path": "code/finding1_runs_sp800_22.py",
+      "sha256": "f8b30f35d3fe0cca840f6394a08f8d38a68bbc5eca78dabb92138a8fb967bda2",
+      "size_bytes": 3774
+    },
+    {
+      "path": "code/finding2_run_crossover_diagnostic.py",
+      "sha256": "5c0c7538736e79991fec9fa95dd99cecf3882a0ad989606acff57ed614e4e953",
+      "size_bytes": 26704
+    },
+    {
+      "path": "code/finding2_validate_tau_estimators.py",
+      "sha256": "2f9ca79159d908e6a10b27032a5913e24021d6a0e44060447dddc7150ca67d36",
+      "size_bytes": 16471
+    },
+    {
+      "path": "data/chains/n001_crossover_changes.jsonl",
+      "sha256": "87ac69ee1e4f13fa93ebc8f2f5879ec1e046bdd240654ca4aad12b90fc795387",
+      "size_bytes": 5218
+    },
+    {
+      "path": "data/chains/n004_production_changes.jsonl",
+      "sha256": "364436dde499acf11375be71a1cd856a36f434a6f7535c3b712a192e5c0b0ab3",
+      "size_bytes": 13082
+    },
+    {
+      "path": "data/production/audit/READ_ONLY_VALIDATION_20260924_POST_N14/run_manifest.json",
+      "sha256": "a27489bed246e75a63ab78d8b3db3892292dd9fd7b8ee653a61c1bbd7a58bd5b",
+      "size_bytes": 1006
+    },
+    {
+      "path": "data/production/audit/historical_evidence_baseline_post_n14.json",
+      "sha256": "8c154ab03a4fcb8cac48e3848ed419fda43dd561809792779beff66c44e029ba",
+      "size_bytes": 11601
+    },
+    {
+      "path": "data/production/battery/rng_battery.py",
+      "sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e",
+      "size_bytes": 14604
+    },
+    {
+      "path": "data/production/battery/run_n001.py",
+      "sha256": "84761d2d53f930cddd56e462cbad03ac5b1fda8284964c87f19ecf1c0755b170",
+      "size_bytes": 65232
+    },
+    {
+      "path": "data/production/n001_production_20260926/N001_production_manifest.json",
+      "sha256": "25882fd6c15c073328aabde3d961f4f4db250ad4a8bf07f8b67fae9b29c4bd07",
+      "size_bytes": 381460
+    },
+    {
+      "path": "data/production/n001_production_20260926/N001_production_raw.sqlite3",
+      "sha256": "9f421d06732d1d0582974b47ca81b70a760e0cf13f52988ff37995b7904f74ce",
+      "size_bytes": 60383232
+    },
+    {
+      "path": "data/production/n001_production_20260926/N001_production_summary.json",
+      "sha256": "5a88226e1dc3ac1bf4c5ec710228ae9cd2ac6b10747b3cfb03b0f46e0376f289",
+      "size_bytes": 19062
+    },
+    {
+      "path": "data/production/n004_production_20260926_V3/N004_raw.sqlite3",
+      "sha256": "a744dd3b87cfb576b346fff6e431fecfb27984cd1dffbddbab6aca5e29a18965",
+      "size_bytes": 2023424
+    },
+    {
+      "path": "data/production/n004_production_20260926_V3/N004_summary.json",
+      "sha256": "7a56df12a7f7b67becb5d604b7d820a665752cdf974738ad370426f7aabb4f48",
+      "size_bytes": 107256
+    },
+    {
+      "path": "data/production/registry/EXPERIMENT_REGISTRY.historical_prefix.md",
+      "sha256": "888f11e1b9ac44f44e934fdb8ae641df197bb10d848cc9f85eab76b1aa2e809a",
+      "size_bytes": 17841
+    },
+    {
+      "path": "data/production/registry/EXPERIMENT_REGISTRY.md",
+      "sha256": "9e2c20b0171a5d373c847c78c8a655d52d5618c1040373aa4bcf8c68cf0a34ac",
+      "size_bytes": 44417
+    },
+    {
+      "path": "data/results/T03_formula_audit.json",
+      "sha256": "0b5ddd349cc6d31a1126f1d1b83d448ce71dc52e8cbb81b36818beb7ed857e9d",
+      "size_bytes": 9342
+    },
+    {
+      "path": "data/results/T03_formula_audit.md",
+      "sha256": "dbddf4cb2a50fa8b7fc0910a6e33160c791cc582bd1fc51adb45c9820a79f7a7",
+      "size_bytes": 1572
+    },
+    {
+      "path": "data/results/T03_recalibration.json",
+      "sha256": "bc19603ea1082f6ce63b0d044a7612cd11fa22ec88418106ea980cb802664e18",
+      "size_bytes": 5869
+    },
+    {
+      "path": "data/results/T03_recalibration.md",
+      "sha256": "470e15c7f736a11890b77fbad953f603af34e60f83270883997f73a7fb2cac19",
+      "size_bytes": 1664
+    },
+    {
+      "path": "data/results/append_only_pin_validation.json",
+      "sha256": "ceeca6c7a37db051b1cbf2a177d994d786252c735e06359b921e9f5826e9bc90",
+      "size_bytes": 44959
+    },
+    {
+      "path": "data/results/append_only_pin_validation.md",
+      "sha256": "da85051a1828d86f3552a8ee2a7f282b211675c6dc146bc1c09e8af67e5ea5ce",
+      "size_bytes": 7983
+    },
+    {
+      "path": "data/results/n001_crossover.json",
+      "sha256": "1ac3fc9c14d54baa1445f30263e63c8a46229b1e00ca11310b58e8c51ab57254",
+      "size_bytes": 10098
+    },
+    {
+      "path": "data/results/n001_crossover.md",
+      "sha256": "e12fce7cefef24920a2545862b977b6d544f7a8c7ddbcb7b83bc9ffe8882f1e2",
+      "size_bytes": 3694
+    },
+    {
+      "path": "data/results/tau_estimator_validation.json",
+      "sha256": "cbad070e384cbafdcd01bbccfa0113db187bc9bbaaa3ec16ddb0b718a920e2ed",
+      "size_bytes": 44506
+    },
+    {
+      "path": "data/results/tau_estimator_validation.md",
+      "sha256": "8f9658422b3a5cb19978207c35ab3b221fac72876309b58a8911368c5f0519dc",
+      "size_bytes": 4236
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "sha256": "bff1614ebc88c83618167e72d5b6c4339cbb694104ddc40da7eadcd5e1cc637c",
+      "size_bytes": 31765
+    },
+    {
+      "path": "docs/CURRENT_STATUS.md",
+      "sha256": "4b480d5b7672ef926adc89f1b265c1fbca7610fb367a65f3dc81b0b598dcefdf",
+      "size_bytes": 29157
+    },
+    {
+      "path": "docs/DISCOVERY_LOG.md",
+      "sha256": "565b87cf06820d70c9049d91e354830e1a7e19858946c4037d17620200f8a1af",
+      "size_bytes": 19497
+    },
+    {
+      "path": "docs/DO_NOT_CLAIM.md",
+      "sha256": "fc6e8278a3d85c63c1ec1dd6189c96aa89f9da18ea7559eb93da548452baf050",
+      "size_bytes": 10780
+    },
+    {
+      "path": "docs/finding1_t03_runs_estimator_audit.md",
+      "sha256": "7fe5901cf628cc99f7230099073f6c12b5850151f465e2a88fc48867a8dc2d9d",
+      "size_bytes": 7508
+    },
+    {
+      "path": "docs/finding2_n001_crossover_and_estimator.md",
+      "sha256": "9fa8084891f26316d6a52d81a17b28444126c1a88d8f09984b94a2b7ca9e73ec",
+      "size_bytes": 8987
+    },
+    {
+      "path": "docs/prereg_N001_CROSSOVER.json",
+      "sha256": "de231ef64d0dbf7735f0f0840a76f1bb23db309ca9f7b7f454a4ab8b6f4b06f2",
+      "size_bytes": 7149
+    },
+    {
+      "path": "docs/prereg_N001_ESTIMATOR_VALIDATION.json",
+      "sha256": "f37cc2d47667be893aaef3062bac23f1987503ce7e3f5e434a800c087cb26be5",
+      "size_bytes": 5277
+    },
+    {
+      "path": "docs/prereg_T03_FORMULA_AUDIT.json",
+      "sha256": "8ffc034dffdf4836a15ea3c160b3fddfe01698af6ea0c8cf5844afb9dd9dbae0",
+      "size_bytes": 4601
+    },
+    {
+      "path": "docs/prereg_T03_RECALIBRATION.json",
+      "sha256": "3d03a118ff948b99ce512a7c905a4815ed93a3e9ac78ffa03ee358250d8cd052",
+      "size_bytes": 4290
+    },
+    {
+      "path": "docs/registry_append_only_lock.json",
+      "sha256": "1fb404e7925cb339f9643dbf2512a8e7d6951b0a4a3efee2a4f3ebaf8aa7dac9",
+      "size_bytes": 1394
+    },
+    {
+      "path": "scripts/verify_historical_integrity.py",
+      "sha256": "7b964924d70802c9882208875bc315bd403ed70a5621b44849b933341d6b3244",
+      "size_bytes": 10186
+    },
+    {
+      "path": "tests_reference/test_crossover_diagnostic.py",
+      "sha256": "7c204b9f9cc6631796459d6bde1dfb31873625ce6c11d0609dd4eae53cb86a50",
+      "size_bytes": 10854
+    },
+    {
+      "path": "tests_reference/test_t03_formula.py",
+      "sha256": "1ca9981a6c2de35785b191245a666cd44e518a4e6897f2cca4fd01ffd2857aa8",
+      "size_bytes": 9189
+    },
+    {
+      "path": "tests_reference/test_t03_recalibration.py",
+      "sha256": "1e234c0d4e39ee037304ad23f6aba6dd5089f7d190b30777e56c54ac58e14247",
+      "size_bytes": 9700
+    },
+    {
+      "path": "tests_reference/test_tau_estimator_validation.py",
+      "sha256": "eab26c51d05eff81f442d54621989d83470b7d9b65edb9210887c9775228ae24",
+      "size_bytes": 8138
+    }
+  ],
+  "schema": "zenodo-package-manifest-v1",
+  "test_suite": "495 passed, 0 errors",
+  "total_bytes": 63491614,
+  "version": "1.0.0"
+}

@@ -1,0 +1,173 @@
+{
+  "active_tau_L": 16,
+  "active_tau_L_source": "profiles.smoke.tau_L",
+  "audit_finding_id": "N-001",
+  "cumulative_tau_definition": "tau = 1 - survival_slope for N_>(s) ~ s^(-(tau-1))",
+  "effective_realizations_at_tau_L": {
+    "canonical": 18,
+    "refined": 18
+  },
+  "fits": {
+    "smoke_primary": {
+      "cumulative": {
+        "bootstrap": {
+          "block_count": 18,
+          "block_size": 1,
+          "canonical_interval": [
+            1.7602704754263983,
+            1.9679057041682706
+          ],
+          "canonical_sd": 0.0564969711515976,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 64,
+          "draws_successful": 64,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            0.0,
+            0.0
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.0,
+          "refined_interval": [
+            1.7602704754263983,
+            1.9679057041682706
+          ],
+          "refined_sd": 0.0564969711515976,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.4420582595468356,
+          "effective_realizations": 18,
+          "estimator": "cumulative",
+          "intercept": 4.973021103373385,
+          "points": 32,
+          "requested_realizations": 18,
+          "requested_window": [
+            1,
+            32
+          ],
+          "slope": -0.9018299823953905,
+          "slope_standard_error": 0.09103365185188625,
+          "tail_clusters": 215,
+          "tau": 1.9018299823953906,
+          "used_window": [
+            1,
+            32
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": 0.0,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.4420582595468356,
+          "effective_realizations": 18,
+          "estimator": "cumulative",
+          "intercept": 4.973021103373385,
+          "points": 32,
+          "requested_realizations": 18,
+          "requested_window": [
+            1,
+            32
+          ],
+          "slope": -0.9018299823953905,
+          "slope_standard_error": 0.09103365185188625,
+          "tail_clusters": 216,
+          "tau": 1.9018299823953906,
+          "used_window": [
+            1,
+            32
+          ]
+        }
+      },
+      "histogram": {
+        "bootstrap": {
+          "block_count": 18,
+          "block_size": 1,
+          "canonical_interval": [
+            1.2132451033056981,
+            1.425296136623442
+          ],
+          "canonical_sd": 0.060413554337966024,
+          "clusters_resampled_individually": false,
+          "confidence_level": 0.95,
+          "draws_requested": 64,
+          "draws_successful": 64,
+          "paired_across_p_arms": true,
+          "paired_delta_interval": [
+            0.0,
+            0.013052728497527965
+          ],
+          "paired_delta_refined_minus_canonical_sd": 0.0037622577422316288,
+          "refined_interval": [
+            1.216985771180279,
+            1.4301863844661398
+          ],
+          "refined_sd": 0.060528471951083115,
+          "resampling_unit": "realization_block",
+          "success_fraction": 1.0
+        },
+        "canonical": {
+          "chi2_reduced_diagnostic": 0.1721947367739918,
+          "effective_realizations": 18,
+          "estimator": "histogram",
+          "intercept": 4.465216119017113,
+          "points": 25,
+          "requested_realizations": 18,
+          "requested_window": [
+            1,
+            32
+          ],
+          "slope": -1.4074522775145275,
+          "slope_standard_error": 0.12335846890112745,
+          "tail_clusters": 215,
+          "tau": 1.4074522775145275,
+          "used_window": [
+            1,
+            31
+          ]
+        },
+        "paired_point_delta_refined_minus_canonical": 0.0027332672329603014,
+        "refined": {
+          "chi2_reduced_diagnostic": 0.17311171616925056,
+          "effective_realizations": 18,
+          "estimator": "histogram",
+          "intercept": 4.471774653434128,
+          "points": 25,
+          "requested_realizations": 18,
+          "requested_window": [
+            1,
+            32
+          ],
+          "slope": -1.4101855447474878,
+          "slope_standard_error": 0.12322362608564158,
+          "tail_clusters": 216,
+          "tau": 1.4101855447474878,
+          "used_window": [
+            1,
+            31
+          ]
+        }
+      }
+    }
+  },
+  "interpretation": "Infrastructure smoke only; no scientific tau or p_c conclusion is authorized.",
+  "investigation_id": "Q-P007",
+  "largest_cluster_policy": "one largest entry removed independently within every realization before pooling",
+  "paired_realization_ids_sha256": "653b752fbdb29be9820b1ab18e767e86663747a5322e29078e7c74059548c900",
+  "power_analysis": {
+    "planning_target_only": {
+      "fisher_reference": 2.0549450549450543,
+      "fisher_reference_expression": "187/91",
+      "historical_discrepancy": 1.98,
+      "production_resolution_requirement": "Estimate paired refined-minus-canonical uncertainty from valid realization-block bootstrap replicates before any power claim"
+    },
+    "reason": "No empirical power estimate is made from deterministic infrastructure smoke data.",
+    "status": "NOT_APPLICABLE_TO_INFRASTRUCTURE_SMOKE"
+  },
+  "profile_name": "smoke",
+  "profile_source": "profiles.smoke",
+  "requested_realizations_at_tau_L": 18,
+  "run_id": "N001-QP007-CLUSTER-TAU-REPAIR",
+  "scientific_result": null,
+  "status": "INFRASTRUCTURE_SMOKE_ONLY_NOT_A_SCIENTIFIC_RESULT",
+  "summary_schema": "n001-qp007-summary-v3"
+}

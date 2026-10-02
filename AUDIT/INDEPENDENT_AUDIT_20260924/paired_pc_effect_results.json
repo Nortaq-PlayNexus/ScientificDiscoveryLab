@@ -1,0 +1,54 @@
+{
+  "canonical_p": 0.5927460507921,
+  "refined_p": 0.5927289999999997,
+  "delta_p": -1.705079210023719e-05,
+  "method": "Paired common-random-number site percolation; same uniform field thresholded at both p values.",
+  "tests": {
+    "EXP0009_like": {
+      "sizes": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "n": [
+        800,
+        400,
+        200,
+        60
+      ],
+      "p_canonical_Df_mean": 1.893925929552746,
+      "p_canonical_Df_se": 0.019699956634755617,
+      "p_refined_Df_mean": 1.893046015140139,
+      "p_refined_Df_se": 0.019762674337696556,
+      "paired_Df_change_refined_minus_canonical": -0.0008799144126072196,
+      "paired_Df_change_se": 0.0005183157438794169,
+      "paired_ci95": [
+        -0.0020361374586795266,
+        -2.6389581542868773e-05
+      ]
+    },
+    "QP007_like": {
+      "sizes": [
+        512,
+        1024,
+        2048
+      ],
+      "n": [
+        100,
+        50,
+        25
+      ],
+      "p_canonical_Df_mean": 1.963877907307406,
+      "p_canonical_Df_se": 0.05812454224494879,
+      "p_refined_Df_mean": 1.964648746242293,
+      "p_refined_Df_se": 0.058039468352980995,
+      "paired_Df_change_refined_minus_canonical": 0.0007708389348872965,
+      "paired_Df_change_se": 0.0013138677508870936,
+      "paired_ci95": [
+        -0.0009246380539317145,
+        0.0036986793391960743
+      ]
+    }
+  }
+}

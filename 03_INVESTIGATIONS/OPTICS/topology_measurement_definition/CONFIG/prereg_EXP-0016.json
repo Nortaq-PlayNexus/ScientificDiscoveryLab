@@ -1,0 +1,136 @@
+{
+  "alpha": 0.01,
+  "config_sha256": "c1935da7ac10d628386f313594a66e6a91c0466cb378da1ac1b02ca57895e54b",
+  "experiment_id": "EXP-0016",
+  "hypothesis_id": "HYP-OPT-TMD-001",
+  "note": "Frozen before EXP-0016 execution. This is a topology-measurement definition study, not a search for new optical phenomena.",
+  "parameters": {
+    "close_pair_separations_um": [
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      12.0,
+      16.0
+    ],
+    "core_sigma_um": [
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "detectors": [
+      "raw_winding",
+      "clustered_winding",
+      "circular_contour",
+      "jacobian_locator"
+    ],
+    "failure_tolerance": {
+      "charge_error": 0,
+      "count_relative": 0.05,
+      "localization_px": 2.0
+    },
+    "grids": [
+      32,
+      48,
+      64,
+      96,
+      128,
+      192,
+      256
+    ],
+    "nulls": [
+      "plane_wave",
+      "no_vortex_smooth_phase",
+      "matched_amplitude_random_phase"
+    ],
+    "observables": [
+      "location_count",
+      "component_count",
+      "winding_cell_count",
+      "absolute_charge",
+      "signed_charge",
+      "charge_normalized_count",
+      "false_positive",
+      "false_negative",
+      "localization_error"
+    ],
+    "phase_diagram_success": "failure_boundary_is_reproducible_across_shift_and_independent_implementation",
+    "physical_fov_um": 64.0,
+    "position_modes": [
+      "exact_pixel",
+      "half_pixel",
+      "quarter_pixel"
+    ],
+    "primary_endpoint": "detector_disagreement_and_truth_failure_rate",
+    "promotion_gates": {
+      "charge_normalized_agreement": true,
+      "exact_position_shift_robustness": true,
+      "independent_implementation": true,
+      "no_unit_or_boundary_artifact": true,
+      "scaling_collapse_preregistered": true
+    },
+    "propagation_z_um": [
+      0.0,
+      160.0,
+      240.0,
+      280.0,
+      320.0,
+      400.0,
+      640.0,
+      1280.0
+    ],
+    "scaling_families": [
+      "core_sigma_over_pixel_pitch",
+      "separation_over_pixel_pitch",
+      "charge_over_two",
+      "pixel_pitch_over_wavelength"
+    ],
+    "seed": 42,
+    "separated_pair_separations_um": [
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "shifts_px": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "single_charges": [
+      -2,
+      -1,
+      1,
+      2
+    ],
+    "wavelength_nm": 694.3
+  },
+  "preregistered_analyses": [
+    "location/component/winding-cell count comparison",
+    "absolute and signed charge comparison",
+    "truth-match false-positive/false-negative rates",
+    "localization error distributions",
+    "failure phase diagrams in normalized coordinates",
+    "bootstrap confidence intervals over independent fields where applicable",
+    "no novelty promotion without all frozen gates"
+  ],
+  "preregistered_controls": [
+    "C1 exact-on-pixel versus subpixel controls",
+    "C2 plane-wave and smooth no-vortex controls",
+    "C3 charge-neutrality and absolute-charge diagnostics",
+    "C4 fixed-field progressive-resolution sweep",
+    "C5 close-pair separation sweep",
+    "C6 exact-zero and finite-core controls",
+    "C7 detector-definition comparison",
+    "C8 propagation/annihilation tracker subset",
+    "C9 independent SciPy implementation",
+    "C10 null and scale controls",
+    "C11 fail-closed result validation"
+  ],
+  "question_id": "Q-O007",
+  "schema": "scientific-discovery-lab/prereg/v1",
+  "seed": 42,
+  "timestamp_utc": "2026-09-24T04:28:16+00:00"
+}

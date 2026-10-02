@@ -1,0 +1,70 @@
+{
+  "alpha": 0.01,
+  "experiment_id": "EXP-0004",
+  "hypothesis_id": "HYP-003",
+  "note": "Frozen before execution. Certification = calibration claim (H0), not discovery.",
+  "parameters": {
+    "generators": [
+      "G_LAB",
+      "G_PCG",
+      "G_MT"
+    ],
+    "lab_label": "Q-I004:cert",
+    "nbits": 262144,
+    "nbytes": 32768,
+    "nfloats": 32768,
+    "nwords": 8192,
+    "seeds": [
+      42,
+      7,
+      123,
+      2023,
+      314159,
+      271828
+    ],
+    "test_ids": [
+      "T01_monobit",
+      "T02_blockfreq",
+      "T03_runs",
+      "T04_longestrun",
+      "T05_matrixrank",
+      "T06_dft",
+      "T07_nontemplate",
+      "T08_serial_p1",
+      "T08_serial_p2",
+      "T09_apen",
+      "T10_cusum_fw",
+      "T10_cusum_bw",
+      "T11_bytes",
+      "T12_floats",
+      "T13_words",
+      "T14_gap",
+      "T15_ac1",
+      "T15_ac2",
+      "T15_ac3",
+      "T15_ac4",
+      "T15_ac5",
+      "T15_ac6",
+      "T15_ac7",
+      "T15_ac8"
+    ]
+  },
+  "preregistered_analyses": [
+    "one-sample KS of p-multiset vs Uniform(0,1)",
+    "exact central binomial band on small-p count",
+    "BH-FDR flag count vs same band"
+  ],
+  "preregistered_controls": [
+    "C1 determinism across processes",
+    "C2 label independence",
+    "C3 control-generator calibration (G_PCG, G_MT)",
+    "C4 KS uniformity",
+    "C5 expected rejection rate (binomial band)",
+    "C6 BH-FDR supervision",
+    "C7 independent implementation",
+    "C8 length stability (4x stream)"
+  ],
+  "question_id": "Q-I004",
+  "seed": 42,
+  "timestamp_utc": "2026-09-17T07:59:40+00:00"
+}

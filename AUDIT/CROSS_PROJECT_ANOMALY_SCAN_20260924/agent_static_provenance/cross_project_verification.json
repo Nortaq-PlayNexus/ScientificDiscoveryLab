@@ -1,0 +1,661 @@
+{
+  "generated_utc": "2026-09-23T19:02:04.386242+00:00",
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "checks": {
+    "3d_boundary": {
+      "L": 4,
+      "N": 64,
+      "engine_length_rows_cols": 16,
+      "selected_top": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_bottom": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "selected_left": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "selected_right": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "expected_z0": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "expected_zlast": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "selected_bottom_touches_expected_zlast": false,
+      "selected_bottom_max": 15,
+      "expected_zlast_min": 16,
+      "source": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py:232",
+      "c7_same_boundary_logic": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py:77"
+    },
+    "3d_nested_tau": {
+      "engine_output_shape": "list containing one size array",
+      "sizes_list_nested": "list",
+      "tail_lengths": [
+        0
+      ],
+      "all_tails_empty": true,
+      "source_append": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:156",
+      "source_tail": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:182",
+      "stored_tau": {
+        "mean": null,
+        "se": null,
+        "expected": 2.19,
+        "tol": 0.1,
+        "fit_range": [
+          4,
+          1000
+        ],
+        "tau_L": 24
+      }
+    },
+    "3d_sample_sizes": {
+      "EXP-0011": {
+        "configured_width_n_each": {
+          "L8": 300,
+          "L16": 200,
+          "L24": 100
+        },
+        "effective_width_n_each_from_source_expression": {
+          "L8": 30,
+          "L16": 20,
+          "L24": 10
+        },
+        "configured_exponent_n_real": {
+          "8": 500,
+          "16": 200,
+          "24": 50
+        },
+        "aligned_min_n_for_ragged_fit": 50
+      },
+      "EXP-0013": {
+        "configured_width_n_each": {
+          "L128": 10,
+          "L256": 5,
+          "L512": 10
+        },
+        "effective_width_n_each_from_source_expression": {
+          "L128": 4,
+          "L256": 4,
+          "L512": 4
+        },
+        "configured_exponent_n_real": {
+          "128": 1000,
+          "256": 500,
+          "512": 100
+        },
+        "aligned_min_n_for_ragged_fit": 100
+      },
+      "source": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:57",
+      "fit_truncation_source": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:166"
+    },
+    "exp0006": {
+      "result": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+      "rows": [
+        {
+          "system": "bond_span",
+          "L": 128,
+          "stored_p50": 0.5001572242067353,
+          "literal_denominator_p50": 0.5001711840228247,
+          "correct_denominator_p50": 0.5001697312588402
+        },
+        {
+          "system": "bond_span",
+          "L": 256,
+          "stored_p50": 0.5001669446692497,
+          "literal_denominator_p50": 0.5026260387811634,
+          "correct_denominator_p50": 0.5001618122977346
+        },
+        {
+          "system": "bond_span",
+          "L": 512,
+          "stored_p50": 0.5001527904511637,
+          "literal_denominator_p50": 0.5025966850828729,
+          "correct_denominator_p50": 0.5001498708010336
+        },
+        {
+          "system": "bond_span",
+          "L": 64,
+          "stored_p50": 0.4998542286084771,
+          "literal_denominator_p50": 0.7965714285714307,
+          "correct_denominator_p50": 0.4998211091234348
+        },
+        {
+          "system": "bond_wrap",
+          "L": 32,
+          "stored_p50": 0.4985936764612654,
+          "literal_denominator_p50": 0.6091304347826093,
+          "correct_denominator_p50": 0.49862068965517253
+        },
+        {
+          "system": "bond_wrap",
+          "L": 48,
+          "stored_p50": 0.4974828844043641,
+          "literal_denominator_p50": 0.575081967213115,
+          "correct_denominator_p50": 0.4974174174174175
+        },
+        {
+          "system": "bond_wrap",
+          "L": 64,
+          "stored_p50": 0.5003630768139604,
+          "literal_denominator_p50": 0.5003347280334729,
+          "correct_denominator_p50": 0.500329218106996
+        },
+        {
+          "system": "site_span",
+          "L": 128,
+          "stored_p50": 0.5930199396451842,
+          "literal_denominator_p50": 0.5931605366327757,
+          "correct_denominator_p50": 0.5930487413829596
+        },
+        {
+          "system": "site_span",
+          "L": 256,
+          "stored_p50": 0.5924726939598507,
+          "literal_denominator_p50": 0.47934039809303736,
+          "correct_denominator_p50": 0.5924525725391304
+        },
+        {
+          "system": "site_span",
+          "L": 64,
+          "stored_p50": 0.5921271333168397,
+          "literal_denominator_p50": 0.5234819867059588,
+          "correct_denominator_p50": 0.5921144718526316
+        }
+      ],
+      "source_formula": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py:64",
+      "source_denominator_wrong": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py:64",
+      "runner_mtime_utc": "2026-09-22T14:38:20.401670+00:00",
+      "result_mtime_utc": "2026-09-17T13:28:38.966068+00:00",
+      "root_wrapper": "CODE/run_percolation_exp0006.py:24-31",
+      "stored_c2": {
+        "pair_diff": 0.0010144666894992271,
+        "pass": true,
+        "span_a": 0.5002094826899287,
+        "wrap_a": 0.5012239493794279
+      },
+      "hardcoded_c2_source": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py:291",
+      "c7_p50_gate_source": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py:180",
+      "c7_report_has_p50_delta": false
+    },
+    "qm007": {
+      "stored_mean_bin1": -266.98526654862815,
+      "report_bin1_line": "| 1 | 0 | 576,022 | 0.000 | −283.5 | EMPTY (minimum gap constraint) |",
+      "stored_significant_cells": 38,
+      "source_approximation": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py:28",
+      "source_p_formula": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py:49",
+      "literal_bin1_pvalues": [
+        2.0502642278570707e-07,
+        3.070588778994852e-13,
+        4.201981592309249e-25,
+        1.6282328723087341e-49
+      ],
+      "exact_chi_square_upper_tail_bin1": [
+        7.273513898649931e-184,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stored_bin1_pvalues": [
+        2.0502642278570707e-07,
+        3.070588778994852e-13,
+        4.201981592309249e-25,
+        1.6282328723087341e-49
+      ],
+      "per_cell_obs_exp_present": false
+    },
+    "hardcoded_audit_writer": {
+      "json_load_calls": 0,
+      "open_calls": 2,
+      "hardcoded_qm007_verdict": true,
+      "hardcoded_no_40cell_fdr": true,
+      "audit_says_no_40cell_fdr": true,
+      "report_says_38_of_40": true,
+      "writer_writes_audit": true,
+      "writer_writes_phase1_literal": true
+    },
+    "qp007": {
+      "writers_target_same_result": true,
+      "bad_keys_in_first_runner": [
+        "[\"chis\"]",
+        "[\"pinfs\"]",
+        "[\"sizes\"]"
+      ],
+      "engine_returns_cluster_sizes": true,
+      "phase2_hardcoded_p_c_measures": true,
+      "phase2_hardcoded_p_c_sigmas": true,
+      "cache_has_sizes_array": false,
+      "cache_loader_expects_sizes": true,
+      "stored_tau": {
+        "mean": null,
+        "se": null,
+        "expected": 2.0549450549450547,
+        "tol": 0.05
+      },
+      "stored_tail_clusters": 0,
+      "first_writer": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_q_p007.py:101",
+      "second_writer_output": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py:167"
+    },
+    "q006": {
+      "pairs": [
+        {
+          "paths": [
+            "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+            "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz"
+          ],
+          "hashes": [
+            "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+            "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd"
+          ],
+          "identical": true
+        },
+        {
+          "paths": [
+            "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+            "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz"
+          ],
+          "hashes": [
+            "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+            "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572"
+          ],
+          "identical": true
+        },
+        {
+          "paths": [
+            "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+            "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz"
+          ],
+          "hashes": [
+            "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+            "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af"
+          ],
+          "identical": true
+        }
+      ],
+      "prereg_no_reuse_claim": true,
+      "copy_script": "fix_q006_cells.py:12",
+      "inv_nu_stub": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run_q_p006.py:83"
+    },
+    "freeze_and_hashes": {
+      "immutable_helper_source": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py:27",
+      "overwrite_source": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py:45",
+      "temp_first_hash": "afa0d8c0370cef47e2b5efc7a21c638cc464bcbc855c8ac3bd854908323ce9fc",
+      "temp_second_hash": "3ec4f1a479f14c57c5fd02e0532c10f451e29ba5f20f146747efc88403e8faf8",
+      "temp_changed": true,
+      "temp_first_parameters": {
+        "x": 1
+      },
+      "temp_second_parameters": {
+        "x": 2
+      },
+      "hash_rows": [
+        {
+          "config": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+          "result": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+          "recorded": "c2aa22efbed0ef35a941d62ac7a4c48f891170fa57df2ba332c2e46e2f314ed5",
+          "semantic_config_result": "9eb48706efa41193a0829d3d0db8add4bb6a9769d989591ffbacbbc5d119d013",
+          "file_bytes": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+          "recorded_matches_semantic": false,
+          "recorded_matches_file": false
+        },
+        {
+          "config": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json",
+          "result": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+          "recorded": "00a693b868ef2bb30e7729df954be820ef6cb730eb1cd716ce93b65e1a21485d",
+          "semantic_config_result": "b8f12ed3f8ffaf070f34cecbaa92befbaf3dbefa4fea674e7f6fc4b766b1eb78",
+          "file_bytes": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+          "recorded_matches_semantic": false,
+          "recorded_matches_file": false
+        },
+        {
+          "config": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/EXP-0004_experiment.json",
+          "result": "03_INVESTIGATIONS/OTHER/rng_certification/RESULTS/EXP-0004_results.json",
+          "recorded": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+          "semantic_config_result": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+          "file_bytes": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+          "recorded_matches_semantic": true,
+          "recorded_matches_file": false
+        },
+        {
+          "config": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.json",
+          "result": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+          "recorded": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+          "semantic_config_result": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+          "file_bytes": "33956d75aaac6476087b41c1a9a4b68b049b5bbc34c041d9583283cec46f3690",
+          "recorded_matches_semantic": true,
+          "recorded_matches_file": false
+        }
+      ],
+      "hash_helper": "04_SHARED_ENGINE/engine/utilities/core.py:94"
+    },
+    "feigenbaum": {
+      "prereg_valid": false,
+      "prereg_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "canonical_results_entries": 0,
+      "nested_result_exists": true,
+      "readme_says": "Status: **EXP-0014 preregistration frozen; awaiting execution.**",
+      "registry_date": "{\"experiment_id\": \"EXP-0014\", \"question\": \"Q-M005\", \"hypothesis\": \"HYP-M005\", \"action\": \"preregister\", \"date\": \"2026-09-21\", \"detail\": \"Preregistration frozen (prereg_EXP-0014.json). Protocol: compute delta_n, alpha_n for z=2,3,4 via superstable-cycle search with period verification.\"}",
+      "experiment_date": "2026-09-20T15:06:59.739293+00:00",
+      "z3_unique_a": 2,
+      "z3_delta8": "inf",
+      "z4_later_rollback": true,
+      "stored_c4": {
+        "description": "Method variation (brentq vs newton, z=2, n=5)",
+        "a_brentq": 1.400253081214783,
+        "a_newton": 1.310702641336833,
+        "difference": 0.08955043987795008,
+        "pass": "False"
+      },
+      "hardcoded_control_source": [
+        "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:104",
+        "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:116",
+        "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py:134"
+      ]
+    },
+    "qm008": {
+      "code_gap_formula": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:48",
+      "report_gap_formula": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md:17",
+      "example_upper_log": [
+        1.2426698691192237,
+        1.0277966847395015,
+        1.6681295656969852
+      ],
+      "example_lower_log": [
+        1.8204784532536746,
+        1.2426698691192237,
+        2.055593369479003
+      ],
+      "code_block_lines": [
+        "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:121",
+        "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:122"
+      ],
+      "stored_zero_p_values": 5,
+      "p_value_formula": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:62",
+      "bh_implementation": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:108",
+      "bh_counterexample": {
+        "p": [
+          0.004,
+          0.006,
+          0.02
+        ],
+        "rankwise": [
+          false,
+          true,
+          false
+        ],
+        "proper_step_up": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    "optics_pvalue_floor": {
+      "EXP-0002": {
+        "epsilon": 2.220446049250313e-16,
+        "floor_count": 1,
+        "paths": [
+          "$.cells.N64_M2.p_two_sided_null_r_eq_1"
+        ]
+      },
+      "EXP-0003": {
+        "epsilon": 2.220446049250313e-16,
+        "floor_count": 8,
+        "paths": [
+          "$.cells.gauss_sigma_0.1_N512.p_two_sided_ratio_eq_1",
+          "$.cells.gauss_sigma_0.25_N512.p_two_sided_ratio_eq_1",
+          "$.cells.gauss_sigma_0.5_N512.p_two_sided_ratio_eq_1",
+          "$.cells.gauss_sigma_0.75_N512.p_two_sided_ratio_eq_1",
+          "$.cells.ring_k0_0.3927_N1024.p_two_sided_ratio_eq_1",
+          "$.cells.ring_k0_1.5708_N1024.p_two_sided_ratio_eq_1",
+          "$.cells.ring_k0_1.5708_N256.p_two_sided_ratio_eq_1",
+          "$.cells.ring_k0_1.5708_N512.p_two_sided_ratio_eq_1"
+        ]
+      },
+      "source_speckle": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:59",
+      "source_vortex": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py:220"
+    },
+    "s9": {
+      "hardcoded_writer_targets": [
+        "q_s9_1_results",
+        "q_s9_3_results"
+      ],
+      "writer_has_input_read": false,
+      "writer_lines": [
+        "save_q9results.py:8",
+        "save_q9results.py:30"
+      ],
+      "dose_declares_simulated": true,
+      "dose_generator": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:38",
+      "dose_stores_true_parameters": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:131",
+      "report_claims_reproduction_script": true,
+      "reproduction_script_exists": false
+    },
+    "s9_unit_mismatch": {
+      "formula_saturation": 0.688,
+      "formula_relative_increase": 2.3560975609756096,
+      "report_intended_relative_saturation": 0.304015,
+      "source_relative_comment": "30.4/20.5 - 1 = 48.3%",
+      "source_formula": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:25",
+      "source_true_parameter_write": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py:133"
+    },
+    "qm008_future_sieve": {
+      "limit": 1000,
+      "segmented_runner_prime_count": 157,
+      "direct_sieve_prime_count": 168,
+      "missing_primes": 11,
+      "source_marking": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py:60",
+      "alternate_runner_pass_branch": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0013.py:58"
+    },
+    "qm007_first_bin": {
+      "first_edge": 0.10536051565782628,
+      "structural_lower_bound_for_odd_prime_gaps_to_1e8": 0.10857362047581294,
+      "edge_margin": 0.003213104817986659,
+      "EXP0008_first_bin_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Q-M007_bin1_observed": 0.0,
+      "Q-M007_bin1_expected": 576022.2,
+      "source_gap_definition": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py:601"
+    },
+    "exp0010_gate_drift": {
+      "prereg_all_non_power2_criterion": "if D_f within tol at ALL non-P2 L -> lattice artifact confirmed; if ANY outside tol -> finite-size correction likely",
+      "prereg_C7_required": true,
+      "result_D_f_measured": 1.896198293208009,
+      "result_D_f_pass": true,
+      "result_gate_keys": [
+        "C1"
+      ],
+      "result_per_L_keys": [
+        "127",
+        "191",
+        "253",
+        "449"
+      ],
+      "source_single_pooled_fit": true,
+      "source_decision_uses_pooled_Df_only": true,
+      "prereg": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json:1",
+      "source": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py:115"
+    },
+    "exp0009_same_stream_c7": {
+      "report_streams": "identical G_LAB rng labels/seeds; first 40 realizations of each exponent cell",
+      "subsample_n": 40,
+      "per_realization_identical": true,
+      "C7_pass": true,
+      "source_doc_quote": "IDENTICAL frozen streams (same G_LAB rng label + seed, first 40 realizations)",
+      "source_line": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py:3"
+    },
+    "registry_and_data": {
+      "registry_table_lines": [
+        "EXPERIMENT_REGISTRY.md:39",
+        "EXPERIMENT_REGISTRY.md:40"
+      ],
+      "registry_omits_0012_0013_0015": true,
+      "registry_0011_status_lines": [
+        "| EXP-0011 | 2026-09-19 | Q-P008 | INPROGRESS | FROZEN | 3D site percolation critical exponents (p_c, D_f, gamma/nu, beta/nu) at p_c≈0.3116. Prereg frozen. 3D cubic lattice machinery added to perc_engine.py (verified: L=4→64 nodes, 144 edges). Investigation directory created at 03_INVESTIGATIONS/PHYSICS/percolation_3d/. Q-P008 extends controlled measurement from 2D to 3D. |",
+        "### EXP-0011 — 3D site percolation critical exponents (Q-P008)",
+        "EXP-0011",
+        "CONFIG      : 03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0011.json"
+      ],
+      "current_status_0011": [
+        "| PHYSICS / 3D percolation | Q-P008 | PILOT COMPLETE | EXP-0011 pilot: Df=2.26±0.10, γ/ν=1.63±0.15, β/ν=0.74±0.10 (all FAIL at canon p_c, expected small L). p_c(L→∞)=0.2970 (±0.0146 from Ziff). C7-3D PASS (50/50 cells, L∈{8,16}). Main run EXP-0013 (L=128/256/512) awaits feasible runtime. |",
+        "3. **Q-P008** (3D percolation) PILOT COMPLETE (2026-09-20): EXP-0011 pilot ran in 8s, all 50 cells pass C7 gate, exponents confirmed FAIL at canon p_c (expected at small L). Main run EXP-0013 (L=128/256/512) awaits feasible runtime (~2 hours).",
+        "6. **Q-P008** main run (EXP-0013) — awaits feasible compute time."
+      ],
+      "qm008_plan_status": [
+        "## Status: PLANNED (2026-09-23)"
+      ],
+      "qm008_results_exist": true,
+      "feigenbaum_readme_status": [
+        "Status: **EXP-0014 preregistration frozen; awaiting execution.**"
+      ],
+      "data_directory_entry_counts": {
+        "raw": 0,
+        "processed": 0,
+        "generated": 0,
+        "external_sources": 0
+      },
+      "sqlite_table_count": 21,
+      "sqlite_all_row_counts_zero": true,
+      "sqlite_row_counts": {
+        "plants": 0,
+        "compounds": 0,
+        "reactions": 0,
+        "targets": 0,
+        "genes": 0,
+        "diseases": 0,
+        "experiments": 0,
+        "literature_sources": 0,
+        "datasets": 0,
+        "hypotheses": 0,
+        "evidence_records": 0,
+        "species": 0,
+        "plant_parts": 0,
+        "extracts": 0,
+        "molecules": 0,
+        "reaction_conditions": 0,
+        "proteins": 0,
+        "biological_effects": 0,
+        "simulations": 0,
+        "predictions": 0,
+        "results": 0
+      },
+      "known_id_collisions": {
+        "HYP-005": [
+          "prime gaps",
+          "percolation"
+        ],
+        "EXP-0009": [
+          "Q-P005",
+          "Q-P006",
+          "Q-P007"
+        ],
+        "EXP-0012": [
+          "Q-S9-4",
+          "Q-M008 run_exp0012.py"
+        ],
+        "EXP-0013": [
+          "Q-P008 3D",
+          "Q-M008 run_exp0013.py"
+        ],
+        "EXP-0015": [
+          "acoustics scaffold",
+          "fluid scaffold"
+        ]
+      }
+    },
+    "exp0007": {
+      "prereg_says_exp0006_never_executed": true,
+      "registry_says_exp0006_controlled": true,
+      "prereg_bootstrap_draws": 500,
+      "stored_effective_bootstrap_draws": 495,
+      "report_claims_500_draws": true,
+      "prereg_note": "Follow-up to EXP-0005 (diagnostic) and EXP-0006 (never executed). EXTENDS bond_wrap to L=96,128,192 to test whether the L48->L64 non-monotonicity (p50: 0.49859->0.49748->0.50036) is a finite-size artifact or persists. Combined with EXP-0005 bond_wrap at L=32,48,64 this gives 6 sizes for FSS (>=4 requirement met). Methodology identical to EXP-0005: torus horizontal wrap on Lx(2L) strip, toroidal rows, pure-Python union-find. Independent seeds for NEW sizes (L=96,128,192 use seeds 101,202,303; L=32,48,64 use EXP-0005 seed 42 to preserve the frozen measurement). p-grid and fitting frozen from EXP-0005. Pre-registered BEFORE any execution."
+    },
+    "application_layer": {
+      "ethanol_formal_charge_method_value": 0.3966637147812598,
+      "get_2d_structure_error": "ArgumentError: Python argument types in",
+      "formal_charge_source": "src/molecular/engine.py:81",
+      "dead_assertion": "tests/unit/test_plant_engine.py:49"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "purpose": "Read-only provenance snapshot for canonical EXP-0003 files; no canonical file was written by this audit.",
+  "recorded_utc": "2026-09-24",
+  "files": {
+    "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py": {
+      "bytes": 15817,
+      "sha256": "6a735de8d981cd5e8c564056f73b6290ce23ab4b3ac7e7398c9d2604d3229ff4"
+    },
+    "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json": {
+      "bytes": 17034,
+      "sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531"
+    },
+    "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json": {
+      "bytes": 18949,
+      "sha256": "8546d192def5d053cac0eda4d29a85793f541f427ffd4c56805785023944dcb4"
+    },
+    "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/prereg_EXP-0003.json": {
+      "bytes": 1289,
+      "sha256": "d97c17175533bb9a73ffef74b1a60b62ac7db2f247d9a8c3e56f452588399a28"
+    },
+    "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.py": {
+      "bytes": 6413,
+      "sha256": "9d328fd979b19e2d732984fb58da5818f8bbcc9990c78f971d8abd10e17cf239"
+    },
+    "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.json": {
+      "bytes": 1395,
+      "sha256": "a1782532e77e5eea03dbd7e83ecaf9027f5baeb78beef8950f7a373607a08c91"
+    }
+  }
+}

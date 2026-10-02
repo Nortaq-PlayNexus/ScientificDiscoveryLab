@@ -1,0 +1,74 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "s9_synthetic": {
+      "ok": true,
+      "evidence": {
+        "stored_fit_parameters": {
+          "ec50": 30.0,
+          "hill_coefficient": 2.0,
+          "max_inflation": 0.483,
+          "baseline": 0.205
+        },
+        "actual_fit_from_stored_points": [
+          32.608130388171794,
+          1.745401330731715,
+          0.5129775990569202,
+          0.20050953807203634
+        ],
+        "max_abs_generated_vs_stored": 0.0,
+        "source_simulation": [
+          "27: # ΓöÇΓöÇ Simulated dose-response data ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ",
+          "28: # Based on EXP-0008 ┬º9 results, extrapolated to 11 dose levels",
+          "29: # using a Hill-like curve with EC50 ~ 30%, max inflation ~50%, baseline ~20%",
+          "30: DOSE_LEVELS = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]",
+          "31: ",
+          "32: # Calibrated from EXP-0008 sober (20.5%) and dosed (30.4% for A)",
+          "33: # Inflation: 30.4/20.5 - 1 = 48.3% at 100% DMT",
+          "34: BASELINE_A = 0.205",
+          "35: MAX_INFLATION_A = 0.483  # 48.3% inflation at max dose",
+          "36: ",
+          "37: # Generate dose-response using Hill equation with noise",
+          "38: def generate_dose_response(ec50, hill_coeff, max_infl, baseline, n_levels=11):",
+          "39:     doses = np.linspace(0, 1, n_levels) * 100  # 0-100%",
+          "40:     rates = hill(doses, ec50, hill_coeff, max_infl, baseline)",
+          "41:     # Add noise (biological variability)",
+          "42:     rng = np.random.default_rng(42)",
+          "43:     noise = rng.normal(0, 0.02, n_levels)",
+          "44:     rates = np.clip(rates + noise, 0, 1)",
+          "45:     return doses, rates"
+        ],
+        "source_true_parameters": [
+          "52: # True parameters (from EXP-0008 calibration)",
+          "53: TRUE_EC50 = 30.0    # % DMT at half-max inflation",
+          "54: TRUE_HILL = 2.0     # Hill coefficient",
+          "55: MAX_INFL = 0.483    # max inflation factor",
+          "56: BASELINE = 0.205    # sober baseline for A",
+          "57: ",
+          "58: doses, observed = generate_dose_response(TRUE_EC50, TRUE_HILL, MAX_INFL, BASELINE)"
+        ],
+        "source_writer": [
+          "127: out = {",
+          "128:     \"experiment\": \"Q-S9-2 REBUS dose-response curve\",",
+          "129:     \"hill_equation\": \"rate = baseline + max_infl * dose^n / (EC50^n + dose^n)\",",
+          "130:     \"fit_parameters\": {",
+          "131:         \"ec50\": TRUE_EC50,",
+          "132:         \"hill_coefficient\": TRUE_HILL,",
+          "133:         \"max_inflation\": MAX_INFL,",
+          "134:         \"baseline\": BASELINE,",
+          "135:     },",
+          "136:     \"dose_levels\": DOSE_LEVELS,",
+          "137:     \"dose_response_A\": {str(d): float(o) for d, o in zip(doses, observed)},",
+          "138:     \"conditions\": conditions,",
+          "139: }",
+          "140: with open(os.path.join(OUT_DIR, \"dose_response_results.json\"), \"w\") as f:",
+          "141:     json.dump(out, f, indent=2, default=str)"
+        ],
+        "additive_saturation": 0.688,
+        "relative_increase_if_additive": 2.3560975609756096,
+        "relative_increase_intended": 0.483,
+        "report_claim": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md:29"
+      }
+    }
+  }
+}

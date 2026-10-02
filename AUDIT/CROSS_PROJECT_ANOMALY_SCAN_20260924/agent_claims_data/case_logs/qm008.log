@@ -1,0 +1,84 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "qm008": {
+      "ok": true,
+      "evidence": {
+        "code_gap": [
+          "43: def compute_gaps(primes):",
+          "44:     \"\"\"Compute normalized gaps.\"\"\"",
+          "45:     if len(primes) < 2:",
+          "46:         return np.array([], dtype=np.float64)",
+          "47:     deltas = (primes[1:] - primes[:-1]).astype(np.float64)",
+          "48:     log_p = np.log(primes[1:].astype(np.float64))",
+          "49:     return deltas / log_p",
+          "50: "
+        ],
+        "exp0008_gap": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py:601",
+        "block_code": [
+          "119:     if blocks is None:",
+          "120:         # Match EXP-0008 block structure, scaled",
+          "121:         blocks = [",
+          "122:             {\"label\": f\"B1\", \"lo\": limit // 100, \"hi\": limit // 10},",
+          "123:             {\"label\": f\"B2\", \"lo\": limit // 10, \"hi\": limit // 2},",
+          "124:             {\"label\": f\"B3\", \"lo\": limit // 2, \"hi\": limit // 1.25},",
+          "125:             {\"label\": f\"B4\", \"lo\": int(limit // 1.25), \"hi\": limit},",
+          "126:         ]"
+        ],
+        "bh_code": [
+          "100: def bh_fdr(p_values, alpha=0.01):",
+          "101:     \"\"\"Benjamini-Hochberg FDR correction.\"\"\"",
+          "102:     n = len(p_values)",
+          "103:     if n == 0:",
+          "104:         return []",
+          "105:     sorted_idx = np.argsort(p_values)",
+          "106:     sorted_p = np.array(p_values)[sorted_idx]",
+          "107:     critical = np.arange(1, n+1) / n * alpha",
+          "108:     significant = sorted_p <= critical",
+          "109:     # Map back to original indices",
+          "110:     results = [False] * n",
+          "111:     for i, idx in enumerate(sorted_idx):",
+          "112:         results[idx] = bool(significant[i])",
+          "113:     return results"
+        ],
+        "bh_counterexample": {
+          "p": [
+            0.003,
+            0.004,
+            0.02,
+            0.03,
+            0.04
+          ],
+          "sorted": [
+            0.003,
+            0.004,
+            0.02,
+            0.03,
+            0.04
+          ],
+          "naive_sorted_mask": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ],
+          "proper_input_mask": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "proper_k": 2
+        },
+        "p_value_lines": [
+          "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:62",
+          "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py:91"
+        ],
+        "plan_status": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/PLAN.md:3",
+        "report_status": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md:5"
+      }
+    }
+  }
+}

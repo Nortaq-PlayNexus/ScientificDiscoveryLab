@@ -1,0 +1,56 @@
+{
+  "experiment": "EXP-0015",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "calibration_single_vortex",
+      "pass": true,
+      "detail": "352 rows"
+    },
+    {
+      "check": "calibration_vortex_pair",
+      "pass": true,
+      "detail": "352 rows"
+    },
+    {
+      "check": "calibration_four_vortex_lattice",
+      "pass": true,
+      "detail": "352 rows"
+    },
+    {
+      "check": "primary_convergence",
+      "pass": true,
+      "detail": "1152 grid/shift rows"
+    },
+    {
+      "check": "primary_z_sweep",
+      "pass": true,
+      "detail": "216 rows"
+    },
+    {
+      "check": "square_reference_path",
+      "pass": true,
+      "detail": "308 rows"
+    },
+    {
+      "check": "rectangular_reference",
+      "pass": true,
+      "detail": "128 rows"
+    },
+    {
+      "check": "independent_contour",
+      "pass": true,
+      "detail": "32 rows"
+    },
+    {
+      "check": "close_pair_transition",
+      "pass": true,
+      "detail": "9 raw rows"
+    },
+    {
+      "check": "exact_zero_raw_pair",
+      "pass": true,
+      "detail": "16 rows"
+    }
+  ]
+}

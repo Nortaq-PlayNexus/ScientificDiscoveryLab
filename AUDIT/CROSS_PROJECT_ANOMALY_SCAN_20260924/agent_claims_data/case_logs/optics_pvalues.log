@@ -1,0 +1,39 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "optics_pvalues": {
+      "ok": true,
+      "evidence": {
+        "cell_count": 20,
+        "p_min": 2.220446049250313e-16,
+        "p_values_below_001": 2,
+        "p_values_equal_0.004": 1,
+        "possible_two_sided_resolution": 0.004,
+        "source": [
+          "49: def bootstrap_effects(block_values, m, n_boot, seed):",
+          "50:     \"\"\"Bootstrap block-mean r = C*sqrt(M); returns (r_dist, two-sided p vs r=1).\"\"\"",
+          "51:     gen = rng(\"bootstrap-speckle-r\", seed)",
+          "52:     n = len(block_values)",
+          "53:     block_values = np.asarray(block_values, dtype=float)",
+          "54:     dist = np.empty(n_boot)",
+          "55:     for i in range(n_boot):",
+          "56:         dist[i] = np.mean(block_values[gen.integers(0, n, size=n)]) * np.sqrt(m)",
+          "57:     n1 = 1.0",
+          "58:     p = 2.0 * min(float((dist >= n1).mean()), float((dist <= n1).mean()))",
+          "59:     p = min(1.0, p + np.finfo(float).eps)",
+          "60:     return dist, p"
+        ],
+        "report_claims": [
+          "  realisations (n_boot = 500, alpha = 0.01); two-sided bootstrap p-value for",
+          "  r = C┬╖sqrt(M) against the null r = 1; BenjaminiΓÇôHochberg FDR over the 20 cells.",
+          "- **N = 256**: r = 0.9968 ΓÇô 1.0003; all 99% bootstrap CIs contain 1.0 ΓåÆ",
+          "  (worst N=32: r Γëê 0.985ΓÇô0.994; N=64 M=2: r = 0.9840, the only FDR-flagged cell",
+          "C7 ensemble-vs-space (interior) Γ£ô; C8 FDR Γ£ô.",
+          "- Statistical p-values are bootstrap-based and resolution-dependent; the FDR",
+          "A bug in the engine's BH-FDR step-up indexing (flagged all cells) was found by the",
+          "experiment was re-run. The first run's FDR flags are superseded; the appended"
+        ]
+      }
+    }
+  }
+}

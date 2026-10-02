@@ -1,0 +1,19 @@
+[Q-P007] Phase 1: Width curves (preserved from run.log)
+  L=512: p_c=0.592883 +/- 0.004519
+  L=1024: p_c=0.592673 +/- 0.003031
+  L=2048: p_c=0.592834 +/- 0.001828
+  p_c(L->inf) = 0.59272900 (Ziff: 0.59274605)
+  |dev| from Ziff = 0.00001705
+[Q-P007] Phase 1 results saved.
+[Q-P007] Phase 2: Exponent measurement at refined p_c
+  Using p_c = 0.592729000000
+  L=512 n=100: running cells at p_c=0.592729000000
+  L=512 done (n_cells=100), cached
+  L=1024 n=50: running cells at p_c=0.592729000000
+  L=1024 done (n_cells=50), cached
+  L=2048 n=25: running cells at p_c=0.592729000000
+  L=2048 done (n_cells=25), cached
+[Q-P007] Df=1.88184+-0.07380 Gn=1.76526+-0.09948 Bn=0.11888+-0.07119
+[Q-P007] tau: tL=2048, total tail clusters=0
+[Q-P007] tau=N/A (0 tail clusters - diagnostic limitation)
+[Q-P007] DONE in 813s. Saved: Q-P007/CODE/RESULTS/EXP-0009-pc_results.json

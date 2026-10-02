@@ -1,0 +1,1 @@
+(Run completed successfully 2026-09-19. Previous crash from run_q_p007.py on earlier date: KeyError 'chis' - fixed in run_phase2.py by computing chis/pinfs from cluster_sizes.)

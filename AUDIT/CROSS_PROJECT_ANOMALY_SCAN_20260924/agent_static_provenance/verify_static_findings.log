@@ -1,0 +1,298 @@
+﻿{
+  "generated_utc": "2026-09-23T18:41:00.717778+00:00",
+  "exp0006_interpolation": {
+    "result": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+    "stored_p50": {
+      "128": {
+        "p50": 0.5001572242067353,
+        "p50_ml": 0.5000879914437092,
+        "se": 0.0005184925509957616,
+        "width": 0.010795624312298134
+      },
+      "256": {
+        "p50": 0.5001669446692497,
+        "p50_ml": 0.49997383791545436,
+        "se": 0.00015867301815247935,
+        "width": 0.0065292475880236326
+      },
+      "512": {
+        "p50": 0.5001527904511637,
+        "p50_ml": 0.49998897785695706,
+        "se": 0.00011238986949286284,
+        "width": 0.003909700197600666
+      },
+      "64": {
+        "p50": 0.4998542286084771,
+        "p50_ml": 0.49989666157225965,
+        "se": 0.0006688327376335037,
+        "width": 0.018171152657242368
+      }
+    },
+    "stored_fss": {
+      "L_used": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "a": 0.5002094826899287,
+      "b": -0.004615466277965983,
+      "chi2_red": 0.059366328615768536,
+      "se_a": 0.014012165991159729
+    },
+    "literal_wrong_expression": "p0 + (0.5-w0)*(p1-p0)/(w1-p0)",
+    "correct_expression": "p0 + (0.5-w0)*(p1-p0)/(w1-w0)",
+    "wrong_recomputed_means": {
+      "64": 0.6336842177805695,
+      "128": 0.6130544804924732,
+      "256": 0.5027326904278643,
+      "512": 0.5026296820242988
+    },
+    "correct_recomputed_means": {
+      "64": 0.4998434515684871,
+      "128": 0.5001671324017183,
+      "256": 0.5001723147039487,
+      "512": 0.5001500240602685
+    },
+    "wrong_fss": {
+      "a": 0.46298074545942425,
+      "b": 4.195272416195156,
+      "L": [
+        64,
+        128,
+        256,
+        512
+      ]
+    },
+    "correct_fss": {
+      "a": 0.5003007491813027,
+      "b": -0.00912143246960034,
+      "L": [
+        64,
+        128,
+        256,
+        512
+      ]
+    },
+    "max_abs_p50_mean_difference": 0.1338407662120824,
+    "stored_vs_correct_intercept_abs": 9.126649137403131e-05
+  },
+  "exp0006_hardcoded_c2": {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+    "line_290_294": [
+      "    # ---- C2 estimator/BC independence ----",
+      "    pair = abs(fss_out[\"bond_span\"][\"a\"] - fss_out[\"bond_span\"][\"a\"])  # same system; bond_wrap not re-run",
+      "    c2 = {\"span_a\": fss_out[\"bond_span\"][\"a\"], \"wrap_a\": \"N/A (not re-run)\",",
+      "          \"pair_diff\": 0.0, \"pass\": True,",
+      "          \"note\": \"bond_wrap at fine grid not re-run in EXP-0006; C2 evaluated in EXP-0005/0007\"}"
+    ],
+    "has_same_value_subtraction": true,
+    "has_literal_pass_true": true,
+    "stored_result_c2": {
+      "pair_diff": 0.0010144666894992271,
+      "pass": true,
+      "span_a": 0.5002094826899287,
+      "wrap_a": 0.5012239493794279
+    }
+  },
+  "exp0011_3d_boundary": {
+    "L": 4,
+    "N": 64,
+    "function_selected_top": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "function_selected_bottom": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "function_selected_left": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "function_selected_right": [
+      3,
+      7,
+      11,
+      15
+    ],
+    "expected_3d_z0": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "expected_3d_z_last": [
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "selected_top_is_subset_of_z0": true,
+    "selected_bottom_touches_z_last": false,
+    "selected_max_index": 15,
+    "expected_z_last_min_index": 48,
+    "note": "spanning_flags constructs flat_rows/flat_cols of length L^2, so for N=L^3 it never selects the z=L-1 plane."
+  },
+  "exp0011_nested_tau": {
+    "runner": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:156,182",
+    "sizes_list_type": "list",
+    "tail_lengths": [
+      0
+    ],
+    "all_tails_empty": true,
+    "report_claim": "03_INVESTIGATIONS/PHYSICS/percolation_3d/REPORT/PLAIN_EXP-0011.md"
+  },
+  "exp0011_width_sample_count": {
+    "prereg": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0011.json",
+    "runner": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+    "configured_n_each": {
+      "L8": 300,
+      "L16": 200,
+      "L24": 100
+    },
+    "actual_expression": "max(4, n_each // 10)",
+    "actual_n_each": {
+      "L8": 30,
+      "L16": 20,
+      "L24": 10
+    },
+    "source_contains_division": true,
+    "all_reduced": true
+  },
+  "result_hash_mismatches": [
+    {
+      "config": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+      "result": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+      "recorded_result_hash": "c2aa22efbed0ef35a941d62ac7a4c48f891170fa57df2ba332c2e46e2f314ed5",
+      "actual_file_sha256": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7",
+      "match": false
+    },
+    {
+      "config": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/EXP-0003_experiment.json",
+      "result": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+      "recorded_result_hash": "00a693b868ef2bb30e7729df954be820ef6cb730eb1cd716ce93b65e1a21485d",
+      "actual_file_sha256": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531",
+      "match": false
+    },
+    {
+      "config": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/EXP-0004_experiment.json",
+      "result": "03_INVESTIGATIONS/OTHER/rng_certification/RESULTS/EXP-0004_results.json",
+      "recorded_result_hash": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508",
+      "actual_file_sha256": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e",
+      "match": false
+    },
+    {
+      "config": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/EXP-0008_experiment.json",
+      "result": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+      "recorded_result_hash": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca",
+      "actual_file_sha256": "33956d75aaac6476087b41c1a9a4b68b049b5bbc34c041d9583283cec46f3690",
+      "match": false
+    }
+  ],
+  "freeze_config_overwrite_demo": {
+    "first_hash": "e65d67898316275eef34bcfb42fa9c87ced9286193f17d599d7ab959d4b7a1c7",
+    "second_hash": "2339dbd93e773b01341f333d6bc6e004db97f286084c5f852e079adcb1f23a96",
+    "changed": true,
+    "first_params": {
+      "x": 1
+    },
+    "second_params": {
+      "x": 2
+    },
+    "helper_source": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py:45-46"
+  },
+  "qm007_approximation": {
+    "stored_mean_std_residual_bin1": -266.98526654862815,
+    "recomputed_mean_std_residual_bin1": -266.9852665486281,
+    "report_line_39_claim": "| 1 | 0 | 576,022 | 0.000 | ΓêÆ283.5 | EMPTY (minimum gap constraint) |",
+    "source_approximation_comment": "compute_bhfr_40cell.py:27-40 says single-cell obs/exp unavailable and approximates from residuals",
+    "literal_bin1_pvalues": [
+      2.0502642278570707e-07,
+      3.070588778994852e-13,
+      4.201981592309249e-25,
+      1.6282328723087341e-49
+    ],
+    "two_sided_bin1_pvalues": [
+      4.1005284557141414e-07,
+      6.141177557989704e-13,
+      8.403963184618497e-25,
+      3.2564657446174683e-49
+    ],
+    "literal_overcount_note": "source uses 0.5*erfc while chi-square upper tail is erfc for positive transformed statistic",
+    "prereg": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/prereg_BHFR_40cell.json"
+  },
+  "duplicate_3d_payloads": {
+    "results_same_after_elapsed_removed": true,
+    "combined_same_after_elapsed_removed": true,
+    "result_elapsed_values": [
+      8.37174677848816,
+      5.600082159042358
+    ]
+  },
+  "qp005_qp006_duplicate_hashes": [
+    {
+      "paths": [
+        "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+        "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz"
+      ],
+      "hashes": [
+        "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd",
+        "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd"
+      ],
+      "identical": true
+    },
+    {
+      "paths": [
+        "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+        "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz"
+      ],
+      "hashes": [
+        "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572",
+        "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572"
+      ],
+      "identical": true
+    },
+    {
+      "paths": [
+        "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+        "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz"
+      ],
+      "hashes": [
+        "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af",
+        "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af"
+      ],
+      "identical": true
+    }
+  ]
+}

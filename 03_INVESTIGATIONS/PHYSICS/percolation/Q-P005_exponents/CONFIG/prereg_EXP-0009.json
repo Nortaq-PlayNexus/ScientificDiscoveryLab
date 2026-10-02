@@ -1,0 +1,59 @@
+{
+  "experiment_id": "EXP-0009",
+  "question_id": "Q-P005",
+  "hypothesis_id": "HYP-005",
+  "title": "Critical exponents and hyperscaling relations at square-site p_c (D_f, gamma/nu, beta/nu, tau, 1/nu)",
+  "note": "Successor of Q-P004 (thresholds; CLOSED H0_SUPPORTED). Measures the universality-class exponents at the exact site critical point p_c = 0.59274605079210(2) (Ziff PRL 117 125703 2016) via finite-size scaling of the open-cluster census, cluster-size distribution, and crossing width. Fresh streams; no EXP-0005/6/7 cells reused. HYP-005 was initially scaffolded as EXP-0008 but that ID was already claimed by prime-gaps Q-M002; re-issued as EXP-0009 on 2026-09-18 before any execution. TAU REFINEMENT (still pre-execution, 2026-09-18): the direct tau gate was re-scoped after architecture testing showed the finite-domain lattice-scale crossover gives an apparent exponent ~1.8-2.0 at s~10-10^3 that converges to the Fisher value 187/91 only asymptotically; the direct gate is now a wide apparent window + L-monotone trend, and the strict tau test is the hyperscaling relation R1 (tau = 1 + 2/D_f) broadened to 0.12. BUDGET REVISION (still pre-execution, same date): full-precision run measured 0.09 s/real at L=256 and 2.75 s/real at L=1024; statistics were trimmed (see parameters) so the whole experiment completes in ~25 min while keeping every bootstrap SE far below its gate tolerance; C6 mass/chi moved to L=256 (n=150/seed) and C7 subsample to L in {128,256,512}. Nothing else changed; all decided before any executed result. FROZEN before any execution.",
+  "seed": 42,
+  "seed_ladder": [7, 123, 2023, 314159, 271828],
+  "rng_label_pattern": "exp9-<system>-L<L>-p<pcanon>-<kind>",
+  "p_canon_token": "p0592746",
+  "parameters": {
+    "system": "site_square",
+    "p_c": 0.59274605079210,
+    "L_list": [128, 256, 512, 1024],
+    "n_real": {"128": 1500, "256": 700, "512": 150, "1024": 60},
+    "width_grid": {
+      "L64": {"grid": [0.53, 0.65, 0.01], "n_each": 1200},
+      "L128": {"grid": [0.55, 0.63, 0.01], "n_each": 800},
+      "L256": {"grid": [0.57, 0.622, 0.008], "n_each": 400}
+    },
+    "tau_fit_range": [32, 4096],
+    "tau_L": 1024,
+    "tau_trend_range": [32, 2048],
+    "tau_trend_L": [256, 512, 1024],
+    "bootstrap_draws": 2000,
+    "bootstrap_label": "exp9-boot",
+    "probit_s0": 0.10,
+    "fg_inner_sizes": [256, 512, 1024],
+    "width_L_list": [64, 128, 256]
+  },
+  "predictions": {
+    "D_f": {"expected_logical": "91/48 = 1.895833", "tol": 0.015},
+    "gamma_nu": {"expected_logical": "43/24 = 1.791667", "tol": 0.03},
+    "beta_nu": {"expected_logical": "5/48 = 0.104167 (checked vs 2 - D_f)", "tol": 0.015},
+    "tau": {
+      "expected_logical": "asymptotic Fisher value 187/91 = 2.054945",
+      "direct_window": [1.885, 2.225],
+      "trend": "tau_est rising toward 2.055 as L grows; gate: tau(L512) >= tau(L256) - se_tau(L512), tau(L1024) >= tau(L512) - se_tau(L1024), taus over the shared range [32, 2048]",
+      "estimator": "cumulative-rank primary, histogram secondary",
+      "note": "apparent finite-domain exponent ~1.8-2.0 due to lattice-scale crossover; STRICT tau test = hyperscaling relation R1"
+    },
+    "inv_nu_gate": [0.60, 0.90],
+    "R1_tau_vs_Df": {"formula": "direct tau == 1 + 2/D_f_meas (independent routes agree)", "tol": 0.12},
+    "R2_beta_gamma": {"formula": "2 beta/nu + gamma/nu = 2", "tol": 0.05},
+    "R3_Df_beta": {"formula": "D_f = 2 - beta/nu", "tol": 0.015, "use": "algebraic comparison of measured D_f vs 2 - beta/nu_slope"}
+  },
+  "gates": {
+    "C1": "full-cell rerun (L=256, p_c) cluster census bit-identical (sha256)",
+    "C6": "seed ladder on M_max, chi at L=256 (n=150/seed) and L=128 width W-curve (3 inner grid points, n=150/seed) within 3 joint-SE",
+    "C7": "pure-Python union-find independent implementation: L in {128,256,512}, subsample n=40, per-realization M_max and chi bit-identical, D_f subsample within 3 joint-SE",
+    "FG": "slope stability: refit D_f on inner sizes |d|<=0.02, gamma/nu |d|<=0.04",
+    "PC1": "bootstrap SE + chi2_red reported for every fit"
+  },
+  "decision_rule": {
+    "H0_SUPPORTED": "all gates PASS and P1-P5 in tolerance and R1-R3 in tolerance",
+    "ABNORMAL": "gates PASS, some P/R out of tolerance",
+    "INCONCLUSIVE": "any gate FAILS"
+  }
+}

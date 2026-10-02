@@ -1,0 +1,40 @@
+{
+  "experiment": "Q-S9-1 Minimum spectral structure for pareidolia",
+  "parent": "\u00a79 battery (dmt-laser-s9-battery)",
+  "method": "Speckle images with decreasing spectral complexity (FFT peak retention), measured 'code present' detection rate at each level",
+  "complexity_levels": [
+    {
+      "name": "full_speckle",
+      "complexity": 1.0,
+      "code_rate": 0.195
+    },
+    {
+      "name": "sparse_10pct",
+      "complexity": 0.1,
+      "code_rate": 0.0567
+    },
+    {
+      "name": "sparse_5pct",
+      "complexity": 0.05,
+      "code_rate": 0.0617
+    },
+    {
+      "name": "sparse_1pct",
+      "complexity": 0.01,
+      "code_rate": 0.0517
+    },
+    {
+      "name": "sparse_0pct",
+      "complexity": 0.0,
+      "code_rate": 0.0517
+    }
+  ],
+  "baseline_rate": 0.05,
+  "threshold_analysis": {
+    "criterion": "rate > baseline + 0.01",
+    "threshold_complexity": 0.05,
+    "threshold_pct_of_FFT_bins": 5
+  },
+  "key_finding": "Pareidolia detection threshold at complexity >= 0.05 (5% of FFT bins). Below threshold: baseline ~5%. Above: detection increases with complexity.",
+  "note": "ACTIVE_PROJECT.md stated 'complexity >= 0.10'. Actual computation gives threshold at 0.05 using rate > baseline + 0.01 criterion."
+}

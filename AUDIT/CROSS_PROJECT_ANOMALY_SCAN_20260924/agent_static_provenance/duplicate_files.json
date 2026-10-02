@@ -1,0 +1,311 @@
+[
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P004_PERCOLATION_THRESHOLDS.md",
+      "AUDIT/REVISED_DOSSIERS/Q-P004_PERCOLATION_THRESHOLDS.md"
+    ],
+    "sha256": "07ec8ab3dd9514f92723ae16fbf66a9dab2253ef34d7c86d242601b6de12b3b7"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REPRODUCE.md",
+      "AUDIT/REPRODUCE.md"
+    ],
+    "sha256": "0ac02379ff089d54393fb30ddec69d57c651b956d1f4531382284cf88496b259"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/_audit_list.txt",
+      "AUDIT/_audit_list.txt"
+    ],
+    "sha256": "0ae7ca1c16ef43f3d961dfcea791ee2387ca92b2ca2bcd7bc57d4b2582e059d4"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-O002_VORTEX_DENSITY.md",
+      "AUDIT/REVISED_DOSSIERS/Q-O002_VORTEX_DENSITY.md"
+    ],
+    "sha256": "1138d5a593cdfbb8dddc2723fbd7b7df7d1512dd6522ba07feef7d7e198a2c36"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-M005_FEIGENBAUM.md",
+      "AUDIT/REVISED_DOSSIERS/Q-M005_FEIGENBAUM.md"
+    ],
+    "sha256": "122fe2d927d778ed06a905a08ece9f4528135a495a04cf9aca1d73d4f53f3464"
+  },
+  {
+    "paths": [
+      "AUDIT/POTENTIAL_DISCOVERIES.md",
+      "AUDIT/PRIOR_AUDIT_20260923/POTENTIAL_DISCOVERIES.md"
+    ],
+    "sha256": "1a5ca0966541b9568dc5be2ff1d61d712cc0d8c025d9965a1de996c452ccc021"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/STRONGEST_DEFENSIBLE_CLAIMS.md",
+      "AUDIT/STRONGEST_DEFENSIBLE_CLAIMS.md"
+    ],
+    "sha256": "1c673145549d6b5d49656cea9e31c09b79d757cfc39c36adae3c6c833fb2cd06"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/RESULT_PROVENANCE.md",
+      "AUDIT/RESULT_PROVENANCE.md"
+    ],
+    "sha256": "20315b7c764b9f32f4eb5ba310e123018c28ff9e994cf6b9eed5eaa804350727"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REPOSITORY_COMPARISON.md",
+      "AUDIT/REPOSITORY_COMPARISON.md"
+    ],
+    "sha256": "2252a84919cbdad13b9feb25889b45f5d1611fa20bc1887c04bde56795c20514"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-I004_RNG_CERTIFICATION.md",
+      "AUDIT/REVISED_DOSSIERS/Q-I004_RNG_CERTIFICATION.md"
+    ],
+    "sha256": "281a2158c7ee06759ab13d987223e7bd08a672dc24a9dd5cd5782bb1b1dd61b2"
+  },
+  {
+    "paths": [
+      "AUDIT/MASTER_EVIDENCE_MATRIX.md",
+      "AUDIT/PRIOR_AUDIT_20260923/MASTER_EVIDENCE_MATRIX.md"
+    ],
+    "sha256": "2d4a773c8cdcbafe1aff32ae89a8a967735be74444ecdcb2c387564a21f913b2"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/WHAT_WAS_ACHIEVED.md",
+      "AUDIT/WHAT_WAS_ACHIEVED.md"
+    ],
+    "sha256": "34f5cd1881afdeb54258cd4227e2a3619716769d23b09ec1f8c556c0060087c8"
+  },
+  {
+    "paths": [
+      "AUDIT/CURRENT_STATUS.md_AUDIT_20260924.md",
+      "AUDIT/PRIOR_AUDIT_20260923/CURRENT_STATUS.md_AUDIT_20260924.md"
+    ],
+    "sha256": "367a584a378c42a48a5883dedc31efb8d1a7816d156b005ece85ecc93efc591d"
+  },
+  {
+    "paths": [
+      "AUDIT/CLAIM_LANGUAGE_AUDIT.md",
+      "AUDIT/PRIOR_AUDIT_20260923/CLAIM_LANGUAGE_AUDIT.md"
+    ],
+    "sha256": "3967e6ac5d41fb0375c7301382038f0f49de329e15e047c13d810053e493b206"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-M002_PRIME_GAPS.md",
+      "AUDIT/REVISED_DOSSIERS/Q-M002_PRIME_GAPS.md"
+    ],
+    "sha256": "3e334a2d6d378610d62e3d0d827dc6beb63d3938f61fef722024af533f506d9b"
+  },
+  {
+    "paths": [
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz",
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz"
+    ],
+    "sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/environment.txt",
+      "AUDIT/environment.txt"
+    ],
+    "sha256": "4f3d96acc5f8cc0f602bd7dab705742c1101b5d4f600e071dc7f72aea05f421c"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/checksums.sha256",
+      "AUDIT/checksums.sha256"
+    ],
+    "sha256": "50c9fc104c8ecd0fb83ead8ad21b46a3de96b8fb9f80f74ec7ef6b93f5b4ba0e"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/RESEARCH_MAP_SUMMARY.md",
+      "AUDIT/REVISED_DOSSIERS/RESEARCH_MAP_SUMMARY.md"
+    ],
+    "sha256": "792ee7f47d05d06d8e38dc1e54112748221c98ceba07505c9fc25df4c1a2cba9"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REPRODUCTION_MATRIX_V2.md",
+      "AUDIT/REPRODUCTION_MATRIX_V2.md"
+    ],
+    "sha256": "81b163a35ce6ada4ae8d1e77a1c07a67048b60f6be5707675c1d590613f9b199"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/EXTERNAL_R1_R8_SUMMARY.md",
+      "AUDIT/REVISED_DOSSIERS/EXTERNAL_R1_R8_SUMMARY.md"
+    ],
+    "sha256": "85c10337363c26d6f33023f117555083d1a4b4a78873f64ae518bf37615905f4"
+  },
+  {
+    "paths": [
+      "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/summary_final3.log",
+      "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/summary_final4.log"
+    ],
+    "sha256": "86eb332eb626503dd864479bc7e588e20dd1a18dfb79395561328ebf9c098633"
+  },
+  {
+    "paths": [
+      "AUDIT/DISCOVERY_SUMMARY.md",
+      "AUDIT/PRIOR_AUDIT_20260923/DISCOVERY_SUMMARY.md"
+    ],
+    "sha256": "9a52b17e5b3f52c22679631b65b7d4ac3c10bfac6943db8d9ea9f4a5fe264dd7"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/SHARED_ENGINE.md",
+      "AUDIT/REVISED_DOSSIERS/SHARED_ENGINE.md"
+    ],
+    "sha256": "9c64f299678610cf317a5543330e78f42203ae7fbebaa1c2c004848de7940403"
+  },
+  {
+    "paths": [
+      "AUDIT/EXPERIMENT_REGISTER.md",
+      "AUDIT/PRIOR_AUDIT_20260923/EXPERIMENT_REGISTER.md"
+    ],
+    "sha256": "9e5602995b4673acf88728911608d748b6eec87f57c75b7b9bd1fe2cd6513cec"
+  },
+  {
+    "paths": [
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L2048_n50.npz",
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L2048_n50.npz"
+    ],
+    "sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af"
+  },
+  {
+    "paths": [
+      "AUDIT/FINAL_SCIENTIFIC_AUDIT_REPORT.md",
+      "AUDIT/PRIOR_AUDIT_20260923/FINAL_SCIENTIFIC_AUDIT_REPORT.md"
+    ],
+    "sha256": "a0d3426f164360b5591837fd02c3e671ad93ab06acb7e090336280593c531e05"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/_ext_counts.txt",
+      "AUDIT/_ext_counts.txt"
+    ],
+    "sha256": "a2f492fbbe887593a7194714a0af6c54e52584aa26926cd852f3a67c37fc8a27"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P005_PERCOLATION_EXPONENTS.md",
+      "AUDIT/REVISED_DOSSIERS/Q-P005_PERCOLATION_EXPONENTS.md"
+    ],
+    "sha256": "a473882898e1657ea106712a31f89bb71434147fe9b7adf4fe75e1d020d0f088"
+  },
+  {
+    "paths": [
+      "AUDIT/DO_NOT_CLAIM.md",
+      "AUDIT/PRIOR_AUDIT_20260923/DO_NOT_CLAIM.md"
+    ],
+    "sha256": "bb6a2b5be5b0a15d8fdca7f6331763ed2fed5b88c99f5d5d081491a8e8858293"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/results_manifest.json",
+      "AUDIT/results_manifest.json"
+    ],
+    "sha256": "bdb7797519f18a23e5ad61437efaf6e674136bc7dec27f266a72f39be78fedeb"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/STRONGEST_EVIDENCE.md",
+      "AUDIT/STRONGEST_EVIDENCE.md"
+    ],
+    "sha256": "bfd610bfc0f10f0caece74ae9d6c771446a7b3561e2b044eaecd51bfddac19fc"
+  },
+  {
+    "paths": [
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L1024_n100.npz",
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L1024_n100.npz"
+    ],
+    "sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572"
+  },
+  {
+    "paths": [
+      "AUDIT/CURRENT_STATUS.md_AUDIT_20260923.md",
+      "AUDIT/PRIOR_AUDIT_20260923/CURRENT_STATUS.md_AUDIT_20260923.md",
+      "CURRENT_STATUS.md"
+    ],
+    "sha256": "c9072f4105e16287498aac07266b6ebec098dfc4cee738f86770a88e5aaafcef"
+  },
+  {
+    "paths": [
+      "AUDIT/DISCOVERY_PLAN.md",
+      "AUDIT/PRIOR_AUDIT_20260923/DISCOVERY_PLAN.md"
+    ],
+    "sha256": "cb49481a0f8ce0f64b19d812e1adbf44886b07eae29ca4fbd9f77ce535dbef81"
+  },
+  {
+    "paths": [
+      "AUDIT/FAILURE_HISTORY.md",
+      "AUDIT/PRIOR_AUDIT_20260923/FAILURE_HISTORY.md"
+    ],
+    "sha256": "cbdaab4afce509a0e2ebdfe78b99ae80665272e34fb9afd79e79be2793e37c94"
+  },
+  {
+    "paths": [
+      "AUDIT/INVESTIGATION_TIMELINE.md",
+      "AUDIT/PRIOR_AUDIT_20260923/INVESTIGATION_TIMELINE.md"
+    ],
+    "sha256": "d15b4c19fbcbafa88ea1965dfb16606584c70ce993cbd17fbf35a1b23288f618"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/RESULTS_OUTSIDE_Q1Q12.md",
+      "AUDIT/RESULTS_OUTSIDE_Q1Q12.md"
+    ],
+    "sha256": "e130010ca27fbcf8568ed4ef95c17914c549a62402b2a8aec83e6d36b38e70a3"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-O001_SPECKLE_CONTRAST.md",
+      "AUDIT/REVISED_DOSSIERS/Q-O001_SPECKLE_CONTRAST.md"
+    ],
+    "sha256": "e1c9bad400a97b0737ae63dabcd542ab8441510ca4cb98bea59837ef78b72094"
+  },
+  {
+    "paths": [
+      "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run.err",
+      "04_SHARED_ENGINE/engine/datasets/__init__.py",
+      "04_SHARED_ENGINE/engine/hypothesis_testing/__init__.py",
+      "04_SHARED_ENGINE/engine/reproducibility/__init__.py",
+      "04_SHARED_ENGINE/engine/simulation/__init__.py",
+      "04_SHARED_ENGINE/engine/statistics/__init__.py",
+      "04_SHARED_ENGINE/engine/utilities/__init__.py",
+      "04_SHARED_ENGINE/engine/visualization/__init__.py",
+      "AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/LOGS/.keep"
+    ],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/REVISED_DOSSIERS/Q-P008_3D_PERCOLATION.md",
+      "AUDIT/REVISED_DOSSIERS/Q-P008_3D_PERCOLATION.md"
+    ],
+    "sha256": "e7db55a7f4ef51d4a327194d834b1f8267b5f8799b6862e41bf5b94cbc3773b8"
+  },
+  {
+    "paths": [
+      "AUDIT/DEPENDENCY_MAP.md",
+      "AUDIT/PRIOR_AUDIT_20260923/DEPENDENCY_MAP.md"
+    ],
+    "sha256": "f31b825a94823281944ca9e1d3157f77d101c9c8fd5be115fbf2a0ba95802563"
+  },
+  {
+    "paths": [
+      "AUDIT/PRIOR_AUDIT_20260923/RAW_DATA_FINDINGS.md",
+      "AUDIT/RAW_DATA_FINDINGS.md"
+    ],
+    "sha256": "f59ad2bd93d91a8e2be0f719ae692ec26068ade267091a419ac10ec3e7b3e86d"
+  }
+]

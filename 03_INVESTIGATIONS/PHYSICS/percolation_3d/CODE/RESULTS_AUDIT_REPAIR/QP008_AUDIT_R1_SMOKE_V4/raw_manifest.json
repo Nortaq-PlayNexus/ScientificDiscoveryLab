@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "4": {
+      "bytes": 2341,
+      "n_cluster_arrays": 4,
+      "n_realizations": 4,
+      "path": "raw/L4_realizations.npz",
+      "sha256": "d265847c0234a83c1607d88a5a341a9145b0a83f4575d2f28db1b4738ef5695a"
+    },
+    "6": {
+      "bytes": 2139,
+      "n_cluster_arrays": 3,
+      "n_realizations": 3,
+      "path": "raw/L6_realizations.npz",
+      "sha256": "9aec959ca87ef2a5605f75a715090c8158253315dcac8f4c02e98e9c98828385"
+    }
+  },
+  "config_sha256": "ca4c14452a48c93ea6daa2b90c3356b77c4b7c81da3edead04d7ef3ff6abfd80"
+}

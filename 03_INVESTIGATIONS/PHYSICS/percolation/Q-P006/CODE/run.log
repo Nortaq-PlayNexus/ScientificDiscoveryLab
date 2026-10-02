@@ -1,0 +1,5 @@
+[Q-P006] L=512 n=200 done (P_span=0.4650, 48s)
+[Q-P006] L=1024 n=100 done (P_span=0.4600, 202s)
+[Q-P006] L=2048 n=50 done (P_span=0.4200, 614s)
+[Q-P006] Df=1.86331+-0.04229 Gn=1.73015+-0.06041 Bn=0.13717+-0.04092
+[Q-P006] DONE in 681s. Saved: C:\Users\natha\ScientificDiscoveryLab\03_INVESTIGATIONS\PHYSICS\percolation\Q-P006\CODE\RESULTS\EXP-0009-precision_results.json

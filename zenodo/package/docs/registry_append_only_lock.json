@@ -1,0 +1,16 @@
+{
+  "baseline_file_must_remain_unmodified": true,
+  "entries": [
+    {
+      "baseline_binding": "prefix_bytes and prefix_sha256 MUST equal the EXPERIMENT_REGISTRY.md entry of historical_evidence_baseline_post_n14.json, the immutable 2026-09-24 whole-file digest. This is the anti-laundering check: it proves the frozen prefix is the originally audited content and not a re-freeze of whatever the registry happens to contain today.",
+      "frozen_prefix_artifact": "03_INVESTIGATIONS/PHYSICS/percolation/AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924/CONFIG/EXPERIMENT_REGISTRY.historical_prefix.md",
+      "path": "EXPERIMENT_REGISTRY.md",
+      "policy": "append_only_prefix_pinned",
+      "prefix_bytes": 17841,
+      "prefix_sha256": "888f11e1b9ac44f44e934fdb8ae641df197bb10d848cc9f85eab76b1aa2e809a"
+    }
+  ],
+  "purpose": "EXPERIMENT_REGISTRY.md is an append-only live document, so pinning it by whole-file SHA-256 makes this read-only audit fail every time a new experiment is registered. The obvious remedy - refreshing the baseline to match the new file - would silently destroy the control. This lock pins the HISTORICAL PREFIX instead: any edit, reordering, deletion, or prepending inside the audited region still fails closed, while legitimate appends are permitted, measured, and reported.",
+  "read_only_contract": true,
+  "schema": "historical-2d-percolation-append-only-lock-v1"
+}

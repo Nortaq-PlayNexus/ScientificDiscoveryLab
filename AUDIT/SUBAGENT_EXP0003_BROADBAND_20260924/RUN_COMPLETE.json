@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "scope": "EXP-0003 broadband vortex-density convergence audit",
+  "primary_report": "REPORT/SUBAGENT_REPORT.md",
+  "primary_raw_results": "RESULTS/main_rows.csv",
+  "primary_summary": "RESULTS/main_summary.csv",
+  "verdict": "Finite-grid/spectral-resolution deficit; ratios converge to 1 as physical pixel pitch is refined, with the largest deficit at sigma_k=0.75.",
+  "novelty_claim": false,
+  "historical_files_modified": false,
+  "parallel_runner_untouched": true
+}

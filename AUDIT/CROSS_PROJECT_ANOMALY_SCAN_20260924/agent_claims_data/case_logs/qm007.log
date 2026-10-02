@@ -1,0 +1,62 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "qm007": {
+      "ok": true,
+      "evidence": {
+        "total": 40,
+        "significant": 38,
+        "first_cell": {
+          "bin": 1,
+          "block": 1,
+          "std_residual": -28.917122955093582,
+          "chi2_cell": 836.2000000000002,
+          "p_value": 2.0502642278570707e-07
+        },
+        "source_formula_p": 2.0502642278570707e-07,
+        "exact_chi2_sf_p": 7.273513898649874e-184,
+        "formula_mismatch_count": 0,
+        "source": [
+          "27:         # For a single cell, we need obs and exp for that specific bin in that specific block",
+          "28:         # Since we only have bin-level totals, we need to approximate",
+          "29:         # Using the ratio of obs_total/exp_total as a proxy for the cell's deviation",
+          "30:         ",
+          "31:         # The chi2 contribution per bin is given",
+          "32:         chi2_contrib = bin_data[\"mean_chi2_contribution\"]",
+          "33:         ",
+          "34:         # For a single cell in a single block, approximate:",
+          "35:         # chi2_cell Γëê chi2_contrib / num_blocks (if evenly distributed)",
+          "36:         # But this is approximate since bins may not be evenly distributed",
+          "37:         ",
+          "38:         # Better approach: use the std_residuals_per_block to estimate cell-level chi2",
+          "39:         std_residual = bin_data[\"std_residuals_per_block\"][block_idx]",
+          "40:         chi2_cell = std_residual ** 2  # For a single cell, z^2 Γëê chi2_1",
+          "41:         ",
+          "42:         # Convert to p-value (chi2 with 1 df)",
+          "43:         # Using survival function approximation",
+          "44:         p_value = math.exp(-0.5 * chi2_cell)  # Approximate for large chi2",
+          "45:         # Better: use Wilson-Hilferty approximation for chi2 CDF",
+          "46:         if chi2_cell > 0:",
+          "47:             z = ((chi2_cell / 1) ** (1/6) * (1 - 2/(9*1))) / math.sqrt(2/(9*1))",
+          "48:             # Standard normal CDF approximation",
+          "49:             p_value = 0.5 * math.erfc(z / math.sqrt(2))",
+          "50:         else:",
+          "51:             p_value = 1.0"
+        ],
+        "report_claim": [
+          "**BH-FDR extension:** 40-cell grid (10 bins ├ù 4 blocks)",
+          "Extend EXP-0008's analysis from 20 tail cells (5 thresholds ├ù 4 blocks) to all 10 exponential quantile bins ├ù 4 blocks = 40 cells. Determine which cells survive BH-FDR at ╬▒=0.01, and characterize the precise shape of the deviation.",
+          "2. BH-FDR at ╬▒=0.01 applied to all 40 cells (10 bins ├ù 4 blocks)",
+          "### 3.1 BH-FDR on 40-Cell Grid",
+          "| Significant after BH-FDR | **38/40** (95%) |",
+          "**Finding:** The deviation is robust across the full 40-cell grid, not limited to tail cells. 38/40 cells survive BH-FDR at ╬▒=0.01 ΓÇö a much broader rejection than the 20-cell result suggested.",
+          "| BH-FDR scope | 5 thresholds ├ù 4 blocks | 10 bins ├ù 4 blocks |",
+          "| Significant cells | 20/20 (all) | 38/40 |"
+        ],
+        "bin1_structural_note": [
+          "| 1 | 0 | 576,022 | 0.000 | ΓêÆ283.5 | EMPTY (minimum gap constraint) |"
+        ]
+      }
+    }
+  }
+}

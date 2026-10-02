@@ -1,0 +1,52 @@
+{
+  "command": "python AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924/CODE/run_broadband_convergence.py",
+  "parameters": {
+    "P": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "kappa0_physical": 1.5707963267948966,
+    "margin_wavelengths": 1.0,
+    "n_boot": 2000,
+    "seeds": [
+      42,
+      7,
+      123,
+      2023,
+      314159,
+      271828
+    ],
+    "sigma_EXP": [
+      0.1,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "sigma_physical": {
+      "0.1": 0.1,
+      "0.25": 0.25,
+      "0.5": 0.5,
+      "0.75": 0.75
+    },
+    "wavelengths_across_box": 24
+  },
+  "quick": false,
+  "realizations_per_seed": 4,
+  "timestamp_utc": "2026-09-23T18:19:57Z",
+  "versions": {
+    "machine": "AMD64",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "scipy": "1.18.1"
+  }
+}

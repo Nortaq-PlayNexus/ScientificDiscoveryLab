@@ -1,0 +1,10 @@
+{
+  "command": "C:\\Users\\natha\\AppData\\Local\\Programs\\Python\\Python314\\python.exe AUDIT\\SUBAGENT_EXP0003_BROADBAND_20260924\\run_broadband_audit.py --n-real 8",
+  "numpy": "2.5.3",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "scipy": "1.18.1",
+  "script_sha256": "fa3b3333f20b3019eb3cad3558663dd58a91e8ec03092f5830b9c0be685a338c",
+  "timestamp_utc": "2026-09-23T18:17:50+00:00"
+}

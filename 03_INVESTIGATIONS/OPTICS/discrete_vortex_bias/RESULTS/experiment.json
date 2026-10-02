@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "EXP-0015",
+  "status": "PARTIAL / LEVEL 1 / NO_NOVELTY_CLAIM",
+  "generated_utc": "2026-09-24T04:24:14+00:00",
+  "preregistration": {
+    "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\CONFIG\\prereg_EXP-0015.json",
+    "config_sha256": "514f6d142528d38f0d7729dd5ea8b955a70024369ac5e2965fb4d637e552140e"
+  },
+  "change_log": {
+    "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\CONFIG\\changes.jsonl",
+    "entries": 32,
+    "head": "7fe0bc8761ce7048666074db15c545c0e64e5cdb51cc8ce303b05714d8171b68"
+  },
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\natha\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.3"
+  },
+  "artifacts": [
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\calibration_123_20260924_141215.json",
+      "bytes": 905437,
+      "sha256": "6e3b413cd5be8bc08f6a2cdc2dcc47f27c95b6c08c01f7cdd6947677b1b180a3"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\calibration_42_20260924_133226.json",
+      "bytes": 846771,
+      "sha256": "6653868a02fd5ab23a3bbafe2e5c8f53d0c45255977f8a10066467d5efc5f6fc"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\calibration_42_20260924_133910.json",
+      "bytes": 862206,
+      "sha256": "295f5c8a15de7911be0b9e4b6a6917e39a94f3c0ffea955c93b1ea2896dc8dc1"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\calibration_7_20260924_141216.json",
+      "bytes": 902552,
+      "sha256": "3b9efd60b6d85254fc2af3d6c6507821ce2c14e234b63680478d508eef9183a6"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\close_pair_reference_20260924_135217.json",
+      "bytes": 135907,
+      "sha256": "ced6e3af471c8cfd40eca3c7c0f9106d97b12941b748919b470c912a97b5e530"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\convergence_42_20260924_134108.json",
+      "bytes": 1328354,
+      "sha256": "a6836f39387f376640332b8396f60003aa05c30d9d17a4005d9fecfea503f649"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\detector_size_20260924_134854.json",
+      "bytes": 769468,
+      "sha256": "e2ad797f5b3b84e03bad7f5b74a8fb610c644787450bf33c887baad7dcf4284a"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\direct_reference_20260924_135736.json",
+      "bytes": 1446,
+      "sha256": "d93c0859b9c968d606eb17ae75cc0a8b205b65a972fddb024a0c41fe050f41eb"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\direct_reference_20260924_135839.json",
+      "bytes": 2224,
+      "sha256": "591ab8cd4d4b1a21b3119bde98c5a1a76edc368bd3341db45930a0c7059fc74b"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\direct_reference_20260924_135940.json",
+      "bytes": 2213,
+      "sha256": "30afb27eaef0efdbc9abf8067c9ee6513aeb5db3ad95b41d2185f3e539828851"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\exact_zero_20260924_135547.json",
+      "bytes": 158562,
+      "sha256": "5ce99f44e598eb3f43ab4e9c46191c92d54aff37242de55dfa2a1f4df2fddd38"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\geometry_controls_20260924_134416.json",
+      "bytes": 130639,
+      "sha256": "0b9922a3a1fc41b503792f0c07d2eb25fad5320d86baaf3d309b6f6bc01b6fd0"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\implementation_42_20260924_133005.json",
+      "bytes": 5093,
+      "sha256": "11be2ae75b308c295d55eaa14ff3ea7c404da768a87fb380bed67d6dd5745330"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\implementation_42_20260924_133041.json",
+      "bytes": 5123,
+      "sha256": "33299ff7883d7f8f79ba49943dcf961354bc8d078c3803959dea74ce3b57df67"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\independent_close_20260924_135514.json",
+      "bytes": 6782,
+      "sha256": "71fff7f0c38d622fbba32740d61ffa3018c4f5c4f29fac76b76e196136bb8ca4"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\independent_contour_20260924_141208.json",
+      "bytes": 12191,
+      "sha256": "9cdd1e73c6228c41fecb6d3fae055a12928bf30317ed69bf1258c84bafdad101"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\independent_replication_20260924_134059.json",
+      "bytes": 108198,
+      "sha256": "08e8e5c8adbcc016e1f8fc0d2408c4d575a821f4a452788ab4b7bd375245f564"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\latest.json",
+      "bytes": 1034723,
+      "sha256": "3d12a1fd600608b2ddc6d140b9df75ca867fabc4d22a6b85bc2e3a1c69aa1022"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\nulls_42_20260924_140054.json",
+      "bytes": 118002,
+      "sha256": "d5b7137afcef7cfd16c0ea64cb6ceb740826bef87a87e60a1172dbf40cb92560"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\oversample_42_20260924_134458.json",
+      "bytes": 255557,
+      "sha256": "5b1999c904f59a384e3d786383946ce4ace1fb8d1468aa1dc69208d335982685"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\README.md",
+      "bytes": 2056,
+      "sha256": "c94a2c412bb001e74dd2179e3b79f98d3327c7d36c1284ac5ddcb386bef61081"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\rectangular_reference_20260924_134643.json",
+      "bytes": 84772,
+      "sha256": "dab26dbb0efe17ebfd23fea0985079ccab7c3d7fe850a7e1e78234c82997a991"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\regimes_fast_20260924_140842.json",
+      "bytes": 624148,
+      "sha256": "de2d88d363c168d22d0cf66efeb6ccc3f706b278383509b3ae889cb077854297"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\seed_ladder_20260924_135627.json",
+      "bytes": 163620,
+      "sha256": "edd2e5ad3cdbc3b5ca716bbf49e8d1a8e814256335556ab1ed8f0809c631a7c6"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\tracker_20260924_134940.json",
+      "bytes": 149460,
+      "sha256": "bbcf687d850f15d6cc4111f408a06906dd783e90be477692e4e9734022bce775"
+    },
+    {
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\discrete_vortex_bias\\RESULTS\\validation_summary.json",
+      "bytes": 1141,
+      "sha256": "3b3ebe961e2d357d72b09dc02eae4003f72d803e6ef25a5f3f5dbe8056344e4a"
+    }
+  ],
+  "note": "This manifest is a provenance index. It does not promote any candidate or authorize a physical claim."
+}

@@ -1,0 +1,47 @@
+﻿
+Name                             Length
+----                             ------
+checksums.sha256                   3083
+CLAIM_LANGUAGE_AUDIT.md            6594
+DEPENDENCY_MAP.md                 10902
+DO_NOT_CLAIM.md                    5752
+environment.txt                    2125
+EXPERIMENT_REGISTER.md             9135
+FAILURE_HISTORY.md                 8842
+FINAL_SCIENTIFIC_AUDIT_REPORT.md   9928
+INVESTIGATION_TIMELINE.md          7357
+MASTER_EVIDENCE_MATRIX.md          7110
+POTENTIAL_DISCOVERIES.md           6906
+PROJECT_INVENTORY.md              10805
+RAW_DATA_FINDINGS.md               7946
+REPOSITORY_COMPARISON.md           6404
+REPRODUCE.md                       7181
+REPRODUCTION_MATRIX_V2.md          8324
+RESULT_PROVENANCE.md               9748
+results_manifest.json              2574
+RESULTS_OUTSIDE_Q1Q12.md           7156
+STRONGEST_DEFENSIBLE_CLAIMS.md     8548
+STRONGEST_EVIDENCE.md              7271
+WHAT_WAS_ACHIEVED.md               7095
+
+
+
+Total audit files: 22
+
+Name                             Length
+----                             ------
+EXTERNAL_R1_R8_SUMMARY.md          3071
+Q-I004_RNG_CERTIFICATION.md        1919
+Q-M002_PRIME_GAPS.md               3569
+Q-M005_FEIGENBAUM.md               2927
+Q-O001_SPECKLE_CONTRAST.md         2704
+Q-O002_VORTEX_DENSITY.md           3320
+Q-P004_PERCOLATION_THRESHOLDS.md   3676
+Q-P005_PERCOLATION_EXPONENTS.md    2967
+Q-P008_3D_PERCOLATION.md           1769
+RESEARCH_MAP_SUMMARY.md            2340
+SHARED_ENGINE.md                   2469
+
+
+
+Total revised dossiers: 11

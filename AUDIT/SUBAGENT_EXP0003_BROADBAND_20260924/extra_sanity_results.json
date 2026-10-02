@@ -1,0 +1,27 @@
+{
+  "corrected_construction": {
+    "measured_over_target": 0.9934975366037303
+  },
+  "description": "Read-only implementation and determinism checks; no canonical output is touched.",
+  "historical_normalization": {
+    "measured_mean_power": 1.4073681511713608e-05,
+    "measured_over_target": 0.4982362884545238,
+    "target_mean_power": 2.8247002151065068e-05
+  },
+  "phase_edges": {
+    "edge_phase_abs_mean": 1.2814977428134524,
+    "edge_phase_abs_p95": 2.8888479489760264,
+    "edge_phase_abs_p99": 3.0922996517628523,
+    "edge_phase_frac_gt_0.99pi": 0.006028543307086614,
+    "edge_phase_frac_gt_0.9pi": 0.06203863188976378,
+    "edge_phase_max": 3.141568610577475
+  },
+  "same_stream": {
+    "density": 0.2673540004236989,
+    "density_equal": true,
+    "field_bitwise_equal": true,
+    "max_abs_field_difference": 0.0
+  },
+  "self_conjugate_bins": 4,
+  "self_conjugate_power_fraction": 4.422242527033419e-05
+}

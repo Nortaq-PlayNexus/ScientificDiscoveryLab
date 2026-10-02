@@ -1,0 +1,3472 @@
+{
+  "G_LAB_status": "INTERPRETABLE",
+  "audit_finding_id": "N-004",
+  "battery_verdict": "BATTERY_VALID",
+  "cells": [
+    {
+      "bit_length": "2^18",
+      "bonferroni_familywise_rate": 0.005,
+      "bonferroni_mean_rejections": 0.005,
+      "dependence_penalty_sidak_over_bonferroni": 1.0,
+      "generator": "G_LAB",
+      "holm_familywise_rate": 0.005,
+      "holm_mean_rejections": 0.005,
+      "miscalibrated_tests": [],
+      "n_miscalibrated": 0,
+      "n_seeds": 200,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.3438937614591888,
+          "ks_stat": 0.06542380374847079,
+          "mean_p": 0.5263523031597747,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.20966573383785259,
+          "ks_stat": 0.0742371967681612,
+          "mean_p": 0.5267208679897847,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.001677329308156274,
+          "ks_stat": 0.13205837733790732,
+          "mean_p": 0.5759964346407453,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.303632359783104,
+          "ks_stat": 0.06776002138182513,
+          "mean_p": 0.5348171583210926,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.8577573962645118,
+          "ks_stat": 0.04197456590542714,
+          "mean_p": 0.4948552576928117,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.24482733784044186,
+          "ks_stat": 0.07160145485236585,
+          "mean_p": 0.47504407489720846,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.34568673184277166,
+          "ks_stat": 0.06532415816188009,
+          "mean_p": 0.4928525141392271,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.6201208868130936,
+          "ks_stat": 0.05252112523765612,
+          "mean_p": 0.47741437439400886,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0033807641929372275,
+            0.06163055471618897
+          ],
+          "ks_pvalue": 0.4176406912929813,
+          "ks_stat": 0.06156991059001854,
+          "mean_p": 0.48273499463850716,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.02,
+          "rate_in_band": true,
+          "rejections_at_alpha": 4,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.12166905196056321,
+          "ks_stat": 0.08280932294824161,
+          "mean_p": 0.4766135002224635,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.570009982818513,
+          "ks_stat": 0.054642834513811245,
+          "mean_p": 0.5209478398037235,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.3399313181752778,
+          "ks_stat": 0.06564524660164817,
+          "mean_p": 0.5162728786136871,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.7837251376717066,
+          "ks_stat": 0.045537420274249285,
+          "mean_p": 0.4942609733097386,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.8780317785784761,
+          "ks_stat": 0.04087950923172956,
+          "mean_p": 0.500351407975456,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.5430909730494018,
+          "ks_stat": 0.05580287146539653,
+          "mean_p": 0.48553617240842556,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.16419855276924855,
+          "ks_stat": 0.07820605797148367,
+          "mean_p": 0.5305352104595213,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.12172519209035537,
+          "ks_stat": 0.08280243773164214,
+          "mean_p": 0.46463262266942634,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.9106996429208398,
+          "ks_stat": 0.03891769953574753,
+          "mean_p": 0.5004414201888276,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.4947086640104873,
+          "ks_stat": 0.05794319455103225,
+          "mean_p": 0.48132152405033213,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.15608320372021345,
+          "ks_stat": 0.07900350902085429,
+          "mean_p": 0.47299782653549144,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0033807641929372275,
+            0.06163055471618897
+          ],
+          "ks_pvalue": 0.5045421955080491,
+          "ks_stat": 0.05750130822717825,
+          "mean_p": 0.5061621684236198,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.02,
+          "rate_in_band": true,
+          "rejections_at_alpha": 4,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.8630195896083285,
+          "ks_stat": 0.041697224179344516,
+          "mean_p": 0.5050382814222056,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.5995413419950906,
+          "ks_stat": 0.053387984334265726,
+          "mean_p": 0.5160336645952773,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.30815770064398296,
+          "ks_stat": 0.0674872136722936,
+          "mean_p": 0.5267279817705217,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "target",
+      "shift": 0,
+      "sidak_familywise_rate_independence_assuming": 0.005,
+      "uncorrected_familywise_rate": 0.205
+    },
+    {
+      "bit_length": "2^22",
+      "bonferroni_familywise_rate": 0.016666666666666666,
+      "bonferroni_mean_rejections": 0.016666666666666666,
+      "dependence_penalty_sidak_over_bonferroni": 1.0,
+      "generator": "G_LAB",
+      "holm_familywise_rate": 0.016666666666666666,
+      "holm_mean_rejections": 0.016666666666666666,
+      "miscalibrated_tests": [],
+      "n_miscalibrated": 0,
+      "n_seeds": 60,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.16984092416092444,
+          "ks_stat": 0.1405280298511411,
+          "mean_p": 0.5367222807718235,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.7758615664733951,
+          "ks_stat": 0.08266274653348951,
+          "mean_p": 0.5027296068315014,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.13988410549066965,
+          "ks_stat": 0.14603910263733852,
+          "mean_p": 0.5556284657143854,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.49890322781873464,
+          "ks_stat": 0.10427272167489487,
+          "mean_p": 0.5271197006791314,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.06654778731243238,
+          "ks_stat": 0.16542903934828146,
+          "mean_p": 0.44680998183180115,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.16248390630009868,
+          "ks_stat": 0.1418049472086177,
+          "mean_p": 0.43100111103885486,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.2991467274950145,
+          "ks_stat": 0.12299111417756914,
+          "mean_p": 0.5396299183459722,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.829044220723336,
+          "ks_stat": 0.07816439880873066,
+          "mean_p": 0.5191924683613106,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.16034949376514385,
+          "ks_stat": 0.14218396786933457,
+          "mean_p": 0.5643721704734593,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.9822667540590524,
+          "ks_stat": 0.05748589961327366,
+          "mean_p": 0.4917926739360404,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.15646960934490728,
+          "ks_stat": 0.14288333532466102,
+          "mean_p": 0.5254414327209004,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.35582075113804223,
+          "ks_stat": 0.11704464897295275,
+          "mean_p": 0.5431412214490253,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.3735317313003186,
+          "ks_stat": 0.11531631709767329,
+          "mean_p": 0.4720401583967641,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8061641706511538,
+          "ks_stat": 0.08014737705035564,
+          "mean_p": 0.47834984852900153,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5270076179369256,
+          "ks_stat": 0.1019982160690186,
+          "mean_p": 0.5069727008392649,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.13678249932822617,
+          "ks_stat": 0.14666232374724159,
+          "mean_p": 0.5371626721589403,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.12584835878746103,
+          "ks_stat": 0.14895485782468426,
+          "mean_p": 0.4425623023953475,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.10617047422024095,
+          "ks_stat": 0.15352604511529494,
+          "mean_p": 0.56086253814616,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.190124262097928,
+          "ks_stat": 0.13721989066098578,
+          "mean_p": 0.5550443436732483,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.2467776704026695,
+          "ks_stat": 0.12923574683049888,
+          "mean_p": 0.4599007697216233,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.19733689306442026,
+          "ks_stat": 0.13610986702832628,
+          "mean_p": 0.5400401147977028,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.6997294490690018,
+          "ks_stat": 0.08865537316184768,
+          "mean_p": 0.502350334949104,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8735494564569981,
+          "ks_stat": 0.07398954553752185,
+          "mean_p": 0.5205745370863151,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.4991657899453513,
+          "ks_stat": 0.10425122067829759,
+          "mean_p": 0.5088916909689363,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "target",
+      "shift": 4,
+      "sidak_familywise_rate_independence_assuming": 0.016666666666666666,
+      "uncorrected_familywise_rate": 0.2
+    },
+    {
+      "bit_length": "2^18",
+      "bonferroni_familywise_rate": 0.0,
+      "bonferroni_mean_rejections": 0.0,
+      "dependence_penalty_sidak_over_bonferroni": 0.0,
+      "generator": "MT19937",
+      "holm_familywise_rate": 0.0,
+      "holm_mean_rejections": 0.0,
+      "miscalibrated_tests": [
+        "T03_runs"
+      ],
+      "n_miscalibrated": 1,
+      "n_seeds": 200,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.25019427340002,
+          "ks_stat": 0.07122459636726952,
+          "mean_p": 0.47012513565040753,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.7166931154577159,
+          "ks_stat": 0.04846147642503673,
+          "mean_p": 0.5146452953158164,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.0001586126925626194,
+          "ks_stat": 0.152492974913491,
+          "mean_p": 0.5969587648486993,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "miscalibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.8908547991612822,
+          "ks_stat": 0.04014406707603946,
+          "mean_p": 0.5015618836831918,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0033807641929372275,
+            0.06163055471618897
+          ],
+          "ks_pvalue": 0.820006472490213,
+          "ks_stat": 0.04385623702479169,
+          "mean_p": 0.49326745294123175,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.02,
+          "rate_in_band": true,
+          "rejections_at_alpha": 4,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.2094892383384349,
+          "ks_stat": 0.07425124651586434,
+          "mean_p": 0.4822992335047841,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.340776796356579,
+          "ks_stat": 0.06559785339625135,
+          "mean_p": 0.4982764538895876,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.059936305210429475,
+          "ks_stat": 0.09277453360165511,
+          "mean_p": 0.47444960170476647,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.7184440686277154,
+          "ks_stat": 0.04838694872167265,
+          "mean_p": 0.5013027951299422,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.34678705932138165,
+          "ks_stat": 0.0652631755635451,
+          "mean_p": 0.5161700439459416,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.6679312959541142,
+          "ks_stat": 0.05051732677500348,
+          "mean_p": 0.48393039742620725,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.44147083759365624,
+          "ks_stat": 0.060413113646830885,
+          "mean_p": 0.4756862381656164,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.005429452798231812,
+            0.06914563806967966
+          ],
+          "ks_pvalue": 0.040880537872334144,
+          "ks_stat": 0.09773748041051633,
+          "mean_p": 0.5447256019977051,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.025,
+          "rate_in_band": true,
+          "rejections_at_alpha": 5,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.05715003619712322,
+          "ks_stat": 0.0934063383878157,
+          "mean_p": 0.5399081881650694,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.005429452798231812,
+            0.06914563806967966
+          ],
+          "ks_pvalue": 0.8158499048289731,
+          "ks_stat": 0.04405405092413278,
+          "mean_p": 0.4865530219315341,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.025,
+          "rate_in_band": true,
+          "rejections_at_alpha": 5,
+          "status": "calibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.475147078674066,
+          "ks_stat": 0.05883451153653263,
+          "mean_p": 0.5137684228379548,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.8657215146550713,
+          "ks_stat": 0.04155306160632577,
+          "mean_p": 0.48760840726461224,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.22932658146617235,
+          "ks_stat": 0.07272563564384515,
+          "mean_p": 0.49346363147118283,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.03258593153492384,
+          "ks_stat": 0.10056328234620149,
+          "mean_p": 0.5565272764364406,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.09453455914610831,
+          "ks_stat": 0.08649303264281405,
+          "mean_p": 0.524958601339902,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.3483948389681423,
+          "ks_stat": 0.06517429763029559,
+          "mean_p": 0.5146540180496609,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.9768878644290078,
+          "ks_stat": 0.032928951679345286,
+          "mean_p": 0.49712028479727427,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.2596374011839716,
+          "ks_stat": 0.07057575743476946,
+          "mean_p": 0.5189673744740935,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.7681851380050606,
+          "ks_stat": 0.0462317034667854,
+          "mean_p": 0.48597153831240886,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "reference",
+      "shift": 0,
+      "sidak_familywise_rate_independence_assuming": 0.0,
+      "uncorrected_familywise_rate": 0.16
+    },
+    {
+      "bit_length": "2^22",
+      "bonferroni_familywise_rate": 0.016666666666666666,
+      "bonferroni_mean_rejections": 0.016666666666666666,
+      "dependence_penalty_sidak_over_bonferroni": 1.0,
+      "generator": "MT19937",
+      "holm_familywise_rate": 0.016666666666666666,
+      "holm_mean_rejections": 0.016666666666666666,
+      "miscalibrated_tests": [],
+      "n_miscalibrated": 0,
+      "n_seeds": 60,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.7992490527017164,
+          "ks_stat": 0.08073114441175783,
+          "mean_p": 0.4761163570194461,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.24868340892533558,
+          "ks_stat": 0.1289923546290197,
+          "mean_p": 0.5578939635804031,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.1366855666716449,
+          "ks_stat": 0.14668198404279165,
+          "mean_p": 0.5680920429206768,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8317230597179983,
+          "ks_stat": 0.07792629619619913,
+          "mean_p": 0.5192333943489558,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.8754745597513196,
+          "ks_stat": 0.07379601706775646,
+          "mean_p": 0.5000859439747929,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.47087329810054634,
+          "ks_stat": 0.10659927942173308,
+          "mean_p": 0.5340424298942122,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.42008210993041006,
+          "ks_stat": 0.11100328091790129,
+          "mean_p": 0.5495754119686164,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.19166192605308285,
+          "ks_stat": 0.13698054061258705,
+          "mean_p": 0.4343254898248157,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8162889351254392,
+          "ks_stat": 0.07928034345871993,
+          "mean_p": 0.49756406204051556,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.48141992643653586,
+          "ks_stat": 0.10571632714458412,
+          "mean_p": 0.4541130891397715,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.09066688529169609,
+          "ks_stat": 0.15764996573059342,
+          "mean_p": 0.5274806338441229,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8261780401804617,
+          "ks_stat": 0.07841765607946882,
+          "mean_p": 0.5079356157158338,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.6781155411009265,
+          "ks_stat": 0.09031256787761763,
+          "mean_p": 0.4829302533778599,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.06643483930448235,
+          "ks_stat": 0.1654707462354007,
+          "mean_p": 0.42417286579654145,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.9080355774464652,
+          "ks_stat": 0.07027818058140423,
+          "mean_p": 0.5202130471176543,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.44885609755326217,
+          "ks_stat": 0.10847533323426783,
+          "mean_p": 0.4921261681992962,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.03658946461248047,
+          "ks_stat": 0.17951060483086434,
+          "mean_p": 0.46724291050812056,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.4799757349229403,
+          "ks_stat": 0.1058366716833487,
+          "mean_p": 0.5146435184821835,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5338559733442465,
+          "ks_stat": 0.10145151904918959,
+          "mean_p": 0.49240055762168605,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.26177374601910885,
+          "ks_stat": 0.12735659628595764,
+          "mean_p": 0.45679415934889356,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5510181845578825,
+          "ks_stat": 0.10009271647154994,
+          "mean_p": 0.5195962652471428,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.37059490998123856,
+          "ks_stat": 0.11559923774461989,
+          "mean_p": 0.5393965931928663,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.942796495884082,
+          "ks_stat": 0.06570257561701626,
+          "mean_p": 0.4956331182667578,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.9771028267333894,
+          "ks_stat": 0.059006465983966305,
+          "mean_p": 0.4967977136159393,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "reference",
+      "shift": 4,
+      "sidak_familywise_rate_independence_assuming": 0.016666666666666666,
+      "uncorrected_familywise_rate": 0.23333333333333334
+    },
+    {
+      "bit_length": "2^18",
+      "bonferroni_familywise_rate": 0.0,
+      "bonferroni_mean_rejections": 0.0,
+      "dependence_penalty_sidak_over_bonferroni": 0.0,
+      "generator": "PCG64_direct",
+      "holm_familywise_rate": 0.0,
+      "holm_mean_rejections": 0.0,
+      "miscalibrated_tests": [
+        "T03_runs"
+      ],
+      "n_miscalibrated": 1,
+      "n_seeds": 200,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.031869683547451566,
+          "ks_stat": 0.1008359663834103,
+          "mean_p": 0.5602514213199633,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.06625661848121511,
+          "ks_stat": 0.09142963689969658,
+          "mean_p": 0.5332794203888469,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 2.196527983989655e-06,
+          "ks_stat": 0.18378016030332697,
+          "mean_p": 0.601035719011803,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "miscalibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.9334713946427963,
+          "ks_stat": 0.03731893522983609,
+          "mean_p": 0.5076512178340121,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.005429452798231812,
+            0.06914563806967966
+          ],
+          "ks_pvalue": 0.20313021589454217,
+          "ks_stat": 0.07476362163513306,
+          "mean_p": 0.46520194268776655,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.025,
+          "rate_in_band": true,
+          "rejections_at_alpha": 5,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.03181377751515768,
+          "ks_stat": 0.10085747619471919,
+          "mean_p": 0.45815834729065374,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.048729312989508666,
+          "ks_stat": 0.09549152978952458,
+          "mean_p": 0.48960492472970685,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.7805265690633776,
+          "ks_stat": 0.04568138348827738,
+          "mean_p": 0.5115143077323769,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.3508200504653024,
+          "ks_stat": 0.06504074061035103,
+          "mean_p": 0.4853895162931244,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.2128226607389555,
+          "ks_stat": 0.07398740913953206,
+          "mean_p": 0.5158945998914422,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.029982188949291055,
+          "ks_stat": 0.1015812379636627,
+          "mean_p": 0.541961848373286,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.015092834465198643,
+          "ks_stat": 0.10961108064295538,
+          "mean_p": 0.5535455415882394,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.37663843546094156,
+          "ks_stat": 0.06365458153137987,
+          "mean_p": 0.519440425000505,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.3870015561565896,
+          "ks_stat": 0.06311514839566701,
+          "mean_p": 0.4840582230227237,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.3994273988965783,
+          "ks_stat": 0.062479936358415866,
+          "mean_p": 0.47716004871370205,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.557989250935471,
+          "ks_stat": 0.05515862626517809,
+          "mean_p": 0.48774379593792544,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.8200254286367485,
+          "ks_stat": 0.04385533130616737,
+          "mean_p": 0.4904979584069201,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.1903228288579203,
+          "ks_stat": 0.07583435738909944,
+          "mean_p": 0.4715739181010049,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.15115779903501503,
+          "ks_stat": 0.0795037805880664,
+          "mean_p": 0.5147154406564003,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.6603488888517819,
+          "ks_stat": 0.05083502676039786,
+          "mean_p": 0.5005819207836282,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.8921255640506109,
+          "ks_stat": 0.04006901566833654,
+          "mean_p": 0.507327369777871,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.5767841347723459,
+          "ks_stat": 0.0543535644392687,
+          "mean_p": 0.49351593401457533,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.41658790937274925,
+          "ks_stat": 0.06162187113188544,
+          "mean_p": 0.49854586608484786,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.8536399535199708,
+          "ks_stat": 0.04218859694454245,
+          "mean_p": 0.4965456008838999,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "reference",
+      "shift": 0,
+      "sidak_familywise_rate_independence_assuming": 0.0,
+      "uncorrected_familywise_rate": 0.16
+    },
+    {
+      "bit_length": "2^22",
+      "bonferroni_familywise_rate": 0.016666666666666666,
+      "bonferroni_mean_rejections": 0.016666666666666666,
+      "dependence_penalty_sidak_over_bonferroni": 1.0,
+      "generator": "PCG64_direct",
+      "holm_familywise_rate": 0.016666666666666666,
+      "holm_mean_rejections": 0.016666666666666666,
+      "miscalibrated_tests": [
+        "T03_runs"
+      ],
+      "n_miscalibrated": 1,
+      "n_seeds": 60,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.005710724374308524,
+            0.17118538904120492
+          ],
+          "ks_pvalue": 0.21819947918790228,
+          "ks_stat": 0.13306592480137497,
+          "mean_p": 0.443707386275408,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.05,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.3491056089978063,
+          "ks_stat": 0.11771445083789855,
+          "mean_p": 0.5508848997588489,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.00031216316927432824,
+          "ks_stat": 0.2658105101686815,
+          "mean_p": 0.6464965693048896,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "miscalibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.5005038645078453,
+          "ks_stat": 0.104141725459176,
+          "mean_p": 0.47875274334931495,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.3606022034871581,
+          "ks_stat": 0.11657271231097066,
+          "mean_p": 0.5043787223571574,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.0031949110527167424,
+          "ks_stat": 0.227942156193907,
+          "mean_p": 0.37775516034057544,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.6090229992137588,
+          "ks_stat": 0.09559113430587352,
+          "mean_p": 0.5193037708867775,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.6769862500523713,
+          "ks_stat": 0.09039891427830563,
+          "mean_p": 0.4781528701806188,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.7294759451356504,
+          "ks_stat": 0.08635178876335747,
+          "mean_p": 0.4882354386879004,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.9500688935288839,
+          "ks_stat": 0.064556075506773,
+          "mean_p": 0.4934380557499781,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.005710724374308524,
+            0.17118538904120492
+          ],
+          "ks_pvalue": 0.1179520485283555,
+          "ks_stat": 0.1507134975334205,
+          "mean_p": 0.4454054927341308,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.05,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.321562600306882,
+          "ks_stat": 0.12055474765918167,
+          "mean_p": 0.4544970114568328,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.2412858671148752,
+          "ks_stat": 0.12994501426123425,
+          "mean_p": 0.46664782461208004,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.2197556396986481,
+          "ks_stat": 0.13284792574680582,
+          "mean_p": 0.4550689897529289,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.23302890528769826,
+          "ks_stat": 0.1310343771067941,
+          "mean_p": 0.5206446346386444,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.6959695423996122,
+          "ks_stat": 0.0889444105050744,
+          "mean_p": 0.5146620621035619,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.22754150146233787,
+          "ks_stat": 0.13177444013688672,
+          "mean_p": 0.5452041602167061,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.4568559566393392,
+          "ks_stat": 0.10778827303420738,
+          "mean_p": 0.5332370161189897,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.06601915059333385,
+          "ks_stat": 0.16562476338904913,
+          "mean_p": 0.5417377075093373,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5693914604680173,
+          "ks_stat": 0.09865364960667716,
+          "mean_p": 0.5135414882695035,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.7766020745034878,
+          "ks_stat": 0.0826024786198899,
+          "mean_p": 0.47383733609793377,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.7517163448874487,
+          "ks_stat": 0.08460185188127534,
+          "mean_p": 0.5122741884839895,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.678002366657193,
+          "ks_stat": 0.09032122209889115,
+          "mean_p": 0.5073097412303053,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.24092239615128141,
+          "ks_stat": 0.1299923780625193,
+          "mean_p": 0.5465597327424636,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "reference",
+      "shift": 4,
+      "sidak_familywise_rate_independence_assuming": 0.016666666666666666,
+      "uncorrected_familywise_rate": 0.21666666666666667
+    },
+    {
+      "bit_length": "2^18",
+      "bonferroni_familywise_rate": 1.0,
+      "bonferroni_mean_rejections": 1.0,
+      "dependence_penalty_sidak_over_bonferroni": 1.0,
+      "generator": "WEAK_LCG_BROKEN",
+      "holm_familywise_rate": 1.0,
+      "holm_mean_rejections": 1.0,
+      "miscalibrated_tests": [
+        "T03_runs",
+        "T13_words"
+      ],
+      "n_miscalibrated": 2,
+      "n_seeds": 200,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.3796818508698049,
+          "ks_stat": 0.06349521342378206,
+          "mean_p": 0.4794271198241068,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.6516228117708236,
+          "ks_stat": 0.051200473745658864,
+          "mean_p": 0.48560292149279155,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 3.08740128536003e-08,
+          "ks_stat": 0.21027711327476262,
+          "mean_p": 0.6265365015745136,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "miscalibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.6084526678047929,
+          "ks_stat": 0.05301202212247497,
+          "mean_p": 0.5114185320701087,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.7313519744973838,
+          "ks_stat": 0.04783525866941431,
+          "mean_p": 0.5115134617559495,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.036210394641667754,
+          "ks_stat": 0.09925910270922733,
+          "mean_p": 0.4613800365696775,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.21844931389482725,
+          "ks_stat": 0.07354913836599741,
+          "mean_p": 0.49164592648644145,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.41947831766593646,
+          "ks_stat": 0.0614793948029434,
+          "mean_p": 0.5134794782998824,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0033807641929372275,
+            0.06163055471618897
+          ],
+          "ks_pvalue": 0.719071524656561,
+          "ks_stat": 0.04836022495085912,
+          "mean_p": 0.5147908256093363,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.02,
+          "rate_in_band": true,
+          "rejections_at_alpha": 4,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.7978194673524788,
+          "ks_stat": 0.04489562382240986,
+          "mean_p": 0.5092025650784834,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.6406963059576685,
+          "ks_stat": 0.0516580979743963,
+          "mean_p": 0.4821270939774274,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.7515830003287034,
+          "ks_stat": 0.04696077528265763,
+          "mean_p": 0.48253466155090274,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0033807641929372275,
+            0.06163055471618897
+          ],
+          "ks_pvalue": 0.1804032879109575,
+          "ks_stat": 0.07670287144233315,
+          "mean_p": 0.46907542543366687,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.02,
+          "rate_in_band": true,
+          "rejections_at_alpha": 4,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.10775773117026366,
+          "ks_stat": 0.08460194613714955,
+          "mean_p": 0.5269491049888878,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.9738562370164787,
+            1.0
+          ],
+          "ks_pvalue": 0.0,
+          "ks_stat": 1.0,
+          "mean_p": 0.0,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 1.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 200,
+          "status": "miscalibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0005186368048049045,
+            0.045534014168155855
+          ],
+          "ks_pvalue": 0.8446752727598694,
+          "ks_stat": 0.04264630427891736,
+          "mean_p": 0.5121057595936849,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.01,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.3943701524394221,
+          "ks_stat": 0.06273699242939323,
+          "mean_p": 0.5194195530273392,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.005429452798231812,
+            0.06914563806967966
+          ],
+          "ks_pvalue": 0.18798400424167705,
+          "ks_stat": 0.0760358925027918,
+          "mean_p": 0.5129926713286318,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.025,
+          "rate_in_band": true,
+          "rejections_at_alpha": 5,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.8620991000632336,
+          "ks_stat": 0.04174605904394557,
+          "mean_p": 0.5014274784873675,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.9537311080540846,
+          "ks_stat": 0.03560829186267406,
+          "mean_p": 0.5055109053134624,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.026143762983521262
+          ],
+          "ks_pvalue": 0.20149747430757092,
+          "ks_stat": 0.07489716699306587,
+          "mean_p": 0.5203365885014155,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0016963809882777957,
+            0.05380344522855971
+          ],
+          "ks_pvalue": 0.4740122265007908,
+          "ks_stat": 0.05888675843240987,
+          "mean_p": 0.4831911057458446,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.015,
+          "rate_in_band": true,
+          "rejections_at_alpha": 3,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.2721091347732749,
+          "ks_stat": 0.06974477535707335,
+          "mean_p": 0.499391888215497,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            2.5062395050651048e-05,
+            0.036559130532778435
+          ],
+          "ks_pvalue": 0.935720034853242,
+          "ks_stat": 0.03714561415355555,
+          "mean_p": 0.5108906741414316,
+          "n": 200,
+          "n_nonfinite": 0,
+          "observed_rate": 0.005,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "positive_control_must_fail",
+      "shift": 0,
+      "sidak_familywise_rate_independence_assuming": 1.0,
+      "uncorrected_familywise_rate": 1.0
+    },
+    {
+      "bit_length": "2^22",
+      "bonferroni_familywise_rate": 1.0,
+      "bonferroni_mean_rejections": 1.0,
+      "dependence_penalty_sidak_over_bonferroni": 1.0,
+      "generator": "WEAK_LCG_BROKEN",
+      "holm_familywise_rate": 1.0,
+      "holm_mean_rejections": 1.0,
+      "miscalibrated_tests": [
+        "T03_runs",
+        "T13_words"
+      ],
+      "n_miscalibrated": 2,
+      "n_seeds": 60,
+      "nominal_familywise_alpha": 0.01,
+      "per_test": [
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8405398427806834,
+          "ks_stat": 0.07713246726119793,
+          "mean_p": 0.5090025329943009,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T01_monobit"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5080385110450768,
+          "ks_stat": 0.10352756260993068,
+          "mean_p": 0.47447449581269374,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T02_blockfreq"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 7.208324552981844e-05,
+          "ks_stat": 0.28699533658590304,
+          "mean_p": 0.6263421235188426,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "miscalibrated",
+          "test_id": "T03_runs"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.3642867299945769,
+          "ks_stat": 0.11621178771514573,
+          "mean_p": 0.45228647625500246,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T04_longestrun"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.5063115406540484,
+          "ks_stat": 0.10366797718284948,
+          "mean_p": 0.519625129161881,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T05_matrixrank"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.6727523596857763,
+          "ks_stat": 0.0907224896516507,
+          "mean_p": 0.5437814752861267,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T06_dft"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.9818503247012835,
+          "ks_stat": 0.05761902344631492,
+          "mean_p": 0.49761653384648763,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T07_nontemplate"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.12342461434953034,
+          "ks_stat": 0.1494848476668189,
+          "mean_p": 0.5611687408878692,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T08_serial_p1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.3474472586654276,
+          "ks_stat": 0.11788115812971456,
+          "mean_p": 0.5397440516080397,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T08_serial_p2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.09063149323407116,
+          "ks_stat": 0.15766003056855016,
+          "mean_p": 0.5789658338488615,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T09_apen"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8462657850014736,
+          "ks_stat": 0.07660790523236344,
+          "mean_p": 0.5183902598364181,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_fw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.7822347533536711,
+          "ks_stat": 0.08214227951550623,
+          "mean_p": 0.521179695278996,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T10_cusum_bw"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5071686348785089,
+          "ks_stat": 0.10359826364211111,
+          "mean_p": 0.5178758381288525,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T11_bytes"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.27108880149992787,
+          "ks_stat": 0.12622863708038978,
+          "mean_p": 0.46530518326822906,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T12_floats"
+        },
+        {
+          "bh_reject_ks": true,
+          "binomial_band": [
+            0.9154813472667045,
+            1.0
+          ],
+          "ks_pvalue": 0.0,
+          "ks_stat": 1.0,
+          "mean_p": 0.0,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 1.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 60,
+          "status": "miscalibrated",
+          "test_id": "T13_words"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.6056096992698485,
+          "ks_stat": 0.09585318205364102,
+          "mean_p": 0.4805616537025392,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T14_gap"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.3146844086632642,
+          "ks_stat": 0.1212895177918373,
+          "mean_p": 0.5145363348376474,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac1"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.19076033308304818,
+          "ks_stat": 0.1371206993768137,
+          "mean_p": 0.5678711700717948,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac2"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5186855453832044,
+          "ks_stat": 0.10266633065218145,
+          "mean_p": 0.48331962030780656,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac3"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            8.353887415964579e-05,
+            0.11740730260131872
+          ],
+          "ks_pvalue": 0.07596117413220516,
+          "ks_stat": 0.16214740781570214,
+          "mean_p": 0.4304740011823572,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.016666666666666666,
+          "rate_in_band": true,
+          "rejections_at_alpha": 1,
+          "status": "calibrated",
+          "test_id": "T15_ac4"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.7984273186314557,
+          "ks_stat": 0.08080009391141174,
+          "mean_p": 0.48583707516190455,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac5"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0017379556873905612,
+            0.1454949623372586
+          ],
+          "ks_pvalue": 0.3459785837164929,
+          "ks_stat": 0.11802923530164211,
+          "mean_p": 0.4441861816976361,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.03333333333333333,
+          "rate_in_band": true,
+          "rejections_at_alpha": 2,
+          "status": "calibrated",
+          "test_id": "T15_ac6"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.5850316936963698,
+          "ks_stat": 0.09743925429392568,
+          "mean_p": 0.513647507320086,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac7"
+        },
+        {
+          "bh_reject_ks": false,
+          "binomial_band": [
+            0.0,
+            0.08451865273329552
+          ],
+          "ks_pvalue": 0.8311951726631877,
+          "ks_stat": 0.07797332554333797,
+          "mean_p": 0.48434659977331634,
+          "n": 60,
+          "n_nonfinite": 0,
+          "observed_rate": 0.0,
+          "rate_in_band": true,
+          "rejections_at_alpha": 0,
+          "status": "calibrated",
+          "test_id": "T15_ac8"
+        }
+      ],
+      "role": "positive_control_must_fail",
+      "shift": 4,
+      "sidak_familywise_rate_independence_assuming": 1.0,
+      "uncorrected_familywise_rate": 1.0
+    }
+  ],
+  "certification_claim": false,
+  "claim_guards": [
+    "No generator may be called certified. The historical EXP-0004 certificate remains withdrawn and this run does not reinstate it.",
+    "Passing a test battery is not proof of randomness and not a NIST certification.",
+    "A calibrated test at one stream length does not certify the other length.",
+    "UNRESOLVED_AT_THIS_RESOLUTION is a real outcome and must not be reported as agreement.",
+    "This experiment says nothing about any physical result; it only characterises the measurement instrument the rest of the lab depends on."
+  ],
+  "historical_certificate_reinstated": false,
+  "known_limitations": [
+    "the battery is a NIST footprint, not the official NIST SP 800-22 harness, so its p-value formulas are reimplementations",
+    "tests within a seed share one input stream and are dependent; the max-T control handles this for the family-wise rate but per-test KS p-values are still BH-adjusted rather than exactly adjusted",
+    "the deliberately broken control is a specific failure mode; a battery that catches it may still miss others"
+  ],
+  "manifest_sha256": "10f070e080cc0e691bd78249abbccdba00406f1cb2e52cc55d17709bb10a9b9a",
+  "positive_control_gate": {
+    "passed": true,
+    "per_length": [
+      {
+        "bit_length": "2^18",
+        "bonferroni_familywise_rate": 1.0,
+        "holm_familywise_rate": 1.0,
+        "n_miscalibrated": 2
+      },
+      {
+        "bit_length": "2^22",
+        "bonferroni_familywise_rate": 1.0,
+        "holm_familywise_rate": 1.0,
+        "n_miscalibrated": 2
+      }
+    ],
+    "requirement": "must be flagged; this is the falsification condition from the audit, inverted into a positive control"
+  },
+  "prereg_sha256": "91b5ebd0be6020f578d80fd0b083d26ff5f2837b86c0b3577ae730d450a60136",
+  "question_id": "Q-I004",
+  "resolution": "With S seeds per generator and length, the rejection-rate estimate has standard error sqrt(alpha*(1-alpha)/S): 0.0071 at S=200 and 0.0127 at S=60. The uniformity test on per-seed p-values is the more powerful instrument, and the strongest permitted statement is per-test calibration AT THIS RESOLUTION. A miscalibration that shifts the true rejection rate from 0.01 to below about 0.04 is not detectable here and must be reported as unresolved rather than as calibrated.",
+  "summary_schema": "n004-calibration-summary-v1"
+}

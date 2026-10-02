@@ -1,0 +1,27 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "application": {
+      "ok": true,
+      "evidence": {
+        "formal_charge_reported": 0.3966637147812598,
+        "actual_formal_charge": 0,
+        "descriptor_source": [
+          "77:     def get_formal_charge(self) -> Optional[int]:",
+          "78:         if not self.is_valid:",
+          "79:             return None",
+          "80:         try:",
+          "81:             return Descriptors.MaxAbsPartialCharge(self.mol)",
+          "82:         except Exception:",
+          "83:             return 0"
+        ],
+        "depiction_error": {
+          "type": "ArgumentError",
+          "message": "Python argument types in\n    rdkit.Chem.rdDepictor.GenerateDepictionMatching2DStructure(Mol)\ndid not match C++ signature:\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, class boost::python::api::object atomMap, int confId, bool forceRDKit)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, class boost::python::api::object atomMap, int confId=-1, class boost::python::api::object params=None)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, int confId=-1, class boost::python::api::object refPatt=None, bool acceptFailure=False, bool forceRDKit=False, bool allowRGroups=False)\n    GenerateDepictionMatching2DStructure(class RDKit::ROMol {lvalue} mol, class RDKit::ROMol reference, int confId=-1, class boost::python::api::object refPatt=None, class boost::python::api::object params=None)"
+        },
+        "tautological_assertion": "tests/unit/test_plant_engine.py:49",
+        "tests_for_formal_charge": []
+      }
+    }
+  }
+}

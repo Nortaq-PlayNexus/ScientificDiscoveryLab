@@ -1,0 +1,115 @@
+{
+  "experiment_id": "EXP-0013",
+  "question_id": "Q-P008",
+  "hypothesis_id": "HYP-P008",
+  "title": "3D site percolation critical exponents with lab pipeline (p_c, D_f, gamma/nu, beta/nu)",
+  "note": "MAIN RUN: Pilot (EXP-0011, L=8,16,24, 6s) complete. Df=2.26, gamma/nu=1.63, beta/nu=0.74 at canon p_c. Pilot width curves converge from above. Main run at L=128,256,512 with n_real=1000,500,100. Estimated ~2 hours.",
+  "seed": 42,
+  "seed_ladder": [
+    7,
+    123,
+    2023,
+    314159,
+    271828
+  ],
+  "rng_label_pattern": "exp11-3d-L<L>-p<pcanon>-<kind>",
+  "p_canon_token": "p0311608",
+  "parameters": {
+    "system": "site_cubic_3d",
+    "p_c": 0.3116079,
+    "L_list": [
+      128,
+      256,
+      512
+    ],
+    "width_L_list": [
+      128,
+      256,
+      512
+    ],
+    "width_grid": {
+      "L128": {
+        "grid": [
+          0.31,
+          0.34,
+          0.001
+        ],
+        "n_each": 10
+      },
+      "L256": {
+        "grid": [
+          0.31,
+          0.33,
+          0.0005
+        ],
+        "n_each": 5
+      },
+      "L512": {
+        "grid": [
+          0.31,
+          0.32,
+          0.0005
+        ],
+        "n_each": 10
+      }
+    },
+    "n_real": {
+      "128": 1000,
+      "256": 500,
+      "512": 100
+    },
+    "bootstrap_draws": 2000,
+    "bootstrap_label": "exp11-3d-boot",
+    "tau_fit_range": [
+      4,
+      1000
+    ],
+    "tau_L": 24
+  },
+  "predictions": {
+    "p_c_width": {
+      "expected": 0.3116079,
+      "tol": 0.001,
+      "note": "width-curve crossing at L in {8,16,24}; L->inf extrapolation"
+    },
+    "exponents": {
+      "Df": {
+        "expected": 2.53,
+        "tol": 0.05,
+        "note": "literature value (Hsu 1990)"
+      },
+      "gamma_nu": {
+        "expected": 1.4,
+        "tol": 0.05,
+        "note": "literature value"
+      },
+      "beta_nu": {
+        "expected": 0.41,
+        "tol": 0.03,
+        "note": "literature value"
+      },
+      "tau": {
+        "expected": 2.19,
+        "tol": 0.1,
+        "note": "Fisher value for 3D"
+      }
+    },
+    "scaling_relations": {
+      "R1": "tau = 1 + 2/D_f",
+      "R2": "2*beta/nu + gamma/nu = 2",
+      "R3": "D_f = 2 - beta/nu"
+    }
+  },
+  "gates": {
+    "C1": "width curve at L=128 reproducible (sha256)",
+    "C7": "pure-Python union-find independent: L in {128,256,512}, subsample n=50",
+    "FG": "slope stability of D_f on inner L values",
+    "PC1": "bootstrap SE + chi2_red reported"
+  },
+  "decision_rule": {
+    "H0_SUPPOR": "all gates PASS and predictions in tolerance",
+    "ABNORMAL": "gates PASS, some predictions out of tolerance",
+    "INCONCLUSIVE": "any gate FAILS"
+  },
+  "implementation_requires": "3D cubic lattice generator in perc_engine.py (DONE \u00e2\u20ac\u201d cubic_lattice_3d verified). Runner at CODE/run_exp0011.py (DONE). Awaiting execution."
+}

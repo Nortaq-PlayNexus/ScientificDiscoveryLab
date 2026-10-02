@@ -1,0 +1,385 @@
+{
+  "experiment": "EXP-0015",
+  "implementation": "independent SciPy FFT/raw winding",
+  "rows": [
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 0.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 160.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 240.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 320.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 360.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 400.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 0.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 160.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 240.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 320.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 360.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 400.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 128,
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 0.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 160.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 240.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 320.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 360.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 400.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 0.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 160.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 240.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 320.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 360.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 400.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 256,
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 0.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 160.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 240.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 320.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 360.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 400.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 640.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.0,
+      "z_um": 1280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 0.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 160.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 240.0,
+      "count": 2,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 280.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 320.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 360.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 400.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 640.0,
+      "count": 0,
+      "net_charge": 0
+    },
+    {
+      "grid": 512,
+      "shift_px": 0.5,
+      "z_um": 1280.0,
+      "count": 0,
+      "net_charge": 0
+    }
+  ],
+  "runtime_s": 3.4961740970611572
+}

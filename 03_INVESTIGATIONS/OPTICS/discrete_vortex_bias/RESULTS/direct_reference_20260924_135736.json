@@ -1,0 +1,61 @@
+{
+  "experiment": "EXP-0015",
+  "stage": "direct_reference",
+  "rows": [
+    {
+      "grid": 16,
+      "z_um": 10.0,
+      "ncc_direct_vs_asm": 0.0007997817021556581,
+      "max_abs_error": 403.6369283435193
+    },
+    {
+      "grid": 16,
+      "z_um": 50.0,
+      "ncc_direct_vs_asm": 0.007114819331002117,
+      "max_abs_error": 91.9317345999577
+    },
+    {
+      "grid": 16,
+      "z_um": 100.0,
+      "ncc_direct_vs_asm": 0.02355388530401545,
+      "max_abs_error": 32.47068238528105
+    },
+    {
+      "grid": 24,
+      "z_um": 10.0,
+      "ncc_direct_vs_asm": 0.005510528083619795,
+      "max_abs_error": 190.56611856044498
+    },
+    {
+      "grid": 24,
+      "z_um": 50.0,
+      "ncc_direct_vs_asm": 0.009997858283256817,
+      "max_abs_error": 70.88944271440789
+    },
+    {
+      "grid": 24,
+      "z_um": 100.0,
+      "ncc_direct_vs_asm": 0.020348624369821697,
+      "max_abs_error": 30.71966152185436
+    },
+    {
+      "grid": 32,
+      "z_um": 10.0,
+      "ncc_direct_vs_asm": 0.003931847537706324,
+      "max_abs_error": 275.3621497752483
+    },
+    {
+      "grid": 32,
+      "z_um": 50.0,
+      "ncc_direct_vs_asm": 0.0426167816218624,
+      "max_abs_error": 27.501342272544875
+    },
+    {
+      "grid": 32,
+      "z_um": 100.0,
+      "ncc_direct_vs_asm": 0.04312130845972039,
+      "max_abs_error": 21.933838971367784
+    }
+  ],
+  "runtime_s": 0.06201338768005371
+}

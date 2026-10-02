@@ -1,0 +1,38 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "3d_main": {
+      "ok": true,
+      "evidence": {
+        "default_config_order": [
+          "18: PREC_PATHS = [",
+          "19:     os.path.join(QDIR, \"CONFIG\", \"prereg_EXP-0013.json\"),",
+          "20:     os.path.join(QDIR, \"CONFIG\", \"prereg_EXP-0011.json\"),",
+          "21: ]",
+          "22: FORCE_PILOT = os.environ.get(\"QP008_PILOT\", \"\").lower() in (\"1\", \"true\", \"yes\")",
+          "23: PREC = None",
+          "24: for pp in PREC_PATHS:",
+          "25:     if os.path.exists(pp):",
+          "26:         PREC = json.load(open(pp, encoding=\"utf-8\"))",
+          "27:         break",
+          "28: if PREC is None:",
+          "29:     raise FileNotFoundError(\"No prereg found\")",
+          "30: if FORCE_PILOT:",
+          "31:     pilot_path = os.path.join(QDIR, \"CONFIG\", \"prereg_EXP-0011.json\")",
+          "32:     if os.path.exists(pilot_path):",
+          "33:         PREC = json.load(open(pilot_path, encoding=\"utf-8\"))",
+          "34:         print(\"[Q-P008] PILOT MODE: using EXP-0011 config\", flush=True)"
+        ],
+        "hardcoded_tau": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:181",
+        "main_L": [
+          128,
+          256,
+          512
+        ],
+        "main_tau_L": 24,
+        "would_key_error": true,
+        "main_result_exists": false
+      }
+    }
+  }
+}

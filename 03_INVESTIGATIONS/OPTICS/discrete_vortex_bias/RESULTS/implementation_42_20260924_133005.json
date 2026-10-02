@@ -1,0 +1,171 @@
+{
+  "asm_fresnel_complex_ncc": 0.9994413826006361,
+  "asm_reverse_complex_ncc": 1.0000000000000002,
+  "asm_torch_complex_ncc": "ERROR: RuntimeError: Index put requires the source and destination dtypes match, got ComplexDouble for the destination and ComplexFloat for the source.",
+  "detectors": [
+    {
+      "asm": {
+        "count": 4,
+        "detector": "raw_winding",
+        "median_feature_intensity": 0.0018170615352125817,
+        "minimum_feature_intensity": 0.0018170615352125778,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 2.0,
+          "true_positive": 4
+        }
+      },
+      "detector": "raw_winding",
+      "fresnel": {
+        "count": 4,
+        "detector": "raw_winding",
+        "median_feature_intensity": 0.0018753877364375154,
+        "minimum_feature_intensity": 0.0018753877364375143,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 2.0,
+          "true_positive": 4
+        }
+      }
+    },
+    {
+      "asm": {
+        "count": 4,
+        "detector": "clustered_winding",
+        "median_feature_intensity": 0.0018170615352125817,
+        "minimum_feature_intensity": 0.0018170615352125778,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 2.0,
+          "true_positive": 4
+        }
+      },
+      "detector": "clustered_winding",
+      "fresnel": {
+        "count": 4,
+        "detector": "clustered_winding",
+        "median_feature_intensity": 0.0018753877364375154,
+        "minimum_feature_intensity": 0.0018753877364375143,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 2.0,
+          "true_positive": 4
+        }
+      }
+    },
+    {
+      "asm": {
+        "count": 0,
+        "detector": "supported_clustered_winding",
+        "median_feature_intensity": null,
+        "minimum_feature_intensity": null,
+        "negative": 0,
+        "net_charge": 0,
+        "positive": 0,
+        "truth_match": {
+          "charge_correct": 0,
+          "false_negative": 4,
+          "false_positive": 0,
+          "localization_rmse_px": null,
+          "true_positive": 0
+        }
+      },
+      "detector": "supported_clustered_winding",
+      "fresnel": {
+        "count": 0,
+        "detector": "supported_clustered_winding",
+        "median_feature_intensity": null,
+        "minimum_feature_intensity": null,
+        "negative": 0,
+        "net_charge": 0,
+        "positive": 0,
+        "truth_match": {
+          "charge_correct": 0,
+          "false_negative": 4,
+          "false_positive": 0,
+          "localization_rmse_px": null,
+          "true_positive": 0
+        }
+      }
+    },
+    {
+      "asm": {
+        "count": 0,
+        "detector": "local_minimum_contour",
+        "median_feature_intensity": null,
+        "minimum_feature_intensity": null,
+        "negative": 0,
+        "net_charge": 0,
+        "positive": 0,
+        "truth_match": {
+          "charge_correct": 0,
+          "false_negative": 4,
+          "false_positive": 0,
+          "localization_rmse_px": null,
+          "true_positive": 0
+        }
+      },
+      "detector": "local_minimum_contour",
+      "fresnel": {
+        "count": 0,
+        "detector": "local_minimum_contour",
+        "median_feature_intensity": null,
+        "minimum_feature_intensity": null,
+        "negative": 0,
+        "net_charge": 0,
+        "positive": 0,
+        "truth_match": {
+          "charge_correct": 0,
+          "false_negative": 4,
+          "false_positive": 0,
+          "localization_rmse_px": null,
+          "true_positive": 0
+        }
+      }
+    }
+  ],
+  "energy_asm": {
+    "energy": 10045.323672324776,
+    "max_abs": 1.3884090989602984,
+    "mean_intensity": 0.15327947498054162,
+    "sha256": "1f53ca8536fb3b9334ccecf501307e36478fcf5ff5c17251c7381cb98091d418"
+  },
+  "energy_input": {
+    "energy": 10045.323672324772,
+    "max_abs": 0.9999198380232678,
+    "mean_intensity": 0.15327947498054156,
+    "sha256": "9c29463984c4daa4f6e6008980f954224aef1244bf33a415005ea9738c0ef158"
+  },
+  "experiment": "EXP-0015",
+  "parameters": {
+    "grid": 256,
+    "wavelength_nm": 694.3,
+    "z_um": 1280.0,
+    "z_unit": "metres"
+  },
+  "runtime_s": 4.422033309936523,
+  "seed": 42,
+  "stage": "implementation_checks",
+  "timestamp_utc": "2026-09-24T03:30:05+00:00",
+  "torch_version": "2.14.0+cpu"
+}

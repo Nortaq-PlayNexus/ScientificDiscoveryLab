@@ -1,0 +1,51 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "qp007": {
+      "ok": true,
+      "evidence": {
+        "prereg_n_real": {
+          "512": 100,
+          "1024": 50,
+          "2048": 25
+        },
+        "effective_aligned_n": 25,
+        "retained_fractions": {
+          "512": 0.25,
+          "1024": 0.5,
+          "2048": 1.0
+        },
+        "source_p_c_literals": [
+          "61:     p_c_measures = {512: 0.592883, 1024: 0.592673, 2048: 0.592834}",
+          "62:     p_c_sig = {512: 0.004519, 1024: 0.003031, 2048: 0.001828}",
+          "63:     print(\"[Q-P007] Phase 1 (preserved from run.log):\", flush=True)"
+        ],
+        "source_truncation": [
+          "125:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+          "126:     min_n = min(len(cells[L][\"masses\"]) for L in L_LIST)",
+          "127:     mmat_a = np.array([cells[L][\"masses\"][:min_n] for L in L_LIST])",
+          "128:     cmat_a = np.array([cells[L][\"chis\"][:min_n] for L in L_LIST])",
+          "129:     pmat_a = np.array([cells[L][\"pinfs\"][:min_n] for L in L_LIST])",
+          "130: ",
+          "131:     Df = bootstrap_slope(logx, mmat_a, BS_DRAWS, BS + \"-df\", SEED)",
+          "132:     Gf = bootstrap_slope(logx, cmat_a, BS_DRAWS, BS + \"-gn\", SEED)",
+          "133:     Bf = -bootstrap_slope(logx, pmat_a, BS_DRAWS, BS + \"-bn\", SEED)"
+        ],
+        "result_p_c": 0.5927289999999997,
+        "result_reported_n": {
+          "512": 100,
+          "1024": 50,
+          "2048": 25
+        },
+        "tau_raw": {
+          "total_tail_clusters": 0,
+          "fit_range": [
+            32,
+            4096
+          ],
+          "tau_L": 2048
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "config_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation_3d\\CONFIG\\prereg_QP008_AUDIT_R1_SMOKE.json",
+  "config_sha256": "ca4c14452a48c93ea6daa2b90c3356b77c4b7c81da3edead04d7ef3ff6abfd80",
+  "decision": "INCONCLUSIVE",
+  "decision_reason": "This runner does not execute or ingest the independent C7 gate.",
+  "elapsed_seconds": 0.3114476203918457,
+  "engine_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\ENGINE\\perc_engine.py",
+  "engine_sha256": "8e2ebe7f84543bedf7eebbfec73192b6ff77273c5dcd5c157d0ed7813d08959d",
+  "environment": {
+    "numpy": "2.5.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "experiment": "QP008-AUDIT-R1-SMOKE",
+  "exponents": {
+    "Df": {
+      "absolute_deviation": 2.393938118150501,
+      "bootstrap_accepted": 100,
+      "bootstrap_requested": 100,
+      "bootstrap_se": 0.5088970881052896,
+      "expected": 2.53,
+      "mean": 4.923938118150501,
+      "n_by_L": {
+        "4": 4,
+        "6": 3
+      },
+      "point_in_tolerance": false,
+      "tolerance": 0.1
+    },
+    "beta_nu": {
+      "absolute_deviation": 2.3193671578524375,
+      "bootstrap_accepted": 100,
+      "bootstrap_requested": 100,
+      "bootstrap_se": 0.4767220354985313,
+      "expected": 0.41,
+      "mean": -1.9093671578524374,
+      "n_by_L": {
+        "4": 4,
+        "6": 3
+      },
+      "point_in_tolerance": false,
+      "tolerance": 0.05
+    },
+    "gamma_nu": {
+      "absolute_deviation": 3.6901577940293415,
+      "bootstrap_accepted": 100,
+      "bootstrap_requested": 100,
+      "bootstrap_se": 0.6351210283560449,
+      "expected": 1.4,
+      "mean": 5.090157794029341,
+      "n_by_L": {
+        "4": 4,
+        "6": 3
+      },
+      "point_in_tolerance": false,
+      "tolerance": 0.08
+    },
+    "tau": {
+      "bootstrap_accepted": 0,
+      "bootstrap_failed": 100,
+      "bootstrap_mean": null,
+      "bootstrap_requested": 100,
+      "bootstrap_se": null,
+      "chi2_red": null,
+      "fit_range": [
+        2,
+        100
+      ],
+      "n_clusters_pooled": 55,
+      "n_fit_points": 0,
+      "n_realizations_nonempty_tail": 3,
+      "n_realizations_total": 3,
+      "slope_se": null,
+      "status": "POINT_FIT_FAILED",
+      "tau": null,
+      "tau_L": 6,
+      "uncertainty_unit": "realization"
+    }
+  },
+  "hypothesis": "HYP-P008-REPAIR",
+  "novelty_claim": false,
+  "p_c_canonical": 0.3116079,
+  "p_c_used_for_exponents": 0.3116079,
+  "purpose": "infrastructure_smoke",
+  "question": "Q-P008",
+  "raw_manifest": {
+    "4": {
+      "bytes": 2128,
+      "n_cluster_arrays": 4,
+      "n_realizations": 4,
+      "path": "raw/L4_realizations.npz",
+      "sha256": "b204fa4907fd4ac343840ae7832a4ab5a2d1e11945ff11f39396ed65cc9dd9ce"
+    },
+    "6": {
+      "bytes": 1931,
+      "n_cluster_arrays": 3,
+      "n_realizations": 3,
+      "path": "raw/L6_realizations.npz",
+      "sha256": "f0630e2f9ccc0f5e433544a66442a8e3a70634cdb6538402a9bb531475ba8704"
+    }
+  },
+  "runner_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation_3d\\CODE\\run_audit_repair.py",
+  "runner_sha256": "3c2dac206f2b8e550ae4076c9ed0928418627c2f7162a02e1733674e20cbeac6",
+  "schema": "q-p008/audit-repair-result/v1",
+  "started_utc": "2026-09-23T23:32:17+00:00",
+  "status": "INFRASTRUCTURE_SMOKE_COMPLETE",
+  "width": {
+    "L": {
+      "4": {
+        "crossing": {
+          "bracketed": true,
+          "crossing_count": 9,
+          "crossings": [
+            0.32,
+            0.32999999999999996,
+            0.33999999999999997,
+            0.42,
+            0.43,
+            0.355,
+            0.365,
+            0.38666666666666666,
+            0.4033333333333333
+          ],
+          "method": "median_adjacent_linear_crossing_diagnostic",
+          "p_c": 0.365
+        },
+        "curve": [
+          {
+            "k_v": 0,
+            "n": 4,
+            "p": 0.3,
+            "width": 0.0
+          },
+          {
+            "k_v": 0,
+            "n": 4,
+            "p": 0.31,
+            "width": 0.0
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.32,
+            "width": 0.5
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.32999999999999996,
+            "width": 0.5
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.33999999999999997,
+            "width": 0.5
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.35,
+            "width": 0.75
+          },
+          {
+            "k_v": 1,
+            "n": 4,
+            "p": 0.36,
+            "width": 0.25
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.37,
+            "width": 0.75
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.38,
+            "width": 1.0
+          },
+          {
+            "k_v": 1,
+            "n": 4,
+            "p": 0.39,
+            "width": 0.25
+          },
+          {
+            "k_v": 1,
+            "n": 4,
+            "p": 0.4,
+            "width": 0.25
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.41,
+            "width": 1.0
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.42,
+            "width": 0.5
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.43,
+            "width": 0.5
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.44,
+            "width": 0.75
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.44999999999999996,
+            "width": 1.0
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.45999999999999996,
+            "width": 0.75
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.47,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.48,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.49,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.5,
+            "width": 1.0
+          }
+        ]
+      },
+      "6": {
+        "crossing": {
+          "bracketed": true,
+          "crossing_count": 4,
+          "crossings": [
+            0.32,
+            0.35,
+            0.3333333333333333,
+            0.36333333333333334
+          ],
+          "method": "median_adjacent_linear_crossing_diagnostic",
+          "p_c": 0.3416666666666667
+        },
+        "curve": [
+          {
+            "k_v": 1,
+            "n": 4,
+            "p": 0.3,
+            "width": 0.25
+          },
+          {
+            "k_v": 0,
+            "n": 4,
+            "p": 0.31,
+            "width": 0.0
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.32,
+            "width": 0.5
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.32999999999999996,
+            "width": 0.75
+          },
+          {
+            "k_v": 0,
+            "n": 4,
+            "p": 0.33999999999999997,
+            "width": 0.0
+          },
+          {
+            "k_v": 2,
+            "n": 4,
+            "p": 0.35,
+            "width": 0.5
+          },
+          {
+            "k_v": 1,
+            "n": 4,
+            "p": 0.36,
+            "width": 0.25
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.37,
+            "width": 1.0
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.38,
+            "width": 0.75
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.39,
+            "width": 0.75
+          },
+          {
+            "k_v": 3,
+            "n": 4,
+            "p": 0.4,
+            "width": 0.75
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.41,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.42,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.43,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.44,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.44999999999999996,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.45999999999999996,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.47,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.48,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.49,
+            "width": 1.0
+          },
+          {
+            "k_v": 4,
+            "n": 4,
+            "p": 0.5,
+            "width": 1.0
+          }
+        ]
+      }
+    },
+    "all_configured_width_grids_bracketed": true,
+    "boundary_estimand": {
+      "k_h": "component intersects x=0 and x=L-1 across the full volume",
+      "k_v": "component intersects z=0 and z=L-1"
+    },
+    "extrapolation": {
+      "method": "linear_1_over_L_diagnostic_only",
+      "p_c": 0.2950000000000002,
+      "scientific_use": "diagnostic_only",
+      "slope": 0.27999999999999936
+    }
+  }
+}

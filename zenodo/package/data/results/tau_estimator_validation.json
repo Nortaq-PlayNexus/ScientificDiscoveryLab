@@ -1,0 +1,1632 @@
+{
+  "bottom_line": "ESTIMATOR_BIASED: the frozen N-001 cumulative estimator's error at the primary window is {'truth_1.85': 0.15370030089772702, 'truth_2.05': 0.11155053953974892} for true exponents [1.85, 2.05]. The stored production value 1.9200860948994347 is not edited. The deviation from the Fisher value is in the downward direction at every window under every estimator, so the escalation direction is unaffected even where the numeric value is not trusted.",
+  "claim_guards": [
+    "The frozen N-001 production number tau = 1.92009 is not edited, replaced, or deleted. A bias-corrected value is a separately labelled secondary estimate at most.",
+    "The production runner is not modified. The estimators are re-implemented and validated in this isolated directory.",
+    "A measured bias on synthetic data is not automatically a valid correction for real percolation data, whose local curvature is not the curvature of the synthetic constructions. That is exactly what the two-truth test decides.",
+    "Finding a bias does not overturn the escalation direction. It weakens the numeric value, and must not be reported as though it had removed the deviation.",
+    "No physics claim, no novelty claim, and nothing here bears on any other experiment.",
+    "If the bias turns out to be small or transferable-absent, the stored tau stands and this experiment is a null result reported as such."
+  ],
+  "disclosure": "INFORMED, and labelled as such. This experiment was conceived after exploratory work already showed that the N-001 cumulative estimator returns values well above a known input exponent on synthetic power laws. The exploratory range of the bias, the three weighting variants, and the off-by-one survivor-count hypothesis have all already been seen. What is fixed here in advance is the validation design, the decision rule for whether a bias correction may be applied to the real data at all, and the set of truths and windows to be tested. In particular the decisive question addressed here - whether the bias depends on the true exponent, and therefore whether any bias correction is transferable - had not been answered.",
+  "fisher_tau": 2.0549450549450547,
+  "prereg_experiment_id": "N001-TAU-ESTIMATOR-VALIDATION",
+  "prereg_sha256": "f37cc2d47667be893aaef3062bac23f1987503ce7e3f5e434a800c087cb26be5",
+  "real_data": {
+    "estimator_choice_matters": true,
+    "fisher_tau": 2.0549450549450547,
+    "max_estimator_disagreement": 0.30510883600492167,
+    "note": "The frozen production value is cumulative_as_written at the primary window. It is not edited. Any corrected figure is a secondary estimate.",
+    "rows": [
+      {
+        "bias_applied": null,
+        "bias_corrected_secondary": null,
+        "cumulative_as_written": 1.9358495400581301,
+        "cumulative_poisson_weight": 1.9338002940514452,
+        "deviation_as_written_from_fisher": -0.1190955148869246,
+        "histogram": 1.966031851822764,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "bias_applied": 0.11155053953974892,
+        "bias_corrected_secondary": 1.8085355553596858,
+        "cumulative_as_written": 1.9200860948994347,
+        "cumulative_poisson_weight": 1.9284014268000065,
+        "deviation_as_written_from_fisher": -0.13485896004562004,
+        "histogram": 1.7027686605189478,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "bias_applied": null,
+        "bias_corrected_secondary": null,
+        "cumulative_as_written": 1.9282779920681603,
+        "cumulative_poisson_weight": 1.9329733610091488,
+        "deviation_as_written_from_fisher": -0.12666706287689444,
+        "histogram": 1.8466131605873564,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "bias_applied": null,
+        "bias_corrected_secondary": null,
+        "cumulative_as_written": 1.9120716110785523,
+        "cumulative_poisson_weight": 1.9205854593825284,
+        "deviation_as_written_from_fisher": -0.14287344386650247,
+        "histogram": 1.6069627750736306,
+        "window": [
+          64,
+          4096
+        ]
+      }
+    ]
+  },
+  "schema": "n001-tau-estimator-validation-v1",
+  "stored_production_tau": 1.9200860948994347,
+  "summary": {
+    "bias_correction_permitted": true,
+    "bias_correction_rationale": "The bias is consistent in sign and magnitude across both true exponents, so it behaves like a property of the estimator and window and may be subtracted as a clearly labelled secondary estimate.",
+    "bias_tolerance": 0.05,
+    "classification": "ESTIMATOR_BIASED",
+    "cumulative_as_written_primary_errors": {
+      "truth_1.85": 0.15370030089772702,
+      "truth_2.05": 0.11155053953974892
+    },
+    "error_spread_across_truths": 0.0421497613579781,
+    "median_abs_error_primary": 0.13262542021873797,
+    "per_window": [
+      {
+        "cumulative_as_written": {
+          "truth_1.85": {
+            "max_abs_error": 0.35017175969579695,
+            "mean_error": 0.3477752698504033,
+            "n": 4,
+            "spread": 0.0056339260166922145
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.28347157578910087,
+            "mean_error": 0.2798751232886154,
+            "n": 4,
+            "spread": 0.007399180741030964
+          }
+        },
+        "cumulative_poisson_weight": {
+          "truth_1.85": {
+            "max_abs_error": 0.22127005058689297,
+            "mean_error": 0.217973469813871,
+            "n": 4,
+            "spread": 0.0071475209535298845
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.15662950440034695,
+            "mean_error": 0.15214808951224357,
+            "n": 4,
+            "spread": 0.00933703065704794
+          }
+        },
+        "histogram": {
+          "truth_1.85": {
+            "max_abs_error": 0.013644644685539165,
+            "mean_error": -0.0063557447135131895,
+            "n": 4,
+            "spread": 0.013676402949999167
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.015832327923929856,
+            "mean_error": -0.007726474586521315,
+            "n": 4,
+            "spread": 0.015930921474427873
+          }
+        },
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "cumulative_as_written": {
+          "truth_1.85": {
+            "max_abs_error": 0.15546749770430557,
+            "mean_error": 0.15370030089772702,
+            "n": 4,
+            "spread": 0.004119843100968357
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.11530572256629856,
+            "mean_error": 0.11155053953974892,
+            "n": 4,
+            "spread": 0.007660312723642981
+          }
+        },
+        "cumulative_poisson_weight": {
+          "truth_1.85": {
+            "max_abs_error": 0.08347572846107676,
+            "mean_error": 0.08148583440869112,
+            "n": 4,
+            "spread": 0.004419446985026498
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.04714073646789796,
+            "mean_error": 0.04373153515926986,
+            "n": 4,
+            "spread": 0.00723739481852137
+          }
+        },
+        "histogram": {
+          "truth_1.85": {
+            "max_abs_error": 0.005265766020593254,
+            "mean_error": -0.001827776908867762,
+            "n": 4,
+            "spread": 0.0061917542458309605
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.008450100840920793,
+            "mean_error": -0.001678649552093514,
+            "n": 4,
+            "spread": 0.01255151151548839
+          }
+        },
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "cumulative_as_written": {
+          "truth_1.85": {
+            "max_abs_error": 0.22132757737658038,
+            "mean_error": 0.21971151234597097,
+            "n": 4,
+            "spread": 0.0035775335702910027
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.17110016191652244,
+            "mean_error": 0.16883471788605253,
+            "n": 4,
+            "spread": 0.005134152626705024
+          }
+        },
+        "cumulative_poisson_weight": {
+          "truth_1.85": {
+            "max_abs_error": 0.13271372184211683,
+            "mean_error": 0.13084364347749627,
+            "n": 4,
+            "spread": 0.004119254802672057
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.08591332624176307,
+            "mean_error": 0.08318385656775562,
+            "n": 4,
+            "spread": 0.006002676969853127
+          }
+        },
+        "histogram": {
+          "truth_1.85": {
+            "max_abs_error": 0.0058066847020046275,
+            "mean_error": -0.002562636581246891,
+            "n": 4,
+            "spread": 0.006136333509266123
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.006438069812090941,
+            "mean_error": -0.002244259704653029,
+            "n": 4,
+            "spread": 0.007724021036826123
+          }
+        },
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "cumulative_as_written": {
+          "truth_1.85": {
+            "max_abs_error": 0.21374421778915487,
+            "mean_error": 0.21244463623132004,
+            "n": 4,
+            "spread": 0.002945930054675472
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.1687942403942566,
+            "mean_error": 0.16574192454697156,
+            "n": 4,
+            "spread": 0.006698586295482478
+          }
+        },
+        "cumulative_poisson_weight": {
+          "truth_1.85": {
+            "max_abs_error": 0.13052901078146206,
+            "mean_error": 0.12925921377143512,
+            "n": 4,
+            "spread": 0.0029111848772200855
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.0886773487777539,
+            "mean_error": 0.08604719137616901,
+            "n": 4,
+            "spread": 0.005796122396495296
+          }
+        },
+        "histogram": {
+          "truth_1.85": {
+            "max_abs_error": 0.0032026594854686063,
+            "mean_error": -0.0008404724083946324,
+            "n": 4,
+            "spread": 0.0043879283064427455
+          },
+          "truth_2.05": {
+            "max_abs_error": 0.005397006718243613,
+            "mean_error": 0.0013014823265893316,
+            "n": 4,
+            "spread": 0.008802997493459142
+          }
+        },
+        "window": [
+          64,
+          4096
+        ]
+      }
+    ],
+    "primary_window": [
+      32,
+      4096
+    ],
+    "sign_consistent_across_truths": true
+  },
+  "synthetic": {
+    "rows": [
+      {
+        "clusters": 32584154,
+        "construction": "exact_integer_counts",
+        "error": 0.35017175969579695,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.200171759695797,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 32584154,
+        "construction": "exact_integer_counts",
+        "error": 0.22127005058689297,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.071270050586893,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 32584154,
+        "construction": "exact_integer_counts",
+        "error": 3.1758264460002295e-05,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.85003175826446,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 1894700,
+        "construction": "pareto_sample",
+        "error": 0.3462197263309146,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.1962197263309147,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 1894700,
+        "construction": "pareto_sample",
+        "error": 0.21523124844833497,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.065231248448335,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 1894700,
+        "construction": "pareto_sample",
+        "error": -0.011841850697433598,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8381581493025665,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 32584154,
+        "construction": "exact_integer_counts",
+        "error": 0.35017175969579695,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.200171759695797,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 32584154,
+        "construction": "exact_integer_counts",
+        "error": 0.22127005058689297,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.071270050586893,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 32584154,
+        "construction": "exact_integer_counts",
+        "error": 3.1758264460002295e-05,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.85003175826446,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7578838,
+        "construction": "pareto_sample",
+        "error": 0.34453783367910473,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.194537833679105,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7578838,
+        "construction": "pareto_sample",
+        "error": 0.2141225296333631,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.064122529633363,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7578838,
+        "construction": "pareto_sample",
+        "error": -0.013644644685539165,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.836355355314461,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 18495863,
+        "construction": "exact_integer_counts",
+        "error": 0.15546749770430557,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0054674977043057,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 18495863,
+        "construction": "exact_integer_counts",
+        "error": 0.08347572846107676,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9334757284610768,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 18495863,
+        "construction": "exact_integer_counts",
+        "error": 0.0009259882252377061,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8509259882252378,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 1967552,
+        "construction": "pareto_sample",
+        "error": 0.15251855357895971,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.00251855357896,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 1967552,
+        "construction": "pareto_sample",
+        "error": 0.07993559923656068,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9299355992365608,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 1967552,
+        "construction": "pareto_sample",
+        "error": -0.003897318065353206,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8461026819346469,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 18495863,
+        "construction": "exact_integer_counts",
+        "error": 0.15546749770430557,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0054674977043057,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 18495863,
+        "construction": "exact_integer_counts",
+        "error": 0.08347572846107676,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9334757284610768,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 18495863,
+        "construction": "exact_integer_counts",
+        "error": 0.0009259882252377061,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8509259882252378,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7870378,
+        "construction": "pareto_sample",
+        "error": 0.1513476546033372,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0013476546033373,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7870378,
+        "construction": "pareto_sample",
+        "error": 0.07905628147605026,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9290562814760503,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7870378,
+        "construction": "pareto_sample",
+        "error": -0.005265766020593254,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8447342339794068,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 18256177,
+        "construction": "exact_integer_counts",
+        "error": 0.22132757737658038,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0713275773765805,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 18256177,
+        "construction": "exact_integer_counts",
+        "error": 0.13271372184211683,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.982713721842117,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 18256177,
+        "construction": "exact_integer_counts",
+        "error": 0.0003296488072614956,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8503296488072616,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 1941597,
+        "construction": "pareto_sample",
+        "error": 0.21844085082443376,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.068440850824434,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 1941597,
+        "construction": "pareto_sample",
+        "error": 0.12935266318630667,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9793526631863068,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 1941597,
+        "construction": "pareto_sample",
+        "error": -0.005103159237505928,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8448968407624942,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 18256177,
+        "construction": "exact_integer_counts",
+        "error": 0.22132757737658038,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0713275773765805,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 18256177,
+        "construction": "exact_integer_counts",
+        "error": 0.13271372184211683,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.982713721842117,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 18256177,
+        "construction": "exact_integer_counts",
+        "error": 0.0003296488072614956,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8503296488072616,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7766098,
+        "construction": "pareto_sample",
+        "error": 0.21775004380628937,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0677500438062895,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7766098,
+        "construction": "pareto_sample",
+        "error": 0.12859446703944477,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9785944670394449,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7766098,
+        "construction": "pareto_sample",
+        "error": -0.0058066847020046275,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8441933152979955,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 10057433,
+        "construction": "exact_integer_counts",
+        "error": 0.21374421778915487,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.063744217789155,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 10057433,
+        "construction": "exact_integer_counts",
+        "error": 0.13052901078146206,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9805290107814622,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 10057433,
+        "construction": "exact_integer_counts",
+        "error": 0.001185268820974139,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8511852688209742,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 1941597,
+        "construction": "pareto_sample",
+        "error": 0.21149182161249103,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.061491821612491,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 1941597,
+        "construction": "pareto_sample",
+        "error": 0.12836100761857439,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9783610076185745,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 1941597,
+        "construction": "pareto_sample",
+        "error": -0.0025297677900582016,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8474702322099419,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 10057433,
+        "construction": "exact_integer_counts",
+        "error": 0.21374421778915487,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.063744217789155,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 10057433,
+        "construction": "exact_integer_counts",
+        "error": 0.13052901078146206,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.9805290107814622,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 10057433,
+        "construction": "exact_integer_counts",
+        "error": 0.001185268820974139,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8511852688209742,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 7766098,
+        "construction": "pareto_sample",
+        "error": 0.2107982877344794,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 2.0607982877344795,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 7766098,
+        "construction": "pareto_sample",
+        "error": 0.12761782590424198,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.977617825904242,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 7766098,
+        "construction": "pareto_sample",
+        "error": -0.0032026594854686063,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 1.85,
+        "unresolvable": null,
+        "value": 1.8467973405145315,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 15658181,
+        "construction": "exact_integer_counts",
+        "error": 0.28347157578910087,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.3334715757891007,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 15658181,
+        "construction": "exact_integer_counts",
+        "error": 0.15662950440034695,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2066295044003468,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 15658181,
+        "construction": "exact_integer_counts",
+        "error": 9.859355049801621e-05,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.050098593550498,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 1947394,
+        "construction": "pareto_sample",
+        "error": 0.27648494652819,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.32648494652819,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 1947394,
+        "construction": "pareto_sample",
+        "error": 0.14804087550498135,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.198040875504981,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 1947394,
+        "construction": "pareto_sample",
+        "error": -0.015270757523151435,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0347292424768484,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 15658181,
+        "construction": "exact_integer_counts",
+        "error": 0.28347157578910087,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.3334715757891007,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 15658181,
+        "construction": "exact_integer_counts",
+        "error": 0.15662950440034695,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2066295044003468,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 15658181,
+        "construction": "exact_integer_counts",
+        "error": 9.859355049801621e-05,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.050098593550498,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7789180,
+        "construction": "pareto_sample",
+        "error": 0.2760723950480699,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.3260723950480697,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7789180,
+        "construction": "pareto_sample",
+        "error": 0.147292473743299,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.197292473743299,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7789180,
+        "construction": "pareto_sample",
+        "error": -0.015832327923929856,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.03416767207607,
+        "window": [
+          16,
+          512
+        ]
+      },
+      {
+        "clusters": 7584451,
+        "construction": "exact_integer_counts",
+        "error": 0.11530572256629856,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1653057225662984,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7584451,
+        "construction": "exact_integer_counts",
+        "error": 0.04714073646789796,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.097140736467898,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7584451,
+        "construction": "exact_integer_counts",
+        "error": 0.004101410674567596,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0541014106745674,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 1987738,
+        "construction": "pareto_sample",
+        "error": 0.10794530318374296,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.157945303183743,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 1987738,
+        "construction": "pareto_sample",
+        "error": 0.040741326051906945,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0907413260519068,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 1987738,
+        "construction": "pareto_sample",
+        "error": -0.008450100840920793,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.041549899159079,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7584451,
+        "construction": "exact_integer_counts",
+        "error": 0.11530572256629856,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1653057225662984,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7584451,
+        "construction": "exact_integer_counts",
+        "error": 0.04714073646789796,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.097140736467898,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7584451,
+        "construction": "exact_integer_counts",
+        "error": 0.004101410674567596,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0541014106745674,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7951034,
+        "construction": "pareto_sample",
+        "error": 0.10764540984265558,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1576454098426554,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7951034,
+        "construction": "pareto_sample",
+        "error": 0.03990334164937659,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0899033416493764,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7951034,
+        "construction": "pareto_sample",
+        "error": -0.006467318716588455,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0435326812834114,
+        "window": [
+          32,
+          4096
+        ]
+      },
+      {
+        "clusters": 7536228,
+        "construction": "exact_integer_counts",
+        "error": 0.17110016191652244,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2211001619165223,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7536228,
+        "construction": "exact_integer_counts",
+        "error": 0.08591332624176307,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.135913326241763,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7536228,
+        "construction": "exact_integer_counts",
+        "error": 0.0012859512247351823,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.051285951224735,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 1974463,
+        "construction": "pareto_sample",
+        "error": 0.16717253842134783,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2171725384213476,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 1974463,
+        "construction": "pareto_sample",
+        "error": 0.08099812451558641,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1309981245155862,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 1974463,
+        "construction": "pareto_sample",
+        "error": -0.005110871455991539,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0448891285440083,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7536228,
+        "construction": "exact_integer_counts",
+        "error": 0.17110016191652244,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2211001619165223,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7536228,
+        "construction": "exact_integer_counts",
+        "error": 0.08591332624176307,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.135913326241763,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7536228,
+        "construction": "exact_integer_counts",
+        "error": 0.0012859512247351823,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.051285951224735,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7898031,
+        "construction": "pareto_sample",
+        "error": 0.16596600928981742,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2159660092898172,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7898031,
+        "construction": "pareto_sample",
+        "error": 0.07991064927190994,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1299106492719098,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 7898031,
+        "construction": "pareto_sample",
+        "error": -0.006438069812090941,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.043561930187909,
+        "window": [
+          32,
+          2048
+        ]
+      },
+      {
+        "clusters": 3608003,
+        "construction": "exact_integer_counts",
+        "error": 0.1687942403942566,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2187942403942564,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 3608003,
+        "construction": "exact_integer_counts",
+        "error": 0.0886773487777539,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1386773487777537,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 3608003,
+        "construction": "exact_integer_counts",
+        "error": 0.005397006718243613,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0553970067182434,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 1974463,
+        "construction": "pareto_sample",
+        "error": 0.1632835633005989,
+        "estimator": "cumulative_as_written",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2132835633005987,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 1974463,
+        "construction": "pareto_sample",
+        "error": 0.08395284156790961,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1339528415679094,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 1974463,
+        "construction": "pareto_sample",
+        "error": -0.0021820933549143717,
+        "estimator": "histogram",
+        "sample_size": 2000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0478179066450855,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 3608003,
+        "construction": "exact_integer_counts",
+        "error": 0.1687942403942566,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.2187942403942564,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 3608003,
+        "construction": "exact_integer_counts",
+        "error": 0.0886773487777539,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1386773487777537,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 3608003,
+        "construction": "exact_integer_counts",
+        "error": 0.005397006718243613,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0553970067182434,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 7898031,
+        "construction": "pareto_sample",
+        "error": 0.16209565409877413,
+        "estimator": "cumulative_as_written",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.212095654098774,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 7898031,
+        "construction": "pareto_sample",
+        "error": 0.08288122638125861,
+        "estimator": "cumulative_poisson_weight",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.1328812263812584,
+        "window": [
+          64,
+          4096
+        ]
+      },
+      {
+        "clusters": 7898031,
+        "construction": "pareto_sample",
+        "error": -0.0034059907752155283,
+        "estimator": "histogram",
+        "sample_size": 8000000,
+        "truth": 2.05,
+        "unresolvable": null,
+        "value": 2.0465940092247843,
+        "window": [
+          64,
+          4096
+        ]
+      }
+    ]
+  }
+}

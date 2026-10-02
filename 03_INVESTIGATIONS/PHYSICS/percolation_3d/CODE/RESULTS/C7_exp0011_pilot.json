@@ -1,0 +1,56 @@
+{
+  "experiment": "EXP-0011",
+  "question": "Q-P008",
+  "control": "C7",
+  "L_list": [
+    8,
+    16
+  ],
+  "n_real": {
+    "8": 50,
+    "16": 50
+  },
+  "p_c": 0.3116079,
+  "cells": {
+    "L8-n50": {
+      "L": 8,
+      "p": 0.3116079,
+      "n": 50,
+      "seed": 42,
+      "lab": {
+        "k_v": 2,
+        "n": 50
+      },
+      "c7": {
+        "k_v": 45,
+        "n": 50
+      },
+      "raw_diff": 43,
+      "identical": false,
+      "preregistered": true
+    },
+    "L16-n50": {
+      "L": 16,
+      "p": 0.3116079,
+      "n": 50,
+      "seed": 123,
+      "lab": {
+        "k_v": 3,
+        "n": 50
+      },
+      "c7": {
+        "k_v": 50,
+        "n": 50
+      },
+      "raw_diff": 47,
+      "identical": false,
+      "preregistered": true
+    }
+  },
+  "max_diff": 47,
+  "pass": false,
+  "notes": [
+    "Pure-Python union-find spanning at p_c vs lab (scipy CSR). Raw count diff: 47 (gate: 0)."
+  ],
+  "elapsed": 1.3578836917877197
+}

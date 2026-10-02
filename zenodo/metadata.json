@@ -1,0 +1,45 @@
+{
+  "schema": "zenodo-deposit-metadata-v1",
+  "upload_type": "dataset",
+  "title": "ScientificDiscoveryLab: Three Instrument Defects Found by Self-Audit",
+  "version": "1.0.0",
+  "publication_date": "2026-09-28",
+  "creators": [
+    {
+      "name": "ScientificDiscoveryLab",
+      "affiliation": "independent",
+      "orcid": null
+    }
+  ],
+  "description_source": "description.md",
+  "license": "MIT",
+  "keywords": [
+    "reproducibility research",
+    "measurement instrument validation",
+    "estimator bias",
+    "statistical test calibration",
+    "NIST SP 800-22",
+    "percolation",
+    "cluster mass exponent",
+    "finite-size scaling",
+    "preregistration",
+    "hash chaining",
+    "fail-closed analysis",
+    "negative results",
+    "null results",
+    "self-audit",
+    "scientific integrity"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "https://doi.org/10.5281/zenodo.22849652",
+      "resource_type": "other",
+      "note": "SCOPE NOTE: this identifier covers a DIFFERENT project (coherent optical vortex propagation, EXP-0007). It is listed only to make the boundary explicit. This deposit neither amends nor supersedes it, and the two share no data, code, or conclusions."
+    }
+  ],
+  "notes": "No scientific discovery is claimed. The contribution is evidence about measurement instruments, including three defects that had been making the authors' own results look better than they were. Two preregistrations in this deposit are labelled informed rather than blind and state what had already been seen. All historical artifacts are verified byte-identical; no baseline control was refreshed.",
+  "immutable_record_warning": "Zenodo records are immutable once published. Any future change to this deposit must be published as a NEW VERSION (new version DOI, same concept DOI), not as an edit to this record. The DOI field in CITATION.cff is intentionally left as 10.5281/zenodo.XXXXXXX and must be replaced with the DOI Zenodo assigns at upload.",
+  "verification_entrypoint": "package/scripts/verify_historical_integrity.py",
+  "test_suite": "495 passed, 0 errors"
+}

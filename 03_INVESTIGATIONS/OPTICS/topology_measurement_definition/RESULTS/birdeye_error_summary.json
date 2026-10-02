@@ -1,0 +1,15 @@
+{
+  "experiment": "EXP-0016",
+  "hotspot_count": 79,
+  "hotspots_by_type": {
+    "boundary_full_vs_crop": 11,
+    "close_pair_separation": 8,
+    "single_core_scale": 60
+  },
+  "note": "Visualization of frozen result rows; no new detector or physical claim.",
+  "source_files": {
+    "boundary": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\boundary_controls_20260924_145034.json",
+    "phase": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\phase_diagram_20260924_144719.json",
+    "propagation": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\propagation_20260924_144726.json"
+  }
+}

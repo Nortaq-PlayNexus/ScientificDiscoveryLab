@@ -1,0 +1,1 @@
+{"experiment": "Q-M007 BH-FDR on 40-cell grid (10 bins x 4 blocks)", "parent": "EXP-0008", "method": "Apply BH-FDR at alpha=0.01 to all 40 cells (10 exponential quantile bins x 4 blocks)", "note": "Primary EXP-0008 BH-FDR was on 20 tail cells only. This extends to all 10 bins x 4 blocks = 40 cells.", "alpha": 0.01}

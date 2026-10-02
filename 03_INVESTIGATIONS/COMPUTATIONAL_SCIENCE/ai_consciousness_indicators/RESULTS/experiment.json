@@ -1,0 +1,92 @@
+{
+  "canonical_json": {
+    "allow_nan": false,
+    "ensure_ascii": false,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true
+  },
+  "experiment_id": "EXP-C001",
+  "hypothesis": "HYP-C001: theory-collapsed aggregator with known-answer gate separates reference systems and is not raised by fluent self-report",
+  "machine": {
+    "platform": "win32"
+  },
+  "parameters": {
+    "alpha": 0.01,
+    "n_anchors": 6,
+    "n_indicators": 14,
+    "temperature_selected_by": "sweep_over_anchors_CIRCULAR_see_F01"
+  },
+  "question": "Q-C001: Can a preregistered indicator battery bound AI consciousness credence, and does it pass known-answer calibration?",
+  "result": {
+    "bootstrap_all_untested": {
+      "mean": 0.4710485569009675,
+      "n_boot": 512,
+      "note": "adversarial fill: untested indicators drawn at their AI base rate",
+      "spread": [
+        0.33569355799790246,
+        0.6646366089877888
+      ],
+      "std": 0.08878885725654397
+    },
+    "calibration": {
+      "failures": [],
+      "passed": true,
+      "rows": [
+        {
+          "credence": 1.0,
+          "ok": true,
+          "system_id": "human_adult"
+        },
+        {
+          "credence": 0.024033,
+          "ok": true,
+          "system_id": "lookup_table"
+        },
+        {
+          "credence": 0.025019,
+          "ok": true,
+          "system_id": "feedforward_mlp"
+        },
+        {
+          "credence": 0.106909,
+          "ok": true,
+          "system_id": "unigram_lookup_with_fake_selfreport"
+        },
+        {
+          "credence": 0.4259,
+          "ok": true,
+          "system_id": "gwt_architecture_no_metacognition"
+        },
+        {
+          "credence": 0.242164,
+          "ok": true,
+          "system_id": "weak_everywhere"
+        }
+      ]
+    },
+    "claim": "internally consistent scoring function; NOT a claim about any AI system's consciousness",
+    "fixes_in_this_record": [
+      "F08: BatteryResult.calibration_passed was `not require_calibration or True`, unconditionally True. run_battery now gates on a computed calibration_state() and raises CalibrationNotEstablished when calibration has not passed.",
+      "F09: duplicate-indicator check compared len(dict values) to len(set(keys)), which can never differ. Contradictory assessments are now rejected.",
+      "F10: perturbation family P4 (conscious_rate_shift) was computed and discarded, so one of six advertised robustness families perturbed nothing."
+    ],
+    "layer": "L1 instrument result only",
+    "parameters": {
+      "absence_factor": 0.55,
+      "necessity_penalty": 1.5,
+      "soft_or_temperature": 0.1
+    }
+  },
+  "result_hash": "b953b8178354f0480257d9e684519782982da05207086c1e3491298d78133c16",
+  "result_hash_scope": "canonical_json_utf8_result_object",
+  "seed": 20261002,
+  "software": {
+    "numpy": "2.4.1",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "timestamp_utc": "2026-10-02T10:43:48+00:00"
+}

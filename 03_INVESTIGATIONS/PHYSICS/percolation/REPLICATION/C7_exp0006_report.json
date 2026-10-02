@@ -1,0 +1,504 @@
+{
+  "cells": {
+    "perc-bond_span:L128:p0.38": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.40000000000000002": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.42000000000000004": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.44000000000000006": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.46000000000000008": {
+      "frozen": {
+        "k_h": 2,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 2,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.48000000000000009": {
+      "frozen": {
+        "k_h": 61,
+        "k_v": 48,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 61,
+        "k_v": 48,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.50000000000000011": {
+      "frozen": {
+        "k_h": 778,
+        "k_v": 744,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 778,
+        "k_v": 744,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.52000000000000013": {
+      "frozen": {
+        "k_h": 1452,
+        "k_v": 1451,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1452,
+        "k_v": 1451,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.54000000000000015": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.56000000000000016": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.58000000000000018": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.6000000000000002": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L128:p0.62000000000000022": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.38": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.40000000000000002": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.42000000000000004": {
+      "frozen": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 0,
+        "k_v": 0,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.44000000000000006": {
+      "frozen": {
+        "k_h": 3,
+        "k_v": 2,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 3,
+        "k_v": 2,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.46000000000000008": {
+      "frozen": {
+        "k_h": 24,
+        "k_v": 23,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 24,
+        "k_v": 23,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.48000000000000009": {
+      "frozen": {
+        "k_h": 192,
+        "k_v": 196,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 192,
+        "k_v": 196,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.50000000000000011": {
+      "frozen": {
+        "k_h": 754,
+        "k_v": 755,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 754,
+        "k_v": 755,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.52000000000000013": {
+      "frozen": {
+        "k_h": 1313,
+        "k_v": 1302,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1313,
+        "k_v": 1302,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.54000000000000015": {
+      "frozen": {
+        "k_h": 1472,
+        "k_v": 1478,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1472,
+        "k_v": 1478,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.56000000000000016": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.58000000000000018": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.6000000000000002": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_span:L64:p0.62000000000000022": {
+      "frozen": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      },
+      "identical": true,
+      "independent": {
+        "k_h": 1500,
+        "k_v": 1500,
+        "n": 1500
+      }
+    },
+    "perc-bond_wrap:L32:p0.38": {
+      "frozen": {
+        "k": 0,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.40000000000000002": {
+      "frozen": {
+        "k": 0,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.42000000000000004": {
+      "frozen": {
+        "k": 5,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 5,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.44000000000000006": {
+      "frozen": {
+        "k": 33,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 33,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.46000000000000008": {
+      "frozen": {
+        "k": 99,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 99,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.48000000000000009": {
+      "frozen": {
+        "k": 303,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 303,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.50000000000000011": {
+      "frozen": {
+        "k": 622,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 622,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.52000000000000013": {
+      "frozen": {
+        "k": 938,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 938,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.54000000000000015": {
+      "frozen": {
+        "k": 1118,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1118,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.56000000000000016": {
+      "frozen": {
+        "k": 1179,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1179,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.58000000000000018": {
+      "frozen": {
+        "k": 1198,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1198,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.6000000000000002": {
+      "frozen": {
+        "k": 1200,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1200,
+        "n": 1200
+      }
+    },
+    "perc-bond_wrap:L32:p0.62000000000000022": {
+      "frozen": {
+        "k": 1200,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1200,
+        "n": 1200
+      }
+    }
+  },
+  "control": "C7",
+  "experiment": "EXP-0006",
+  "hypothesis": "HYP-004",
+  "max_diff": 0.0,
+  "notes": [
+    "All C7 sampled cells reproduced raw counts bit-for-bit on identical streams (pure-Python UF)."
+  ],
+  "pass": true,
+  "question": "Q-P004",
+  "seed": 42,
+  "target_cells": {
+    "bond_span": [
+      64,
+      128
+    ],
+    "bond_wrap": [
+      32
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "3d_runner": {
+      "ok": true,
+      "evidence": {
+        "pilot_width_configured": {
+          "L8": 300,
+          "L16": 200,
+          "L24": 100
+        },
+        "pilot_width_effective": {
+          "L8": 30,
+          "L16": 20,
+          "L24": 10
+        },
+        "pilot_n_real": {
+          "8": 500,
+          "16": 200,
+          "24": 50
+        },
+        "effective_slope_n": 50,
+        "main_L": [
+          128,
+          256,
+          512
+        ],
+        "main_tau_L": 24,
+        "main_tau_L_in_main": false,
+        "source_width": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py:57",
+        "source_truncation": [
+          "165:     logx = np.log(np.asarray(L_LIST, dtype=float))",
+          "166:     min_n = min(len(cells[L][\"masses\"]) for L in L_LIST)",
+          "167:     mmat_a = np.array([cells[L][\"masses\"][:min_n] for L in L_LIST])",
+          "168:     cmat_a = np.array([cells[L][\"chis\"][:min_n] for L in L_LIST])",
+          "169:     pmat_a = np.array([cells[L][\"pinfs\"][:min_n] for L in L_LIST])",
+          "170: ",
+          "171:     Df = bootstrap_slope(logx, mmat_a, BS_DRAWS, f\"{EXP_ID}-df\", SEED)",
+          "172:     Gf = bootstrap_slope(logx, cmat_a, BS_DRAWS, f\"{EXP_ID}-gn\", SEED)",
+          "173:     Bf = -bootstrap_slope(logx, pmat_a, BS_DRAWS, f\"{EXP_ID}-bn\", SEED)",
+          "174: ",
+          "175:     Df_m, Df_se = float(Df.mean()), float(Df.std(ddof=1))",
+          "176:     Gf_m, Gf_se = float(Gf.mean()), float(Gf.std(ddof=1))",
+          "177:     Bf_m, Bf_se = float(Bf.mean()), float(Bf.std(ddof=1))",
+          "178: ",
+          "179:     print(f\"[Q-P008] Df={Df_m:.5f}+-{Df_se:.5f} Gn={Gf_m:.5f}+-{Gf_se:.5f} Bn={Bf_m:.5f}+-{Bf_se:.5f}\", flush=True)",
+          "180: ",
+          "181:     tL = 24",
+          "182:     tsizes = [ss[1:] for ss in cells[tL][\"sizes\"]]",
+          "183:     tc = fit_tau_cumulative(tsizes, 4, 1000, f\"{EXP_ID}-tau\", SEED)"
+        ],
+        "result_tau": {
+          "mean": null,
+          "se": null,
+          "expected": 2.19,
+          "tol": 0.1,
+          "fit_range": [
+            4,
+            1000
+          ],
+          "tau_L": 24
+        }
+      }
+    }
+  }
+}

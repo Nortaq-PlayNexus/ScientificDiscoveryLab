@@ -1,0 +1,216 @@
+{
+  "experiment_id": "EXP-0008",
+  "extra": {
+    "prereg_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\CONFIG\\prereg_EXP-0008.json"
+  },
+  "hypothesis": "HYP-005",
+  "machine": {
+    "machine": "AMD64",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+  },
+  "parameters": {
+    "N_MAX": 100000000,
+    "bins": {
+      "J": 10,
+      "edges": "-ln(1 - j/10) for j=1..9",
+      "expected_per_bin": "n_b/10",
+      "kind": "exponential-quantile"
+    },
+    "blocks": [
+      {
+        "hi": 100000,
+        "label": "B1",
+        "lo": 10000
+      },
+      {
+        "hi": 1000000,
+        "label": "B2",
+        "lo": 100000
+      },
+      {
+        "hi": 10000000,
+        "label": "B3",
+        "lo": 1000000
+      },
+      {
+        "hi": 100000000,
+        "label": "B4",
+        "lo": 10000000
+      }
+    ],
+    "bootstrap": {
+      "n_draws": 10000,
+      "rng_label": "exp0008-boot",
+      "seed": 42,
+      "what": "percentile 95% CI on mean(delta_b) per block"
+    },
+    "data_generation": {
+      "engine": "numpy Eratosthenes over [0, N_MAX]",
+      "note": "deterministic; primes are integers",
+      "rng_used": false
+    },
+    "gap_definition": "delta_i = (p_{i+1} - p_i) / ln(p_i)  (lower prime p_i)",
+    "independent_replication": {
+      "name": "C7 independent implementation",
+      "path": "REPLICATION/independent_check.py",
+      "requirements": [
+        "different prime source (sympy.primerange)",
+        "different binning scheme (equal-width instead of exponential-quantile)",
+        "different stats entry point (scipy.stats.chisquare + kstest)",
+        "own rng label 'exp0008/c7/independent'",
+        "block-by-block H0/H1 verdict must match primary",
+        "chi2/KS vectors must match within recorded tolerance"
+      ]
+    },
+    "null_control": {
+      "distribution": "i.i.d. Exp(1) via rng",
+      "expected": "MUST NOT flag any significant deviation after BH-FDR (calibration)",
+      "n_per_block": "same as block n",
+      "name": "C1 null/random control",
+      "rng_label": "exp0008/c1/null"
+    },
+    "output_schema": {
+      "controls": "C1..C6 pass/fail + detail",
+      "decision": "H0_SUPPORTED | INCONCLUSIVE | H1_SUPPORTED",
+      "diagnostics": "record-level summaries (report-only, not gates)",
+      "primary_results": "per-block chi2, dof, p, chi2_red, combined chi2, KS stat/p, mean, std, bootstrap CI, tail cells (z/p/fdr_q)",
+      "reason": "string",
+      "replication": "C7 verdict, vector match"
+    },
+    "positive_control": {
+      "distribution": "Gamma(shape=0.5, scale=2)",
+      "expected": "MUST flag a significant deviation after BH-FDR (validates gates)",
+      "mean": 1.0,
+      "n_per_block": "same as block n",
+      "name": "C2 positive control",
+      "rng_label": "exp0008/c2/positive",
+      "variance": 4.0
+    },
+    "preregistered_analyses": [
+      "chi-square GOF vs Exp(1) (10 quantile bins)",
+      "combined chi2 across 4 blocks",
+      "KS vs fully specified Exp(1)",
+      "bootstrap percentile CI on mean(delta)",
+      "binomial tail survival at t in {1,2,3,4,5}",
+      "BH-FDR at alpha 0.01",
+      "C1 null control",
+      "C2 positive control (Gamma(0.5,2) mean 1)",
+      "C3 seed ladder",
+      "C4 resolution variation",
+      "C5 method agreement",
+      "C6 residue-class conditioning",
+      "C7 independent implementation"
+    ],
+    "residue_conditioning": {
+      "condition_on": "lower prime p_i mod 12",
+      "exclude_primes_below": 10000,
+      "expected": "no significant deviation after conditioning; if primary rejects, it must survive in >=2 disjoint ranges",
+      "modulus": 12,
+      "name": "C6 residue-class conditioning (falsification robustness)",
+      "valid_residues": [
+        1,
+        5,
+        7,
+        11
+      ]
+    },
+    "resolution_variation": {
+      "J_values": [
+        8,
+        10,
+        12
+      ],
+      "expected": "chi2 GOF verdict identical across J",
+      "name": "C4 resolution variation",
+      "rng_label": "exp0008/resolution"
+    },
+    "secondary": {
+      "KS": {
+        "correction": "BH-FDR at alpha 0.01 across blocks",
+        "name": "Kolmogorov-Smirnov vs fully specified Exp(1)",
+        "role": "method-variation agreement (C5)"
+      },
+      "tail": {
+        "correction": "BH-FDR at alpha 0.01 across (block,t) = 20 cells",
+        "name": "survival P(delta>t) vs exp(-t)",
+        "role": "falsification robustness",
+        "t_values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "test": "two-sided z on Binomial(n, exp(-t))"
+      }
+    },
+    "seed_ladder": {
+      "control": "C3 seed variation",
+      "rng_label": "exp0008/seed-ladder",
+      "seeds": [
+        7,
+        123,
+        2023,
+        314159,
+        271828
+      ],
+      "what": "bootstrap CI verdict must be identical across seeds"
+    },
+    "sieve": {
+      "note": "deterministic; primes are integers, no randomness",
+      "rng_used": false,
+      "type": "numpy Eratosthenes bool array"
+    },
+    "statistics": {
+      "primary": {
+        "combined": "sum of per-block chi2 (dof 36)",
+        "correction": "BH-FDR at alpha 0.01 across blocks",
+        "dof_per_block": 9,
+        "name": "chi-square GOF vs Exp(1)"
+      }
+    },
+    "tolerances": {
+      "alpha": 0.01,
+      "tol_c3_seed_verdict": "identical",
+      "tol_c4_resolution_verdict": "identical",
+      "tol_c5_method_agree": "identical",
+      "tol_c7_vector_match": "absolute difference < 1e-9 on chi2; identical verdict",
+      "tol_mean_delta_CI_contains_1": "bootstrap 95% CI must contain 1.0"
+    }
+  },
+  "question": "Q-M002",
+  "result": {
+    "decision": "INCONCLUSIVE",
+    "gates": {
+      "C1": "PASS",
+      "C2": "PASS",
+      "C3": "PASS",
+      "C4": "PASS",
+      "C5": "FAIL",
+      "C6": "FAIL",
+      "C7": "FAIL",
+      "G1": "FAIL",
+      "G2": "PASS",
+      "G3": "FAIL",
+      "G4": "FAIL"
+    },
+    "prereg_sha256": "076667a54d12fa495dee8ee7ee246203e92c59a35bd012bebb72ead075b24336",
+    "primary_results_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\RESULTS\\EXP-0008_results.json",
+    "raw_results_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\RESULTS\\EXP-0008_raw.json",
+    "reason": "a primary gate rejected (G1=False G2=True G3=False) but the deviation has not survived residue-conditioning robustness (survives in 3/2 disjoint ranges); recorded honestly.",
+    "run_seconds": 2687.453
+  },
+  "result_hash": "afe52abb9a8f369ab92d049154ccf1764f57463ada714c3e4e344f40720d8929",
+  "seed": 42,
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "scipy": "1.18.1",
+    "skimage": "0.26.0",
+    "sklearn": "1.9.1",
+    "sympy": "1.14.0"
+  },
+  "timestamp_utc": "2026-09-18T04:00:50+00:00"
+}

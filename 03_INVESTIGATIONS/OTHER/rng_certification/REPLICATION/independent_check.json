@@ -1,0 +1,304 @@
+{
+  "all_agree": true,
+  "check": "C7",
+  "comparisons": [
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.17651531341615323,
+      "log10_diff": 0.0,
+      "primary_p": 0.17651531341615323,
+      "seed": 42,
+      "test": "T01_monobit"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.8437863836501703,
+      "log10_diff": 0.0,
+      "primary_p": 0.8437863836501703,
+      "seed": 42,
+      "test": "T02_blockfreq"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.6707400319041965,
+      "log10_diff": 0.0,
+      "primary_p": 0.6707400319041965,
+      "seed": 42,
+      "test": "T03_runs"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.49954477219060867,
+      "log10_diff": 0.0,
+      "primary_p": 0.49954477219060867,
+      "seed": 42,
+      "test": "T11_bytes"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.9666542038022671,
+      "log10_diff": 0.0,
+      "primary_p": 0.9666542038022671,
+      "seed": 42,
+      "test": "T12_floats"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.7457724276919915,
+      "log10_diff": 0.0,
+      "primary_p": 0.7457724276919915,
+      "seed": 7,
+      "test": "T01_monobit"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.7245540309168192,
+      "log10_diff": 0.0,
+      "primary_p": 0.7245540309168192,
+      "seed": 7,
+      "test": "T02_blockfreq"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.182119535887157,
+      "log10_diff": 0.0,
+      "primary_p": 0.182119535887157,
+      "seed": 7,
+      "test": "T03_runs"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.6540909225244829,
+      "log10_diff": 0.0,
+      "primary_p": 0.6540909225244829,
+      "seed": 7,
+      "test": "T11_bytes"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.21747913070392738,
+      "log10_diff": 0.0,
+      "primary_p": 0.21747913070392738,
+      "seed": 7,
+      "test": "T12_floats"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.3966294380308165,
+      "log10_diff": 0.0,
+      "primary_p": 0.3966294380308165,
+      "seed": 123,
+      "test": "T01_monobit"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.009941421946028135,
+      "log10_diff": 0.0,
+      "primary_p": 0.009941421946028135,
+      "seed": 123,
+      "test": "T02_blockfreq"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.32866498385805043,
+      "log10_diff": 0.0,
+      "primary_p": 0.32866498385805043,
+      "seed": 123,
+      "test": "T03_runs"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.4378863549674637,
+      "log10_diff": 0.0,
+      "primary_p": 0.4378863549674637,
+      "seed": 123,
+      "test": "T11_bytes"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.9065555641326405,
+      "log10_diff": 0.0,
+      "primary_p": 0.9065555641326405,
+      "seed": 123,
+      "test": "T12_floats"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.6198282686070322,
+      "log10_diff": 0.0,
+      "primary_p": 0.6198282686070322,
+      "seed": 2023,
+      "test": "T01_monobit"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.9177779633653822,
+      "log10_diff": 0.0,
+      "primary_p": 0.9177779633653822,
+      "seed": 2023,
+      "test": "T02_blockfreq"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.8642924177026041,
+      "log10_diff": 0.0,
+      "primary_p": 0.8642924177026041,
+      "seed": 2023,
+      "test": "T03_runs"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.3451881815605933,
+      "log10_diff": 0.0,
+      "primary_p": 0.3451881815605933,
+      "seed": 2023,
+      "test": "T11_bytes"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.12715727035472293,
+      "log10_diff": 0.0,
+      "primary_p": 0.12715727035472293,
+      "seed": 2023,
+      "test": "T12_floats"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.08709265108365906,
+      "log10_diff": 0.0,
+      "primary_p": 0.08709265108365906,
+      "seed": 314159,
+      "test": "T01_monobit"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.5842397222464862,
+      "log10_diff": 0.0,
+      "primary_p": 0.5842397222464862,
+      "seed": 314159,
+      "test": "T02_blockfreq"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.7941508395519227,
+      "log10_diff": 0.0,
+      "primary_p": 0.7941508395519227,
+      "seed": 314159,
+      "test": "T03_runs"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.10141907875738913,
+      "log10_diff": 0.0,
+      "primary_p": 0.10141907875738913,
+      "seed": 314159,
+      "test": "T11_bytes"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.836234369740024,
+      "log10_diff": 0.0,
+      "primary_p": 0.836234369740024,
+      "seed": 314159,
+      "test": "T12_floats"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.20010586895485183,
+      "log10_diff": 0.0,
+      "primary_p": 0.20010586895485183,
+      "seed": 271828,
+      "test": "T01_monobit"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.31431566415484535,
+      "log10_diff": 0.0,
+      "primary_p": 0.31431566415484535,
+      "seed": 271828,
+      "test": "T02_blockfreq"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.9959871916528611,
+      "log10_diff": 0.0,
+      "primary_p": 0.9959871916528611,
+      "seed": 271828,
+      "test": "T03_runs"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.3407104993069992,
+      "log10_diff": 0.0,
+      "primary_p": 0.3407104993069992,
+      "seed": 271828,
+      "test": "T11_bytes"
+    },
+    {
+      "abs_diff": 0.0,
+      "agree": true,
+      "independent_p": 0.5714712799290674,
+      "log10_diff": 0.0,
+      "primary_p": 0.5714712799290674,
+      "seed": 271828,
+      "test": "T12_floats"
+    }
+  ],
+  "decision_substitution": {
+    "band": {
+      "hi": 4,
+      "lo": 0
+    },
+    "decision_unchanged": true,
+    "fdr_flag_count": 0,
+    "ks_p": 0.7905655507179055,
+    "small_p_count": 1
+  },
+  "experiment": "EXP-0004",
+  "max_log10_diff": 0.0,
+  "n_comparisons": 30,
+  "reimplemented_tests": [
+    "T01_monobit",
+    "T02_blockfreq",
+    "T03_runs",
+    "T11_bytes",
+    "T12_floats"
+  ],
+  "seeds": [
+    42,
+    7,
+    123,
+    2023,
+    314159,
+    271828
+  ]
+}

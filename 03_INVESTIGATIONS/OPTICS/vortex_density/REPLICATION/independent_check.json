@@ -1,0 +1,33 @@
+{
+  "k0_0.3927": {
+    "charge_imbalance": 0.0008601739462869493,
+    "k0": 0.39269908169872414,
+    "n_modes": 4000,
+    "n_real": 20,
+    "pred_thin_ring_k0sq_over_4pi": 0.01227184630308513,
+    "ratio_mean": 0.9917082433652947,
+    "ratio_std": 0.03281957908140213,
+    "ratio_vs_biased_fft_mean": 0.8926076577648683
+  },
+  "k0_0.7854": {
+    "charge_imbalance": 0.010955583545236368,
+    "k0": 0.7853981633974483,
+    "n_modes": 4000,
+    "n_real": 20,
+    "pred_thin_ring_k0sq_over_4pi": 0.04908738521234052,
+    "ratio_mean": 0.9989751538962801,
+    "ratio_std": 0.017841555869925054,
+    "ratio_vs_biased_fft_mean": 0.9833390371530418
+  },
+  "k0_1.5708": {
+    "charge_imbalance": 0.01320730832524571,
+    "k0": 1.5707963267948966,
+    "n_modes": 4000,
+    "n_real": 20,
+    "pred_thin_ring_k0sq_over_4pi": 0.19634954084936207,
+    "ratio_mean": 0.9853013695196815,
+    "ratio_std": 0.018955595151129823,
+    "ratio_vs_biased_fft_mean": 0.9846216684021041
+  },
+  "note": "Independent construction (explicit plane-wave sum) and independent loop-based contour detector. Ratio is to the correct MODE-WEIGHTED prediction sum|c|^2 kx^2 / sum|c|^2 / (2*pi). The extra 'ratio_vs_biased_fft_mean' uses the FFT-moment predictor, which is biased for fields whose frequencies are off the DFT grid (spectral leakage); it is recorded to document that estimator trap."
+}

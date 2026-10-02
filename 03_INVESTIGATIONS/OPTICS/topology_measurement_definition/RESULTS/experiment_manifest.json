@@ -1,0 +1,246 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3510,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\README.md",
+      "sha256": "6a047d709e908328dc50c9097b959fcb20e8bd56e81f60dc617ce76c39fae8a7"
+    },
+    {
+      "bytes": 3458,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CONFIG\\prereg_EXP-0016.json",
+      "sha256": "8ec2424d7023b1c4c60f05b185f607d72a2ca7586ca68be818ef0bca8e76c4b5"
+    },
+    {
+      "bytes": 7236,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CONFIG\\changes.jsonl",
+      "sha256": "83fd752d0157f7d5720f4835d66f6f57989913d5ce498780f595900d808a8ebf"
+    },
+    {
+      "bytes": 24555,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\run_topology_definition.py",
+      "sha256": "290693d9f26591f92ad050faf04ff9ddc15aa6fc9799797dbb88084f962ee4f8"
+    },
+    {
+      "bytes": 6401,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\run_reference_controls.py",
+      "sha256": "e48a5d3388d1687ef4a8ba26887f8ccc87af1849d4cd63de0386cb58c833e505"
+    },
+    {
+      "bytes": 5232,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\run_boundary_controls.py",
+      "sha256": "59e27e8ce13f98bb545a3aad839f7d614c8b1120a4065f1bec44854163c9ee73"
+    },
+    {
+      "bytes": 2087,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\run_uncertainty.py",
+      "sha256": "41f54059b4bce7f19a4acdf0b35b1e728fb8f01ac0b291d1d93e44d2ece63151"
+    },
+    {
+      "bytes": 4959,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\independent_topology_replication.py",
+      "sha256": "3c5f5c5f14317cab507e1eafb5476526eb8e92aba98575a90689b5293820bfcb"
+    },
+    {
+      "bytes": 16402,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\analyze_topology_results.py",
+      "sha256": "219dbd32c977d6c22ab9b044511d372ba8ad00001048af38ab96130913a3cbf0"
+    },
+    {
+      "bytes": 5709,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\make_figures.py",
+      "sha256": "e71cd86a9fc715b6f2d879d1a0b551a61ce159bfe6639dc29374ea94b6ffb1dc"
+    },
+    {
+      "bytes": 10842,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\make_birdeye_error_map.py",
+      "sha256": "2551440ea80b95df1b5b2f0ea60f973c614e16d98144efb263d34389a165de60"
+    },
+    {
+      "bytes": 3948,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\make_manifest.py",
+      "sha256": "ceddbbdad2f6ec159950292c4fba7a92419004b018775aaef8f86bb7c9f802da"
+    },
+    {
+      "bytes": 1411,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\make_experiment_summary.py",
+      "sha256": "f9ff8ece73d4cd940b93cacbd4d87b4c8f3a5fc82303d9a16324d976519f12d3"
+    },
+    {
+      "bytes": 8724,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CODE\\validate_topology_results.py",
+      "sha256": "a38b4d949c302038df69669c20d75c158bf5f6b5cc6a085fd711a6a7ec40de8f"
+    },
+    {
+      "bytes": 15150,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\REPORT\\TECHNICAL_EXP-0016.md",
+      "sha256": "dc5359d560eeb6eafa1ce3f5013b417ea83bf0db48be12c2bee0f80f7f639a7f"
+    },
+    {
+      "bytes": 21071,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\EXPERIMENT_REGISTRY.md",
+      "sha256": "2f1d4deeba04611e520b0d7b99fc10c7a8216e6dac37004da1f3c7e164db4d2b"
+    },
+    {
+      "bytes": 7280,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\05_EXTERNAL_RESEARCHER_DOSSIER\\DISCOVERY_STATUS.md",
+      "sha256": "fb37375f209456a1a7db977bd865679adedb6a76c97a70e10694355f50d7c3f5"
+    },
+    {
+      "bytes": 7233,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\05_EXTERNAL_RESEARCHER_DOSSIER\\DISCOVERY_LEDGER.md",
+      "sha256": "12d52558005042880f52da6db0604a0700e5b6c12537e523e30574416fbd5638"
+    },
+    {
+      "bytes": 11031,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\05_EXTERNAL_RESEARCHER_DOSSIER\\LITERATURE_NOVELTY_MATRIX.md",
+      "sha256": "46d3705a50302bd712702ac21cf0b83edf4a00d1765a65045900cfe708e0c42a"
+    },
+    {
+      "bytes": 3609,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\05_EXTERNAL_RESEARCHER_DOSSIER\\OPEN_PROBLEMS.md",
+      "sha256": "445e42631091331fb777a5ebe1ac75264476771232092976b047de7910ef3ffe"
+    },
+    {
+      "bytes": 367538,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\topology_analysis_summary.json",
+      "sha256": "9d789f1624593c3788e4099eb6237d24a2e5412826c9def7aa227443119f4aa3"
+    },
+    {
+      "bytes": 27235,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\failure_phase_diagram.csv",
+      "sha256": "2d24b8d2c5d17efe964ad40be99e59cff984064582e3f34d198cba97e729363b"
+    },
+    {
+      "bytes": 61245,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\phase_disagreement.csv",
+      "sha256": "1a60771e04b4e026682b1d536e92a8eaf6991cc8195ddcbc0f22fdcc46824368"
+    },
+    {
+      "bytes": 4571,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\calibration_summary.csv",
+      "sha256": "dd9e54a0f0a54515defb51d155f6ce18e317a297d738915e50786c205b1fe414"
+    },
+    {
+      "bytes": 18392,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\propagation_summary.csv",
+      "sha256": "91854eb17f4a8968aaf10d17f4d4faba3d9acb723a35d67fd642bc1ba620588d"
+    },
+    {
+      "bytes": 1791,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\null_summary.csv",
+      "sha256": "f94a78fa59e169252d299855e1a8972f20b10984592f3011ea83d44a4d5ff926"
+    },
+    {
+      "bytes": 208,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\uncertainty_bootstrap.csv",
+      "sha256": "ec5e4493b937e5be59142198f79346464149d28cbef90e69cf5f09d4b6ec9f04"
+    },
+    {
+      "bytes": 2110,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\boundary_summary.csv",
+      "sha256": "bce5bc5d1d76ebc8960064c38b26e0a41c9937283018939108ec35ba1485d9f4"
+    },
+    {
+      "bytes": 12336,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\birdeye_error_spots.csv",
+      "sha256": "653b9e935dfef07804418b406b15f3de014c9cfc296bd17f43d049c89d39fe5b"
+    },
+    {
+      "bytes": 797,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\birdeye_error_summary.json",
+      "sha256": "79db55fe81eeea0adba2e17ac768382ae760ee03c8824c38501c41cd34af16b8"
+    },
+    {
+      "bytes": 6919,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\validation_summary.json",
+      "sha256": "160a2b2c0a0a794ae9aa1990a5ae98a64b82593d5eb88a6ca5bce9d692959457"
+    },
+    {
+      "bytes": 1069,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\experiment.json",
+      "sha256": "3eb178c7cd61a4d09293f4a02de5a447f769cfe84fb57206a5ece311430f9271"
+    },
+    {
+      "bytes": 93310,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\FIGURES\\boundary_crossing_control.png",
+      "sha256": "224d12ae0c7bb50bffcad7bbbb1d66511404f77580fd55fa0ed83b45e09b734d"
+    },
+    {
+      "bytes": 60729,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\FIGURES\\charge_two_count_semantics.png",
+      "sha256": "f57e12e4945b5c29a7a2a394892aec872a9c7e26648890ea03b952130ab82f47"
+    },
+    {
+      "bytes": 59636,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\FIGURES\\close_pair_failure_phase_diagram.png",
+      "sha256": "a27c4ac73b5c12e3376288674eb2410e5a406d041de600fc776c33f88085d5d0"
+    },
+    {
+      "bytes": 470020,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\FIGURES\\EXP-0016_birdeye_error_map.png",
+      "sha256": "7c67724c36319f756289f8ce716e374434ff0eb84a9b1ef6a9643a21c6f2584f"
+    },
+    {
+      "bytes": 59836,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\FIGURES\\propagation_annihilation_subset.png",
+      "sha256": "20f2f808363d0bcb840e66a37ae0f7a1bdbbe8df824ee9d99b157c22dc2e38a5"
+    },
+    {
+      "bytes": 114957,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\FIGURES\\single_vortex_failure_phase_diagram.png",
+      "sha256": "6c0edc227c56cc9469810609c7a6a6c8aca284eb1dd30611159462017b11e031"
+    },
+    {
+      "bytes": 255786,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\calibration_20260924_144649.json",
+      "sha256": "14d3d3db848d0cd922f0ddd65137a9a7b4e51060389bf25973a7e9d064bec543"
+    },
+    {
+      "bytes": 2308767,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\phase_diagram_20260924_144719.json",
+      "sha256": "1e2b1ee14ea439c3511123c011c626baeb98cf4b63ed124c8041ea2bd483c457"
+    },
+    {
+      "bytes": 256799,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\propagation_20260924_144726.json",
+      "sha256": "8d22e7b6d3e292e42bef7bea36ebbc3fb2e6c6267b1a2ba5c1d3f7d959252832"
+    },
+    {
+      "bytes": 41278,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\nulls_20260924_144734.json",
+      "sha256": "d60165960f14a101d690c19f449a6de8c65c37d83107e6581ef423163b26a7bd"
+    },
+    {
+      "bytes": 547538,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\uncertainty_20260924_144655.json",
+      "sha256": "2f4c0aa3e669f3a461b6d41c645334dc36cb42849f8a544a7b9829df85f59cfb"
+    },
+    {
+      "bytes": 944907,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\boundary_controls_20260924_145034.json",
+      "sha256": "df16346d7f776f180d954a5532de7f20e08759af1787f6fb972c7a35a7f2d5a3"
+    },
+    {
+      "bytes": 81376,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\independent_topology_replication_20260924_143809.json",
+      "sha256": "34cfdde670aed073b99a60534c9ab3e40caeae4c5b2a00b167ae8c3489f59942"
+    },
+    {
+      "bytes": 205441,
+      "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\reference_padding_20260924_144736.json",
+      "sha256": "a162bf8ef678fdf783358349f4a2fedf3c9eec5d41c80ca437e74ec13765a2cc"
+    }
+  ],
+  "commit": null,
+  "dossier_updated": true,
+  "environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "experiment": "EXP-0016",
+  "generated_utc": "2026-09-24T05:04:20Z",
+  "historical_experiment_files_modified": false,
+  "preregistration_sha256": "c1935da7ac10d628386f313594a66e6a91c0466cb378da1ac1b02ca57895e54b",
+  "status": "COMPLETE / MEASUREMENT-DEFINITION RESULT / NO_NOVELTY_CLAIM",
+  "validation_status": "PASS"
+}

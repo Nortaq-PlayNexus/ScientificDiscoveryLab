@@ -1,0 +1,93 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: pytest (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest -q
+
+  integrity:
+    name: result hashes verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify recorded results were not edited after the run
+        run: python experiment_verify.py RESULTS/experiment.json RESULTS/experiment_C003.json
+
+  headline:
+    name: headline claims reproduce
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Calibration gate must pass, F-B must hold in both regions
+        run: |
+          python - <<'PY'
+          from battery import calibrate_known_answers
+          from perturbation import compare_regions
+
+          cal = calibrate_known_answers()
+          assert cal.passed, cal.failures
+          print("calibration PASS")
+
+          # NOTE: gates live in the per-region sub-dicts, not at the top level of
+          # compare_regions(). An earlier version of this job asserted on r["gates"]
+          # and died with KeyError on a clean checkout — which would have read as
+          # the battery failing when in fact the checker was wrong. Same class as
+          # F05/F06: a checker failing for a reason unrelated to what it checks.
+          r = compare_regions(seed=0)
+          detail = r["verdict_detail"]
+          assert detail["load_claim_FB_holds_both"], detail
+          for region in ("plausible_region", "aggressive_region"):
+              fb = r[region]["gates"]["F-B adversarial < human"]
+              assert fb >= 0.95, (region, fb)
+              print(f"{region}: F-B hold rate {fb:.4f}")
+          print(r["verdict"])
+          PY
+
+  lint:
+    name: flake8
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: pip install flake8
+      - name: Run flake8
+        # Config (max-line-length, extend-exclude, extend-ignore) lives in
+        # setup.cfg so local runs and CI cannot disagree.
+        run: flake8 .

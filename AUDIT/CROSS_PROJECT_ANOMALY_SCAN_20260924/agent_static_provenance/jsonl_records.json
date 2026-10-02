@@ -1,0 +1,227 @@
+[
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/registry.jsonl",
+    "value": {
+      "action": "preregister",
+      "date": "2026-09-21",
+      "detail": "Preregistration frozen (prereg_EXP-0014.json). Protocol: compute delta_n, alpha_n for z=2,3,4 via superstable-cycle search with period verification.",
+      "experiment_id": "EXP-0014",
+      "hypothesis": "HYP-M005",
+      "question": "Q-M005"
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "INCONCLUSIVE",
+      "experiment_id": "EXP-0008",
+      "hypothesis": "HYP-005",
+      "prereg_sha256": "076667a54d12fa495dee8ee7ee246203e92c59a35bd012bebb72ead075b24336",
+      "question": "Q-M002",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\RESULTS\\EXP-0008_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "H1_SUPPORTED",
+      "experiment_id": "EXP-0008",
+      "hypothesis": "HYP-005",
+      "prereg_sha256": "076667a54d12fa495dee8ee7ee246203e92c59a35bd012bebb72ead075b24336",
+      "question": "Q-M002",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\MATHEMATICS\\prime_gaps\\RESULTS\\EXP-0008_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "H1_SUPPORTED",
+      "experiment_id": "EXP-0002",
+      "hypothesis": "HYP-001",
+      "question": "Q-O001",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\speckle_contrast_law\\RESULTS\\EXP-0002_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "H1_SUPPORTED",
+      "experiment_id": "EXP-0002",
+      "hypothesis": "HYP-001",
+      "question": "Q-O001",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\speckle_contrast_law\\RESULTS\\EXP-0002_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/changelog.jsonl",
+    "value": {
+      "change": "Replaced control C2 detector D2 with a corrected zero-contour intersection test (crossing_density); the original cell-based detector (now crossing_density_naive) overcounted by ~2.5x because it did not verify the two contours intersect inside the cell.",
+      "experiment_id": "EXP-0003",
+      "reason": "C2 first run showed crossing/winding ratio ~2.5, indicating a detector defect, not a physics effect. Primary detector D1 and all primary H0 results are unaffected (identical field generation and seeds). Both detectors are now reported.",
+      "timestamp_utc": "2026-09-17T06:14:28+00:00"
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/changelog.jsonl",
+    "value": {
+      "change": "Independent replication now predicts the vortex density with the mode-weighted expression sum|c_m|^2 kx_m^2 / sum|c_m|^2 / (2*pi) instead of the FFT-moment expression.",
+      "experiment_id": "EXP-0003-C6",
+      "reason": "The FFT-moment predictor is biased for the plane-wave field because its wavevectors are off the DFT grid; spectral leakage inflates <|dE/dx|^2> (gave ratio ~0.89 at k0=pi/8). With the correct predictor the independent route gives 0.985-0.999 across k0, consistent with the main experiment. The biased value is retained in the JSON for documentation.",
+      "timestamp_utc": "2026-09-17T06:17:24+00:00"
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "H0_SUPPORTED",
+      "experiment_id": "EXP-0003",
+      "hypothesis": "HYP-002",
+      "question": "Q-O002",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\vortex_density\\RESULTS\\EXP-0003_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "H0_SUPPORTED",
+      "experiment_id": "EXP-0003",
+      "hypothesis": "HYP-002",
+      "question": "Q-O002",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\vortex_density\\RESULTS\\EXP-0003_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "INCONCLUSIVE",
+      "experiment_id": "EXP-0004",
+      "hypothesis": "HYP-003",
+      "question": "Q-I004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OTHER\\rng_certification\\RESULTS\\EXP-0004_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/OTHER/rng_certification/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "CERTIFIED",
+      "experiment_id": "EXP-0004",
+      "hypothesis": "HYP-003",
+      "question": "Q-I004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OTHER\\rng_certification\\RESULTS\\EXP-0004_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "INCONCLUSIVE",
+      "experiment_id": "EXP-0005",
+      "hypothesis": "HYP-004",
+      "question": "Q-P004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\CODE\\RESULTS\\EXP-0005_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "frozen EXP-0005=INCONCLUSIVE unchanged; corrected C8 on same cells = 0.7922 PASS (was 1.2384 FAIL)",
+      "experiment_id": "EXP-0005-DIAG",
+      "hypothesis": "HYP-004",
+      "kind": "width-route corrected-estimator diagnostic",
+      "note": "diagnostic; deterministic from frozen cells; no new MC; frozen RESULTS/registry row preserved",
+      "question": "Q-P004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\CODE\\RESULTS\\EXP-0005_width_route_corrected.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 3,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "INCONCLUSIVE",
+      "experiment_id": "EXP-0006",
+      "hypothesis": "HYP-004",
+      "question": "Q-P004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\CODE\\RESULTS\\EXP-0006_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 4,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "INCONCLUSIVE",
+      "experiment_id": "EXP-0006",
+      "hypothesis": "HYP-004",
+      "question": "Q-P004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\CODE\\RESULTS\\EXP-0006_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 5,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "H0_SUPPORTED",
+      "experiment_id": "EXP-0007",
+      "hypothesis": "HYP-004",
+      "question": "Q-P004",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\CODE\\RESULTS\\EXP-0007_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 1,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/registry.jsonl",
+    "value": {
+      "decision": "gates PASS, some P/R out of tolerance",
+      "experiment_id": "EXP-0009",
+      "exponent_values": [
+        1.869737723898956,
+        1.7596163275742946,
+        0.1295052403370289,
+        1.9404475614638073,
+        0.7433586424819032
+      ],
+      "hypothesis": "HYP-005",
+      "question": "Q-P005",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\EXP-0009_results.json",
+      "seed": 42
+    }
+  },
+  {
+    "line": 2,
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/registry.jsonl",
+    "value": {
+      "Df_SE": 0.02843638397194058,
+      "Df_measured": 1.896198293208009,
+      "decision": "LATTICE_ARTIFACT",
+      "experiment_id": "EXP-0010",
+      "hypothesis": "HYP-005",
+      "question": "Q-P005",
+      "result_path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\PHYSICS\\percolation\\Q-P005_exponents\\CODE\\RESULTS\\EXP-0010_results.json",
+      "seed": 42
+    }
+  }
+]

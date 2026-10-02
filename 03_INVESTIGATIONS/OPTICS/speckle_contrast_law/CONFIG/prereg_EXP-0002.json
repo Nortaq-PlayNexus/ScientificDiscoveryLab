@@ -1,0 +1,40 @@
+{
+  "alpha": 0.01,
+  "experiment_id": "EXP-0002",
+  "hypothesis_id": "HYP-001",
+  "note": "Frozen before execution.",
+  "parameters": {
+    "M_ladder": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "aperture_frac": 0.125,
+    "grid_N": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "interior_frac": 0.8,
+    "n_boot": 500,
+    "n_realisations": 32
+  },
+  "preregistered_analyses": [
+    "bootstrap-99% CI",
+    "BH-FDR across grid"
+  ],
+  "preregistered_controls": [
+    "C1 positive M=1",
+    "C2 MC spread",
+    "C3 seed ladder",
+    "C4 resolution ladder",
+    "C5 generator KS",
+    "C7 ensemble-vs-space"
+  ],
+  "question_id": "Q-O001",
+  "seed": 42,
+  "timestamp_utc": "2026-09-17T04:18:14+00:00"
+}

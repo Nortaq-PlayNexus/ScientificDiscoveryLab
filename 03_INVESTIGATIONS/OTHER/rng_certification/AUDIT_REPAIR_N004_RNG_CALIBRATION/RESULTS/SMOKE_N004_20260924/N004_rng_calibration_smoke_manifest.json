@@ -1,0 +1,16 @@
+{
+  "certification_claim": false,
+  "config": {
+    "path": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OTHER\\rng_certification\\AUDIT_REPAIR_N004_RNG_CALIBRATION\\CONFIG\\n004_smoke_config.json",
+    "sha256": "8b03336c9de75e46e7be1399915350d4c3d2978af4a288c5be2c6e1358b256d7"
+  },
+  "production_run_launched": false,
+  "result": {
+    "filename": "N004_rng_calibration_smoke_results.json",
+    "sha256": "06901b00a09e0fcbaed83fc10f4eb1d481009df01fb101de7b125942f06b18a3",
+    "size_bytes": 40211
+  },
+  "schema": "n004-rng-calibration-smoke-manifest/v1",
+  "scientific_result": null,
+  "status": "PASS_INFRASTRUCTURE_SMOKE_ONLY"
+}

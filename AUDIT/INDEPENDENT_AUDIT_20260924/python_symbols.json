@@ -1,0 +1,2824 @@
+[
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz.py",
+    "syntax_error": "invalid non-printable character U+FEFF (run_collatz.py, line 1)"
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/run_collatz_full.py",
+    "lines": 127,
+    "functions": [
+      "collatz_stop",
+      "run_family"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/collatz/CODE/save_full_results.py",
+    "lines": 80,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/feigenbaum_engine.py",
+    "lines": 324,
+    "functions": [
+      "make_map",
+      "iterate_map",
+      "find_first_return",
+      "residual",
+      "find_all_sign_changes",
+      "select_correct_root",
+      "bracket_superstable",
+      "find_superstable",
+      "compute_delta",
+      "compute_alpha",
+      "run_feigenbaum",
+      "compute_control_c1",
+      "main",
+      "f"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "math",
+      "os",
+      "scipy.optimize",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py",
+    "lines": 219,
+    "functions": [
+      "save_experiment_json",
+      "save_results_summary",
+      "run_controls",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "datetime",
+      "feigenbaum_engine",
+      "json",
+      "os",
+      "scipy.optimize",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py",
+    "lines": 707,
+    "functions": [
+      "progress",
+      "load_prereg",
+      "bootstrap_means",
+      "_c3_bootstrap_for_seed",
+      "bh_fdr",
+      "bh_fdr_q",
+      "chi2_gof_block",
+      "stats_from_deltas",
+      "run_block_gates",
+      "residue_conditioning",
+      "run_c7",
+      "write_outputs",
+      "write_experiment_json",
+      "write_reports",
+      "append_registry",
+      "sieve_primes",
+      "build_report"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "engine.utilities.core",
+      "json",
+      "multiprocessing",
+      "numpy",
+      "os",
+      "scipy",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/analyze_bins.py",
+    "lines": 144,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py",
+    "lines": 127,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/compare_scales.py",
+    "lines": 60,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py",
+    "lines": 168,
+    "functions": [
+      "base_sieve",
+      "segmented_gap_stats",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py",
+    "lines": 288,
+    "functions": [
+      "sieve_primes_numpy",
+      "compute_gaps",
+      "chi2_goF",
+      "ks_test",
+      "tail_test",
+      "bh_fdr",
+      "run_analysis",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0013.py",
+    "lines": 152,
+    "functions": [
+      "segmented_sieve_gaps",
+      "chi2_goF",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py",
+    "lines": 143,
+    "functions": [
+      "hill",
+      "generate_dose_response"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os",
+      "scipy.optimize",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/REPLICATION/independent_check.py",
+    "lines": 250,
+    "functions": [
+      "load_prereg",
+      "segmented_sieve",
+      "bh_fdr",
+      "equal_width_gof",
+      "quantile_gof",
+      "compute_primary",
+      "decide",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "bisect",
+      "datetime",
+      "engine.utilities.core",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "scipy",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/make_figure.py",
+    "lines": 36,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "os"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py",
+    "lines": 237,
+    "functions": [
+      "bootstrap_effects",
+      "speckle_intensity",
+      "interior_mask",
+      "ci_bootstrap",
+      "run_cell",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.hypothesis_testing.prereg",
+      "engine.reproducibility.experiments",
+      "engine.statistics.testers",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/REPLICATION/independent_check.py",
+    "lines": 46,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/make_figure.py",
+    "lines": 61,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "os"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py",
+    "lines": 442,
+    "functions": [
+      "margin_for",
+      "spectrum_grid",
+      "real_gaussian",
+      "complex_field",
+      "winding_counts",
+      "crossing_density_naive",
+      "_edge_crossings",
+      "crossing_density",
+      "shift_field",
+      "spectral_prediction",
+      "fd_prediction",
+      "bootstrap_ci",
+      "run_cell",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.hypothesis_testing.prereg",
+      "engine.reproducibility.experiments",
+      "engine.statistics.testers",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OPTICS/vortex_density/REPLICATION/independent_check.py",
+    "lines": 182,
+    "functions": [
+      "plane_wave_field",
+      "fft_prediction",
+      "_two_crossings",
+      "_segments_cross",
+      "detect_loop",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CODE/check_threshold.py",
+    "lines": 32,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/CODE/investigate_discrepancy.py",
+    "lines": 70,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OTHER/rng_certification/CODE/plot_battery.py",
+    "lines": 75,
+    "functions": [
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py",
+    "lines": 338,
+    "functions": [
+      "make_generator",
+      "sha_bytes",
+      "child_stream_hash",
+      "aggregate",
+      "main",
+      "__init__",
+      "integers",
+      "random"
+    ],
+    "classes": [
+      "_Adapter"
+    ],
+    "imports": [
+      "__future__",
+      "engine.hypothesis_testing.prereg",
+      "engine.reproducibility.experiments",
+      "engine.statistics.testers",
+      "engine.utilities.core",
+      "engine.validation",
+      "engine.validation.rng_battery",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "subprocess",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/OTHER/rng_certification/REPLICATION/independent_check.py",
+    "lines": 217,
+    "functions": [
+      "erfc_p",
+      "iMonobit",
+      "iBlockFreq",
+      "iRuns",
+      "iByteChisq",
+      "iFloatChisq",
+      "main",
+      "streams_independent"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "collections",
+      "engine.statistics.testers",
+      "engine.utilities.core",
+      "engine.validation",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "scipy",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0006_summary.py",
+    "lines": 187,
+    "functions": [
+      "interp_p50",
+      "fit_width_mle",
+      "fit_width_wls",
+      "widths_per_L",
+      "inv_nu_from",
+      "main",
+      "nll"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/build_exp0007_summary.py",
+    "lines": 223,
+    "functions": [
+      "interp_p50",
+      "fit_width",
+      "bootstrap_1nu",
+      "main",
+      "nll",
+      "slope_from_widths"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy.optimize",
+      "scipy.stats",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_exp0007_L192.py",
+    "lines": 79,
+    "functions": [
+      "cell_label",
+      "_ufind_bond_wrap_cell",
+      "main",
+      "find"
+    ],
+    "classes": [],
+    "imports": [
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_exp0007_stage1.py",
+    "lines": 88,
+    "functions": [
+      "cell_label",
+      "_ufind_bond_wrap_cell",
+      "main",
+      "find"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation.py",
+    "lines": 529,
+    "functions": [
+      "canonical_p",
+      "cell_label",
+      "interp_p50",
+      "_batch_ndarray_cell",
+      "_ufind_bond_wrap_cell",
+      "load_prereg_params",
+      "p_grids_for",
+      "run_cell",
+      "bootstrap_p50",
+      "fss_fit",
+      "fit_probit_width",
+      "planning_checks",
+      "main",
+      "find",
+      "nll"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.reproducibility.experiments",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+    "lines": 388,
+    "functions": [
+      "canonical_p",
+      "cell_label",
+      "interp_p50",
+      "_batch_ndarray_cell",
+      "p_grids_for",
+      "run_cell",
+      "bootstrap_p50",
+      "fss_fit",
+      "fit_probit_width",
+      "main",
+      "nll"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.reproducibility.experiments",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0007.py",
+    "lines": 391,
+    "functions": [
+      "canonical_p",
+      "cell_label",
+      "interp_p50",
+      "_ufind_bond_wrap_cell",
+      "load_prereg_params",
+      "p_grids_for",
+      "run_cell",
+      "bootstrap_p50",
+      "fss_fit",
+      "fit_probit_width",
+      "main",
+      "find",
+      "nll"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.reproducibility.experiments",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+    "lines": 515,
+    "functions": [
+      "_grid_nodes",
+      "square_lattice",
+      "triangular_lattice",
+      "honeycomb_lattice",
+      "brick_lattice",
+      "rect_square_lattice",
+      "cubic_lattice_3d",
+      "row_node_indices",
+      "build_component_array",
+      "spanning_flags",
+      "cluster_stats",
+      "site_cluster_sizes",
+      "largest_cluster_mask",
+      "cell_rng",
+      "draw_site_cell",
+      "draw_bond_cell",
+      "run_span_cell_edges",
+      "interp_p50",
+      "bootstrap_p50",
+      "fss_fit",
+      "loglog_slope",
+      "probit_fit",
+      "append_registry",
+      "write_summary",
+      "add",
+      "nll"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.reproducibility.experiments",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy",
+      "scipy.sparse",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0009.py",
+    "lines": 453,
+    "functions": [
+      "bs_name",
+      "cell_label",
+      "run_exponent_cell",
+      "_cells_path",
+      "save_cell",
+      "load_cell",
+      "bootstrap_slope",
+      "fit_tau_cumulative",
+      "fit_tau_histogram",
+      "probit_width",
+      "span_census_digest",
+      "c6_seedladder",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py",
+    "lines": 171,
+    "functions": [
+      "cell_label",
+      "run_cell",
+      "save_cell",
+      "load_cell",
+      "bootstrap_slope",
+      "span_census_digest",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py",
+    "lines": 192,
+    "functions": [
+      "cell_label",
+      "uf_census",
+      "engine_subset",
+      "main",
+      "__init__",
+      "find",
+      "union",
+      "merge_neighbors"
+    ],
+    "classes": [
+      "UnionFind"
+    ],
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run_q_p006.py",
+    "lines": 107,
+    "functions": [
+      "cell_label_p",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "run_exp0009",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py",
+    "lines": 179,
+    "functions": [
+      "cell_label_p",
+      "cell_npz_path",
+      "save_cell_data",
+      "load_cell_data",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "run_exp0009",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_q_p007.py",
+    "lines": 184,
+    "functions": [
+      "cell_label_p",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "run_exp0009",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py",
+    "lines": 193,
+    "functions": [
+      "canonical_p",
+      "cell_label",
+      "bond_span_cell",
+      "bond_wrap_cell",
+      "main",
+      "__init__",
+      "find",
+      "union"
+    ],
+    "classes": [
+      "UF"
+    ],
+    "imports": [
+      "__future__",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check_exp0007.py",
+    "lines": 198,
+    "functions": [
+      "canonical_p",
+      "cell_label",
+      "bond_wrap_cell",
+      "main",
+      "__init__",
+      "find",
+      "union",
+      "interp_p50"
+    ],
+    "classes": [
+      "UF"
+    ],
+    "imports": [
+      "__future__",
+      "engine.utilities.core",
+      "json",
+      "numpy",
+      "os",
+      "scipy.optimize",
+      "scipy.stats",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/benchmark.py",
+    "lines": 14,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "numpy",
+      "os",
+      "perc_engine",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py",
+    "lines": 141,
+    "functions": [
+      "uf_span",
+      "main",
+      "__init__",
+      "find",
+      "union"
+    ],
+    "classes": [
+      "UF"
+    ],
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "sys"
+    ]
+  },
+  {
+    "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+    "lines": 219,
+    "functions": [
+      "cell_label",
+      "width_curve_L",
+      "measure_p_c_width",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os",
+      "perc_engine",
+      "run_exp0009",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/__init__.py",
+    "lines": 17,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/datasets/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/datasets/manifest.py",
+    "lines": 28,
+    "functions": [
+      "manifest_directory"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "json",
+      "os",
+      "utilities.core"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/hypothesis_testing/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py",
+    "lines": 67,
+    "functions": [
+      "freeze_config",
+      "log_change"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/reproducibility/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/reproducibility/experiments.py",
+    "lines": 84,
+    "functions": [
+      "scaffold_investigation",
+      "append_registry_row",
+      "read_registry"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/simulation/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/simulation/controls.py",
+    "lines": 71,
+    "functions": [
+      "gaussian_field",
+      "matched_spectrum_surrogate",
+      "phase_shuffle_1d",
+      "resolution_ladder",
+      "seed_ladder",
+      "permuted_rows"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "numpy",
+      "utilities.core"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/statistics/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/statistics/testers.py",
+    "lines": 103,
+    "functions": [
+      "bh_fdr",
+      "cohens_d",
+      "welch_t",
+      "effect_size_and_ci",
+      "summarize",
+      "binomial_band"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "numpy",
+      "scipy",
+      "utilities.core"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/utilities/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/utilities/core.py",
+    "lines": 102,
+    "functions": [
+      "seed_value",
+      "rng",
+      "sha256_file",
+      "sha256_text",
+      "version_info",
+      "machine_info",
+      "make_experiment_json"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "platform",
+      "sys"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/validation/__init__.py",
+    "lines": 10,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      ""
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/validation/rng_battery.py",
+    "lines": 419,
+    "functions": [
+      "_run_limited_counts",
+      "_lro_block_probs",
+      "gammaincc",
+      "_erfc_p",
+      "t_monobit",
+      "t_block_freq",
+      "t_runs",
+      "_longest_run_ones_block",
+      "t_longest_run",
+      "_gf2_rank",
+      "t_matrix_rank",
+      "t_dft",
+      "t_nontemplate",
+      "_sliding_pattern_counts",
+      "_psi_sq",
+      "t_serial",
+      "_phi_m",
+      "t_apen",
+      "_cusum_p",
+      "t_cusum",
+      "t_byte_chisq",
+      "t_float_chisq",
+      "t_word_bucket",
+      "t_gap",
+      "t_autocorr",
+      "run_battery",
+      "draw_arrays",
+      "streams_for"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "functools",
+      "math",
+      "numpy",
+      "scipy"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/visualization/__init__.py",
+    "lines": 1,
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "04_SHARED_ENGINE/engine/visualization/plots.py",
+    "lines": 44,
+    "functions": [
+      "save_figure",
+      "default_palette",
+      "add_error_band",
+      "heatmap"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "os"
+    ]
+  },
+  {
+    "path": "04_SHARED_ENGINE/tests/run_infra_validation.py",
+    "lines": 170,
+    "functions": [
+      "_rng_check",
+      "run_all",
+      "check"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.datasets.manifest",
+      "engine.reproducibility.experiments",
+      "engine.simulation.controls",
+      "engine.statistics.testers",
+      "engine.utilities.core",
+      "engine.validation",
+      "json",
+      "numpy",
+      "os",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ]
+  },
+  {
+    "path": "AUDIT/INDEPENDENT_AUDIT_20260924/build_inventory.py",
+    "lines": 113,
+    "functions": [
+      "sha256",
+      "read_text"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "ast",
+      "collections",
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "re"
+    ]
+  },
+  {
+    "path": "CODE/EXP-0005_width_route_corrected.py",
+    "lines": 106,
+    "functions": [
+      "interp_p50",
+      "fit_probit_width",
+      "by_L",
+      "nll"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os",
+      "scipy"
+    ]
+  },
+  {
+    "path": "CODE/run_percolation_exp0006.py",
+    "lines": 32,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "os",
+      "run_percolation",
+      "sys"
+    ]
+  },
+  {
+    "path": "create_q006_docs.py",
+    "lines": 145,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "create_q007_docs.py",
+    "lines": 76,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "dashboard.py",
+    "lines": 168,
+    "functions": [
+      "_scan_investigations",
+      "_scan_anomalies",
+      "_scan_results",
+      "_scan_registries",
+      "_machine",
+      "console_report",
+      "render_html"
+    ],
+    "classes": [],
+    "imports": [
+      "__future__",
+      "engine.utilities.core",
+      "json",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "DIAGNOSTICS/EXP-0006_phase1_bond_wrap.py",
+    "lines": 146,
+    "functions": [
+      "load",
+      "bootstrap_p50"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os",
+      "scipy.optimize",
+      "sys"
+    ]
+  },
+  {
+    "path": "DIAGNOSTICS/EXP-0006_phase2_run.py",
+    "lines": 52,
+    "functions": [
+      "patched_load"
+    ],
+    "classes": [],
+    "imports": [
+      "os",
+      "run_percolation",
+      "sys"
+    ]
+  },
+  {
+    "path": "fix_q006_cells.py",
+    "lines": 27,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "numpy",
+      "os",
+      "shutil"
+    ]
+  },
+  {
+    "path": "save_audits.py",
+    "lines": 104,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "save_q9results.py",
+    "lines": 65,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "json",
+      "numpy",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "src/__init__.py",
+    "lines": 147,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "src.adversarial",
+      "src.dashboard",
+      "src.experiment",
+      "src.failure",
+      "src.hypothesis",
+      "src.literature",
+      "src.molecular.engine",
+      "src.navigation",
+      "src.novelty",
+      "src.observation",
+      "src.plant.engine",
+      "src.reaction.engine",
+      "src.reaction.mixer",
+      "src.replay",
+      "src.scheduler",
+      "src.simulation",
+      "src.statistics",
+      "src.ui"
+    ]
+  },
+  {
+    "path": "src/adversarial/__init__.py",
+    "lines": 236,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "check_artifact",
+      "check_database_error",
+      "check_stereochemistry",
+      "check_parameter",
+      "check_numerical",
+      "check_docking_bias",
+      "check_overfitting",
+      "check_multiple_testing",
+      "check_selection_bias",
+      "check_alternative_method",
+      "check_alternative_explanation",
+      "run_full_adversarial",
+      "can_reject"
+    ],
+    "classes": [
+      "CheckCategory",
+      "AdversarialFinding",
+      "AdversarialScientist"
+    ],
+    "imports": [
+      "datetime",
+      "enum",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/dashboard/__init__.py",
+    "lines": 172,
+    "functions": [
+      "__init__",
+      "update",
+      "to_dict",
+      "__init__",
+      "_build_sections",
+      "refresh",
+      "_refresh_active_experiments",
+      "_refresh_running_simulations",
+      "_refresh_hypotheses",
+      "_refresh_evidence_distribution",
+      "_refresh_compute_usage",
+      "get_section",
+      "get_section_data",
+      "to_dict",
+      "widget_count"
+    ],
+    "classes": [
+      "DashboardSection",
+      "Dashboard"
+    ],
+    "imports": [
+      "datetime",
+      "psutil",
+      "src.experiment",
+      "src.hypothesis",
+      "src.novelty",
+      "src.observation",
+      "src.scheduler",
+      "src.ui",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/database/__init__.py",
+    "lines": 30,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "contextlib",
+      "sqlalchemy",
+      "sqlalchemy.orm",
+      "src.database.models",
+      "src.evidence",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/database/db.py",
+    "lines": 14,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "sqlalchemy",
+      "sqlalchemy.orm",
+      "src.database.models"
+    ]
+  },
+  {
+    "path": "src/database/models.py",
+    "lines": 341,
+    "functions": [
+      "generate_id",
+      "get_engine",
+      "get_session",
+      "init_db"
+    ],
+    "classes": [
+      "Plant",
+      "Species",
+      "PlantPart",
+      "Extract",
+      "Compound",
+      "Molecule",
+      "Reaction",
+      "ReactionCondition",
+      "Target",
+      "Protein",
+      "Gene",
+      "Disease",
+      "BiologicalEffect",
+      "Experiment",
+      "Simulation",
+      "LiteratureSource",
+      "Dataset",
+      "Hypothesis",
+      "Prediction",
+      "EvidenceRecord",
+      "Result"
+    ],
+    "imports": [
+      "datetime",
+      "sqlalchemy",
+      "sqlalchemy.orm",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/evidence/__init__.py",
+    "lines": 118,
+    "functions": [
+      "is_computational",
+      "is_fact",
+      "is_validated",
+      "__init__",
+      "is_computational",
+      "is_fact",
+      "is_validated",
+      "to_dict",
+      "from_dict",
+      "__repr__"
+    ],
+    "classes": [
+      "EvidenceLevel",
+      "EvidenceSourceType",
+      "Evidence"
+    ],
+    "imports": [
+      "datetime",
+      "enum",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/experiment/__init__.py",
+    "lines": 235,
+    "functions": [
+      "__init__",
+      "mark_running",
+      "mark_completed",
+      "mark_failed",
+      "mark_cancelled",
+      "is_immutable",
+      "to_dict",
+      "__init__",
+      "create",
+      "get",
+      "list_all",
+      "list_by_status",
+      "count",
+      "clone",
+      "compare",
+      "branch",
+      "merge",
+      "to_dict"
+    ],
+    "classes": [
+      "ExperimentStatus",
+      "Experiment",
+      "ExperimentManager"
+    ],
+    "imports": [
+      "datetime",
+      "json",
+      "os",
+      "src.utils.id_gen",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/failure/__init__.py",
+    "lines": 227,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "_generate_failure_id",
+      "capture",
+      "_diagnose",
+      "get_failure",
+      "get_by_experiment",
+      "get_unresolved",
+      "mark_resolved",
+      "safe_retry",
+      "get_log",
+      "get_summary",
+      "preserve_original_results",
+      "to_dict"
+    ],
+    "classes": [
+      "FailureType",
+      "FailureRecord",
+      "FailureRecovery"
+    ],
+    "imports": [
+      "datetime",
+      "src.utils.id_gen",
+      "traceback",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/hypothesis/__init__.py",
+    "lines": 185,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "set_status",
+      "add_prediction",
+      "add_test",
+      "add_assumption",
+      "is_falsifiable",
+      "to_dict",
+      "__init__",
+      "create",
+      "get_by_id",
+      "get_by_status",
+      "search_novelty",
+      "get_summary"
+    ],
+    "classes": [
+      "HypothesisStatus",
+      "Prediction",
+      "Hypothesis",
+      "HypothesisEngine"
+    ],
+    "imports": [
+      "datetime",
+      "src.evidence",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/literature/__init__.py",
+    "lines": 236,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "is_abstract_only",
+      "to_dict",
+      "__init__",
+      "search_pubmed",
+      "_fetch_pubmed_summary",
+      "search_arxiv",
+      "validate_citation",
+      "extract_claims",
+      "search_and_extract",
+      "create_source_record"
+    ],
+    "classes": [
+      "Claim",
+      "LiteratureSource",
+      "LiteratureAgent"
+    ],
+    "imports": [
+      "datetime",
+      "requests",
+      "src.evidence",
+      "typing",
+      "xml.etree.ElementTree"
+    ]
+  },
+  {
+    "path": "src/molecular/__init__.py",
+    "lines": 30,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "src.molecular.engine"
+    ]
+  },
+  {
+    "path": "src/molecular/engine.py",
+    "lines": 284,
+    "functions": [
+      "get_molecule_descriptors",
+      "tanimoto_similarity",
+      "get_fingerprints",
+      "get_functional_groups",
+      "get_stereochemistry",
+      "is_duplicate",
+      "is_valid_structure",
+      "get_known_reaction_types",
+      "classify_reaction",
+      "reaction_feasibility",
+      "analyze_reaction",
+      "__init__",
+      "get_2d_structure",
+      "get_smiles",
+      "get_inchi",
+      "get_inchikey",
+      "get_formula",
+      "get_mw",
+      "get_logp",
+      "get_tpsa",
+      "get_hbd",
+      "get_hba",
+      "get_rotatable_bonds",
+      "get_formal_charge",
+      "get_stereocenters",
+      "get_functional_groups",
+      "get_all_descriptors",
+      "get_fingerprints",
+      "get_stereochemistry",
+      "is_valid_structure"
+    ],
+    "classes": [
+      "MoleculeInspector"
+    ],
+    "imports": [
+      "json",
+      "rdkit",
+      "rdkit.Chem",
+      "rdkit.Chem.Draw",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/navigation/__init__.py",
+    "lines": 138,
+    "functions": [
+      "get_nav_sections",
+      "__init__",
+      "activate",
+      "deactivate",
+      "to_dict",
+      "__init__",
+      "to_dict",
+      "__init__",
+      "_init_sections",
+      "navigate",
+      "get_current",
+      "get_breadcrumbs",
+      "get_all_sections",
+      "get_active_section",
+      "to_dict"
+    ],
+    "classes": [
+      "NavItem",
+      "Breadcrumb",
+      "Navigation"
+    ],
+    "imports": [
+      "datetime",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/novelty/__init__.py",
+    "lines": 162,
+    "functions": [
+      "__init__",
+      "unknown_result",
+      "__init__",
+      "search_pubchem",
+      "search_chebi",
+      "check_novelty",
+      "check_reaction_novelty"
+    ],
+    "classes": [
+      "NoveltyResult",
+      "NoveltyEngine"
+    ],
+    "imports": [
+      "datetime",
+      "pubchempy",
+      "requests",
+      "src.evidence",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/observation/__init__.py",
+    "lines": 303,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "snapshot",
+      "__init__",
+      "start_simulation",
+      "update_step",
+      "complete_simulation",
+      "__init__",
+      "record_action",
+      "get_agent_actions",
+      "__init__",
+      "record_query",
+      "get_query_count",
+      "__init__",
+      "record_job",
+      "__init__",
+      "record_error",
+      "get_error_count",
+      "get_errors_by_severity",
+      "__init__",
+      "log_action",
+      "snapshot_system",
+      "start_simulation",
+      "complete_simulation",
+      "get_all_entries",
+      "get_action_log",
+      "get_summary",
+      "to_dict"
+    ],
+    "classes": [
+      "MonitorType",
+      "MonitorEntry",
+      "SystemMonitor",
+      "SimulationMonitor",
+      "AgentMonitor",
+      "DatabaseMonitor",
+      "ComputeMonitor",
+      "ErrorMonitor",
+      "ObservationSystem"
+    ],
+    "imports": [
+      "datetime",
+      "enum",
+      "psutil",
+      "src.utils.id_gen",
+      "threading",
+      "time",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/plant/__init__.py",
+    "lines": 16,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "src.plant.engine"
+    ]
+  },
+  {
+    "path": "src/plant/engine.py",
+    "lines": 123,
+    "functions": [
+      "get_plant_template",
+      "constituent_placeholder",
+      "concentration_range_placeholder",
+      "decompose_plant_ingredients",
+      "__init__",
+      "get_id",
+      "get_scientific_name",
+      "get_common_names",
+      "get_plant_parts",
+      "get_constituents",
+      "get_concentration_ranges",
+      "get_evidence",
+      "is_known",
+      "to_dict",
+      "constituent_smiles"
+    ],
+    "classes": [
+      "PlantProfile"
+    ],
+    "imports": [
+      "datetime",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/reaction/__init__.py",
+    "lines": 12,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "src.reaction.mixer"
+    ]
+  },
+  {
+    "path": "src/reaction/engine.py",
+    "lines": 133,
+    "functions": [
+      "get_known_reaction_types",
+      "classify_reaction",
+      "reaction_feasibility",
+      "analyze_reaction"
+    ],
+    "classes": [],
+    "imports": [
+      "rdkit",
+      "rdkit.Chem",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/reaction/mixer.py",
+    "lines": 132,
+    "functions": [
+      "classify_interaction",
+      "decompose_ingredients",
+      "__init__",
+      "add_ingredient",
+      "set_condition",
+      "get_ingredients",
+      "get_conditions",
+      "mix"
+    ],
+    "classes": [
+      "VirtualMixer"
+    ],
+    "imports": [
+      "src.plant.engine",
+      "src.reaction.engine",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/replay/__init__.py",
+    "lines": 168,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "_generate_replay_id",
+      "reproduce",
+      "_compare",
+      "get_replay",
+      "get_by_experiment",
+      "count",
+      "to_dict"
+    ],
+    "classes": [
+      "ReplayResult",
+      "ReplayEngine"
+    ],
+    "imports": [
+      "datetime",
+      "hashlib",
+      "json",
+      "src.experiment",
+      "src.utils.id_gen",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/scheduler/__init__.py",
+    "lines": 282,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "submit",
+      "_log_action",
+      "get",
+      "count",
+      "pending_count",
+      "get_by_status",
+      "get_dependencies",
+      "can_run",
+      "run_next",
+      "run_all",
+      "cancel",
+      "estimate_resources",
+      "get_action_log",
+      "to_dict"
+    ],
+    "classes": [
+      "JobStatus",
+      "JobPriority",
+      "Job",
+      "ComputeScheduler"
+    ],
+    "imports": [
+      "datetime",
+      "enum",
+      "heapq",
+      "src.utils.id_gen",
+      "threading",
+      "time",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/simulation/__init__.py",
+    "lines": 23,
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "src.simulation.base",
+      "src.simulation.docking",
+      "src.simulation.openmm_adapter",
+      "src.simulation.rdkit_adapter"
+    ]
+  },
+  {
+    "path": "src/simulation/base.py",
+    "lines": 192,
+    "functions": [
+      "__init__",
+      "to_dict",
+      "__init__",
+      "to_dict",
+      "__init__",
+      "__init__",
+      "to_dict",
+      "__init__",
+      "to_dict",
+      "__init__",
+      "__init__",
+      "run",
+      "validate_inputs",
+      "get_metadata",
+      "get_capabilities"
+    ],
+    "classes": [
+      "SimulationMetadata",
+      "SimulationResult",
+      "DockingPose",
+      "DockingResult",
+      "MolecularDynamicsResult",
+      "PropertyPredictionResult",
+      "ReactionModelingResult",
+      "SimulationEngine"
+    ],
+    "imports": [
+      "abc",
+      "datetime",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/simulation/docking.py",
+    "lines": 131,
+    "functions": [
+      "__init__",
+      "run",
+      "_dock",
+      "_score",
+      "validate_inputs",
+      "get_metadata",
+      "get_capabilities"
+    ],
+    "classes": [
+      "DockingModule"
+    ],
+    "imports": [
+      "src.simulation.base",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/simulation/openmm_adapter.py",
+    "lines": 205,
+    "functions": [
+      "__init__",
+      "run",
+      "_run_md",
+      "_create_minimal_system",
+      "_simulate",
+      "_run_minimization",
+      "_run_analysis",
+      "validate_inputs",
+      "get_metadata",
+      "get_capabilities"
+    ],
+    "classes": [
+      "OpenMMEngine"
+    ],
+    "imports": [
+      "datetime",
+      "openmm",
+      "openmm.app",
+      "rdkit",
+      "src.simulation.base",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/simulation/rdkit_adapter.py",
+    "lines": 144,
+    "functions": [
+      "__init__",
+      "run",
+      "_predict_properties",
+      "_compute_similarity",
+      "_compute_descriptors",
+      "_validate_structure",
+      "validate_inputs",
+      "get_metadata",
+      "get_capabilities"
+    ],
+    "classes": [
+      "RDKitEngine"
+    ],
+    "imports": [
+      "rdkit",
+      "rdkit.Chem",
+      "src.simulation.base",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/statistics/__init__.py",
+    "lines": 203,
+    "functions": [
+      "correct",
+      "ci",
+      "test",
+      "cohens_d",
+      "random_shuffle",
+      "matched_control",
+      "__init__",
+      "validate"
+    ],
+    "classes": [
+      "BHFDRCorrection",
+      "Bootstrap",
+      "PermutationTest",
+      "EffectSize",
+      "NullModel",
+      "StatisticalValidation"
+    ],
+    "imports": [
+      "datetime",
+      "numpy",
+      "scipy",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/ui/__init__.py",
+    "lines": 181,
+    "functions": [
+      "__init__",
+      "to_2d_plotly",
+      "to_3d_plotly",
+      "to_dict",
+      "evidence_distribution",
+      "compute_usage",
+      "timeline",
+      "hypothesis_status",
+      "__init__",
+      "hide",
+      "show",
+      "update_config",
+      "to_dict",
+      "colors",
+      "figure_kwargs",
+      "apply_to_figure"
+    ],
+    "classes": [
+      "MolecularVisualization",
+      "VisualizationFactory",
+      "DashboardWidget",
+      "DarkTheme"
+    ],
+    "imports": [
+      "datetime",
+      "json",
+      "plotly.express",
+      "plotly.graph_objects",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/utils/__init__.py",
+    "lines": 54,
+    "functions": [
+      "generate_stable_id",
+      "generate_id_from_string",
+      "timestamp_now",
+      "deduplicate_smiles",
+      "canonicalize"
+    ],
+    "classes": [],
+    "imports": [
+      "datetime",
+      "hashlib",
+      "rdkit",
+      "time",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/utils/id_gen.py",
+    "lines": 38,
+    "functions": [
+      "generate_stable_id",
+      "generate_id_from_string",
+      "timestamp_now",
+      "deduplicate_smiles"
+    ],
+    "classes": [],
+    "imports": [
+      "datetime",
+      "hashlib",
+      "src.utils.validator",
+      "typing"
+    ]
+  },
+  {
+    "path": "src/utils/validator.py",
+    "lines": 121,
+    "functions": [
+      "validate_smiles",
+      "get_molecule_descriptors",
+      "get_molecular_formula",
+      "compute_fingerprints",
+      "smiles_to_inchi",
+      "smiles_to_inchikey",
+      "canonicalize_smiles",
+      "are_isomers",
+      "tanimoto_similarity"
+    ],
+    "classes": [],
+    "imports": [
+      "json",
+      "rdkit",
+      "rdkit.Chem",
+      "typing"
+    ]
+  },
+  {
+    "path": "tests/unit/test_adversarial.py",
+    "lines": 88,
+    "functions": [
+      "test_agent_init",
+      "test_check_artifact",
+      "test_check_database_error",
+      "test_check_stereochemistry",
+      "test_check_parameter",
+      "test_check_numerical",
+      "test_check_docking_bias",
+      "test_check_overfitting",
+      "test_check_multiple_testing",
+      "test_check_selection_bias",
+      "test_check_alternative_method",
+      "test_check_alternative_explanation",
+      "test_run_full_adversarial",
+      "test_adversarial_can_reject",
+      "test_adversarial_finding_to_dict"
+    ],
+    "classes": [],
+    "imports": [
+      "src.adversarial"
+    ]
+  },
+  {
+    "path": "tests/unit/test_dashboard.py",
+    "lines": 61,
+    "functions": [
+      "test_dashboard_creation",
+      "test_dashboard_section",
+      "test_dashboard_refresh",
+      "test_dashboard_refresh_empty",
+      "test_dashboard_with_data",
+      "test_dashboard_to_dict",
+      "test_dashboard_section_data",
+      "test_dashboard_evidence_distribution"
+    ],
+    "classes": [],
+    "imports": [
+      "src.dashboard",
+      "src.experiment",
+      "src.hypothesis",
+      "src.observation",
+      "src.scheduler"
+    ]
+  },
+  {
+    "path": "tests/unit/test_database.py",
+    "lines": 82,
+    "functions": [
+      "test_database_init",
+      "test_compound_crud",
+      "test_evidence_creation",
+      "test_experiment_immutable"
+    ],
+    "classes": [],
+    "imports": [
+      "sqlalchemy",
+      "src.database.models",
+      "src.evidence"
+    ]
+  },
+  {
+    "path": "tests/unit/test_docking.py",
+    "lines": 72,
+    "functions": [
+      "test_docking_caveats_present",
+      "test_docking_module_capabilities",
+      "test_docking_metadata",
+      "test_dock_valid_ligand",
+      "test_dock_invalid_ligand",
+      "test_dock_with_pose",
+      "test_dock_score",
+      "test_dock_validate_inputs"
+    ],
+    "classes": [],
+    "imports": [
+      "src.simulation.base",
+      "src.simulation.docking"
+    ]
+  },
+  {
+    "path": "tests/unit/test_evidence.py",
+    "lines": 73,
+    "functions": [
+      "test_e0_is_ai_hypothesis",
+      "test_e1_is_database_fact",
+      "test_e3_is_computational_prediction",
+      "test_e6_is_gold_standard",
+      "test_evidence_creation_all_fields",
+      "test_evidence_from_dict",
+      "test_evidence_timestamp_auto"
+    ],
+    "classes": [],
+    "imports": [
+      "src.evidence",
+      "time"
+    ]
+  },
+  {
+    "path": "tests/unit/test_experiment.py",
+    "lines": 126,
+    "functions": [
+      "test_experiment_creation",
+      "test_experiment_mark_running",
+      "test_experiment_mark_completed",
+      "test_experiment_mark_failed",
+      "test_experiment_mark_cancelled",
+      "test_experiment_immutable_cannot_change",
+      "test_experiment_to_dict",
+      "test_manager_create",
+      "test_manager_get",
+      "test_manager_get_none",
+      "test_manager_list_all",
+      "test_manager_list_by_status",
+      "test_manager_clone",
+      "test_manager_compare",
+      "test_manager_compare_same",
+      "test_manager_branch",
+      "test_manager_merge",
+      "test_manager_to_dict"
+    ],
+    "classes": [],
+    "imports": [
+      "src.experiment"
+    ]
+  },
+  {
+    "path": "tests/unit/test_failure.py",
+    "lines": 116,
+    "functions": [
+      "test_failure_record_creation",
+      "test_failure_record_to_dict",
+      "test_recovery_capture",
+      "test_recovery_get",
+      "test_recovery_get_none",
+      "test_recovery_get_by_experiment",
+      "test_recovery_mark_resolved",
+      "test_recovery_mark_resolved_none",
+      "test_recovery_get_unresolved",
+      "test_recovery_safe_retry_success",
+      "test_recovery_safe_retry_failure",
+      "test_recovery_diagnosis",
+      "test_recovery_preserve_original_results",
+      "test_recovery_summary",
+      "test_recovery_to_dict",
+      "fail_func"
+    ],
+    "classes": [],
+    "imports": [
+      "src.failure"
+    ]
+  },
+  {
+    "path": "tests/unit/test_foundation.py",
+    "lines": 60,
+    "functions": [
+      "test_validate_valid_smiles",
+      "test_validate_invalid_smiles",
+      "test_get_molecule_descriptors",
+      "test_smiles_to_inchi",
+      "test_smiles_to_inchikey",
+      "test_canonicalize_smiles",
+      "test_tanimoto_similarity",
+      "test_evidence_level_e0_is_computational",
+      "test_evidence_level_e6_is_validated",
+      "test_evidence_e3_not_displayed_as_fact"
+    ],
+    "classes": [],
+    "imports": [
+      "src.evidence",
+      "src.utils.validator"
+    ]
+  },
+  {
+    "path": "tests/unit/test_hypothesis.py",
+    "lines": 72,
+    "functions": [
+      "test_hypothesis_creation",
+      "test_hypothesis_status_change",
+      "test_hypothesis_is_falsifiable",
+      "test_hypothesis_not_falsifiable",
+      "test_hypothesis_add_prediction",
+      "test_hypothesis_add_test",
+      "test_hypothesis_to_dict",
+      "test_hypothesis_engine_create",
+      "test_hypothesis_engine_get_by_id",
+      "test_hypothesis_engine_get_by_status",
+      "test_hypothesis_engine_summary"
+    ],
+    "classes": [],
+    "imports": [
+      "src.hypothesis"
+    ]
+  },
+  {
+    "path": "tests/unit/test_id_gen.py",
+    "lines": 24,
+    "functions": [
+      "test_generate_stable_id_format",
+      "test_generate_stable_id_zero",
+      "test_generate_stable_id_large",
+      "test_generate_stable_id_custom_prefix",
+      "test_timestamp_format"
+    ],
+    "classes": [],
+    "imports": [
+      "src.utils.id_gen"
+    ]
+  },
+  {
+    "path": "tests/unit/test_literature.py",
+    "lines": 55,
+    "functions": [
+      "test_claim_creation",
+      "test_claim_to_dict",
+      "test_literature_source_abstract_only",
+      "test_literature_source_to_dict",
+      "test_agent_init",
+      "test_agent_extract_claims",
+      "test_agent_create_source",
+      "test_agent_validate_citation_local"
+    ],
+    "classes": [],
+    "imports": [
+      "src.evidence",
+      "src.literature"
+    ]
+  },
+  {
+    "path": "tests/unit/test_molecular.py",
+    "lines": 74,
+    "functions": [
+      "test_smiles_validation_valid",
+      "test_smiles_validation_invalid",
+      "test_molecule_descriptors_ethanol",
+      "test_molecule_descriptors_benzene",
+      "test_inchi_conversion",
+      "test_inchikey_length",
+      "test_canonicalize",
+      "test_tanimoto_similarity_range",
+      "test_similarity_self",
+      "test_similarity_different",
+      "test_formula"
+    ],
+    "classes": [],
+    "imports": [
+      "src.utils.validator"
+    ]
+  },
+  {
+    "path": "tests/unit/test_molecular_engine.py",
+    "lines": 114,
+    "functions": [
+      "test_inspector_valid",
+      "test_inspector_invalid",
+      "test_inspector_all_descriptors",
+      "test_inspector_functional_groups",
+      "test_inspector_stereochemistry",
+      "test_inspector_fingerprints",
+      "test_get_molecule_descriptors_benzene",
+      "test_validate_smiles_valid",
+      "test_validate_smiles_invalid",
+      "test_smiles_to_inchi",
+      "test_smiles_to_inchikey",
+      "test_canonicalize",
+      "test_tanimoto_self",
+      "test_tanimoto_different",
+      "test_get_fingerprints",
+      "test_get_known_reaction_types",
+      "test_analyze_reaction",
+      "test_classify_reaction",
+      "test_is_duplicate_same",
+      "test_is_duplicate_different",
+      "test_is_valid_structure"
+    ],
+    "classes": [],
+    "imports": [
+      "rdkit",
+      "src.molecular.engine"
+    ]
+  },
+  {
+    "path": "tests/unit/test_navigation.py",
+    "lines": 77,
+    "functions": [
+      "test_nav_sections",
+      "test_navigation_init",
+      "test_navigation_navigate",
+      "test_navigation_navigate_invalid",
+      "test_navigation_breadcrumbs",
+      "test_navigation_switch_section",
+      "test_navigation_get_all_sections",
+      "test_navigation_to_dict",
+      "test_nav_item_activation",
+      "test_breadcrumb_to_dict"
+    ],
+    "classes": [],
+    "imports": [
+      "src.navigation"
+    ]
+  },
+  {
+    "path": "tests/unit/test_novelty.py",
+    "lines": 46,
+    "functions": [
+      "test_novelty_result_unknown",
+      "test_engine_init",
+      "test_pubchem_search_invalid",
+      "test_check_novelty_returns_unknown_format",
+      "test_check_reaction_novelty",
+      "test_novelty_never_claims_first"
+    ],
+    "classes": [],
+    "imports": [
+      "src.novelty"
+    ]
+  },
+  {
+    "path": "tests/unit/test_observation.py",
+    "lines": 110,
+    "functions": [
+      "test_system_monitor_snapshot",
+      "test_simulation_monitor",
+      "test_agent_monitor",
+      "test_database_monitor",
+      "test_compute_monitor",
+      "test_error_monitor",
+      "test_observation_system",
+      "test_observation_system_action_log",
+      "test_observation_system_to_dict",
+      "test_monitor_entry_to_dict",
+      "test_observation_system_summary_keys"
+    ],
+    "classes": [],
+    "imports": [
+      "psutil",
+      "src.observation"
+    ]
+  },
+  {
+    "path": "tests/unit/test_openmm_engine.py",
+    "lines": 47,
+    "functions": [
+      "test_openmm_capabilities",
+      "test_openmm_metadata",
+      "test_openmm_md_mock",
+      "test_openmm_invalid_smiles",
+      "test_openmm_validate_inputs",
+      "test_openmm_default_params"
+    ],
+    "classes": [],
+    "imports": [
+      "src.simulation.base",
+      "src.simulation.openmm_adapter"
+    ]
+  },
+  {
+    "path": "tests/unit/test_phase4_modules.py",
+    "lines": 66,
+    "functions": [
+      "test_literature_agent",
+      "test_novelty_engine",
+      "test_hypothesis_engine",
+      "test_adversarial_scientist",
+      "test_bhfdr",
+      "test_bootstrap",
+      "test_permutation",
+      "test_effect_size",
+      "test_null_model",
+      "test_statistical_validation"
+    ],
+    "classes": [],
+    "imports": [
+      "numpy",
+      "src.adversarial",
+      "src.hypothesis",
+      "src.literature",
+      "src.novelty",
+      "src.statistics"
+    ]
+  },
+  {
+    "path": "tests/unit/test_phase5_modules.py",
+    "lines": 86,
+    "functions": [
+      "test_experiment_manager_full_lifecycle",
+      "test_experiment_clone_keeps_original",
+      "test_scheduler_run_job",
+      "test_scheduler_dependencies",
+      "test_failure_capture",
+      "test_failure_safe_retry_success",
+      "test_failure_safe_retry_failure",
+      "test_observation_system_integration",
+      "test_scheduler_cancel",
+      "test_experiment_compare",
+      "test_experiment_merge"
+    ],
+    "classes": [],
+    "imports": [
+      "src.experiment",
+      "src.failure",
+      "src.observation",
+      "src.scheduler"
+    ]
+  },
+  {
+    "path": "tests/unit/test_phase6_modules.py",
+    "lines": 41,
+    "functions": [
+      "test_dashboard_with_experiment",
+      "test_navigation_full_flow",
+      "test_replay_integration",
+      "test_visualization_factory",
+      "test_dark_theme_applies"
+    ],
+    "classes": [],
+    "imports": [
+      "src.dashboard",
+      "src.experiment",
+      "src.navigation",
+      "src.replay",
+      "src.ui"
+    ]
+  },
+  {
+    "path": "tests/unit/test_plant_engine.py",
+    "lines": 82,
+    "functions": [
+      "test_plant_template_unknown",
+      "test_constituent_placeholder",
+      "test_concentration_range_placeholder",
+      "test_plant_profile_unknown",
+      "test_plant_profile_known",
+      "test_decompose_plant_ingredients_empty",
+      "test_decompose_plant_ingredients_with_constituents",
+      "test_plant_profile_constituent_smiles",
+      "test_plant_profile_to_dict"
+    ],
+    "classes": [],
+    "imports": [
+      "src.plant.engine"
+    ]
+  },
+  {
+    "path": "tests/unit/test_rdkit_engine.py",
+    "lines": 69,
+    "functions": [
+      "test_rdkit_capabilities",
+      "test_rdkit_metadata",
+      "test_rdkit_property_prediction",
+      "test_rdkit_similarity",
+      "test_rdkit_descriptors",
+      "test_rdkit_validate",
+      "test_rdkit_invalid",
+      "test_rdkit_validate_inputs"
+    ],
+    "classes": [],
+    "imports": [
+      "src.simulation.base",
+      "src.simulation.rdkit_adapter"
+    ]
+  },
+  {
+    "path": "tests/unit/test_reaction_engine.py",
+    "lines": 73,
+    "functions": [
+      "test_analyze_reaction_valid",
+      "test_analyze_reaction_invalid",
+      "test_get_known_reaction_types",
+      "test_classify_reaction_basic",
+      "test_reaction_feasibility_basic",
+      "test_mixer_add_ingredients",
+      "test_mixer_mix",
+      "test_mixer_classify_interaction",
+      "test_mixer_classify_interaction_invalid",
+      "test_decompose_ingredients",
+      "test_classify_interaction_similar"
+    ],
+    "classes": [],
+    "imports": [
+      "src.reaction.engine",
+      "src.reaction.mixer"
+    ]
+  },
+  {
+    "path": "tests/unit/test_replay.py",
+    "lines": 88,
+    "functions": [
+      "test_reproduce_exact",
+      "test_reproduce_with_diff",
+      "test_reproduce_many_diffs",
+      "test_reproduce_experiment_not_found",
+      "test_replay_to_dict",
+      "test_replay_get_by_id",
+      "test_replay_get_by_experiment",
+      "test_replay_count",
+      "test_replay_different_inputs"
+    ],
+    "classes": [],
+    "imports": [
+      "src.replay"
+    ]
+  },
+  {
+    "path": "tests/unit/test_scheduler.py",
+    "lines": 114,
+    "functions": [
+      "test_job_creation",
+      "test_job_to_dict",
+      "test_scheduler_submit",
+      "test_scheduler_get",
+      "test_scheduler_get_none",
+      "test_scheduler_pending_count",
+      "test_scheduler_get_by_status",
+      "test_scheduler_run_next",
+      "test_scheduler_run_all",
+      "test_scheduler_cancel",
+      "test_scheduler_cancel_running",
+      "test_scheduler_dependencies",
+      "test_scheduler_priority",
+      "test_scheduler_estimate_resources",
+      "test_scheduler_job_to_dict",
+      "test_scheduler_run_failing_job"
+    ],
+    "classes": [],
+    "imports": [
+      "src.scheduler"
+    ]
+  },
+  {
+    "path": "tests/unit/test_simulation_base.py",
+    "lines": 96,
+    "functions": [
+      "test_metadata_to_dict",
+      "test_simulation_result_to_dict",
+      "test_simulation_result_error",
+      "test_docking_pose",
+      "test_docking_result_to_dict",
+      "test_md_result_to_dict",
+      "test_property_prediction_result",
+      "test_reaction_modeling_result"
+    ],
+    "classes": [],
+    "imports": [
+      "src.simulation.base"
+    ]
+  },
+  {
+    "path": "tests/unit/test_simulation_module.py",
+    "lines": 28,
+    "functions": [
+      "test_rdkit_is_simulation_engine",
+      "test_openmm_is_simulation_engine",
+      "test_docking_is_simulation_engine",
+      "test_all_engines_have_metadata",
+      "test_all_engines_have_capabilities"
+    ],
+    "classes": [],
+    "imports": [
+      "src.simulation"
+    ]
+  },
+  {
+    "path": "tests/unit/test_statistics.py",
+    "lines": 95,
+    "functions": [
+      "test_bhfdr_empty",
+      "test_bhfdr_simple",
+      "test_bootstrap_ci",
+      "test_bootstrap_mean_ci_contains_mean",
+      "test_permutation_test",
+      "test_permutation_test_identical",
+      "test_cohens_d",
+      "test_effect_size_identical",
+      "test_null_model_shuffle",
+      "test_null_model_matched",
+      "test_statistical_validation",
+      "test_bhfdr_all_significant",
+      "test_bhfdr_none_significant"
+    ],
+    "classes": [],
+    "imports": [
+      "numpy",
+      "src.statistics"
+    ]
+  },
+  {
+    "path": "tests/unit/test_ui.py",
+    "lines": 51,
+    "functions": [
+      "test_theme_has_keys",
+      "test_molecular_viz_2d",
+      "test_molecular_viz_3d",
+      "test_molecular_viz_to_dict",
+      "test_evidence_distribution",
+      "test_compute_usage",
+      "test_dashboard_widget",
+      "test_dark_theme"
+    ],
+    "classes": [],
+    "imports": [
+      "src.ui"
+    ]
+  }
+]

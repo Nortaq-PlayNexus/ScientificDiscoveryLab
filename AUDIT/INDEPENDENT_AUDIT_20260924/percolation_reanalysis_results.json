@@ -1,0 +1,189 @@
+{
+  "EXP-0009": {
+    "Df": {
+      "mean": 1.870140858891132,
+      "se": 0.022287583088147045,
+      "ci95": [
+        1.8249720027641174,
+        1.9128129232230207
+      ]
+    },
+    "gamma_nu": {
+      "mean": 1.7594272562547293,
+      "se": 0.03266135339743347,
+      "ci95": [
+        1.6929750175577274,
+        1.8225024193196666
+      ]
+    },
+    "beta_nu": {
+      "mean": 0.12985914110886818,
+      "se": 0.022287583088147052,
+      "ci95": [
+        0.08718707677697905,
+        0.17502799723588144
+      ]
+    }
+  },
+  "EXP-0010": {
+    "Df": {
+      "mean": 1.896700450252197,
+      "se": 0.028816845832745658,
+      "ci95": [
+        1.8405226520224802,
+        1.9528567969078796
+      ]
+    }
+  },
+  "Q-P006": {
+    "Df": {
+      "mean": 1.8635766998237704,
+      "se": 0.041336018966084284,
+      "ci95": [
+        1.781455005695466,
+        1.943489777528471
+      ]
+    },
+    "gamma_nu": {
+      "mean": 1.730500799704273,
+      "se": 0.059589736784959955,
+      "ci95": [
+        1.6115662010266298,
+        1.8465035443107312
+      ]
+    },
+    "beta_nu": {
+      "mean": 0.13642330017622886,
+      "se": 0.04133601896608428,
+      "ci95": [
+        0.056510222471529,
+        0.2185449943045343
+      ]
+    },
+    "raw_files_identical_to_Q-P005_directory": [
+      true,
+      true,
+      true
+    ]
+  },
+  "Q-P007": {
+    "published_truncation_min_n": 25,
+    "published_truncation_Df": {
+      "mean": 1.8823394822593564,
+      "se": 0.073599182121281,
+      "ci95": [
+        1.738649290630342,
+        2.026523991755325
+      ]
+    },
+    "all_ragged_Df": {
+      "mean": 1.8794687973946664,
+      "se": 0.05819375739881012,
+      "ci95": [
+        1.7638749491620036,
+        1.991038932694353
+      ]
+    },
+    "all_ragged_gamma_nu": {
+      "mean": 1.77176765477128,
+      "se": 0.08394975705028727,
+      "ci95": [
+        1.6049225599511674,
+        1.9342516651627872
+      ]
+    },
+    "all_ragged_beta_nu": {
+      "mean": 0.12053120260533297,
+      "se": 0.05819375739881011,
+      "ci95": [
+        0.008961067305646702,
+        0.236125050837994
+      ]
+    },
+    "cache_structural_evidence": [
+      {
+        "L": 512,
+        "recorded_cluster_count_per_realization": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "recorded_size_sum_field_is_array_not_total": true,
+        "largest_mass_example": 77012.0,
+        "recorded_size_sum_example": 155116.0,
+        "actual_cluster_sizes_stored": false
+      },
+      {
+        "L": 1024,
+        "recorded_cluster_count_per_realization": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "recorded_size_sum_field_is_array_not_total": true,
+        "largest_mass_example": 147054.0,
+        "recorded_size_sum_example": 621276.0,
+        "actual_cluster_sizes_stored": false
+      },
+      {
+        "L": 2048,
+        "recorded_cluster_count_per_realization": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "recorded_size_sum_field_is_array_not_total": true,
+        "largest_mass_example": 324070.0,
+        "recorded_size_sum_example": 2486327.0,
+        "actual_cluster_sizes_stored": false
+      }
+    ],
+    "tau_bug": {
+      "code": "run_phase2.py appends cl_sizes (a list containing one size-array) instead of cl_sizes[0]",
+      "consequence": "len(ss)=1 for every realization; ss[1:] discards the entire cluster-size array; tau reports zero tail clusters",
+      "current_runner_reproduction": "KeyError: sizes when loading its own cache"
+    }
+  },
+  "EXP-0007_threshold": {
+    "direct_p50_by_L": {
+      "32": 0.49862068965517253,
+      "48": 0.4974174174174175,
+      "64": 0.500329218106996,
+      "96": 0.49850622406639017,
+      "128": 0.5011940298507463,
+      "192": 0.49922077922077934
+    },
+    "fixed_exponent_WLS_intercept": 0.5006892738843813,
+    "intercept_se_reported_scale": 0.03170744877268775,
+    "reported_intercept": 0.5006874530252672,
+    "reported_intercept_se": 0.03170744877268775,
+    "absolute_difference": 1.8208591141544161e-06,
+    "note": "Point agreement is deterministic, but the reported SE is very broad; this is tolerance-level consistency, not precision reproduction of p_c=0.5."
+  },
+  "EXP-0010_fresh_copy": {
+    "byte_identical": true,
+    "original_sha256": "3461512287e9ad41f35c76ed3f2fee5816a5a3a03c5382e77d3f5687fcc45882",
+    "fresh_sha256": "3461512287e9ad41f35c76ed3f2fee5816a5a3a03c5382e77d3f5687fcc45882"
+  }
+}

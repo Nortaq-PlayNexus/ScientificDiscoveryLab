@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP-0007",
+  "historical_result": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+  "audit_copy_result": "C:/Users/natha/AppData/Local/Temp/opencode/ScientificDiscoveryLab_audit_20260924_0325/03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_results.json",
+  "historical_sha256": "a09e4f204dfef9cab7dbe5bb5769f94093d09ecab45f9a90fe6bbff79552553b",
+  "audit_copy_sha256": "a09e4f204dfef9cab7dbe5bb5769f94093d09ecab45f9a90fe6bbff79552553b",
+  "byte_identical": true,
+  "semantic_difference_count": 0,
+  "observed": {
+    "bond_wrap_intercept": 0.5006874530252672,
+    "bond_wrap_reported_se": 0.03170744877268775,
+    "abs_deviation_from_exact_bond_pc": 0.0006874530252672,
+    "c4_shift": 0.0011108652357739723,
+    "c6_max_abs_deviation": 0.0016798422002474167,
+    "c8_inv_nu": 0.7255466307593994,
+    "p50_by_L": {
+      "32": 0.49866069517268136,
+      "48": 0.4974502702853924,
+      "64": 0.5003325765058546,
+      "96": 0.4984955365005837,
+      "128": 0.5012222892133987,
+      "192": 0.4992417301851336
+    }
+  },
+  "classification": "DETERMINISTIC_REPRODUCTION; result is compatible with exact bond p_c=1/2 but the reported intercept uncertainty is broad and this rerun does not independently validate every control."
+}

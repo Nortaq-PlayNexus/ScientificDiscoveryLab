@@ -1,0 +1,19 @@
+# Runtime requirements for the consciousness indicator battery.
+#
+# Deliberately minimal. The battery and its robustness arm are pure numerical
+# work on scalars — no model weights, no GPU, no network access required.
+#
+# Lower bounds are conservative on purpose. numpy 2.2 and scipy 1.13 are the
+# oldest releases that build on Python 3.10, which is the oldest version the CI
+# matrix exercises. Pinning the versions actually used during development here
+# (numpy 2.4 / scipy 1.18) would have excluded 3.10 and 3.11 for no benefit —
+# nothing in this code depends on a 2.4-only behaviour.
+#
+# Verified on Python 3.14.7 with numpy 2.4.1 / scipy 1.18.1, and in CI on
+# Python 3.10 through 3.13.
+
+numpy>=2.2
+scipy>=1.13
+
+# Test suite only.
+pytest>=8.0

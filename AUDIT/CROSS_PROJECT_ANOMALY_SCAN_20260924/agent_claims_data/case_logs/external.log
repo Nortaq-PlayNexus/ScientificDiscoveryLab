@@ -1,0 +1,32 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "external": {
+      "ok": true,
+      "evidence": {
+        "data_index_base_paths": [
+          "10: > Base paths:",
+          "11: > - sandbox: `C:\\Users\\natha\\code\\coherent-optical-ai-sandbox`",
+          "12: > - lab: `C:\\Users\\natha\\ScientificDiscoveryLab`",
+          "13: > - dossier: `C:\\Users\\natha\\ScientificDiscoveryLab\\05_EXTERNAL_RESEARCHER_DOSSIER`",
+          "14: ",
+          "15: ## 1. Verdict and audit reports (sandbox)",
+          "16: ",
+          "17: | Content | Path | Used for |",
+          "18: |---|---|---|",
+          "19: | Final audit verdict, headline numbers, methodology correction | `research\\FINAL_PHASE_REPORT.md` | Dossier ┬º1ΓÇô┬º7 |",
+          "20: | Condensed verdict | `research\\EXECUTIVE_SUMMARY.md` | Executive-style reading |",
+          "21: | Audit state | `research\\audit\\PROJECT_STATE.md` | Framework description (multi-agent validation & novelty audit) |",
+          "22: | Control matrix | `research\\controls\\CONTROL_MATRIX.md` | Methods document ┬º6 |",
+          "23: | Independent replication (validator battery) | `research\\reproducibility\\INDEPENDENT_REPLICATION.md` | EXP-1, PARTIALLY REPRODUCIBLE |",
+          "24: | Literature pass | `research\\literature\\OPTICS_LITERATURE.md` | Q1 (Carter/Wolf entry) |",
+          "25: "
+        ],
+        "claim": "05_EXTERNAL_RESEARCHER_DOSSIER/KEY_RESULTS.md:<not found:'Every number is from'>",
+        "outside_path_exists": true,
+        "outside_path_under_audited_root": false,
+        "relative_sandbox_path_under_root_exists": false
+      }
+    }
+  }
+}

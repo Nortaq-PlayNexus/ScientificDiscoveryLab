@@ -1,0 +1,180 @@
+{
+  "canonical_json": {
+    "allow_nan": false,
+    "ensure_ascii": false,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true
+  },
+  "experiment_id": "EXP-C003",
+  "hypothesis": "HYP-C001-robustness: ordering and the fluency-vs-architecture separation survive perturbation, while absolute credences do not",
+  "machine": {
+    "platform": "win32"
+  },
+  "parameters": {
+    "alpha": 0.01,
+    "n_draws_per_region": 1500,
+    "perturbation_families": 6,
+    "regions": 2,
+    "seed": 0
+  },
+  "question": "Q-C001 (robustness arm): how much of the Q-C001 battery output survives joint perturbation of all discretionary parameters?",
+  "result": {
+    "aggressive_region": {
+      "all_gates_pass": false,
+      "gates": {
+        "F-A full canonical order exact": 0.668,
+        "F-B adversarial < human": 1.0,
+        "F-C adversarial < 0.30": 0.7906666666666666,
+        "F-D human > 0.50": 1.0
+      },
+      "per_system": {
+        "feedforward_mlp": {
+          "max": 0.521,
+          "mean": 0.0943,
+          "min": 0.0008,
+          "p05": 0.0037,
+          "p50": 0.047,
+          "p95": 0.3764,
+          "std": 0.1162
+        },
+        "gwt_architecture_no_metacognition": {
+          "max": 0.8497,
+          "mean": 0.4851,
+          "min": 0.1333,
+          "p05": 0.2447,
+          "p50": 0.464,
+          "p95": 0.7951,
+          "std": 0.1663
+        },
+        "human_adult": {
+          "max": 1.0,
+          "mean": 0.9326,
+          "min": 0.5838,
+          "p05": 0.7445,
+          "p50": 1.0,
+          "p95": 1.0,
+          "std": 0.0939
+        },
+        "lookup_table": {
+          "max": 0.521,
+          "mean": 0.0933,
+          "min": 0.0008,
+          "p05": 0.0036,
+          "p50": 0.0456,
+          "p95": 0.3764,
+          "std": 0.1162
+        },
+        "unigram_lookup_with_fake_selfreport": {
+          "max": 0.6135,
+          "mean": 0.1782,
+          "min": 0.0122,
+          "p05": 0.0247,
+          "p50": 0.132,
+          "p95": 0.491,
+          "std": 0.1467
+        },
+        "weak_everywhere": {
+          "max": 0.8496,
+          "mean": 0.3931,
+          "min": 0.0563,
+          "p05": 0.1415,
+          "p50": 0.347,
+          "p95": 0.7861,
+          "std": 0.1973
+        }
+      }
+    },
+    "fixes_in_this_record": [
+      "F08: BatteryResult.calibration_passed was `not require_calibration or True`, unconditionally True. run_battery now gates on a computed calibration_state() and raises CalibrationNotEstablished when calibration has not passed.",
+      "F09: duplicate-indicator check compared len(dict values) to len(set(keys)), which can never differ. Contradictory assessments are now rejected.",
+      "F10: perturbation family P4 (conscious_rate_shift) was computed and discarded, so one of six advertised robustness families perturbed nothing."
+    ],
+    "key_finding": "F-B (adversarial fluent-liar < human) holds 1.0000 in BOTH regions; absolute anchors degrade (F-A 1.00->0.67, F-C 0.98->0.79). Ordering robust, absolutes assumption-dominated.",
+    "layer": "L1/L2 instrument robustness result; no claim about any AI system",
+    "plausible_region": {
+      "all_gates_pass": true,
+      "gates": {
+        "F-A full canonical order exact": 1.0,
+        "F-B adversarial < human": 1.0,
+        "F-C adversarial < 0.30": 0.9753333333333334,
+        "F-D human > 0.50": 1.0
+      },
+      "per_system": {
+        "feedforward_mlp": {
+          "max": 0.2249,
+          "mean": 0.0542,
+          "min": 0.0076,
+          "p05": 0.0129,
+          "p50": 0.0407,
+          "p95": 0.1473,
+          "std": 0.0414
+        },
+        "gwt_architecture_no_metacognition": {
+          "max": 0.6994,
+          "mean": 0.4915,
+          "min": 0.3054,
+          "p05": 0.3649,
+          "p50": 0.4835,
+          "p95": 0.6543,
+          "std": 0.086
+        },
+        "human_adult": {
+          "max": 1.0,
+          "mean": 0.9727,
+          "min": 0.8449,
+          "p05": 0.8905,
+          "p50": 1.0,
+          "p95": 1.0,
+          "std": 0.0393
+        },
+        "lookup_table": {
+          "max": 0.2246,
+          "mean": 0.0531,
+          "min": 0.0067,
+          "p05": 0.0123,
+          "p50": 0.0398,
+          "p95": 0.1452,
+          "std": 0.0413
+        },
+        "unigram_lookup_with_fake_selfreport": {
+          "max": 0.3418,
+          "mean": 0.1478,
+          "min": 0.0503,
+          "p05": 0.0678,
+          "p50": 0.1362,
+          "p95": 0.2666,
+          "std": 0.0627
+        },
+        "weak_everywhere": {
+          "max": 0.699,
+          "mean": 0.3497,
+          "min": 0.1288,
+          "p05": 0.1989,
+          "p50": 0.3135,
+          "p95": 0.6089,
+          "std": 0.1255
+        }
+      }
+    },
+    "verdict": "ORDERING ROBUST IN PLAUSIBLE REGION; ABSOLUTES NOT ROBUST | F-B (fluency cannot beat architecture) HOLDS [1.0000 plausible / 1.0000 aggressive]; exact ordering holds under plausible perturbation [1.0000]; absolute calibration DOES NOT hold under aggressive perturbation",
+    "verdict_detail": {
+      "conclusion": "The battery's ORDERING is robust in the plausible region and degrades under deliberately extreme perturbation, while its ABSOLUTE credences shift substantially in both. The decisive asymmetry is F-B: no parameter setting tried lets a fluent self-reporting system outscore the human.",
+      "exact_ordering_aggressive": false,
+      "exact_ordering_plausible": true,
+      "load_claim_FB_holds_both": true,
+      "what_this_authorises": "Ranking systems scored under shared assumptions. It does NOT authorise quoting an absolute probability that a system is conscious, in either region."
+    }
+  },
+  "result_hash": "1249a0ac9091ec2d4448118fb07bd8e260952d095843f4a56903ec66b50be56e",
+  "result_hash_scope": "canonical_json_utf8_result_object",
+  "seed": 20261002,
+  "software": {
+    "numpy": "2.4.1",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "timestamp_utc": "2026-10-02T10:43:50+00:00"
+}

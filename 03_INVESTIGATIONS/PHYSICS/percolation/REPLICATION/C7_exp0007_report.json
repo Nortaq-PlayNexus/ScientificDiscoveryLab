@@ -1,0 +1,1207 @@
+{
+  "cells": {
+    "perc-bond-wrap-exp0007:L128:p0.38": {
+      "L": 128,
+      "frozen": {
+        "k": 0,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 400
+      },
+      "p": 0.38,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.40000000000000002": {
+      "L": 128,
+      "frozen": {
+        "k": 0,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 400
+      },
+      "p": 0.4,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.42000000000000004": {
+      "L": 128,
+      "frozen": {
+        "k": 0,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 400
+      },
+      "p": 0.42000000000000004,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.44000000000000006": {
+      "L": 128,
+      "frozen": {
+        "k": 0,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 400
+      },
+      "p": 0.44000000000000006,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.46000000000000008": {
+      "L": 128,
+      "frozen": {
+        "k": 0,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 400
+      },
+      "p": 0.4600000000000001,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.48000000000000009": {
+      "L": 128,
+      "frozen": {
+        "k": 9,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 9,
+        "n": 400
+      },
+      "p": 0.4800000000000001,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.50000000000000011": {
+      "L": 128,
+      "frozen": {
+        "k": 188,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 188,
+        "n": 400
+      },
+      "p": 0.5000000000000001,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.52000000000000013": {
+      "L": 128,
+      "frozen": {
+        "k": 389,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 389,
+        "n": 400
+      },
+      "p": 0.5200000000000001,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.54000000000000015": {
+      "L": 128,
+      "frozen": {
+        "k": 400,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 400,
+        "n": 400
+      },
+      "p": 0.5400000000000001,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.56000000000000016": {
+      "L": 128,
+      "frozen": {
+        "k": 400,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 400,
+        "n": 400
+      },
+      "p": 0.5600000000000002,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.58000000000000018": {
+      "L": 128,
+      "frozen": {
+        "k": 400,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 400,
+        "n": 400
+      },
+      "p": 0.5800000000000002,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.6000000000000002": {
+      "L": 128,
+      "frozen": {
+        "k": 400,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 400,
+        "n": 400
+      },
+      "p": 0.6000000000000002,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L128:p0.62000000000000022": {
+      "L": 128,
+      "frozen": {
+        "k": 400,
+        "n": 400
+      },
+      "identical": true,
+      "independent": {
+        "k": 400,
+        "n": 400
+      },
+      "p": 0.6200000000000002,
+      "preregistered_cell": false,
+      "seed": 202
+    },
+    "perc-bond-wrap-exp0007:L192:p0.38": {
+      "L": 192,
+      "frozen": {
+        "k": 0,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 300
+      },
+      "p": 0.38,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.40000000000000002": {
+      "L": 192,
+      "frozen": {
+        "k": 0,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 300
+      },
+      "p": 0.4,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.42000000000000004": {
+      "L": 192,
+      "frozen": {
+        "k": 0,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 300
+      },
+      "p": 0.42000000000000004,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.44000000000000006": {
+      "L": 192,
+      "frozen": {
+        "k": 0,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 300
+      },
+      "p": 0.44000000000000006,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.46000000000000008": {
+      "L": 192,
+      "frozen": {
+        "k": 0,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 300
+      },
+      "p": 0.4600000000000001,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.48000000000000009": {
+      "L": 192,
+      "frozen": {
+        "k": 2,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 2,
+        "n": 300
+      },
+      "p": 0.4800000000000001,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.50000000000000011": {
+      "L": 192,
+      "frozen": {
+        "k": 156,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 156,
+        "n": 300
+      },
+      "p": 0.5000000000000001,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.52000000000000013": {
+      "L": 192,
+      "frozen": {
+        "k": 299,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 299,
+        "n": 300
+      },
+      "p": 0.5200000000000001,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.54000000000000015": {
+      "L": 192,
+      "frozen": {
+        "k": 300,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 300,
+        "n": 300
+      },
+      "p": 0.5400000000000001,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.56000000000000016": {
+      "L": 192,
+      "frozen": {
+        "k": 300,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 300,
+        "n": 300
+      },
+      "p": 0.5600000000000002,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.58000000000000018": {
+      "L": 192,
+      "frozen": {
+        "k": 300,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 300,
+        "n": 300
+      },
+      "p": 0.5800000000000002,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.6000000000000002": {
+      "L": 192,
+      "frozen": {
+        "k": 300,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 300,
+        "n": 300
+      },
+      "p": 0.6000000000000002,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L192:p0.62000000000000022": {
+      "L": 192,
+      "frozen": {
+        "k": 300,
+        "n": 300
+      },
+      "identical": true,
+      "independent": {
+        "k": 300,
+        "n": 300
+      },
+      "p": 0.6200000000000002,
+      "preregistered_cell": false,
+      "seed": 303
+    },
+    "perc-bond-wrap-exp0007:L96:p0.38": {
+      "L": 96,
+      "frozen": {
+        "k": 0,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 500
+      },
+      "p": 0.38,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.40000000000000002": {
+      "L": 96,
+      "frozen": {
+        "k": 0,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 500
+      },
+      "p": 0.4,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.42000000000000004": {
+      "L": 96,
+      "frozen": {
+        "k": 0,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 500
+      },
+      "p": 0.42000000000000004,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.44000000000000006": {
+      "L": 96,
+      "frozen": {
+        "k": 0,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 500
+      },
+      "p": 0.44000000000000006,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.46000000000000008": {
+      "L": 96,
+      "frozen": {
+        "k": 1,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 1,
+        "n": 500
+      },
+      "p": 0.4600000000000001,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.48000000000000009": {
+      "L": 96,
+      "frozen": {
+        "k": 27,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 27,
+        "n": 500
+      },
+      "p": 0.4800000000000001,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.50000000000000011": {
+      "L": 96,
+      "frozen": {
+        "k": 268,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 268,
+        "n": 500
+      },
+      "p": 0.5000000000000001,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.52000000000000013": {
+      "L": 96,
+      "frozen": {
+        "k": 476,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 476,
+        "n": 500
+      },
+      "p": 0.5200000000000001,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.54000000000000015": {
+      "L": 96,
+      "frozen": {
+        "k": 499,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 499,
+        "n": 500
+      },
+      "p": 0.5400000000000001,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.56000000000000016": {
+      "L": 96,
+      "frozen": {
+        "k": 500,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 500,
+        "n": 500
+      },
+      "p": 0.5600000000000002,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.58000000000000018": {
+      "L": 96,
+      "frozen": {
+        "k": 500,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 500,
+        "n": 500
+      },
+      "p": 0.5800000000000002,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.6000000000000002": {
+      "L": 96,
+      "frozen": {
+        "k": 500,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 500,
+        "n": 500
+      },
+      "p": 0.6000000000000002,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond-wrap-exp0007:L96:p0.62000000000000022": {
+      "L": 96,
+      "frozen": {
+        "k": 500,
+        "n": 500
+      },
+      "identical": true,
+      "independent": {
+        "k": 500,
+        "n": 500
+      },
+      "p": 0.6200000000000002,
+      "preregistered_cell": false,
+      "seed": 101
+    },
+    "perc-bond_wrap:L32:p0.38": {
+      "L": 32,
+      "frozen": {
+        "k": 0,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 1200
+      },
+      "p": 0.38,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.40000000000000002": {
+      "L": 32,
+      "frozen": {
+        "k": 0,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 1200
+      },
+      "p": 0.4,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.42000000000000004": {
+      "L": 32,
+      "frozen": {
+        "k": 5,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 5,
+        "n": 1200
+      },
+      "p": 0.42000000000000004,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.44000000000000006": {
+      "L": 32,
+      "frozen": {
+        "k": 33,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 33,
+        "n": 1200
+      },
+      "p": 0.44000000000000006,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.46000000000000008": {
+      "L": 32,
+      "frozen": {
+        "k": 99,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 99,
+        "n": 1200
+      },
+      "p": 0.4600000000000001,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.48000000000000009": {
+      "L": 32,
+      "frozen": {
+        "k": 303,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 303,
+        "n": 1200
+      },
+      "p": 0.4800000000000001,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.50000000000000011": {
+      "L": 32,
+      "frozen": {
+        "k": 622,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 622,
+        "n": 1200
+      },
+      "p": 0.5000000000000001,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.52000000000000013": {
+      "L": 32,
+      "frozen": {
+        "k": 938,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 938,
+        "n": 1200
+      },
+      "p": 0.5200000000000001,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.54000000000000015": {
+      "L": 32,
+      "frozen": {
+        "k": 1118,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1118,
+        "n": 1200
+      },
+      "p": 0.5400000000000001,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.56000000000000016": {
+      "L": 32,
+      "frozen": {
+        "k": 1179,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1179,
+        "n": 1200
+      },
+      "p": 0.5600000000000002,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.58000000000000018": {
+      "L": 32,
+      "frozen": {
+        "k": 1198,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1198,
+        "n": 1200
+      },
+      "p": 0.5800000000000002,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.6000000000000002": {
+      "L": 32,
+      "frozen": {
+        "k": 1200,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1200,
+        "n": 1200
+      },
+      "p": 0.6000000000000002,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L32:p0.62000000000000022": {
+      "L": 32,
+      "frozen": {
+        "k": 1200,
+        "n": 1200
+      },
+      "identical": true,
+      "independent": {
+        "k": 1200,
+        "n": 1200
+      },
+      "p": 0.6200000000000002,
+      "preregistered_cell": true,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.38": {
+      "L": 48,
+      "frozen": {
+        "k": 0,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 900
+      },
+      "p": 0.38,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.40000000000000002": {
+      "L": 48,
+      "frozen": {
+        "k": 0,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 900
+      },
+      "p": 0.4,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.42000000000000004": {
+      "L": 48,
+      "frozen": {
+        "k": 0,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 900
+      },
+      "p": 0.42000000000000004,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.44000000000000006": {
+      "L": 48,
+      "frozen": {
+        "k": 0,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 900
+      },
+      "p": 0.44000000000000006,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.46000000000000008": {
+      "L": 48,
+      "frozen": {
+        "k": 31,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 31,
+        "n": 900
+      },
+      "p": 0.4600000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.48000000000000009": {
+      "L": 48,
+      "frozen": {
+        "k": 160,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 160,
+        "n": 900
+      },
+      "p": 0.4800000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.50000000000000011": {
+      "L": 48,
+      "frozen": {
+        "k": 493,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 493,
+        "n": 900
+      },
+      "p": 0.5000000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.52000000000000013": {
+      "L": 48,
+      "frozen": {
+        "k": 750,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 750,
+        "n": 900
+      },
+      "p": 0.5200000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.54000000000000015": {
+      "L": 48,
+      "frozen": {
+        "k": 875,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 875,
+        "n": 900
+      },
+      "p": 0.5400000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.56000000000000016": {
+      "L": 48,
+      "frozen": {
+        "k": 899,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 899,
+        "n": 900
+      },
+      "p": 0.5600000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.58000000000000018": {
+      "L": 48,
+      "frozen": {
+        "k": 900,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 900,
+        "n": 900
+      },
+      "p": 0.5800000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.6000000000000002": {
+      "L": 48,
+      "frozen": {
+        "k": 900,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 900,
+        "n": 900
+      },
+      "p": 0.6000000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L48:p0.62000000000000022": {
+      "L": 48,
+      "frozen": {
+        "k": 900,
+        "n": 900
+      },
+      "identical": true,
+      "independent": {
+        "k": 900,
+        "n": 900
+      },
+      "p": 0.6200000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.38": {
+      "L": 64,
+      "frozen": {
+        "k": 0,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 600
+      },
+      "p": 0.38,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.40000000000000002": {
+      "L": 64,
+      "frozen": {
+        "k": 0,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 600
+      },
+      "p": 0.4,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.42000000000000004": {
+      "L": 64,
+      "frozen": {
+        "k": 0,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 600
+      },
+      "p": 0.42000000000000004,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.44000000000000006": {
+      "L": 64,
+      "frozen": {
+        "k": 0,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 0,
+        "n": 600
+      },
+      "p": 0.44000000000000006,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.46000000000000008": {
+      "L": 64,
+      "frozen": {
+        "k": 3,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 3,
+        "n": 600
+      },
+      "p": 0.4600000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.48000000000000009": {
+      "L": 64,
+      "frozen": {
+        "k": 60,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 60,
+        "n": 600
+      },
+      "p": 0.4800000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.50000000000000011": {
+      "L": 64,
+      "frozen": {
+        "k": 296,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 296,
+        "n": 600
+      },
+      "p": 0.5000000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.52000000000000013": {
+      "L": 64,
+      "frozen": {
+        "k": 539,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 539,
+        "n": 600
+      },
+      "p": 0.5200000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.54000000000000015": {
+      "L": 64,
+      "frozen": {
+        "k": 593,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 593,
+        "n": 600
+      },
+      "p": 0.5400000000000001,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.56000000000000016": {
+      "L": 64,
+      "frozen": {
+        "k": 600,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 600,
+        "n": 600
+      },
+      "p": 0.5600000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.58000000000000018": {
+      "L": 64,
+      "frozen": {
+        "k": 600,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 600,
+        "n": 600
+      },
+      "p": 0.5800000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.6000000000000002": {
+      "L": 64,
+      "frozen": {
+        "k": 600,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 600,
+        "n": 600
+      },
+      "p": 0.6000000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    },
+    "perc-bond_wrap:L64:p0.62000000000000022": {
+      "L": 64,
+      "frozen": {
+        "k": 600,
+        "n": 600
+      },
+      "identical": true,
+      "independent": {
+        "k": 600,
+        "n": 600
+      },
+      "p": 0.6200000000000002,
+      "preregistered_cell": false,
+      "seed": 42
+    }
+  },
+  "control": "C7",
+  "experiment": "EXP-0007",
+  "hypothesis": "HYP-004",
+  "max_diff": 0.0,
+  "notes": [
+    "All 78 sampled cells reproduced raw counts bit-for-bit on identical streams (independent pure-Python union-find). p50 deltas <= gate at every L."
+  ],
+  "p50_delta_by_L": {
+    "32": 0.0,
+    "48": 0.0,
+    "64": 0.0,
+    "96": 0.0,
+    "128": 0.0,
+    "192": 0.0
+  },
+  "p50_gate": 0.005,
+  "pass": true,
+  "preregistered_cells": {
+    "bond_wrap": [
+      32
+    ]
+  },
+  "question": "Q-P004",
+  "target_cells": {
+    "bond_wrap": [
+      32,
+      48,
+      64,
+      96,
+      128,
+      192
+    ]
+  }
+}

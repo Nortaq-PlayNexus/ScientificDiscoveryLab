@@ -1,0 +1,22 @@
+{
+  "alpha": 0.01,
+  "calibration_bands": {
+    "gwt_only": "[0.15,0.60]",
+    "human_adult": "[0.60,1.0]",
+    "negative_anchors": "[0.0,0.15]",
+    "weak_everywhere": "[0.0,0.30]"
+  },
+  "claim_layer": "L1 instrument only",
+  "experiment_id": "EXP-C001",
+  "frozen_constants": {
+    "absence_factor": 0.55,
+    "necessity_penalty": 1.5,
+    "soft_or_temperature": 0.1
+  },
+  "hypothesis": "HYP-C001",
+  "known_circularity": "_SOFT_OR_TEMPERATURE selected by sweep over these same anchors; bands are lab assumptions. See FALSIFICATION F01.",
+  "n_anchors": 6,
+  "n_indicators": 14,
+  "preregistered_utc": "2026-10-02",
+  "question": "Q-C001"
+}

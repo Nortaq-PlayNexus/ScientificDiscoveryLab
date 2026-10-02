@@ -1,0 +1,45 @@
+﻿{
+  "root": "C:\\Users\\natha\\ScientificDiscoveryLab",
+  "cases": {
+    "freeze_overwrite": {
+      "ok": true,
+      "evidence": {
+        "first_hash": "614ca6ef4cbf2785f87b86cb45990684c94c1b31187a37a2c74d8dc87f88e19b",
+        "second_hash": "1c37f270538670aa034933d7d1857a15d3be1d51b78ab57f852fe7de535d892a",
+        "changed": true,
+        "first_params": {
+          "x": 1
+        },
+        "second_params": {
+          "x": 2
+        },
+        "helper_contract": [
+          "27:     \"\"\"Write a frozen, immutable pre-registration config (JSON).",
+          "28: ",
+          "29:     Returns the config dict. The file must not be edited after results exist;",
+          "30:     changes are recorded via log_change(), never by rewriting here.",
+          "31:     \"\"\"",
+          "32:     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)",
+          "33:     config = {",
+          "34:         \"experiment_id\": experiment_id,",
+          "35:         \"hypothesis_id\": hypothesis_id,",
+          "36:         \"question_id\": question_id,",
+          "37:         \"timestamp_utc\": datetime.now(timezone.utc).isoformat(timespec=\"seconds\"),",
+          "38:         \"seed\": seed,",
+          "39:         \"alpha\": alpha,",
+          "40:         \"preregistered_controls\": list(controls),",
+          "41:         \"preregistered_analyses\": list(analyses),",
+          "42:         \"parameters\": params,",
+          "43:         \"note\": note,",
+          "44:     }",
+          "45:     with open(out_path, \"w\", encoding=\"utf-8\") as fh:",
+          "46:         json.dump(config, fh, indent=2, sort_keys=True)"
+        ],
+        "callers": [
+          "03_INVESTIGATIONS/OTHER/rng_certification/CODE/run_rng_cert.py:139",
+          "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py:114"
+        ]
+      }
+    }
+  }
+}

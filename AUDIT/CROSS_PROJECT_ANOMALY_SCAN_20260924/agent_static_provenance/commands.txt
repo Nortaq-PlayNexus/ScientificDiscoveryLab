@@ -1,0 +1,6 @@
+python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/scan_static_provenance.py
+python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_static_findings.py
+python -m py_compile AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py
+python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py
+python -m json.tool AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/findings.json
+git status --short -- AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance

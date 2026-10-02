@@ -1,0 +1,7 @@
+{
+  "hash_scope": "exact_artifact_bytes",
+  "result_filename": "QP008-AUDIT-R1-SMOKE_results.json",
+  "schema": "q-p008/exact-result-sidecar/v1",
+  "sha256": "7a2e7182d56c69cb4fe90faae7f4e20d900e9f2e7e9fb84d8d320667d16e49fc",
+  "size_bytes": 14778
+}

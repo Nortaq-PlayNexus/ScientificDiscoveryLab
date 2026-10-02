@@ -1,0 +1,260 @@
+{
+  "fresh_seed_calibration": [
+    {
+      "alpha": 0.01,
+      "bit_length": "2^18",
+      "label": "t03-formula-audit-2p18",
+      "n_bits": 262144,
+      "paired_relation": {
+        "max_abs_pvalue_delta": 0.16606339701047923,
+        "note": "The two implementations differ only in that the shared battery divides the standard's erfc argument by sqrt(2) before calling erfc, so reference_p == erfc(sqrt(2) * erfc_argument_of_battery).",
+        "reference_over_laboratory_p_ratio_median": 0.7668383234967735
+      },
+      "reference_sp800_22": {
+        "ks_uniformity": {
+          "ks_pvalue": 0.8469531068791313,
+          "ks_stat": 0.04253102899662198,
+          "n": 200,
+          "uniform_rejected_at_0.01": false
+        },
+        "mean_p": 0.4928185912323065,
+        "name": "runs_sp800_22.runs_test_sp800_22",
+        "observed_rate": 0.005,
+        "p_quantiles": [
+          0.007687409391717865,
+          0.2490025822336177,
+          0.4630261412745105,
+          0.7597025353234664,
+          0.9940920843169794
+        ],
+        "rejections_at_alpha": 1
+      },
+      "seeds": 200,
+      "shared_battery": {
+        "ks_uniformity": {
+          "ks_pvalue": 6.728853151538403e-06,
+          "ks_stat": 0.17614455068277401,
+          "n": 200,
+          "uniform_rejected_at_0.01": true
+        },
+        "mean_p": 0.6026248087255824,
+        "name": "engine.validation.rng_battery.t_runs",
+        "observed_rate": 0.0,
+        "p_quantiles": [
+          0.059457841259215244,
+          0.4149946050750719,
+          0.6038119402467433,
+          0.8287665130137155,
+          0.9958224536710611
+        ],
+        "rejections_at_alpha": 0
+      },
+      "sp800_22_applicability": {
+        "applicable_fraction": 0.0,
+        "applicable_seeds": 0,
+        "condition": "abs(pi - 0.5) >= 2 / sqrt(n - 1)",
+        "seeds_tested": 200,
+        "tau": 0.003906257450601913
+      },
+      "standardized_deviation": {
+        "note": "the standard's erfc argument should be ~ |N(0,1)| with mean 0.7979",
+        "observed_mean": 0.5699435453913735,
+        "reference_mean_abs_normal": 0.7978845608028654
+      }
+    },
+    {
+      "alpha": 0.01,
+      "bit_length": "2^22",
+      "label": "t03-formula-audit-2p22",
+      "n_bits": 4194304,
+      "paired_relation": {
+        "max_abs_pvalue_delta": 0.16606400840770075,
+        "note": "The two implementations differ only in that the shared battery divides the standard's erfc argument by sqrt(2) before calling erfc, so reference_p == erfc(sqrt(2) * erfc_argument_of_battery).",
+        "reference_over_laboratory_p_ratio_median": 0.795765535409531
+      },
+      "reference_sp800_22": {
+        "ks_uniformity": {
+          "ks_pvalue": 0.10617378233253316,
+          "ks_stat": 0.08481796859734458,
+          "n": 200,
+          "uniform_rejected_at_0.01": false
+        },
+        "mean_p": 0.5259201483282027,
+        "name": "runs_sp800_22.runs_test_sp800_22",
+        "observed_rate": 0.005,
+        "p_quantiles": [
+          0.006718451744193226,
+          0.3069214945210986,
+          0.5109087172768492,
+          0.7653449217530716,
+          0.9959327994856095
+        ],
+        "rejections_at_alpha": 1
+      },
+      "seeds": 200,
+      "shared_battery": {
+        "ks_uniformity": {
+          "ks_pvalue": 9.139578841619732e-11,
+          "ks_stat": 0.2416550725978739,
+          "n": 200,
+          "uniform_rejected_at_0.01": true
+        },
+        "mean_p": 0.6316544556605322,
+        "name": "engine.validation.rng_battery.t_runs",
+        "observed_rate": 0.0,
+        "p_quantiles": [
+          0.0552883084273229,
+          0.47000377397493676,
+          0.6420209536577569,
+          0.8328484160485937,
+          0.9971240487083326
+        ],
+        "rejections_at_alpha": 0
+      },
+      "sp800_22_applicability": {
+        "applicable_fraction": 0.0,
+        "applicable_seeds": 0,
+        "condition": "abs(pi - 0.5) >= 2 / sqrt(n - 1)",
+        "seeds_tested": 200,
+        "tau": 0.0009765626164153426
+      },
+      "standardized_deviation": {
+        "note": "the standard's erfc argument should be ~ |N(0,1)| with mean 0.7979",
+        "observed_mean": 0.5231826996169309,
+        "reference_mean_abs_normal": 0.7978845608028654
+      }
+    }
+  ],
+  "n004_stored_t03_runs": {
+    "cells": [
+      {
+        "bit_length": "2^18",
+        "generator": "G_LAB",
+        "ks_pvalue": 0.001677329308156274,
+        "ks_stat": 0.13205837733790732,
+        "mean_p": 0.5759964346407453,
+        "min_p": 0.06601619621508723,
+        "n": 200,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": true
+      },
+      {
+        "bit_length": "2^22",
+        "generator": "G_LAB",
+        "ks_pvalue": 0.13988410549066965,
+        "ks_stat": 0.14603910263733852,
+        "mean_p": 0.5556284657143854,
+        "min_p": 0.0595934252093959,
+        "n": 60,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": false
+      },
+      {
+        "bit_length": "2^18",
+        "generator": "MT19937",
+        "ks_pvalue": 0.0001586126925626194,
+        "ks_stat": 0.152492974913491,
+        "mean_p": 0.5969587648486993,
+        "min_p": 0.05189954320737682,
+        "n": 200,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": true
+      },
+      {
+        "bit_length": "2^22",
+        "generator": "MT19937",
+        "ks_pvalue": 0.1366855666716449,
+        "ks_stat": 0.14668198404279165,
+        "mean_p": 0.5680920429206768,
+        "min_p": 0.030924365294938787,
+        "n": 60,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": false
+      },
+      {
+        "bit_length": "2^18",
+        "generator": "PCG64_direct",
+        "ks_pvalue": 2.196527983989655e-06,
+        "ks_stat": 0.18378016030332697,
+        "mean_p": 0.601035719011803,
+        "min_p": 0.04954479458847289,
+        "n": 200,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": true
+      },
+      {
+        "bit_length": "2^22",
+        "generator": "PCG64_direct",
+        "ks_pvalue": 0.00031216316927432824,
+        "ks_stat": 0.2658105101686815,
+        "mean_p": 0.6464965693048896,
+        "min_p": 0.03851833861823445,
+        "n": 60,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": true
+      },
+      {
+        "bit_length": "2^18",
+        "generator": "WEAK_LCG_BROKEN",
+        "ks_pvalue": 3.08740128536003e-08,
+        "ks_stat": 0.21027711327476262,
+        "mean_p": 0.6265365015745136,
+        "min_p": 0.04048908272051702,
+        "n": 200,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": true
+      },
+      {
+        "bit_length": "2^22",
+        "generator": "WEAK_LCG_BROKEN",
+        "ks_pvalue": 7.208324552981844e-05,
+        "ks_stat": 0.28699533658590304,
+        "mean_p": 0.6263421235188426,
+        "min_p": 0.08181742860418331,
+        "n": 60,
+        "observed_rate": 0.0,
+        "rejections_at_alpha": 0,
+        "uniform_rejected_at_0.01": true
+      }
+    ],
+    "observation": "T03_runs is non-uniform for every generator including the deliberately broken control, and rejects at alpha=0.01 for none of them. A generator-independent pile-up is a property of the estimator, not of the generator.",
+    "source": "N004_production_20260926_V3/N004_raw.sqlite3 (read-only)"
+  },
+  "prereg_experiment_id": "T03-FORMULA-AUDIT",
+  "prereg_sha256": "8ffc034dffdf4836a15ea3c160b3fddfe01698af6ea0c8cf5844afb9dd9dbae0",
+  "schema": "t03-runs-formula-audit-v1",
+  "shared_battery_guard": {
+    "battery_unmodified_since_n004": true,
+    "n004_recorded_battery_sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e",
+    "shared_battery_path": "rng_battery.py",
+    "shared_battery_sha256": "5f53f3eacdf38e8cf0d47ddf3f7f71935856120fe08120f043347caa663b3b9e"
+  },
+  "verdict": {
+    "applicability_finding": "SP 800-22 section 2.3 step 1 requires |pi - 1/2| >= 2/sqrt(n-1) before the test is run. At 2^18 that threshold is about 0.0039 while a fair stream deviates about 0.0008 on average, so the test is not applicable to these streams at all.",
+    "attribution_basis": "identical streams; the shared battery is non-uniform while the independent reference is uniform at the same resolution",
+    "classification": "ESTIMATOR_DEFECTIVE",
+    "defect": "an extra sqrt(2) is applied to an argument the standard defines directly in erfc units, inflating p-values",
+    "estimator": "T03_runs (engine.validation.rng_battery.t_runs)",
+    "n004_cells_requiring_correction": [
+      "G_LAB 2^18",
+      "G_LAB 2^22"
+    ],
+    "n004_t03_status_superseded": true,
+    "what_is_not_affected": [
+      "the N-004 family-level BATTERY_VALID verdict, which rests on the positive control being rejected by at least one test at the family-wise level",
+      "the 23 other per-test cells, which were not re-derived here"
+    ],
+    "what_must_not_be_claimed": [
+      "that any generator is certified or random",
+      "that the withdrawn EXP-0004 certificate is reinstated",
+      "that G_LAB was shown to be defective; the opposite is true, the instrument was defective"
+    ]
+  }
+}

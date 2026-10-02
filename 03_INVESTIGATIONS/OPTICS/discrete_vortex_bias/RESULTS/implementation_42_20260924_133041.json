@@ -1,0 +1,171 @@
+{
+  "asm_fresnel_complex_ncc": 0.9999709582337644,
+  "asm_reverse_complex_ncc": 0.9999999999999998,
+  "asm_torch_complex_ncc": 1.0000000000000002,
+  "detectors": [
+    {
+      "asm": {
+        "count": 4,
+        "detector": "raw_winding",
+        "median_feature_intensity": 0.0016609000177995794,
+        "minimum_feature_intensity": 0.0016609000177995705,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.0,
+          "true_positive": 4
+        }
+      },
+      "detector": "raw_winding",
+      "fresnel": {
+        "count": 4,
+        "detector": "raw_winding",
+        "median_feature_intensity": 0.0016326779788347905,
+        "minimum_feature_intensity": 0.0016326779788347857,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.0,
+          "true_positive": 4
+        }
+      }
+    },
+    {
+      "asm": {
+        "count": 4,
+        "detector": "clustered_winding",
+        "median_feature_intensity": 0.0016609000177995794,
+        "minimum_feature_intensity": 0.0016609000177995705,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.0,
+          "true_positive": 4
+        }
+      },
+      "detector": "clustered_winding",
+      "fresnel": {
+        "count": 4,
+        "detector": "clustered_winding",
+        "median_feature_intensity": 0.0016326779788347905,
+        "minimum_feature_intensity": 0.0016326779788347857,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.0,
+          "true_positive": 4
+        }
+      }
+    },
+    {
+      "asm": {
+        "count": 4,
+        "detector": "supported_clustered_winding",
+        "median_feature_intensity": 0.0016609000177995794,
+        "minimum_feature_intensity": 0.0016609000177995705,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.0,
+          "true_positive": 4
+        }
+      },
+      "detector": "supported_clustered_winding",
+      "fresnel": {
+        "count": 4,
+        "detector": "supported_clustered_winding",
+        "median_feature_intensity": 0.0016326779788347905,
+        "minimum_feature_intensity": 0.0016326779788347857,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.0,
+          "true_positive": 4
+        }
+      }
+    },
+    {
+      "asm": {
+        "count": 4,
+        "detector": "local_minimum_contour",
+        "median_feature_intensity": 0.00010690741946853849,
+        "minimum_feature_intensity": 0.00010690741946853323,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.5811388300841898,
+          "true_positive": 4
+        }
+      },
+      "detector": "local_minimum_contour",
+      "fresnel": {
+        "count": 4,
+        "detector": "local_minimum_contour",
+        "median_feature_intensity": 5.090670248411441e-05,
+        "minimum_feature_intensity": 5.0906702484112374e-05,
+        "negative": 2,
+        "net_charge": 0,
+        "positive": 2,
+        "truth_match": {
+          "charge_correct": 4,
+          "false_negative": 0,
+          "false_positive": 0,
+          "localization_rmse_px": 1.5811388300841898,
+          "true_positive": 4
+        }
+      }
+    }
+  ],
+  "energy_asm": {
+    "energy": 10008.680394342035,
+    "max_abs": 1.3790947414568255,
+    "mean_intensity": 0.15272034293124442,
+    "sha256": "8f271f26edae95cd90d5ca868b6015dcb528bf1bb29ad6f34ac1cd1f42fbd939"
+  },
+  "energy_input": {
+    "energy": 10008.680394342033,
+    "max_abs": 0.9999198380232678,
+    "mean_intensity": 0.1527203429312444,
+    "sha256": "1d6df3c9d7fd8b21f63bac4f2bbcec77dbcdf185fe412aa4b7331907f4e03bbb"
+  },
+  "experiment": "EXP-0015",
+  "parameters": {
+    "grid": 256,
+    "wavelength_nm": 694.3,
+    "z_um": 1280.0,
+    "z_unit": "metres"
+  },
+  "runtime_s": 2.1718642711639404,
+  "seed": 42,
+  "stage": "implementation_checks",
+  "timestamp_utc": "2026-09-24T03:30:41+00:00",
+  "torch_version": "2.14.0+cpu"
+}

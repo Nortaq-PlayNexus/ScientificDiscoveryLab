@@ -1,0 +1,14 @@
+{
+  "analysis": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\topology_analysis_summary.json",
+  "artifact_manifest": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\experiment_manifest.json",
+  "change_log_entries": 11,
+  "change_log_head": "059e211ae0f24f9cfad52d8ba78293fb50069a49e8e618a5d0f0bf534a15c644",
+  "experiment": "EXP-0016",
+  "historical_experiment_files_modified": false,
+  "novelty_claim": false,
+  "preregistration": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\CONFIG\\prereg_EXP-0016.json",
+  "preregistration_sha256": "c1935da7ac10d628386f313594a66e6a91c0466cb378da1ac1b02ca57895e54b",
+  "status": "COMPLETE / MEASUREMENT-DEFINITION RESULT / NO_NOVELTY_CLAIM",
+  "validation": "C:\\Users\\natha\\ScientificDiscoveryLab\\03_INVESTIGATIONS\\OPTICS\\topology_measurement_definition\\RESULTS\\validation_summary.json",
+  "validation_status": "PASS"
+}

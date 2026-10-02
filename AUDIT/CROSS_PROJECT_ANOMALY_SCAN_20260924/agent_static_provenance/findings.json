@@ -1,0 +1,1049 @@
+{
+  "audit_id": "agent_static_provenance",
+  "generated_date": "2026-09-24",
+  "scope": "Independent read-only static/provenance scan of the full laboratory tree, including investigations, shared engine, src, tests, root writers, registries, reports, configs, raw/result stores, chronology, duplicate hashes, and ID usage.",
+  "historical_files_modified_by_this_agent": false,
+  "concurrent_changes_note": "A point-in-time baseline comparison found five changes under AUDIT/SUBAGENT_EXP0003_BROADBAND_20260924 during the broader audit; they were outside this agent output and are documented in historical_integrity_check.json.",
+  "evidence_policy": "Existing independent-audit findings were read as context and not treated as complete. New findings below are based on source/result cross-checks or safe in-memory/temp-directory reproductions. Existing BUGS.md items are identified as corroborations where applicable.",
+  "severity_scale": {
+    "critical": "Invalidates a stored scientific result or its central provenance chain.",
+    "high": "Materially changes confidence, reproducibility, or an inferential gate.",
+    "medium": "Concrete provenance or statistical defect with limited immediate claim impact.",
+    "low": "Localized defect with no direct scientific claim impact."
+  },
+  "findings": [
+    {
+      "id": "SP-001",
+      "title": "The shared spanning routine applies 2-D boundary indices to 3-D labels, and C7 repeats the same convention",
+      "novelty": "new cross-project defect",
+      "severity": "critical",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+          "line": "226-251",
+          "quote": "rows = (np.repeat(np.arange(L), L)).astype(np.int64); cols = (np.tile(np.arange(L), L)).astype(np.int64)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+          "line": "51-58",
+          "quote": "src, dst, N = pe.cubic_lattice_3d(L); ... pe.run_span_cell_edges(src, dst, N, L, ...)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/REPLICATION/independent_check_EXP0011.py",
+          "line": "77-88",
+          "quote": "# Match spanning_flags: only check z=0 plane ... bottom row: ids (L-1)*L..L*L-1"
+        }
+      ],
+      "observed": {
+        "L": 4,
+        "N": 64,
+        "rows_cols_length": 16,
+        "selected_bottom_indices": [12, 13, 14, 15],
+        "intended_z_last_plane_start": 16,
+        "intended_z_last_plane": "16-63",
+        "independent_cross_check": "At p=0.3116079 and 1000 draws, the stored boundary convention gave 33 vertical and 28 horizontal spans versus 327 and 316 for opposite-z/opposite-x planes at L=8."
+      },
+      "anomaly_rationale": "cubic_lattice_3d uses node id x + L*y + L^2*z, so labels has L^3 entries. spanning_flags constructs only L^2 row/column arrays and its default bottom row is an index within the first z slice. It does not test the z=L-1 plane. The C7 implementation copies the same boundary logic, so agreement cannot detect the shared defect.",
+      "benign_alternative": "The code might have been intended to measure a 2-D cross-section of a 3-D graph, but the preregistration, report, lattice construction, and C7 comments all describe 3-D opposite-boundary spanning. No document declares a cross-section estimand.",
+      "minimal_reproduction_command": "python -c \"L=4; rows=[i//L for i in range(L*L)]; print([i for i,r in enumerate(rows) if r==L-1], list(range(L*L,L**3)))\"",
+      "expected_reproduction": "[12, 13, 14, 15] [16, 17, ..., 63]; the selected set is disjoint from the intended final z-plane.",
+      "impact_on_prior_classification": "Changes the 3-D pilot from merely inconclusive to invalid for stored p_c, width, and exponent measurements. The apparent C7 pass is not independent boundary validation. C-009 should be read as INVALID for the stored 3-D measurements; 2-D classifications are unaffected.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/3d_boundary", "verified_candidate_evidence.json#/exp0011_3d_boundary"]
+    },
+    {
+      "id": "SP-002",
+      "title": "The 3-D tau cache is nested one level too deeply, making every tail empty",
+      "novelty": "new cross-project defect",
+      "severity": "critical",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/ENGINE/perc_engine.py",
+          "line": "382-392",
+          "quote": "cluster_size_lists.append(np.sort(sizes)[::-1]); out[\"cluster_sizes\"] = cluster_size_lists"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+          "line": "150-156, 181-183",
+          "quote": "cl_sizes = o.get(\"cluster_sizes\", []); sizes_list.append(cl_sizes); tsizes = [ss[1:] for ss in cells[tL][\"sizes\"]]"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/REPORT/PLAIN_EXP-0011.md",
+          "line": "18",
+          "quote": "tau diagnostic was not computable ... no tail clusters were found"
+        }
+      ],
+      "observed": {
+        "one_realization_shape": "cluster_size_lists is [one size array]",
+        "nested_tail_lengths": [0],
+        "stored_tau": null,
+        "stored_tau_raw_total_tail_clusters": 0
+      },
+      "anomaly_rationale": "Each one-realization engine call returns a list containing one cluster-size array. The runner appends that list as one realization, then treats it as an array and removes its first element. The entire cluster-size sample is discarded for every realization, so the null tau is a structural cache bug rather than evidence of a sample-size limitation.",
+      "benign_alternative": "The report calls the missing tail a small-L limitation, but the exact source shape proves the tail is empty before any fit. A different runner could repair this, but it would not validate the stored tau.",
+      "minimal_reproduction_command": "python -c \"sizes_list=[[[1,2,3]]]; print([len(ss[1:]) for ss in sizes_list])\"",
+      "expected_reproduction": "[0] for every realization; no nonempty cluster tail reaches fit_tau_cumulative.",
+      "impact_on_prior_classification": "Q-P008's 3-D tau branch is invalid, not merely inconclusive. This reinforces C-009's invalidation and rules out using the stored null as a meaningful control.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/3d_nested_tau"]
+    },
+    {
+      "id": "SP-003",
+      "title": "The 3-D runner silently reduces configured width samples and truncates ragged exponent samples",
+      "novelty": "new cross-project defect",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0011.json",
+          "line": "30-59",
+          "quote": "width_grid n_each: 300, 200, 100; n_real: 500, 200, 50"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+          "line": "51-58, 165-169",
+          "quote": "max(4, n_each // 10); min_n = min(len(cells[L][\"masses\"]) ...); arrays are sliced [:min_n]"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/REPORT/PLAIN_EXP-0011.md",
+          "line": "5",
+          "quote": "500/200/50 realizations respectively"
+        }
+      ],
+      "observed": {
+        "pilot_configured_width_n_each": {"L8": 300, "L16": 200, "L24": 100},
+        "pilot_effective_width_n_each": {"L8": 30, "L16": 20, "L24": 10},
+        "pilot_configured_exponent_n_real": {"L8": 500, "L16": 200, "L24": 50},
+        "pilot_aligned_fit_n": 50,
+        "main_configured_width_n_each": {"L128": 10, "L256": 5, "L512": 10},
+        "main_effective_width_n_each": {"L128": 4, "L256": 4, "L512": 4},
+        "main_aligned_fit_n": 100
+      },
+      "anomaly_rationale": "The result does not record the tenfold width reduction. The exponent fit also discards all but the smallest realization count at each L, while the report presents the larger configured counts as the measurement sample. This changes precision and can hide scale-dependent effects.",
+      "benign_alternative": "A deliberate compute-saving approximation could be benign if it were preregistered and reported as the effective sample. Here the source silently changes the value after preregistration and the result/report retain the configured counts.",
+      "minimal_reproduction_command": "python -c \"import json; p=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0011.json')); print({k:v['n_each'] for k,v in p['parameters']['width_grid'].items()}); print({k:max(4,v['n_each']//10) for k,v in p['parameters']['width_grid'].items()})\"",
+      "expected_reproduction": "The first mapping is 300/200/100 and the second is 30/20/10.",
+      "impact_on_prior_classification": "The 3-D p_c and exponent uncertainties cannot be interpreted at the preregistered sample sizes. C-009 remains unsupported and is strengthened to INVALID for any precision claim.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/3d_sample_sizes"]
+    },
+    {
+      "id": "SP-004",
+      "title": "The default 3-D runner selects the main configuration while the main-named result is a semantic pilot copy",
+      "novelty": "new provenance collision",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/run_exp0011.py",
+          "line": "18-40",
+          "quote": "PREC_PATHS = [prereg_EXP-0013.json, prereg_EXP-0011.json] ... first existing path wins"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CONFIG/prereg_EXP-0013.json",
+          "line": "20-67",
+          "quote": "L_list: 128,256,512; tau_L: 24"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_results.json",
+          "line": "2-20",
+          "quote": "experiment EXP-0011; L_list 8,16,24"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_results.json",
+          "line": "2-20",
+          "quote": "experiment EXP-0011; identical pilot L_list and measurements"
+        }
+      ],
+      "observed": {
+        "results_semantically_equal_after_removing_elapsed": true,
+        "elapsed_values": [8.37174677848816, 5.600082159042358],
+        "default_config": "EXP-0013 main",
+        "main_config_tau_L": 24,
+        "main_config_L_list": [128, 256, 512],
+        "stored_main_named_result_L_list": [8, 16, 24]
+      },
+      "anomaly_rationale": "A default invocation is wired to the expensive main preregistration, not the pilot that produced the stored EXP-0011 files. The main configuration also requests tau at L=24 although 24 is absent from its L list. The result named EXP-0011 is semantically the pilot, with no manifest identifying the writer or explaining the alias.",
+      "benign_alternative": "The file may be an intentional pilot alias and the main configuration may be a future placeholder. That would be benign only with an explicit execution manifest and a fail-closed configuration check; neither exists.",
+      "minimal_reproduction_command": "python -c \"import json; a=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_results.json')); b=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation_3d/CODE/RESULTS/EXP-0011_pilot_results.json')); a.pop('elapsed',None); b.pop('elapsed',None); print(a==b, a['L_list'])\"",
+      "expected_reproduction": "True [8, 16, 24].",
+      "impact_on_prior_classification": "C-009 cannot be supported by a reproducible default command. The main EXP-0013 claim is not evidenced by a completed result, and the pilot result's status is provenance-ambiguous.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/3d_boundary", "verified_candidate_evidence.json#/duplicate_3d_payloads"]
+    },
+    {
+      "id": "SP-005",
+      "title": "The current EXP-0006 runner cannot regenerate the stored EXP-0006 p50 values and collides with an older root wrapper",
+      "novelty": "new provenance/formula collision",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+          "line": "51-64",
+          "quote": "return float(p0 + (0.5-w0)*(p1-p0)/(w1-p0))"
+        },
+        {
+          "path": "CODE/run_percolation_exp0006.py",
+          "line": "24-31",
+          "quote": "import run_percolation as rc; rc.EXP_ID = \"EXP-0006\"; rc.main()"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+          "json_path": "$.p50.bond_span.64.p50",
+          "value": 0.4998542286084771
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0006_results.json",
+          "json_path": "$.c2",
+          "value": {"pair_diff": 0.0010144666894992271, "pass": true}
+        }
+      ],
+      "observed": {
+        "L64_literal_current_formula": 0.7965714285714307,
+        "L64_correct_formula": 0.4998211091234348,
+        "L64_stored": 0.4998542286084771,
+        "L256_literal_current_formula": 0.5026260387811634,
+        "L256_correct_formula": 0.5001618122977346,
+        "runner_mtime_utc": "2026-09-22T14:38:20.401670+00:00",
+        "result_mtime_utc": "2026-09-17T13:28:38.966068+00:00"
+        ,
+        "stored_c2_pair_diff": 0.0010144666894992271
+      },
+      "anomaly_rationale": "Linear interpolation of a crossing uses denominator w1-w0, not w1-p0. Re-evaluating the stored raw cells with the current literal expression produces gross errors at L=64 and L=256, while the stored values track the corrected expression. The investigation-local runner is newer than the result and the root wrapper invokes a different shared runner, so the canonical result has no single identifiable writer.",
+      "benign_alternative": "The local file may be an abandoned post-run branch and the root wrapper may be authoritative. The report and registry nevertheless identify the investigation-local runner as the runner and provide no commit/hash or execution manifest selecting the wrapper.",
+      "minimal_reproduction_command": "python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py",
+      "expected_reproduction": "The exp0006 check reports the literal-denominator values above and the runner/result mtime ordering.",
+      "impact_on_prior_classification": "C-005's EXP-0006 content should no longer be treated as a directly reproduced artifact. The 2-D threshold may remain supported by EXP-0007/other evidence, but EXP-0006's fine-grid result and gate provenance are not established by the current source.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/exp0006", "verified_candidate_evidence.json#/exp0006_interpolation"]
+    },
+    {
+      "id": "SP-006",
+      "title": "EXP-0006 control fields report passes that the code does not compute",
+      "novelty": "new control-provenance defect",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py",
+          "line": "290-294",
+          "quote": "pair = abs(fss_out[\"bond_span\"][\"a\"] - fss_out[\"bond_span\"][\"a\"]); \"pair_diff\": 0.0, \"pass\": True"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPLICATION/independent_check.py",
+          "line": "178-182",
+          "quote": "report[\"max_diff\"] = report[\"max_diff\"]"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONTROLS.md",
+          "line": "10-12",
+          "quote": "C2 requires span/wrap comparison; C7 requires raw counts and per-L p50 within 0.005"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0006.md",
+          "line": "71-80",
+          "quote": "C2 PASS; C7 PASS (39/39 cells bit-identical)"
+        }
+      ],
+      "observed": {
+        "current_c2_pair_expression": "a-a",
+        "current_c2_pair_diff": 0.0,
+        "current_c2_pass_literal": true,
+        "stored_c2_pair_diff": 0.0010144666894992271,
+        "stored_c2_wrap_a": 0.5012239493794279,
+        "c7_report_contains_p50_delta_by_L": false,
+        "c7_max_diff_is_identity_assignment": true
+      },
+      "anomaly_rationale": "C2 is assigned PASS without a second estimator calculation. C7 checks raw-count identity but never computes the per-L p50 comparison required by the control definition; max_diff is an unchanged initialization. Raw-count agreement is useful implementation evidence, but it is not the stated C7 gate.",
+      "benign_alternative": "C7 raw identity could be intentionally stronger than a p50 tolerance, and C2 could rely on EXP-0005/0007 as the note suggests. The current result/report present these as current EXP-0006 controls, and the code does not record that substitution as a valid gate.",
+      "minimal_reproduction_command": "python -c \"from pathlib import Path; t=Path('03_INVESTIGATIONS/PHYSICS/percolation/CODE/run_percolation_exp0006.py').read_text(); print('a-a' in t, '\\\"pair_diff\\\": 0.0' in t, '\\\"pass\\\": True' in t)\"",
+      "expected_reproduction": "True True True, despite the stored C2 value being nonzero and independently sourced.",
+      "impact_on_prior_classification": "C-005's EXP-0006 control pass and decision must be downgraded to provenance-limited/inconclusive. It does not by itself disprove the known 2-D threshold, but it removes the claimed independent control support.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/exp0006"]
+    },
+    {
+      "id": "SP-007",
+      "title": "Q-M007's 40-cell BH-FDR is an approximation from aggregate residuals, not a 40-cell test",
+      "novelty": "new statistical/provenance defect",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/compute_bhfr_40cell.py",
+          "line": "27-49",
+          "quote": "Since we only have bin-level totals, we need to approximate ... std_residual**2 ... p_value = 0.5 * math.erfc(...)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/BHFR_40cell_results.json",
+          "json_path": "$.significant_cells",
+          "value": 38
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md",
+          "line": "24-33, 111-121",
+          "quote": "38/40 cells survive BH-FDR ... new analytical finding"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/q_m007_results.json",
+          "json_path": "$.bin_summary.1.mean_std_residual",
+          "value": -266.98526654862815
+        }
+      ],
+      "observed": {
+        "per_cell_observed_expected_data_available_to_script": false,
+        "stored_bin1_pvalues": [2.0502642278570707e-07, 3.070588778994852e-13, 4.201981592309249e-25, 1.6282328723087341e-49],
+        "exact_chi_square_upper_tail_bin1": [7.273513898649931e-184, 0.0, 0.0, 0.0],
+        "report_bin1_average": -283.5,
+        "stored_bin1_average": -266.98526654862815,
+        "stored_significant_cells": 38
+      },
+      "anomaly_rationale": "The script has no per-cell observed/expected counts. It substitutes four block standardized residuals, squares them, applies a nonstandard half-tail transformation, and calls the output BH-FDR. For the first bin, the stored p-values differ from the actual chi-square(1) upper tail by many orders of magnitude. The report also prints a bin-1 average that is not the stored mean.",
+      "benign_alternative": "The computation could be labeled exploratory/descriptive and the aggregate residual shape could still be useful. It cannot support the report's preregistered 38/40 inferential claim or a claim that the 40-cell FDR was independently verified.",
+      "minimal_reproduction_command": "python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py",
+      "expected_reproduction": "The qm007 check returns stored_significant_cells=38, per_cell_obs_exp_present=false, and the listed literal-versus-exact p-values.",
+      "impact_on_prior_classification": "C-010 remains DESCRIPTIVE ONLY, but the 38/40 BH-FDR statement and any 'new analytical finding' language must be withdrawn. The underlying per-bin descriptive residuals are not thereby disproved.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/qm007", "verified_candidate_evidence.json#/qm007_approximation"]
+    },
+    {
+      "id": "SP-008",
+      "title": "A hardcoded audit writer produces contradictory Q-M007 conclusions and preserved phase values",
+      "novelty": "new hardcoded-writer anomaly",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "save_audits.py",
+          "line": "5-60, 64-103",
+          "quote": "audit_q006 = {...}; audit_q007 = {...}; with open(...): f.write(...)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/AUDIT_Q006_Q007.md",
+          "line": "47-51",
+          "quote": "Q-M007 reports RAW residuals — NO BH-FDR applied to the 40-cell Q-M007 grid"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md",
+          "line": "24-33",
+          "quote": "38/40 (95%) ... BH-FDR extension"
+        }
+      ],
+      "observed": {
+        "json_load_calls_in_writer": 0,
+        "hardcoded_qm007_verdict": "VERIFIED — H1_SUPPORTED CONFIRMED",
+        "hardcoded_qm007_caveat": "NO BH-FDR applied to the 40-cell Q-M007 grid",
+        "same_investigation_later_report": "38/40 cells survive BH-FDR",
+        "writer_outputs_preserved_phase1_json": true
+      },
+      "anomaly_rationale": "The writer constructs conclusions as Python literals and never reads q_m007_results.json, BHFR_40cell_results.json, or the raw EXP-0008 cells. It can therefore emit an audit report whose central caveat contradicts the later technical report without a supersession record or source hash. The same pattern is present in root documentation generators that hardcode Q-P006 decisions.",
+      "benign_alternative": "A post-hoc audit note may intentionally summarize a human review rather than compute a result. It should then be labeled as an assertion/manual note and linked to immutable evidence; here it is written as a generated audit artifact with verification language.",
+      "minimal_reproduction_command": "python -c \"from pathlib import Path; t=Path('save_audits.py').read_text(); print(t.count('json.load'), 'NO BH-FDR applied to the 40-cell' in t, 'phase1_preserved' in t)\"",
+      "expected_reproduction": "0 True True, showing the writer has no JSON input dependency.",
+      "impact_on_prior_classification": "C-016's provenance-record contradiction is strengthened. Historical Q-M007 audit language cannot be used as independent verification, and the preserved Q-P007 phase values must be treated as asserted inputs until their raw source is recovered.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/hardcoded_audit_writer", "verified_candidate_evidence.json"]
+    },
+    {
+      "id": "SP-009",
+      "title": "Q-P007 has two colliding writers, a non-runnable first writer, and a cache that cannot reconstruct tau",
+      "novelty": "new cross-project result-writer collision",
+      "severity": "critical",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_q_p007.py",
+          "line": "95-103, 176-179",
+          "quote": "o[\"chis\"]; o[\"pinfs\"]; o[\"sizes\"] ... f\"{EXP_ID}_results.json\""
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/run_phase2.py",
+          "line": "61-62, 141-171",
+          "quote": "p_c_measures = {512: 0.592883, ...}; out = ...f\"{EXP_ID}_results.json\""
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P007/CODE/RESULTS/EXP-0009-pc_results.json",
+          "json_path": "$.tau_raw.total_tail_clusters",
+          "value": 0
+        }
+      ],
+      "observed": {
+        "writers_target_same_result_path": true,
+        "first_writer_missing_keys": ["chis", "pinfs", "sizes"],
+        "engine_actual_key": "cluster_sizes",
+        "phase2_p_c_measures_and_sigmas_are_literals": true,
+        "cache_saves_sizes_n_and_sizes_n_total_not_sizes": true,
+        "cache_loader_returns_no_sizes_key_but_tau_path_requires_it": true,
+        "stored_tau": null
+      },
+      "anomaly_rationale": "The first runner cannot consume the engine return schema and the second runner writes the same canonical result path. The phase-2 cache omits the cluster-size arrays needed by the tau code, while the phase-1 p_c values and uncertainties are literals. A reader cannot identify which writer or input produced the stored result.",
+      "benign_alternative": "The two files could be intended sequential phases, but a sequential design would use distinct outputs or an explicit checkpoint contract; here the paths collide and the cache schema is incompatible with the consumer.",
+      "minimal_reproduction_command": "python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py",
+      "expected_reproduction": "The qp007 check reports same target=true, bad keys=[chis, pinfs, sizes], hardcoded p_c=true, and stored tail clusters=0.",
+      "impact_on_prior_classification": "C-008's invalid historical tau remains invalid. The Q-P007 refined-p_c PASS narrative is not independently reproducible; its p_c shift and exponent PASS labels must be treated as provisional asserted results pending a single canonical rerun.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/qp007", "verified_candidate_evidence.json"]
+    },
+    {
+      "id": "SP-010",
+      "title": "Q-P006's precision cells are copied Q-P005 data despite an explicit no-reuse preregistration",
+      "novelty": "corroborates prior B-002 with direct copy evidence",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CONFIG/prereg_EXP-0009P.json",
+          "json_path": "$.note",
+          "quote": "No cells from EXP-0009/EXP-0010 reused."
+        },
+        {
+          "path": "fix_q006_cells.py",
+          "line": "4-14",
+          "quote": "src_dir = ...Q-P005_exponents...; shutil.copy2(src, dst)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/run_q_p006.py",
+          "line": "16-20, 50-58, 80-83",
+          "quote": "imports save_cell from Q-P005; path under Q-P006; for Lk ...: pass"
+        }
+      ],
+      "observed": {
+        "byte_identical_pairs": [
+          {"L": 512, "n": 200, "sha256": "4c45319a1e965553792dab751bda0fe70865fd9356eba04372159320687c3afd"},
+          {"L": 1024, "n": 100, "sha256": "c6ca3de94406f2b2fda927242007e7b873bd89b5e2ba0d0b30e24a16f88c0572"},
+          {"L": 2048, "n": 50, "sha256": "9fb582f2ecd55539a9da35a502eb21c4f35e1ec299185f42ee4f048ddba260af"}
+        ],
+        "all_pairs_identical": true,
+        "inv_nu_gate_evaluated": false
+      },
+      "anomaly_rationale": "The precision study's raw arrays are byte-for-byte the Q-P005 arrays, and a root script explicitly copies them into the Q-P006 directory. This is not an independent replication. The runner also leaves the preregistered 1/nu loop as a no-op, so the result cannot satisfy its own gate.",
+      "benign_alternative": "Reusing frozen baseline cells could be a deliberate control condition, but the preregistration and README call Q-P006 an independent precision successor and the result presents it as new evidence.",
+      "minimal_reproduction_command": "python -c \"import hashlib; from pathlib import Path; g=[('03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/_cells_L512_n200.npz','03_INVESTIGATIONS/PHYSICS/percolation/Q-P006/CODE/RESULTS/_cells_L512_n200.npz')]; print([hashlib.sha256(Path(x).read_bytes()).hexdigest()==hashlib.sha256(Path(y).read_bytes()).hexdigest() for x,y in g])\"",
+      "expected_reproduction": "[True] (and likewise for L=1024 and L=2048).",
+      "impact_on_prior_classification": "C-007/B-002 remains confirmed. Q-P006 cannot support an independent precision replication or a final five-exponent decision; any copied-data result is invalid for that claim.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/q006", "verified_candidate_evidence.json#/qp005_qp006_duplicate_hashes"]
+    },
+    {
+      "id": "SP-011",
+      "title": "The purported immutable preregistration helper overwrites an existing file",
+      "novelty": "new infrastructure immutability defect",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py",
+          "line": "27-30",
+          "quote": "Write a frozen, immutable pre-registration config; file must not be edited after results exist"
+        },
+        {
+          "path": "04_SHARED_ENGINE/engine/hypothesis_testing/prereg.py",
+          "line": "45-46",
+          "quote": "with open(out_path, \"w\") as fh: json.dump(config, fh)"
+        }
+      ],
+      "observed": {
+        "first_temp_sha256": "6fc2a1511c5867ad7f138ca8c11d9ca60773ba03e7c827bb6c2bdb954034e8bd",
+        "second_temp_sha256": "51e290f54a3241f52a999fa06f2bec84995951e2d8c4acb07f48c772868d073e",
+        "first_parameters": {"x": 1},
+        "second_parameters": {"x": 2},
+        "file_changed_on_second_call": true
+      },
+      "anomaly_rationale": "The helper has no existence check, hash pin, or write-once mode. A caller can silently replace a preregistration after results exist, while the API and project documentation describe the opposite contract.",
+      "benign_alternative": "Callers may be expected to invoke the function only once. That is an operational convention, not immutability; the helper itself neither detects nor records a violation.",
+      "minimal_reproduction_command": "python -c \"import tempfile, pathlib, sys; sys.path.insert(0,'04_SHARED_ENGINE'); from engine.hypothesis_testing.prereg import freeze_config; d=tempfile.mkdtemp(); p=pathlib.Path(d)/'p.json'; freeze_config(experiment_id='X',hypothesis_id='H',question_id='Q',seed=1,params={'x':1},out_path=p); a=p.read_bytes(); freeze_config(experiment_id='X',hypothesis_id='H',question_id='Q',seed=1,params={'x':2},out_path=p); print(a!=p.read_bytes())\"",
+      "expected_reproduction": "True; the second call replaces the first file.",
+      "impact_on_prior_classification": "C-001's infrastructure claim must be limited to deterministic routines, not immutable preregistration. C-016's provenance record is further weakened for any experiment using this helper.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/freeze_and_hashes", "verified_candidate_evidence.json#/freeze_config_overwrite_demo"]
+    },
+    {
+      "id": "SP-012",
+      "title": "The field named result_hash is not a consistent result-file integrity hash",
+      "novelty": "new provenance-hash anomaly",
+      "severity": "medium",
+      "confidence": "high",
+      "locations": [
+        {
+          "path": "04_SHARED_ENGINE/engine/utilities/core.py",
+          "line": "77-95",
+          "quote": "\"result_hash\": sha256_text(json.dumps(result, sort_keys=True))"
+        },
+        {
+          "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CONFIG/EXP-0002_experiment.json",
+          "json_path": "$.result_hash",
+          "value": "c2aa22efbed0ef35a941d62ac7a4c48f891170fa57df2ba332c2e46e2f314ed5"
+        },
+        {
+          "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/RESULTS/EXP-0002_results.json",
+          "json_path": "$",
+          "value": "file sha256 2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7"
+        }
+      ],
+      "observed": {
+        "EXP-0002": {"recorded": "c2aa22efbed0ef35a941d62ac7a4c48f891170fa57df2ba332c2e46e2f314ed5", "semantic_config_result": "9eb48706efa41193a0829d3d0db8add4bb6a9769d989591ffbacbbc5d119d013", "file_bytes": "2e38b30862e69d1ba551480ac4e50c695864ba38ba6baf31f6ca89fab330cec7"},
+        "EXP-0003": {"recorded": "00a693b868ef2bb30e7729df954be820ef6cb730eb1cd716ce93b65e1a21485d", "semantic_config_result": "b8f12ed3f8ffaf070f34cecbaa92befbaf3dbefa4fea674e7f6fc4b766b1eb78", "file_bytes": "910657776fc2df0c79bf0ba3789d6b15da44e81e65a020bf51fb578eecc58531"},
+        "EXP-0004": {"recorded": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508", "semantic_config_result": "5a437bdb185372f9b091d25fb789b9f211bab1639c8efb5b5da9335a30bc7508", "file_bytes": "8cf7c22dbd19bbe4e34939c325e04185ee318e56e2861310cf9e7dc8f2c6493e"},
+        "EXP-0008": {"recorded": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca", "semantic_config_result": "64bbbb9e1acef8071b72426b6ab34b2722e0f7ae02ee68cf29158f104c0957ca", "file_bytes": "33956d75aaac6476087b41c1a9a4b68b049b5bbc34c041d9583283cec46f3690"}
+      },
+      "anomaly_rationale": "The helper hashes a serialized in-memory result, while the registry/config field is often interpreted as an artifact hash. None of the four checked recorded values matches the result file bytes; EXP-0002 and EXP-0003 also do not match the current loaded config result object, indicating stale or different serialization semantics.",
+      "benign_alternative": "A semantic hash can be a valid canonical content identifier if the convention is explicit and all writers use it. The mixed matches/nonmatches and use of a generic result_hash name make it impossible to use as a file-integrity check without additional provenance.",
+      "minimal_reproduction_command": "python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py",
+      "expected_reproduction": "The freeze_and_hashes check reports the four rows and their three distinct hash comparisons.",
+      "impact_on_prior_classification": "C-016's claim that registry hashes accurately represent completed work is contradicted. This does not by itself change a numerical result, but it prevents hash-based provenance claims.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/freeze_and_hashes", "result_hash_check.txt"]
+    },
+    {
+      "id": "SP-013",
+      "title": "Feigenbaum artifacts have contradictory dates, paths, statuses, and hardcoded control passes",
+      "novelty": "corroborates B-003/B-004/B-005 with cross-file chronology evidence",
+      "severity": "critical",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/prereg_EXP-0014.json",
+          "json_path": "$",
+          "quote": "JSON parse fails at line 1, column 1"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/README.md",
+          "line": "3",
+          "quote": "Status: EXP-0014 preregistration frozen; awaiting execution."
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CONFIG/experiment.json",
+          "json_path": "$.date",
+          "value": "2026-09-20T15:06:59.739293+00:00"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/REPORT/TECHNICAL_EXP-0014.md",
+          "line": "56-65",
+          "quote": "C3/C4/C6 PASS; all 7 controls PASS"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/CODE/run_feigenbaum.py",
+          "line": "103-137",
+          "quote": "controls[\"C3\"] = {... \"pass\": True}; controls[\"C4\"] = {... \"pass\": True}; controls[\"C6\"] = {... \"pass\": True}"
+        }
+      ],
+      "observed": {
+        "prereg_valid": false,
+        "canonical_results_directory_entries": 0,
+        "nested_result_exists": true,
+        "readme_status": "awaiting execution",
+        "registry_date": "2026-09-21",
+        "nested_experiment_date": "2026-09-20T15:06:59.739293+00:00",
+        "z3_unique_a_values": 2,
+        "z3_delta8": "Infinity",
+        "z4_later_values_rollback": true,
+        "stored_C4_difference": 0.08955043987795008,
+        "stored_C4_pass": "False",
+        "report_C4_claim": "PASS diff <1e-6"
+      },
+      "anomaly_rationale": "The canonical result directory is empty while a result is nested under a duplicated CODE path; the README still says awaiting execution; the registry and embedded experiment date disagree; and the report's all-controls-pass statement conflicts with the stored C4 failure. The current control builder hardcodes C3/C4/C6 pass fields. The z=3 duplicate root and z=4 rollback are present in the stored payload.",
+      "benign_alternative": "The files may reflect a moved working directory and a later corrected run. A valid supersession chain, canonical path, and recomputed controls would be needed; none is present, and the current code still hardcodes the disputed passes.",
+      "minimal_reproduction_command": "python -c \"import json, pathlib; r=pathlib.Path('03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants'); print(len(list((r/'RESULTS').iterdir())), (r/'CODE/03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/RESULTS/EXP-0014_results.json').exists()); json.load(open(r/'CONFIG/prereg_EXP-0014.json'))\"",
+      "expected_reproduction": "The command fails JSON parsing after showing 0 canonical entries and True for the nested result.",
+      "impact_on_prior_classification": "C-011 remains z=2 reproduced but z=3/z=4 contradicted. The new evidence invalidates the historical higher-order/control provenance and confirms C-004/B-005; no new z=2 claim is withdrawn.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/feigenbaum", "verified_candidate_evidence.json"]
+    },
+    {
+      "id": "SP-014",
+      "title": "Q-M008 changes the normalized-gap definition, block structure, survival calculation, and BH decision rule",
+      "novelty": "new cross-project statistical/provenance mismatch",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0012.py",
+          "line": "43-49, 62, 100-113, 121-126",
+          "quote": "log_p = np.log(primes[1:]); p_value = 1 - sp_stats.chi2.cdf(...); significant = sorted_p <= critical"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md",
+          "line": "16-23, 64-75",
+          "quote": "delta = ... / ln(p_i) (matches EXP-0008); block boundaries differ; 4/4 blocks significant"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/PLAN.md",
+          "line": "21-30",
+          "quote": "same block structure as EXP-0008"
+        }
+      ],
+      "observed": {
+        "example_primes": [3, 5, 7, 11],
+        "code_upper_log_normalized_gaps": [1.2426698691192237, 1.0277966847395015, 1.6681295656969852],
+        "reported_lower_log_normalized_gaps": [1.8204784532536746, 1.2426698691192237, 2.055593369479003],
+        "stored_zero_p_values_at_1e8": 5,
+        "BH_counterexample_p": [0.004, 0.006, 0.02],
+        "rankwise_result": [false, true, false],
+        "proper_BH_step_up_result": [true, true, false]
+      },
+      "anomaly_rationale": "The runner divides by the upper prime logarithm while the preregistration/report specify the lower prime. It uses equal-magnitude blocks despite a plan requiring the EXP-0008 logarithmic blocks. It computes 1-CDF, which underflows to exact zero for the stored large statistics, and implements rank-wise thresholding rather than the BH step-up rule. The 4/4 binary result happens to survive the p-value underflow, but it is not a faithful reproduction of the claimed method.",
+      "benign_alternative": "Upper-prime normalization and alternate blocks can be defensible sensitivity analyses, and binary significance is unchanged when all p-values underflow to zero. They cannot be presented as the same preregistered method or as calibrated p-values without an explicit convention and robust survival calculation.",
+      "minimal_reproduction_command": "python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py",
+      "expected_reproduction": "The qm008 check prints the differing gap vectors, five stored zero p-values, and the BH counterexample.",
+      "impact_on_prior_classification": "C-010/C-014 remain DESCRIPTIVE ONLY, but the statement that Q-M008 uses the same method as EXP-0008 is false. The persistence claim cannot be used as independent confirmation without a corrected rerun and dependence-aware null.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/qm008"]
+    },
+    {
+      "id": "SP-015",
+      "title": "Bootstrap p-values in the optics runners are floored at machine epsilon rather than bootstrap resolution",
+      "novelty": "new statistical implementation anomaly",
+      "severity": "medium",
+      "confidence": "high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law/CODE/run_speckle_contrast.py",
+          "line": "49-60",
+          "quote": "p = 2.0 * min((dist >= n1).mean(), (dist <= n1).mean()); p = min(1.0, p + np.finfo(float).eps)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/OPTICS/vortex_density/CODE/run_vortex_density.py",
+          "line": "184-220",
+          "quote": "p = 2.0 * min(...); p = min(1.0, p + np.finfo(float).eps)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/OPTICS/vortex_density/RESULTS/EXP-0003_results.json",
+          "json_path": "$.cells.gauss_sigma_0.1_N512.p_two_sided_ratio_eq_1",
+          "value": 2.220446049250313e-16
+        }
+      ],
+      "observed": {
+        "EXP-0002_floor_count": 1,
+        "EXP-0002_floor_path": "$.cells.N64_M2.p_two_sided_null_r_eq_1",
+        "EXP-0003_floor_count": 8,
+        "floor_value": 2.220446049250313e-16,
+        "bootstrap_draws": {"EXP-0002": 500, "EXP-0003": 2000}
+      },
+      "anomaly_rationale": "The empirical bootstrap tail proportion has finite resolution (at least roughly 1/B, before any correction), but the code adds machine epsilon to zero and stores 2.22e-16. That value is a numerical sentinel, not an estimated p-value, and can distort rank/FDR comparisons.",
+      "benign_alternative": "The floored cells are far from the practical tolerances and the known-law decisions may remain unchanged. The defect still invalidates the literal p-values and any claim that their magnitudes are resolved.",
+      "minimal_reproduction_command": "python -c \"import numpy as np; print(float(np.finfo(float).eps), 1/500, 1/2000)\"",
+      "expected_reproduction": "2.220446049250313e-16, 0.002, 0.0005; the stored floor is far below either bootstrap resolution.",
+      "impact_on_prior_classification": "C-002 and C-003 known-law classifications are not overturned. Their p-value/FDR claims should be labeled finite-bootstrap descriptive evidence, and any practical conclusion that depends on the floor should be rerun with a corrected tail estimator.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/optics_pvalue_floor"]
+    },
+    {
+      "id": "SP-016",
+      "title": "Q-S9 outputs are hardcoded or synthesized, while reports label them measured/completed",
+      "novelty": "corroborates B-007 with an additional report/data mismatch",
+      "severity": "critical",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "save_q9results.py",
+          "line": "8-64",
+          "quote": "q_s9_1_results = {...}; q_s9_3_results = {...}; json.dump(...)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py",
+          "line": "27-58, 127-141",
+          "quote": "Simulated dose-response data; generate_dose_response(...); out fit_parameters = TRUE_EC50/TRUE_HILL/MAX_INFL"
+        },
+        {
+          "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-1.md",
+          "line": "84-93",
+          "quote": "Reproduction script: code/dmt-laser-s9-battery/q_s9_1_complexity.py; NEW FINDING"
+        },
+        {
+          "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md",
+          "line": "21-30",
+          "quote": "Hill Fit Parameters ... EC50 30.0, Hill coefficient 2.0, Max Inflation 0.483"
+        }
+      ],
+      "observed": {
+        "hardcoded_writer_targets": ["q_s9_1_results", "q_s9_3_results"],
+        "writer_input_reads": 0,
+        "dose_script_declares_simulated": true,
+        "dose_result_stores_true_parameters_not_fit_output": true,
+        "Q-S9-1_reproduction_script_exists": false
+      },
+      "anomaly_rationale": "The Q-S9-1/3 JSON values are literal dictionaries written without reading images, trials, or detector outputs. Q-S9-2 generates observations from assumed Hill parameters and then stores the assumed parameters as fit results. The reports describe measured rates, an empirical dose response, and a reproducible script that is absent.",
+      "benign_alternative": "These could be intentionally illustrative simulations. That benign interpretation is incompatible with the reports' COMPLETE/measurement language and with their use as empirical perception findings unless they are relabeled as synthetic demonstrations.",
+      "minimal_reproduction_command": "python AUDIT/CROSS_PROJECT_ANOMALY_SCAN_20260924/agent_static_provenance/verify_cross_project_findings.py",
+      "expected_reproduction": "The s9 check reports two literal writer targets, zero input reads, simulated=true, true-parameter storage=true, and the cited reproduction script missing.",
+      "impact_on_prior_classification": "C-013 remains INVALID / NOT REPRODUCED. The audit snapshot's D2-D4 discovery labels and current-status S9 claims must be withdrawn; no measured perception or dose conclusion is supported by these artifacts.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/s9", "verified_candidate_evidence.json"]
+    },
+    {
+      "id": "SP-017",
+      "title": "Central registry/status files are not a consistent completion or identity record",
+      "novelty": "corroborates B-016 with current cross-project status collisions",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "EXPERIMENT_REGISTRY.md",
+          "line": "27-40",
+          "quote": "table ends at EXP-0014; EXP-0011 is INPROGRESS/FROZEN"
+        },
+        {
+          "path": "CURRENT_STATUS.md",
+          "line": "27-37, 88-92",
+          "quote": "Q-P007 COMPLETE; Q-P008 PILOT COMPLETE; Q-M008 PLANNED"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/PLAN.md",
+          "line": "1-3",
+          "quote": "Status: PLANNED (2026-09-23)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/README.md",
+          "line": "3",
+          "quote": "awaiting execution"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants/state/status.json",
+          "json_path": "$",
+          "value": {}
+        }
+      ],
+      "observed": {
+        "registry_table_omits_EXP-0012_EXP-0013_EXP-0015": true,
+        "EXP-0011_registry_status": "INPROGRESS / FROZEN",
+        "Q-M008_plan_status": "PLANNED",
+        "Q-M008_result_files_exist": true,
+        "Feigenbaum_readme_status": "awaiting execution",
+        "ID_collisions": {
+          "HYP-005": ["prime gaps", "percolation"],
+          "EXP-0009": ["Q-P005", "Q-P006", "Q-P007"],
+          "EXP-0012": ["Q-S9-4", "Q-M008 run_exp0012.py"],
+          "EXP-0013": ["Q-P008 3D", "Q-M008 run_exp0013.py"],
+          "EXP-0015": ["acoustics scaffold", "fluid scaffold"]
+        }
+      },
+      "anomaly_rationale": "The global EXP registry claims append-only never-reused IDs, yet the table omits existing numbered artifacts and the same IDs are used by unrelated investigations. Status documents disagree with result files and with one another. Automated retrieval by ID or status cannot identify a unique writer/result pair.",
+      "benign_alternative": "The suffixes could be namespaced labels and stale registry rows could be snapshots. No namespace field, canonical pointer, or supersession chain is present, and the registry itself presents the IDs as globally allocated.",
+      "minimal_reproduction_command": "python -c \"from pathlib import Path; t=Path('EXPERIMENT_REGISTRY.md').read_text().split('## Entries',1)[0]; print({x:(f'EXP-{x}' in t) for x in ('0012','0013','0015')})\"",
+      "expected_reproduction": "All three values are False in the registry table, while corresponding result/code artifacts exist elsewhere in the tree.",
+      "impact_on_prior_classification": "C-016 remains CONTRADICTED as a provenance record. Registry/status labels must not be used as evidence of completion, independence, or scientific validity for any affected experiment.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/registry_and_data", "verified_candidate_evidence.json"]
+    },
+    {
+      "id": "SP-018",
+      "title": "The laboratory raw-data and database stores are empty despite result-centric claims",
+      "novelty": "corroborates B-017 with a whole-tree inventory",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "05_DATA/raw",
+          "json_path": "$",
+          "value": "0 entries"
+        },
+        {
+          "path": "05_DATA/processed",
+          "json_path": "$",
+          "value": "0 entries"
+        },
+        {
+          "path": "05_DATA/generated",
+          "json_path": "$",
+          "value": "0 entries"
+        },
+        {
+          "path": "05_DATA/external_sources",
+          "json_path": "$",
+          "value": "0 entries"
+        },
+        {
+          "path": "sovereign_biolab.db",
+          "json_path": "sqlite tables",
+          "value": "21 tables; every table has zero rows"
+        }
+      ],
+      "observed": {
+        "data_directory_entry_counts": {"raw": 0, "processed": 0, "generated": 0, "external_sources": 0},
+        "sqlite_table_count": 21,
+        "sqlite_all_row_counts_zero": true
+      },
+      "anomaly_rationale": "There is no auditable input chain in the supplied tree for experiments represented as data/result investigations. Most scientific artifacts are generated JSON, Markdown, or binary caches, and the application database contains no experiment, dataset, evidence, or result rows.",
+      "benign_alternative": "Raw data may intentionally reside outside the repository. That would require an external manifest, immutable hashes, and documented acquisition provenance; none is linked from the affected results.",
+      "minimal_reproduction_command": "python -c \"from pathlib import Path; print({d:len(list((Path('05_DATA')/d).iterdir())) for d in ('raw','processed','generated','external_sources')})\"",
+      "expected_reproduction": "All four counts are zero.",
+      "impact_on_prior_classification": "C-015/C-016 remain not verifiable/contradicted as provenance claims. Raw-data-dependent scientific claims cannot be upgraded from generated outputs alone; this is especially relevant to S9, optics, and application-layer results.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/registry_and_data", "verified_candidate_evidence.json"]
+    },
+    {
+      "id": "SP-019",
+      "title": "EXP-0007's preregistration says EXP-0006 was never executed and its bootstrap count disagrees with the stored effective count",
+      "novelty": "new chronology/count inconsistency",
+      "severity": "medium",
+      "confidence": "high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0007.json",
+          "json_path": "$.note",
+          "quote": "Follow-up to EXP-0005 (diagnostic) and EXP-0006 (never executed)"
+        },
+        {
+          "path": "EXPERIMENT_REGISTRY.md",
+          "line": "34-35",
+          "quote": "EXP-0006 ... CONTROLLED; EXP-0007 ... H0_SUPPORTED"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json",
+          "json_path": "$.estimator_diagnostics.width_route.bootstrap.n_draws",
+          "value": 495
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/REPORT/TECHNICAL_EXP-0007.md",
+          "line": "64-70",
+          "quote": "500 draws"
+        }
+      ],
+      "observed": {
+        "prereg_note_claims_EXP-0006_never_executed": true,
+        "registry_has_EXP-0006_controlled": true,
+        "prereg_bootstrap_draws": 500,
+        "stored_effective_bootstrap_draws": 495,
+        "report_says_500_draws": true
+      },
+      "anomaly_rationale": "The same investigation history says EXP-0006 was never executed while the central registry and result tree contain a completed EXP-0006. The width bootstrap silently retains 495 usable draws after five unbracketed draws but the report describes 500. These are concrete chronology and denominator discrepancies.",
+      "benign_alternative": "The preregistration note may be stale wording, and skipped bootstrap draws may be an accepted degeneracy rule. A frozen protocol should either state the rule and report effective draws or identify a superseding preregistration; this tree does neither.",
+      "minimal_reproduction_command": "python -c \"import json; p=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation/CONFIG/prereg_EXP-0007.json')); s=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation/CODE/RESULTS/EXP-0007_summary.json')); print('never executed' in p['note'], p['parameters']['bootstrap']['n_draws'], s['estimator_diagnostics']['width_route']['bootstrap']['n_draws'])\"",
+      "expected_reproduction": "True 500 495.",
+      "impact_on_prior_classification": "EXP-0007's threshold result remains SUPPORTED, LIMITED based on the raw cells, but its provenance narrative and bootstrap CI description are not exact. C-005/C-016 should carry this qualification.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/exp0007"]
+    },
+    {
+      "id": "SP-020",
+      "title": "The application layer mislabels a partial-charge descriptor as formal charge, fails its 2-D depiction call, and contains a tautological test",
+      "novelty": "new src/tests cross-consistency anomaly",
+      "severity": "medium",
+      "confidence": "high",
+      "locations": [
+        {
+          "path": "src/molecular/engine.py",
+          "line": "26-29, 77-83",
+          "quote": "get_formal_charge returns Descriptors.MaxAbsPartialCharge(self.mol); GenerateDepictionMatching2DStructure(self.mol)"
+        },
+        {
+          "path": "tests/unit/test_plant_engine.py",
+          "line": "46-49",
+          "quote": "assert ingredients[0][\"name\"] != CONSTITUENT_UNKNOWN or True"
+        },
+        {
+          "path": "src/plant/engine.py",
+          "line": "57-76",
+          "quote": "empty constituents return constituent_placeholder(...)"
+        }
+      ],
+      "observed": {
+        "method_formal_charge_for_ethanol": 0.3966637147812598,
+        "get_2d_structure_error": "ArgumentError from the installed RDKit binding",
+        "dead_assertion_line": "tests/unit/test_plant_engine.py:49"
+      },
+      "anomaly_rationale": "The method name and returned schema say formal charge, but the implementation returns a maximum absolute partial charge (a real-valued electron-distribution descriptor), not the molecule's formal charge. The depiction method is called without the reference argument required by the installed RDKit signature. The plant test's final assertion is always true, so the test suite cannot detect a placeholder-name regression.",
+      "benign_alternative": "The method could be an intentionally misnamed partial-charge utility and the test could be intended only to assert non-emptiness. In either case the public name/claim is misleading, and the dead assertion provides no protection for the behavior it appears to test.",
+      "minimal_reproduction_command": "python -c \"from src.molecular.engine import MoleculeInspector; m=MoleculeInspector('CCO'); print(m.get_formal_charge());\ntry: m.get_2d_structure()\nexcept Exception as e: print(type(e).__name__)\"",
+      "expected_reproduction": "0.3966637147812598 followed by ArgumentError.",
+      "impact_on_prior_classification": "No historical percolation/optics classification changes. C-001 remains software-only and cannot be used as evidence that these application-layer scientific fields are correct; any report relying on formal charge or depiction is not independently supported.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/application_layer"]
+    },
+    {
+      "id": "SP-021",
+      "title": "EXP-0010 applies one pooled D_f fit to a preregistered all-non-power-of-two decision and omits C7",
+      "novelty": "new gate/preregistration drift",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CONFIG/prereg_EXP-0010.json",
+          "json_path": "$.predictions.D_f.test",
+          "quote": "if D_f within tol at ALL non-P2 L -> lattice artifact confirmed; if ANY outside tol -> finite_size correction likely"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/run_exp0010.py",
+          "line": "113-147",
+          "quote": "Df_draws = bootstrap_slope(logx, mmat, ...); df_in_tol = abs(Df - Df_EX) <= Df_TOL"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_results.json",
+          "json_path": "$.primary_results",
+          "value": {"D_f_measured": 1.896198293208009, "D_f_pass": true, "gates": ["C1"]}
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPORT.md",
+          "line": "80-105",
+          "quote": "D_f within tol at ALL non-P2 L; table repeats 1.8962 for each L"
+        }
+      ],
+      "observed": {
+        "preregistered_L_list": [127, 191, 253, 449],
+        "stored_per_L_fields": "mean_mass and se_mass only; no per-L D_f/pass field",
+        "stored_gate_keys": ["C1"],
+        "preregistered_C7_required": true,
+        "stored_D_f": 1.896198293208009,
+        "stored_D_f_SE": 0.02843638397194058
+      },
+      "anomaly_rationale": "The frozen criterion is per-size and requires C7, but the runner computes one slope over all four sizes and bases LATTICE_ARTIFACT solely on that pooled value. A pooled fit can agree with theory while one or more individual sizes fail; the stored result cannot demonstrate the preregistered rule.",
+      "benign_alternative": "The phrase 'all non-P2 L' could be intended to mean a single fit using all four sizes. That interpretation conflicts with the literal per-size test, the missing C7 gate, and the report's presentation of one pooled number as four per-size measurements.",
+      "minimal_reproduction_command": "python -c \"import json; d=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/CODE/RESULTS/EXP-0010_results.json')); print(d['primary_results']['gates'].keys(), d['primary_results']['D_f']['per_L'])\"",
+      "expected_reproduction": "The gate mapping contains only C1 and each per-L record contains mass summaries, not a D_f acceptance result.",
+      "impact_on_prior_classification": "C-006's lattice-locking contradiction is not overturned, but C-007 cannot use EXP-0010 alone to say the exponent anomaly was resolved. The LATTICE_ARTIFACT decision is unsupported by its frozen gate.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/exp0010_gate_drift"]
+    },
+    {
+      "id": "SP-022",
+      "title": "EXP-0009's C7 is an implementation unit test on identical streams, not an independent data replication",
+      "novelty": "new cross-experiment reuse/control-scope anomaly",
+      "severity": "medium",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/independent_check_exp0009.py",
+          "line": "1-8, 85-89, 118-127",
+          "quote": "IDENTICAL frozen streams (same G_LAB rng label + seed, first 40 realizations)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json",
+          "json_path": "$.streams",
+          "value": "identical G_LAB rng labels/seeds; first 40 realizations of each exponent cell"
+        },
+        {
+          "path": "03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPORT.md",
+          "line": "27-35",
+          "quote": "C7 independent union-find ... PASS"
+        }
+      ],
+      "observed": {
+        "subsample_realizations_per_L": 40,
+        "per_realization_Mmax_and_chi_identical": true,
+        "C7_pass": true,
+        "D_f_subsample": 1.9236534931191327,
+        "engine_D_f": 1.869737723898956,
+        "same_seed_and_label": true
+      },
+      "anomaly_rationale": "The union-find code is a separate implementation, but it consumes the same named random streams and the first 40 realizations as the primary cells. It tests implementation equivalence, not fresh sampling, independent uncertainty, or replication of the exponent estimate.",
+      "benign_alternative": "A paired same-stream check is a valid unit test when labeled as such. The problem is the report's unqualified use of 'independent' and its contribution to a scientific evidence gate.",
+      "minimal_reproduction_command": "python -c \"import json; d=json.load(open('03_INVESTIGATIONS/PHYSICS/percolation/Q-P005_exponents/REPLICATION/C7_exp0009_report.json')); print(d['streams'], d['per_realization_Mmax_identical'], d['pass'])\"",
+      "expected_reproduction": "The report explicitly says identical streams and still returns C7 PASS.",
+      "impact_on_prior_classification": "C-007's exponent values remain descriptive/finite-sample evidence, but C7 must not be counted as independent experimental confirmation. C-016's provenance ceiling remains.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/exp0009_same_stream_c7"]
+    },
+    {
+      "id": "SP-023",
+      "title": "Q-M007's first prime-gap bin is structurally empty under the stated odd-prime support",
+      "novelty": "corroborates B-011 with a direct support-bound check",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/CODE/run_prime_gaps.py",
+          "line": "599-602",
+          "quote": "deltas = (upper - lower) / np.log(lower)"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/RESULTS/EXP-0008_results.json",
+          "json_path": "$.primary_results.blocks[*].edges[0], $.primary_results.blocks[*].counts[0]",
+          "value": "edge 0.10536051565782628; count 0 in all four blocks"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M007/REPORT/TECHNICAL_Q-M007.md",
+          "line": "37-39",
+          "quote": "Bin 1 | 0 | 576,022 | 0.000 | -283.5 | EMPTY (minimum gap constraint)"
+        }
+      ],
+      "observed": {
+        "first_bin_edge": 0.10536051565782628,
+        "minimum_odd_prime_gap_bound_through_1e8": 0.10857362047581294,
+        "bound_minus_edge": 0.003213104817986659,
+        "EXP0008_first_bin_counts": [0, 0, 0, 0],
+        "Q-M007_bin1_observed": 0.0,
+        "Q-M007_bin1_expected": 576022.2
+      },
+      "anomaly_rationale": "For the stated odd-prime gaps, the smallest numerator is 2 and the largest tested lower-prime logarithm is ln(10^8), so every normalized gap is at least 2/ln(10^8), above the first quantile edge. The zero first bin is therefore a support/edge mismatch that deterministically drives a large chi-square contribution; it cannot be treated as an independently observed distributional cell.",
+      "benign_alternative": "A different prime population including 2 or a different gap normalization could populate the bin. The preregistered blocks and lower-prime definition exclude that interpretation.",
+      "minimal_reproduction_command": "python -c \"import math; e=-math.log(1-1/10); b=2/math.log(10**8); print(e,b,b-e)\"",
+      "expected_reproduction": "0.10536051565782628 0.10857362047581294 0.003213104817986659.",
+      "impact_on_prior_classification": "C-010 remains DESCRIPTIVE ONLY, but the first-bin contribution and any 38/40 FDR claim are structurally contaminated. This reinforces B-011 and prevents a novel prime-gap interpretation.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/qm007_first_bin"]
+    },
+    {
+      "id": "SP-024",
+      "title": "Q-S9-2 stores assumed Hill parameters as fitted results and mixes absolute/relative inflation units",
+      "novelty": "corroborates B-007 with a quantitative unit/fit mismatch",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response.py",
+          "line": "23-35, 66-83, 127-141",
+          "quote": "return baseline + (max_inflation * ...); fit_parameters uses TRUE_EC50/TRUE_HILL/MAX_INFL"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-S9-2/dose_response_results.json",
+          "json_path": "$.fit_parameters",
+          "value": {"ec50": 30.0, "hill_coefficient": 2.0, "max_inflation": 0.483, "baseline": 0.205}
+        },
+        {
+          "path": "03_INVESTIGATIONS/OTHER/cone_mosaic_aliasing/REPORT/TECHNICAL_Q-S9-2.md",
+          "line": "23-30",
+          "quote": "Max Inflation 0.483 — 48.3% increase at saturation"
+        }
+      ],
+      "observed": {
+        "formula_saturation": 0.688,
+        "formula_relative_increase": 2.3560975609756096,
+        "intended_relative_saturation_if_0.483_is_relative": 0.304015,
+        "source_comment": "30.4/20.5 - 1 = 48.3%",
+        "stored_parameters_are_TRUE_constants": true
+      },
+      "anomaly_rationale": "The code adds 0.483 directly to a 0.205 baseline, producing a 235.6% relative increase, while the report calls 0.483 a 48.3% relative increase. The writer also stores the generation constants rather than the `popt` values returned by curve_fit, so the displayed fit is not the fit of the displayed observations.",
+      "benign_alternative": "The parameter could be intended as an absolute rate increment, in which case the percentage wording is wrong; or the constants could be a known truth fixture. Neither interpretation supports an empirical fitted effect size.",
+      "minimal_reproduction_command": "python -c \"b=.205; m=.483; print(b+m,(b+m)/b-1,b*(1+m))\"",
+      "expected_reproduction": "0.688 2.3560975609756096 0.304015.",
+      "impact_on_prior_classification": "C-013 remains INVALID/NOT REPRODUCED. The EC50, Hill coefficient, and maximum-inflation values have neither measured-data support nor a self-consistent unit interpretation.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/s9_unit_mismatch"]
+    },
+    {
+      "id": "SP-025",
+      "title": "The planned Q-M008 10^10 segmented sieve fails a 1000-number sanity check",
+      "novelty": "new future-run code defect",
+      "severity": "high",
+      "confidence": "very high",
+      "locations": [
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py",
+          "line": "27-64",
+          "quote": "if start == p: start += p; is_prime_seg[start-low::p] = False"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_exp0013.py",
+          "line": "42-64",
+          "quote": "for i in range(2, sqrt_high + 1): ... pass"
+        },
+        {
+          "path": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/REPORT/TECHNICAL_Q-M008.md",
+          "line": "104-110",
+          "quote": "10^10 status: PLANNED, not yet executed"
+        }
+      ],
+      "observed": {
+        "sanity_limit": 1000,
+        "segmented_runner_prime_count": 157,
+        "direct_sieve_prime_count": 168,
+        "missing_primes": 11,
+        "stored_1e10_result_exists": false
+      },
+      "anomaly_rationale": "In the first segment, the start calculation is zero for each base prime, and the code marks that location false; it also treats the base prime itself as a multiple instead of protecting it. The alternate planned runner uses a `pass` branch for larger candidate divisors. The smallest supported sanity test already loses primes, so the future 10^10 path is not auditable.",
+      "benign_alternative": "A corrected unsaved implementation may exist outside the tree. No such artifact is available, and the report correctly says 10^10 is pending, so this does not contradict a stored 10^10 result.",
+      "minimal_reproduction_command": "python -c \"import importlib.util; p='03_INVESTIGATIONS/MATHEMATICS/prime_gaps/Q-M008/CODE/run_1e10.py'; s=importlib.util.spec_from_file_location('q',p); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.segmented_gap_stats(1000,1000)[1])\"",
+      "expected_reproduction": "157, versus 168 from a direct sieve of 0..1000.",
+      "impact_on_prior_classification": "C-014/V2 remains pending. Any future 10^10 result produced by this code would be invalid until the segmented sieve is corrected and sanity-tested.",
+      "evidence_artifacts": ["cross_project_verification.json#/checks/qm008_future_sieve"]
+    }
+  ],
+  "prior_audit_corroborations_not_counted_as_new": [
+    {
+      "prior_ids": ["B-003", "B-005"],
+      "summary": "Feigenbaum higher-order root-selection and hardcoded-control defects are independently rechecked in SP-013."
+    },
+    {
+      "prior_ids": ["B-006"],
+      "summary": "Collatz timeout/cycle labeling and incomplete family sweep were read in the existing audit and not duplicated as a new finding here."
+    },
+    {
+      "prior_ids": ["B-008"],
+      "summary": "RNG pooled-p dependence remains a prior confirmed issue; this pass did not reinterpret it as a new static discovery."
+    },
+    {
+      "prior_ids": ["B-011"],
+      "summary": "Finite-range prime-gap null misspecification remains prior context; SP-007, SP-014, and SP-023 add implementation/provenance and support-bound evidence."
+    }
+  ],
+  "overall_conclusion": "The most consequential unexpected result is that the 3-D C7 agreement is shared-defect agreement, not independent validation. The second major provenance break is that several canonical result files cannot be regenerated by the currently identified writers (EXP-0006, Q-P007, and Feigenbaum). Q-M007's headline 38/40 result is not a valid 40-cell FDR result, and several report/status claims are generated from literals rather than evidence."
+}
