@@ -12,7 +12,7 @@
     ".zip"
   ],
   "excluded_total_bytes": 362096241,
-  "file_count": 1136,
+  "file_count": 1135,
   "files": [
     {
       "path": ".gitattributes",
@@ -4296,7 +4296,7 @@
     },
     {
       "path": "tools/build_publishable.py",
-      "sha256": "831637b7ee5ec310e9db0bc73374e0c3a8e58c2972938726a3a5e698a5986b9b"
+      "sha256": "ece1ea59f4b16f9311b7339ba413d62cc10251cd385c423f58ab009ef3e2126a"
     },
     {
       "path": "tools/check_expected_failures.py",
@@ -4317,10 +4317,6 @@
     {
       "path": "tools/verify_manifest.py",
       "sha256": "5a666f5e551fc5c033d992f9638c65b7af0b78989f3cab494838ceedacc1d0ca"
-    },
-    {
-      "path": "zenodo/.zenodo_token",
-      "sha256": "4e3dfe2af55a9525826afce30653ed602cef77ef68725cee12d20c4c76017b92"
     },
     {
       "path": "zenodo/build_zenodo_package.py",
@@ -4562,5 +4558,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46921157
+  "total_bytes": 46923255
 }

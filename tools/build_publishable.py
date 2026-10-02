@@ -23,6 +23,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import hashlib
 import json
 import shutil
@@ -45,6 +46,27 @@ EXCLUDE_DIRS = {
 }
 EXCLUDE_SUFFIX = {".pyc", ".pyo", ".npz", ".sqlite3", ".db", ".rar", ".zip", ".whl"}
 
+#: Credential files, excluded by NAME rather than by suffix or directory.
+#:
+#: `.gitignore` already lists these, and git honours .gitignore for tracked
+#: content — but this script walks the filesystem directly and never consults
+#: git, so an ignored file was still being collected. It reached the published
+#: `manifest.json` as `zenodo/.zenodo_token` with its SHA-256 recorded.
+#:
+#: The token's contents never entered git. But publishing a manifest that
+#: contains a digest of the maintainer's Zenodo credential is still wrong: it
+#: discloses that a credential exists, lets anyone confirm a guessed token, and
+#: produces a manifest entry that cannot verify on any checkout that lacks the
+#: secret, which is every one of them.
+#:
+#: This is the same class of error as the CI gate that could not fail: a check
+#: that appears to be working while quietly recording the wrong thing.
+EXCLUDE_NAMES = {
+    ".zenodo_token", ".env", "credentials.json", "id_rsa", "id_ed25519",
+    ".netrc", ".npmrc", ".pypirc",
+}
+EXCLUDE_PATTERNS = ("*.token", "*.key", "*.pem", "*.p12", "*.pfx")
+
 
 def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
     h = hashlib.sha256()
@@ -54,14 +76,23 @@ def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
     return h.hexdigest()
 
 
+def _excluded(src: Path, rel: Path) -> bool:
+    """True if this path must never be published."""
+    if any(part in EXCLUDE_DIRS for part in rel.parts):
+        return True
+    if src.suffix.lower() in EXCLUDE_SUFFIX:
+        return True
+    if src.name in EXCLUDE_NAMES:
+        return True
+    return any(fnmatch.fnmatch(src.name, pat) for pat in EXCLUDE_PATTERNS)
+
+
 def collect() -> list[tuple[Path, Path]]:
     """Return (source, relative-destination) pairs to publish."""
     out = []
     for src in sorted(LAB.rglob("*")):
         rel = src.relative_to(LAB)
-        if any(part in EXCLUDE_DIRS for part in rel.parts):
-            continue
-        if src.suffix.lower() in EXCLUDE_SUFFIX:
+        if _excluded(src, rel):
             continue
         if not src.is_file():
             continue
@@ -184,6 +215,23 @@ def main() -> int:
     m = stage(dest, set(args.preserve))
     print(f"  shipped   {m['file_count']} files, {m['total_bytes'] / 1e6:.1f} MB")
     print(f"  excluded  {m['excluded_file_count']} files, {m['excluded_total_bytes'] / 1e6:.1f} MB")
+
+    # Fail loudly if a credential reached the published tree. This is a guard, not
+    # a report: by the time a reader sees "all digests match" they have already
+    # accepted the manifest, and a manifest listing a secret's digest is exactly
+    # the kind of thing that gets waved through.
+    leaks = [
+        f["path"] for f in m["files"]
+        if Path(f["path"]).name in EXCLUDE_NAMES
+        or any(fnmatch.fnmatch(Path(f["path"]).name, pat) for pat in EXCLUDE_PATTERNS)
+    ]
+    if leaks:
+        print("\nSECURITY: credential-shaped files reached the published tree:")
+        for path in leaks:
+            print(f"  {path}")
+        print("Refusing to continue. Fix EXCLUDE_NAMES/EXCLUDE_PATTERNS.")
+        return 1
+    print("  secrets    none in the published set")
 
     needed = tests_needing_data(dest)
     if needed:
