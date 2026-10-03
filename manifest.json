@@ -12,7 +12,7 @@
     ".zip"
   ],
   "excluded_total_bytes": 362096241,
-  "file_count": 1135,
+  "file_count": 1136,
   "files": [
     {
       "path": ".gitattributes",
@@ -292,7 +292,7 @@
     },
     {
       "path": "03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/README.md",
-      "sha256": "f2bfd44ba3d65fecebe212d924e3d20d190f04ea7986983feda69f20a488a4dc"
+      "sha256": "741f151e8b780af57c11322f497dee73f9eb1ff2aeb303b27e69cc8c501ec316"
     },
     {
       "path": "03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/RELEASE.md",
@@ -3967,6 +3967,10 @@
       "sha256": "541bd64e731e7922624cfe219c3214c5ab163bea8fd0df886a45328148bf3d54"
     },
     {
+      "path": "HANDOFF.md",
+      "sha256": "49383c7f87c7979198c3f3d44d5b98c7f5e96a0654f8d3395b54f9678d003704"
+    },
+    {
       "path": "HYPOTHESES.md",
       "sha256": "6cb313b41b9a514695e15114590e925379225508221e2254a58e6976c564ae44"
     },
@@ -3992,7 +3996,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "1361d44c7f136e9c66c281ef1d18f4e6707b9ff2e820d868ff1a66ba1e661dff"
+      "sha256": "57e5f89829014ba871d89dff5b77b16524d77c74ed46d9a5b0db32b0fc500d9c"
     },
     {
       "path": "RELEASE.md",
@@ -4324,7 +4328,7 @@
     },
     {
       "path": "zenodo/CITATION.cff",
-      "sha256": "0f1c97cd89a39fb9e5d93a5f81c08c733726154582d280def7cd2362f7b27324"
+      "sha256": "78b0a17c76e5a3cdb3826c7fb71c0230fd1a7156a783300e81e032d6ed2f45e6"
     },
     {
       "path": "zenodo/create_package.py",
@@ -4352,7 +4356,7 @@
     },
     {
       "path": "zenodo/metadata.json",
-      "sha256": "2b0bf22d73d47f6f7f995190a50d864cd04dfad436210c1f32a8672a884092ca"
+      "sha256": "acff7e7154091a20632a5982fc39a186482fbeb79ce0afb046338f36801240ec"
     },
     {
       "path": "zenodo/package/code/finding1_erfc_caller_audit.py",
@@ -4544,7 +4548,7 @@
     },
     {
       "path": "zenodo/UPLOAD_INSTRUCTIONS.md",
-      "sha256": "05540eb5c32140aed1b0f6a719fc57d2c6badb24d22417fd0de6d84dfcf36c39"
+      "sha256": "4d08d295c4ca2722637af06e693463787106d97ae1dc8eef2f82a686af4b8874"
     },
     {
       "path": "zenodo/upload_to_zenodo.py",
@@ -4558,5 +4562,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46932198
+  "total_bytes": 46943839
 }

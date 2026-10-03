@@ -1,5 +1,37 @@
 # Uploading this deposit to Zenodo
 
+## STATUS: DONE. These instructions are historical.
+
+**This deposit was published as `10.5281/zenodo.23109117` on 2026-10-02.**
+
+Everything below describes the procedure that was followed, and is kept because
+the steps and their ordering matter if a **new version** is ever needed. Zenodo
+records are immutable, so no step here can be repeated against 23109117.
+
+Current state, for reference:
+
+| | |
+|---|---|
+| Published DOI | `10.5281/zenodo.23109117` |
+| Archive | `ScientificDiscoveryLab-v1.0.0.zip`, 6,678,433 bytes |
+| SHA-256 | `a0750bbc8619e4c807030be1e54a2303b5df2d8b02704d6c76a2995d1cdd0ddf` |
+| MD5 as uploaded | `21e6429965d9a4943c023e0ddd916bbf` |
+| Subjects in the published record | **zero** — see below |
+| References in the published record | **zero** — see below |
+
+### Two fields the API silently discarded
+
+`subjects` and `references` were supplied, accepted, and not persisted. Zenodo's
+deposit endpoint reports success and echoes neither back on read. Both must be
+entered in the **web form**. The exact values are in `DEPOSIT_23109117.md`.
+
+Correcting either requires a **new version**, and a new version cannot be created
+through the deposition API — `conceptrecid` is accepted and then ignored, so a new
+version lands on a different concept. Use the Zenodo web interface's **New
+version** action. See `HANDOFF.md` in the repository root.
+
+---
+
 ## Before you upload
 
 1. **Verify the package is intact:**
@@ -11,7 +43,7 @@
    All 15 checks must pass. If any fails, do not upload.
 
 2. **Run the laboratory test suite** and confirm it still reports
-   `495 passed, 0 errors`:
+   `543 passed, 0 failed`:
 
    ```powershell
    cd C:\Users\natha\ScientificDiscoveryLab
@@ -22,6 +54,10 @@
    `10.5281/zenodo.XXXXXXX`. Zenodo assigns the concept DOI *before* the version
    DOI, so: create the deposit, copy the concept DOI Zenodo gives you, publish,
    then paste the version DOI.
+
+   **Apply every metadata change BEFORE publishing.** A published record cannot be
+   edited, so anything not set in advance needs a whole new version. See
+   `HANDOFF.md` — this has already cost one retitle.
 
 ## Why this is a NEW deposit and not an edit to DOI 10.5281/zenodo.22849652
 

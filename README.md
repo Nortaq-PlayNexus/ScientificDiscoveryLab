@@ -1,5 +1,10 @@
 # ScientificDiscoveryLab
 
+> **New to this repository, or picking up an interrupted session?**
+> Read [\HANDOFF.md\](HANDOFF.md) first. It records what exists and where, the
+> Zenodo API traps that cost real bugs here, the outstanding work, and the rule
+> about never deleting a deposit.
+
 **A computational research laboratory built to a preregistered standard — and a
 self-audit that found four defects in its own instruments.**
 

@@ -125,9 +125,9 @@
     },
     {
       "relation": "isSupplementTo",
-      "identifier": "https://doi.org/10.5281/zenodo.23101903",
+      "identifier": "https://doi.org/10.5281/zenodo.23111535",
       "resource_type": "software",
-      "note": "SCOPE NOTE: the AI-consciousness indicator battery exists BOTH as its own deposit and as one investigation (EXP-C001, path 03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/) inside this laboratory record. Neither supersedes the other; they are the same work at different scopes. Cite the battery deposit when asking about consciousness methodology, and this deposit when asking about the laboratory, its audit trail, or its other 15 experiments. That deposit makes no claim about AI consciousness and scores no AI system."
+      "note": "SCOPE NOTE: the AI-consciousness indicator battery exists BOTH as its own deposit and as one investigation (EXP-C001, path 03_INVESTIGATIONS/COMPUTATIONAL_SCIENCE/ai_consciousness_indicators/) inside this laboratory record. Neither supersedes the other; they are the same work at different scopes. Cite the battery deposit when asking about consciousness methodology, and this deposit when asking about the laboratory, its audit trail, or its other 15 experiments. That deposit makes no claim about AI consciousness and scores no AI system. The identifier is v2.0.0 (10.5281/zenodo.23111535), which corrects v1's mangled references and carries no science that differs from it. Both share concept DOI 10.5281/zenodo.23101902."
     },
     {
       "relation": "isSupplementTo",

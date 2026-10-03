@@ -3,7 +3,7 @@
 **And what survives perturbing every discretionary choice in it.**
 
 ![Calibration](https://img.shields.io/badge/calibration-6%2F6%20anchors%20PASS-brightgreen)
-![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-lightgrey)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23111535-blue)](https://doi.org/10.5281/zenodo.23111535)
 ![Robustness](https://img.shields.io/badge/robustness-3000%20joint%20perturbations-blue)
 ![Tests](https://img.shields.io/badge/tests-38%20passing-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
