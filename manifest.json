@@ -1,5 +1,5 @@
 {
-  "excluded_file_count": 46,
+  "excluded_file_count": 47,
   "excluded_note": "Raw simulation output, regenerable from the seeds recorded in each preregistration. The read-only audit test suite REQUIRES some of these files; see tests_requiring_excluded_data.txt for the exact list. Those tests cannot run from this copy alone and will report a missing-historical-evidence error, which is correct fail-closed behaviour rather than a defect in this package.",
   "excluded_suffixes": [
     ".db",
@@ -11,8 +11,8 @@
     ".whl",
     ".zip"
   ],
-  "excluded_total_bytes": 362096241,
-  "file_count": 1136,
+  "excluded_total_bytes": 368801750,
+  "file_count": 1137,
   "files": [
     {
       "path": ".gitattributes",
@@ -4356,7 +4356,11 @@
     },
     {
       "path": "zenodo/metadata.json",
-      "sha256": "acff7e7154091a20632a5982fc39a186482fbeb79ce0afb046338f36801240ec"
+      "sha256": "84fafcb430159ac63fb3597e8d82cd0ce4b782de6d546af2de2c5c3428322bac"
+    },
+    {
+      "path": "zenodo/new_version.py",
+      "sha256": "014605b2db4cbe05763e71923dbed604a8bf94ffae71bd37df6b458a898e3183"
     },
     {
       "path": "zenodo/package/code/finding1_erfc_caller_audit.py",
@@ -4562,5 +4566,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46943839
+  "total_bytes": 46958399
 }

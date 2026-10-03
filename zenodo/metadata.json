@@ -2,7 +2,7 @@
   "schema": "zenodo-deposit-metadata-v3",
   "upload_type": "dataset",
   "title": "ScientificDiscoveryLab: a preregistered computational research laboratory, and four defects its self-audit found in its own instruments",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "publication_date": "2026-10-03",
   "creators": [
     {
@@ -153,5 +153,6 @@
   "published_test_suite": "543 collected; 20 excluded-data failures, exactly the recorded set",
   "doi": "10.5281/zenodo.23109117",
   "published": "2026-10-02",
-  "published_note": "Published 2026-10-02. The web form did not carry subjects or references; the deposition API accepts both and silently discards them, so this record has zero of each. Fixing that requires a new version, not an edit."
+  "published_note": "Published 2026-10-02. The web form did not carry subjects or references; the deposition API accepts both and silently discards them, so this record has zero of each. Fixing that requires a new version, not an edit.",
+  "version_note": "Version 2 adds the subjects and references that Zenodo accepted but did not persist in v1. No file, code or scientific content changes: the archive is byte-identical to v1 (md5 21e6429965d9a4943c023e0ddd916bcf, SHA-256 a0750bbc8619e4c807030be1e54a2303b5df2d8b02704d6c76a2995d1cdd0ddf). v1 (10.5281/zenodo.23109117) published with zero subjects and zero references, because Zenodo silently discards both from a deposition-API payload. This version supplies six controlled-vocabulary subject identifiers and six references, each DOI resolved before inclusion. One candidate was rejected during checking: 10.1126/science.1259855 turned out to be Planetary boundaries rather than Ioannidis 2005, whose correct DOI is 10.1371/journal.pmed.0020124."
 }
