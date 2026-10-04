@@ -12,7 +12,7 @@
     ".zip"
   ],
   "excluded_total_bytes": 371507749,
-  "file_count": 1161,
+  "file_count": 1164,
   "files": [
     {
       "path": ".gitattributes",
@@ -3983,8 +3983,16 @@
       "sha256": "8bfe1ac711a7e7cd76dbda98f8d5fa8f28eaf3ac75757768f675372438c2cbae"
     },
     {
+      "path": "PUBLICATION_VERIFICATION.md",
+      "sha256": "1129b0f142fb64dcaf5b6c70b4babd1997456e5e545e18f4dd732d11c644f631"
+    },
+    {
       "path": "PUBLISH_CHECKLIST.md",
       "sha256": "f7c3ba389fcf3a4424a648cf25f3cc17a6e9c7abdfdd8fcae7054f984cae5551"
+    },
+    {
+      "path": "PUBLISH_ORDER.md",
+      "sha256": "d463f7bafe89e5d954ff7b7a25b5568b02dfd8c117e06f1ba002c1ba47fe6b61"
     },
     {
       "path": "pytest.ini",
@@ -4323,6 +4331,10 @@
       "sha256": "550fcf6b5aaa63f311ef363302944eb1d38a6c817ac2d3c29142ba6ddeb2bdb3"
     },
     {
+      "path": "tools/record_publication.py",
+      "sha256": "31ce5e9be386b974f9148b8bb3b0ff4fc0855796c0aa6ebbd659dbed55a5a618"
+    },
+    {
       "path": "tools/sync_published.py",
       "sha256": "7a54076ff086d8754dfa0ae45ef6dc1153abdb4ea408b5d34590ff3568f6de10"
     },
@@ -4364,7 +4376,7 @@
     },
     {
       "path": "zenodo/investigations/DEPOSITS.json",
-      "sha256": "859d86f23cb1e405a7b3bf968489a28c47db5f813136c8db09076b68ca3e9655"
+      "sha256": "36634c137233fcac363c30331b649b495e16a104b820c5cbb18e8de4917be6e2"
     },
     {
       "path": "zenodo/investigations/discrete-vortex-detection-bias.json",
@@ -4662,5 +4674,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 47046254
+  "total_bytes": 47070359
 }
