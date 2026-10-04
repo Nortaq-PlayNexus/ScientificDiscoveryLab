@@ -663,3 +663,69 @@ language must not be used as current evidence.
   escalation. No physics claim, no novelty claim, no new simulation. Q-P007
   remains open; the magnitude of its deviation is now untrusted and its direction
   is robust.
+
+
+---
+
+# APPENDED 2026-10-04 — registry completeness note
+
+*Appended below the byte-pinned historical prefix, not inserted above it. See the
+note on why that matters.*
+
+## Three experiments had detail sections but no row in the summary table
+
+A reader consulting only the table at the top of this file would not know these
+existed:
+
+| ID | state before this note |
+|---|---|
+| EXP-0015 | detail section present, no table row |
+| EXP-0016 | detail section present, no table row |
+| EXP-0017 | detail section present, no table row |
+
+Their detail sections already state question, hypothesis, status and result.
+They are recorded here rather than in the table because the table lies inside the
+region this file's audit pins by digest, and editing that region is precisely what
+the control exists to prevent.
+
+## EXP-0013 has neither a row nor a detail section
+
+The identifier appears in prose only. No preregistration, results directory, or
+experiment config could be found for it. Recorded here as `NOT REGISTERED` rather
+than silently omitted, because an unexplained gap in an append-only registry is
+itself a defect: either an experiment was allocated and never run, or an
+identifier was allocated in error. **Which of those is true is not recoverable
+from these files**, and saying so is more useful than leaving a silent hole.
+
+## EXP-0012 is skipped with no explanation
+
+The header states identifiers are "allocated in order when an experiment is
+preregistered (never reused, never deleted)", which makes a gap a record-keeping
+event in its own right. No allocation or cancellation note exists for it.
+
+## Why this note is appended rather than merged into the table
+
+The read-only audit at
+`AUDIT_REPAIR_N04_N05_N19_N21_N22_20260924` pins the first 17,841 bytes of this
+file by SHA-256 and fails closed on any change inside that region.
+
+That control caught this very edit. Adding the three missing rows to the table
+put a change inside the pinned prefix and the audit failed with:
+
+    append-only evidence changed inside its audited region:
+    EXPERIMENT_REGISTRY.md expected prefix sha256 888f11e1..., actual 2a44d1b2...
+
+The change was reverted and re-applied here instead. **That is the control
+working exactly as designed**, and it is worth recording: the first attempt to
+"fix" an incomplete registry would have destroyed the guarantee that the registry
+has not been rewritten. The tempting repair — re-freeze the baseline so the test
+passes — would have laundered the modification. The whole point of the
+append-only prefix pin is that a registry cannot be quietly edited, and that
+includes edits made with good intentions.
+
+## Scope of this note
+
+Adds no experiment, revises no result, and changes no evidence level. It records
+what the file does and does not contain. Three gaps are documented rather than
+closed, because closing them requires knowing what happened, not just that
+something is missing.

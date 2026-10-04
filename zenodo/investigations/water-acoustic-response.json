@@ -1,0 +1,55 @@
+{
+  "schema": "zenodo-investigation-metadata-v1",
+  "upload_type": "dataset",
+  "slug": "water-acoustic-response",
+  "path_in_laboratory": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response",
+  "experiments": "n/a",
+  "question_ids": "Q-A001",
+  "title": "ScientificDiscoveryLab investigation: Water acoustic response simulator",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "ScientificDiscoveryLab contributors",
+      "affiliation": "independent"
+    }
+  ],
+  "description_source": "water-acoustic-response.md",
+  "license": "mit-license",
+  "language": "eng",
+  "access_right": "open",
+  "subjects": [
+    {
+      "id": "euroscivoc:1061",
+      "title": "Numerical analysis"
+    },
+    {
+      "id": "mesh:D015203",
+      "title": "Reproducibility of Results"
+    }
+  ],
+  "keywords": [
+    "acoustics",
+    "wave simulation",
+    "simulator",
+    "controls",
+    "no empirical claim"
+  ],
+  "references": [],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://doi.org/10.5281/zenodo.23109117",
+      "resource_type": "dataset",
+      "note": "SCOPE NOTE: this is one investigation from the laboratory published as a separate record. The laboratory deposit holds the registries, governance rules and self-audit. Neither supersedes the other; cite whichever matches your question. No physics discovery is claimed in either."
+    },
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "https://github.com/Nortaq-PlayNexus/ScientificDiscoveryLab",
+      "resource_type": "software",
+      "note": "Source repository. This archive is the frozen, byte-reproducible slice of the repository for this investigation."
+    }
+  ],
+  "archive": "water-acoustic-response.zip",
+  "archive_sha256": "c46dcc6a5b28bfde1385628285e6e52e7e0501ab2213a07d22a7fd7542d921c2",
+  "doi": ""
+}

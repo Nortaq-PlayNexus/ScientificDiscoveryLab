@@ -1,0 +1,122 @@
+{
+  "schema": "sdl-investigation-deposits-v1",
+  "deposits": {
+    "speckle-contrast-law": {
+      "deposit_id": 23132744,
+      "concept_recid": "23132743",
+      "archive": "speckle-contrast-law.zip",
+      "archive_bytes": 85841,
+      "archive_sha256": "cb3011efed363d704520731d49be190494bad211babdd050b1e1bc36eaef98e2",
+      "title": "ScientificDiscoveryLab investigation: Speckle contrast law",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "683b9a49facb22f06871504f1e5042f7",
+      "stored_subjects": 0
+    },
+    "vortex-density": {
+      "deposit_id": 23132746,
+      "concept_recid": "23132745",
+      "archive": "vortex-density.zip",
+      "archive_bytes": 150191,
+      "archive_sha256": "d3b941465c1727026c60faf93ef3a2038e6eb8b781241b73fa983e67631900e1",
+      "title": "ScientificDiscoveryLab investigation: Vortex density in random wave fields",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "a8c0ff4330a38057045bf2c0c4810f6f",
+      "stored_subjects": 0
+    },
+    "discrete-vortex-detection-bias": {
+      "deposit_id": 23132748,
+      "concept_recid": "23132747",
+      "archive": "discrete-vortex-detection-bias.zip",
+      "archive_bytes": 309382,
+      "archive_sha256": "8f6864cc8f85b52653dd4020054553c6f677bfe8d2f6d2ff47477c088b90353e",
+      "title": "ScientificDiscoveryLab investigation: Discrete optical-vortex detection bias",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "7e1ec9c1772e1cb623be90a6eff5b67e",
+      "stored_subjects": 0
+    },
+    "topology-measurement-definition": {
+      "deposit_id": 23132753,
+      "concept_recid": "23132752",
+      "archive": "topology-measurement-definition.zip",
+      "archive_bytes": 1094124,
+      "archive_sha256": "2bfbf92da9b142c5532e54f6ba18d7c7cea59d679ad92e040a2946890c2357ce",
+      "title": "ScientificDiscoveryLab investigation: Topology-measurement definition",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "0f7cb7081511f5a17065822474a64079",
+      "stored_subjects": 0
+    },
+    "rng-certification": {
+      "deposit_id": 23132759,
+      "concept_recid": "23132758",
+      "archive": "rng-certification.zip",
+      "archive_bytes": 250929,
+      "archive_sha256": "510c362a7e91ff18165805255c485543a63db6ae4d761a75631eb37ab12fc13d",
+      "title": "ScientificDiscoveryLab investigation: Laboratory RNG statistical certification",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "59519697d2ef531f26f3d8fa200b8bda",
+      "stored_subjects": 0
+    },
+    "percolation-thresholds-and-exponents": {
+      "deposit_id": 23132761,
+      "concept_recid": "23132760",
+      "archive": "percolation-thresholds-and-exponents.zip",
+      "archive_bytes": 546871,
+      "archive_sha256": "449b7992eeec4b69e4ba9d45a8deade31bdd9a9860390b560074ce6327f07be8",
+      "title": "ScientificDiscoveryLab investigation: Percolation thresholds and exponents",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "2af3d6e72ed09f93a603916e5a5cded8",
+      "stored_subjects": 0
+    },
+    "feigenbaum-universality": {
+      "deposit_id": 23132763,
+      "concept_recid": "23132762",
+      "archive": "feigenbaum-universality.zip",
+      "archive_bytes": 67481,
+      "archive_sha256": "49d6bb4ebf0a5fafc393dcbede38cfa14b4ea49c9df326b956ad7ba90fa69730",
+      "title": "ScientificDiscoveryLab investigation: Feigenbaum universality in higher-order 1D maps",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "f5913bb8e640d51add4a44e8fa7e7b87",
+      "stored_subjects": 0
+    },
+    "prime-gap-statistics": {
+      "deposit_id": 23132767,
+      "concept_recid": "23132766",
+      "archive": "prime-gap-statistics.zip",
+      "archive_bytes": 167564,
+      "archive_sha256": "2133d4c709ea3ed6e54bd1e5fc2011012ea6e54ace154578c13e54b78b2cfef2",
+      "title": "ScientificDiscoveryLab investigation: Prime gap distribution statistics",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "2584ec26eb768f1c928ee80f899de921",
+      "stored_subjects": 0
+    },
+    "water-acoustic-response": {
+      "deposit_id": 23132771,
+      "concept_recid": "23132770",
+      "archive": "water-acoustic-response.zip",
+      "archive_bytes": 33616,
+      "archive_sha256": "c46dcc6a5b28bfde1385628285e6e52e7e0501ab2213a07d22a7fd7542d921c2",
+      "title": "ScientificDiscoveryLab investigation: Water acoustic response simulator",
+      "version": "1.0.0",
+      "published": false,
+      "created": "2026-10-04",
+      "md5": "02b067b2fc411e3052c82d38301e64e2",
+      "stored_subjects": 0
+    }
+  }
+}

@@ -52,3 +52,10 @@ Thumbs.db
 credentials.json
 .zenodo_token
 *.token
+# --- per-investigation Zenodo archives --------------------------------------
+# Rebuildable byte-for-byte with
+#   python tools/build_investigation_packages.py --stage --verify
+# The canonical copies live on Zenodo; digests are recorded in
+# zenodo/investigations/INDEX.json. Carrying 2.7 MB of rebuildable archives in
+# git history would be permanent and redundant.
+zenodo/investigations/*.zip

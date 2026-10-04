@@ -1,0 +1,107 @@
+{
+  "schema": "sdl-investigation-archives-v1",
+  "note": "One archive per investigation, not per experiment. Q-P004 spans EXP-0005/0006/0007 and Q-P005 spans EXP-0009/0010; splitting a single scientific answer across separate DOIs would make it harder to cite, not easier.",
+  "excluded_suffixes": [
+    ".db",
+    ".npz",
+    ".pyc",
+    ".pyo",
+    ".rar",
+    ".sqlite3",
+    ".whl",
+    ".zip"
+  ],
+  "excluded_note": "Raw simulation output, regenerable from the seeds recorded in each preregistration.",
+  "investigations": [
+    {
+      "slug": "speckle-contrast-law",
+      "path_in_lab": "03_INVESTIGATIONS/OPTICS/speckle_contrast_law",
+      "title": "Speckle contrast law",
+      "experiments": "EXP-0002",
+      "archive": "speckle-contrast-law.zip",
+      "file_count": 20,
+      "bytes": 85841,
+      "sha256": "cb3011efed363d704520731d49be190494bad211babdd050b1e1bc36eaef98e2"
+    },
+    {
+      "slug": "vortex-density",
+      "path_in_lab": "03_INVESTIGATIONS/OPTICS/vortex_density",
+      "title": "Vortex density in random wave fields",
+      "experiments": "EXP-0003",
+      "archive": "vortex-density.zip",
+      "file_count": 23,
+      "bytes": 150191,
+      "sha256": "d3b941465c1727026c60faf93ef3a2038e6eb8b781241b73fa983e67631900e1"
+    },
+    {
+      "slug": "discrete-vortex-detection-bias",
+      "path_in_lab": "03_INVESTIGATIONS/OPTICS/discrete_vortex_bias",
+      "title": "Discrete optical-vortex detection bias",
+      "experiments": "EXP-0015",
+      "archive": "discrete-vortex-detection-bias.zip",
+      "file_count": 51,
+      "bytes": 309382,
+      "sha256": "8f6864cc8f85b52653dd4020054553c6f677bfe8d2f6d2ff47477c088b90353e"
+    },
+    {
+      "slug": "topology-measurement-definition",
+      "path_in_lab": "03_INVESTIGATIONS/OPTICS/topology_measurement_definition",
+      "title": "Topology-measurement definition",
+      "experiments": "EXP-0016",
+      "archive": "topology-measurement-definition.zip",
+      "file_count": 58,
+      "bytes": 1094124,
+      "sha256": "2bfbf92da9b142c5532e54f6ba18d7c7cea59d679ad92e040a2946890c2357ce"
+    },
+    {
+      "slug": "rng-certification",
+      "path_in_lab": "03_INVESTIGATIONS/OTHER/rng_certification",
+      "title": "Laboratory RNG statistical certification",
+      "experiments": "EXP-0004",
+      "archive": "rng-certification.zip",
+      "file_count": 60,
+      "bytes": 250929,
+      "sha256": "510c362a7e91ff18165805255c485543a63db6ae4d761a75631eb37ab12fc13d"
+    },
+    {
+      "slug": "percolation-thresholds-and-exponents",
+      "path_in_lab": "03_INVESTIGATIONS/PHYSICS/percolation",
+      "title": "Percolation thresholds and exponents",
+      "experiments": "EXP-0005, 0006, 0009, 0010, 0017",
+      "archive": "percolation-thresholds-and-exponents.zip",
+      "file_count": 156,
+      "bytes": 546871,
+      "sha256": "449b7992eeec4b69e4ba9d45a8deade31bdd9a9860390b560074ce6327f07be8"
+    },
+    {
+      "slug": "feigenbaum-universality",
+      "path_in_lab": "03_INVESTIGATIONS/MATHEMATICS/feigenbaum_constants",
+      "title": "Feigenbaum universality in higher-order 1D maps",
+      "experiments": "EXP-0014",
+      "archive": "feigenbaum-universality.zip",
+      "file_count": 30,
+      "bytes": 67481,
+      "sha256": "49d6bb4ebf0a5fafc393dcbede38cfa14b4ea49c9df326b956ad7ba90fa69730"
+    },
+    {
+      "slug": "prime-gap-statistics",
+      "path_in_lab": "03_INVESTIGATIONS/MATHEMATICS/prime_gaps",
+      "title": "Prime gap distribution statistics",
+      "experiments": "EXP-0008",
+      "archive": "prime-gap-statistics.zip",
+      "file_count": 64,
+      "bytes": 167564,
+      "sha256": "2133d4c709ea3ed6e54bd1e5fc2011012ea6e54ace154578c13e54b78b2cfef2"
+    },
+    {
+      "slug": "water-acoustic-response",
+      "path_in_lab": "03_INVESTIGATIONS/ACOUSTICS/water_sound_response",
+      "title": "Water acoustic response simulator",
+      "experiments": "-",
+      "archive": "water-acoustic-response.zip",
+      "file_count": 11,
+      "bytes": 33616,
+      "sha256": "c46dcc6a5b28bfde1385628285e6e52e7e0501ab2213a07d22a7fd7542d921c2"
+    }
+  ]
+}

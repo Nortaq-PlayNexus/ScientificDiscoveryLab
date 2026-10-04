@@ -1,5 +1,5 @@
 {
-  "excluded_file_count": 47,
+  "excluded_file_count": 56,
   "excluded_note": "Raw simulation output, regenerable from the seeds recorded in each preregistration. The read-only audit test suite REQUIRES some of these files; see tests_requiring_excluded_data.txt for the exact list. Those tests cannot run from this copy alone and will report a missing-historical-evidence error, which is correct fail-closed behaviour rather than a defect in this package.",
   "excluded_suffixes": [
     ".db",
@@ -11,8 +11,8 @@
     ".whl",
     ".zip"
   ],
-  "excluded_total_bytes": 368801750,
-  "file_count": 1137,
+  "excluded_total_bytes": 371507749,
+  "file_count": 1161,
   "files": [
     {
       "path": ".gitattributes",
@@ -24,7 +24,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "d5fd79fd306e95d1c6d25652f1dae7484b220a76a54904316782cd26fcd0298f"
+      "sha256": "8a94c9d01be42236571f0c9f7e91905bdae47b10c613dc7410d5ee71902312ce"
     },
     {
       "path": "00_FOUNDATION/falsification_rules.md",
@@ -3960,7 +3960,7 @@
     },
     {
       "path": "EXPERIMENT_REGISTRY.md",
-      "sha256": "9e2c20b0171a5d373c847c78c8a655d52d5618c1040373aa4bcf8c68cf0a34ac"
+      "sha256": "e624f4aeafeb9365c5664396b8dbc6a57cd10feda83fd1fce733e0d8a83f6581"
     },
     {
       "path": "fix_q006_cells.py",
@@ -4303,6 +4303,10 @@
       "sha256": "511280d40891904f33985ed842f2d22f044bba466d600954b365a7587956684e"
     },
     {
+      "path": "tools/build_investigation_packages.py",
+      "sha256": "413f6ee1e79bfb648e03b11efbf82e3a35acedd0470ec7d398a671c28d2a7dcc"
+    },
+    {
       "path": "tools/build_publishable.py",
       "sha256": "ece1ea59f4b16f9311b7339ba413d62cc10251cd385c423f58ab009ef3e2126a"
     },
@@ -4315,8 +4319,16 @@
       "sha256": "07739a25aeec10269c132186d23c90914731a8cf56a7587e632b40e0c8589a51"
     },
     {
+      "path": "tools/make_investigation_metadata.py",
+      "sha256": "550fcf6b5aaa63f311ef363302944eb1d38a6c817ac2d3c29142ba6ddeb2bdb3"
+    },
+    {
       "path": "tools/sync_published.py",
       "sha256": "7a54076ff086d8754dfa0ae45ef6dc1153abdb4ea408b5d34590ff3568f6de10"
+    },
+    {
+      "path": "tools/upload_investigations.py",
+      "sha256": "08d8cb277b768a17630751d88a03262412312f8f892f17c2d78e207e6e82cc31"
     },
     {
       "path": "tools/verify_deposit_manifest.py",
@@ -4349,6 +4361,90 @@
     {
       "path": "zenodo/description.md",
       "sha256": "c7337a4f18b66dc1f8cdcbabf7199c14161bf75ccff009d770780733b49d4284"
+    },
+    {
+      "path": "zenodo/investigations/DEPOSITS.json",
+      "sha256": "859d86f23cb1e405a7b3bf968489a28c47db5f813136c8db09076b68ca3e9655"
+    },
+    {
+      "path": "zenodo/investigations/discrete-vortex-detection-bias.json",
+      "sha256": "c5c67d7d183061587931f4f4427e909593fd8da09a3ef9474463064740b0125e"
+    },
+    {
+      "path": "zenodo/investigations/discrete-vortex-detection-bias.md",
+      "sha256": "e54124063126a982b6add803439bb2174eb713f6ed1384300123de2797af0c50"
+    },
+    {
+      "path": "zenodo/investigations/feigenbaum-universality.json",
+      "sha256": "0e1cfbb7db7b9d9a3be0930f3dba5fbee48f3c90e64c389b13183ef829f4825f"
+    },
+    {
+      "path": "zenodo/investigations/feigenbaum-universality.md",
+      "sha256": "682d9fabace00fdbd4156181594c351d8dba7fda6d8f1fea78a80d3722f2c8bd"
+    },
+    {
+      "path": "zenodo/investigations/INDEX.json",
+      "sha256": "d4a0aeeb584c25d7740b07e5a1934cb0f183053c012f517c93e6678c1d1a4ec9"
+    },
+    {
+      "path": "zenodo/investigations/percolation-thresholds-and-exponents.json",
+      "sha256": "e5205cb1911fa565adc3324c0e98418092ca66a8d8abdd337e0291accd1b3bb1"
+    },
+    {
+      "path": "zenodo/investigations/percolation-thresholds-and-exponents.md",
+      "sha256": "e1e799df41100bebd86961cfdcf3d4a45d4ad1dacd47ea5ddd88c7e4ad41a5cf"
+    },
+    {
+      "path": "zenodo/investigations/prime-gap-statistics.json",
+      "sha256": "bf4759b89131c2ebc3dc895b023523c7070faa7d1fa3a437fe8f66fb5c1d2c17"
+    },
+    {
+      "path": "zenodo/investigations/prime-gap-statistics.md",
+      "sha256": "0769372a0bb8685933c2747fe035b873aa76a55b729ac252bcda91948e240f01"
+    },
+    {
+      "path": "zenodo/investigations/README.md",
+      "sha256": "1707cfe63347759a035abe9654d66ffb629ac9cd15847768ab32cc49cf304601"
+    },
+    {
+      "path": "zenodo/investigations/rng-certification.json",
+      "sha256": "7f2b3c496c6f4f80deaa047a0d18f54972bb9fc42bdd9854f6a6a9fd9af790a7"
+    },
+    {
+      "path": "zenodo/investigations/rng-certification.md",
+      "sha256": "d7864fb857580a9741b81cee163e51c1300c379a5f08d8c3803b8d3192186bd9"
+    },
+    {
+      "path": "zenodo/investigations/speckle-contrast-law.json",
+      "sha256": "b4ed8ef090ac059dd7bccf42574a310d8b8a3ca873c88be39892afd1274ccafb"
+    },
+    {
+      "path": "zenodo/investigations/speckle-contrast-law.md",
+      "sha256": "8967b35c0352b41c1d5a5412d0bd356c78140339f37dfd2705a4a4beb7e46ad4"
+    },
+    {
+      "path": "zenodo/investigations/topology-measurement-definition.json",
+      "sha256": "d43c464d8413c81dc5dbf2cfcd0f9e514f6d00ff8cfc160b8bb20c1bd2833f4f"
+    },
+    {
+      "path": "zenodo/investigations/topology-measurement-definition.md",
+      "sha256": "36f3025dd725dc2a947d3f486db3a233121e5f6548bd4eb7d34662ddd1abf5d0"
+    },
+    {
+      "path": "zenodo/investigations/vortex-density.json",
+      "sha256": "6fdfd5a0bdf8dd1b183f06aee4e2ed6506582c9152be91c08a21fee08b8afdeb"
+    },
+    {
+      "path": "zenodo/investigations/vortex-density.md",
+      "sha256": "9d43858a8fd5c95b1d819b614085d48aed5d63f636220d1f9ea1472613b91f77"
+    },
+    {
+      "path": "zenodo/investigations/water-acoustic-response.json",
+      "sha256": "e6a8de6ed59dc391591ae5b98f1b419a8cd63c2978478ec3d3cd48b744dbda1e"
+    },
+    {
+      "path": "zenodo/investigations/water-acoustic-response.md",
+      "sha256": "e62195f0b5063567c598a6ebd89e2527a90a79e0666623cff3a87737e4ad862b"
     },
     {
       "path": "zenodo/LICENSE",
@@ -4566,5 +4662,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46960901
+  "total_bytes": 47046254
 }
