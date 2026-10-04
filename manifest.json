@@ -3968,7 +3968,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "579739662b629c316cf3aa2cc00694cdcd6dc04f3a7254bc38e82cecc77698f6"
+      "sha256": "c2447ca10174c8700025652fa736444e5005a9146cc31f2944823506a5e97886"
     },
     {
       "path": "HYPOTHESES.md",
@@ -3981,6 +3981,10 @@
     {
       "path": "MASTER_INDEX.md",
       "sha256": "8bfe1ac711a7e7cd76dbda98f8d5fa8f28eaf3ac75757768f675372438c2cbae"
+    },
+    {
+      "path": "PUBLISH_CHECKLIST.md",
+      "sha256": "f7c3ba389fcf3a4424a648cf25f3cc17a6e9c7abdfdd8fcae7054f984cae5551"
     },
     {
       "path": "pytest.ini",
@@ -4340,11 +4344,7 @@
     },
     {
       "path": "zenodo/DEPOSIT_23109117.md",
-      "sha256": "9f44d845a853a739a2b06a553af1f545b011f477364451184f0e887daa13f9cc"
-    },
-    {
-      "path": "zenodo/DEPOSIT_23109117.txt",
-      "sha256": "165bb5e3f5177079b314d9b4d181fa3e0169f1ea3a6fa63d8eb97a26bb338b68"
+      "sha256": "200eba7f8e99c4f0606d294868e078fa29f236fcff2687d6b062e68efa1a8cd9"
     },
     {
       "path": "zenodo/description.md",
@@ -4566,5 +4566,5 @@
   "lab_test_suite": "543 passed, 0 failed (2026-10-02, laboratory, full data present)",
   "name": "ScientificDiscoveryLab",
   "schema": "sdl-publishable-manifest-v1",
-  "total_bytes": 46958309
+  "total_bytes": 46960901
 }
