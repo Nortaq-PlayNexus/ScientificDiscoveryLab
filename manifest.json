@@ -20,8 +20,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "157c8ce54baddf53f2820ab63ad5174187054a58e208ddf455b9db2915c787dd",
-      "size_bytes": 4623
+      "sha256": "7797f14821f26712bc7fce078a2b8aa8c4ec561c915ed537b52d9376ff952e72",
+      "size_bytes": 5186
     },
     {
       "path": ".gitignore",
@@ -4374,8 +4374,8 @@
     },
     {
       "path": "tools/verify_superseded_digests.py",
-      "sha256": "7a5ecdeb3aa5e74b804ed469a30862ca2fc4e3bb94a44fae08ca1d1216780a27",
-      "size_bytes": 5227
+      "sha256": "4db4e1223880aff91e22fdc9c4c15f565511b92a6cf41e8123525a46f6d216a3",
+      "size_bytes": 6969
     },
     {
       "path": "zenodo-deposit/.gitattributes",

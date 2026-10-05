@@ -86,21 +86,42 @@ def main() -> int:
         print("no re-pins recorded; nothing superseded")
         return 0
 
+    # Detect a shallow clone before walking history. Without the full history the
+    # walk below finds no commits and every path reports as unverifiable, which
+    # used to exit 0. Say why, and fail, rather than leaving the reader to infer
+    # it from a count of zeroes.
+    shallow = subprocess.run(
+        ["git", "rev-parse", "--is-shallow-repository"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    if shallow == "true":
+        print("this is a shallow clone; the history needed to confirm superseded")
+        print("digests was not fetched. Run: git fetch --unshallow")
+        return 1
+
     # Each entry records the manifest digest before its re-pin. That manifest is
     # itself in git history, so the pre-re-pin tree can be recovered exactly.
     total = matched = unverifiable = 0
     failures: list[str] = []
 
+    commits = subprocess.run(
+        ["git", "log", "--format=%H", "--", "manifest.json"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    ).stdout.splitlines()
+    if not commits:
+        print("no commit in this repository touches manifest.json; cannot locate")
+        print("the pre-re-pin trees the chain refers to")
+        return 1
+
     for index, entry in enumerate(chain):
         old_manifest_sha = entry.get("old_manifest_sha256")
         # Find the commit whose manifest.json matches the recorded pre-re-pin digest.
         revision = None
-        for line in subprocess.run(
-            ["git", "log", "--format=%H", "--", "manifest.json"],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-        ).stdout.splitlines():
+        for line in commits:
             blob = git_blob(line, "manifest.json")
             if blob and hashlib.sha256(blob).hexdigest() == old_manifest_sha:
                 revision = line
@@ -142,7 +163,23 @@ def main() -> int:
         print("The previously published bytes remain checkable; the re-pin added to")
         print("the record rather than replacing it.")
         return 0
-    print("\nSKIP: nothing verifiable from git history in this checkout.")
+
+    # Nothing was verified. Exiting 0 here is the bug this branch exists to fix:
+    # in a shallow clone `git log -- manifest.json` returns nothing, the walk
+    # finds no commits, and the step goes green having checked no file at all.
+    # CI did exactly that on 2026-10-05 -- "digest confirmed: 0" on a run marked
+    # successful. A gate that reports success without verifying anything is worse
+    # than no gate, because it reads as a green light.
+    if total == 0 and unverifiable > 0:
+        print("\nFAIL: nothing could be verified, and this is not an empty checkout.")
+        print("Every recorded superseded path was unverifiable. The usual cause is a")
+        print("shallow clone, where the history needed to confirm them was never")
+        print("fetched:")
+        print("    git fetch --unshallow")
+        print("Refusing to report success on a check that verified nothing.")
+        return 1
+
+    print("\nSKIP: no superseded paths recorded; nothing to confirm.")
     return 0
 
 

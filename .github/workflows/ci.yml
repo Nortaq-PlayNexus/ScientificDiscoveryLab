@@ -63,7 +63,17 @@ jobs:
     name: publishable manifest verifies
     runs-on: ubuntu-latest
     steps:
+      # fetch-depth 0 is REQUIRED, not a preference. The superseded-digest check
+      # recovers the pre-re-pin bytes from history to confirm the previously
+      # published tree is still verifiable. actions/checkout defaults to a shallow
+      # clone, so without this the check finds no commits, reports
+      # "digest confirmed: 0", and exits 0 -- green having verified nothing.
+      # That is the failure mode this repository already documents twice, so the
+      # step now also refuses to pass on an empty check.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
