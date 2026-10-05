@@ -19,7 +19,15 @@ jobs:
         # on 3.14, which is in this matrix.
         python-version: ['3.12', '3.13', '3.14']
     steps:
+      # fetch-depth 0 because tests/unit/test_manifest_repin.py verifies the
+      # superseded manifest digests against git history. Under the default
+      # shallow clone that check reports every path unverifiable, the test fails,
+      # and the expected-failure gate correctly flags it as UNEXPECTED -- which is
+      # what happened on run 37322128033. The integrity job needs the same
+      # history; both were fixed together so the two cannot disagree again.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
