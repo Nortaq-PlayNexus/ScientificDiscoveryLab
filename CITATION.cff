@@ -9,10 +9,10 @@ abstract: >-
   methodology. Built to a preregistered standard: claim layering, mandatory
   controls, adversarial falsification, evidence grading, append-only
   registries, and fail-closed runners. Its most substantive result is negative
-  and methodological — a self-audit in which three defects were found in the
+  and methodological — a self-audit in which four defects were found in the
   laboratory's own instruments, one of which had previously been counted as a
-  pass, and in which two of the three made the laboratory's own anomaly look
-  smaller than it really was. No physics discovery is claimed.
+  pass, and in which two of them made the laboratory's own anomaly look smaller
+  than it really was. No physics discovery is claimed.
 authors:
   - name: "ScientificDiscoveryLab contributors"
 keywords:
@@ -27,14 +27,19 @@ keywords:
   - numerical-methods
   - open-science
 license: MIT
-doi: "10.5281/zenodo.23109117"
+doi: "10.5281/zenodo.23122787"
+concept-doi: "10.5281/zenodo.23109116"
 repository-code: "https://github.com/Nortaq-PlayNexus/ScientificDiscoveryLab"
-version: "1.0.0"
-date-released: "2026-10-02"
+version: "2.0.0"
+date-released: "2026-10-04"
 references:
-  - type: software
-    title: "Zenodo deposit: Three Instrument Defects Found by Self-Audit"
-    notes: "Curated subset of this repository, same licence. Not superseded by it."
+  - type: dataset
+    title: "Zenodo deposit: curated v1.0.0 subset, 47 files (10.5281/zenodo.23109117)"
+    notes: >-
+      Earlier version of this record, same concept DOI 10.5281/zenodo.23109116.
+      A curated subset covering the three instrument defects found at that date,
+      same licence. Superseded by v2.0.0 but not withdrawn, and not by this
+      repository's own account of its results.
   - type: article
     authors:
       - family-names: Butlin

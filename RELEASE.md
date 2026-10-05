@@ -8,11 +8,18 @@
 | CI jobs | pytest on Python 3.12, 3.13, 3.14; publishable-manifest verify; curated-deposit verify |
 | Test suite | **543 passed, 0 failed** in the laboratory with complete data |
 | Published tree | 543 collected; 20 failures, exactly the recorded excluded-data set |
-| Zenodo deposit | **23109117**, published 2026-10-02 |
-| DOI | **[10.5281/zenodo.23109117](https://doi.org/10.5281/zenodo.23109117)** |
-| Archive | `ScientificDiscoveryLab-v1.0.0.zip`, 1,185 files, 6,678,433 bytes |
-| SHA-256 | `a0750bbc8619e4c807030be1e54a2303b5df2d8b02704d6c76a2995d1cdd0ddf` |
-| MD5 (as uploaded) | `21e6429965d9a4943c023e0ddd916bbf` |
+| Zenodo deposit | **23122787** (v2.0.0), published 2026-10-04 |
+| DOI | **[10.5281/zenodo.23122787](https://doi.org/10.5281/zenodo.23122787)** |
+| Concept DOI | `10.5281/zenodo.23109116` |
+| Supersedes | [v1.0.0, `10.5281/zenodo.23109117`](https://doi.org/10.5281/zenodo.23109117), published 2026-10-02 |
+| v1 archive | `ScientificDiscoveryLab-v1.0.0.zip`, 1,185 files, 6,678,433 bytes |
+| v1 SHA-256 | `a0750bbc8619e4c807030be1e54a2303b5df2d8b02704d6c76a2995d1cdd0ddf` |
+| v1 MD5 (as uploaded) | `21e6429965d9a4943c023e0ddd916bbf` |
+
+The digests above are for **v1.0.0**, the record published 2026-10-02. They are
+kept because v1 remains citable and is what the reproducibility claim below was
+verified against. The current version is v2.0.0; its archive digests are recorded
+in `PUBLICATION_VERIFICATION.md`.
 
 The archive is byte-reproducible. Two independent builds produce an identical
 digest, which matters because Zenodo files are immutable after publication: there
@@ -27,24 +34,38 @@ Expected output ends with `ARCHIVE VERIFIED: two independent builds are byte-ide
 
 ## Publication status
 
-**Published 2026-10-02 as `10.5281/zenodo.23109117`.** The uploaded archive was
-verified against Zenodo's own copy before and after: 6,678,433 bytes, md5
+**v1.0.0 published 2026-10-02 as `10.5281/zenodo.23109117`.** The uploaded archive
+was verified against Zenodo's own copy before and after: 6,678,433 bytes, md5
 `21e6429965d9a4943c023e0ddd916bbf`, identical on both sides.
 
-### Two fields are missing from the published record
+**v2.0.0 published 2026-10-04 as `10.5281/zenodo.23122787`**, same concept DOI
+`10.5281/zenodo.23109116`. Adds 8 subjects and 6 references to v1.
 
-The published record carries **zero subjects and zero references**. Zenodo's
-deposition API accepts both fields without error and then silently discards them,
-and neither is echoed back on read, so the upload reported success and the
-verification read showed zero with nothing warning. The web form did not have them
-either.
+Nine per-investigation records were published the same day, each citing v1. They
+are listed in `PUBLICATION_VERIFICATION.md`.
 
-The correct values are recorded in `zenodo/DEPOSIT_23109117.md` and were used to
-populate the repository at
-`C:\Users\natha\AI_RESEARCH\ScientificDiscoveryLab`. Correcting the published
-record requires a **new version**, which cannot be created through the legacy
-deposit API — `conceptrecid` is accepted and then ignored, so a new version lands
-on a different concept. Use the Zenodo web interface's **New version** action.
+### Zero subjects on all twelve published records
+
+**v1 and v2 both carry zero subjects.** Zenodo's deposition API accepts the field
+without error and then silently discards it, and does not echo it back on read, so
+the upload reported success while the verification read showed zero with nothing
+warning. The web form did not persist it either — tested on both
+`PUT /api/deposit/depositions/<id>` and `PUT /api/records/<id>/draft`.
+
+This is not a payload-shape problem; the fields are discarded server-side. Because
+**published Zenodo records are immutable, this is now permanent for all twelve
+records.** None of them will appear in a Zenodo subject browse.
+
+The values that should have been applied are recorded in
+`zenodo/DEPOSIT_23109117.md`, `zenodo/investigations/<slug>.json`, and
+`PUBLISH_CHECKLIST.md`. Closing this means a new version of each record with
+subjects typed into the form — a deliberate cost, recorded as D2 in
+`PUBLICATION_VERIFICATION.md` rather than patched quietly.
+
+Create new versions with `POST /api/records/<id>/versions`, **not** the legacy
+deposit API — `conceptrecid` is accepted and then ignored there, so a new version
+lands on a different concept. `zenodo/new_version.py` verifies linkage before
+uploading anything.
 
 **Any change after publication must be a new version (new version DOI, same
 concept DOI), never an edit.** Published Zenodo records are immutable.

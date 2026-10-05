@@ -70,6 +70,31 @@ jobs:
       - name: Verify every shipped file against manifest.json
         run: python tools/verify_manifest.py
 
+      # The manifest records a digest per shipped file, so editing any of them
+      # fails the step above. The tempting remedy is to regenerate the manifest
+      # until it is green, which is the same false fix as refreshing an immutable
+      # baseline to silence a control (defect 3 of the self-audit).
+      #
+      # A re-pin is therefore allowed, but only through tools/repin_manifest.py,
+      # which refuses to run without --acknowledge and records the superseded
+      # digests in a hash-chained log. These three steps enforce that:
+      #   1. the chain is internally consistent
+      #   2. the superseded digests still match the bytes in git history, so the
+      #      previously published tree remains verifiable
+      #   3. the tools' own negative tests fire
+      #
+      # Each was written after the failure it guards against was observed here.
+      - name: Re-pin chain is intact
+        run: python tools/repin_manifest.py --verify-chain
+
+      - name: Superseded digests still verify against git
+        run: python tools/verify_superseded_digests.py
+
+      - name: Re-pin guards fire (negative tests)
+        run: |
+          python tools/repin_manifest.py --selftest
+          python tools/verify_superseded_digests.py --selftest
+
   deposit:
     name: curated deposit manifest verifies
     runs-on: ubuntu-latest
