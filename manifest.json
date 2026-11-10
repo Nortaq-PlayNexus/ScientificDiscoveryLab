@@ -12,7 +12,7 @@
     ".zip"
   ],
   "excluded_total_bytes": 371507749,
-  "file_count": 1221,
+  "file_count": 1226,
   "files": [
     {
       "path": ".gitattributes",
@@ -3965,8 +3965,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f9e6a652c3cc179e728fa3df55daa363686530c7f956ad31c80a56237f529b51",
-      "size_bytes": 10346
+      "sha256": "7aace1c08f20c83e977c6a7ca1cdc9a23ced60c93acac79ed60fef521733bbf4",
+      "size_bytes": 10457
     },
     {
       "path": "RELEASE.md",
@@ -4006,6 +4006,11 @@
       "sha256": "f1661bae40d5986345115a83a6b108d8824277aa6b12d8501cc616399edad548"
     },
     {
+      "path": "docs/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
       "path": "docs/ARCHITECTURE.md",
       "sha256": "bf58eca24f789a8efa58d9962e65fca01880f243a845056d9650b7e6c29d101e"
     },
@@ -4018,6 +4023,11 @@
       "sha256": "07e6fddf39fc6b3787647d0476d73e34f55a2deba1a7e57069bf0b84061fcb0e"
     },
     {
+      "path": "docs/PUBLIC_PRESENTATION_REVIEW.md",
+      "sha256": "151af5b09c5b2105052cd323f4d755467efe1910199f88261a591cfee4be8d0d",
+      "size_bytes": 2206
+    },
+    {
       "path": "docs/RESEARCH_RECONNAISSANCE.md",
       "sha256": "b4455290ab23c95d6c79464f19c52c3ab4b768195a89a0ad18a3ea2c2b0c6e2a"
     },
@@ -4026,8 +4036,23 @@
       "sha256": "d4109ff71b6e84273daa1555ed7124ed1b97c7b6b59a6d2d6089134a666cea58"
     },
     {
+      "path": "docs/dashboard.html",
+      "sha256": "d30780f5abcd9b76e8b0c431abc8dacc608544ddbb92e74e758e14059602878d",
+      "size_bytes": 2250
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "d4a4a138347f42e828e6d8648d93d005fc5b39ded43fee4ef38f1eec13ae5bb0",
+      "size_bytes": 2115
+    },
+    {
       "path": "fix_q006_cells.py",
       "sha256": "541bd64e731e7922624cfe219c3214c5ab163bea8fd0df886a45328148bf3d54"
+    },
+    {
+      "path": "index.html",
+      "sha256": "d4a4a138347f42e828e6d8648d93d005fc5b39ded43fee4ef38f1eec13ae5bb0",
+      "size_bytes": 2115
     },
     {
       "path": "pytest.ini",
